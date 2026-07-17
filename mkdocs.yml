@@ -1,0 +1,206 @@
+site_name: TRINITY Documentation
+site_description: Public documentation centered on the TRINITY, UnyDesk and UnyPort architectures
+site_author: TRINITY
+site_url: https://docs.trinity-net.com
+
+# -------------------------------------------------------------------
+# Sources
+# -------------------------------------------------------------------
+
+# We use the root directory as docs_dir
+# Language selection is handled by suffix (.md / .fr.md)
+docs_dir: docs
+
+# -------------------------------------------------------------------
+# Assets
+# -------------------------------------------------------------------
+
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github.min.css
+  - assets/stylesheets/extra.css?v=20260717-releasepanel1
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js
+  - assets/javascripts/extra.js?v=20260717-releasepanel1
+
+# -------------------------------------------------------------------
+# Plugins
+# -------------------------------------------------------------------
+
+plugins:
+  - search
+  - i18n:
+      default_language: en
+      languages:
+        en: English
+        fr: Français
+        de: Deutsch
+      translate_nav:
+        fr:
+          "Overview": "Vue d'ensemble"
+          "Introduction": "Introduction"
+          "Presentation": "Présentation"
+          "Architecture": "Architecture"
+          "Manual": "Mode d'emploi"
+          "Host distribution": "Distribution des hosts"
+          "Session broker": "Broker de sessions"
+          "Access and authentication": "Acces et authentification"
+          "Metrics and surfaces": "Metriques et surfaces"
+          "Applications proxy": "Proxy applicatif"
+          "Deployment": "Deploiement"
+          "Bootstrap and access": "Bootstrap et acces"
+          "Account and orders": "Compte et commandes"
+          "Payments and invoices": "Paiements et factures"
+          "VMs and console": "VM et console"
+          "Data Disk Mode": "Data Disk Mode"
+          "Alpine Linux and Xen": "Alpine Linux et Xen"
+          "Security and operations": "Securite et exploitation"
+          "Support and operations": "Support et exploitation"
+          "Examples": "Exemples"
+          "Glossary": "Glossaire"
+          "Usage": "Utilisation"
+          "Customer journeys": "Parcours client"
+          "Services and support": "Services et support"
+          "History": "Historique"
+          "Evolution": "Évolution"
+        de:
+          "Overview": "Überblick"
+          "Introduction": "Einführung"
+          "Presentation": "Präsentation"
+          "Architecture": "Architektur"
+          "Manual": "Handbuch"
+          "Host distribution": "Host-Verteilung"
+          "Session broker": "Session-Broker"
+          "Access and authentication": "Zugriff und Authentifizierung"
+          "Metrics and surfaces": "Metriken und Oberflaechen"
+          "Applications proxy": "Applikations-Proxy"
+          "Deployment": "Bereitstellung"
+          "Bootstrap and access": "Bootstrap und Zugriff"
+          "Account and orders": "Konto und Bestellungen"
+          "Payments and invoices": "Zahlungen und Rechnungen"
+          "VMs and console": "VMs und Konsole"
+          "Data Disk Mode": "Data Disk Mode"
+          "Alpine Linux and Xen": "Alpine Linux und Xen"
+          "Security and operations": "Sicherheit und Betrieb"
+          "Support and operations": "Support und Betrieb"
+          "Examples": "Beispiele"
+          "Glossary": "Glossar"
+          "Usage": "Nutzung"
+          "Customer journeys": "Kundenwege"
+          "Services and support": "Services und Support"
+          "History": "Entwicklung"
+          "Evolution": "Weiterentwicklung"
+  - with-pdf:
+      output_path: trinity-docs.pdf
+
+# -------------------------------------------------------------------
+# Markdown extensions
+# -------------------------------------------------------------------
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.highlight:
+      use_pygments: true
+      pygments_lang_class: true
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+validation:
+  nav:
+    omitted_files: ignore
+
+# -------------------------------------------------------------------
+# Theme
+# -------------------------------------------------------------------
+
+theme:
+  name: material
+  language: en
+  font: false
+  logo: assets/images/internal/logo-white.png
+  favicon: assets/images/internal/logo-black.png
+  features:
+    - navigation.indexes
+
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+
+extra:
+  alternate:
+    - name: English
+      link: /
+      lang: en
+    - name: Français
+      link: /index.fr/
+      lang: fr
+    - name: Deutsch
+      link: /index.de/
+      lang: de
+
+# -------------------------------------------------------------------
+# Navigation (OFFICIAL STRUCTURE)
+# EN files are the reference
+# -------------------------------------------------------------------
+
+nav:
+  - TRINITY:
+      - trinity/index.md
+      - Introduction: trinity/introduction.md
+      - Presentation: trinity/presentation.md
+      - Architecture: trinity/architecture.md
+      - Manual: trinity/manual.md
+      - Account and orders: trinity/account-orders.md
+      - Payments and invoices: trinity/payments-invoices.md
+      - VMs and console: trinity/vm-console.md
+      - Data Disk Mode: trinity/data-disk-mode.md
+      - Alpine Linux and Xen: trinity/alpine-xen.md
+      - Support and operations: trinity/support-operations.md
+      - Examples: trinity/examples.md
+      - Glossary: trinity/glossary.md
+      - Usage: trinity/usage.md
+      - Customer journeys: trinity/journeys.md
+      - Services and support: trinity/services.md
+      - History: trinity/history.md
+      - Evolution: trinity/evolution.md
+
+  - UnyDesk:
+      - unydesk/index.md
+      - Introduction: unydesk/introduction.md
+      - Presentation: unydesk/presentation.md
+      - Overview: unydesk/overview.md
+      - Architecture: unydesk/architecture.md
+      - Manual: unydesk/manual.md
+      - Host distribution: unydesk/host-distribution.md
+      - Session broker: unydesk/session-broker.md
+      - Bootstrap and access: unydesk/bootstrap-access.md
+      - Deployment: unydesk/deployment.md
+      - Security and operations: unydesk/security-operations.md
+      - Support and operations: unydesk/support-operations.md
+      - Examples: unydesk/examples.md
+      - Glossary: unydesk/glossary.md
+      - Usage: unydesk/usage.md
+      - History: unydesk/history.md
+      - Evolution: unydesk/evolution.md
+
+  - UnyPort:
+      - unyport/index.md
+      - Introduction: unyport/introduction.md
+      - Presentation: unyport/presentation.md
+      - Architecture: unyport/architecture.md
+      - Manual: unyport/manual.md
+      - Access and authentication: unyport/access-authentication.md
+      - Metrics and surfaces: unyport/metrics-surfaces.md
+      - Applications proxy: unyport/applications-proxy.md
+      - Deployment: unyport/deployment.md
+      - Alpine Linux and Xen: unyport/alpine-xen.md
+      - Security and operations: unyport/security-operations.md
+      - Usage: unyport/usage.md
+      - Examples: unyport/examples.md
+      - Glossary: unyport/glossary.md
+      - History: unyport/history.md
+      - Evolution: unyport/evolution.md
