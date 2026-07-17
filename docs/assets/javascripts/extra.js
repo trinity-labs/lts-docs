@@ -179,28 +179,12 @@ function mountTrinitySidebarRelease(meta) {
 
   node.replaceChildren();
 
-  const label = document.createElement("span");
-  label.className = "trinity-sidebar-release__label";
-  label.textContent = "release";
-
-  const version = document.createElement("code");
+  const version = document.createElement("span");
   version.className = "trinity-sidebar-release__version";
   version.textContent = meta.version;
 
-  const scope = document.createElement("span");
-  scope.className = "trinity-sidebar-release__scope";
-  scope.textContent = `${meta.scope || "docs"} · ${meta.visibility || "unknown"}`;
-
-  node.appendChild(label);
   node.appendChild(version);
-  node.appendChild(scope);
-
-  if (meta.released_at) {
-    const releasedAt = document.createElement("span");
-    releasedAt.className = "trinity-sidebar-release__date";
-    releasedAt.textContent = meta.released_at.replace("T", " ").replace("Z", " UTC");
-    node.appendChild(releasedAt);
-  }
+  node.title = [meta.kind, meta.scope, meta.visibility, meta.released_at].filter(Boolean).join(" · ");
 }
 
 function initTrinityDocsChrome() {

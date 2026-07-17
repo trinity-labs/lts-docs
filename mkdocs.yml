@@ -17,11 +17,11 @@ docs_dir: docs
 
 extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github.min.css
-  - assets/stylesheets/extra.css?v=20260717-releasepanel1
+  - assets/stylesheets/extra.css?v=20260717-v001
 
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js
-  - assets/javascripts/extra.js?v=20260717-releasepanel1
+  - assets/javascripts/extra.js?v=20260717-v001
 
 # -------------------------------------------------------------------
 # Plugins

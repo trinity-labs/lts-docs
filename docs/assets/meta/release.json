@@ -3,6 +3,7 @@
   "scope": "public",
   "visibility": "public",
   "channel": "stable",
-  "version": "v2026.07.17.1",
+  "kind": "major",
+  "version": "v.0.0.1",
   "released_at": "2026-07-17T00:00:00Z"
 }

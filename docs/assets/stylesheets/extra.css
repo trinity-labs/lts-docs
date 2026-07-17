@@ -219,7 +219,9 @@ a.md-nav__link.md-nav__link--active {
 }
 
 .md-search__form {
-    border-radius: 6px;
+    background-color: #5f5f5f42;
+    border-radius: 6px !important;
+    height: 1.66rem;
 }
 
 .md-content {
@@ -479,6 +481,12 @@ label[for="__toc"] > a span::before {
     transform: translateY(-50%);
     color: #3e3aab;
     font-weight: 400;
+}
+
+.md-search__icon[for=__search] {
+    position: absolute;
+    top: .25rem;
+    z-index: 2;
 }
 
 .md-header__option {
