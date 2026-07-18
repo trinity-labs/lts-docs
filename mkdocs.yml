@@ -32,8 +32,8 @@ plugins:
   - i18n:
       default_language: en
       languages:
-        en: English
         fr: Français
+        en: English
         de: Deutsch
       translate_nav:
         fr:
@@ -132,12 +132,12 @@ theme:
 
 extra:
   alternate:
-    - name: English
-      link: /
-      lang: en
     - name: Français
       link: /index.fr/
       lang: fr
+    - name: English
+      link: /
+      lang: en
     - name: Deutsch
       link: /index.de/
       lang: de

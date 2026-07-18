@@ -257,12 +257,14 @@ function initTrinityDocsChrome() {
     .find((node) => node.querySelector(".md-select__link[hreflang], .trinity-lang-switcher__link[hreflang]"));
 
   if (headerInner && headerOption) {
+    const localeOrder = { fr: 0, en: 1, de: 2 };
     const links = [...headerOption.querySelectorAll(".md-select__link[hreflang], .trinity-lang-switcher__link[hreflang]")]
       .map((link) => ({
         href: link.getAttribute("href"),
         lang: (link.getAttribute("hreflang") || "").slice(0, 2),
       }))
-      .filter((entry) => entry.href && localeFlags[entry.lang]);
+      .filter((entry) => entry.href && localeFlags[entry.lang])
+      .sort((a, b) => (localeOrder[a.lang] ?? 99) - (localeOrder[b.lang] ?? 99));
 
     if (links.length > 0) {
       let switcher = headerInner.querySelector(".trinity-lang-switcher--header");
