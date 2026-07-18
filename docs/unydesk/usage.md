@@ -1,56 +1,56 @@
-# UnyDesk Usage
-`UnyDesk` is used when the platform user needs to initiate or receive remote access. The important public point is that usage is session-driven: the user does not only "open a tool", but starts a relationship between a viewer, a host, a route and one or more transport paths.
+# Utilisation d'UnyDesk
+`UnyDesk` est utilisée quand l'utilisateur doit initier ou recevoir un accès distant. Le point public important est que l'usage est piloté par la session : l'utilisateur n'ouvre pas seulement un outil, il lance une relation entre un viewer, un host, une route et un ou plusieurs chemins de transport.
 
-Typical public uses include:
+Les usages publics typiques incluent :
 
-- Opening the landing page of the remote access service
-- Identifying the right host package for a target system
-- Bootstraping or claiming a host
-- Opening or monitoring a remote session
-- Sharing a standalone session link
-- Performing assisted support with local approval on the host
-- Continuing with fallback screen delivery if direct realtime video is degraded
+- Ouvrir la landing page du service d'accès distant
+- Identifier le bon package hôte pour un système cible
+- Démarrer un bootstrap ou un claim d'hôte
+- Ouvrir ou superviser une session distante
+- Partager un lien de session autonome
+- Réaliser une assistance avec approbation locale côté host
+- Continuer avec un fallback écran si la vidéo temps réel directe se dégrade
 
-## Use 1 - prepare a host
-Users often begin by:
+## Usage 1 - préparer un host
+Les utilisateurs commencent souvent par :
 
-- Downloading the correct host package
-- Launching or installing the host runtime
-- Checking whether the host appears online
-- Confirming whether pairing or claim is complete
+- Télécharger le bon paquet host
+- Lancer ou installer le runtime host
+- Vérifier que le host apparaît en ligne
+- Confirmer que le pairage ou le claim est terminé
 
-## Use 2 - start a remote assistance session
-In a normal assisted session, the viewer:
+## Usage 2 - démarrer une session d'assistance
+Dans une session d'assistance normale, le viewer :
 
-- Opens the `UnyDesk` page
-- Selects or targets a host
-- Creates a session
-- Waits for host acceptance
-- Watches the session become offered, accepted and active
+- Ouvre la page `UnyDesk`
+- Sélectionne ou cible un host
+- Crée une session
+- Attend l'acceptation côté host
+- Voit la session passer par les états offered, accepted puis active
 
-## Use 3 - operate through the browser session
-Once a session is alive, the browser viewer can typically:
+## Usage 3 - travailler dans la session navigateur
+Une fois la session active, le viewer navigateur peut généralement :
 
-- Watch the remote screen
-- Move the pointer
-- Send keyboard input
-- Exchange clipboard content
-- Send files to the host
-- Close or monitor the session
+- Regarder l'écran distant
+- Déplacer le pointeur
+- Envoyer des frappes clavier
+- Échanger le contenu du presse-papiers
+- Envoyer des fichiers au host
+- Fermer ou surveiller la session
 
-## Use 4 - work in standalone mode
-Standalone access is useful when:
+## Usage 4 - travailler en mode autonome
+L'accès autonome est utile lorsque :
 
-- A user should join a session without the full account portal
-- A support operator needs a narrow invitation
-- The session should remain limited to one access context
+- Un utilisateur doit rejoindre une session sans passer par tout le portail compte
+- Un opérateur support a besoin d'une invitation étroite
+- La session doit rester limitée à un seul contexte d'accès
 
-## Use 5 - survive imperfect network paths
-When direct realtime media works, the user gets the best experience. When it does not, `UnyDesk` can still remain useful by combining:
+## Usage 5 - survivre à des chemins réseau imparfaits
+Quand le média temps réel direct fonctionne, l'utilisateur bénéficie de la meilleure expérience. Quand ce n'est pas le cas, `UnyDesk` peut rester utile en combinant :
 
-- Broker signaling
-- Session state visibility
-- Peer-frame fallback transport
-- Retry or recovery behavior instead of immediate abandonment
+- La signalisation broker
+- La visibilité sur l'état de session
+- Le transport fallback peer-frame
+- Des comportements de reprise au lieu d'un abandon immédiat
 
-When the user goal is core platform orchestration, the relevant architecture is `TRINITY`. When the user goal is local service control, the relevant architecture is `UnyPort`.
+Quand l'objectif est l'orchestration centrale de la plateforme, l'architecture pertinente est `TRINITY`. Quand l'objectif est le contrôle local des services, l'architecture pertinente est `UnyPort`.

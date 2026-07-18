@@ -1,38 +1,38 @@
-# Security and Operations
-`UnyDesk` is a remote access product, so security is part of the normal operating model. Access is useful only when host identity, viewer identity and session scope are explicit.
+# Sécurité et exploitation
+`UnyDesk` est un produit d'accès distant, donc la sécurité fait partie du modèle normal d'exploitation. L'accès n'est utile que lorsque l'identité host, l'identité viewer et le périmètre session sont explicites.
 
-## Security baseline
-The public security model includes:
+## Socle sécurité
+Le modèle public inclut :
 
-- Account-backed authentication for normal users
-- CSRF protection on state-changing browser requests
-- Session cookies for authenticated access
-- Scoped standalone tokens for invitation-style access
-- Explicit host trust or claim flows
-- Websocket channels for live state and host communication
-- No-store behavior for host package downloads
+- Une authentification par compte pour les utilisateurs normaux
+- Une protection CSRF sur les requêtes navigateur qui changent l'état
+- Des cookies de session pour l'accès authentifié
+- Des tokens autonomes bornés pour les invitations
+- Des flux explicites de confiance ou revendication host
+- Des canaux websocket pour l'état live et la communication host
+- Un comportement no-store pour les téléchargements host
 
-## Host trust
-A host should not be treated as trusted only because it can reach the broker. Trust depends on identity material such as install ID, public ID, hostname and the provisioning context.
+## Confiance host
+Un host ne doit pas être considéré comme fiable simplement parce qu'il peut joindre le broker. La confiance dépend de l'identité : install ID, public ID, hostname et contexte de provisioning.
 
-Operationally, a host becomes useful when:
+Opérationnellement, un host devient utile lorsqu'il :
 
-- It registers with stable identity
-- It is associated with the expected user or context
-- It remains visible through heartbeat
-- It acknowledges session dispatch
+- S'enregistre avec une identité stable
+- Est associé à l'utilisateur ou au contexte attendu
+- Reste visible par heartbeat
+- Accuse réception du dispatch session
 
-## Session safety
-A session should be closed when access is complete. Public operators should avoid keeping standalone links active longer than needed and should never reuse a session token as a general credential.
+## Sécurité de session
+Une session doit être fermée quand l'accès est terminé. Les opérateurs publics doivent éviter de garder des liens autonomes actifs plus longtemps que nécessaire et ne jamais réutiliser un token de session comme credential générale.
 
-## Troubleshooting boundaries
-When `UnyDesk` fails, separate the failure first:
+## Limites de diagnostic
+Quand `UnyDesk` échoue, séparer d'abord le type d'échec :
 
-- Authentication failure
-- Host not registered or offline
-- Host not trusted
-- Session not dispatched
-- WebRTC negotiation incomplete
-- Fallback screen not updating
+- Échec d'authentification
+- Host non enregistré ou hors ligne
+- Host non approuvé
+- Session non dispatchée
+- Négociation WebRTC incomplète
+- Écran de secours non mis à jour
 
-This distinction avoids treating every remote access issue as a network outage.
+Cette distinction évite de traiter chaque problème d'accès distant comme une panne réseau.

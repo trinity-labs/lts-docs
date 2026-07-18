@@ -1,21 +1,21 @@
-# Alpine Linux and Xen
-`UnyPort` is not neutral about its platform. The codebase and README both make it clear that the product is shaped around Alpine Linux and Xen-oriented infrastructure, especially where host clarity matters more than abstract orchestration.
+# Alpine Linux et Xen
+`UnyPort` n'est pas neutre vis-a-vis de sa plateforme. Le code comme le README montrent clairement que le produit est faconne autour d'Alpine Linux et d'une infrastructure orientée Xen, surtout lorsque la clarte du rôle d'hôte compte plus qu'une orchestration abstraite.
 
-## Why Alpine Linux matters here
-Alpine Linux fits the `UnyPort` model because it is:
+## Pourquoi Alpine Linux compte ici
+Alpine Linux colle au modele `UnyPort` parce qu'il est :
 
-- Small
-- Predictable
-- Musl-based
-- Comfortable in minimal operational footprints
-- Compatible with LBU persistence workflows
+- Petit
+- Previsible
+- Base sur musl
+- A l'aise dans des empreintes operationnelles minimales
+- Compatible avec les workflows de persistance LBU
 
-That matters because `UnyPort` reads local system state directly and benefits from a host that stays legible and compact.
+Cela compte parce qu'`UnyPort` lit directement l'état local du système et profite d'un hôte compact et lisible.
 
-## Why Xen matters here
-Xen matters because `UnyPort` distinguishes infrastructure roles, not just CPU graphs.
+## Pourquoi Xen compte ici
+Xen compte parce qu'`UnyPort` distingue des rôles d'infrastructure, pas seulement des graphes CPU.
 
-The backend detects whether the host looks like:
+Le backend detecte si l'hôte ressemble a :
 
 - `Dom0`
 - `DomU`
@@ -23,35 +23,35 @@ The backend detects whether the host looks like:
 - `Alpine`
 - `Unknown`
 
-On `Dom0`, `UnyPort` enriches Linux telemetry with Xen toolstack data from:
+Sur `Dom0`, `UnyPort` enrichit la télémétrie Linux avec des données toolstack Xen venant de :
 
 - `xl info`
 - `xl list`
 
-This provides domain counts, vCPU totals, memory totals, scheduler details and per-domain CPU readings.
+Cela donne le nombre de domaines, le total de vCPU, la memoire, le scheduler et des lectures CPU par domaine.
 
-## Dom0 versus DomU
-This distinction changes what the operator sees:
+## Dom0 contre DomU
+Cette distinction change ce que voit l'opérateur :
 
-- On `Dom0`, `UnyPort` can show hypervisor-wide state and Xen domains
-- On `DomU`, `UnyPort` behaves as a VM-level observer
-- In containers, board and firmware fields may naturally be absent
+- Sur `Dom0`, `UnyPort` peut montrer l'état de l'hyperviseur et des domaines Xen
+- Sur `DomU`, `UnyPort` se comporte comme un observateur centre VM
+- Dans un conteneur, les champs carte mere et firmware peuvent naturellement manquer
 
-The UI is explicitly shaped around those differences.
+L'UI est explicitement construite autour de ces differences.
 
-## LBU and persistence
-`UnyPort` also understands the Alpine `lbu` model:
+## LBU et persistance
+`UnyPort` comprend aussi le modele Alpine `lbu` :
 
-- Whether LBU is present
-- Whether the last archive exists
-- Whether changes look committed or dirty
+- Presence ou absence de LBU
+- Existence de la derniere archive
+- État `clean` ou `dirty`
 
-This is especially relevant in Alpine maintenance and Data Disk Mode oriented environments where configuration drift must be easy to spot.
+Cela est particulierement utile dans des environnements Alpine de maintenance ou orientés Data Disk Mode, ou la dérive de configuration doit être simple a reperer.
 
-## Platform reading
-In public documentation terms, `UnyPort` should therefore be read as:
+## Lecture plateforme
+En termes de documentation publique, `UnyPort` doit donc se lire comme :
 
-1. An Alpine-native operator portal
-2. Aware of Xen topology and roles
-3. Useful on Dom0, DomU and lean service hosts
-4. Aligned with minimal operations rather than heavyweight abstraction layers
+1. Un portail opérateur nativement aligne sur Alpine
+2. Conscient de la topologie et des rôles Xen
+3. Utile sur Dom0, DomU et hôtes de service legers
+4. Aligne sur des operations minimales plutot que sur de lourdes couches d'abstraction

@@ -1,16 +1,16 @@
 # UnyDesk
-`UnyDesk` is the remote access service of the `TRINITY` Edge Networks ecosystem. It is the public surface used to download a host package, pair or claim a host, start a remote session and keep that session usable even when the best transport path is not immediately available.
+`UnyDesk` est le service d'accès distant de l'écosystème `TRINITY` Edge Networks. C'est la surface publique utilisée pour télécharger un paquet host, pairer ou associer un host, démarrer une session distante et garder cette session exploitable même lorsque le meilleur chemin de transport n'est pas immédiatement disponible.
 
-Unlike `TRINITY`, which is the customer and service portal, `UnyDesk` is centered on:
+Contrairement à `TRINITY`, qui reste le portail client et services, `UnyDesk` est centré sur :
 
-- Host reachability
-- Viewer-to-host session routing
-- Live remote control
-- Remote assistance flows
-- Transport fallback behavior
+- L'accessibilité du host
+- Le routage des sessions entre viewer et host
+- Le contrôle distant en direct
+- Les flux d'assistance distante
+- Les comportements de secours côté transport
 
-## Start here
-For a practical reading path, the recommended order is:
+## Commencer ici
+Pour une lecture pratique, l'ordre recommandé est :
 
 1. `Overview`
 2. `Architecture`
@@ -21,12 +21,12 @@ For a practical reading path, the recommended order is:
 
 ```text
 Viewer
-  -> UnyDesk page
-  -> Target host
-  -> Session creation
-  -> Broker signaling
-  -> WebRTC direct path
-  -> Fallback path if required
+  -> page UnyDesk
+  -> host cible
+  -> création de session
+  -> signalisation broker
+  -> chemin WebRTC direct
+  -> chemin de secours si nécessaire
 ```
 
-This section describes `UnyDesk` as a public product experience, not as source code or an internal protocol note.
+Cette section décrit `UnyDesk` comme une expérience produit publique, pas comme une note de protocole interne ou de code source.

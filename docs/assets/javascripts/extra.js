@@ -41,7 +41,7 @@ function buildTrinityLanguageHref(lang, fallbackHref) {
   } else {
     baseSegments = [...segments];
     const last = baseSegments[baseSegments.length - 1];
-    const localized = last.match(/^(.+)\.(fr|de)$/);
+    const localized = last.match(/^(.+)\.(en|de)$/);
     if (localized) {
       baseSegments[baseSegments.length - 1] = localized[1];
     } else if (baseSegments.length === 1 && products.has(baseSegments[0])) {
@@ -52,20 +52,20 @@ function buildTrinityLanguageHref(lang, fallbackHref) {
   const last = baseSegments[baseSegments.length - 1];
   const parent = baseSegments.slice(0, -1);
 
-  if (lang === "en") {
+  if (lang === "fr") {
     if (baseSegments.length === 1 && last === "index") return `${adminPrefix || ""}/`;
     if (last === "index") return withSlash(joinPath(parent));
     return withSlash(joinPath(baseSegments));
   }
 
-  if (!["fr", "de"].includes(lang)) return fallbackHref || `${adminPrefix || ""}/`;
+  if (!["en", "de"].includes(lang)) return fallbackHref || `${adminPrefix || ""}/`;
   if (baseSegments.length === 1 && last === "index") return withSlash(joinPath([`index.${lang}`]));
   if (last === "index") return withSlash(joinPath([...parent, `index.${lang}`]));
   return withSlash(joinPath([...parent, `${last}.${lang}`]));
 }
 
 function localizeTrinityInternalHref(href, locale) {
-  if (!["fr", "de"].includes(locale) || !href) return href;
+  if (!["en", "de"].includes(locale) || !href) return href;
 
   let url;
   try {
@@ -94,7 +94,7 @@ function localizeTrinityInternalHref(href, locale) {
 
   const baseSegments = [...segments];
   const last = baseSegments[baseSegments.length - 1];
-  const localized = last.match(/^(.+)\.(fr|de)$/);
+  const localized = last.match(/^(.+)\.(en|de)$/);
   if (localized) {
     baseSegments[baseSegments.length - 1] = localized[1];
   } else if (baseSegments.length === 1 && products.has(first)) {
@@ -198,7 +198,7 @@ function mountTrinitySidebarRelease(meta) {
 }
 
 function initTrinityDocsChrome() {
-  const locale = (document.documentElement.lang || "en").slice(0, 2);
+  const locale = (document.documentElement.lang || "fr").slice(0, 2);
   const localeLabels = {
     en: "English",
     fr: "Français",

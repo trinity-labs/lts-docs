@@ -1,48 +1,48 @@
-# Examples
-These examples describe public `UnyDesk` workflows without exposing private infrastructure procedures.
+# Exemples
+Ces exemples décrivent des parcours publics `UnyDesk` sans exposer de procédures d'infrastructure privées.
 
-## Example 1 - assisted access
+## Exemple 1 - accès assisté
 ```text
-User opens UnyDesk
-  -> downloads the host package
-  -> starts the host runtime
-  -> signs in or receives a scoped invitation
-  -> host becomes visible
-  -> viewer starts a session
-  -> host acknowledges the dispatch
+L'utilisateur ouvre UnyDesk
+  -> télécharge le package host
+  -> démarre le runtime host
+  -> se connecte ou reçoit une invitation bornée
+  -> le host devient visible
+  -> le viewer démarre une session
+  -> le host accuse le dispatch
 ```
 
-This is the normal support-oriented path when a person is available near the target machine.
+C'est le parcours normal d'assistance quand une personne est présente près de la machine cible.
 
-## Example 2 - prepared host
+## Exemple 2 - host préparé
 ```text
-Operator prepares host
-  -> host keeps a stable install ID
-  -> host heartbeats to the broker
-  -> viewer opens UnyDesk later
-  -> session targets the known host
+L'opérateur prépare le host
+  -> le host garde un install ID stable
+  -> le host envoie son heartbeat au broker
+  -> le viewer ouvre UnyDesk plus tard
+  -> la session cible le host connu
 ```
 
-This is useful when a machine must remain reachable for future assistance.
+Ce cas est utile lorsqu'une machine doit rester joignable pour une assistance future.
 
-## Example 3 - standalone invitation
+## Exemple 3 - invitation autonome
 ```text
-Session is created
-  -> scoped token is generated
-  -> invited viewer opens the session link
-  -> broker validates the token
-  -> access remains tied to this session context
+La session est créée
+  -> un token borné est généré
+  -> le viewer invité ouvre le lien session
+  -> le broker valide le token
+  -> l'accès reste lié à ce contexte session
 ```
 
-Standalone access is intentionally narrower than a full account login.
+L'accès autonome est volontairement plus étroit qu'une connexion complète par compte.
 
-## Example 4 - transport fallback
+## Exemple 4 - transport de secours
 ```text
-Viewer and host exchange signaling
-  -> direct realtime path is attempted
-  -> media path is incomplete
-  -> broker state stays visible
-  -> fallback screen delivery continues the session
+Viewer et host échangent la signalisation
+  -> le chemin temps réel direct est tenté
+  -> le chemin média est incomplet
+  -> l'état broker reste visible
+  -> la livraison écran de secours continue la session
 ```
 
-The goal is not to hide degraded transport. The goal is to keep enough state visible to understand what still works.
+Le but n'est pas de masquer un transport dégradé. Le but est de garder assez d'état visible pour comprendre ce qui fonctionne encore.

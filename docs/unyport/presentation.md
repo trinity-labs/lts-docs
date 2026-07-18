@@ -1,12 +1,12 @@
-# UnyPort Presentation
-`UnyPort` is the control and supervision application exposed around `TRINITY` infrastructure. It is oriented toward operators, not toward end-user commerce. The product value is clarity: one entry point, one session model, one host view and a small number of focused operational pages.
+# Presentation d'UnyPort
+`UnyPort` est l'application de contrôle et de supervision exposee autour de l'infrastructure `TRINITY`. Elle est orientée opérateur, pas parcours commercial grand public. Sa valeur produit repose sur la clarte : un point d'entrée, un modele de session, une lecture d'hôte et un petit nombre de pages operationnelles ciblees.
 
-![`UnyPort` screen](../assets/images/screens/unyport-dashboard.png)
+![Ecran `UnyPort`](../assets/images/screens/unyport-dashboard.png)
 
-*Example of an `UnyPort` interface showing the dashboard-oriented layout and the operator-first reading of host state.*
+*Exemple d'interface `UnyPort` montrant une composition orientée tableau de bord et une lecture de l'état hôte pensee pour l'operateur.*
 
-## Visible pages
-The current interface is centered on:
+## Pages visibles
+L'interface actuelle s'organise autour de :
 
 - `Dashboard`
 - `Hypervisor`
@@ -16,22 +16,22 @@ The current interface is centered on:
 - `Security`
 - `Settings`
 
-These pages are populated by a mix of static system facts and live snapshots pushed over SSE.
+Ces pages sont alimentees par un melange de faits système statiques et de snapshots live pousses en SSE.
 
-## Primary users
-`UnyPort` is meant for:
+## Utilisateurs cibles
+`UnyPort` est pensee pour :
 
-- Administrators
-- Operators
-- Read-only viewers
+- Les administrateurs
+- Les opérateurs
+- Les viewers en lecture seule
 
-The application distinguishes those roles explicitly so the same portal can be used for observation, routine operations and controlled administration without exposing all write actions to every user.
+L'application distingue explicitement ces rôles afin que la même surface puisse servir a l'observation, aux operations courantes et a l'administration contrôlée sans exposer toutes les actions d'écriture a tous les utilisateurs.
 
-## Position inside the ecosystem
-`UnyPort` should be read as the supervision companion to `TRINITY`:
+## Place dans l'écosystème
+`UnyPort` doit se lire comme le compagnon de supervision de `TRINITY` :
 
-- `TRINITY` Handles the customer lifecycle
-- `UnyDesk` Handles remote access and assistance
-- `UnyPort` Handles infrastructure state, proxy access and operator context
+- `TRINITY` Gere le cycle de vie client
+- `UnyDesk` Gere l'accès distant et l'assistance
+- `UnyPort` Gere l'état d'infrastructure, l'accès proxy et le contexte opérateur
 
-That positioning is consistent with the repository itself, the public README and the current runtime routes.
+Ce positionnement est cohérent avec le depot lui-meme, le README public et les routes runtime actuelles.

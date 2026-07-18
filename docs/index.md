@@ -1,17 +1,17 @@
 # TRINITY
-`TRINITY` is the central architecture of the platform.
+`TRINITY` est l'architecture centrale de la plateforme.
 
-It is the main public surface for:
+Elle constitue la surface publique principale pour :
 
-- Identity and account access
-- Order and provisioning flows
-- VM lifecycle orchestration
-- Console access
-- Curated download publication
+- L'identité et l'accès aux comptes
+- Les flux de commande et de provisionnement
+- L'orchestration du cycle de vie des VM
+- L'accès console
+- La publication de téléchargements préparés
 
-In the public documentation set, `TRINITY` is documented alongside the two companion architectures that complete the platform:
+Dans le corpus public, `TRINITY` est documentée aux côtés des deux architectures complémentaires qui complètent la plateforme :
 
-- `UnyDesk` For remote access
-- `UnyPort` For service control
+- `UnyDesk` Pour l'accès distant
+- `UnyPort` Pour le pilotage des services
 
-This documentation starts from `TRINITY` because it is the functional center of the platform, not because the other architectures are secondary.
+Cette documentation commence par `TRINITY` parce qu'elle est le centre fonctionnel de la plateforme, pas parce que les autres architectures seraient secondaires.

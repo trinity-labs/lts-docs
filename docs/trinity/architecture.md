@@ -1,79 +1,79 @@
-# TRINITY Architecture
-`TRINITY` is a service architecture. On the public side, it assembles several surfaces that must remain coherent with each other: website, customer account, payments, support, VM operations and documentation. The purpose of this page is not to explain an internal framework, but to show how the platform is structured from the point of view of the user and day-to-day operations.
+# Architecture TRINITY
+`TRINITY` est une architecture de service. Côté public, elle assemble plusieurs surfaces qui doivent rester cohérentes entre elles : site web, compte client, paiement, support, exploitation VM et documentation. Le but de cette page n'est pas d'expliquer un framework interne, mais de montrer comment la plateforme s'organise du point de vue de l'utilisateur et de l'exploitation.
 
-![`TRINITY` website](../assets/images/generated/trinity-homepage.png)
+![Dashboard `TRINITY`](../assets/images/generated/trinity-homepage.png)
 
-*The public site carries the `TRINITY` promise and routes the user toward offers, account flows, support and operations.*
+*Le site public porte la promesse `TRINITY` et dirige l'utilisateur vers l'offre, le compte, le support et l'exploitation.*
 
-## Layer 1 - website, account and customer relationship
-The first layer is the most visible one:
+## Couche 1 - site, compte et relation client
+La première couche est la plus visible :
 
-- Public pages
-- Commercial offers
-- Contact and support pages
-- Account creation and sign-in
-- Orders, payments and invoices
-- Chat and assistance
+- Pages publiques
+- Offres commerciales
+- Pages contact et support
+- Creation de compte et authentification
+- Commandes, paiements et factures
+- Chat et assistance
 
-This layer turns `TRINITY` into a customer portal. It is the part that connects the commercial promise to actual service usage.
+Cette couche transforme `TRINITY` en portail client. C'est elle qui relie la promesse commerciale a l'usage reel.
 
-## Layer 2 - service surfaces
-Once the customer is identified, `TRINITY` gives access to service surfaces:
+## Couche 2 - surfaces de service
+Une fois le client identifie, `TRINITY` donne accès a des surfaces de service :
 
-- Order tracking
-- Invoice download
-- Payment status visibility
-- Billing information
-- Access to selected VM surfaces
-- Console session opening
+- Suivi de commande
+- Téléchargement de facture
+- État des paiements
+- Informations de facturation
+- Accès a certaines surfaces VM
+- Ouverture de flux console
 
-The platform therefore manages a lifecycle, not only website navigation.
+La plateforme doit donc gerer une logique de cycle de vie, pas seulement une logique de navigation.
 
-## Layer 3 - VMs, consoles and operations
-`TRINITY` does not stop at checkout. The site also exposes operations-oriented use cases:
+## Couche 3 - VM, consoles et exploitation
+`TRINITY` ne s'arrete pas a la vente. Le site expose aussi des usages d'exploitation :
 
-- Consulting a VM
-- Restarting or following status
-- Opening a console
-- Accessing a maintenance-oriented mode
+- Consultation d'une VM
+- Relance ou suivi d'état
+- Accès console
+- Lecture d'un mode de maintenance
 
-![VM console in Data Disk Mode](../assets/images/screens/trinity-console.png)
+![Console VM en Data Disk Mode](../assets/images/screens/trinity-console.png)
 
-*Generated capture of a `TRINITY` VM view in Data Disk Mode, focused on maintenance and recovery workflows.*
+*Capture générée d'une vue VM `TRINITY` en Data Disk Mode, orientée maintenance et recuperation.*
 
 ## Data Disk Mode
-**Data Disk Mode** is a special access mode used when a VM must be handled differently from a normal application runtime. Publicly, it can be described as a maintenance or recovery mode:
+Le **Data Disk Mode** est un mode d'accès specialement utile pour intervenir sur une VM sans la presenter comme un environnement applicatif normal. Publiquement, on peut l'expliquer comme un mode de maintenance ou de récupération :
 
-- The VM starts in a reduced context
-- The main objective becomes access to the disk and filesystem
-- The user can inspect state, diagnose issues or recover an environment
-- The mode is suitable for maintenance, analysis and recovery workflows
+- La VM demarre dans un contexte réduit
+- L'objectif principal devient l'accès au disque et au système de fichiers
+- L'utilisateur peut vérifier l'état, diagnostiquer ou récupérer un environnement
+- Ce mode est adapte aux operations de maintenance, d'analyse ou de reprise
 
-In other words, `TRINITY` does not only show whether a machine is online. It can also expose a dedicated work mode meant for safe intervention on data and system state.
+Autrement dit, `TRINITY` ne montre pas seulement une machine "allumee" : elle peut aussi exposer un mode de travail spécifique pour intervenir proprement sur les données et sur le systeme.
 
-## Alpine Linux and Xen in the architecture
-Two public concepts matter here:
+## Alpine Linux et Xen dans l'architecture
+Deux notions doivent être claires publiquement :
 
-- **Alpine Linux** is the lightweight operating system used because it is compact, readable and well suited to controlled technical environments.
-- **Xen** is the hypervisor layer used to run and isolate virtual machines.
+- **Alpine Linux** designe le système d'exploitation léger, utilise pour sa sobriete, sa lisibilite et son adequation aux environnements techniques compacts.
+- **Xen** designe la couche d'hyperviseur qui permet d'executer et d'isoler les machines virtuelles.
 
-Within `TRINITY`, this means a customer can order, follow and operate services that rely on Alpine Linux as a system base and Xen as the virtualization layer.
+Dans `TRINITY`, cela signifie qu'un client peut commander, suivre et exploiter des services qui reposent sur une base Alpine Linux et sur une orchestration d'environnements virtualises par Xen.
 
-## Companion surfaces
-`TRINITY` is connected to two companion services:
+## Surfaces complementaires
+`TRINITY` s'articule avec deux services connexes :
 
-- **`UnyDesk`** for remote access and operator assistance flows
-- **`UnyPort`** for supervision, control and infrastructure state visibility
+- **`UnyDesk`** pour l'accès distant et certaines operations de prise en main
+- **`UnyPort`** pour la supervision, le contrôle et la lecture d'état de l'infrastructure
 
-![`UnyPort` dashboard](../assets/images/generated/unyport-live-dashboard.png)
+![Dashboard `UnyPort`](../assets/images/generated/unyport-live-dashboard.png)
 
-*Generated capture of the `UnyPort` demo dashboard, showing host status, resources and supervision surfaces.*
+*Capture générée du dashboard `UnyPort` de demonstration, montrant la lecture d'état, les ressources hôtes et la supervision.*
 
-## Overall reading
-From a public perspective, `TRINITY` architecture can be read as:
+## Lecture d'ensemble
+Du point de vue public, l'architecture `TRINITY` peut donc se lire ainsi :
 
-1. A website that presents and sells
-2. A customer account that tracks and invoices
-3. A platform that connects payments, support and service access
-4. Alpine Linux environments virtualized with Xen
-5. Operational surfaces such as console access, Data Disk Mode, `UnyDesk` and `UnyPort`
+1. Un site qui presente et vend
+2. Un compte client qui suit et facture
+3. Une plateforme qui relie paiement, support et services
+4. Des environnements Alpine Linux virtualises avec Xen
+5. Des surfaces d'exploitation comme la console, le Data Disk Mode, `UnyDesk` et `UnyPort`

@@ -1,50 +1,50 @@
-# Services and support
-`TRINITY` exposes a coherent set of services through the public website. This section describes what a visitor or customer understands about the offer without going into internal implementation.
+# Services et support
+`TRINITY` expose un ensemble cohérent de services visibles depuis le site. Cette section décrit ce que le visiteur ou le client comprend publiquement de l'offre, sans détailler l'implémentation interne.
 
-## Visible offers
-The `TRINITY` website presents, among other things:
+## Offres visibles
+Le site `TRINITY` présente notamment :
 
-- Consulting and delivery engagements
-- Support offers
-- Training paths
-- VM-related environments or services
-- Companion tools and service surfaces
+- Des prestations d'accompagnement
+- Des offres de support
+- Des formations
+- Des environnements ou services associés aux VM
+- Des outils et surfaces complémentaires
 
-## TRINITY support scope
-`TRINITY` support explicitly covers:
+## Support TRINITY
+Le support `TRINITY` couvre explicitement :
 
 - Alpine Linux
 - Xen
 - **`UnyDesk`**
 - **`UnyPort`**
 
-This matters publicly because commercial and technical support are not limited to the original platform core. They also cover the control and remote-access surfaces used around it.
+Cette clarification est importante : le support commercial et le support technique ne sont pas limités au coeur historique de la plateforme. Ils couvrent aussi les surfaces de contrôle et d'accès distant utilisées autour d'elle.
 
-![`UnyPort` and operations](../assets/images/generated/unyport-live-dashboard.png)
+![`UnyPort` et pilotage](../assets/images/generated/unyport-live-dashboard.png)
 
-*Example of a `UnyPort` surface connected to the `TRINITY` ecosystem for control, supervision, and environment status overview.*
+*Exemple de surface `UnyPort` reliee a l'écosystème `TRINITY` pour le pilotage, la supervision et la lecture de l'état des environnements.*
 
-## Payments and invoicing
-Depending on the service, the site supports several payment flows:
+## Paiements et facturation
+Le site prend en charge plusieurs parcours de paiement selon le service :
 
-- Card payment
+- Carte bancaire
 - PayPal
-- Bank transfer
-- Litecoin crypto payment
+- Virement bancaire
+- Crypto Litecoin
 
-Customers can also review:
+Le client retrouve également :
 
-- Payment statuses
-- PDF invoices
-- Order references
-- Billing information
+- Ses statuts de paiement
+- Ses factures PDF
+- Ses références de commande
+- Ses informations de facturation
 
-## Documentation and autonomy
-`TRINITY` gives access to public documentation intended to:
+## Documentation et autonomie
+`TRINITY` donne accès à une documentation publique destinée à :
 
-- Explain the services
-- Identify the right entry point
-- Prepare a purchase or contact request
-- Make `UnyDesk` and `UnyPort` easier to understand
+- Comprendre les services
+- Identifier le bon point d'entrée
+- Préparer un achat ou une prise de contact
+- Mieux utiliser `UnyDesk` et `UnyPort`
 
-The purpose of this documentation is not to describe source code. It exists to make the platform clearer for end users.
+Le rôle de cette documentation n'est pas de décrire le code source. Elle sert à rendre la plateforme plus lisible pour l'utilisateur final.

@@ -1,8 +1,8 @@
-# Host Distribution
-The host runtime is the machine-side part of `UnyDesk`. It identifies the machine, registers or reconnects to the broker and participates in remote sessions.
+# Distribution des hosts
+Le runtime host est la partie machine d'`UnyDesk`. Il identifie la machine, s'enregistre ou se reconnecte au broker et participe aux sessions distantes.
 
-## Download targets
-The public distribution surface can provide host packages for:
+## Cibles de téléchargement
+La surface de distribution publique peut fournir des packages host pour :
 
 - Linux amd64
 - Linux arm64
@@ -10,29 +10,29 @@ The public distribution surface can provide host packages for:
 - Windows arm64
 - MacOS amd64
 - MacOS arm64
-- Release checksums
+- Les checksums de release
 
-The file selected by the user must match the operating system and CPU architecture of the machine that will become the host.
+Le fichier choisi par l'utilisateur doit correspondre au système d'exploitation et à l'architecture CPU de la machine qui deviendra le host.
 
-## Package role
-The host package is responsible for:
+## Rôle du package
+Le package host sert à :
 
-- Generating or keeping a stable install identity
-- Sending host metadata such as hostname, OS, architecture and version
-- Authenticating with a provisioning credential when required
-- Keeping heartbeat state visible to the broker
-- Receiving session dispatch messages
-- Participating in signaling and fallback delivery
+- Générer ou conserver une identité stable d'installation
+- Envoyer les métadonnées host comme hostname, OS, architecture et version
+- S'authentifier avec une credential de provisioning lorsque nécessaire
+- Maintenir l'état heartbeat visible par le broker
+- Recevoir les messages de dispatch session
+- Participer à la signalisation et à la livraison de secours
 
-## Verification
-When checksums are published, users should compare the downloaded host package against the checksum list before running it. This is especially important when the package is moved manually between machines.
+## Vérification
+Lorsque des checksums sont publiés, l'utilisateur doit comparer le package téléchargé à la liste de checksums avant de l'exécuter. C'est particulièrement important quand le package est déplacé manuellement entre machines.
 
-## Windows double-click behavior
-The Windows host can be prepared so that a user can start it without command-line flags. The server URL can come from:
+## Comportement Windows en double-clic
+Le host Windows peut être préparé pour démarrer sans argument en ligne de commande. L'URL serveur peut venir :
 
-- An explicit launch argument
-- An environment variable
-- A sidecar configuration file next to the executable
-- An embedded default value
+- D'un argument explicite au lancement
+- D'une variable d'environnement
+- D'un fichier de configuration placé à côté de l'exécutable
+- D'une valeur par défaut embarquée
 
-This makes assisted use easier while keeping the server selection explicit.
+Cela facilite l'assistance tout en gardant le choix du serveur explicite.

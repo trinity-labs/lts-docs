@@ -1,8 +1,8 @@
-# Session Broker
-The broker is the coordination layer of `UnyDesk`. It does not replace the host or the viewer. It creates the shared session context and carries the information required for both sides to meet.
+# Broker de sessions
+Le broker est la couche de coordination d'`UnyDesk`. Il ne remplace ni le host ni le viewer. Il crée le contexte de session commun et transporte les informations nécessaires pour que les deux côtés se rejoignent.
 
-## Session lifecycle
-The public lifecycle is:
+## Cycle de vie session
+Le cycle public est :
 
 ```text
 pending
@@ -11,29 +11,29 @@ pending
   -> closed
 ```
 
-The exact timing depends on host availability, viewer authentication, host acknowledgement and transport negotiation.
+Le timing exact dépend de la disponibilité du host, de l'authentification viewer, de l'accusé host et de la négociation transport.
 
-## What the broker tracks
-The broker can expose:
+## Ce que suit le broker
+Le broker peut exposer :
 
-- Session ID
-- Target host or public ID
-- Viewer identity and label
-- Routed host identity
-- WebRTC offer and answer state
-- Viewer and host ICE candidates
-- Dispatch state and count
-- Last dispatch and last host acknowledgement timestamps
-- Fallback screen revision and update timestamp
+- L'identifiant de session
+- Le host cible ou public ID
+- L'identité et le libellé du viewer
+- L'identité du host routé
+- L'état offer / answer WebRTC
+- Les candidats ICE viewer et host
+- L'état et le nombre de dispatch
+- Les horodatages du dernier dispatch et du dernier accusé host
+- La révision écran de secours et son horodatage
 
-These fields are useful because they separate a routing problem from a media problem.
+Ces champs sont utiles car ils séparent un problème de routage d'un problème média.
 
-## Signaling path
-When realtime transport is available, the browser and host exchange offer, answer and ICE candidates through the broker. After negotiation, the best path can become direct.
+## Chemin de signalisation
+Quand le transport temps réel est disponible, le navigateur et le host échangent offer, answer et candidats ICE via le broker. Après négociation, le meilleur chemin peut devenir direct.
 
-When direct transport is incomplete, `UnyDesk` still keeps the session state visible and can rely on fallback screen delivery instead of failing silently.
+Quand le transport direct est incomplet, `UnyDesk` garde l'état de session visible et peut s'appuyer sur une livraison écran de secours au lieu d'échouer silencieusement.
 
-## Standalone session mode
-Standalone mode is useful for a narrow invitation. The session carries a specific token and does not require the invited user to traverse the full account surface.
+## Mode session autonome
+Le mode autonome sert aux invitations limitées. La session porte un token spécifique et ne force pas l'invité à passer par toute la surface compte.
 
-This mode should be treated as scoped access: the token is tied to the session context and should not be reused as a general account credential.
+Ce mode doit être traité comme un accès borné : le token est lié au contexte de session et ne doit pas devenir une credential générale de compte.

@@ -1,65 +1,65 @@
 # Evolution
-This page synthesizes how `UnyPort` evolved functionally across the visible repository history and the current codebase.
+Cette page synthetise la maniere dont `UnyPort` a evolue fonctionnellement a travers l'historique visible du depot et le code actuel.
 
-## Monitoring-first direction
-From the start, `UnyPort` evolved as a monitoring-first control plane:
+## Direction monitoring-first
+Des le depart, `UnyPort` evolue comme un control plane orienté monitoring :
 
-- Live system state before orchestration
-- Host role awareness before abstraction
-- One operational portal before multiple dashboards
+- État système live avant l'orchestration
+- Lecture des rôles d'hôte avant l'abstraction
+- Un portail opérateur unique avant plusieurs dashboards
 
-That direction is explicit in the README and still reflected in the current routes and UI pages.
+Cette direction est explicite dans le README et reste visible dans les routes comme dans l'UI.
 
-## Better operator ergonomics
-Recent work made the product more usable as a daily surface:
+## Meilleure ergonomie opérateur
+Les travaux recents ont rendu le produit plus praticable au quotidien :
 
-- Hamburger and mobile navigation
-- Clearer page separation
-- Restart heatmap
-- Refined network map
-- Visible version reporting
+- Navigation mobile et hamburger
+- Separation plus nette des pages
+- Heatmap de redemarrage
+- Carte réseau refinee
+- Remontee visible des versions
 
-These are not cosmetic only. They change how quickly an operator can read a host.
+Ce ne sont pas de simples retouches cosmetiques. Cela change la vitesse de lecture d'un hôte par un operateur.
 
-## Stronger platform awareness
-The current code shows a more mature infrastructure reading than the earliest overview pages suggested:
+## Lecture plateforme plus mature
+Le code actuel montre une lecture d'infrastructure plus mature que ne le laissaient penser les premières pages overview :
 
-- Dom0 versus DomU differentiation
-- Xen domain and hypervisor inspection
-- Alpine LBU awareness
-- OpenRC service reading without shelling out to heavy tools
-- Security checks tied to the actual host
+- Distinction Dom0 versus DomU
+- Inspection hyperviseur et domaines Xen
+- Lecture Alpine LBU
+- Lecture OpenRC sans dependre d'outils lourds externes
+- Contrôles de sécurité relies a l'hôte reel
 
-This makes `UnyPort` feel like a platform-native observer rather than a generic web admin shell.
+`UnyPort` ressemble ainsi davantage a un observateur natif de plateforme qu'a un shell d'administration web generique.
 
-## Better operational packaging
-The repository also evolved in how it is delivered:
+## Packaging operationnel plus solide
+Le depot a aussi evolue dans sa facon d'être livre :
 
-- Development mode with live assets
-- Production build with embedded assets
-- Stripped binaries
-- UPX compression
-- Optional HTTPS and HTTP/3
+- Mode developpement avec assets live
+- Build production avec assets embarques
+- Binaires strips
+- Compression UPX
+- HTTPS et HTTP/3 en option
 
-That packaging evolution supports the single-binary and low-overhead promise.
+Cette evolution packaging soutient directement la promesse single binary et low overhead.
 
-## Identity and instance maturity
-The current product surface now includes:
+## Maturite de l'identité et de l'instance
+La surface produit actuelle inclut maintenant :
 
-- Local user administration
-- OAuth provider support
-- Profile and SSH key storage
-- Public branding retrieval
-- Admin branding customization
+- Administration des utilisateurs locaux
+- Support des fournisseurs OAuth
+- Stockage du profil et de la clé SSH
+- Récupération publique du branding
+- Personnalisation admin du branding
 
-This turns `UnyPort` from a local dashboard into a real multi-user operator surface.
+Cela transforme `UnyPort` d'un dashboard local en vraie surface opérateur multi-utilisateurs.
 
-## Current limit and next step
-As of `2026-07-17`, the public product should still be understood as `V1`:
+## Limite actuelle et etape suivante
+Au `2026-07-17`, le produit public doit encore être compris comme une `V1` :
 
-- Strong on monitoring
-- Strong on host context
-- Useful for controlled proxy entry
-- Not yet a full Xen lifecycle orchestrator
+- Fort sur le monitoring
+- Fort sur le contexte hôte
+- Utile pour l'entrée proxy contrôlée
+- Pas encore un orchestrateur complet du cycle de vie Xen
 
-The README explicitly frames a future `V2` around broader native orchestration workflows. The current documentation should therefore present `UnyPort` as a serious operational portal with a deliberately bounded scope.
+Le README annonce explicitement une future `V2` autour de workflows d'orchestration plus larges. La documentation actuelle doit donc presenter `UnyPort` comme un portail d'exploitation serieux, mais a perimetre volontairement borne.

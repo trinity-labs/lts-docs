@@ -1,42 +1,42 @@
 # Support and operations
-`UnyDesk` support is operational by nature. The user problem is often not "the page is unavailable" but "the host is online, the session exists and the media path still does not become usable". Public support guidance therefore needs to focus on states, evidence and transport behavior.
+Le support `UnyDesk` est de nature opérationnelle. Le problème utilisateur n'est souvent pas "la page est indisponible" mais "le host est en ligne, la session existe et le chemin média ne devient toujours pas exploitable". L'aide publique doit donc se concentrer sur les états, les preuves et le comportement de transport.
 
-## Support scope
-Publicly, `UnyDesk` support can concern:
+## Périmètre du support
+Publiquement, le support `UnyDesk` peut concerner :
 
-- Host package download or bootstrap confusion
-- Claim, pairing or trust issues
-- Session routing to the wrong host or to no host
-- Local approval not appearing or not being understood
-- WebRTC signaling blocked before the answer
-- Direct media established but no decoded frame appears
-- Fallback screen delivery not appearing
-- Clipboard or file transfer issues
+- Une confusion sur le téléchargement du paquet host ou le bootstrap
+- Des problèmes de claim, de pairage ou de confiance
+- Une session routée vers le mauvais host ou vers aucun host
+- Une approbation locale qui n'apparaît pas ou qui est mal comprise
+- Une signalisation WebRTC bloquée avant l'answer
+- Un média direct établi mais sans image décodée
+- Un fallback écran qui n'apparaît pas
+- Des problèmes de presse-papiers ou de transfert de fichiers
 
-## Useful evidence
+## Preuves utiles
 ```markdown
-Subject: UnyDesk session accepted but no video
+Objet : session UnyDesk acceptée mais pas de vidéo
 
-Session ID: 188529734844f375
-Target host: DESKTOP-RET6DCA
-Observed state: offered -> accepted, no visible video
-Viewer transport note: no remote answer yet / no inbound RTP / fallback missing
-Expected result: live screen or peer-frame fallback
+Session ID : 188529734844f375
+Host cible : DESKTOP-RET6DCA
+Etat observé : offered -> accepted, pas de vidéo visible
+Note transport viewer : no remote answer yet / no inbound RTP / fallback manquant
+Résultat attendu : écran en direct ou fallback peer-frame
 ```
 
-## Read the session in stages
-Publicly, a remote session usually fails in one of these stages:
+## Lire la session par étapes
+Publiquement, une session distante échoue généralement dans l'une de ces étapes :
 
-1. Host package not installed or host offline
-2. Host present but not paired or not trusted
-3. Session created but not routed
-4. Session routed but waiting for local approval
-5. Host accepted but no answer posted
-6. Answer posted but ICE remains unusable
-7. Realtime video negotiated but no decoded frame arrives
-8. Fallback expected but no peer frame appears
+1. Paquet host absent ou host hors ligne
+2. Host présent mais non pairé ou non approuvé
+3. Session créée mais non routée
+4. Session routée mais en attente d'approbation locale
+5. Host accepté mais pas d'answer publiée
+6. Answer publiée mais chemin ICE inutilisable
+7. Vidéo temps réel négociée mais aucune image décodée
+8. Fallback attendu mais aucun peer frame n'apparaît
 
-## Typical useful symptoms
+## Symptômes utiles typiques
 - "Host offline"
 - "Session pending"
 - "Dispatch accepted but no answer"
@@ -45,17 +45,17 @@ Publicly, a remote session usually fails in one of these stages:
 - "Realtime track timed out"
 - "Peer frame fallback requested but no image arrived"
 
-## Before escalating
-Verify:
+## Avant d'escalader
+Vérifier :
 
-- The correct host package version is running
-- The host is still online
-- The session route points to the expected host
-- Local approval has been accepted if required
-- The browser viewer stayed on the same session page
-- The issue is understood as signaling, direct media or fallback image delivery
+- Que la bonne version du paquet host tourne
+- Que le host est toujours en ligne
+- Que la route de session pointe vers le host attendu
+- Que l'approbation locale a été acceptée si elle est requise
+- Que le navigateur viewer est resté sur la même page de session
+- Que le problème est bien compris comme souci de signalisation, de média direct ou de fallback image
 
-## Related surfaces
-- Use **`TRINITY`** when the issue is account, billing, orders or service ownership
-- Use **`UnyPort`** when the issue is broader infrastructure visibility
-- Stay in **`UnyDesk`** when the issue is interactive remote access itself
+## Surfaces liées
+- Utiliser **`TRINITY`** si le problème concerne le compte, la facturation, les commandes ou la propriété du service
+- Utiliser **`UnyPort`** si le problème concerne une visibilité plus large sur l'infrastructure
+- Rester dans **`UnyDesk`** si le problème concerne l'accès distant interactif lui-même

@@ -1,78 +1,78 @@
-# Account and orders
-`TRINITY` is not only a storefront. It is also the place where the customer account and the order lifecycle remain visible.
+# Compte et commandes
+`TRINITY` n'est pas seulement une vitrine. C'est aussi l'endroit ou le compte client et le cycle de vie de la commande restent visibles.
 
-## Account scope
-The customer account is used to:
+## Rôle du compte
+Le compte client sert a :
 
-- Authenticate
-- Store billing information
-- Review active and past orders
-- Reopen payment-related actions
-- Download invoices
-- Identify the right service surface after purchase
+- S'authentifier
+- Stocker les informations de facturation
+- Consulter les commandes actives et passees
+- Relancer certaines actions de paiement
+- Telecharger les factures
+- Retrouver la bonne surface de service apres achat
 
 ```json
 {
-  "account": {
-    "email": "customer@example.com",
-    "billing_profile": "company",
-    "orders_visible": true,
-    "invoice_download": true
+  "compte": {
+    "email": "client@example.com",
+    "profil_facturation": "entreprise",
+    "commandes_visibles": true,
+    "telechargement_facture": true
   }
 }
 ```
 
-## Typical order stages
-An order can pass through several stages:
+## Etapes typiques d'une commande
+Une commande peut passer par plusieurs états :
 
-- Draft
-- Submitted
-- Pending payment
-- Paid
-- Processing
-- Delivered or available
-- Cancelled or expired
+- Brouillon
+- Soumise
+- Paiement en attente
+- Payee
+- En preparation
+- Disponible ou livree
+- Annulee ou expiree
 
 ```text
-draft -> submitted -> pending_payment -> paid -> processing -> available
-                              \-> refused -> retry
+brouillon -> soumise -> paiement_en_attente -> payee -> preparation -> disponible
+                                 \-> refusee -> reprise
 ```
 
-## What the user should read in an order
-An order page should be readable even without platform internals. The user mostly needs:
+## Ce que le client doit lire dans une commande
+La page commande doit rester lisible sans details internes. Le client a surtout besoin de :
 
-- The reference number
-- The current status
-- The selected service
-- The chosen billing profile
-- The payment state
-- The invoice link when available
+- La reference
+- L'état courant
+- Le service choisi
+- Le profil de facturation
+- L'état du paiement
+- Le lien facture si disponible
 
 ```yaml
-order_summary:
+resume_commande:
   reference: "TRI-2026-00421"
-  service: "support session"
-  status: "paid"
-  payment_status: "confirmed"
-  invoice_pdf: true
+  service: "session de support"
+  statut: "payee"
+  statut_paiement: "confirme"
+  facture_pdf: true
 ```
 
-## Good operational habits
-Before opening a support case, keep a small record of:
+## Bonne habitude avant d'ouvrir un ticket
+Gardez une trace très simple de :
 
-- The order reference
-- The date of purchase
-- The payment method
-- The expected service outcome
-- The exact point where the flow stopped
+- La reference de commande
+- La date d'achat
+- Le moyen de paiement
+- Le resultat attendu
+- L'etape exacte ou le flux s'est arrete
 
 ```markdown
-Order reference: TRI-2026-00421
-Expected result: VM access and console visibility
-Current issue: payment accepted, service not yet visible
+Reference commande : TRI-2026-00421
+Resultat attendu : acces VM et visibilite console
+Probleme actuel : paiement accepte, service pas encore visible
 ```
 
-## Related pages
-- `Payments and invoices`
-- `Support and operations`
-- `Customer journeys`
+## Pages associees
+- `Paiements et factures`
+- `Support et exploitation`
+- `Parcours client`

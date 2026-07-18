@@ -8,7 +8,7 @@ site_url: https://docs.trinity-net.com
 # -------------------------------------------------------------------
 
 # We use the root directory as docs_dir
-# Language selection is handled by suffix (.md / .fr.md)
+# Language selection is handled by suffix (.md / .en.md / .de.md)
 docs_dir: docs
 
 # -------------------------------------------------------------------
@@ -31,7 +31,7 @@ extra_javascript:
 plugins:
   - search
   - i18n:
-      default_language: en
+      default_language: fr
       languages:
         fr: Français
         en: English
@@ -134,10 +134,10 @@ theme:
 extra:
   alternate:
     - name: Français
-      link: /index.fr/
+      link: /
       lang: fr
     - name: English
-      link: /
+      link: /index.en/
       lang: en
     - name: Deutsch
       link: /index.de/
@@ -145,7 +145,7 @@ extra:
 
 # -------------------------------------------------------------------
 # Navigation (OFFICIAL STRUCTURE)
-# EN files are the reference
+# FR files are the reference
 # -------------------------------------------------------------------
 
 nav:

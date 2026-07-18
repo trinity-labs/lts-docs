@@ -1,33 +1,33 @@
-# UnyDesk Glossary
+# Glossaire UnyDesk
 ## Host
-The machine-side runtime that registers with the service, stays online and can accept or deny a remote session.
+Le runtime côté machine qui s'enregistre auprès du service, reste en ligne et peut accepter ou refuser une session distante.
 
 ## Viewer
-The browser-side participant that opens, watches and controls the remote session.
+Le participant côté navigateur qui ouvre, observe et contrôle la session distante.
 
 ## Session
-The live relationship between a viewer and a host, including routing, signaling, transport and closure.
+La relation active entre un viewer et un host, y compris le routage, la signalisation, le transport et la fermeture.
 
 ## Broker
-The service layer that carries signaling, routing, presence and status between viewer and host.
+La couche de service qui transporte la signalisation, le routage, la présence et l'état entre le viewer et le host.
 
 ## Claim
-A trust or ownership step that associates a host with an account or expected context.
+Une étape de confiance ou de propriété qui associe un host à un compte ou à un contexte attendu.
 
 ## Pairing
-The practical linking of a host to a trusted user, account or environment so it can later be reused without ambiguity.
+La liaison pratique d'un host à un utilisateur, un compte ou un environnement de confiance afin de pouvoir le réutiliser sans ambiguïté plus tard.
 
 ## Standalone access
-A direct session access mode using a session-specific token instead of the full account surface.
+Un mode d'accès direct à la session utilisant un jeton spécifique à la session au lieu de toute la surface compte.
 
 ## Offer and answer
-The WebRTC signaling pair exchanged between viewer and host before direct realtime transport can begin.
+Le couple de signalisation WebRTC échangé entre le viewer et le host avant que le transport temps réel direct puisse commencer.
 
 ## ICE candidate
-A network path candidate exchanged during WebRTC setup to discover a viable direct path between viewer and host.
+Un candidat de chemin réseau échangé pendant la mise en place WebRTC pour découvrir un chemin direct viable entre le viewer et le host.
 
 ## Peer-frame fallback
-A fallback screen delivery mode used when direct realtime video is not yet usable or does not produce visible frames.
+Un mode de secours de livraison d'écran utilisé lorsque la vidéo temps réel directe n'est pas encore exploitable ou ne produit pas d'image visible.
 
 ## Local approval
-A host-side acceptance step that can require a person at the machine to allow or deny remote access.
+Une étape d'acceptation côté host qui peut demander à une personne sur la machine d'autoriser ou de refuser l'accès distant.

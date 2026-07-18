@@ -1,38 +1,38 @@
-# TRINITY Presentation
-`TRINITY` is the main public entry point of the `TRINITY` Edge Networks ecosystem. The website concentrates customer access, service presentation, account flows, orders, invoicing, support and access to associated operational services. The public goal is not to expose a software stack, but to provide a clear journey between discovery, purchase, operations and assistance.
+# Presentation de TRINITY
+`TRINITY` est la porte d'entrée principale de l'écosystème `TRINITY` Edge Networks. Le site concentre la relation client, la présentation des offres, le compte utilisateur, les commandes, la facturation, le support et l'accès aux services opérationnels associés. L'objectif public n'est pas de montrer une pile logicielle, mais d'offrir un parcours clair entre découverte, achat, exploitation et assistance.
 
-## Visual overview
+## Apercu visuel
 ![`TRINITY` dashboard](../assets/images/screens/trinity-vm.png)
 
-*Example of a `TRINITY` surface with a dashboard-oriented overview and the main operational indicators.*
+*Exemple de surface `TRINITY` avec une vue d'ensemble du tableau de bord et des indicateurs principaux.*
 
-## What users find on the site
-From `TRINITY`, a visitor or customer can:
+## Ce que l'utilisateur trouve sur le site
+Depuis `TRINITY`, un visiteur ou un client peut :
 
-- Browse commercial offers
-- Create an account or sign in
-- Order a service, training session or custom engagement
-- Follow payments and download invoices
-- Review orders and their current status
-- Access console flows or environment-related actions
-- Use support and the assistance chat
+- Consulter les offres commerciales
+- Créer un compte ou se connecter
+- Commander un service, une formation ou une prestation
+- Suivre ses paiements et télécharger ses factures
+- Consulter ses commandes et leur état
+- Accéder aux flux console ou aux actions liées à ses environnements
+- Utiliser le support et le chat d'assistance
 
-## TRINITY within the ecosystem
-`TRINITY` is not isolated. The website works with two companion surfaces:
+## Place de TRINITY dans l'écosystème
+`TRINITY` n'est pas seule. Le site s'articule avec deux surfaces complémentaires :
 
-- **`UnyDesk`** for remote access and remote assistance flows
-- **`UnyPort`** for control, supervision and service operations
+- **`UnyDesk`** pour l'accès distant et les usages de prise en main
+- **`UnyPort`** pour les surfaces de contrôle, de supervision et de pilotage
 
-`TRINITY` remains the main coordination surface because it carries most commercial and customer-facing journeys.
+`TRINITY` reste néanmoins la surface de coordination principale, car c'est elle qui porte la majorité des parcours commerciaux et client.
 
-## Public positioning
-Publicly, `TRINITY` is positioned as a service platform around:
+## Positionnement public
+Le positionnement public de `TRINITY` est celui d'une plateforme de services :
 
 - Alpine Linux
 - Xen
-- VMs and related environments
-- Technical support and operations
-- Training and guidance
-- Companion tools such as `UnyDesk` and `UnyPort`
+- VM et environnements associés
+- Support technique et exploitation
+- Formations et accompagnement
+- Outils complémentaires `UnyDesk` et `UnyPort`
 
-The site should therefore be understood as an operations and customer portal, not as a simple brochure site.
+Le site doit donc être lu comme un portail d'exploitation et de relation client, pas comme une simple vitrine.

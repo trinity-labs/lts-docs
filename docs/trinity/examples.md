@@ -1,7 +1,7 @@
-# Examples
-This page groups practical examples for common `TRINITY` situations.
+# Exemples
+Cette page regroupe des exemples pratiques pour des situations courantes dans `TRINITY`.
 
-## Example 1 - check a newly delivered VM
+## Exemple 1 - vérifier une VM nouvellement livree
 ```bash
 hostname
 uptime
@@ -9,53 +9,53 @@ ip addr
 df -h
 ```
 
-Expected reading:
+Lecture attendue :
 
-- The machine answers
-- The uptime is coherent
-- The network is visible
-- The main filesystem is mounted
+- La machine repond
+- L'uptime est cohérent
+- Le réseau est visible
+- Le système principal est monte
 
-## Example 2 - identify a DDM context
+## Exemple 2 - identifier un contexte DDM
 ```bash
 lsblk
 findmnt
 cat /etc/os-release
 ```
 
-Expected reading:
+Lecture attendue :
 
-- Visible storage devices
-- Mounted filesystems
-- A lightweight Alpine userland
+- Les disques sont visibles
+- Les montages actifs sont lisibles
+- Un userland Alpine léger est present
 
-## Example 3 - prepare a payment support message
+## Exemple 3 - preparer un message support paiement
 ```markdown
-Order reference: TRI-2026-00421
-Payment provider: bank transfer
-Observed status: pending for longer than expected
-Invoice visible: no
-Requested action: confirm whether settlement is still waiting
+Reference commande : TRI-2026-00421
+Fournisseur paiement : virement bancaire
+Statut observe : en attente plus longtemps que prevu
+Facture visible : non
+Action demandee : confirmer si le reglement est encore en attente
 ```
 
-## Example 4 - summarize a VM issue for support
+## Exemple 4 - resumer un incident VM pour le support
 ```json
 {
   "vm": "vm-trinity01",
   "mode": "data_disk_mode",
-  "state": "online",
-  "issue": "service not yet returned to normal runtime",
-  "evidence": [
+  "etat": "online",
+  "probleme": "service pas encore revenu en mode normal",
+  "indices": [
     "hostname ok",
-    "filesystem mounted",
-    "application not started"
+    "systeme de fichiers monte",
+    "application non demarree"
   ]
 }
 ```
 
-## Example 5 - customer-side reading of the platform
+## Exemple 5 - lecture client de l'écosystème
 ```text
-TRINITY  -> account, orders, invoices, documentation
-UnyDesk  -> remote access and assistance
-UnyPort  -> status, host data, service supervision
+TRINITY  -> compte, commandes, factures, documentation
+UnyDesk  -> acces distant et assistance
+UnyPort  -> etat, donnees hotes, supervision service
 ```

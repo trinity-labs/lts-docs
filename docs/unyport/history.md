@@ -1,59 +1,59 @@
-# History
-This page summarizes the visible project history of `UnyPort` from the repository and release files available in `docker_unyport`.
+# Historique
+Cette page resume l'historique visible du projet `UnyPort` a partir du depot et des fichiers de release presents dans `docker_unyport`.
 
-## May 3, 2026 - initial dashboard and network foundation
-The first commits on `2026-05-03` established the early product baseline:
+## 3 mai 2026 - base dashboard et réseau
+Les premiers commits du `2026-05-03` etablissent la base initiale du produit :
 
-- Initial dashboard work
-- Upgraded presentation
-- First network chart and data additions
+- Premier travail de dashboard
+- Presentation amelioree
+- Premiers ajouts de graphe réseau et de données réseau
 
-These commits mark the shift from idea to working monitoring surface.
+Ces commits marquent le passage d'une idee a une vraie surface de monitoring.
 
-## May 4, 2026 - SSE refactoring
-On `2026-05-04`, the project history shows an SSE refactor. This matters because the current product experience still depends heavily on live snapshot delivery rather than periodic manual refreshes.
+## 4 mai 2026 - refactor SSE
+Le `2026-05-04`, l'historique montre un refactor SSE. Ce point compte parce que l'experience produit actuelle depend encore fortement d'une diffusion live des snapshots plutot que d'un simple refresh manuel.
 
-## May 9, 2026 - repository framing and README
-Commits on `2026-05-09` added:
+## 9 mai 2026 - cadrage depot et README
+Les commits du `2026-05-09` ajoutent :
 
-- Repository mirroring context
-- Public README work
-- Image-hosting corrections
+- Le contexte de mirroring du depot
+- Le travail sur le README public
+- Des corrections d'hebergement d'images
 
-This is the point where `UnyPort` becomes easier to present as a public project rather than only a local experiment.
+C'est le moment ou `UnyPort` devient plus facile a presenter comme projet public et pas seulement comme experience locale.
 
-## May 30, 2026 - packaging refactor
-The `2026-05-30` refactor is one of the most meaningful packaging steps in the visible history:
+## 30 mai 2026 - refactor packaging
+Le refactor du `2026-05-30` est l'une des etapes packaging les plus significatives dans l'historique visible :
 
-- UPX compression for a smaller package
-- Broader runtime cleanup
-- Stronger compact-binary positioning
+- Compression UPX pour un paquet plus petit
+- Nettoyage runtime plus large
+- Positionnement plus fort sur le binaire compact
 
-This aligns with the single-binary promise repeated in the README.
+Cela aligne directement le produit avec la promesse single binary repetee dans le README.
 
-## June 6, 2026 - UI and restart-history expansion
-Several commits on `2026-06-06` added:
+## 6 juin 2026 - UI et historique de redemarrage
+Plusieurs commits du `2026-06-06` ajoutent :
 
-- A hamburger menu
-- A git-style reboot map
-- A network-map refactor
+- Un menu hamburger
+- Une carte de reboot style git
+- Un refactor de la carte réseau
 
-These changes clearly move `UnyPort` toward a more complete operator UI rather than a raw metrics panel.
+Ces changements poussent clairement `UnyPort` vers une UI opérateur plus complete qu'un simple panneau de metriques.
 
-## June 7, 2026 - public release v0.1.0
-On `2026-06-07`, the repository history shows:
+## 7 juin 2026 - release publique v0.1.0
+Le `2026-06-07`, l'historique du depot montre :
 
-- Release preparation
-- Release-note polish
-- Tag `v0.1.0`
-- App versioning work
+- La preparation de release
+- La finition des release notes
+- Le tag `v0.1.0`
+- Le travail de versioning applicatif
 
-The bundled `CHANGELOG.md` and `RELEASE-v0.1.0.md` both confirm that `v0.1.0` is the first public release.
+Le `CHANGELOG.md` et le `RELEASE-v0.1.0.md` confirment tous deux que `v0.1.0` est la première release publique.
 
-## June 18 to July 10, 2026 - documentation refinement
-Later commits focused on documentation updates:
+## Du 18 juin au 10 juillet 2026 - affinage documentaire
+Les commits plus tardifs se concentrent sur la documentation :
 
-- `2026-06-18`: Demo URL and Docker bind documentation fixes
-- `2026-07-10`: History update
+- `2026-06-18` : Correction de l'URL de demo et de la documentation du bind Docker
+- `2026-07-10` : Mise a jour de l'historique
 
-By July 10, 2026, the visible repository story is therefore a monitoring-first control portal that already has a public release, compact packaging work and a clearer documentation posture.
+Au 10 juillet 2026, l'histoire visible du depot est donc celle d'un portail de contrôle monitoring-first disposant déjà d'une release publique, d'un travail packaging compact et d'une posture documentaire plus claire.

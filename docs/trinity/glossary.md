@@ -1,31 +1,31 @@
-# Glossary
-This glossary gives a compact reading of the most important `TRINITY` terms.
+# Glossaire
+Ce glossaire donne une lecture compacte des termes les plus importants de `TRINITY`.
 
-## Core terms
-- `TRINITY`: The public portal and customer lifecycle surface
-- `customer account`: The place where billing identity, orders and invoices stay visible
-- `order`: The customer-facing record of a requested service
-- `invoice`: The billing document linked to an order
-- `payment status`: The visible settlement state of an order
+## Termes coeur
+- `TRINITY` : Portail public et surface de cycle de vie client
+- `compte client` : Endroit ou restent visibles identité de facturation, commandes et factures
+- `commande` : Enregistrement visible côté client d'un service demande
+- `facture` : Document de facturation lie a une commande
+- `etat de paiement` : État visible du reglement
 
-## VM terms
-- `VM`: Virtual machine exposed through the platform when the service allows it
-- `console`: Direct text-oriented access to a VM
-- `online`: The machine is reachable in its current mode
-- `maintenance`: The machine is reachable for technical intervention
-- `recovery`: The machine is primarily exposed for inspection or restoration
+## Termes VM
+- `VM` : Machine virtuelle exposee via la plateforme lorsque le service l'autorise
+- `console` : Accès texte direct a une VM
+- `online` : La machine repond dans son mode courant
+- `maintenance` : La machine est accessible pour intervention technique
+- `recovery` : La machine est exposee surtout pour inspection ou restauration
 
-## Platform terms
-- `Alpine Linux`: The lightweight operating system used in many service environments
-- `Xen`: The hypervisor layer used for virtualization
-- `DDM`: Data Disk Mode, a storage and recovery oriented mode
-- `UnyDesk`: Remote-access and assistance surface
-- `UnyPort`: Monitoring and operational control surface
+## Termes plateforme
+- `Alpine Linux` : Système d'exploitation léger utilise dans de nombreux environnements
+- `Xen` : Couche hyperviseur de virtualisation
+- `DDM` : Data Disk Mode, mode orienté stockage et récupération
+- `UnyDesk` : Surface d'accès distant et d'assistance
+- `UnyPort` : Surface de supervision et de pilotage
 
-## Operational reading
+## Lecture operationnelle
 ```text
-TRINITY = customer lifecycle
-Alpine Linux = guest operating system
-Xen = virtualization layer
-DDM = maintenance and recovery mode
+TRINITY = cycle de vie client
+Alpine Linux = systeme invite
+Xen = couche de virtualisation
+DDM = mode de maintenance et de reprise
 ```

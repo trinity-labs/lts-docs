@@ -1,54 +1,54 @@
 # Bootstrap and access
-`UnyDesk` has to solve two public problems before any remote session can start:
+`UnyDesk` doit résoudre deux problèmes publics avant qu'une session distante puisse commencer :
 
-- How the host software is installed and trusted
-- How a viewer is allowed to reach that host
+- Comment le logiciel host est installé et mis en confiance
+- Comment un viewer est autorisé à atteindre ce host
 
-## Host package distribution
-The first public step is usually the host package download. A user selects the appropriate host binary for the target system and installs or launches it on the machine that will later receive remote access.
+## Distribution du paquet host
+La première étape publique est généralement le téléchargement du paquet host. Un utilisateur choisit le bon binaire host pour le système cible puis l'installe ou le lance sur la machine qui recevra plus tard l'accès distant.
 
-Publicly, the distribution path should stay simple:
+Publiquement, le chemin de distribution doit rester simple :
 
-- Supported target clearly visible
-- Current package easy to identify
-- Bootstrap or install path obvious
-- Update or re-download path stable
+- Cible supportée clairement visible
+- Paquet courant facile à identifier
+- Chemin d'installation ou de bootstrap évident
+- Chemin de mise à jour ou de re-téléchargement stable
 
-## Registration, claim and pairing
-After first start, the host is not yet a meaningful remote access endpoint. It has to register and expose an identity.
+## Enregistrement, claim et pairage
+Après le premier démarrage, le host n'est pas encore un point d'accès distant réellement exploitable. Il doit s'enregistrer et exposer une identité.
 
-Depending on the scenario, `UnyDesk` can involve:
+Selon le scénario, `UnyDesk` peut impliquer :
 
-- First registration of the host runtime
-- Claim or pairing to an account
-- Association to a trusted environment
-- Reuse of a known host identity after reconnect
+- Le premier enregistrement du runtime host
+- Un claim ou un pairage vers un compte
+- Une association à un environnement de confiance
+- La réutilisation d'une identité host connue après reconnexion
 
-The viewer should be able to understand whether a host is merely online, already paired or still waiting for a trust step.
+Le viewer doit pouvoir comprendre si un host est seulement en ligne, déjà pairé ou encore en attente d'une étape de confiance.
 
-## Local approval
-Some hosts can enforce local approval before a remote session begins. Publicly, this means:
+## Approbation locale
+Certains hosts peuvent imposer une approbation locale avant qu'une session distante ne commence. Publiquement, cela signifie :
 
-- A session may be routed correctly and still wait for host-side approval
-- A host can accept or deny the request locally
-- A recently approved participant can be allowed again without repeating the full prompt immediately
-- Explicit denial can revoke that remembered approval for the same participant
+- Une session peut être correctement routée et pourtant attendre une approbation côté host
+- Un host peut accepter ou refuser localement la demande
+- Un participant récemment approuvé peut être réautorisé sans répéter immédiatement toute l'invite
+- Un refus explicite peut révoquer cette autorisation mémorisée pour ce même participant
 
-## Access modes
-Publicly, `UnyDesk` can be used in two broad access modes:
+## Modes d'accès
+Publiquement, `UnyDesk` peut être utilisé selon deux grands modes :
 
-- **Account-oriented access** through the normal service surface
-- **Standalone access** through a direct session link and a session-specific token
+- **Accès orienté compte** via la surface normale du service
+- **Accès autonome** via un lien direct de session et un jeton spécifique à la session
 
-Standalone access is useful when:
+L'accès autonome est utile lorsque :
 
-- A user should join a session without the full account portal
-- A support operator needs a narrow invitation
-- The session should remain limited to one access context
+- Un utilisateur doit rejoindre une session sans passer par tout le portail compte
+- Un opérateur support a besoin d'une invitation étroite
+- La session doit rester limitée à un seul contexte d'accès
 
-## Before opening a session
-1. Confirm the correct host package is installed
-2. Confirm the host is online
-3. Confirm the host identity or pairing state
-4. Confirm whether local approval is required
-5. Confirm whether the session will be account-based or standalone
+## Avant d'ouvrir une session
+1. Confirmer que le bon paquet host est installé
+2. Confirmer que le host est en ligne
+3. Confirmer l'identité du host ou son état de pairage
+4. Confirmer si une approbation locale est requise
+5. Confirmer si la session sera liée à un compte ou autonome

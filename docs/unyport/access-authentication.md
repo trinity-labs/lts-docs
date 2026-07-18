@@ -1,64 +1,64 @@
-# Access and Authentication
-`UnyPort` uses a compact authentication model built around local users, JWT cookies and CSRF protection. It also supports OAuth login through GitHub and GitLab when provider settings are fully configured.
+# Accès et authentification
+`UnyPort` utilise un modele d'authentification compact construit autour des utilisateurs locaux, des cookies JWT et de la protection CSRF. L'application supporte aussi la connexion OAuth via GitHub et GitLab lorsque les réglages fournisseurs sont completes.
 
-## Local users and bootstrap
-The primary identity store is `settings/users.json`.
+## Utilisateurs locaux et bootstrap
+La source d'identité principale est `settings/users.json`.
 
-Important behavior:
+Comportement important :
 
-- If `users.json` does not exist, `UnyPort` seeds a first admin account
-- The seeded email is `demo@unyport.app`
-- The password comes from `UNYPORT_ADMIN_PASSWORD` or falls back to the built-in default
-- The repository currently also ships a demo local user for evaluation in its source layout
+- Si `users.json` n'existe pas, `UnyPort` initialise un premier compte admin
+- L'email initialise est `demo@unyport.app`
+- Le mot de passe vient de `UNYPORT_ADMIN_PASSWORD` ou retombe sur la valeur intégrée
+- Le depot fournit aussi actuellement un utilisateur local de demo pour l'evaluation de la source
 
-This means the deployment path and the repository evaluation path are related but not identical.
+Cela signifie que le parcours de deploiement et le parcours d'evaluation du depot sont proches, mais pas identiques.
 
-## Roles
-Three roles are accepted by the backend:
+## Rôles
+Trois rôles sont acceptes par le backend :
 
 - `admin`
 - `operator`
 - `viewer`
 
-Their operational meaning is:
+Leur sens operationnel est :
 
-- `viewer`: Authenticated read-only use of the portal
-- `operator`: Authenticated use with routine write actions such as profile and password updates
-- `admin`: Full access including user administration and branding changes
+- `viewer` : Usage authentifie en lecture seule
+- `operator` : Usage authentifie avec ecritures courantes comme le profil et le mot de passe
+- `admin` : Accès complet, y compris administration des utilisateurs et du branding
 
-In the current UI, viewers can inspect the portal but cannot save profile changes or update credentials.
+Dans l'UI actuelle, les viewers peuvent consulter le portail mais ne peuvent pas enregistrer des changements de profil ni mettre a jour leurs identifiants.
 
-## OAuth providers
-OAuth is implemented for:
+## Fournisseurs OAuth
+OAuth est implemente pour :
 
 - GitHub
 - GitLab
 
-Provider declarations live in `settings/config.yaml`. Placeholder values are intentionally ignored, so OAuth only becomes active when a real `client_id`, `client_secret` and `redirect_url` are supplied.
+Les declarations fournisseurs vivent dans `settings/config.yaml`. Les valeurs d'exemple sont volontairement ignorees, de sorte qu'OAuth n'est actif que lorsqu'un vrai `client_id`, un vrai `client_secret` et une vraie `redirect_url` sont renseignes.
 
-## Session model
-After authentication, `UnyPort` issues a JWT cookie:
+## Modele de session
+Apres authentification, `UnyPort` emet un cookie JWT :
 
-- Signed with `security.jwt_secret`
-- Stored as an HTTP-only cookie
-- Protected by the `https` setting for secure-cookie behavior
-- Timed according to `security_extra.session_timeout_mins`
+- Signe avec `security.jwt_secret`
+- Stocke en cookie HTTP-only
+- Protege par le réglage `https` pour le comportement secure-cookie
+- Borne dans le temps selon `security_extra.session_timeout_mins`
 
-## CSRF, rate limiting and trusted origins
-The application also enforces:
+## CSRF, limitation et trusted origins
+L'application impose aussi :
 
-- CSRF protection with a dedicated token endpoint at `/api/csrf`
-- A login rate limiter, `5` attempts per minute by default
-- Trusted origin validation for state-changing requests
+- Une protection CSRF avec un endpoint dedie `/api/csrf`
+- Une limitation de login, `5` tentatives par minute par defaut
+- Une validation des trusted origins pour les requetes qui modifient l'état
 
-If `trusted_origins` is empty, `UnyPort` computes a default list from local active interfaces on port `8800`.
+Si `trusted_origins` est vide, `UnyPort` calcule une liste par defaut a partir des interfaces actives locales sur le port `8800`.
 
-## Admin actions
-Admin-only write actions currently include:
+## Actions admin
+Les actions d'écriture reservees aux admins incluent actuellement :
 
-- Creating users
-- Changing user roles
-- Deleting users except the caller's own account
-- Updating or resetting instance branding
+- Creer des utilisateurs
+- Changer les rôles
+- Supprimer un utilisateur sauf son propre compte
+- Mettre a jour ou reinitialiser le branding de l'instance
 
-That scope keeps administration explicit and small.
+Ce perimetre garde l'administration explicite et limitee.

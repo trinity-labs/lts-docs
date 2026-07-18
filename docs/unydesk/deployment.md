@@ -1,27 +1,27 @@
-# Deployment
-`UnyDesk` is deployed as a standalone service. The important public point is that it has its own runtime, its own API and its own host distribution path.
+# Déploiement
+`UnyDesk` se déploie comme un service autonome. Le point public important est qu'il possède son propre runtime, sa propre API et son propre chemin de distribution host.
 
-## Runtime model
-The service is built around:
+## Modèle runtime
+Le service repose sur :
 
-- One Go backend
-- One primary HTTP listening address
-- Optional native HTTP/3 when certificates are configured
-- Static frontend assets
-- Settings files for users, hosts, trusted hosts and public identity
-- Host download artifacts served from the configured download directory
+- Un backend Go
+- Une adresse HTTP principale d'écoute
+- Un HTTP/3 natif optionnel lorsque les certificats sont configurés
+- Des assets frontend statiques
+- Des fichiers de réglage pour utilisateurs, hosts, hosts approuvés et identité publique
+- Des artefacts de téléchargement host servis depuis le répertoire configuré
 
-## Reverse proxy model
-For an Internet-facing deployment, the usual model is:
+## Modèle reverse proxy
+Pour une exposition Internet, le modèle habituel est :
 
-- Expose `UnyDesk` behind a reverse proxy
-- Forward the original host and client address headers
-- Keep cookies and CSRF behavior consistent with the public URL
-- Expose websocket upgrade paths for host and session channels
-- Terminate TLS at the proxy unless native TLS/HTTP3 is intentionally enabled
+- Exposer `UnyDesk` derrière un reverse proxy
+- Transmettre les headers d'hôte et d'adresse client d'origine
+- Garder les cookies et CSRF cohérents avec l'URL publique
+- Exposer les chemins websocket pour les canaux host et session
+- Terminer TLS au proxy sauf activation volontaire du TLS/HTTP3 natif
 
-## Public endpoints to preserve
-Deployments must preserve:
+## Endpoints publics à préserver
+Les déploiements doivent préserver :
 
 - `/healthz`
 - `/api/v1/info`
@@ -32,7 +32,7 @@ Deployments must preserve:
 - `/api/v1/sessions`
 - `/download/host/*`
 
-If these routes are rewritten incorrectly, the frontend may load while host pairing or session routing fails.
+Si ces routes sont réécrites incorrectement, le frontend peut charger alors que le pairing host ou le routage session échoue.
 
-## Operational expectation
-A correct deployment should make it possible to open the UI, download a host package, authenticate or use a scoped invitation, see host presence and create a session without changing product names or crossing into `TRINITY` or `UnyPort` menus.
+## Attendu opérationnel
+Un déploiement correct doit permettre d'ouvrir l'UI, télécharger un package host, s'authentifier ou utiliser une invitation bornée, voir la présence host et créer une session sans changer les noms produits ni basculer dans les menus `TRINITY` ou `UnyPort`.

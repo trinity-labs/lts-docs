@@ -1,27 +1,27 @@
-# UnyPort Architecture
-`UnyPort` is structured as a compact operator stack: a Go backend, a static frontend, a small configuration surface and a telemetry loop that reads host state directly from Linux and Xen-visible interfaces. The goal is operational clarity rather than framework complexity.
+# Architecture d'UnyPort
+`UnyPort` est structuree comme une pile opérateur compacte : un backend Go, un frontend statique, une petite surface de configuration et une boucle de télémétrie qui lit directement l'état de Linux et des interfaces visibles par Xen. L'objectif est la clarte operationnelle, pas la complexite de framework.
 
-## Layer 1 - runtime and assets
-The first layer is the application runtime itself:
+## Couche 1 - runtime et assets
+La première couche est le runtime applicatif lui-meme :
 
-- A Go backend under `unyport/backend`
-- A static frontend under `unyport/frontend/public`
-- A development mode that serves assets from disk through `UNYPORT_ASSETS`
-- A production mode that embeds frontend assets into the binary
+- Un backend Go sous `unyport/backend`
+- Un frontend statique sous `unyport/frontend/public`
+- Un mode developpement qui sert les assets depuis le disque via `UNYPORT_ASSETS`
+- Un mode production qui embarque les assets frontend dans le binaire
 
-In the bundled `docker-compose.yml`, the project is built inside a `golang:alpine` container and exposes the application on port `8800`.
+Dans le `docker-compose.yml` fourni, le projet est compile dans un conteneur `golang:alpine` et expose l'application sur le port `8800`.
 
-## Layer 2 - transport and routing
-The second layer is the operator transport surface:
+## Couche 2 - transport et routage
+La deuxieme couche est la surface de transport opérateur :
 
-- HTTP on `:8800` by default
-- Optional HTTPS and HTTP/3 when configured in `settings/settings.yaml`
-- JSON APIs under `/api/*`
-- Live metrics over `/sse/system`
-- App reverse proxies under `/proxy/<app>/`
+- HTTP sur `:8800` par defaut
+- HTTPS et HTTP/3 en option lorsqu'ils sont configures dans `settings/settings.yaml`
+- APIs JSON sous `/api/*`
+- Métriques live via `/sse/system`
+- Proxies applicatifs sous `/proxy/<app>/`
 
 ```text
-Browser SPA
+SPA navigateur
   -> /api/system
   -> /api/security
   -> /api/services
@@ -29,37 +29,37 @@ Browser SPA
   -> /proxy/ttyd/
 ```
 
-## Layer 3 - identity and persisted state
-Identity is intentionally simple and local-first:
+## Couche 3 - identité et état persiste
+L'identité reste volontairement simple et locale :
 
-- Local users are stored in `settings/users.json`
-- Branding is stored in `settings/branding.yaml`
-- Runtime settings live in `settings/settings.yaml`
-- Proxied app and OAuth provider declarations live in `settings/config.yaml`
-- Logs are written in `logs/`
+- Les utilisateurs locaux sont stockes dans `settings/users.json`
+- Le branding est stocke dans `settings/branding.yaml`
+- Les réglages runtime vivent dans `settings/settings.yaml`
+- Les declarations d'apps proxyfiees et de fournisseurs OAuth vivent dans `settings/config.yaml`
+- Les logs sont ecrits dans `logs/`
 
-The repository can also seed a first admin automatically when `users.json` does not exist and `UNYPORT_ADMIN_PASSWORD` is provided or defaults are accepted.
+Le depot peut aussi initialiser automatiquement un premier admin lorsque `users.json` n'existe pas et que `UNYPORT_ADMIN_PASSWORD` est fourni ou que les identifiants par defaut sont acceptes.
 
-## Layer 4 - telemetry and host awareness
-`UnyPort` reads the platform directly instead of relying on a separate monitoring agent:
+## Couche 4 - télémétrie et lecture de l'hôte
+`UnyPort` lit la plateforme directement au lieu de dependre d'un agent de monitoring separe :
 
-- `/proc` And `/sys` for CPU, memory, uptime, network and temperatures
-- OpenRC state for services
-- `settings/users.json` File mode and kernel sysctls for security checks
-- `xl info` And `xl list` for Dom0 Xen context
-- `startup-history.jsonl` And `unyport.log` for restart history
+- `/proc` Et `/sys` pour le CPU, la memoire, l'uptime, le réseau et les temperatures
+- L'état OpenRC pour les services
+- Les permissions de `settings/users.json` et les sysctls noyau pour les contrôles de sécurité
+- `xl info` Et `xl list` pour le contexte Xen Dom0
+- `startup-history.jsonl` Et `unyport.log` pour l'historique des redemarrages
 
-The SSE broker samples every `2` seconds, keeps a ring of `60` snapshots in memory and computes chart scales server-side before pushing data to the frontend.
+Le broker SSE echantillonne toutes les `2` secondes, conserve un anneau de `60` snapshots en memoire et calcule les echelles des graphes côté serveur avant d'envoyer les données au frontend.
 
-## Layer 5 - operator UX
-The visible interface is then organized into purpose-driven pages:
+## Couche 5 - UX opérateur
+L'interface visible est ensuite organisee en pages a but explicite :
 
-- Dashboard for quick status and restart history
-- Hypervisor page for host role, Xen and version context
-- Resources page for CPU, memory, processes, packages, modules, services and logs
-- Network page for interface activity and topology map
-- Storage page for disks and LBU state
-- Security page for hardening checks
-- Settings page for branding and future provider settings
+- Dashboard pour le statut rapide et l'historique des redemarrages
+- Page hypervisor pour le rôle d'hôte, Xen et le contexte de version
+- Page resources pour le CPU, la memoire, les processus, les packages, les modules, les services et les logs
+- Page network pour l'activite d'interface et la carte réseau
+- Page storage pour les disques et l'état LBU
+- Page security pour les contrôles de durcissement
+- Page settings pour le branding et les futurs réglages fournisseurs
 
-This architecture should therefore be read as a supervision portal with a precise scope, not as a generic website or an all-purpose virtualization suite.
+Cette architecture doit donc se lire comme un portail de supervision a perimetre précis, pas comme un site web generique ni comme une suite de virtualisation universelle.

@@ -1,53 +1,53 @@
-# UnyPort Manual
-This page is the practical entry point for operators using `UnyPort` in day-to-day work. It focuses on the visible workflow from first login to supervised actions.
+# Mode d'emploi
+Cette page est le point d'entrée pratique pour les opérateurs qui utilisent `UnyPort` au quotidien. Elle se concentre sur le workflow visible, du premier login jusqu'aux actions supervisees.
 
-## Normal operator path
-The usual path is:
+## Parcours opérateur normal
+Le chemin habituel est :
 
-1. Open the `UnyPort` URL
-2. Sign in with a local or OAuth-backed account
-3. Confirm the detected host role
-4. Read dashboard metrics and restart history
-5. Move to hypervisor, network, storage or security pages
-6. Open a proxied internal app when needed
-7. Update profile or admin settings only if the role allows it
+1. Ouvrir l'URL `UnyPort`
+2. Se connecter avec un compte local ou OAuth
+3. Confirmer le rôle d'hôte detecte
+4. Lire le dashboard et l'historique des redemarrages
+5. Passer aux pages hypervisor, network, storage ou security
+6. Ouvrir une application interne proxyfiee si besoin
+7. Modifier le profil ou les réglages admin seulement si le rôle l'autorise
 
 ```text
-Open portal
-  -> Authenticate
-  -> Read host role
-  -> Check CPU / memory / network
-  -> Inspect Xen or LBU context
-  -> Review logs or security
-  -> Escalate through TRINITY or UnyDesk if needed
+Ouvrir le portail
+  -> S'authentifier
+  -> Lire le role de l'hote
+  -> Verifier CPU / memoire / reseau
+  -> Inspecter Xen ou LBU
+  -> Lire logs ou securite
+  -> Escalader via TRINITY ou UnyDesk si besoin
 ```
 
-## Before first use
-Prepare a few pieces of information:
+## Avant la première utilisation
+Il faut preparer quelques informations :
 
-- The correct URL or reverse proxy entry point
-- A local user or configured OAuth provider
-- The expected host type: Dom0, DomU, container or Alpine host
-- Whether an internal proxied app such as `ttyd` should be available
+- La bonne URL ou l'entrée reverse proxy
+- Un utilisateur local ou un fournisseur OAuth configure
+- Le type d'hôte attendu : Dom0, DomU, conteneur ou hôte Alpine
+- Le fait qu'une application interne comme `ttyd` doive ou non être disponible
 
-## What the portal can expose
-Depending on configuration and host role, `UnyPort` can expose:
+## Ce que le portail peut exposer
+Selon la configuration et le rôle de l'hôte, `UnyPort` peut exposer :
 
-- Dashboard summaries
-- Live CPU, memory and network data
-- Disk state and LBU persistence status
-- OpenRC services and selected logs
-- Security checks and listener exposure
-- Xen hypervisor and domain data on Dom0
-- Operator profile, SSH key and branding settings
+- Des resumes de dashboard
+- Des données live CPU, memoire et réseau
+- L'état des disques et de la persistance LBU
+- Les services OpenRC et certains logs
+- Des contrôles de sécurité et l'exposition des ports
+- Des informations hyperviseur et domaines Xen sur Dom0
+- Le profil opérateur, la clé SSH et les réglages de branding
 
-## When the path becomes more technical
-The workflow becomes more operational when the operator needs to:
+## Quand le parcours devient plus technique
+Le workflow devient plus operationnel lorsqu'il faut :
 
-- Compare the running Alpine or kernel version with current `TRINITY` boot tags
-- Inspect a Dom0 and its active domains
-- Verify whether LBU changes are committed
-- Review crashed services
-- Open a proxied terminal app through `/proxy/<name>/`
+- Comparer la version Alpine ou noyau en cours avec les tags `TRINITY` boot
+- Inspecter un Dom0 et ses domaines actifs
+- Vérifier si des changements LBU ont été commits
+- Revoir des services plantes
+- Ouvrir une application terminal via `/proxy/<name>/`
 
-The next pages act as the structured manual for those tasks.
+Les pages suivantes servent de mode d'emploi structure pour ces taches.

@@ -1,34 +1,34 @@
-# Evolution
-`UnyDesk` evolves around the remote access path: host packaging, trust, session routing, transport quality and operator visibility.
+# Évolution
+`UnyDesk` évolue autour du chemin d'accès distant : packaging host, confiance, routage session, qualité transport et visibilité opérateur.
 
-## Current public direction
-The current direction is:
+## Direction publique actuelle
+La direction actuelle est :
 
-- Clearer host download and checksum handling
-- Stronger host identity and trust flows
-- Browser identity that survives normal page navigation
-- Standalone sessions for scoped assistance
-- Visible session dispatch state
-- WebRTC signaling as the preferred realtime path
-- Fallback screen delivery when direct media is incomplete
+- Gestion plus claire des téléchargements host et checksums
+- Flux d'identité et de confiance host renforcés
+- Identité navigateur qui survit à la navigation normale
+- Sessions autonomes pour l'assistance bornée
+- État de dispatch session visible
+- Signalisation WebRTC comme chemin temps réel préféré
+- Livraison écran de secours quand le média direct est incomplet
 
-## Expected improvements
-The next improvements should keep the same product boundary:
+## Améliorations attendues
+Les prochaines améliorations doivent garder la même frontière produit :
 
-- Richer host status in the viewer
-- Clearer pairing instructions for non-technical users
-- Better transport diagnostics
-- More explicit release notes for host packages
-- Stronger integration points for `UnyPort` without merging products
-- Support flows that can point to `UnyDesk` sessions from `TRINITY`
+- État host plus riche dans le viewer
+- Instructions de pairing plus claires pour les utilisateurs non techniques
+- Meilleurs diagnostics transport
+- Notes de release plus explicites pour les packages host
+- Points d'intégration plus forts avec `UnyPort` sans fusionner les produits
+- Flux support pouvant pointer vers des sessions `UnyDesk` depuis `TRINITY`
 
-## Product boundary to preserve
-`UnyDesk` should not become the billing portal and should not become the general operations dashboard. Its scope is remote access.
+## Frontière produit à préserver
+`UnyDesk` ne doit pas devenir le portail de facturation ni le tableau de bord général d'exploitation. Son périmètre est l'accès distant.
 
-The healthy platform model is:
+Le modèle sain de plateforme est :
 
-- `TRINITY` For lifecycle and support entry
-- `UnyDesk` For interactive access
-- `UnyPort` For supervision and local operations
+- `TRINITY` Pour le cycle de vie et l'entrée support
+- `UnyDesk` Pour l'accès interactif
+- `UnyPort` Pour la supervision et l'exploitation locale
 
-This boundary keeps future growth understandable.
+Cette frontière rend la croissance future compréhensible.

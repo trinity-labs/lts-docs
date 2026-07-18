@@ -1,30 +1,30 @@
-# History
-`UnyDesk` was separated as its own architecture because remote access has different constraints from local operations and customer lifecycle management.
+# Historique
+`UnyDesk` a été séparé comme architecture propre parce que l'accès distant a des contraintes différentes de l'exploitation locale et de la gestion du cycle client.
 
-## Initial direction
-The first direction was to keep the product small and explicit:
+## Direction initiale
+La première direction était de garder le produit petit et explicite :
 
-- Standalone Go backend
-- Single public broker API
-- Alpine-friendly runtime constraints
-- Browser-first session surface
-- Host runtime distributed separately
-- Future integration through HTTP APIs instead of code coupling
+- Backend Go autonome
+- API broker publique unique
+- Contraintes runtime compatibles Alpine
+- Surface session orientée navigateur
+- Runtime host distribué séparément
+- Intégration future par API HTTP plutôt que couplage de code
 
-## Why not merge it into UnyPort
-`UnyPort` is an operations and supervision portal. `UnyDesk` carries a different risk profile:
+## Pourquoi ne pas le fusionner avec UnyPort
+`UnyPort` est un portail d'exploitation et de supervision. `UnyDesk` porte un profil de risque différent :
 
-- Realtime transport
-- Host access
-- Viewer control
-- Session tokens
-- Media fallback
-- Trust and pairing
+- Transport temps réel
+- Accès host
+- Contrôle viewer
+- Tokens de session
+- Fallback média
+- Confiance et pairing
 
-Keeping the architecture separate makes security and product boundaries easier to reason about.
+Garder l'architecture séparée rend les limites sécurité et produit plus faciles à raisonner.
 
-## Current public maturity
-The public surface now documents `UnyDesk` as a product, not only as a scaffold. The important user-visible areas are host distribution, bootstrap, trust, session routing, transport signaling and fallback behavior.
+## Maturité publique actuelle
+La surface publique documente maintenant `UnyDesk` comme un produit, pas seulement comme un scaffold. Les zones visibles importantes sont la distribution host, le bootstrap, la confiance, le routage session, la signalisation transport et le comportement de secours.
 
-## Relationship with the platform
-`UnyDesk` remains part of the same platform family as `TRINITY` and `UnyPort`. The relationship is by product boundary and API contract, not by shared menu labels or development folder names.
+## Relation avec la plateforme
+`UnyDesk` reste dans la même famille de plateforme que `TRINITY` et `UnyPort`. La relation se fait par frontière produit et contrat API, pas par labels de menu partagés ni noms de dossiers de développement.

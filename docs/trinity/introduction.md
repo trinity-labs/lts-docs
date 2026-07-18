@@ -1,18 +1,18 @@
 # Introduction
-`TRINITY` is the main public portal of `TRINITY` Edge Networks. The site connects offer presentation, contact flows, customer account management, ordering, invoicing, support, console access and routing toward associated services in a single surface. For a visitor, `TRINITY` is not a source-code repository or a purely technical back office: it is the public entry point that turns an offer into an operable service.
+`TRINITY` est le portail principal de `TRINITY` Edge Networks. Le site relie en une seule surface la presentation des offres, la prise de contact, le compte client, la commande, la facturation, le support, l'accès aux consoles et l'orientation vers les services associes. Pour un visiteur, `TRINITY` n'est pas un depot de code ni un back-office technique : c'est le point d'entrée public qui transforme une offre en service exploitable.
 
-![`TRINITY` website](../assets/images/generated/trinity-homepage.png)
+![Site `TRINITY`](../assets/images/generated/trinity-homepage.png)
 
-*Generated capture of the public `TRINITY` homepage, showing the product promise and the main entry into the ecosystem.*
+*Capture générée de la page d'accueil publique `TRINITY`, avec la promesse produit et l'entrée vers l'ecosysteme.*
 
-## What TRINITY publicly covers
-- Offer and service discovery
-- Account creation and sign-in
-- Ordering and payment
-- PDF invoices and status tracking
-- `TRINITY`, `UnyDesk` and `UnyPort` support
-- Access to selected VM and console surfaces
-- Public documentation
+## Ce que TRINITY couvre publiquement
+- Decouverte des offres et des prestations
+- Creation de compte et connexion
+- Commande et paiement
+- Factures PDF et suivi de statut
+- Support `TRINITY`, `UnyDesk` et `UnyPort`
+- Accès a certaines surfaces VM et console
+- Documentation publique
 
-## Why this documentation exists
-This public documentation explains the role of `TRINITY`, the place of the site inside the ecosystem, the main customer journeys and the concepts needed to use the platform correctly: Alpine Linux, Xen, VMs, support, payments, console access and Data Disk Mode.
+## Pourquoi cette documentation existe
+Cette documentation publique explique le rôle de `TRINITY`, la place du site dans l'écosystème, les principaux parcours utilisateur et les notions a comprendre pour utiliser correctement la plateforme : Alpine Linux, Xen, VM, support, paiement, console et Data Disk Mode.

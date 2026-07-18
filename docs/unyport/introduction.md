@@ -1,36 +1,36 @@
 # Introduction
-`UnyPort` is a monitoring-first control portal written in Go and designed for Alpine Linux hosts, especially when they live in Xen-based environments. The application exposes one authenticated surface for host state, live metrics, logs, security posture, proxied tools and operator profile management.
+`UnyPort` est un portail de contrôle orienté supervision écrit en Go et pense pour des hôtes Alpine Linux, surtout lorsqu'ils vivent dans des environnements Xen. L'application expose une seule surface authentifiee pour l'état de l'hôte, les métriques en direct, les logs, la posture de sécurité, les outils proxyfies et la gestion de profil operateur.
 
-![`UnyPort` dashboard](../assets/images/generated/unyport-live-dashboard.png)
+![Tableau de bord `UnyPort`](../assets/images/generated/unyport-live-dashboard.png)
 
-*Generated capture of the `UnyPort` live dashboard, focused on host status, resources and operational visibility.*
+*Capture générée du tableau de bord live `UnyPort`, centree sur l'état de l'hôte, les ressources et la visibilité operationnelle.*
 
-## What UnyPort is
-`UnyPort` is built around a few strong constraints:
+## Ce qu'est UnyPort
+`UnyPort` repose sur quelques contraintes fortes :
 
-- A single Go runtime
-- A minimal deployment model
-- Direct reads from the kernel and filesystem
-- Explicit host-role awareness
-- No dependence on a heavy agent stack
+- Un runtime Go unique
+- Un modele de deploiement minimal
+- Des lectures directes du noyau et du système de fichiers
+- Une detection explicite du rôle de l'hôte
+- Aucune dependance a une grosse pile d'agents
 
-In this repository, the frontend is a single-page application served either from disk in development or embedded into the production binary.
+Dans ce depot, le frontend est une application monopage servie soit depuis le disque en developpement, soit embarquee dans le binaire de production.
 
-## What UnyPort is not
-`UnyPort` is not presented as:
+## Ce qu'UnyPort n'est pas
+`UnyPort` n'est pas presentee comme :
 
-- A public marketing website
-- A customer ordering portal
-- A full Xen orchestration suite today
-- A generic desktop remote-access tool
+- Un site marketing public
+- Un portail client de commande
+- Une suite complete d'orchestration Xen aujourd'hui
+- Un outil generique d'accès distant bureau
 
-Those roles belong instead to `TRINITY` and `UnyDesk`, depending on the need.
+Ces rôles relevent plutot de `TRINITY` et `UnyDesk`, selon le besoin.
 
-## Why this documentation exists
-This documentation explains the visible product surface of `UnyPort` from the point of view of deployment and operations:
+## Pourquoi cette documentation existe
+Cette documentation explique la surface produit visible d'`UnyPort` du point de vue du deploiement et de l'exploitation :
 
-- What operators see
-- How authentication and roles work
-- What data is collected
-- How Alpine Linux and Xen shape the product
-- Where the current limits and evolution points are
+- Ce que voient les opérateurs
+- Comment fonctionnent l'authentification et les rôles
+- Quelles données sont collectees
+- Comment Alpine Linux et Xen structurent le produit
+- Ou se trouvent les limites actuelles et les points d'evolution

@@ -1,12 +1,12 @@
-# Alpine Linux and Xen
-`TRINITY` uses two technical foundations that users should recognize even if they do not manage them directly: **Alpine Linux** and **Xen**.
+# Alpine Linux et Xen
+`TRINITY` s'appuie sur deux fondations techniques qu'il faut reconnaitre publiquement même sans les administrer directement : **Alpine Linux** et **Xen**.
 
 ## Alpine Linux
-Alpine Linux is the system base used for compact and controlled environments. Publicly, this matters because customers often encounter:
+Alpine Linux est la base système utilisee pour les environnements compacts et controles. Côté public, cela compte parce que le client rencontre souvent :
 
-- A lightweight console environment
-- A minimal package footprint
-- A simple, direct system layout
+- Une console légère
+- Une empreinte système réduite
+- Une organisation simple et directe
 
 ```bash
 cat /etc/os-release
@@ -14,42 +14,42 @@ uname -a
 apk info | head
 ```
 
-Typical user-facing interpretation:
+Lecture pratique côté client :
 
-- The system is intentionally small
-- Recovery and maintenance can stay readable
-- The platform favors predictable technical surfaces
+- Le système est volontairement sobre
+- La maintenance et la reprise restent lisibles
+- La plateforme privilégie des surfaces techniques previsibles
 
 ## Xen
-Xen is the virtualization layer underneath VM-oriented services. The customer does not usually manage Xen directly from `TRINITY`, but Xen explains why the platform can expose:
+Xen est la couche de virtualisation sous-jacente aux services orientés VM. Le client ne pilote pas Xen directement depuis `TRINITY`, mais Xen explique pourquoi la plateforme peut exposer :
 
-- Isolated virtual machines
-- Stateful VM lifecycle information
-- Maintenance and recovery modes
+- Des machines virtuelles isolees
+- Des états VM lisibles
+- Des modes maintenance et récupération
 
 ```text
-Customer surface -> TRINITY
-VM runtime       -> Alpine Linux guest
-Virtualization   -> Xen layer
+Surface client -> TRINITY
+Systeme invite -> Alpine Linux
+Virtualisation -> Xen
 ```
 
-## Why both matter together
-Alpine Linux and Xen form a practical model:
+## Pourquoi les deux comptent ensemble
+Alpine Linux et Xen forment un modele simple :
 
-- Alpine Linux provides the guest operating environment
-- Xen provides isolation and VM execution
-- `TRINITY` Provides the customer-facing lifecycle and support surface
+- Alpine Linux fournit l'environnement système de la VM
+- Xen fournit l'exécution et l'isolation
+- `TRINITY` Fournit la surface client, le cycle de vie et le support
 
 ```yaml
-platform_model:
-  customer_surface: "TRINITY"
-  guest_os: "Alpine Linux"
-  hypervisor: "Xen"
-  operational_modes:
+modele_plateforme:
+  surface_client: "TRINITY"
+  systeme_invite: "Alpine Linux"
+  hyperviseur: "Xen"
+  modes_operationnels:
     - normal
     - maintenance
     - data_disk_mode
 ```
 
-## What users should retain
-The key point is simple: the customer does not need to be a Xen specialist. The customer only needs to understand the model well enough to read a VM state, use a console carefully, and communicate accurately with support.
+## Ce qu'il faut retenir
+L'essentiel est simple : le client n'a pas besoin d'être spécialiste Xen. Il doit surtout comprendre assez bien le modele pour lire un état VM, utiliser une console avec prudence et parler précisément au support.

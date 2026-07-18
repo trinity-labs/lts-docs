@@ -1,80 +1,80 @@
-# TRINITY manual
-This page is the practical entry point for `TRINITY`. It explains how to use the platform from the first visit to a more technical VM or recovery situation.
+# Mode d'emploi TRINITY
+Cette page est le point d'entrée pratique de `TRINITY`. Elle explique comment utiliser la plateforme depuis la première visite jusqu'a une situation plus technique autour d'une VM ou d'une reprise.
 
-## The normal path
-The usual customer path is:
+## Le parcours normal
+Le parcours client habituel suit cette logique :
 
-1. Discover an offer
-2. Create an account
-3. Place an order
-4. Complete a payment
-5. Review the invoice and order status
-6. Access the related service
-7. Request support if needed
+1. Decouvrir une offre
+2. Creer un compte
+3. Passer une commande
+4. Effectuer un paiement
+5. Consulter la facture et l'état de la commande
+6. Acceder au service associe
+7. Solliciter le support si nécessaire
 
 ```text
-Visit site
-  -> Read public documentation
-  -> Create account
-  -> Add billing details
-  -> Confirm order
-  -> Pay
-  -> Follow service lifecycle
-  -> Use VM, console, UnyDesk or UnyPort when available
+Visite du site
+  -> Lecture de la documentation publique
+  -> Creation du compte
+  -> Saisie des informations de facturation
+  -> Confirmation de la commande
+  -> Paiement
+  -> Suivi du cycle de vie du service
+  -> Usage de la VM, de la console, d'UnyDesk ou d'UnyPort si disponible
 ```
 
-## Before you place an order
-Prepare a few pieces of information:
+## Avant de commander
+Preparez quelques informations simples :
 
-- The exact service you want
-- The business or identity information used for billing
-- The support level you expect
-- Whether you need VM access, console access, `UnyDesk` or `UnyPort`
+- Le service exact souhaite
+- L'identité de facturation
+- Le niveau de support attendu
+- Le besoin eventuel de console, de VM, d'`UnyDesk` ou d'`UnyPort`
 
 ```yaml
-customer_preflight:
-  offer: "TRINITY support or infrastructure service"
-  billing_profile: "company or individual"
-  need_console_access: true
-  need_remote_assistance: false
-  need_monitoring_surface: true
+preparation_client:
+  offre: "support TRINITY ou service infrastructure"
+  profil_facturation: "entreprise ou particulier"
+  besoin_console: true
+  besoin_assistance_distante: false
+  besoin_supervision: true
 ```
 
-## What TRINITY can expose
-Depending on the service, `TRINITY` can expose:
+## Ce que TRINITY peut exposer
+Selon le service, `TRINITY` peut exposer :
 
-- Order history
-- Invoice PDFs
-- Payment status
-- VM status
-- Console access
-- Data Disk Mode visibility
-- Support and chat entry points
-- Links toward `UnyDesk` and `UnyPort`
+- L'historique de commande
+- Les factures PDF
+- L'état de paiement
+- L'état d'une VM
+- L'accès console
+- La visibilité du Data Disk Mode
+- Les points d'entrée support et chat
+- Les liens vers `UnyDesk` et `UnyPort`
 
-## When the path becomes more technical
-Some services go beyond a simple purchase flow. You may enter a more operational path when:
+## Quand le parcours devient plus technique
+Certaines offres vont plus loin qu'un simple achat. Le parcours devient plus operationnel lorsqu'il faut :
 
-- A VM must be checked
-- A console must be opened
-- A system must be recovered
-- A data volume must be inspected
-- A service state must be confirmed before support escalates the case
+- Vérifier une VM
+- Ouvrir une console
+- Récupérer un environnement
+- Inspecter un volume de données
+- Confirmer un état de service avant escalade support
 
 ```bash
-# Example of a console-oriented session once access is granted
+# Exemple de session console une fois l'acces ouvert
 hostname
 uptime
 ip addr
 df -h
 ```
 
-## Reading the rest of this section
-Use the next pages as a structured manual:
+## Comment lire la suite
+Les pages suivantes forment le mode d'emploi détaillé :
 
-- `Account and orders` For the customer workflow
-- `Payments and invoices` For billing flows
-- `VMs and console` For access and status reading
-- `Data Disk Mode` For maintenance and recovery context
-- `Alpine Linux and Xen` For the platform model
-- `Support and operations` For escalation and support boundaries
+- `Compte et commandes`
+- `Paiements et factures`
+- `VM et console`
+- `Data Disk Mode`
+- `Alpine Linux et Xen`
+- `Support et exploitation`

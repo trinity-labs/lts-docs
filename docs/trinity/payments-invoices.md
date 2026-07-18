@@ -1,82 +1,82 @@
-# Payments and invoices
-`TRINITY` exposes billing and settlement flows as part of the customer experience. The goal is not only to pay, but also to understand what happened after payment.
+# Paiements et factures
+`TRINITY` expose les flux de facturation et de reglement comme une partie normale du parcours client. Le but n'est pas seulement de payer, mais aussi de comprendre ce qui se passe apres le paiement.
 
-## Payment methods
-Depending on the service, `TRINITY` can expose:
+## Moyens de paiement
+Selon le service, `TRINITY` peut exposer :
 
-- Card payment
+- Carte bancaire
 - PayPal
-- Bank transfer
-- Litecoin payment
+- Virement bancaire
+- Paiement Litecoin
 
-Each method leads to a different operational expectation. Instant online methods usually return quickly. Manual methods may remain pending until settlement is confirmed.
+Chaque méthode implique une attente operationnelle differente. Les paiements en ligne reviennent souvent vite. Les flux manuels peuvent rester en attente jusqu'a confirmation du reglement.
 
 ```text
-card or PayPal -> fast return -> order updated quickly
-bank transfer  -> pending state -> manual settlement confirmation
-Litecoin       -> pending state -> payment reference verification
+carte ou PayPal -> retour rapide -> commande mise a jour vite
+virement        -> etat en attente -> confirmation de reglement plus tard
+Litecoin        -> etat en attente -> verification d'une reference de paiement
 ```
 
-## Payment states
-The public side of `TRINITY` should make these states understandable:
+## États de paiement
+La surface publique doit rendre lisibles les états suivants :
 
-- Paid
-- Pending
-- Refused
-- Cancelled
-- Retry available
+- Paye
+- En attente
+- Refuse
+- Annule
+- Reprise possible
 
 ```json
 {
-  "payment": {
-    "provider": "PayPal",
-    "status": "pending",
-    "retry_allowed": false,
-    "invoice_available": false
+  "paiement": {
+    "fournisseur": "PayPal",
+    "statut": "en_attente",
+    "reprise_possible": false,
+    "facture_disponible": false
   }
 }
 ```
 
-## Invoices
-An invoice PDF is the customer-facing billing artifact. It should help the user identify:
+## Factures
+La facture PDF est le document de facturation visible côté client. Elle doit permettre d'identifier :
 
-- Invoice number
-- Order reference
-- Customer name
-- Billed service
-- Paid or pending state
-- Invoice date
+- Le numero de facture
+- La reference de commande
+- Le nom du client
+- Le service facture
+- L'état paye ou en attente
+- La date de facture
 
 ```yaml
-invoice:
-  number: "INV-2026-00152"
-  order_reference: "TRI-2026-00421"
-  status: "paid"
+facture:
+  numero: "INV-2026-00152"
+  reference_commande: "TRI-2026-00421"
+  statut: "payee"
   export: "pdf"
 ```
 
-## If a payment stays pending
-The right action depends on the flow:
+## Si le paiement reste en attente
+La bonne action depend du flux :
 
-- Wait for the provider return if it is still in progress
-- Review the order page
-- Verify that the billing profile is correct
-- Keep the payment reference
-- Contact support if the state remains blocked
+- Attendre le retour fournisseur si le parcours est encore ouvert
+- Relire la page commande
+- Vérifier le profil de facturation
+- Conserver la reference de paiement
+- Contacter le support si l'état reste bloque
 
 ```markdown
-Pending payment checklist
-- Order reference copied
-- Invoice checked
-- Payment provider noted
-- Timestamp recorded
-- Support contacted only after the expected delay
+Checklist paiement en attente
+- Reference commande copiee
+- Facture verifiee
+- Fournisseur de paiement note
+- Horodatage note
+- Support contacte apres le delai normal
 ```
 
-## What should not happen
-From a customer point of view, a failed or pending payment should not create confusion such as:
+## Ce qui ne doit pas arriver
+Du point de vue client, un paiement refuse ou en attente ne doit pas creer :
 
-- Duplicate orders with the same intent
-- Missing invoice references
-- Invisible retry path
-- No clue about the provider state
+- De commandes dupliquees sans raison
+- Une facture introuvable
+- Un parcours de reprise invisible
+- Une lecture impossible du statut fournisseur

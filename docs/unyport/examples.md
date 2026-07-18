@@ -1,50 +1,50 @@
-# UnyPort Examples
-This page gives concrete examples of how `UnyPort` is meant to be used in real operations.
+# Exemples
+Cette page donne des exemples concrets de la facon dont `UnyPort` est censee être utilisee en exploitation.
 
-## Example 1 - read a Xen Dom0 at a glance
-An operator opens the portal on a Dom0 and immediately checks:
+## Exemple 1 - lire un Xen Dom0 en un coup d'oeil
+Un opérateur ouvre le portail sur un Dom0 et vérifie immediatement :
 
-- Host role says `Dom0`
-- Xen version and scheduler are present
-- Domain count matches expectations
-- Memory usage across the hypervisor is coherent
-- No critical service crash appears on the security page
+- Le rôle d'hôte indique `Dom0`
+- La version Xen et le scheduler sont presents
+- Le nombre de domaines correspond a l'attendu
+- L'utilisation memoire hyperviseur reste cohérente
+- Aucun crash de service critique n'apparait sur la page security
 
-This is the fastest way to confirm that the hypervisor view is healthy before digging into guest-specific issues.
+C'est la facon la plus rapide de confirmer que la vue hyperviseur est saine avant d'entrer dans des problemes invites plus fins.
 
-## Example 2 - detect uncommitted Alpine state
-On a maintenance-oriented Alpine host, the storage page shows:
+## Exemple 2 - detecter un état Alpine non committe
+Sur un hôte Alpine orienté maintenance, la page storage montre :
 
 - LBU present
-- State marked as `dirty`
-- The last archive name
+- Un état marque `dirty`
+- Le nom de la derniere archive
 
-That tells the operator that configuration changes exist but have not yet been committed into the persistence archive.
+Cela indique que des changements de configuration existent mais n'ont pas encore été commits dans l'archive de persistance.
 
-## Example 3 - compare running versions with upstream TRINITY boot tags
-An operator opens the hypervisor page and compares:
+## Exemple 3 - comparer les versions courantes aux tags TRINITY boot
+Un opérateur ouvre la page hypervisor et compare :
 
-- The current Alpine version
-- The current running kernel
-- The latest role-specific versions returned by `/api/versions`
+- La version Alpine courante
+- Le noyau courant
+- Les dernieres versions spécifiques au rôle retournees par `/api/versions`
 
-This provides a lightweight update signal without turning `UnyPort` into a full package manager.
+Cela donne un signal léger de mise a jour sans transformer `UnyPort` en gestionnaire de paquets complet.
 
-## Example 4 - enter a proxied terminal app
-If `ttyd` is declared in `settings/config.yaml`, the operator can open:
+## Exemple 4 - entrer dans un terminal proxyfie
+Si `ttyd` est declare dans `settings/config.yaml`, l'opérateur peut ouvrir :
 
 ```text
 /proxy/ttyd/
 ```
 
-from the portal navigation instead of exposing the terminal app directly on its own public URL.
+depuis la navigation du portail au lieu d'exposer le terminal sur sa propre URL publique.
 
-## Example 5 - onboard a new operator
-An administrator can:
+## Exemple 5 - onboarder un nouvel opérateur
+Un administrateur peut :
 
-- Create a user
-- Assign the `operator` role
-- Let that user store a display name, avatar and SSH public key
-- Keep branding and user administration restricted to admins
+- Creer un utilisateur
+- Lui assigner le rôle `operator`
+- Laisser cet utilisateur stocker un nom d'affichage, un avatar et une clé SSH publique
+- Conserver le branding et l'administration des utilisateurs reserves aux admins
 
-This keeps onboarding simple while preserving role boundaries.
+Cela rend l'onboarding simple tout en gardant des frontieres de rôles lisibles.

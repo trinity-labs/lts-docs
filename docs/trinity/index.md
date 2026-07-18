@@ -1,41 +1,41 @@
 # TRINITY
-`TRINITY` is the central website and customer-facing surface of the `TRINITY` Edge Networks platform. It is the place where users discover services, create an account, place orders, follow payments, download invoices, open a console and request support. The public documentation therefore describes `TRINITY` as a product experience and customer journey, not as a raw technical control panel.
+`TRINITY` est le site central de la plateforme `TRINITY` Edge Networks. C'est depuis cette surface que l'utilisateur découvre les services, crée un compte, passe une commande, suit ses paiements, télécharge ses factures, ouvre une console ou sollicite le support. La documentation publique décrit donc `TRINITY` comme une expérience produit et un parcours client complet, pas comme un simple panneau technique.
 
-Publicly, `TRINITY` brings together:
+`TRINITY` regroupe publiquement :
 
-- Service discovery and commercial entry points
-- Account access
-- Orders, payments and invoices
-- VM follow-up and console access
-- Support, documentation and assistance chat
+- La présentation des offres et services
+- L'accès au compte client
+- Les commandes, paiements et factures
+- Le suivi des VM et l'accès console
+- Le support, la documentation et le chat d'assistance
 
-`TRINITY` works alongside two companion services:
+Cette surface fonctionne aux côtés de deux services complémentaires :
 
-- `UnyDesk` For remote access
-- `UnyPort` For service control
+- `UnyDesk` Pour l'accès distant
+- `UnyPort` Pour le pilotage des services
 
-## Start here
-For a practical reading path, the recommended order is:
+## Commencer ici
+Pour une lecture pratique, l'ordre conseille est :
 
 1. `Introduction`
 2. `Architecture`
-3. `Manual`
-4. `Account and orders`
-5. `Payments and invoices`
-6. `VMs and console`
+3. `Mode d'emploi`
+4. `Compte et commandes`
+5. `Paiements et factures`
+6. `VM et console`
 7. `Data Disk Mode`
-8. `Alpine Linux and Xen`
-9. `Support and operations`
-10. `Examples`
+8. `Alpine Linux et Xen`
+9. `Support et exploitation`
+10. `Exemples`
 
 ```text
-Public site
-  -> Customer account
-  -> Order
-  -> Payment
-  -> Invoice
-  -> VM or console
-  -> Support or recovery
+Site public
+  -> Compte client
+  -> Commande
+  -> Paiement
+  -> Facture
+  -> VM ou console
+  -> Support ou reprise
 ```
 
-This section therefore describes the site, the customer journey, the visible technical layers and the recent functional history.
+La section `TRINITY` de cette documentation décrit donc a la fois le site, les parcours utilisateur, les briques techniques visibles et l'historique fonctionnel recent.

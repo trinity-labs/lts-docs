@@ -1,32 +1,32 @@
 # Data Disk Mode
-Data Disk Mode, often shortened to **DDM**, is one of the most important technical notions exposed publicly by `TRINITY`.
+Le Data Disk Mode, souvent abrege **DDM**, est l'une des notions techniques les plus importantes exposees publiquement par `TRINITY`.
 
-## What DDM means
-DDM is a maintenance-oriented VM mode. The goal is not to present the environment as a normal application runtime, but as a controlled context for checking data, storage and system state.
+## Ce que signifie le DDM
+Le DDM est un mode VM orienté maintenance. L'objectif n'est pas de presenter l'environnement comme un service applicatif normal, mais comme un contexte contrôle pour vérifier les données, le stockage et l'état systeme.
 
-In practice, DDM is useful when the user or support needs to:
+Dans la pratique, le DDM est utile lorsqu'il faut :
 
-- Inspect a disk
-- Verify filesystems
-- Recover data
-- Confirm that a broken environment can still be mounted
-- Work on a service that should not boot normally yet
+- Inspecter un disque
+- Vérifier des systèmes de fichiers
+- Récupérer des données
+- Confirmer qu'un environnement casse peut encore être monte
+- Travailler sur un service qui ne doit pas redemarrer normalement tout de suite
 
-## How to recognize DDM
-The interface usually makes DDM explicit through labels and a console layout dedicated to recovery or maintenance.
+## Comment reconnaitre le DDM
+L'interface rend generalement le DDM visible avec un libelle dedie et une console orientée maintenance ou recuperation.
 
 ```text
-Normal service mode:
-  service first
-  application behavior expected
+Mode service normal :
+  priorite au service
+  comportement applicatif attendu
 
-Data Disk Mode:
-  storage and system first
-  recovery behavior expected
+Data Disk Mode :
+  priorite au stockage et au systeme
+  comportement de reprise attendu
 ```
 
-## Safe DDM checks
-The first actions in DDM should stay conservative.
+## Vérifications sures en DDM
+Les premières actions en DDM doivent rester conservatrices.
 
 ```bash
 hostname
@@ -36,28 +36,28 @@ df -h
 cat /etc/fstab
 ```
 
-These commands help answer simple questions:
+Ces commandes aident a repondre a des questions simples :
 
-- What disks are visible
-- What is mounted
-- How much space remains
-- Whether the expected filesystem is present
+- Quels disques sont visibles
+- Quels points de montage sont actifs
+- Quel espace reste disponible
+- Si le système de fichiers attendu est present
 
-## Typical DDM workflow
+## Workflow typique en DDM
 ```text
-Enter DDM
-  -> identify disks
-  -> confirm mounts
-  -> inspect filesystem
-  -> collect evidence
-  -> recover data or prepare support escalation
+Entrer en DDM
+  -> identifier les disques
+  -> confirmer les montages
+  -> inspecter le systeme de fichiers
+  -> collecter les indices
+  -> recuperer les donnees ou preparer l'escalade support
 ```
 
-## What DDM is not
-DDM should not be read as:
+## Ce que le DDM n'est pas
+Le DDM ne doit pas être lu comme :
 
-- A normal application success state
-- A replacement for backups
-- An invitation to make uncontrolled system changes
+- Un état applicatif normal
+- Un remplacement de sauvegarde
+- Une invitation a modifier le système sans contrôle
 
-DDM is a controlled technical mode whose value is clarity, recovery and inspection.
+Le DDM est un mode technique contrôle dont la valeur principale est la clarte, la reprise et l'inspection.

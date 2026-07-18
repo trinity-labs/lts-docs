@@ -1,163 +1,163 @@
-# TRINITY Evolution
-This page summarizes the recent functional evolution of `TRINITY` based on work actually carried out on the platform. It documents the public product surface and user-facing flows without exposing internal implementation details.
+# Evolution de TRINITY
+Cette page synthétise l'évolution fonctionnelle récente de `TRINITY` à partir des chantiers réellement menés sur la plateforme. Elle documente la surface produit visible et les flux publics, sans entrer dans les détails d'implémentation internes.
 
-## Overview
-`TRINITY` now covers a broader scope than the initial orchestration layer:
+## Vue d'ensemble
+`TRINITY` couvre désormais un périmètre plus large que l'orchestration initiale :
 
-- Customer account and order lifecycle
-- PDF invoicing and payment follow-up
-- Commercial and technical support
-- Persistent support chat
-- VM lifecycle, console access and recovery flows
-- Public and admin documentation
-- Consent, privacy and legal surfaces
+- Parcours compte client et commandes
+- Facturation PDF et suivi de paiement
+- Support commercial et support technique
+- Chat d'assistance persistant
+- Cycle de vie VM, console et reprise après incident
+- Documentation publique et admin
+- Conformité, consentement et textes légaux
 
-`TRINITY` support also explicitly includes **`UnyDesk`** and **`UnyPort`**. Publicly, the platform should therefore be understood as a combined platform + operations + support surface, not only as a VM control panel.
+Le périmètre support `TRINITY` inclut également **`UnyDesk`** et **`UnyPort`**. Le positionnement public doit donc être lu comme une offre plateforme + exploitation + assistance, pas uniquement comme un panneau VM.
 
-## Customer account and orders
-The customer account has been structured around a more complete order workflow:
+## Compte client et commandes
+Le compte client a été structuré autour d'un suivi de commande plus complet :
 
-- Recent order listing
-- Dedicated order detail modal
-- Status-aware payment display with coherent color coding
-- Distinction between active, pending, refused, cancelled and deleted flows
-- Provider-specific rendering where needed
+- Liste des commandes récentes
+- Détail par commande dans une modale dédiée
+- Affichage du statut de paiement avec code couleur cohérent
+- Distinction entre commande active, en attente, refusée, annulée ou supprimée
+- Adaptation du rendu selon le fournisseur de paiement
 
-Subscription orders also expose the **next due date** when the flow provides one. Pending or failed payment retries reuse the same order entry instead of creating duplicates.
+Les commandes d'abonnement exposent aussi la **prochaine échéance** lorsque le flux le permet. Les commandes en attente ou en erreur réutilisent la même entrée au lieu de créer des doublons à chaque tentative de paiement.
 
-## PDF invoicing
-The PDF invoice layer was significantly normalized:
+## Facturation PDF
+La facture PDF a été profondément normalisée :
 
-- Branding aligned with `TRINITY`
-- Stabilized logo, header and identity blocks
-- Better handling of special characters and accents
-- Aligned product, quantity, technical scope and amount columns
-- Readable invoice numbering
-- Net amount, VAT and total including tax
-- Legal wording and late-payment penalties
-- Regenerated legacy PDFs kept consistent with the current template
+- Charte couleur alignée sur `TRINITY`
+- Logo, entête et blocs d'identité stabilisés
+- Meilleure gestion des caractères spéciaux et accents
+- Alignement des colonnes produit, quantité, technicité et montant
+- Génération de numéros de facture lisibles
+- Détail HT, TVA et total TTC
+- Mentions légales et pénalités de retard
+- Rendu cohérent pour les anciens PDF régénérés
 
-The resulting PDF is intended to be a customer-facing invoice rather than a raw technical export.
+Le PDF est désormais pensé comme une facture d'exploitation réellement présentable à un client final, et pas comme un export technique brut.
 
-## Payments
-The checkout and payment return flows were extended and unified.
+## Paiements
+Le tunnel de paiement a été étendu et unifié.
 
-### Supported providers and methods
-Depending on the product, `TRINITY` exposes:
+### Fournisseurs et modes pris en charge
+`TRINITY` expose les flux suivants selon le type de produit :
 
-- **Mollie** for card payments and recurring subscriptions
-- **PayPal** for compatible online payments
-- **Bank transfer** for manual settlement
-- **Litecoin** for crypto payments
+- **Mollie** pour la carte bancaire et les abonnements récurrents
+- **PayPal** pour les paiements compatibles
+- **Virement bancaire** pour les règlements manuels
+- **Litecoin** pour les paiements crypto
 
-The pre-payment information flow was aligned before redirecting to the provider:
+Le parcours d'information préalable a été harmonisé avant le paiement :
 
-- Billing identity
-- Billing address
-- Address validation and autocomplete
-- Collection of invoice-relevant customer data
+- Identité de facturation
+- Adresse de facturation
+- Validation et autocomplétion d'adresse
+- Collecte et conservation des informations de commande utiles à la facture
 
-### Payment return and statuses
-The platform now handles provider returns more explicitly:
+### Retour de paiement et états
+Un effort important a été fait sur la gestion des retours fournisseur :
 
-- Systematic payment return modal
-- **Success** in green
-- **Pending** in orange
-- **Refused / failed / cancelled** in red
-- Payment retry without duplicating the order
-- Pending payment resume from the customer account
+- Modal de retour de paiement systématique
+- État **succès** en vert
+- État **en attente** en orange
+- État **refusé / échoué / annulé** en rouge
+- Relance de paiement sans dupliquer la commande
+- Reprise d'un paiement en attente depuis l'espace compte
 
-For manual flows, `TRINITY` exposes detailed instructions directly inside the account:
+Pour les paiements manuels, `TRINITY` affiche des instructions détaillées au sein du compte :
 
-- IBAN / BIC / beneficiary for bank transfer
-- Receiving address and LTC amount for crypto
-- Copy buttons for sensitive payment references
+- IBAN / BIC / bénéficiaire pour le virement
+- Adresse de réception et montant LTC pour la crypto
+- Boutons de copie pour les références sensibles
 
-Manual flows are therefore exposed publicly as pending-payment flows with direct access to settlement details.
+Les flux manuels se comportent publiquement comme des paiements en attente, avec consultation des coordonnées de règlement directement depuis l'espace client.
 
-## Support, chat and assistance
-Support evolved on both commercial positioning and assistance UX.
+## Support, chat et assistance
+Le support a évolué sur deux plans : l'offre commerciale et l'expérience d'assistance.
 
-### Support scope
-`TRINITY` support explicitly covers:
+### Offre support
+L'offre `TRINITY` inclut explicitement :
 
-- Alpine Linux support
-- Xen support
-- **`UnyDesk`** support
-- **`UnyPort`** support
+- Support Alpine Linux
+- Support Xen
+- Support **`UnyDesk`**
+- Support **`UnyPort`**
 
-Commercial pages were rewritten accordingly to avoid separating products, operations and assistance artificially.
+Les pages commerciales ont été réécrites dans ce sens afin d'éviter un découplage artificiel entre produits, exploitation et assistance.
 
-### Support chat
-The chat moved from a modal to a dedicated page, with:
+### Chat d'assistance
+Le chat est passé d'une modale à une vraie page dédiée, avec :
 
-- Conversation history
-- Front-side delete flow
-- Prefilled suggestions
-- A more modern chat-oriented UI
-- Proper handling of simple rich text and inline code
+- Historique de conversations
+- Suppression logique côté interface
+- Suggestions préremplies
+- Rendu plus proche d'une interface de chat moderne
+- Prise en charge correcte du texte enrichi simple et du code inline
 
-One important recent change concerns non-authenticated visitors:
+Un point important de l'évolution récente concerne les visiteurs non connectés :
 
-- History remains accessible even **without login**
-- Persistence relies on a **guest token**
-- Conversations are reconciled when an account is created
-- A message limit applies to guests
+- L'historique reste accessible même **sans connexion**
+- La persistance repose sur un **token invité**
+- Les conversations sont réconciliées lorsqu'un compte est créé
+- Un plafond de messages est appliqué pour les invités
 
-The goal is to avoid losing history between guest usage and authenticated usage while keeping the public flow manageable.
+L'objectif est d'éviter la perte d'historique entre visiteur et utilisateur authentifié tout en gardant un cadre exploitable publiquement.
 
-## Consent, cookies and legal surfaces
-Visible compliance on the frontend was also strengthened:
+## Consentement, cookies et textes légaux
+La conformité visible côté front a aussi été renforcée :
 
-- Custom consent banner / preference panel
-- Distinction between essential and functional cookies
-- Assistant availability tied to consent
-- Public pages for cookies, privacy, terms and legal notices
+- Bannière / panneau de consentement personnalisé
+- Distinction entre cookies essentiels et fonctionnels
+- Déblocage conditionnel de l'assistant
+- Pages publiques dédiées aux cookies, à la confidentialité, aux CGU / CGV et aux mentions légales
 
-Legal texts were expanded to better cover:
+Les textes ont été étoffés pour mieux couvrir :
 
-- Orders and custom services
-- Refund boundaries
-- Confidentiality
-- Platform usage
-- Billing and collection wording
+- Commandes et prestations sur mesure
+- Règles de remboursement
+- Confidentialité
+- Usage de la plateforme
+- Information légale sur la facturation et le recouvrement
 
-## VM, bastion and console
-Even though the public documentation does not describe internal scripts, several visible changes affected product behavior:
+## VM, bastion et console
+Même si cette documentation publique ne décrit pas les scripts internes, plusieurs chantiers visibles ont modifié le comportement produit :
 
-- Better bastion console recovery
-- Clearer VM states in the UI
-- Improved reboot and restart handling
-- Stricter handling of orphaned or deleted VM resources
+- Meilleure reprise des consoles bastion
+- Clarification des états VM côté interface
+- Prise en compte des redémarrages et relances
+- Gestion plus stricte des ressources VM orphelines ou supprimées
 
-Publicly, this translates into a clearer expectation: an ordered or restarted VM should return in a coherent state, with a usable console and more predictable recovery behavior.
+Dans le parcours public, cela se traduit par une attente plus claire : une VM commandée ou relancée doit réapparaître dans un état cohérent, avec une console exploitable et une reprise plus prévisible.
 
-## Images, catalog and DDM experience
-The `TRINITY` scope also expanded around:
+## Images, catalogue et expérience DDM
+Le périmètre `TRINITY` a aussi intégré un travail sur :
 
-- System images and their variants
-- Consistency of the DDM model
-- Catalog exposure
-- Clearer Alpine / Xen / `TRINITY` environment flows
+- Les images système et leurs variantes
+- La cohérence du modèle DDM
+- L'exposition catalogue
+- La lisibilité des parcours autour des environnements Alpine / Xen / `TRINITY`
 
-This area remains under active evolution, but it is now part of the documented platform scope.
+Cette partie reste en évolution, mais elle fait désormais partie du périmètre documenté de la plateforme.
 
-## Documentation surfaces
-Documentation was restructured to distinguish:
+## Documentation et surfaces publiques
+La documentation a été restructurée pour distinguer :
 
-- Public documentation
-- Admin documentation
-- Product presentation
-- Operations-facing detail
+- Documentation publique
+- Documentation admin
+- Présentation produit
+- Détails d'exploitation
 
-The goal is to avoid repository-coupled documentation while still reflecting the platform that is actually exposed.
+L'objectif est d'éviter une documentation trop couplée au dépôt ou aux scripts, tout en gardant une image fidèle de la plateforme réellement exposée.
 
-## Current limits and expected next steps
-At the time of this summary, several areas still naturally remain in progress:
+## Limites actuelles et suites attendues
+Au moment de cette synthèse, plusieurs axes restent naturellement évolutifs :
 
-- Stronger automation for bank transfer and crypto return processing
-- Continued refinement of PayPal and Mollie return handling within provider API constraints
-- Progressive enrichment of catalogs and system images
-- Continued unification across `TRINITY`, `UnyDesk` and `UnyPort` surfaces
+- Automatisation plus poussée des retours pour virement et crypto
+- Amélioration continue des retours fournisseurs PayPal et Mollie selon les contraintes de leurs APIs
+- Enrichissement progressif des catalogues et des images
+- Poursuite de l'unification entre surfaces `TRINITY`, `UnyDesk` et `UnyPort`
 
-In short, `TRINITY` is no longer only a platform entry point. It is now a unified surface for **orders, support, invoicing, VMs, console access and documentation**, articulated explicitly with **`UnyDesk`** and **`UnyPort`**.
+En résumé, `TRINITY` n'est plus seulement un point d'entrée plateforme. C'est désormais une surface unifiée de **commande, support, facturation, VM, console et documentation**, avec une articulation explicite autour d'**`UnyDesk`** et **`UnyPort`**.

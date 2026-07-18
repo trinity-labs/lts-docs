@@ -1,8 +1,8 @@
-# Applications Proxy
-`UnyPort` can expose selected internal applications through controlled reverse proxies mounted under `/proxy/<name>/`. This allows the operator to enter internal tools from the same authenticated portal instead of exposing each tool directly.
+# Proxy applicatif
+`UnyPort` peut exposer certaines applications internes via des reverse proxies contrôles montes sous `/proxy/<name>/`. Cela permet a l'opérateur d'entrer dans des outils internes depuis le même portail authentifie au lieu d'exposer chaque outil directement.
 
-## Declaring an app
-Proxied apps are declared in `settings/config.yaml`:
+## Declarer une application
+Les applications proxyfiees sont declarees dans `settings/config.yaml` :
 
 ```yaml
 apps:
@@ -12,29 +12,29 @@ apps:
     type: terminal
 ```
 
-At runtime, the portal exposes metadata through `/api/apps` and mounts the proxy under:
+Au runtime, le portail expose les metadonnees via `/api/apps` et monte le proxy sous :
 
 ```text
 /proxy/ttyd/
 ```
 
-## Proxy behavior
-The reverse proxy performs a small amount of hardening and path rewriting:
+## Comportement du proxy
+Le reverse proxy realise une petite quantite de durcissement et de reecriture :
 
-- Strips untrusted forwarding headers
-- Sets `X-Forwarded-For`, `X-Forwarded-Proto` and `X-Forwarded-Prefix`
-- Rewrites `Location` headers so redirects stay under the mounted prefix
-- Rewrites cookie paths so backend cookies remain scoped to the proxy mount
-- Redirects non-JSON `401` and `403` responses back to the portal root
+- Suppression des headers de forwarding non fiables
+- Definition de `X-Forwarded-For`, `X-Forwarded-Proto` et `X-Forwarded-Prefix`
+- Reecriture des headers `Location` pour garder les redirections sous le prefixe monte
+- Reecriture des chemins de cookies pour que les cookies backend restent scopes au proxy
+- Redirection des réponses `401` et `403` non JSON vers la racine du portail
 
-## TTYd-specific handling
-The code applies a more permissive CSP only for the `ttyd` proxy mount so web terminal assets and websocket flows can work correctly. Other proxied apps keep the standard hardened behavior.
+## Cas spécifique TTYd
+Le code applique une CSP plus permissive uniquement pour le montage `ttyd`, afin que les assets du terminal web et les flux websocket puissent fonctionner correctement. Les autres applications proxyfiees gardent le comportement durci standard.
 
-## Why this matters
-This proxy layer keeps `UnyPort` focused:
+## Pourquoi c'est utile
+Cette couche proxy garde `UnyPort` ciblee :
 
-- Operators get one authenticated entry point
-- Internal apps do not need their own public exposure model
-- The product can remain small while still bridging to terminal-oriented tools
+- Les opérateurs ont un point d'entrée authentifie unique
+- Les applications internes n'ont pas besoin de leur propre exposition publique
+- Le produit reste petit tout en servant de pont vers des outils orientés terminal
 
-The feature should therefore be understood as a controlled gateway, not as a generic application marketplace.
+La fonctionnalité doit donc être comprise comme une passerelle contrôlée, pas comme une marketplace d'applications.

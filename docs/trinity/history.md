@@ -1,70 +1,70 @@
-# Functional history
-This page summarizes the major recent functional efforts that shaped the current `TRINITY` surface. It does not attempt to list every cosmetic adjustment. It documents the changes that materially affected the website and the services exposed through it.
+# Historique fonctionnel
+Cette page résume les grands chantiers fonctionnels récents qui ont façonné la version actuelle de `TRINITY`. Elle ne liste pas chaque correction cosmétique. Elle documente les évolutions qui changent réellement l'expérience du site et des services.
 
-## Stronger customer account
-The customer account evolved into a real follow-up surface:
+## Renforcement du compte client
+Le compte client a été étendu pour devenir une vraie surface de suivi :
 
-- Clearer order details
-- Better payment status distinctions
-- Subscription tracking
-- Easier access to invoices and references
-- Stronger consistency between order, payment and operations
+- Détails de commande plus lisibles
+- Statuts de paiement mieux distingués
+- Suivi des abonnements
+- Accès plus direct aux factures et références
+- Meilleure cohérence entre commande, paiement et exploitation
 
-## Invoice overhaul
-Invoicing was consolidated around cleaner and more credible PDFs:
+## Refonte de la facturation
+La facturation a été consolidée autour de PDF plus propres et plus crédibles :
 
-- `TRINITY` Visual identity
-- More readable invoices
-- Better handling of net, VAT and total amounts
-- Stronger legal wording and collection notices
-- Regeneration of older invoices
+- Identité visuelle `TRINITY`
+- Factures plus lisibles
+- Meilleur traitement de la TVA, du HT et du TTC
+- Mentions légales et textes de recouvrement renforcés
+- Régénération des anciennes factures
 
-## Unified payment experience
-Payments were reworked around a common experience principle:
+## Unification des paiements
+Les paiements ont été structurés autour d'un même principe d'expérience :
 
-- Collection of the right billing information first
-- Explicit payment return states
-- Consistent visual statuses
-- Resume path for pending payments
-- Support for several providers and methods
+- Collecte préalable des informations utiles
+- Retours de paiement explicites
+- Statuts visuels homogènes
+- Reprise possible pour un paiement en attente
+- Prise en charge de plusieurs fournisseurs et méthodes
 
-The exposed methods already include card payment, PayPal, bank transfer and Litecoin, depending on the order type.
+Les méthodes déjà exposées incluent la carte, PayPal, le virement et Litecoin selon le type de commande.
 
-## Expanded support scope
-`TRINITY` support was expanded to include:
+## Extension du support
+Le support `TRINITY` a été élargi afin d'inclure :
 
 - Alpine Linux
 - Xen
 - **`UnyDesk`**
 - **`UnyPort`**
 
-This changed both the public offer pages and the overall positioning of the site.
+Ce changement a modifié à la fois les pages d'offre, la présentation publique et le positionnement général du site.
 
-## Chat evolution
-The assistance chat moved from a modal to a dedicated page with history:
+## Evolution du chat
+Le chat d'assistance a quitté le format modale pour devenir une page dédiée avec historique :
 
-- Persistent conversations
-- Better readability
-- Quick suggestions
-- History kept for non-authenticated visitors
-- Reconciliation when an account is created
+- Conversations persistantes
+- Meilleure lisibilité
+- Suggestions rapides
+- Conservation de l'historique pour les visiteurs non connectés
+- Réconciliation lors de la création d'un compte
 
-## Consent and compliance
-The site also evolved on compliance:
+## Consentement et conformité
+Le site a également évolué sur le plan conformité :
 
-- Dedicated cookie policy
-- Expanded privacy policy
-- Stronger terms of use and sale
-- Custom consent panels
+- Politique cookies dédiée
+- Politique de confidentialité étoffée
+- CGU / CGV renforcées
+- Panneaux de consentement personnalisés
 
-The goal was to make the platform more usable publicly without weak legal or UX blind spots.
+L'objectif était de rendre la plateforme plus exploitable publiquement, sans laisser de zones juridiques ou UX trop faibles.
 
-## VM, console and operations visibility
-Finally, several efforts indirectly improved the public surface:
+## VM, consoles et exploitation
+Enfin, plusieurs chantiers ont indirectement amélioré la surface publique :
 
-- VM restart and recovery behavior
-- State visibility
-- Console robustness
-- Clearer link between orders and environments
+- Comportement des VM et de leur reprise
+- Affichage des états
+- Robustesse des consoles
+- Clarification du lien entre commandes et environnements
 
-`TRINITY` should now be understood as a complete operational platform where the website, account area, support, invoice and service access all belong to the same product surface.
+`TRINITY` doit aujourd'hui être comprise comme une plateforme opérationnelle complète, où le site, le compte, le support, la facture et l'accès aux services font partie d'un même ensemble.

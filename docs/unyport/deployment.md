@@ -1,8 +1,8 @@
-# Deployment
-The repository `docker_unyport` ships both the source tree and a working containerized runtime model. The deployment story is intentionally simple: one Go application, one main listening port and a small settings directory next to the binary.
+# Deploiement
+Le depot `docker_unyport` fournit a la fois l'arbre source et un modele runtime conteneurise fonctionnel. L'histoire de deploiement reste volontairement simple : une application Go, un port principal d'ecoute et un petit repertoire `settings/` a côté du binaire.
 
-## Repository layout
-The important paths are:
+## Arborescence utile
+Les chemins importants sont :
 
 - `docker-compose.yml`
 - `unyport/backend/`
@@ -11,43 +11,43 @@ The important paths are:
 - `unyport/backend/settings/config.yaml`
 - `unyport/backend/settings/users.json`
 
-## Development mode
-The bundled compose file starts a `golang:alpine` container and builds the project at startup.
+## Mode developpement
+Le compose fourni demarre un conteneur `golang:alpine` et compile le projet au lancement.
 
-Development characteristics:
+Caracteristiques developpement :
 
-- Frontend assets are served from disk through `UNYPORT_ASSETS`
-- Go module and build caches are mounted as named volumes
-- The default exposed port is `8800:8800`
-- The container resolves `host.docker.internal` through `host-gateway`
+- Les assets frontend sont servis depuis le disque via `UNYPORT_ASSETS`
+- Les caches Go module et build sont montes en volumes nommes
+- Le port expose par defaut est `8800:8800`
+- Le conteneur resout `host.docker.internal` via `host-gateway`
 
-## Production mode
-The same compose logic also prepares a production binary:
+## Mode production
+La même logique compose prepare aussi un binaire de production :
 
-- Frontend assets are copied into `server/assets`
-- The binary is built with `-tags prod`
-- Symbols are stripped
-- `upx --lzma` Is applied in the container
+- Les assets frontend sont copies dans `server/assets`
+- Le binaire est compile avec `-tags prod`
+- Les symboles sont supprimes
+- `upx --lzma` Est applique dans le conteneur
 
-The README describes this as the compact package path, while development keeps live assets on disk.
+Le README presente cela comme le chemin de paquet compact, tandis que le developpement garde des assets live sur disque.
 
-## Runtime files
-At runtime, `UnyPort` expects:
+## Fichiers runtime
+Au runtime, `UnyPort` attend :
 
 - `settings/settings.yaml`
 - `settings/config.yaml`
 - `settings/users.json`
 
-Operationally, it also writes:
+Operationnellement, l'application écrit aussi :
 
 - `logs/unyport.log`
 - `logs/startup-history.jsonl`
-- `settings/branding.yaml` When custom branding is saved
+- `settings/branding.yaml` Lorsqu'un branding personnalise est sauve
 
-## HTTPS and HTTP/3
-By default, the application listens on plain HTTP `:8800`.
+## HTTPS et HTTP/3
+Par defaut, l'application ecoute en HTTP simple sur `:8800`.
 
-Optional HTTPS and QUIC behavior is controlled from `settings/settings.yaml`:
+Le comportement HTTPS et QUIC optionnel est pilote par `settings/settings.yaml` :
 
 - `security_extra.https`
 - `http3.enabled`
@@ -56,15 +56,15 @@ Optional HTTPS and QUIC behavior is controlled from `settings/settings.yaml`:
 - `http3.port`
 - `http3.redirect_http`
 
-When HTTP/3 is enabled correctly, `UnyPort` can serve TLS on the configured port and redirect `:8800` toward that TLS listener.
+Lorsque HTTP/3 est active correctement, `UnyPort` peut servir le TLS sur le port configure et rediriger `:8800` vers ce listener TLS.
 
-## Reverse proxy and first login
-For Internet-facing deployments, the usual pattern is:
+## Reverse proxy et premier login
+Pour un deploiement expose a Internet, le schema habituel est :
 
-- Bind `UnyPort` locally or to a controlled host address
-- Put Nginx or another reverse proxy in front
-- Enable secure cookie behavior with `security_extra.https: true`
-- Replace OAuth placeholders before enabling public OAuth login
-- Change seeded or demo credentials immediately
+- Binder `UnyPort` localement ou sur une adresse hôte contrôlée
+- Placer Nginx ou un autre reverse proxy devant
+- Activer le comportement secure-cookie avec `security_extra.https: true`
+- Remplacer les placeholders OAuth avant toute ouverture publique
+- Changer immediatement les identifiants seedes ou de demo
 
-This keeps the deployment minimal without pretending that a demo configuration is production-ready.
+Cela garde le deploiement minimal sans faire semblant qu'une configuration de demo est prete pour la production.

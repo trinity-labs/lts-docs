@@ -1,69 +1,69 @@
-# Metrics and Surfaces
-`UnyPort` is organized around a small number of operational surfaces backed by live data. The backend samples the system every `2` seconds and pushes snapshots over SSE, while the frontend renders those snapshots as focused operator pages.
+# Métriques et surfaces
+`UnyPort` est organisee autour d'un petit nombre de surfaces operationnelles alimentees par des données live. Le backend echantillonne le système toutes les `2` secondes et pousse des snapshots en SSE, tandis que le frontend les rend dans des pages pensees pour l'operateur.
 
-## Live data model
-The live pipeline has a few important characteristics:
+## Modele de données live
+Le pipeline live a quelques caracteristiques importantes :
 
-- One SSE endpoint: `/sse/system`
-- One in-memory ring of `60` snapshots
-- Roughly `2` minutes of rolling live context
-- Chart scales computed server-side from the last `15` snapshots
+- Un seul endpoint SSE : `/sse/system`
+- Un anneau memoire de `60` snapshots
+- Environ `2` minutes de contexte roulant
+- Des echelles de graphes calculees côté serveur sur les `15` derniers snapshots
 
-This keeps the frontend light and avoids duplicating telemetry math in the browser.
+Cela garde un frontend léger et evite de dupliquer les calculs de télémétrie dans le navigateur.
 
 ## Dashboard
-The dashboard is the first reading surface:
+Le dashboard est la première surface de lecture :
 
-- Hostname and host role
+- Hostname et rôle de l'hôte
 - Uptime
-- CPU and memory summaries
-- Quick links toward network, storage and security
-- Yearly restart heatmap derived from `startup-history.jsonl` or `unyport.log`
+- Resumes CPU et memoire
+- Raccourcis vers network, storage et security
+- Heatmap annuelle des redemarrages derivee de `startup-history.jsonl` ou de `unyport.log`
 
 ## Hypervisor
-The hypervisor page combines system identity and platform context:
+La page hypervisor combine identité système et contexte plateforme :
 
-- Alpine and kernel version reading
-- Host role and runtime
-- BIOS and board data when available
-- Version comparison against `TRINITY` boot tags fetched from GitHub
-- Xen hypervisor information on Dom0
-- Active Xen domains on Dom0
+- Lecture de version Alpine et noyau
+- Rôle d'hôte et runtime
+- Données BIOS et carte mere lorsqu'elles existent
+- Comparaison de versions avec les tags `TRINITY` boot récupérés depuis GitHub
+- Informations hyperviseur Xen sur Dom0
+- Domaines Xen actifs sur Dom0
 
 ## Resources
-The resources page is the broad inspection surface:
+La page resources est la surface d'inspection large :
 
-- Load average
+- Charge système
 - Temperatures
-- Top processes
-- Package inventory summary
-- Kernel modules summary
-- OpenRC service list and status
-- Allowed log-file browsing and tailing
+- Top processus
+- Resume de l'inventaire packages
+- Resume des modules noyau
+- Liste OpenRC et état des services
+- Navigation et tail des fichiers de log autorises
 
-## Network and storage
-The `Network` page shows:
+## Network et storage
+La page `Network` montre :
 
-- Main interface
-- IP address
-- RX and TX rates
-- Byte totals
-- A network map built from host interfaces
+- L'interface principale
+- L'adresse IP
+- Les debits RX et TX
+- Les compteurs d'octets
+- Une carte réseau construite a partir des interfaces de l'hôte
 
-The `Storage` page shows:
+La page `Storage` montre :
 
-- Mounted disks
-- Used and free space
-- Filesystem type
-- LBU persistence state on Alpine hosts
+- Les disques montes
+- L'espace utilise et libre
+- Le type de système de fichiers
+- L'état de persistance LBU sur les hôtes Alpine
 
 ## Security
-The security page is a dedicated operational surface, not just a badge summary. It aggregates:
+La page security est une vraie surface operationnelle dediee, pas juste un resume a badges. Elle agr ege :
 
-- Kernel hardening checks
-- Users file permissions
-- OpenRC service state
-- Watched process presence
-- Listening TCP ports
+- Des contrôles de durcissement noyau
+- Les permissions du fichier utilisateurs
+- L'état des services OpenRC
+- La presence de certains processus surveilles
+- Les ports TCP a l'ecoute
 
-That makes `UnyPort` more than a resource viewer. It is also a compact security status reader.
+Cela fait d'`UnyPort` plus qu'un simple lecteur de ressources. C'est aussi un lecteur compact de posture de securite.

@@ -1,42 +1,42 @@
-# Support and operations
-`TRINITY` support is both commercial and technical. Publicly, this means the platform must help the user understand when to ask for help and what to include in the request.
+# Support et exploitation
+Le support `TRINITY` est a la fois commercial et technique. Côté public, cela signifie que la plateforme doit aider l'utilisateur a comprendre quand demander de l'aide et quoi inclure dans sa demande.
 
-## Support scope
-`TRINITY` support can explicitly concern:
+## Perimetre support
+Le support `TRINITY` peut explicitement concerner :
 
-- Orders and billing questions
-- Payment follow-up
-- Invoice access
-- Alpine Linux environments
-- Xen-backed VM services
-- Data Disk Mode situations
-- `UnyDesk` Usage
-- `UnyPort` Usage
+- Les commandes et questions de facturation
+- Le suivi de paiement
+- L'accès aux factures
+- Les environnements Alpine Linux
+- Les services VM reposant sur Xen
+- Les situations Data Disk Mode
+- L'usage d'`UnyDesk`
+- L'usage d'`UnyPort`
 
-## Good support request format
-A useful support request is concrete and short.
+## Bon format de demande support
+Une bonne demande support est concrete et breve.
 
 ```markdown
-Subject: VM visible but service unavailable
+Objet : VM visible mais service indisponible
 
-Order reference: TRI-2026-00421
-Service: Alpine VM
-Current mode: Data Disk Mode
-Observed issue: filesystem visible, application not started
-Expected result: confirm if recovery or normal restart is required
+Reference commande : TRI-2026-00421
+Service : VM Alpine
+Mode actuel : Data Disk Mode
+Probleme observe : systeme de fichiers visible, application non demarree
+Resultat attendu : confirmer s'il faut reprendre ou revenir en mode normal
 ```
 
-## Before escalating
-Collect the minimum facts first:
+## Avant d'escalader
+Collectez d'abord le minimum :
 
-- Order reference
-- Invoice or payment state if relevant
-- VM name if one exists
-- Current mode: normal, maintenance or DDM
-- Exact screenshot or console observation
+- Reference de commande
+- État facture ou paiement si utile
+- Nom de VM s'il existe
+- Mode courant : normal, maintenance ou DDM
+- Capture ou observation console précise
 
 ```bash
-# Example evidence set from a console
+# Exemple de lot d'informations a relever
 hostname
 uptime
 ip addr
@@ -44,26 +44,26 @@ lsblk
 df -h
 ```
 
-## Support versus self-service
-`TRINITY` aims to expose enough information for the user to act safely without turning every situation into a support ticket.
+## Support ou libre-service
+`TRINITY` cherche a exposer assez d'information pour permettre une action prudente sans transformer chaque situation en ticket support.
 
-Self-service is appropriate for:
+Le libre-service convient pour :
 
-- Reading an invoice
-- Checking a payment state
-- Opening a console
-- Confirming whether a VM is online
+- Lire une facture
+- Vérifier un état de paiement
+- Ouvrir une console
+- Confirmer si une VM est en ligne
 
-Support is appropriate for:
+Le support convient pour :
 
-- Blocked order delivery
-- Payment inconsistency
-- Unclear VM state
-- Recovery action with risk of data loss
+- Livraison de commande bloquee
+- Incoherence de paiement
+- État VM peu clair
+- Action de reprise avec risque sur les données
 
-## Related surfaces
-Use the right surface for the right need:
+## Surfaces a utiliser
+Utilisez la bonne surface selon le besoin :
 
-- `TRINITY` For account, orders, invoices and service entry
-- `UnyDesk` For remote assistance and interactive access
-- `UnyPort` For infrastructure state and operational supervision
+- `TRINITY` Pour le compte, les commandes, les factures et le point d'entrée service
+- `UnyDesk` Pour l'assistance distante et l'interaction
+- `UnyPort` Pour l'état infra et la supervision

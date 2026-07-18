@@ -1,50 +1,50 @@
-# Customer journeys
-`TRINITY` organizes the customer journey end to end. The same site must allow users to move without friction from discovering an offer to operating it day to day. This is why the account area, payment flows, invoices, support and order tracking all matter in the public experience.
+# Parcours client
+`TRINITY` organise le parcours client de bout en bout. Un même site doit permettre de passer sans rupture de la découverte d'une offre à son exploitation quotidienne. Cette logique explique l'importance donnée au compte client, au paiement, à la facture, au support et au suivi des commandes.
 
-## Discovery and first contact
-The journey usually starts from:
+## Decouverte et prise de contact
+Le parcours commence généralement par :
 
-- A service landing page
-- An offer or support page
-- A contact page
-- A public documentation page
+- Une landing page de service
+- Une page d'offre ou de support
+- Une page de contact
+- Une page de documentation publique
 
-The purpose of this first step is to qualify the need and route the user toward the correct service, product or support channel.
+Le rôle de cette première étape est de qualifier le besoin et d'orienter l'utilisateur vers le bon service, le bon produit ou le bon canal d'assistance.
 
-## Customer account
-Once identified, the user finds in `TRINITY`:
+## Compte client
+Une fois identifié, l'utilisateur retrouve dans `TRINITY` :
 
-- Account information
-- Billing information
-- Orders
-- Invoices
-- Selected access points or actions related to the service
+- Ses informations de compte
+- Ses informations de facturation
+- Ses commandes
+- Ses factures
+- Certains accès ou actions liés à ses services
 
-The customer account is not only a profile page. It acts as an operational follow-up surface.
+Le compte client n'est pas seulement un profil. Il est utilisé comme point de suivi opérationnel.
 
-![Console and operations](../assets/images/screens/trinity-console.png)
+![Console et exploitation](../assets/images/screens/trinity-console.png)
 
-*Example of access to a customer environment through `TRINITY`, with a console and service control surface linked to the ordered service.*
+*Exemple d'accès a un environnement client depuis `TRINITY`, avec une surface de console et de pilotage liee au service commande.*
 
-## Order, payment and invoice
-The ordering journey covers:
+## Commande, paiement et facture
+Le parcours de commande couvre :
 
-- Selecting an offer
-- Collecting billing details
-- Choosing a payment method
-- Handling the payment return
-- Reviewing order status
-- Opening the PDF invoice
+- Le choix d'une offre
+- La collecte des informations de facturation
+- Le choix du moyen de paiement
+- Le retour de paiement
+- La consultation du statut de commande
+- L'ouverture de la facture PDF
 
-Pending, refused, successful and cancelled payments must be understandable to the customer. The site therefore exposes distinct visual states and explicit messaging.
+Les paiements en attente, refusés, réussis ou annulés doivent être compréhensibles côté client. Le site expose donc des états visuels distincts et des messages adaptés.
 
-## Support and assistance
-The journey does not stop after purchase. `TRINITY` links ordering and operations to support:
+## Support et assistance
+Le parcours ne s'arrête pas après l'achat. `TRINITY` relie la commande et l'exploitation au support :
 
-- Assistance chat
-- Commercial support
-- Technical support
+- Chat d'assistance
+- Support commercial
+- Support technique
 - Documentation
-- Routing toward `UnyDesk` or `UnyPort` when relevant
+- Orientation vers `UnyDesk` ou `UnyPort` si nécessaire
 
-`TRINITY` support explicitly includes **`UnyDesk`** and **`UnyPort`**, because the site is designed as a unified entry point.
+Le support `TRINITY` inclut explicitement **`UnyDesk`** et **`UnyPort`**, car le site est conçu comme un point d'entrée unifié.

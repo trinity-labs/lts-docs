@@ -1,50 +1,50 @@
-# UnyPort Usage
-`UnyPort` is used when the platform operator needs fast host visibility, a stable authentication surface and a small number of operational entry points. It is not optimized for commerce or customer workflow. It is optimized for supervised infrastructure reading.
+# Utilisation d'UnyPort
+`UnyPort` est utilisee lorsque l'opérateur a besoin d'une lecture rapide de l'hôte, d'une surface d'authentification stable et d'un petit nombre de points d'entrée operationnels. Elle n'est pas optimisee pour le commerce ni pour le parcours client. Elle est optimisee pour la lecture supervisee de l'infrastructure.
 
-## Use 1 - sign in and confirm host context
-Operators usually start by:
+## Usage 1 - se connecter et confirmer le contexte hôte
+Les opérateurs commencent souvent par :
 
-- Signing in locally or through OAuth
-- Reading the detected host role
-- Confirming whether the surface is a Dom0, DomU, container or Alpine host
+- Se connecter localement ou via OAuth
+- Lire le rôle d'hôte detecte
+- Confirmer si la surface correspond a un Dom0, un DomU, un conteneur ou un hôte Alpine
 
-This first step changes the rest of the reading because a Dom0 exposes Xen-wide context while a DomU behaves like a VM-centric observer.
+Cette première etape change toute la suite de la lecture, car un Dom0 expose un contexte Xen global alors qu'un DomU se comporte comme un observateur centre VM.
 
-## Use 2 - read live system state
-The most common ongoing use is real-time monitoring:
+## Usage 2 - lire l'état système en direct
+L'usage le plus courant reste la supervision en temps reel :
 
-- CPU and per-core activity
-- Memory usage and cache behavior
-- Network throughput
-- Storage occupancy
-- Temperatures, processes and load
+- Activite CPU et par coeur
+- Utilisation memoire et cache
+- Debit réseau
+- Occupation du stockage
+- Temperatures, processus et charge
 
-The portal is therefore useful as a live operational dashboard even before any deeper action is needed.
+Le portail est donc utile comme tableau de bord operationnel live avant même qu'une action plus profonde soit necessaire.
 
-## Use 3 - inspect Alpine and Xen specifics
-`UnyPort` is also used to answer Alpine and Xen specific questions:
+## Usage 3 - inspecter les specificites Alpine et Xen
+`UnyPort` sert aussi a repondre a des questions très Alpine et Xen :
 
-- Is LBU present and committed
-- What Alpine version is running
-- What kernel is running
-- What Xen version and scheduler are active on Dom0
-- How many domains are running and how much memory they consume
+- LBU est-il present et committe
+- Quelle version Alpine tourne
+- Quel noyau tourne
+- Quelle version Xen et quel scheduler sont actifs sur Dom0
+- Combien de domaines tournent et quelle memoire ils consomment
 
-## Use 4 - inspect services, logs and security
-The resources and security surfaces support routine troubleshooting:
+## Usage 4 - inspecter services, logs et sécurité
+Les surfaces resources et security servent au depannage courant :
 
-- Review OpenRC services
-- Tail allowed log files
-- Inspect listened ports
-- Confirm security hardening status
-- Identify critical processes or service crashes
+- Revoir les services OpenRC
+- Tailer les fichiers de log autorises
+- Inspecter les ports a l'ecoute
+- Confirmer le niveau de durcissement
+- Identifier des processus critiques ou des services plantes
 
-## Use 5 - open an internal tool through the portal
-When configured, `UnyPort` can also act as the entry point toward a proxied internal tool such as `ttyd`. This keeps the operator inside one authenticated surface while still exposing terminal-oriented workflows.
+## Usage 5 - ouvrir un outil interne a travers le portail
+Lorsqu'il est configure, `UnyPort` peut aussi servir de point d'entrée vers un outil interne proxyfie comme `ttyd`. L'opérateur reste ainsi dans une seule surface authentifiee tout en accedant a des workflows plus orientés terminal.
 
-## Use 6 - know when to switch surface
-`UnyPort` is not the only tool in the ecosystem.
+## Usage 6 - savoir quand changer de surface
+`UnyPort` n'est pas le seul outil de l'ecosysteme.
 
-- Use `TRINITY` when the need is service lifecycle, account, billing or customer operations.
-- Use `UnyDesk` when the need is remote access or direct assistance.
-- Stay in `UnyPort` when the need is host state, infrastructure context or a controlled proxy entry.
+- Utiliser `TRINITY` lorsque le besoin concerne le cycle de vie service, le compte, la facturation ou les operations client.
+- Utiliser `UnyDesk` lorsque le besoin concerne l'accès distant ou l'assistance directe.
+- Rester dans `UnyPort` lorsque le besoin concerne l'état hôte, le contexte d'infrastructure ou un accès proxy controle.

@@ -1,74 +1,74 @@
-# UnyDesk Architecture
-`UnyDesk` combines a broker surface, a software distribution surface and a live session surface.
+# Architecture d'UnyDesk
+`UnyDesk` combine une surface broker, une surface de distribution logicielle et une surface de session en direct.
 
-Its public architecture is centered on:
+Son architecture publique est centrée sur :
 
-- Authentication
-- Bootstrap claim and provision flows
-- Host and session state
-- Websocket-backed live updates
-- Distribution of host binaries for supported targets
-- Direct WebRTC signaling through the broker API
-- Screen fallback paths when direct realtime media is not usable
+- L'authentification
+- Les flux de claim et de provision bootstrap
+- L'état des hôtes et des sessions
+- Les mises à jour temps réel via websocket
+- La distribution de binaires hôtes pour les cibles supportées
+- La signalisation WebRTC directe via l'API broker
+- Des chemins de secours écran lorsque le média temps réel direct n'est pas exploitable
 
-## Main public layers
-The public reading of the architecture can be separated into five layers.
+## Principales couches publiques
+La lecture publique de l'architecture peut se séparer en cinq couches.
 
-### 1. Distribution layer
-This layer provides:
+### 1. Couche de distribution
+Cette couche fournit :
 
-- Downloadable host binaries
-- Platform-specific host packaging
-- Bootstrap entry points
-- A stable public path to retrieve the host software
+- Des binaires host téléchargeables
+- Un packaging host spécifique à chaque plateforme
+- Des points d'entrée de bootstrap
+- Un chemin public stable pour récupérer le logiciel host
 
-The host application is not only a helper binary. It is the machine-side runtime that registers, identifies itself, sends heartbeats and accepts or refuses sessions.
+L'application host n'est pas seulement un binaire d'appoint. C'est le runtime côté machine qui s'enregistre, s'identifie, envoie des heartbeats et accepte ou refuse les sessions.
 
-### 2. Identity and trust layer
-`UnyDesk` uses several public trust modes:
+### 2. Couche identité et confiance
+`UnyDesk` utilise plusieurs modes publics de confiance :
 
-- Account-bound host registration
-- Claim or pairing flows that associate a host with a user context
-- Standalone session links with a dedicated token
-- Optional local approval on the host before control begins
+- Enregistrement de host lié à un compte
+- Flux de claim ou de pairage qui associent un host à un contexte utilisateur
+- Liens de session autonomes avec un jeton dédié
+- Approbation locale optionnelle sur le host avant le début du contrôle
 
-### 3. Broker and session layer
-The broker layer handles:
+### 3. Couche broker et session
+La couche broker gère :
 
-- Session creation
-- Host routing
-- Offer and answer exchange
-- ICE candidate exchange
-- Host presence
-- Dispatch state, delivery count and host acknowledgment visibility
+- La création de session
+- Le routage vers le host
+- L'échange d'offer et d'answer
+- L'échange de candidats ICE
+- La présence du host
+- La visibilité sur l'état de dispatch, le nombre d'envois et les accusés host
 
-### 4. Realtime transport layer
-When possible, `UnyDesk` prefers a direct realtime path:
+### 4. Couche transport temps réel
+Quand c'est possible, `UnyDesk` privilégie un chemin temps réel direct :
 
-- Browser viewer creates a WebRTC offer
-- Host posts the WebRTC answer
-- ICE candidates are exchanged through the broker
-- Video, input and auxiliary channels become available
+- Le viewer navigateur crée une offer WebRTC
+- Le host publie la WebRTC answer
+- Les candidats ICE sont échangés via le broker
+- La vidéo, l'entrée et les canaux auxiliaires deviennent disponibles
 
-This path is optimized for low-latency interaction such as live screen viewing, keyboard and mouse control, clipboard exchange and file transfer signaling.
+Ce chemin est optimisé pour la basse latence, par exemple pour l'écran en direct, le contrôle clavier et souris, le presse-papiers et la signalisation des transferts de fichiers.
 
-### 5. Fallback delivery layer
-The public architecture also includes explicit fallback paths:
+### 5. Couche de secours
+L'architecture publique inclut aussi des chemins de secours explicites :
 
-- Peer-frame delivery over the screen data channel
-- Peer-frame relay through a dedicated screen websocket
-- Continued signaling through the broker websocket
-- Session state polling while waiting for transport recovery
+- Livraison peer-frame sur le data channel d'écran
+- Relais peer-frame via un websocket d'écran dédié
+- Poursuite de la signalisation via le websocket broker
+- Polling d'état de session en attendant la reprise du transport
 
-## Session path in plain words
+## Chemin de session en clair
 ```text
-Viewer page
-  -> session created
-  -> routed to host
-  -> host accepts
-  -> broker carries signaling
-  -> WebRTC direct path is attempted
-  -> fallback path is used if direct media is incomplete
+Page viewer
+  -> session créée
+  -> routée vers le host
+  -> host accepte
+  -> broker transporte la signalisation
+  -> un chemin WebRTC direct est tenté
+  -> un chemin fallback est utilisé si le média direct reste incomplet
 ```
 
-This architecture should be read as a remote access system, not as a generic file download page.
+Cette architecture doit être lue comme un système d'accès distant, pas comme une simple page de téléchargement de fichiers.
