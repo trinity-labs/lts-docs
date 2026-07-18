@@ -264,11 +264,12 @@ a.md-nav__link.md-nav__link--active {
 }
 
 .trinity-sidebar-release {
-    margin-top: auto;
+    margin-top: 2rem;
     padding: 1.25rem 0 0.75rem;
     opacity: 0.34;
     font-size: 0.52rem;
     line-height: 1.45;
+    border-top: 1px solid grey;
 }
 
 .trinity-sidebar-release__label,
