@@ -313,10 +313,6 @@ a.md-nav__link.md-nav__link--active {
     text-decoration: underline;
 }
 
-span.md-nav__icon.md-icon {
-    opacity: 0.2;
-}
-
 strong {
     font-weight: 600;
 }
