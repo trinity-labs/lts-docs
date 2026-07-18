@@ -289,6 +289,12 @@ a.md-nav__link.md-nav__link--active {
     background: transparent;
     color: inherit;
     font-size: 0.58rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.trinity-sidebar-release__version:hover {
+    text-decoration: underline;
 }
 
 span.md-nav__icon.md-icon {

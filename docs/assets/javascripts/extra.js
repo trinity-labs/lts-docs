@@ -164,6 +164,13 @@ function getTrinityReleaseMeta() {
   return window.__trinityReleaseMetaCache[url];
 }
 
+function getTrinityReleaseRepoUrl(meta) {
+  if (meta?.git_url) return meta.git_url;
+  return meta?.scope === "admin"
+    ? "https://github.com/trinity-labs/lts-adocs"
+    : "https://github.com/trinity-labs/lts-docs";
+}
+
 function mountTrinitySidebarRelease(meta) {
   const sidebarInner = document.querySelector(".md-sidebar--primary .md-sidebar__inner");
   if (!sidebarInner || !meta || !meta.version) return;
@@ -179,9 +186,12 @@ function mountTrinitySidebarRelease(meta) {
 
   node.replaceChildren();
 
-  const version = document.createElement("span");
+  const version = document.createElement("a");
   version.className = "trinity-sidebar-release__version";
-  version.textContent = meta.version;
+  version.href = getTrinityReleaseRepoUrl(meta);
+  version.target = "_blank";
+  version.rel = "noopener noreferrer";
+  version.textContent = `version ${meta.version}`;
 
   node.appendChild(version);
   node.title = [meta.kind, meta.scope, meta.visibility, meta.released_at].filter(Boolean).join(" · ");
