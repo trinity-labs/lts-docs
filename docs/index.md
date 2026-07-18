@@ -1,3 +1,8 @@
+---
+description: Documentation publique de `TRINITY`, `UnyDesk` et `UnyPort` pour comprendre l'architecture, les usages et les parcours de la plateforme.
+social_image: https://trinity-net.com/img/products/trinity/hero-trinity.png
+---
+
 # TRINITY
 `TRINITY` est l'architecture centrale de la plateforme.
 

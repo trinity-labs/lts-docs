@@ -1,3 +1,8 @@
+---
+description: Öffentliche Dokumentation für `UnyDesk`, den selbst gehosteten Fernzugriffs-Broker des `TRINITY`-Ökosystems.
+social_image: https://unydesk.app/assets/logo-unydesk.jpg
+---
+
 # UnyDesk
 `UnyDesk` ist der Fernzugriffsdienst des `TRINITY` Edge Networks Ökosystems. Diese öffentliche Fläche wird genutzt, um ein Host-Paket herunterzuladen, einen Host zu pairen oder zu claimen, eine Fernsitzung zu starten und diese Sitzung nutzbar zu halten, auch wenn der beste Transportpfad nicht sofort verfügbar ist.
 

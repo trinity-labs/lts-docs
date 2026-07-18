@@ -1,3 +1,8 @@
+---
+description: Öffentliche Dokumentation für `UnyPort`, die operator-orientierte Alpine-Linux- und Xen-Kontrollfläche im `TRINITY`-Ökosystem.
+social_image: https://unyport.app/media/img/logos/logo-unyport-full.png
+---
+
 # UnyPort
 `UnyPort` ist die operator-orientierte Überwachungsfläche des `TRINITY`-Ökosystems. Sie ist als leichtgewichtige Go-Anwendung für Alpine-Linux-Umgebungen gebaut und verbindet Xen-Bewusstsein, Live-Systemzustand, kontrolliertes App-Proxying und tägliche Host-Supervision.
 

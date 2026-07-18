@@ -18,6 +18,12 @@
   {% if page and page.meta and page.meta.social_image %}
     {% set social_image = page.meta.social_image %}
   {% endif %}
+  {% set social_image_alt = config.site_name %}
+  {% if page and page.meta and page.meta.social_image_alt %}
+    {% set social_image_alt = page.meta.social_image_alt %}
+  {% elif page and page.title %}
+    {% set social_image_alt = page.title ~ " | " ~ config.site_name %}
+  {% endif %}
   {% set locale = "fr_FR" %}
   {% if page and page.url %}
     {% if page.url.endswith('.en/') %}
@@ -26,19 +32,27 @@
       {% set locale = "de_DE" %}
     {% endif %}
   {% endif %}
+  {% set og_type = "article" %}
+  {% if page_url == config.site_url or (page and page.url in ['', 'index.en/', 'index.de/', 'trinity/', 'trinity/index.en/', 'trinity/index.de/', 'unydesk/', 'unydesk/index.en/', 'unydesk/index.de/', 'unyport/', 'unyport/index.en/', 'unyport/index.de/']) %}
+    {% set og_type = "website" %}
+  {% endif %}
   <meta name="description" content="{{ page_description | e }}">
   <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="{{ page_url | e }}">
   <meta property="og:locale" content="{{ locale }}">
   <meta property="og:site_name" content="{{ config.site_name | e }}">
   <meta property="og:title" content="{{ page_title | e }}">
   <meta property="og:description" content="{{ page_description | e }}">
   <meta property="og:url" content="{{ page_url | e }}">
-  <meta property="og:type" content="article">
+  <meta property="og:type" content="{{ og_type }}">
   <meta property="og:image" content="{{ social_image | e }}">
+  <meta property="og:image:secure_url" content="{{ social_image | e }}">
+  <meta property="og:image:alt" content="{{ social_image_alt | e }}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ page_title | e }}">
   <meta name="twitter:description" content="{{ page_description | e }}">
   <meta name="twitter:image" content="{{ social_image | e }}">
+  <meta name="twitter:image:alt" content="{{ social_image_alt | e }}">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -58,4 +72,26 @@
       }
     }
   </script>
+  {% if page and page.title %}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": {{ config.site_name | tojson }},
+          "item": {{ config.site_url | tojson }}
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": {{ page.title | tojson }},
+          "item": {{ page_url | tojson }}
+        }
+      ]
+    }
+  </script>
+  {% endif %}
 {% endblock %}

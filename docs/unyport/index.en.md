@@ -1,3 +1,8 @@
+---
+description: Public documentation for `UnyPort`, the operator-facing Alpine Linux and Xen control surface in the `TRINITY` ecosystem.
+social_image: https://unyport.app/media/img/logos/logo-unyport-full.png
+---
+
 # UnyPort
 `UnyPort` is the operator-facing control surface of the `TRINITY` ecosystem. It is built as a lightweight Go application for Alpine Linux environments, with explicit awareness of Xen, live system state, controlled app proxying and day-to-day host supervision.
 

@@ -1,3 +1,8 @@
+---
+description: Documentation publique de `UnyDesk`, le broker d'accès distant auto-heberge de l'ecosysteme `TRINITY`.
+social_image: https://unydesk.app/assets/logo-unydesk.jpg
+---
+
 # UnyDesk
 `UnyDesk` est le service d'accès distant de l'écosystème `TRINITY` Edge Networks. C'est la surface publique utilisée pour télécharger un paquet host, pairer ou associer un host, démarrer une session distante et garder cette session exploitable même lorsque le meilleur chemin de transport n'est pas immédiatement disponible.
 

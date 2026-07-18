@@ -1,3 +1,8 @@
+---
+description: Öffentliche Dokumentation für `TRINITY`, das zentrale Portal für Services, Konten, Bestellungen, Abrechnung und Konsolenzugriff.
+social_image: https://trinity-net.com/img/products/trinity/hero-trinity.png
+---
+
 # TRINITY
 `TRINITY` ist die zentrale Website und die wichtigste kundenorientierte Oberfläche der Plattform `TRINITY` Edge Networks. Hier entdeckt der Nutzer die Services, erstellt ein Konto, gibt Bestellungen auf, verfolgt Zahlungen, lädt Rechnungen herunter, öffnet eine Konsole oder fordert Support an. Die öffentliche Dokumentation beschreibt `TRINITY` daher als Produkterlebnis und Kundenweg - nicht als rein technisches Kontrollpanel.
 

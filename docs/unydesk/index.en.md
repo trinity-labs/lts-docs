@@ -1,3 +1,8 @@
+---
+description: Public documentation for `UnyDesk`, the self-hosted remote access broker of the `TRINITY` ecosystem.
+social_image: https://unydesk.app/assets/logo-unydesk.jpg
+---
+
 # UnyDesk
 `UnyDesk` is the remote access service of the `TRINITY` Edge Networks ecosystem. It is the public surface used to download a host package, pair or claim a host, start a remote session and keep that session usable even when the best transport path is not immediately available.
 
