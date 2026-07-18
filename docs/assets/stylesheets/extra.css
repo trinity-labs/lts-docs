@@ -224,6 +224,10 @@ a.md-nav__link.md-nav__link--active {
     height: 1.66rem;
 }
 
+.md-search__input::placeholder {
+    font-size: 0.62rem;
+}
+
 .md-content {
     border-left: 0;
     border-right: 0;
