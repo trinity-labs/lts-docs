@@ -18,7 +18,7 @@ docs_dir: docs
 extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css
   - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github.min.css
-  - assets/stylesheets/extra.css?v=20260718-v005
+  - assets/stylesheets/extra.css?v=20260718-v006
 
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js
