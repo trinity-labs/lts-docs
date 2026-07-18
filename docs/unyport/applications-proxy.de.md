@@ -34,7 +34,7 @@ Der Code lockert die CSP nur fuer den `ttyd`-Mount, damit Webterminal-Assets und
 Diese Proxy-Schicht haelt `UnyPort` fokussiert:
 
 - Operatoren erhalten einen einheitlichen authentifizierten Einstieg
-- interne Anwendungen brauchen kein eigenes oeffentliches Expositionsmodell
-- das Produkt bleibt klein und kann trotzdem Bruecke zu terminalorientierten Tools sein
+- Interne Anwendungen brauchen kein eigenes oeffentliches Expositionsmodell
+- Das Produkt bleibt klein und kann trotzdem Bruecke zu terminalorientierten Tools sein
 
 Die Funktion ist daher als kontrolliertes Gateway zu verstehen, nicht als allgemeiner App-Katalog.

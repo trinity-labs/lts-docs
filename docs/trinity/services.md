@@ -4,11 +4,11 @@
 ## Visible offers
 The `TRINITY` website presents, among other things:
 
-- consulting and delivery engagements
-- support offers
-- training paths
+- Consulting and delivery engagements
+- Support offers
+- Training paths
 - VM-related environments or services
-- companion tools and service surfaces
+- Companion tools and service surfaces
 
 ## TRINITY support scope
 `TRINITY` support explicitly covers:
@@ -27,24 +27,24 @@ This matters publicly because commercial and technical support are not limited t
 ## Payments and invoicing
 Depending on the service, the site supports several payment flows:
 
-- card payment
+- Card payment
 - PayPal
-- bank transfer
+- Bank transfer
 - Litecoin crypto payment
 
 Customers can also review:
 
-- payment statuses
+- Payment statuses
 - PDF invoices
-- order references
-- billing information
+- Order references
+- Billing information
 
 ## Documentation and autonomy
 `TRINITY` gives access to public documentation intended to:
 
-- explain the services
-- identify the right entry point
-- prepare a purchase or contact request
-- make `UnyDesk` and `UnyPort` easier to understand
+- Explain the services
+- Identify the right entry point
+- Prepare a purchase or contact request
+- Make `UnyDesk` and `UnyPort` easier to understand
 
 The purpose of this documentation is not to describe source code. It exists to make the platform clearer for end users.

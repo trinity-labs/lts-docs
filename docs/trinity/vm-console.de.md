@@ -4,10 +4,10 @@ Einige `TRINITY`-Services zeigen eine VM-bezogene Oberflaeche. Das bedeutet nich
 ## Was der Nutzer erwarten kann
 Eine VM-Seite kann zeigen:
 
-- den Maschinennamen
-- online oder offline
-- grundlegende Ressourcensicht
-- einen Konsolen-Einstieg
+- Den Maschinennamen
+- Online oder offline
+- Grundlegende Ressourcensicht
+- Einen Konsolen-Einstieg
 - Links zu Support oder Monitoring
 
 ![VM- und Konsolenansicht](../assets/images/screens/trinity-console.png)
@@ -17,10 +17,10 @@ Eine VM-Seite kann zeigen:
 ## Typische Ziele einer Konsole
 Konsolenzugang ist nuetzlich, um:
 
-- den Boot-Status zu pruefen
-- ein eingehangtes Dateisystem zu inspizieren
+- Den Boot-Status zu pruefen
+- Ein eingehangtes Dateisystem zu inspizieren
 - Hostname oder IP zu lesen
-- zu bestaetigen, ob Recovery-Arbeit moeglich ist
+- Zu bestaetigen, ob Recovery-Arbeit moeglich ist
 
 ```bash
 hostname
@@ -33,10 +33,10 @@ df -h
 ## Einen VM-Zustand lesen
 Eine oeffentliche VM-Seite sollte einfach gelesen werden:
 
-- `online` bedeutet, dass die VM im aktuellen Modus antwortet
-- `maintenance` bedeutet, dass ein technischer Eingriff moeglich ist
-- `recovery` bedeutet, dass Daten und Dateisysteme im Mittelpunkt stehen
-- `unavailable` bedeutet warten oder Support anfragen
+- `online` Bedeutet, dass die VM im aktuellen Modus antwortet
+- `maintenance` Bedeutet, dass ein technischer Eingriff moeglich ist
+- `recovery` Bedeutet, dass Daten und Dateisysteme im Mittelpunkt stehen
+- `unavailable` Bedeutet warten oder Support anfragen
 
 ```text
 online       -> normaler oder technischer Zugang moeglich
@@ -48,9 +48,9 @@ unavailable  -> warten oder Support
 ## Operative Vorsicht
 Eine Konsole ist stark, aber eng begrenzt. Vor jeder Aenderung sollte klar sein:
 
-- ob die VM im Normalmodus oder im DDM laeuft
-- ob das Ziel Diagnose oder Aenderung ist
-- ob der Support eine genaue Aktion angefordert hat
+- Ob die VM im Normalmodus oder im DDM laeuft
+- Ob das Ziel Diagnose oder Aenderung ist
+- Ob der Support eine genaue Aktion angefordert hat
 
 ```bash
 # Sichere erste Pruefungen

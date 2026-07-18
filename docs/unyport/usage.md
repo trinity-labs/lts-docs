@@ -4,9 +4,9 @@
 ## Use 1 - sign in and confirm host context
 Operators usually start by:
 
-- signing in locally or through OAuth
-- reading the detected host role
-- confirming whether the surface is a Dom0, DomU, container or Alpine host
+- Signing in locally or through OAuth
+- Reading the detected host role
+- Confirming whether the surface is a Dom0, DomU, container or Alpine host
 
 This first step changes the rest of the reading because a Dom0 exposes Xen-wide context while a DomU behaves like a VM-centric observer.
 
@@ -14,30 +14,30 @@ This first step changes the rest of the reading because a Dom0 exposes Xen-wide 
 The most common ongoing use is real-time monitoring:
 
 - CPU and per-core activity
-- memory usage and cache behavior
-- network throughput
-- storage occupancy
-- temperatures, processes and load
+- Memory usage and cache behavior
+- Network throughput
+- Storage occupancy
+- Temperatures, processes and load
 
 The portal is therefore useful as a live operational dashboard even before any deeper action is needed.
 
 ## Use 3 - inspect Alpine and Xen specifics
 `UnyPort` is also used to answer Alpine and Xen specific questions:
 
-- is LBU present and committed
-- what Alpine version is running
-- what kernel is running
-- what Xen version and scheduler are active on Dom0
-- how many domains are running and how much memory they consume
+- Is LBU present and committed
+- What Alpine version is running
+- What kernel is running
+- What Xen version and scheduler are active on Dom0
+- How many domains are running and how much memory they consume
 
 ## Use 4 - inspect services, logs and security
 The resources and security surfaces support routine troubleshooting:
 
-- review OpenRC services
-- tail allowed log files
-- inspect listened ports
-- confirm security hardening status
-- identify critical processes or service crashes
+- Review OpenRC services
+- Tail allowed log files
+- Inspect listened ports
+- Confirm security hardening status
+- Identify critical processes or service crashes
 
 ## Use 5 - open an internal tool through the portal
 When configured, `UnyPort` can also act as the entry point toward a proxied internal tool such as `ttyd`. This keeps the operator inside one authenticated surface while still exposing terminal-oriented workflows.

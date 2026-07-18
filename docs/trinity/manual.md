@@ -4,13 +4,13 @@ This page is the practical entry point for `TRINITY`. It explains how to use the
 ## The normal path
 The usual customer path is:
 
-1. discover an offer
-2. create an account
-3. place an order
-4. complete a payment
-5. review the invoice and order status
-6. access the related service
-7. request support if needed
+1. Discover an offer
+2. Create an account
+3. Place an order
+4. Complete a payment
+5. Review the invoice and order status
+6. Access the related service
+7. Request support if needed
 
 ```text
 Visit site
@@ -26,10 +26,10 @@ Visit site
 ## Before you place an order
 Prepare a few pieces of information:
 
-- the exact service you want
-- the business or identity information used for billing
-- the support level you expect
-- whether you need VM access, console access, `UnyDesk` or `UnyPort`
+- The exact service you want
+- The business or identity information used for billing
+- The support level you expect
+- Whether you need VM access, console access, `UnyDesk` or `UnyPort`
 
 ```yaml
 customer_preflight:
@@ -43,23 +43,23 @@ customer_preflight:
 ## What TRINITY can expose
 Depending on the service, `TRINITY` can expose:
 
-- order history
-- invoice PDFs
-- payment status
+- Order history
+- Invoice PDFs
+- Payment status
 - VM status
-- console access
+- Console access
 - Data Disk Mode visibility
-- support and chat entry points
-- links toward `UnyDesk` and `UnyPort`
+- Support and chat entry points
+- Links toward `UnyDesk` and `UnyPort`
 
 ## When the path becomes more technical
 Some services go beyond a simple purchase flow. You may enter a more operational path when:
 
-- a VM must be checked
-- a console must be opened
-- a system must be recovered
-- a data volume must be inspected
-- a service state must be confirmed before support escalates the case
+- A VM must be checked
+- A console must be opened
+- A system must be recovered
+- A data volume must be inspected
+- A service state must be confirmed before support escalates the case
 
 ```bash
 # Example of a console-oriented session once access is granted
@@ -72,9 +72,9 @@ df -h
 ## Reading the rest of this section
 Use the next pages as a structured manual:
 
-- `Account and orders` for the customer workflow
-- `Payments and invoices` for billing flows
-- `VMs and console` for access and status reading
-- `Data Disk Mode` for maintenance and recovery context
-- `Alpine Linux and Xen` for the platform model
-- `Support and operations` for escalation and support boundaries
+- `Account and orders` For the customer workflow
+- `Payments and invoices` For billing flows
+- `VMs and console` For access and status reading
+- `Data Disk Mode` For maintenance and recovery context
+- `Alpine Linux and Xen` For the platform model
+- `Support and operations` For escalation and support boundaries

@@ -11,10 +11,10 @@ df -h
 
 Expected reading:
 
-- the machine answers
-- the uptime is coherent
-- the network is visible
-- the main filesystem is mounted
+- The machine answers
+- The uptime is coherent
+- The network is visible
+- The main filesystem is mounted
 
 ## Example 2 - identify a DDM context
 ```bash
@@ -25,9 +25,9 @@ cat /etc/os-release
 
 Expected reading:
 
-- visible storage devices
-- mounted filesystems
-- a lightweight Alpine userland
+- Visible storage devices
+- Mounted filesystems
+- A lightweight Alpine userland
 
 ## Example 3 - prepare a payment support message
 ```markdown

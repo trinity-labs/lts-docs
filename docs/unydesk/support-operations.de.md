@@ -7,10 +7,10 @@ Oeffentlich kann `UnyDesk`-Support sich beziehen auf:
 - Unklarheiten beim Download des Host-Pakets oder beim Bootstrap
 - Claim-, Pairing- oder Vertrauensprobleme
 - Sitzungsrouting zum falschen Host oder zu keinem Host
-- lokale Freigaben, die nicht erscheinen oder missverstanden werden
+- Lokale Freigaben, die nicht erscheinen oder missverstanden werden
 - WebRTC-Signalisierung, die vor dem Answer blockiert
-- direkten Medienpfad ohne dekodiertes Bild
-- fehlende Bildschirm-Fallback-Ausgabe
+- Direkten Medienpfad ohne dekodiertes Bild
+- Fehlende Bildschirm-Fallback-Ausgabe
 - Probleme mit Zwischenablage oder Dateiuebertragung
 
 ## Nuetzliche Nachweise
@@ -37,23 +37,23 @@ Oeffentlich scheitert eine Fernsitzung meist in einer dieser Stufen:
 8. Fallback erwartet, aber kein Peer-Frame erscheint
 
 ## Typische hilfreiche Symptome
-- "host offline"
-- "session pending"
-- "dispatch accepted but no answer"
-- "answer applied but ICE stays checking"
-- "no inbound video RTP yet"
-- "realtime track timed out"
-- "peer frame fallback requested but no image arrived"
+- "Host offline"
+- "Session pending"
+- "Dispatch accepted but no answer"
+- "Answer applied but ICE stays checking"
+- "No inbound video RTP yet"
+- "Realtime track timed out"
+- "Peer frame fallback requested but no image arrived"
 
 ## Vor einer Eskalation
 Pruefen:
 
-- dass die richtige Host-Paketversion laeuft
-- dass der Host weiterhin online ist
-- dass die Sitzungsroute auf den erwarteten Host zeigt
-- dass lokale Freigabe erteilt wurde, falls erforderlich
-- dass der Browser-Viewer auf derselben Sitzungsseite geblieben ist
-- dass das Problem als Signalisierung, Direktmedien oder Fallback-Bildlieferung verstanden ist
+- Dass die richtige Host-Paketversion laeuft
+- Dass der Host weiterhin online ist
+- Dass die Sitzungsroute auf den erwarteten Host zeigt
+- Dass lokale Freigabe erteilt wurde, falls erforderlich
+- Dass der Browser-Viewer auf derselben Sitzungsseite geblieben ist
+- Dass das Problem als Signalisierung, Direktmedien oder Fallback-Bildlieferung verstanden ist
 
 ## Verwandte Flaechen
 - **`TRINITY`** fuer Konto-, Rechnungs-, Bestell- oder Service-Eigentumsthemen

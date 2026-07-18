@@ -4,11 +4,11 @@ Diese Seite gibt konkrete Beispiele dafuer, wie `UnyPort` im realen Betrieb verw
 ## Beispiel 1 - einen Xen-Dom0 auf einen Blick lesen
 Ein Operator oeffnet das Portal auf einem Dom0 und prueft sofort:
 
-- die Host-Rolle zeigt `Dom0`
+- Die Host-Rolle zeigt `Dom0`
 - Xen-Version und Scheduler sind vorhanden
-- die Anzahl der Domains passt zur Erwartung
-- die Hypervisor-Speichernutzung wirkt stimmig
-- auf der Security-Seite erscheint kein kritischer Dienstabsturz
+- Die Anzahl der Domains passt zur Erwartung
+- Die Hypervisor-Speichernutzung wirkt stimmig
+- Auf der Security-Seite erscheint kein kritischer Dienstabsturz
 
 Das ist der schnellste Weg, um die Hypervisor-Sicht zu bestaetigen, bevor tiefere Gastprobleme analysiert werden.
 
@@ -24,9 +24,9 @@ Das bedeutet, dass Konfigurationsaenderungen existieren, aber noch nicht in das 
 ## Beispiel 3 - laufende Versionen mit TRINITY-Boot-Tags vergleichen
 Ein Operator oeffnet die Hypervisor-Seite und vergleicht:
 
-- die aktuelle Alpine-Version
-- den aktuellen Kernel
-- die letzten rollenspezifischen Versionen aus `/api/versions`
+- Die aktuelle Alpine-Version
+- Den aktuellen Kernel
+- Die letzten rollenspezifischen Versionen aus `/api/versions`
 
 So entsteht ein leichtgewichtiges Update-Signal, ohne `UnyPort` in einen vollstaendigen Paketmanager zu verwandeln.
 
@@ -42,9 +42,9 @@ und muss die Terminal-Anwendung nicht auf einer eigenen oeffentlichen URL freige
 ## Beispiel 5 - einen neuen Operator onboarden
 Ein Administrator kann:
 
-- einen Benutzer anlegen
-- die Rolle `operator` zuweisen
-- diesem Benutzer erlauben, Anzeigename, Avatar und oeffentlichen SSH-Key zu speichern
+- Einen Benutzer anlegen
+- Die Rolle `operator` zuweisen
+- Diesem Benutzer erlauben, Anzeigename, Avatar und oeffentlichen SSH-Key zu speichern
 - Branding und Benutzerverwaltung auf Admins beschraenken
 
 Damit bleibt das Onboarding einfach, waehrend Rollen-Grenzen sauber sichtbar bleiben.

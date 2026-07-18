@@ -3,47 +3,47 @@
 
 Typische oeffentliche Nutzungen sind:
 
-- die Landing Page des Fernzugriffsdienstes oeffnen
-- das passende Host-Paket fuer ein Zielsystem auswaehlen
-- einen Host bootstrappen oder claimen
-- eine Fernsitzung oeffnen oder ueberwachen
-- einen Standalone-Sitzungslink teilen
-- assistierten Support mit lokaler Freigabe am Host durchfuehren
-- mit Bildschirm-Fallback weiterarbeiten, wenn direktes Echtzeitvideo degradierte Wege hat
+- Die Landing Page des Fernzugriffsdienstes oeffnen
+- Das passende Host-Paket fuer ein Zielsystem auswaehlen
+- Einen Host bootstrappen oder claimen
+- Eine Fernsitzung oeffnen oder ueberwachen
+- Einen Standalone-Sitzungslink teilen
+- Assistierten Support mit lokaler Freigabe am Host durchfuehren
+- Mit Bildschirm-Fallback weiterarbeiten, wenn direktes Echtzeitvideo degradierte Wege hat
 
 ## Nutzung 1 - einen Host vorbereiten
 Nutzer beginnen oft damit:
 
-- das richtige Host-Paket herunterzuladen
-- die Host-Laufzeit zu starten oder zu installieren
-- zu pruefen, ob der Host online erscheint
-- zu bestaetigen, dass Pairing oder Claim abgeschlossen ist
+- Das richtige Host-Paket herunterzuladen
+- Die Host-Laufzeit zu starten oder zu installieren
+- Zu pruefen, ob der Host online erscheint
+- Zu bestaetigen, dass Pairing oder Claim abgeschlossen ist
 
 ## Nutzung 2 - eine Support-Sitzung starten
 In einer normalen assistierten Sitzung:
 
-- oeffnet der Viewer die `UnyDesk`-Seite
-- waehlt oder adressiert einen Host
-- erstellt eine Sitzung
-- wartet auf Host-Akzeptanz
-- beobachtet den Uebergang nach offered, accepted und active
+- Oeffnet der Viewer die `UnyDesk`-Seite
+- Waehlt oder adressiert einen Host
+- Erstellt eine Sitzung
+- Wartet auf Host-Akzeptanz
+- Beobachtet den Uebergang nach offered, accepted und active
 
 ## Nutzung 3 - in der Browser-Sitzung arbeiten
 Sobald eine Sitzung lebt, kann der Browser-Viewer typischerweise:
 
-- den entfernten Bildschirm sehen
-- den Mauszeiger bewegen
+- Den entfernten Bildschirm sehen
+- Den Mauszeiger bewegen
 - Tastatureingaben senden
 - Zwischenablageinhalte austauschen
 - Dateien an den Host senden
-- die Sitzung schliessen oder ueberwachen
+- Die Sitzung schliessen oder ueberwachen
 
 ## Nutzung 4 - Standalone-Modus verwenden
 Standalone-Zugriff ist hilfreich, wenn:
 
-- ein Nutzer ohne komplettes Kontoportal an einer Sitzung teilnehmen soll
-- ein Support-Operator eine eng begrenzte Einladung braucht
-- die Sitzung auf einen einzelnen Zugriffskontext beschraenkt bleiben soll
+- Ein Nutzer ohne komplettes Kontoportal an einer Sitzung teilnehmen soll
+- Ein Support-Operator eine eng begrenzte Einladung braucht
+- Die Sitzung auf einen einzelnen Zugriffskontext beschraenkt bleiben soll
 
 ## Nutzung 5 - unvollkommene Netzpfade ueberstehen
 Wenn direkte Echtzeitmedien funktionieren, ist die Erfahrung am besten. Wenn nicht, kann `UnyDesk` trotzdem nuetzlich bleiben durch die Kombination aus:

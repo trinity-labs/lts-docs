@@ -11,8 +11,8 @@
 
 `TRINITY` arbeitet zusammen mit zwei ergänzenden Diensten:
 
-- `UnyDesk` für den Fernzugriff
-- `UnyPort` für die Service-Steuerung
+- `UnyDesk` Für den Fernzugriff
+- `UnyPort` Für die Service-Steuerung
 
 ## Hier beginnen
 Fuer eine praktische Lesereihenfolge wird empfohlen:

@@ -21,17 +21,17 @@ These pages are populated by a mix of static system facts and live snapshots pus
 ## Primary users
 `UnyPort` is meant for:
 
-- administrators
-- operators
-- read-only viewers
+- Administrators
+- Operators
+- Read-only viewers
 
 The application distinguishes those roles explicitly so the same portal can be used for observation, routine operations and controlled administration without exposing all write actions to every user.
 
 ## Position inside the ecosystem
 `UnyPort` should be read as the supervision companion to `TRINITY`:
 
-- `TRINITY` handles the customer lifecycle
-- `UnyDesk` handles remote access and assistance
-- `UnyPort` handles infrastructure state, proxy access and operator context
+- `TRINITY` Handles the customer lifecycle
+- `UnyDesk` Handles remote access and assistance
+- `UnyPort` Handles infrastructure state, proxy access and operator context
 
 That positioning is consistent with the repository itself, the public README and the current runtime routes.

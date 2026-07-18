@@ -4,66 +4,66 @@
 ## Modele de donnees live
 Le pipeline live a quelques caracteristiques importantes :
 
-- un seul endpoint SSE : `/sse/system`
-- un anneau memoire de `60` snapshots
-- environ `2` minutes de contexte roulant
-- des echelles de graphes calculees cote serveur sur les `15` derniers snapshots
+- Un seul endpoint SSE : `/sse/system`
+- Un anneau memoire de `60` snapshots
+- Environ `2` minutes de contexte roulant
+- Des echelles de graphes calculees cote serveur sur les `15` derniers snapshots
 
 Cela garde un frontend leger et evite de dupliquer les calculs de telemetrie dans le navigateur.
 
 ## Dashboard
 Le dashboard est la premiere surface de lecture :
 
-- hostname et role de l'hote
-- uptime
-- resumes CPU et memoire
-- raccourcis vers network, storage et security
-- heatmap annuelle des redemarrages derivee de `startup-history.jsonl` ou de `unyport.log`
+- Hostname et role de l'hote
+- Uptime
+- Resumes CPU et memoire
+- Raccourcis vers network, storage et security
+- Heatmap annuelle des redemarrages derivee de `startup-history.jsonl` ou de `unyport.log`
 
 ## Hypervisor
 La page hypervisor combine identite systeme et contexte plateforme :
 
-- lecture de version Alpine et noyau
-- role d'hote et runtime
-- donnees BIOS et carte mere lorsqu'elles existent
-- comparaison de versions avec les tags `TRINITY` boot recuperes depuis GitHub
-- informations hyperviseur Xen sur Dom0
-- domaines Xen actifs sur Dom0
+- Lecture de version Alpine et noyau
+- Role d'hote et runtime
+- Donnees BIOS et carte mere lorsqu'elles existent
+- Comparaison de versions avec les tags `TRINITY` boot recuperes depuis GitHub
+- Informations hyperviseur Xen sur Dom0
+- Domaines Xen actifs sur Dom0
 
 ## Resources
 La page resources est la surface d'inspection large :
 
-- charge systeme
-- temperatures
-- top processus
-- resume de l'inventaire packages
-- resume des modules noyau
-- liste OpenRC et etat des services
-- navigation et tail des fichiers de log autorises
+- Charge systeme
+- Temperatures
+- Top processus
+- Resume de l'inventaire packages
+- Resume des modules noyau
+- Liste OpenRC et etat des services
+- Navigation et tail des fichiers de log autorises
 
 ## Network et storage
 La page `Network` montre :
 
-- l'interface principale
-- l'adresse IP
-- les debits RX et TX
-- les compteurs d'octets
-- une carte reseau construite a partir des interfaces de l'hote
+- L'interface principale
+- L'adresse IP
+- Les debits RX et TX
+- Les compteurs d'octets
+- Une carte reseau construite a partir des interfaces de l'hote
 
 La page `Storage` montre :
 
-- les disques montes
-- l'espace utilise et libre
-- le type de systeme de fichiers
-- l'etat de persistance LBU sur les hotes Alpine
+- Les disques montes
+- L'espace utilise et libre
+- Le type de systeme de fichiers
+- L'etat de persistance LBU sur les hotes Alpine
 
 ## Security
 La page security est une vraie surface operationnelle dediee, pas juste un resume a badges. Elle agr ege :
 
-- des controles de durcissement noyau
-- les permissions du fichier utilisateurs
-- l'etat des services OpenRC
-- la presence de certains processus surveilles
-- les ports TCP a l'ecoute
+- Des controles de durcissement noyau
+- Les permissions du fichier utilisateurs
+- L'etat des services OpenRC
+- La presence de certains processus surveilles
+- Les ports TCP a l'ecoute
 
 Cela fait d'`UnyPort` plus qu'un simple lecteur de ressources. C'est aussi un lecteur compact de posture de securite.

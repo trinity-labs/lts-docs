@@ -4,12 +4,12 @@
 ## Rolle des Kontos
 Das Kundenkonto dient dazu:
 
-- sich anzumelden
+- Sich anzumelden
 - Rechnungsdaten zu speichern
-- aktive und vergangene Bestellungen zu sehen
-- bestimmte Zahlungsaktionen erneut aufzurufen
+- Aktive und vergangene Bestellungen zu sehen
+- Bestimmte Zahlungsaktionen erneut aufzurufen
 - Rechnungen herunterzuladen
-- nach dem Kauf die richtige Service-Oberflaeche wiederzufinden
+- Nach dem Kauf die richtige Service-Oberflaeche wiederzufinden
 
 ```json
 {
@@ -25,13 +25,13 @@ Das Kundenkonto dient dazu:
 ## Typische Bestellphasen
 Eine Bestellung kann mehrere Zustaende durchlaufen:
 
-- entwurf
-- eingereicht
-- zahlung ausstehend
-- bezahlt
-- in bearbeitung
-- verfuegbar oder geliefert
-- storniert oder abgelaufen
+- Entwurf
+- Eingereicht
+- Zahlung ausstehend
+- Bezahlt
+- In bearbeitung
+- Verfuegbar oder geliefert
+- Storniert oder abgelaufen
 
 ```text
 entwurf -> eingereicht -> zahlung_ausstehend -> bezahlt -> bearbeitung -> verfuegbar
@@ -42,8 +42,8 @@ entwurf -> eingereicht -> zahlung_ausstehend -> bezahlt -> bearbeitung -> verfue
 Die Bestellseite soll ohne interne Details verstaendlich bleiben. Wichtig sind vor allem:
 
 - Referenznummer
-- aktueller Status
-- ausgewaehlter Service
+- Aktueller Status
+- Ausgewaehlter Service
 - Rechnungsprofil
 - Zahlungsstatus
 - Rechnungslink, falls vorhanden
@@ -63,8 +63,8 @@ Halten Sie eine kleine Notiz fest zu:
 - Bestellreferenz
 - Kaufdatum
 - Zahlungsmethode
-- erwartetem Ergebnis
-- genauer Stelle, an der der Ablauf stoppt
+- Erwartetem Ergebnis
+- Genauer Stelle, an der der Ablauf stoppt
 
 ```markdown
 Bestellreferenz: TRI-2026-00421

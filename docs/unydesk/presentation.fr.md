@@ -13,23 +13,23 @@ Cette séparation garde chaque produit lisible. Un utilisateur qui veut gérer l
 ## Capacités visibles
 La surface publique peut exposer :
 
-- une page d'entrée pour l'accès distant
-- des téléchargements host pour Linux, Windows et macOS
-- des checksums pour vérifier les releases
-- une entrée session par compte ou en mode autonome
-- des flux de revendication et de confiance host
-- l'état de session et la visibilité de dispatch
-- le contrôle viewer depuis le navigateur
-- une livraison écran de secours quand le média direct est dégradé
+- Une page d'entrée pour l'accès distant
+- Des téléchargements host pour Linux, Windows et macOS
+- Des checksums pour vérifier les releases
+- Une entrée session par compte ou en mode autonome
+- Des flux de revendication et de confiance host
+- L'état de session et la visibilité de dispatch
+- Le contrôle viewer depuis le navigateur
+- Une livraison écran de secours quand le média direct est dégradé
 
 ## Principes de conception
 `UnyDesk` suit quelques règles produit :
 
-- le runtime host est un composant de premier niveau
-- l'état de session doit rester compréhensible
-- la confiance doit être explicite avant que l'accès soit utile
-- le transport temps réel direct est préféré, mais pas supposé
-- l'API broker est le contrat entre la surface utilisateur et le côté host
+- Le runtime host est un composant de premier niveau
+- L'état de session doit rester compréhensible
+- La confiance doit être explicite avant que l'accès soit utile
+- Le transport temps réel direct est préféré, mais pas supposé
+- L'API broker est le contrat entre la surface utilisateur et le côté host
 
 ## Ce qui reste hors de cette page
 Cette documentation publique n'expose pas les chemins privés, les secrets ni les procédures de reprise réservées à l'exploitation. Ces sujets relèvent de la documentation restreinte.

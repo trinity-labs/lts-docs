@@ -6,10 +6,10 @@ Die primaere Identitaetsquelle ist `settings/users.json`.
 
 Wichtiges Verhalten:
 
-- wenn `users.json` fehlt, legt `UnyPort` einen ersten Admin an
-- die angelegte E-Mail ist `demo@unyport.app`
-- das Passwort kommt aus `UNYPORT_ADMIN_PASSWORD` oder faellt auf den eingebauten Standard zurueck
-- das Repository bringt in seiner Quellstruktur zusaetzlich einen Demo-Benutzer fuer Evaluation mit
+- Wenn `users.json` fehlt, legt `UnyPort` einen ersten Admin an
+- Die angelegte E-Mail ist `demo@unyport.app`
+- Das Passwort kommt aus `UNYPORT_ADMIN_PASSWORD` oder faellt auf den eingebauten Standard zurueck
+- Das Repository bringt in seiner Quellstruktur zusaetzlich einen Demo-Benutzer fuer Evaluation mit
 
 Damit sind Deployment-Pfad und Repository-Evaluationspfad verwandt, aber nicht identisch.
 
@@ -22,9 +22,9 @@ Drei Rollen werden vom Backend akzeptiert:
 
 Ihre operative Bedeutung:
 
-- `viewer`: authentifizierte Nur-Lese-Nutzung
-- `operator`: authentifizierte Nutzung mit Routine-Schreibaktionen wie Profil- und Passwortaenderung
-- `admin`: voller Zugriff inklusive Benutzer- und Branding-Administration
+- `viewer`: Authentifizierte Nur-Lese-Nutzung
+- `operator`: Authentifizierte Nutzung mit Routine-Schreibaktionen wie Profil- und Passwortaenderung
+- `admin`: Voller Zugriff inklusive Benutzer- und Branding-Administration
 
 In der aktuellen UI koennen Viewer das Portal lesen, aber keine Profil- oder Passwortaenderungen speichern.
 
@@ -39,10 +39,10 @@ Die Provider-Deklarationen stehen in `settings/config.yaml`. Platzhalterwerte we
 ## Sitzungsmodell
 Nach erfolgreicher Authentifizierung gibt `UnyPort` ein JWT-Cookie aus:
 
-- signiert mit `security.jwt_secret`
-- gespeichert als HTTP-only-Cookie
-- vom `https`-Schalter fuer Secure-Cookie-Verhalten beeinflusst
-- zeitlich begrenzt ueber `security_extra.session_timeout_mins`
+- Signiert mit `security.jwt_secret`
+- Gespeichert als HTTP-only-Cookie
+- Vom `https`-Schalter fuer Secure-Cookie-Verhalten beeinflusst
+- Zeitlich begrenzt ueber `security_extra.session_timeout_mins`
 
 ## CSRF, Rate Limit und Trusted Origins
 Die Anwendung erzwingt ausserdem:

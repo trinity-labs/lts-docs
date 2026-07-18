@@ -4,10 +4,10 @@
 ## Entdeckung und erster Kontakt
 Der Weg beginnt meist über:
 
-- eine Service-Landingpage
-- eine Angebots- oder Support-Seite
-- eine Kontaktseite
-- eine öffentliche Dokumentationsseite
+- Eine Service-Landingpage
+- Eine Angebots- oder Support-Seite
+- Eine Kontaktseite
+- Eine öffentliche Dokumentationsseite
 
 Ziel dieser ersten Phase ist es, den Bedarf einzuordnen und den Nutzer zum passenden Service, Produkt oder Support-Kanal zu führen.
 
@@ -18,7 +18,7 @@ Nach der Anmeldung findet der Nutzer in `TRINITY`:
 - Rechnungsinformationen
 - Bestellungen
 - Rechnungen
-- ausgewählte Zugänge oder Aktionen zu seinem Service
+- Ausgewählte Zugänge oder Aktionen zu seinem Service
 
 Das Kundenkonto ist nicht nur ein Profil. Es dient als operative Nachverfolgungsfläche.
 
@@ -42,8 +42,8 @@ Ausstehende, abgelehnte, erfolgreiche und stornierte Zahlungen müssen für den 
 Der Weg endet nicht nach dem Kauf. `TRINITY` verbindet Bestellung und Betrieb mit dem Support:
 
 - Assistenz-Chat
-- kommerzieller Support
-- technischer Support
+- Kommerzieller Support
+- Technischer Support
 - Dokumentation
 - Weiterleitung zu `UnyDesk` oder `UnyPort` bei Bedarf
 

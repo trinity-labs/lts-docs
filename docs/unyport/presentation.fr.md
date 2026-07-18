@@ -21,17 +21,17 @@ Ces pages sont alimentees par un melange de faits systeme statiques et de snapsh
 ## Utilisateurs cibles
 `UnyPort` est pensee pour :
 
-- les administrateurs
-- les operateurs
-- les viewers en lecture seule
+- Les administrateurs
+- Les operateurs
+- Les viewers en lecture seule
 
 L'application distingue explicitement ces roles afin que la meme surface puisse servir a l'observation, aux operations courantes et a l'administration controlee sans exposer toutes les actions d'ecriture a tous les utilisateurs.
 
 ## Place dans l'ecosysteme
 `UnyPort` doit se lire comme le compagnon de supervision de `TRINITY` :
 
-- `TRINITY` gere le cycle de vie client
-- `UnyDesk` gere l'acces distant et l'assistance
-- `UnyPort` gere l'etat d'infrastructure, l'acces proxy et le contexte operateur
+- `TRINITY` Gere le cycle de vie client
+- `UnyDesk` Gere l'acces distant et l'assistance
+- `UnyPort` Gere l'etat d'infrastructure, l'acces proxy et le contexte operateur
 
 Ce positionnement est coherent avec le depot lui-meme, le README public et les routes runtime actuelles.

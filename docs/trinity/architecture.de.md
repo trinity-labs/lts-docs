@@ -8,8 +8,8 @@
 ## Ebene 1 - Website, Konto und Kundenbeziehung
 Die erste Ebene ist die sichtbarste:
 
-- öffentliche Seiten
-- kommerzielle Angebote
+- Öffentliche Seiten
+- Kommerzielle Angebote
 - Kontakt- und Support-Seiten
 - Kontoerstellung und Anmeldung
 - Bestellungen, Zahlungen und Rechnungen
@@ -44,10 +44,10 @@ Die Plattform verwaltet damit einen Lebenszyklus und nicht nur klassische Websit
 ## Data Disk Mode
 Der **Data Disk Mode** ist ein spezieller Zugriffsmodus, wenn eine VM anders behandelt werden muss als ein normal laufender Anwendungsdienst. Öffentlich lässt er sich als Wartungs- oder Wiederherstellungsmodus beschreiben:
 
-- die VM startet in einem reduzierten Kontext
-- das Hauptziel ist der Zugriff auf Datenträger und Dateisystem
-- der Nutzer kann Zustand prüfen, Fehler analysieren oder eine Umgebung wiederherstellen
-- der Modus eignet sich für Wartung, Analyse und Recovery
+- Die VM startet in einem reduzierten Kontext
+- Das Hauptziel ist der Zugriff auf Datenträger und Dateisystem
+- Der Nutzer kann Zustand prüfen, Fehler analysieren oder eine Umgebung wiederherstellen
+- Der Modus eignet sich für Wartung, Analyse und Recovery
 
 `TRINITY` zeigt also nicht nur, ob eine Maschine online ist. Die Plattform kann auch einen gezielten Arbeitsmodus für sichere Eingriffe in Daten und Systemzustand bereitstellen.
 
@@ -72,8 +72,8 @@ In `TRINITY` bedeutet das: Kunden bestellen, verfolgen und nutzen Services, die 
 ## Gesamtbild
 Öffentlich lässt sich die `TRINITY`-Architektur so lesen:
 
-1. eine Website, die präsentiert und verkauft
-2. ein Kundenkonto, das verfolgt und abrechnet
-3. eine Plattform, die Zahlung, Support und Servicezugang verbindet
+1. Eine Website, die präsentiert und verkauft
+2. Ein Kundenkonto, das verfolgt und abrechnet
+3. Eine Plattform, die Zahlung, Support und Servicezugang verbindet
 4. Alpine-Linux-Umgebungen, virtualisiert mit Xen
 5. Betriebsoberflächen wie Konsolenzugriff, Data Disk Mode, `UnyDesk` und `UnyPort`

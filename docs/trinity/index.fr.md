@@ -3,16 +3,16 @@
 
 `TRINITY` regroupe publiquement :
 
-- la présentation des offres et services
-- l'accès au compte client
-- les commandes, paiements et factures
-- le suivi des VM et l'accès console
-- le support, la documentation et le chat d'assistance
+- La présentation des offres et services
+- L'accès au compte client
+- Les commandes, paiements et factures
+- Le suivi des VM et l'accès console
+- Le support, la documentation et le chat d'assistance
 
 Cette surface fonctionne aux côtés de deux services complémentaires :
 
-- `UnyDesk` pour l'accès distant
-- `UnyPort` pour le pilotage des services
+- `UnyDesk` Pour l'accès distant
+- `UnyPort` Pour le pilotage des services
 
 ## Commencer ici
 Pour une lecture pratique, l'ordre conseille est :

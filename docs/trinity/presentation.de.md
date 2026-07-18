@@ -9,9 +9,9 @@
 ## Was Nutzer auf der Website finden
 Über `TRINITY` kann ein Besucher oder Kunde:
 
-- kommerzielle Angebote ansehen
-- ein Konto erstellen oder sich anmelden
-- einen Service, eine Schulung oder eine Leistung bestellen
+- Kommerzielle Angebote ansehen
+- Ein Konto erstellen oder sich anmelden
+- Einen Service, eine Schulung oder eine Leistung bestellen
 - Zahlungen verfolgen und Rechnungen herunterladen
 - Bestellungen und deren Status einsehen
 - Konsolenflüsse oder umgebungsbezogene Aktionen öffnen
@@ -31,8 +31,8 @@
 - Alpine Linux
 - Xen
 - VMs und verbundene Umgebungen
-- technischen Support und Betrieb
+- Technischen Support und Betrieb
 - Schulungen und Begleitung
-- ergänzende Werkzeuge wie `UnyDesk` und `UnyPort`
+- Ergänzende Werkzeuge wie `UnyDesk` und `UnyPort`
 
 Die Website ist daher als Betriebs- und Kundenportal zu verstehen, nicht als einfache Schauseite.

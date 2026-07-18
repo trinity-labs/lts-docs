@@ -16,18 +16,18 @@ Le compose fourni demarre un conteneur `golang:alpine` et compile le projet au l
 
 Caracteristiques developpement :
 
-- les assets frontend sont servis depuis le disque via `UNYPORT_ASSETS`
-- les caches Go module et build sont montes en volumes nommes
-- le port expose par defaut est `8800:8800`
-- le conteneur resout `host.docker.internal` via `host-gateway`
+- Les assets frontend sont servis depuis le disque via `UNYPORT_ASSETS`
+- Les caches Go module et build sont montes en volumes nommes
+- Le port expose par defaut est `8800:8800`
+- Le conteneur resout `host.docker.internal` via `host-gateway`
 
 ## Mode production
 La meme logique compose prepare aussi un binaire de production :
 
-- les assets frontend sont copies dans `server/assets`
-- le binaire est compile avec `-tags prod`
-- les symboles sont supprimes
-- `upx --lzma` est applique dans le conteneur
+- Les assets frontend sont copies dans `server/assets`
+- Le binaire est compile avec `-tags prod`
+- Les symboles sont supprimes
+- `upx --lzma` Est applique dans le conteneur
 
 Le README presente cela comme le chemin de paquet compact, tandis que le developpement garde des assets live sur disque.
 
@@ -42,7 +42,7 @@ Operationnellement, l'application ecrit aussi :
 
 - `logs/unyport.log`
 - `logs/startup-history.jsonl`
-- `settings/branding.yaml` lorsqu'un branding personnalise est sauve
+- `settings/branding.yaml` Lorsqu'un branding personnalise est sauve
 
 ## HTTPS et HTTP/3
 Par defaut, l'application ecoute en HTTP simple sur `:8800`.
@@ -61,10 +61,10 @@ Lorsque HTTP/3 est active correctement, `UnyPort` peut servir le TLS sur le port
 ## Reverse proxy et premier login
 Pour un deploiement expose a Internet, le schema habituel est :
 
-- binder `UnyPort` localement ou sur une adresse hote controlee
-- placer Nginx ou un autre reverse proxy devant
-- activer le comportement secure-cookie avec `security_extra.https: true`
-- remplacer les placeholders OAuth avant toute ouverture publique
-- changer immediatement les identifiants seedes ou de demo
+- Binder `UnyPort` localement ou sur une adresse hote controlee
+- Placer Nginx ou un autre reverse proxy devant
+- Activer le comportement secure-cookie avec `security_extra.https: true`
+- Remplacer les placeholders OAuth avant toute ouverture publique
+- Changer immediatement les identifiants seedes ou de demo
 
 Cela garde le deploiement minimal sans faire semblant qu'une configuration de demo est prete pour la production.

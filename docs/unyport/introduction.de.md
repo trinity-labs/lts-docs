@@ -8,29 +8,29 @@
 ## Was UnyPort ist
 `UnyPort` folgt einigen klaren Prinzipien:
 
-- ein einzelner Go-Runtime-Pfad
-- ein minimales Bereitstellungsmodell
-- direkte Lesezugriffe auf Kernel und Dateisystem
-- explizite Erkennung der Host-Rolle
-- keine schwere Agenten-Pipeline
+- Ein einzelner Go-Runtime-Pfad
+- Ein minimales Bereitstellungsmodell
+- Direkte Lesezugriffe auf Kernel und Dateisystem
+- Explizite Erkennung der Host-Rolle
+- Keine schwere Agenten-Pipeline
 
 In diesem Repository ist das Frontend eine Single-Page-Anwendung, die im Entwicklungsmodus vom Datentraeger und im Produktionsmodus aus dem Binary ausgeliefert wird.
 
 ## Was UnyPort nicht ist
 `UnyPort` wird nicht praesentiert als:
 
-- oeffentliche Marketing-Website
+- Oeffentliche Marketing-Website
 - Kundenportal fuer Bestellungen
-- vollstaendige Xen-Orchestrierungssuite heute
-- generisches Remote-Desktop-Werkzeug
+- Vollstaendige Xen-Orchestrierungssuite heute
+- Generisches Remote-Desktop-Werkzeug
 
 Diese Rollen gehoeren stattdessen zu `TRINITY` und `UnyDesk`, je nach Bedarf.
 
 ## Warum diese Dokumentation existiert
 Diese Dokumentation erklaert die sichtbare Produktoberflaeche von `UnyPort` aus Sicht von Deployment und Betrieb:
 
-- was Operatoren sehen
-- wie Authentifizierung und Rollen funktionieren
-- welche Daten gesammelt werden
-- wie Alpine Linux und Xen das Produkt praegen
-- wo aktuelle Grenzen und Evolutionspunkte liegen
+- Was Operatoren sehen
+- Wie Authentifizierung und Rollen funktionieren
+- Welche Daten gesammelt werden
+- Wie Alpine Linux und Xen das Produkt praegen
+- Wo aktuelle Grenzen und Evolutionspunkte liegen

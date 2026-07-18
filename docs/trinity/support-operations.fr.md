@@ -4,14 +4,14 @@ Le support `TRINITY` est a la fois commercial et technique. Cote public, cela si
 ## Perimetre support
 Le support `TRINITY` peut explicitement concerner :
 
-- les commandes et questions de facturation
-- le suivi de paiement
-- l'acces aux factures
-- les environnements Alpine Linux
-- les services VM reposant sur Xen
-- les situations Data Disk Mode
-- l'usage d'`UnyDesk`
-- l'usage d'`UnyPort`
+- Les commandes et questions de facturation
+- Le suivi de paiement
+- L'acces aux factures
+- Les environnements Alpine Linux
+- Les services VM reposant sur Xen
+- Les situations Data Disk Mode
+- L'usage d'`UnyDesk`
+- L'usage d'`UnyPort`
 
 ## Bon format de demande support
 Une bonne demande support est concrete et breve.
@@ -29,11 +29,11 @@ Resultat attendu : confirmer s'il faut reprendre ou revenir en mode normal
 ## Avant d'escalader
 Collectez d'abord le minimum :
 
-- reference de commande
-- etat facture ou paiement si utile
-- nom de VM s'il existe
-- mode courant : normal, maintenance ou DDM
-- capture ou observation console precise
+- Reference de commande
+- Etat facture ou paiement si utile
+- Nom de VM s'il existe
+- Mode courant : normal, maintenance ou DDM
+- Capture ou observation console precise
 
 ```bash
 # Exemple de lot d'informations a relever
@@ -49,21 +49,21 @@ df -h
 
 Le libre-service convient pour :
 
-- lire une facture
-- verifier un etat de paiement
-- ouvrir une console
-- confirmer si une VM est en ligne
+- Lire une facture
+- Verifier un etat de paiement
+- Ouvrir une console
+- Confirmer si une VM est en ligne
 
 Le support convient pour :
 
-- livraison de commande bloquee
-- incoherence de paiement
-- etat VM peu clair
-- action de reprise avec risque sur les donnees
+- Livraison de commande bloquee
+- Incoherence de paiement
+- Etat VM peu clair
+- Action de reprise avec risque sur les donnees
 
 ## Surfaces a utiliser
 Utilisez la bonne surface selon le besoin :
 
-- `TRINITY` pour le compte, les commandes, les factures et le point d'entree service
-- `UnyDesk` pour l'assistance distante et l'interaction
-- `UnyPort` pour l'etat infra et la supervision
+- `TRINITY` Pour le compte, les commandes, les factures et le point d'entree service
+- `UnyDesk` Pour l'assistance distante et l'interaction
+- `UnyPort` Pour l'etat infra et la supervision

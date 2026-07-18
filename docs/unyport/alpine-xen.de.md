@@ -4,11 +4,11 @@
 ## Warum Alpine Linux hier wichtig ist
 Alpine Linux passt zum `UnyPort`-Modell, weil es:
 
-- klein ist
-- vorhersagbar ist
-- auf musl basiert
-- in minimalen Betriebsumgebungen gut funktioniert
-- zu LBU-Persistenz-Workflows passt
+- Klein ist
+- Vorhersagbar ist
+- Auf musl basiert
+- In minimalen Betriebsumgebungen gut funktioniert
+- Zu LBU-Persistenz-Workflows passt
 
 Das ist wichtig, weil `UnyPort` lokalen Zustand direkt liest und von einem kompakten, lesbaren Host profitiert.
 
@@ -33,18 +33,18 @@ Das liefert Domain-Anzahl, vCPU-Summe, Speicherwerte, Scheduler-Details und CPU-
 ## Dom0 gegen DomU
 Diese Unterscheidung veraendert, was Operatoren sehen:
 
-- auf `Dom0` kann `UnyPort` Hypervisor- und Xen-Domain-Zustand zeigen
-- auf `DomU` verhaelt sich `UnyPort` als VM-zentrierter Beobachter
-- in Containern koennen Board- und Firmware-Felder natuerlich fehlen
+- Auf `Dom0` kann `UnyPort` Hypervisor- und Xen-Domain-Zustand zeigen
+- Auf `DomU` verhaelt sich `UnyPort` als VM-zentrierter Beobachter
+- In Containern koennen Board- und Firmware-Felder natuerlich fehlen
 
 Die UI ist explizit um diese Unterschiede herum gestaltet.
 
 ## LBU und Persistenz
 `UnyPort` versteht auch das Alpine-`lbu`-Modell:
 
-- ob LBU vorhanden ist
-- ob das letzte Archiv existiert
-- ob der Zustand `clean` oder `dirty` ist
+- Ob LBU vorhanden ist
+- Ob das letzte Archiv existiert
+- Ob der Zustand `clean` oder `dirty` ist
 
 Das ist besonders relevant in Alpine-Wartungsumgebungen oder Data-Disk-Mode-nahen Szenarien, in denen Konfigurationsdrift leicht sichtbar sein muss.
 
@@ -52,6 +52,6 @@ Das ist besonders relevant in Alpine-Wartungsumgebungen oder Data-Disk-Mode-nahe
 In oeffentlichen Dokumentationstermen ist `UnyPort` daher zu lesen als:
 
 1. Alpine-natives Operator-Portal
-2. bewusst fuer Xen-Topologie und Rollen
-3. nuetzlich auf Dom0, DomU und schlanken Service-Hosts
-4. ausgerichtet auf minimale Operationen statt schwere Abstraktionsschichten
+2. Bewusst fuer Xen-Topologie und Rollen
+3. Nuetzlich auf Dom0, DomU und schlanken Service-Hosts
+4. Ausgerichtet auf minimale Operationen statt schwere Abstraktionsschichten

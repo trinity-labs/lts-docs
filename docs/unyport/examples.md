@@ -4,11 +4,11 @@ This page gives concrete examples of how `UnyPort` is meant to be used in real o
 ## Example 1 - read a Xen Dom0 at a glance
 An operator opens the portal on a Dom0 and immediately checks:
 
-- host role says `Dom0`
+- Host role says `Dom0`
 - Xen version and scheduler are present
-- domain count matches expectations
-- memory usage across the hypervisor is coherent
-- no critical service crash appears on the security page
+- Domain count matches expectations
+- Memory usage across the hypervisor is coherent
+- No critical service crash appears on the security page
 
 This is the fastest way to confirm that the hypervisor view is healthy before digging into guest-specific issues.
 
@@ -16,17 +16,17 @@ This is the fastest way to confirm that the hypervisor view is healthy before di
 On a maintenance-oriented Alpine host, the storage page shows:
 
 - LBU present
-- state marked as `dirty`
-- the last archive name
+- State marked as `dirty`
+- The last archive name
 
 That tells the operator that configuration changes exist but have not yet been committed into the persistence archive.
 
 ## Example 3 - compare running versions with upstream TRINITY boot tags
 An operator opens the hypervisor page and compares:
 
-- the current Alpine version
-- the current running kernel
-- the latest role-specific versions returned by `/api/versions`
+- The current Alpine version
+- The current running kernel
+- The latest role-specific versions returned by `/api/versions`
 
 This provides a lightweight update signal without turning `UnyPort` into a full package manager.
 
@@ -42,9 +42,9 @@ from the portal navigation instead of exposing the terminal app directly on its 
 ## Example 5 - onboard a new operator
 An administrator can:
 
-- create a user
-- assign the `operator` role
-- let that user store a display name, avatar and SSH public key
-- keep branding and user administration restricted to admins
+- Create a user
+- Assign the `operator` role
+- Let that user store a display name, avatar and SSH public key
+- Keep branding and user administration restricted to admins
 
 This keeps onboarding simple while preserving role boundaries.

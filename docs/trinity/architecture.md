@@ -8,34 +8,34 @@
 ## Layer 1 - website, account and customer relationship
 The first layer is the most visible one:
 
-- public pages
-- commercial offers
-- contact and support pages
-- account creation and sign-in
-- orders, payments and invoices
-- chat and assistance
+- Public pages
+- Commercial offers
+- Contact and support pages
+- Account creation and sign-in
+- Orders, payments and invoices
+- Chat and assistance
 
 This layer turns `TRINITY` into a customer portal. It is the part that connects the commercial promise to actual service usage.
 
 ## Layer 2 - service surfaces
 Once the customer is identified, `TRINITY` gives access to service surfaces:
 
-- order tracking
-- invoice download
-- payment status visibility
-- billing information
-- access to selected VM surfaces
-- console session opening
+- Order tracking
+- Invoice download
+- Payment status visibility
+- Billing information
+- Access to selected VM surfaces
+- Console session opening
 
 The platform therefore manages a lifecycle, not only website navigation.
 
 ## Layer 3 - VMs, consoles and operations
 `TRINITY` does not stop at checkout. The site also exposes operations-oriented use cases:
 
-- consulting a VM
-- restarting or following status
-- opening a console
-- accessing a maintenance-oriented mode
+- Consulting a VM
+- Restarting or following status
+- Opening a console
+- Accessing a maintenance-oriented mode
 
 ![VM console in Data Disk Mode](../assets/images/screens/trinity-console.png)
 
@@ -44,10 +44,10 @@ The platform therefore manages a lifecycle, not only website navigation.
 ## Data Disk Mode
 **Data Disk Mode** is a special access mode used when a VM must be handled differently from a normal application runtime. Publicly, it can be described as a maintenance or recovery mode:
 
-- the VM starts in a reduced context
-- the main objective becomes access to the disk and filesystem
-- the user can inspect state, diagnose issues or recover an environment
-- the mode is suitable for maintenance, analysis and recovery workflows
+- The VM starts in a reduced context
+- The main objective becomes access to the disk and filesystem
+- The user can inspect state, diagnose issues or recover an environment
+- The mode is suitable for maintenance, analysis and recovery workflows
 
 In other words, `TRINITY` does not only show whether a machine is online. It can also expose a dedicated work mode meant for safe intervention on data and system state.
 
@@ -72,8 +72,8 @@ Within `TRINITY`, this means a customer can order, follow and operate services t
 ## Overall reading
 From a public perspective, `TRINITY` architecture can be read as:
 
-1. a website that presents and sells
-2. a customer account that tracks and invoices
-3. a platform that connects payments, support and service access
+1. A website that presents and sells
+2. A customer account that tracks and invoices
+3. A platform that connects payments, support and service access
 4. Alpine Linux environments virtualized with Xen
-5. operational surfaces such as console access, Data Disk Mode, `UnyDesk` and `UnyPort`
+5. Operational surfaces such as console access, Data Disk Mode, `UnyDesk` and `UnyPort`

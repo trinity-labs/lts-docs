@@ -4,12 +4,12 @@
 ## Account scope
 The customer account is used to:
 
-- authenticate
-- store billing information
-- review active and past orders
-- reopen payment-related actions
-- download invoices
-- identify the right service surface after purchase
+- Authenticate
+- Store billing information
+- Review active and past orders
+- Reopen payment-related actions
+- Download invoices
+- Identify the right service surface after purchase
 
 ```json
 {
@@ -25,13 +25,13 @@ The customer account is used to:
 ## Typical order stages
 An order can pass through several stages:
 
-- draft
-- submitted
-- pending payment
-- paid
-- processing
-- delivered or available
-- cancelled or expired
+- Draft
+- Submitted
+- Pending payment
+- Paid
+- Processing
+- Delivered or available
+- Cancelled or expired
 
 ```text
 draft -> submitted -> pending_payment -> paid -> processing -> available
@@ -41,12 +41,12 @@ draft -> submitted -> pending_payment -> paid -> processing -> available
 ## What the user should read in an order
 An order page should be readable even without platform internals. The user mostly needs:
 
-- the reference number
-- the current status
-- the selected service
-- the chosen billing profile
-- the payment state
-- the invoice link when available
+- The reference number
+- The current status
+- The selected service
+- The chosen billing profile
+- The payment state
+- The invoice link when available
 
 ```yaml
 order_summary:
@@ -60,11 +60,11 @@ order_summary:
 ## Good operational habits
 Before opening a support case, keep a small record of:
 
-- the order reference
-- the date of purchase
-- the payment method
-- the expected service outcome
-- the exact point where the flow stopped
+- The order reference
+- The date of purchase
+- The payment method
+- The expected service outcome
+- The exact point where the flow stopped
 
 ```markdown
 Order reference: TRI-2026-00421

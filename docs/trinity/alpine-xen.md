@@ -4,9 +4,9 @@
 ## Alpine Linux
 Alpine Linux is the system base used for compact and controlled environments. Publicly, this matters because customers often encounter:
 
-- a lightweight console environment
-- a minimal package footprint
-- a simple, direct system layout
+- A lightweight console environment
+- A minimal package footprint
+- A simple, direct system layout
 
 ```bash
 cat /etc/os-release
@@ -16,16 +16,16 @@ apk info | head
 
 Typical user-facing interpretation:
 
-- the system is intentionally small
-- recovery and maintenance can stay readable
-- the platform favors predictable technical surfaces
+- The system is intentionally small
+- Recovery and maintenance can stay readable
+- The platform favors predictable technical surfaces
 
 ## Xen
 Xen is the virtualization layer underneath VM-oriented services. The customer does not usually manage Xen directly from `TRINITY`, but Xen explains why the platform can expose:
 
-- isolated virtual machines
-- stateful VM lifecycle information
-- maintenance and recovery modes
+- Isolated virtual machines
+- Stateful VM lifecycle information
+- Maintenance and recovery modes
 
 ```text
 Customer surface -> TRINITY
@@ -38,7 +38,7 @@ Alpine Linux and Xen form a practical model:
 
 - Alpine Linux provides the guest operating environment
 - Xen provides isolation and VM execution
-- `TRINITY` provides the customer-facing lifecycle and support surface
+- `TRINITY` Provides the customer-facing lifecycle and support surface
 
 ```yaml
 platform_model:

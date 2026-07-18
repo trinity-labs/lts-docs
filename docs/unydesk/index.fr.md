@@ -3,11 +3,11 @@
 
 Contrairement à `TRINITY`, qui reste le portail client et services, `UnyDesk` est centré sur :
 
-- l'accessibilité du host
-- le routage des sessions entre viewer et host
-- le contrôle distant en direct
-- les flux d'assistance distante
-- les comportements de secours côté transport
+- L'accessibilité du host
+- Le routage des sessions entre viewer et host
+- Le contrôle distant en direct
+- Les flux d'assistance distante
+- Les comportements de secours côté transport
 
 ## Commencer ici
 Pour une lecture pratique, l'ordre recommandé est :

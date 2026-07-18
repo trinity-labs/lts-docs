@@ -20,11 +20,11 @@ Litecoin          -> ausstehender Zustand -> Pruefung einer Zahlungsreferenz
 ## Zahlungszustaende
 Die oeffentliche Oberflaeche soll diese Zustaende verstaendlich machen:
 
-- bezahlt
-- ausstehend
-- abgelehnt
-- storniert
-- erneuter Versuch moeglich
+- Bezahlt
+- Ausstehend
+- Abgelehnt
+- Storniert
+- Erneuter Versuch moeglich
 
 ```json
 {
@@ -43,8 +43,8 @@ Die PDF-Rechnung ist das kundenorientierte Abrechnungsdokument. Sie sollte Folge
 - Rechnungsnummer
 - Bestellreferenz
 - Kundenname
-- berechneter Service
-- bezahlt oder ausstehend
+- Berechneter Service
+- Bezahlt oder ausstehend
 - Rechnungsdatum
 
 ```yaml
@@ -58,11 +58,11 @@ rechnung:
 ## Wenn eine Zahlung ausstehend bleibt
 Die richtige Aktion haengt vom Fluss ab:
 
-- auf die Rueckkehr des Zahlungsanbieters warten
-- die Bestellseite erneut pruefen
-- das Rechnungsprofil kontrollieren
-- die Zahlungsreferenz aufbewahren
-- den Support kontaktieren, wenn der Zustand blockiert bleibt
+- Auf die Rueckkehr des Zahlungsanbieters warten
+- Die Bestellseite erneut pruefen
+- Das Rechnungsprofil kontrollieren
+- Die Zahlungsreferenz aufbewahren
+- Den Support kontaktieren, wenn der Zustand blockiert bleibt
 
 ```markdown
 Checkliste fuer ausstehende Zahlung
@@ -76,7 +76,7 @@ Checkliste fuer ausstehende Zahlung
 ## Was nicht passieren sollte
 Aus Kundensicht sollte eine ausstehende oder abgelehnte Zahlung nicht zu Folgendem fuehren:
 
-- doppelte Bestellungen ohne Grund
-- nicht auffindbare Rechnung
-- unsichtbarer Wiederaufnahmeweg
-- unlesbarer Anbieterstatus
+- Doppelte Bestellungen ohne Grund
+- Nicht auffindbare Rechnung
+- Unsichtbarer Wiederaufnahmeweg
+- Unlesbarer Anbieterstatus

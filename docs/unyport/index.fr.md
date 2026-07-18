@@ -3,16 +3,16 @@
 
 Publiquement, `UnyPort` rassemble :
 
-- un acces operateur authentifie
-- une visibilite en direct sur l'hote et les services
-- un contexte Xen explicite pour les environnements Dom0 et DomU
-- un acces controle a certaines applications internes comme `ttyd`
-- des pages operationnelles pour la securite, le stockage, le reseau et l'etat systeme
+- Un acces operateur authentifie
+- Une visibilite en direct sur l'hote et les services
+- Un contexte Xen explicite pour les environnements Dom0 et DomU
+- Un acces controle a certaines applications internes comme `ttyd`
+- Des pages operationnelles pour la securite, le stockage, le reseau et l'etat systeme
 
 `UnyPort` fonctionne avec deux surfaces complementaires :
 
-- `TRINITY` pour le cycle de vie client, les commandes, la facturation et les points d'entree de service
-- `UnyDesk` pour l'acces distant et les workflows d'assistance
+- `TRINITY` Pour le cycle de vie client, les commandes, la facturation et les points d'entree de service
+- `UnyDesk` Pour l'acces distant et les workflows d'assistance
 
 ## Commencer ici
 Pour une lecture pratique, l'ordre recommande est :

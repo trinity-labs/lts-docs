@@ -4,29 +4,29 @@ Cette page résume les grands chantiers fonctionnels récents qui ont façonné 
 ## Renforcement du compte client
 Le compte client a été étendu pour devenir une vraie surface de suivi :
 
-- détails de commande plus lisibles
-- statuts de paiement mieux distingués
-- suivi des abonnements
-- accès plus direct aux factures et références
-- meilleure cohérence entre commande, paiement et exploitation
+- Détails de commande plus lisibles
+- Statuts de paiement mieux distingués
+- Suivi des abonnements
+- Accès plus direct aux factures et références
+- Meilleure cohérence entre commande, paiement et exploitation
 
 ## Refonte de la facturation
 La facturation a été consolidée autour de PDF plus propres et plus crédibles :
 
-- identité visuelle `TRINITY`
-- factures plus lisibles
-- meilleur traitement de la TVA, du HT et du TTC
-- mentions légales et textes de recouvrement renforcés
-- régénération des anciennes factures
+- Identité visuelle `TRINITY`
+- Factures plus lisibles
+- Meilleur traitement de la TVA, du HT et du TTC
+- Mentions légales et textes de recouvrement renforcés
+- Régénération des anciennes factures
 
 ## Unification des paiements
 Les paiements ont été structurés autour d'un même principe d'expérience :
 
-- collecte préalable des informations utiles
-- retours de paiement explicites
-- statuts visuels homogènes
-- reprise possible pour un paiement en attente
-- prise en charge de plusieurs fournisseurs et méthodes
+- Collecte préalable des informations utiles
+- Retours de paiement explicites
+- Statuts visuels homogènes
+- Reprise possible pour un paiement en attente
+- Prise en charge de plusieurs fournisseurs et méthodes
 
 Les méthodes déjà exposées incluent la carte, PayPal, le virement et Litecoin selon le type de commande.
 
@@ -43,28 +43,28 @@ Ce changement a modifié à la fois les pages d'offre, la présentation publique
 ## Evolution du chat
 Le chat d'assistance a quitté le format modale pour devenir une page dédiée avec historique :
 
-- conversations persistantes
-- meilleure lisibilité
-- suggestions rapides
-- conservation de l'historique pour les visiteurs non connectés
-- réconciliation lors de la création d'un compte
+- Conversations persistantes
+- Meilleure lisibilité
+- Suggestions rapides
+- Conservation de l'historique pour les visiteurs non connectés
+- Réconciliation lors de la création d'un compte
 
 ## Consentement et conformité
 Le site a également évolué sur le plan conformité :
 
-- politique cookies dédiée
-- politique de confidentialité étoffée
+- Politique cookies dédiée
+- Politique de confidentialité étoffée
 - CGU / CGV renforcées
-- panneaux de consentement personnalisés
+- Panneaux de consentement personnalisés
 
 L'objectif était de rendre la plateforme plus exploitable publiquement, sans laisser de zones juridiques ou UX trop faibles.
 
 ## VM, consoles et exploitation
 Enfin, plusieurs chantiers ont indirectement amélioré la surface publique :
 
-- comportement des VM et de leur reprise
-- affichage des états
-- robustesse des consoles
-- clarification du lien entre commandes et environnements
+- Comportement des VM et de leur reprise
+- Affichage des états
+- Robustesse des consoles
+- Clarification du lien entre commandes et environnements
 
 `TRINITY` doit aujourd'hui être comprise comme une plateforme opérationnelle complète, où le site, le compte, le support, la facture et l'accès aux services font partie d'un même ensemble.

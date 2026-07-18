@@ -12,12 +12,12 @@ Das Produkt ist um drei öffentliche Rollen organisiert:
 ## Was UnyDesk löst
 `UnyDesk` wird verwendet, wenn der Benutzer Folgendes benötigt:
 
-- ein Host-Paket herunterladen oder starten
-- einen Host beanspruchen oder vertrauen
-- eine Remote-Sitzung erstellen
-- den Viewer zum richtigen Host routen
+- Ein Host-Paket herunterladen oder starten
+- Einen Host beanspruchen oder vertrauen
+- Eine Remote-Sitzung erstellen
+- Den Viewer zum richtigen Host routen
 - Signalisierung zwischen Browser und Host austauschen
-- die Sitzung fortsetzen, wenn der beste Echtzeitpfad nicht verfügbar ist
+- Die Sitzung fortsetzen, wenn der beste Echtzeitpfad nicht verfügbar ist
 
 ## Öffentliche Architektur in einer Ansicht
 ```text
@@ -33,9 +33,9 @@ Der Broker bleibt der stabile Koordinationspunkt. Der Medienpfad kann direkt sei
 ## Dokumentationspfad
 Diese Sektion sollte in dieser Reihenfolge gelesen werden:
 
-- `Präsentation` für die Produktsicht
-- `Architektur` für das Laufzeitmodell
-- `Handbuch` für den praktischen Pfad
-- `Host-Verteilung` für Downloads und Pakete
-- `Session-Broker` für Lebenszyklus und Signalisierung
-- `Sicherheit und Betrieb` für öffentliche Betriebsgrenzen
+- `Präsentation` Für die Produktsicht
+- `Architektur` Für das Laufzeitmodell
+- `Handbuch` Für den praktischen Pfad
+- `Host-Verteilung` Für Downloads und Pakete
+- `Session-Broker` Für Lebenszyklus und Signalisierung
+- `Sicherheit und Betrieb` Für öffentliche Betriebsgrenzen

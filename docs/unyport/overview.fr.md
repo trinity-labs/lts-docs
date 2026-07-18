@@ -3,9 +3,9 @@
 
 Elle existe pour exposer :
 
-- l'authentification operateur et la separation des roles
-- l'etat du systeme et des services
-- l'historique des redemarrages et la posture de securite
-- une passerelle controlee vers certaines surfaces internes
+- L'authentification operateur et la separation des roles
+- L'etat du systeme et des services
+- L'historique des redemarrages et la posture de securite
+- Une passerelle controlee vers certaines surfaces internes
 
 Utiliser l'index de section et les pages suivantes pour la documentation complete. `UnyPort` n'est pas presentee comme un outil de developpement. Elle est presentee comme une architecture de controle dediee.

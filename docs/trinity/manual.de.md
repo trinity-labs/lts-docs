@@ -4,13 +4,13 @@ Diese Seite ist der praktische Einstieg in `TRINITY`. Sie erklaert die Nutzung d
 ## Der normale Ablauf
 Der uebliche Kundenweg ist:
 
-1. ein Angebot entdecken
-2. ein Konto erstellen
-3. eine Bestellung aufgeben
-4. eine Zahlung ausfuehren
+1. Ein Angebot entdecken
+2. Ein Konto erstellen
+3. Eine Bestellung aufgeben
+4. Eine Zahlung ausfuehren
 5. Rechnung und Bestellstatus pruefen
-6. den zugehoerigen Service nutzen
-7. bei Bedarf Support anfragen
+6. Den zugehoerigen Service nutzen
+7. Bei Bedarf Support anfragen
 
 ```text
 Website besuchen
@@ -26,10 +26,10 @@ Website besuchen
 ## Vor der Bestellung
 Bereiten Sie einige einfache Informationen vor:
 
-- den genau benoetigten Service
-- die Rechnungsidentitaet
-- das erwartete Support-Niveau
-- den Bedarf an Konsole, VM, `UnyDesk` oder `UnyPort`
+- Den genau benoetigten Service
+- Die Rechnungsidentitaet
+- Das erwartete Support-Niveau
+- Den Bedarf an Konsole, VM, `UnyDesk` oder `UnyPort`
 
 ```yaml
 kunden_vorbereitung:
@@ -55,11 +55,11 @@ Je nach Service kann `TRINITY` zeigen:
 ## Wenn der Ablauf technischer wird
 Einige Services gehen ueber einen einfachen Kauf hinaus. Der Weg wird technischer, wenn:
 
-- eine VM geprueft werden muss
-- eine Konsole geoeffnet werden muss
-- eine Umgebung wiederhergestellt werden muss
-- ein Datenvolumen inspiziert werden muss
-- ein Servicestatus vor einer Support-Eskalation bestaetigt werden muss
+- Eine VM geprueft werden muss
+- Eine Konsole geoeffnet werden muss
+- Eine Umgebung wiederhergestellt werden muss
+- Ein Datenvolumen inspiziert werden muss
+- Ein Servicestatus vor einer Support-Eskalation bestaetigt werden muss
 
 ```bash
 # Beispiel einer konsolenorientierten Sitzung

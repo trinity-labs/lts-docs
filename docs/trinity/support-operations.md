@@ -4,14 +4,14 @@
 ## Support scope
 `TRINITY` support can explicitly concern:
 
-- orders and billing questions
-- payment follow-up
-- invoice access
+- Orders and billing questions
+- Payment follow-up
+- Invoice access
 - Alpine Linux environments
 - Xen-backed VM services
 - Data Disk Mode situations
-- `UnyDesk` usage
-- `UnyPort` usage
+- `UnyDesk` Usage
+- `UnyPort` Usage
 
 ## Good support request format
 A useful support request is concrete and short.
@@ -29,11 +29,11 @@ Expected result: confirm if recovery or normal restart is required
 ## Before escalating
 Collect the minimum facts first:
 
-- order reference
-- invoice or payment state if relevant
+- Order reference
+- Invoice or payment state if relevant
 - VM name if one exists
-- current mode: normal, maintenance or DDM
-- exact screenshot or console observation
+- Current mode: normal, maintenance or DDM
+- Exact screenshot or console observation
 
 ```bash
 # Example evidence set from a console
@@ -49,21 +49,21 @@ df -h
 
 Self-service is appropriate for:
 
-- reading an invoice
-- checking a payment state
-- opening a console
-- confirming whether a VM is online
+- Reading an invoice
+- Checking a payment state
+- Opening a console
+- Confirming whether a VM is online
 
 Support is appropriate for:
 
-- blocked order delivery
-- payment inconsistency
-- unclear VM state
-- recovery action with risk of data loss
+- Blocked order delivery
+- Payment inconsistency
+- Unclear VM state
+- Recovery action with risk of data loss
 
 ## Related surfaces
 Use the right surface for the right need:
 
-- `TRINITY` for account, orders, invoices and service entry
-- `UnyDesk` for remote assistance and interactive access
-- `UnyPort` for infrastructure state and operational supervision
+- `TRINITY` For account, orders, invoices and service entry
+- `UnyDesk` For remote assistance and interactive access
+- `UnyPort` For infrastructure state and operational supervision

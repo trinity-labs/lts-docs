@@ -21,11 +21,11 @@ At runtime, the portal exposes metadata through `/api/apps` and mounts the proxy
 ## Proxy behavior
 The reverse proxy performs a small amount of hardening and path rewriting:
 
-- strips untrusted forwarding headers
-- sets `X-Forwarded-For`, `X-Forwarded-Proto` and `X-Forwarded-Prefix`
-- rewrites `Location` headers so redirects stay under the mounted prefix
-- rewrites cookie paths so backend cookies remain scoped to the proxy mount
-- redirects non-JSON `401` and `403` responses back to the portal root
+- Strips untrusted forwarding headers
+- Sets `X-Forwarded-For`, `X-Forwarded-Proto` and `X-Forwarded-Prefix`
+- Rewrites `Location` headers so redirects stay under the mounted prefix
+- Rewrites cookie paths so backend cookies remain scoped to the proxy mount
+- Redirects non-JSON `401` and `403` responses back to the portal root
 
 ## TTYd-specific handling
 The code applies a more permissive CSP only for the `ttyd` proxy mount so web terminal assets and websocket flows can work correctly. Other proxied apps keep the standard hardened behavior.
@@ -33,8 +33,8 @@ The code applies a more permissive CSP only for the `ttyd` proxy mount so web te
 ## Why this matters
 This proxy layer keeps `UnyPort` focused:
 
-- operators get one authenticated entry point
-- internal apps do not need their own public exposure model
-- the product can remain small while still bridging to terminal-oriented tools
+- Operators get one authenticated entry point
+- Internal apps do not need their own public exposure model
+- The product can remain small while still bridging to terminal-oriented tools
 
 The feature should therefore be understood as a controlled gateway, not as a generic application marketplace.

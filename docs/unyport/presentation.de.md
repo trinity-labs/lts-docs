@@ -30,8 +30,8 @@ Die Anwendung trennt diese Rollen explizit, damit dieselbe Oberflaeche fuer Beob
 ## Position im Oekosystem
 `UnyPort` ist die Supervisionsbegleitung von `TRINITY`:
 
-- `TRINITY` traegt den Kundenlebenszyklus
-- `UnyDesk` traegt Fernzugriff und Assistenz
-- `UnyPort` traegt Infrastrukturzustand, Proxy-Zugang und Operator-Kontext
+- `TRINITY` Traegt den Kundenlebenszyklus
+- `UnyDesk` Traegt Fernzugriff und Assistenz
+- `UnyPort` Traegt Infrastrukturzustand, Proxy-Zugang und Operator-Kontext
 
 Diese Positionierung ist mit Repository, README und aktuellem Routing konsistent.

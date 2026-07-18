@@ -3,9 +3,9 @@
 
 It exists to expose:
 
-- operator authentication and role separation
-- service and system status
-- restart history and security posture
-- a controlled gateway to selected internal surfaces
+- Operator authentication and role separation
+- Service and system status
+- Restart history and security posture
+- A controlled gateway to selected internal surfaces
 
 Use the section index and the pages that follow for the full documentation set. `UnyPort` is not presented as a development tool. It is presented as a dedicated control architecture.

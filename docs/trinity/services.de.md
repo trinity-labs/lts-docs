@@ -8,7 +8,7 @@ Die `TRINITY`-Website präsentiert unter anderem:
 - Support-Angebote
 - Schulungspfade
 - VM-bezogene Umgebungen oder Services
-- ergänzende Werkzeuge und Serviceflächen
+- Ergänzende Werkzeuge und Serviceflächen
 
 ## Support-Umfang von TRINITY
 Der `TRINITY`-Support umfasst ausdrücklich:
@@ -42,9 +42,9 @@ Kunden können außerdem einsehen:
 ## Dokumentation und Autonomie
 `TRINITY` stellt öffentliche Dokumentation bereit, um:
 
-- die Services zu erklären
-- den richtigen Einstiegspunkt zu finden
-- einen Kauf oder eine Kontaktaufnahme vorzubereiten
-- `UnyDesk` und `UnyPort` verständlicher zu machen
+- Die Services zu erklären
+- Den richtigen Einstiegspunkt zu finden
+- Einen Kauf oder eine Kontaktaufnahme vorzubereiten
+- `UnyDesk` Und `UnyPort` verständlicher zu machen
 
 Diese Dokumentation beschreibt nicht den Quellcode. Ihr Zweck ist es, die Plattform für Endnutzer klarer zu machen.

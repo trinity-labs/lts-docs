@@ -4,9 +4,9 @@
 ## Payment methods
 Depending on the service, `TRINITY` can expose:
 
-- card payment
+- Card payment
 - PayPal
-- bank transfer
+- Bank transfer
 - Litecoin payment
 
 Each method leads to a different operational expectation. Instant online methods usually return quickly. Manual methods may remain pending until settlement is confirmed.
@@ -20,11 +20,11 @@ Litecoin       -> pending state -> payment reference verification
 ## Payment states
 The public side of `TRINITY` should make these states understandable:
 
-- paid
-- pending
-- refused
-- cancelled
-- retry available
+- Paid
+- Pending
+- Refused
+- Cancelled
+- Retry available
 
 ```json
 {
@@ -40,12 +40,12 @@ The public side of `TRINITY` should make these states understandable:
 ## Invoices
 An invoice PDF is the customer-facing billing artifact. It should help the user identify:
 
-- invoice number
-- order reference
-- customer name
-- billed service
-- paid or pending state
-- invoice date
+- Invoice number
+- Order reference
+- Customer name
+- Billed service
+- Paid or pending state
+- Invoice date
 
 ```yaml
 invoice:
@@ -58,25 +58,25 @@ invoice:
 ## If a payment stays pending
 The right action depends on the flow:
 
-- wait for the provider return if it is still in progress
-- review the order page
-- verify that the billing profile is correct
-- keep the payment reference
-- contact support if the state remains blocked
+- Wait for the provider return if it is still in progress
+- Review the order page
+- Verify that the billing profile is correct
+- Keep the payment reference
+- Contact support if the state remains blocked
 
 ```markdown
 Pending payment checklist
-- order reference copied
-- invoice checked
-- payment provider noted
-- timestamp recorded
-- support contacted only after the expected delay
+- Order reference copied
+- Invoice checked
+- Payment provider noted
+- Timestamp recorded
+- Support contacted only after the expected delay
 ```
 
 ## What should not happen
 From a customer point of view, a failed or pending payment should not create confusion such as:
 
-- duplicate orders with the same intent
-- missing invoice references
-- invisible retry path
-- no clue about the provider state
+- Duplicate orders with the same intent
+- Missing invoice references
+- Invisible retry path
+- No clue about the provider state

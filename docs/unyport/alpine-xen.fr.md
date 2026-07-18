@@ -4,11 +4,11 @@
 ## Pourquoi Alpine Linux compte ici
 Alpine Linux colle au modele `UnyPort` parce qu'il est :
 
-- petit
-- previsible
-- base sur musl
-- a l'aise dans des empreintes operationnelles minimales
-- compatible avec les workflows de persistance LBU
+- Petit
+- Previsible
+- Base sur musl
+- A l'aise dans des empreintes operationnelles minimales
+- Compatible avec les workflows de persistance LBU
 
 Cela compte parce qu'`UnyPort` lit directement l'etat local du systeme et profite d'un hote compact et lisible.
 
@@ -33,25 +33,25 @@ Cela donne le nombre de domaines, le total de vCPU, la memoire, le scheduler et 
 ## Dom0 contre DomU
 Cette distinction change ce que voit l'operateur :
 
-- sur `Dom0`, `UnyPort` peut montrer l'etat de l'hyperviseur et des domaines Xen
-- sur `DomU`, `UnyPort` se comporte comme un observateur centre VM
-- dans un conteneur, les champs carte mere et firmware peuvent naturellement manquer
+- Sur `Dom0`, `UnyPort` peut montrer l'etat de l'hyperviseur et des domaines Xen
+- Sur `DomU`, `UnyPort` se comporte comme un observateur centre VM
+- Dans un conteneur, les champs carte mere et firmware peuvent naturellement manquer
 
 L'UI est explicitement construite autour de ces differences.
 
 ## LBU et persistance
 `UnyPort` comprend aussi le modele Alpine `lbu` :
 
-- presence ou absence de LBU
-- existence de la derniere archive
-- etat `clean` ou `dirty`
+- Presence ou absence de LBU
+- Existence de la derniere archive
+- Etat `clean` ou `dirty`
 
 Cela est particulierement utile dans des environnements Alpine de maintenance ou orientes Data Disk Mode, ou la derive de configuration doit etre simple a reperer.
 
 ## Lecture plateforme
 En termes de documentation publique, `UnyPort` doit donc se lire comme :
 
-1. un portail operateur nativement aligne sur Alpine
-2. conscient de la topologie et des roles Xen
-3. utile sur Dom0, DomU et hotes de service legers
-4. aligne sur des operations minimales plutot que sur de lourdes couches d'abstraction
+1. Un portail operateur nativement aligne sur Alpine
+2. Conscient de la topologie et des roles Xen
+3. Utile sur Dom0, DomU et hotes de service legers
+4. Aligne sur des operations minimales plutot que sur de lourdes couches d'abstraction

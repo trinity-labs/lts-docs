@@ -4,10 +4,10 @@
 ## Nutzung 1 - Angebot entdecken und Kontakt aufnehmen
 Nutzer beginnen haeufig mit:
 
-- einer Angebotsseite
-- der oeffentlichen Dokumentation
-- der Support-Seite
-- der Kontaktseite
+- Einer Angebotsseite
+- Der oeffentlichen Dokumentation
+- Der Support-Seite
+- Der Kontaktseite
 
 Diese erste Phase hilft dabei zu erkennen, ob der Bedarf zu `TRINITY`-Support, einer Leistung, einer Schulung, `UnyDesk` oder `UnyPort` gehoert.
 
@@ -28,9 +28,9 @@ Nach dem Kauf kann der Kunde einsehen:
 
 - Zahlungsstatus
 - Bestellreferenzen
-- die PDF-Rechnung
+- Die PDF-Rechnung
 - Rechnungsinformationen
-- ausgewaehlte Wiederaufnahme- oder Fortsetzungsaktionen bei ausstehenden Zahlungen
+- Ausgewaehlte Wiederaufnahme- oder Fortsetzungsaktionen bei ausstehenden Zahlungen
 
 `TRINITY` zeigt unterschiedliche Zustaende je nach Situation: erfolgreiche Zahlung, ausstehende Zahlung, abgelehnte Zahlung, Stornierung oder Wiederholung.
 
@@ -43,17 +43,17 @@ Wenn ein Service dies erlaubt, kann `TRINITY` Zugriff auf eine virtuelle Maschin
 
 In diesem Kontext kann der Nutzer:
 
-- pruefen, ob eine VM erreichbar ist
-- ihren Status lesen
-- eine Konsolensitzung oeffnen
-- in einem wartungsorientierten Modus arbeiten
+- Pruefen, ob eine VM erreichbar ist
+- Ihren Status lesen
+- Eine Konsolensitzung oeffnen
+- In einem wartungsorientierten Modus arbeiten
 
 ## Nutzung 5 - Data Disk Mode verstehen
 Der **Data Disk Mode** ist nuetzlich, wenn nicht ein normaler Anwendungsdienst gestartet werden soll, sondern gezielt auf die Umgebung selbst eingegriffen werden muss. In der Praxis dient dieser Modus dazu:
 
-- den Inhalt eines Datentraegers zu pruefen
-- ein Dateisystem zu inspizieren
-- eine Umgebung wiederherzustellen
+- Den Inhalt eines Datentraegers zu pruefen
+- Ein Dateisystem zu inspizieren
+- Eine Umgebung wiederherzustellen
 - Wartungs- oder Recovery-Arbeiten auszufuehren
 
 Fuer den Nutzer bedeutet das: Eine VM kann in einem technischeren Modus verfuegbar sein, der auf Erhalt, Analyse oder Wiederherstellung von Daten ausgerichtet ist.

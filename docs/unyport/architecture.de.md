@@ -4,10 +4,10 @@
 ## Ebene 1 - Runtime und Assets
 Die erste Ebene ist die eigentliche Anwendungslaufzeit:
 
-- ein Go-Backend unter `unyport/backend`
-- ein statisches Frontend unter `unyport/frontend/public`
-- ein Entwicklungsmodus mit Assets vom Datentraeger ueber `UNYPORT_ASSETS`
-- ein Produktionsmodus mit eingebetteten Frontend-Assets im Binary
+- Ein Go-Backend unter `unyport/backend`
+- Ein statisches Frontend unter `unyport/frontend/public`
+- Ein Entwicklungsmodus mit Assets vom Datentraeger ueber `UNYPORT_ASSETS`
+- Ein Produktionsmodus mit eingebetteten Frontend-Assets im Binary
 
 Im gelieferten `docker-compose.yml` wird das Projekt in einem `golang:alpine`-Container gebaut und auf Port `8800` bereitgestellt.
 
@@ -15,7 +15,7 @@ Im gelieferten `docker-compose.yml` wird das Projekt in einem `golang:alpine`-Co
 Die zweite Ebene ist die Operator-Transportflaeche:
 
 - HTTP auf `:8800` standardmaessig
-- optional HTTPS und HTTP/3 bei Konfiguration in `settings/settings.yaml`
+- Optional HTTPS und HTTP/3 bei Konfiguration in `settings/settings.yaml`
 - JSON-APIs unter `/api/*`
 - Live-Metriken ueber `/sse/system`
 - App-Reverse-Proxys unter `/proxy/<app>/`
@@ -32,7 +32,7 @@ Browser-SPA
 ## Ebene 3 - Identitaet und persistenter Zustand
 Identitaet ist absichtlich einfach und lokal:
 
-- lokale Benutzer liegen in `settings/users.json`
+- Lokale Benutzer liegen in `settings/users.json`
 - Branding liegt in `settings/branding.yaml`
 - Runtime-Einstellungen liegen in `settings/settings.yaml`
 - App- und OAuth-Deklarationen liegen in `settings/config.yaml`
@@ -43,11 +43,11 @@ Das Repository kann ausserdem einen ersten Admin automatisch anlegen, wenn `user
 ## Ebene 4 - Telemetrie und Host-Bewusstsein
 `UnyPort` liest die Plattform direkt statt ueber einen separaten Monitoring-Agenten:
 
-- `/proc` und `/sys` fuer CPU, Speicher, Uptime, Netzwerk und Temperaturen
+- `/proc` Und `/sys` fuer CPU, Speicher, Uptime, Netzwerk und Temperaturen
 - OpenRC-Zustand fuer Dienste
 - Dateirechte von `settings/users.json` und Kernel-Sysctls fuer Sicherheitschecks
-- `xl info` und `xl list` fuer Dom0-Xen-Kontext
-- `startup-history.jsonl` und `unyport.log` fuer Neustart-Historie
+- `xl info` Und `xl list` fuer Dom0-Xen-Kontext
+- `startup-history.jsonl` Und `unyport.log` fuer Neustart-Historie
 
 Der SSE-Broker sampelt alle `2` Sekunden, haelt einen Ring von `60` Snapshots im Speicher und berechnet Diagrammskalen serverseitig vor dem Versand an das Frontend.
 

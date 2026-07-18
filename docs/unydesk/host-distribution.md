@@ -8,21 +8,21 @@ The public distribution surface can provide host packages for:
 - Linux arm64
 - Windows amd64
 - Windows arm64
-- macOS amd64
-- macOS arm64
-- release checksums
+- MacOS amd64
+- MacOS arm64
+- Release checksums
 
 The file selected by the user must match the operating system and CPU architecture of the machine that will become the host.
 
 ## Package role
 The host package is responsible for:
 
-- generating or keeping a stable install identity
-- sending host metadata such as hostname, OS, architecture and version
-- authenticating with a provisioning credential when required
-- keeping heartbeat state visible to the broker
-- receiving session dispatch messages
-- participating in signaling and fallback delivery
+- Generating or keeping a stable install identity
+- Sending host metadata such as hostname, OS, architecture and version
+- Authenticating with a provisioning credential when required
+- Keeping heartbeat state visible to the broker
+- Receiving session dispatch messages
+- Participating in signaling and fallback delivery
 
 ## Verification
 When checksums are published, users should compare the downloaded host package against the checksum list before running it. This is especially important when the package is moved manually between machines.
@@ -30,9 +30,9 @@ When checksums are published, users should compare the downloaded host package a
 ## Windows double-click behavior
 The Windows host can be prepared so that a user can start it without command-line flags. The server URL can come from:
 
-- an explicit launch argument
-- an environment variable
-- a sidecar configuration file next to the executable
-- an embedded default value
+- An explicit launch argument
+- An environment variable
+- A sidecar configuration file next to the executable
+- An embedded default value
 
 This makes assisted use easier while keeping the server selection explicit.

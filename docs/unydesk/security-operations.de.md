@@ -4,11 +4,11 @@
 ## Sicherheitsbasis
 Das öffentliche Modell umfasst:
 
-- kontobasierte Authentifizierung für normale Benutzer
+- Kontobasierte Authentifizierung für normale Benutzer
 - CSRF-Schutz für zustandsändernde Browser-Anfragen
 - Sitzungscookies für authentifizierten Zugriff
-- begrenzte Standalone-Tokens für Einladungen
-- explizite Host-Trust- oder Claim-Flows
+- Begrenzte Standalone-Tokens für Einladungen
+- Explizite Host-Trust- oder Claim-Flows
 - Websocket-Kanäle für Live-Status und Host-Kommunikation
 - No-Store-Verhalten für Host-Downloads
 
@@ -17,9 +17,9 @@ Ein Host ist nicht nur deshalb vertrauenswürdig, weil er den Broker erreichen k
 
 Betrieblich wird ein Host nützlich, wenn er:
 
-- sich mit stabiler Identität registriert
-- dem erwarteten Benutzer oder Kontext zugeordnet ist
-- per Heartbeat sichtbar bleibt
+- Sich mit stabiler Identität registriert
+- Dem erwarteten Benutzer oder Kontext zugeordnet ist
+- Per Heartbeat sichtbar bleibt
 - Sitzungs-Dispatch bestätigt
 
 ## Sitzungssicherheit

@@ -4,22 +4,22 @@
 ## Initial direction
 The first direction was to keep the product small and explicit:
 
-- standalone Go backend
-- single public broker API
+- Standalone Go backend
+- Single public broker API
 - Alpine-friendly runtime constraints
-- browser-first session surface
-- host runtime distributed separately
-- future integration through HTTP APIs instead of code coupling
+- Browser-first session surface
+- Host runtime distributed separately
+- Future integration through HTTP APIs instead of code coupling
 
 ## Why not merge it into UnyPort
 `UnyPort` is an operations and supervision portal. `UnyDesk` carries a different risk profile:
 
-- realtime transport
-- host access
-- viewer control
-- session tokens
-- media fallback
-- trust and pairing
+- Realtime transport
+- Host access
+- Viewer control
+- Session tokens
+- Media fallback
+- Trust and pairing
 
 Keeping the architecture separate makes security and product boundaries easier to reason about.
 

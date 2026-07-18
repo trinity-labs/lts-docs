@@ -13,23 +13,23 @@ This separation keeps each product understandable. A user who wants to manage bi
 ## Visible capabilities
 The public surface can expose:
 
-- a landing page for remote access
-- host downloads for Linux, Windows and macOS targets
-- checksum access for release verification
-- account or standalone session entry
-- trusted-host and claim flows
-- session status and dispatch visibility
-- browser-based viewer control
-- fallback screen delivery when direct media is degraded
+- A landing page for remote access
+- Host downloads for Linux, Windows and macOS targets
+- Checksum access for release verification
+- Account or standalone session entry
+- Trusted-host and claim flows
+- Session status and dispatch visibility
+- Browser-based viewer control
+- Fallback screen delivery when direct media is degraded
 
 ## Design principles
 `UnyDesk` follows a few product rules:
 
-- the host runtime is a first-class component
-- session state must remain understandable
-- trust must be explicit before access is useful
-- direct realtime transport is preferred, but not assumed
-- the broker API is the contract between the user surface and the host side
+- The host runtime is a first-class component
+- Session state must remain understandable
+- Trust must be explicit before access is useful
+- Direct realtime transport is preferred, but not assumed
+- The broker API is the contract between the user surface and the host side
 
 ## What is intentionally outside this page
 This public documentation does not expose internal private paths, secrets or operator-only recovery procedures. Those topics belong to the restricted documentation surface.

@@ -3,11 +3,11 @@
 
 Unlike `TRINITY`, which is the customer and service portal, `UnyDesk` is centered on:
 
-- host reachability
-- viewer-to-host session routing
-- live remote control
-- remote assistance flows
-- transport fallback behavior
+- Host reachability
+- Viewer-to-host session routing
+- Live remote control
+- Remote assistance flows
+- Transport fallback behavior
 
 ## Start here
 For a practical reading path, the recommended order is:

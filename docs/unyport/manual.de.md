@@ -4,12 +4,12 @@ Diese Seite ist der praktische Einstieg fuer Operatoren, die `UnyPort` im Alltag
 ## Normaler Operator-Pfad
 Der uebliche Pfad ist:
 
-1. die `UnyPort`-URL oeffnen
-2. sich mit lokalem oder OAuth-Konto anmelden
-3. die erkannte Host-Rolle bestaetigen
+1. Die `UnyPort`-URL oeffnen
+2. Sich mit lokalem oder OAuth-Konto anmelden
+3. Die erkannte Host-Rolle bestaetigen
 4. Dashboard und Neustart-Historie lesen
-5. zu Hypervisor-, Network-, Storage- oder Security-Seiten wechseln
-6. bei Bedarf eine interne proxied Anwendung oeffnen
+5. Zu Hypervisor-, Network-, Storage- oder Security-Seiten wechseln
+6. Bei Bedarf eine interne proxied Anwendung oeffnen
 7. Profil oder Admin-Einstellungen nur aendern, wenn die Rolle es erlaubt
 
 ```text
@@ -25,10 +25,10 @@ Portal oeffnen
 ## Vor der ersten Nutzung
 Einige Informationen sollten vorliegen:
 
-- die korrekte URL oder der Reverse-Proxy-Einstieg
-- ein lokaler Benutzer oder ein konfigurierter OAuth-Provider
-- der erwartete Host-Typ: Dom0, DomU, Container oder Alpine-Host
-- die Frage, ob eine interne Anwendung wie `ttyd` verfuegbar sein soll
+- Die korrekte URL oder der Reverse-Proxy-Einstieg
+- Ein lokaler Benutzer oder ein konfigurierter OAuth-Provider
+- Der erwartete Host-Typ: Dom0, DomU, Container oder Alpine-Host
+- Die Frage, ob eine interne Anwendung wie `ttyd` verfuegbar sein soll
 
 ## Was das Portal zeigen kann
 Je nach Konfiguration und Host-Rolle kann `UnyPort` zeigen:
@@ -45,9 +45,9 @@ Je nach Konfiguration und Host-Rolle kann `UnyPort` zeigen:
 Der Workflow wird technischer, wenn der Operator:
 
 - Alpine- oder Kernel-Version mit `TRINITY`-Boot-Tags vergleichen muss
-- einen Dom0 und seine aktiven Domains inspiziert
-- prueft, ob LBU-Aenderungen commitet wurden
-- abgestuerzte Dienste analysiert
-- eine Terminal-Anwendung ueber `/proxy/<name>/` oeffnet
+- Einen Dom0 und seine aktiven Domains inspiziert
+- Prueft, ob LBU-Aenderungen commitet wurden
+- Abgestuerzte Dienste analysiert
+- Eine Terminal-Anwendung ueber `/proxy/<name>/` oeffnet
 
 Die folgenden Seiten bilden das strukturierte Handbuch fuer diese Aufgaben.

@@ -4,33 +4,33 @@
 ## Use 1 - discover the offer and make first contact
 Users often begin by:
 
-- reading an offer page
-- consulting the public documentation
-- opening the support page
-- using the contact page
+- Reading an offer page
+- Consulting the public documentation
+- Opening the support page
+- Using the contact page
 
 This first phase helps determine whether the need belongs to `TRINITY` support, a service engagement, a training path, `UnyDesk` or `UnyPort`.
 
 ## Use 2 - create an account and order
 `TRINITY` supports the standard customer journey:
 
-- account creation
-- sign-in
-- billing information entry
-- payment method selection
-- payment return handling
-- order and invoice review
+- Account creation
+- Sign-in
+- Billing information entry
+- Payment method selection
+- Payment return handling
+- Order and invoice review
 
 Orders can concern support, consulting, training or infrastructure-related services.
 
 ## Use 3 - follow an order and its payment
 After purchase, the customer can review:
 
-- payment status
-- order references
-- the PDF invoice
-- billing information
-- selected retry or continuation actions when a payment remains pending
+- Payment status
+- Order references
+- The PDF invoice
+- Billing information
+- Selected retry or continuation actions when a payment remains pending
 
 `TRINITY` exposes different states depending on the situation: successful payment, pending payment, refused payment, cancellation or retry.
 
@@ -43,18 +43,18 @@ When a service allows it, `TRINITY` can provide access to a virtual machine view
 
 In this context, the user can:
 
-- verify that a VM is reachable
-- read its status
-- open a console session
-- work in a maintenance-oriented mode
+- Verify that a VM is reachable
+- Read its status
+- Open a console session
+- Work in a maintenance-oriented mode
 
 ## Use 5 - understand Data Disk Mode
 **Data Disk Mode** is useful when the goal is not to run a normal application service, but to intervene on the environment itself. In practice, this mode is used to:
 
-- verify disk contents
-- inspect a filesystem
-- recover an environment
-- perform maintenance or recovery operations
+- Verify disk contents
+- Inspect a filesystem
+- Recover an environment
+- Perform maintenance or recovery operations
 
 For the user, this means a VM may be accessible in a more technical mode focused on preservation, inspection or restoration of data.
 

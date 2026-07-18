@@ -4,9 +4,9 @@
 ## Alpine Linux
 Alpine Linux est la base systeme utilisee pour les environnements compacts et controles. Cote public, cela compte parce que le client rencontre souvent :
 
-- une console legere
-- une empreinte systeme reduite
-- une organisation simple et directe
+- Une console legere
+- Une empreinte systeme reduite
+- Une organisation simple et directe
 
 ```bash
 cat /etc/os-release
@@ -16,16 +16,16 @@ apk info | head
 
 Lecture pratique cote client :
 
-- le systeme est volontairement sobre
-- la maintenance et la reprise restent lisibles
-- la plateforme privilegie des surfaces techniques previsibles
+- Le systeme est volontairement sobre
+- La maintenance et la reprise restent lisibles
+- La plateforme privilegie des surfaces techniques previsibles
 
 ## Xen
 Xen est la couche de virtualisation sous-jacente aux services orientes VM. Le client ne pilote pas Xen directement depuis `TRINITY`, mais Xen explique pourquoi la plateforme peut exposer :
 
-- des machines virtuelles isolees
-- des etats VM lisibles
-- des modes maintenance et recuperation
+- Des machines virtuelles isolees
+- Des etats VM lisibles
+- Des modes maintenance et recuperation
 
 ```text
 Surface client -> TRINITY
@@ -38,7 +38,7 @@ Alpine Linux et Xen forment un modele simple :
 
 - Alpine Linux fournit l'environnement systeme de la VM
 - Xen fournit l'execution et l'isolation
-- `TRINITY` fournit la surface client, le cycle de vie et le support
+- `TRINITY` Fournit la surface client, le cycle de vie et le support
 
 ```yaml
 modele_plateforme:

@@ -4,13 +4,13 @@ Cette page est le point d'entree pratique de `TRINITY`. Elle explique comment ut
 ## Le parcours normal
 Le parcours client habituel suit cette logique :
 
-1. decouvrir une offre
-2. creer un compte
-3. passer une commande
-4. effectuer un paiement
-5. consulter la facture et l'etat de la commande
-6. acceder au service associe
-7. solliciter le support si necessaire
+1. Decouvrir une offre
+2. Creer un compte
+3. Passer une commande
+4. Effectuer un paiement
+5. Consulter la facture et l'etat de la commande
+6. Acceder au service associe
+7. Solliciter le support si necessaire
 
 ```text
 Visite du site
@@ -26,10 +26,10 @@ Visite du site
 ## Avant de commander
 Preparez quelques informations simples :
 
-- le service exact souhaite
-- l'identite de facturation
-- le niveau de support attendu
-- le besoin eventuel de console, de VM, d'`UnyDesk` ou d'`UnyPort`
+- Le service exact souhaite
+- L'identite de facturation
+- Le niveau de support attendu
+- Le besoin eventuel de console, de VM, d'`UnyDesk` ou d'`UnyPort`
 
 ```yaml
 preparation_client:
@@ -43,23 +43,23 @@ preparation_client:
 ## Ce que TRINITY peut exposer
 Selon le service, `TRINITY` peut exposer :
 
-- l'historique de commande
-- les factures PDF
-- l'etat de paiement
-- l'etat d'une VM
-- l'acces console
-- la visibilite du Data Disk Mode
-- les points d'entree support et chat
-- les liens vers `UnyDesk` et `UnyPort`
+- L'historique de commande
+- Les factures PDF
+- L'etat de paiement
+- L'etat d'une VM
+- L'acces console
+- La visibilite du Data Disk Mode
+- Les points d'entree support et chat
+- Les liens vers `UnyDesk` et `UnyPort`
 
 ## Quand le parcours devient plus technique
 Certaines offres vont plus loin qu'un simple achat. Le parcours devient plus operationnel lorsqu'il faut :
 
-- verifier une VM
-- ouvrir une console
-- recuperer un environnement
-- inspecter un volume de donnees
-- confirmer un etat de service avant escalade support
+- Verifier une VM
+- Ouvrir une console
+- Recuperer un environnement
+- Inspecter un volume de donnees
+- Confirmer un etat de service avant escalade support
 
 ```bash
 # Exemple de session console une fois l'acces ouvert

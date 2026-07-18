@@ -3,16 +3,16 @@
 
 Publicly, `TRINITY` brings together:
 
-- service discovery and commercial entry points
-- account access
-- orders, payments and invoices
+- Service discovery and commercial entry points
+- Account access
+- Orders, payments and invoices
 - VM follow-up and console access
-- support, documentation and assistance chat
+- Support, documentation and assistance chat
 
 `TRINITY` works alongside two companion services:
 
-- `UnyDesk` for remote access
-- `UnyPort` for service control
+- `UnyDesk` For remote access
+- `UnyPort` For service control
 
 ## Start here
 For a practical reading path, the recommended order is:

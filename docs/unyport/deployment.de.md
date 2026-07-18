@@ -18,16 +18,16 @@ Eigenschaften im Entwicklungsmodus:
 
 - Frontend-Assets werden ueber `UNYPORT_ASSETS` vom Datentraeger ausgeliefert
 - Go-Modul- und Build-Caches liegen auf benannten Volumes
-- der Standard-Port ist `8800:8800`
-- der Container loest `host.docker.internal` ueber `host-gateway`
+- Der Standard-Port ist `8800:8800`
+- Der Container loest `host.docker.internal` ueber `host-gateway`
 
 ## Produktionsmodus
 Dieselbe Compose-Logik bereitet auch ein Produktions-Binary vor:
 
 - Frontend-Assets werden nach `server/assets` kopiert
-- das Binary wird mit `-tags prod` gebaut
+- Das Binary wird mit `-tags prod` gebaut
 - Symbole werden entfernt
-- `upx --lzma` wird im Container angewendet
+- `upx --lzma` Wird im Container angewendet
 
 Das README beschreibt dies als kompakten Paketpfad, waehrend Entwicklung Live-Assets auf dem Datentraeger behaelt.
 
@@ -42,7 +42,7 @@ Operativ schreibt die Anwendung ausserdem:
 
 - `logs/unyport.log`
 - `logs/startup-history.jsonl`
-- `settings/branding.yaml`, wenn benutzerdefiniertes Branding gespeichert wird
+- `settings/branding.yaml`, Wenn benutzerdefiniertes Branding gespeichert wird
 
 ## HTTPS und HTTP/3
 Standardmaessig lauscht die Anwendung auf einfachem HTTP `:8800`.
@@ -61,10 +61,10 @@ Wenn HTTP/3 korrekt aktiviert ist, kann `UnyPort` TLS auf dem konfigurierten Por
 ## Reverse Proxy und erster Login
 Fuer Internet-exponierte Deployments ist das uebliche Muster:
 
-- `UnyPort` lokal oder an eine kontrollierte Host-Adresse binden
+- `UnyPort` Lokal oder an eine kontrollierte Host-Adresse binden
 - Nginx oder einen anderen Reverse Proxy davor setzen
 - Secure-Cookie-Verhalten mit `security_extra.https: true` aktivieren
 - OAuth-Platzhalter vor oeffentlichem Einsatz ersetzen
-- geseedete oder Demo-Credentials sofort aendern
+- Geseedete oder Demo-Credentials sofort aendern
 
 So bleibt die Bereitstellung minimal, ohne eine Demo-Konfiguration als produktionsreif auszugeben.

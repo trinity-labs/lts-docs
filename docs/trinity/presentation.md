@@ -9,13 +9,13 @@
 ## What users find on the site
 From `TRINITY`, a visitor or customer can:
 
-- browse commercial offers
-- create an account or sign in
-- order a service, training session or custom engagement
-- follow payments and download invoices
-- review orders and their current status
-- access console flows or environment-related actions
-- use support and the assistance chat
+- Browse commercial offers
+- Create an account or sign in
+- Order a service, training session or custom engagement
+- Follow payments and download invoices
+- Review orders and their current status
+- Access console flows or environment-related actions
+- Use support and the assistance chat
 
 ## TRINITY within the ecosystem
 `TRINITY` is not isolated. The website works with two companion surfaces:
@@ -31,8 +31,8 @@ Publicly, `TRINITY` is positioned as a service platform around:
 - Alpine Linux
 - Xen
 - VMs and related environments
-- technical support and operations
-- training and guidance
-- companion tools such as `UnyDesk` and `UnyPort`
+- Technical support and operations
+- Training and guidance
+- Companion tools such as `UnyDesk` and `UnyPort`
 
 The site should therefore be understood as an operations and customer portal, not as a simple brochure site.

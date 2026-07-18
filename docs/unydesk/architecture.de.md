@@ -8,7 +8,7 @@ Seine oeffentliche Architektur ist zentriert auf:
 - Host- und Sitzungszustand
 - Live-Updates ueber WebSockets
 - Verteilung von Host-Binaries fuer unterstuetzte Zielplattformen
-- direkte WebRTC-Signalisierung ueber die Broker-API
+- Direkte WebRTC-Signalisierung ueber die Broker-API
 - Bildschirm-Fallback-Pfade, wenn direkte Echtzeitmedien nicht nutzbar sind
 
 ## Zentrale oeffentliche Schichten
@@ -17,20 +17,20 @@ Die oeffentliche Architektur kann in fuenf Schichten gelesen werden.
 ### 1. Distributionsschicht
 Diese Schicht liefert:
 
-- herunterladbare Host-Binaerdateien
-- plattformspezifisches Host-Packaging
+- Herunterladbare Host-Binaerdateien
+- Plattformspezifisches Host-Packaging
 - Bootstrap-Einstiegspunkte
-- einen stabilen oeffentlichen Pfad zum Abruf der Host-Software
+- Einen stabilen oeffentlichen Pfad zum Abruf der Host-Software
 
 Die Host-Anwendung ist nicht nur ein Hilfsprogramm. Sie ist die Laufzeit auf der Maschine, registriert sich, identifiziert sich, sendet Heartbeats und akzeptiert oder verweigert Sitzungen.
 
 ### 2. Identitaets- und Vertrauensschicht
 `UnyDesk` nutzt mehrere oeffentliche Vertrauensmodi:
 
-- kontogebundene Host-Registrierung
+- Kontogebundene Host-Registrierung
 - Claim- oder Pairing-Ablaufe, die einen Host an einen Nutzerkontext binden
 - Standalone-Sitzungslinks mit eigenem Token
-- optionale lokale Freigabe auf dem Host vor Beginn der Steuerung
+- Optionale lokale Freigabe auf dem Host vor Beginn der Steuerung
 
 ### 3. Broker- und Sitzungsschicht
 Die Broker-Schicht verarbeitet:
@@ -45,8 +45,8 @@ Die Broker-Schicht verarbeitet:
 ### 4. Echtzeit-Transportschicht
 Wenn moeglich, bevorzugt `UnyDesk` einen direkten Echtzeitpfad:
 
-- der Browser-Viewer erstellt ein WebRTC-Offer
-- der Host stellt das WebRTC-Answer bereit
+- Der Browser-Viewer erstellt ein WebRTC-Offer
+- Der Host stellt das WebRTC-Answer bereit
 - ICE-Kandidaten werden ueber den Broker ausgetauscht
 - Video-, Input- und Hilfskanaele werden verfuegbar
 
@@ -57,7 +57,7 @@ Die oeffentliche Architektur enthaelt auch explizite Fallback-Pfade:
 
 - Peer-Frame-Uebertragung ueber den Screen-Data-Channel
 - Peer-Frame-Relay ueber ein dediziertes Screen-WebSocket
-- fortlaufende Signalisierung ueber das Broker-WebSocket
+- Fortlaufende Signalisierung ueber das Broker-WebSocket
 - Polling des Sitzungsstatus waehrend Transporterholung
 
 ## Sitzungsweg in Klartext

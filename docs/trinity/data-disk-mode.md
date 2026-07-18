@@ -6,11 +6,11 @@ DDM is a maintenance-oriented VM mode. The goal is not to present the environmen
 
 In practice, DDM is useful when the user or support needs to:
 
-- inspect a disk
-- verify filesystems
-- recover data
-- confirm that a broken environment can still be mounted
-- work on a service that should not boot normally yet
+- Inspect a disk
+- Verify filesystems
+- Recover data
+- Confirm that a broken environment can still be mounted
+- Work on a service that should not boot normally yet
 
 ## How to recognize DDM
 The interface usually makes DDM explicit through labels and a console layout dedicated to recovery or maintenance.
@@ -38,10 +38,10 @@ cat /etc/fstab
 
 These commands help answer simple questions:
 
-- what disks are visible
-- what is mounted
-- how much space remains
-- whether the expected filesystem is present
+- What disks are visible
+- What is mounted
+- How much space remains
+- Whether the expected filesystem is present
 
 ## Typical DDM workflow
 ```text
@@ -56,8 +56,8 @@ Enter DDM
 ## What DDM is not
 DDM should not be read as:
 
-- a normal application success state
-- a replacement for backups
-- an invitation to make uncontrolled system changes
+- A normal application success state
+- A replacement for backups
+- An invitation to make uncontrolled system changes
 
 DDM is a controlled technical mode whose value is clarity, recovery and inspection.

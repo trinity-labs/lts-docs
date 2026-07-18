@@ -8,29 +8,29 @@
 ## Ce qu'est UnyPort
 `UnyPort` repose sur quelques contraintes fortes :
 
-- un runtime Go unique
-- un modele de deploiement minimal
-- des lectures directes du noyau et du systeme de fichiers
-- une detection explicite du role de l'hote
-- aucune dependance a une grosse pile d'agents
+- Un runtime Go unique
+- Un modele de deploiement minimal
+- Des lectures directes du noyau et du systeme de fichiers
+- Une detection explicite du role de l'hote
+- Aucune dependance a une grosse pile d'agents
 
 Dans ce depot, le frontend est une application monopage servie soit depuis le disque en developpement, soit embarquee dans le binaire de production.
 
 ## Ce qu'UnyPort n'est pas
 `UnyPort` n'est pas presentee comme :
 
-- un site marketing public
-- un portail client de commande
-- une suite complete d'orchestration Xen aujourd'hui
-- un outil generique d'acces distant bureau
+- Un site marketing public
+- Un portail client de commande
+- Une suite complete d'orchestration Xen aujourd'hui
+- Un outil generique d'acces distant bureau
 
 Ces roles relevent plutot de `TRINITY` et `UnyDesk`, selon le besoin.
 
 ## Pourquoi cette documentation existe
 Cette documentation explique la surface produit visible d'`UnyPort` du point de vue du deploiement et de l'exploitation :
 
-- ce que voient les operateurs
-- comment fonctionnent l'authentification et les roles
-- quelles donnees sont collectees
-- comment Alpine Linux et Xen structurent le produit
-- ou se trouvent les limites actuelles et les points d'evolution
+- Ce que voient les operateurs
+- Comment fonctionnent l'authentification et les roles
+- Quelles donnees sont collectees
+- Comment Alpine Linux et Xen structurent le produit
+- Ou se trouvent les limites actuelles et les points d'evolution

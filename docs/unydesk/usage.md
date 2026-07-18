@@ -3,54 +3,54 @@
 
 Typical public uses include:
 
-- opening the landing page of the remote access service
-- identifying the right host package for a target system
-- bootstraping or claiming a host
-- opening or monitoring a remote session
-- sharing a standalone session link
-- performing assisted support with local approval on the host
-- continuing with fallback screen delivery if direct realtime video is degraded
+- Opening the landing page of the remote access service
+- Identifying the right host package for a target system
+- Bootstraping or claiming a host
+- Opening or monitoring a remote session
+- Sharing a standalone session link
+- Performing assisted support with local approval on the host
+- Continuing with fallback screen delivery if direct realtime video is degraded
 
 ## Use 1 - prepare a host
 Users often begin by:
 
-- downloading the correct host package
-- launching or installing the host runtime
-- checking whether the host appears online
-- confirming whether pairing or claim is complete
+- Downloading the correct host package
+- Launching or installing the host runtime
+- Checking whether the host appears online
+- Confirming whether pairing or claim is complete
 
 ## Use 2 - start a remote assistance session
 In a normal assisted session, the viewer:
 
-- opens the `UnyDesk` page
-- selects or targets a host
-- creates a session
-- waits for host acceptance
-- watches the session become offered, accepted and active
+- Opens the `UnyDesk` page
+- Selects or targets a host
+- Creates a session
+- Waits for host acceptance
+- Watches the session become offered, accepted and active
 
 ## Use 3 - operate through the browser session
 Once a session is alive, the browser viewer can typically:
 
-- watch the remote screen
-- move the pointer
-- send keyboard input
-- exchange clipboard content
-- send files to the host
-- close or monitor the session
+- Watch the remote screen
+- Move the pointer
+- Send keyboard input
+- Exchange clipboard content
+- Send files to the host
+- Close or monitor the session
 
 ## Use 4 - work in standalone mode
 Standalone access is useful when:
 
-- a user should join a session without the full account portal
-- a support operator needs a narrow invitation
-- the session should remain limited to one access context
+- A user should join a session without the full account portal
+- A support operator needs a narrow invitation
+- The session should remain limited to one access context
 
 ## Use 5 - survive imperfect network paths
 When direct realtime media works, the user gets the best experience. When it does not, `UnyDesk` can still remain useful by combining:
 
-- broker signaling
-- session state visibility
-- peer-frame fallback transport
-- retry or recovery behavior instead of immediate abandonment
+- Broker signaling
+- Session state visibility
+- Peer-frame fallback transport
+- Retry or recovery behavior instead of immediate abandonment
 
 When the user goal is core platform orchestration, the relevant architecture is `TRINITY`. When the user goal is local service control, the relevant architecture is `UnyPort`.

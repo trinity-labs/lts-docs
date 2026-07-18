@@ -19,7 +19,7 @@ Der Broker kann Folgendes anzeigen:
 - Sitzungs-ID
 - Zielhost oder Public ID
 - Viewer-Identität und Label
-- geroutete Host-Identität
+- Geroutete Host-Identität
 - WebRTC Offer- und Answer-Status
 - Viewer- und Host-ICE-Kandidaten
 - Dispatch-Status und Anzahl

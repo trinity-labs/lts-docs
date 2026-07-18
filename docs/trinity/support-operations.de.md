@@ -32,8 +32,8 @@ Sammeln Sie zuerst die Minimaldaten:
 - Bestellreferenz
 - Rechnungs- oder Zahlungsstatus falls relevant
 - VM-Name falls vorhanden
-- aktueller Modus: normal, Wartung oder DDM
-- genaue Bildschirm- oder Konsolenbeobachtung
+- Aktueller Modus: normal, Wartung oder DDM
+- Genaue Bildschirm- oder Konsolenbeobachtung
 
 ```bash
 # Beispiel fuer ein kleines Belegpaket
@@ -52,18 +52,18 @@ Self-Service passt fuer:
 - Rechnung lesen
 - Zahlungsstatus pruefen
 - Konsole oeffnen
-- bestaetigen, ob eine VM online ist
+- Bestaetigen, ob eine VM online ist
 
 Support passt fuer:
 
-- blockierte Service-Auslieferung
+- Blockierte Service-Auslieferung
 - Zahlungsinkonsistenz
-- unklaren VM-Zustand
+- Unklaren VM-Zustand
 - Recovery-Aktionen mit Datenrisiko
 
 ## Die richtigen Oberflaechen
 Nutzen Sie die passende Oberflaeche fuer den passenden Bedarf:
 
-- `TRINITY` fuer Konto, Bestellungen, Rechnungen und Service-Einstieg
-- `UnyDesk` fuer Remote-Hilfe und Interaktion
-- `UnyPort` fuer Infrastrukturstatus und operative Uebersicht
+- `TRINITY` Fuer Konto, Bestellungen, Rechnungen und Service-Einstieg
+- `UnyDesk` Fuer Remote-Hilfe und Interaktion
+- `UnyPort` Fuer Infrastrukturstatus und operative Uebersicht

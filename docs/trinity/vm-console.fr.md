@@ -4,11 +4,11 @@ Certains services `TRINITY` exposent une surface orientee VM. Cela ne signifie p
 ## Ce que l'utilisateur peut attendre
 Une page orientee VM peut exposer :
 
-- le nom de la machine
-- un indicateur en ligne ou non
-- une visibilite de base sur les ressources
-- un point d'entree console
-- des liens vers le support ou la supervision
+- Le nom de la machine
+- Un indicateur en ligne ou non
+- Une visibilite de base sur les ressources
+- Un point d'entree console
+- Des liens vers le support ou la supervision
 
 ![Vue VM et console](../assets/images/screens/trinity-console.png)
 
@@ -17,10 +17,10 @@ Une page orientee VM peut exposer :
 ## Objectifs typiques d'une console
 L'acces console sert a :
 
-- verifier l'etat de boot
-- inspecter un systeme de fichiers monte
-- lire un hostname ou une IP
-- confirmer si une reprise est possible
+- Verifier l'etat de boot
+- Inspecter un systeme de fichiers monte
+- Lire un hostname ou une IP
+- Confirmer si une reprise est possible
 
 ```bash
 hostname
@@ -33,10 +33,10 @@ df -h
 ## Comment lire un etat VM
 Une page VM publique doit se lire simplement :
 
-- `online` signifie que la VM repond dans son mode actuel
-- `maintenance` signifie qu'une intervention technique est en cours ou possible
-- `recovery` signifie que la priorite est l'acces aux donnees
-- `unavailable` signifie qu'il faut attendre ou solliciter le support
+- `online` Signifie que la VM repond dans son mode actuel
+- `maintenance` Signifie qu'une intervention technique est en cours ou possible
+- `recovery` Signifie que la priorite est l'acces aux donnees
+- `unavailable` Signifie qu'il faut attendre ou solliciter le support
 
 ```text
 online       -> acces normal ou technique attendu
@@ -48,9 +48,9 @@ unavailable  -> attente ou support
 ## Prudence operationnelle
 Une console est puissante mais etroite dans son usage. Avant de modifier quoi que ce soit, il faut savoir :
 
-- si la VM est en mode normal ou DDM
-- si l'objectif est le diagnostic ou la modification
-- si le support a demande une action precise
+- Si la VM est en mode normal ou DDM
+- Si l'objectif est le diagnostic ou la modification
+- Si le support a demande une action precise
 
 ```bash
 # Verifications prudentes en premier

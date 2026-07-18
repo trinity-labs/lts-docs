@@ -16,15 +16,15 @@ Le timing exact dépend de la disponibilité du host, de l'authentification view
 ## Ce que suit le broker
 Le broker peut exposer :
 
-- l'identifiant de session
-- le host cible ou public ID
-- l'identité et le libellé du viewer
-- l'identité du host routé
-- l'état offer / answer WebRTC
-- les candidats ICE viewer et host
-- l'état et le nombre de dispatch
-- les horodatages du dernier dispatch et du dernier accusé host
-- la révision écran de secours et son horodatage
+- L'identifiant de session
+- Le host cible ou public ID
+- L'identité et le libellé du viewer
+- L'identité du host routé
+- L'état offer / answer WebRTC
+- Les candidats ICE viewer et host
+- L'état et le nombre de dispatch
+- Les horodatages du dernier dispatch et du dernier accusé host
+- La révision écran de secours et son horodatage
 
 Ces champs sont utiles car ils séparent un problème de routage d'un problème média.
 

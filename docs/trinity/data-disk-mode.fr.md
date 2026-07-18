@@ -6,11 +6,11 @@ Le DDM est un mode VM oriente maintenance. L'objectif n'est pas de presenter l'e
 
 Dans la pratique, le DDM est utile lorsqu'il faut :
 
-- inspecter un disque
-- verifier des systemes de fichiers
-- recuperer des donnees
-- confirmer qu'un environnement casse peut encore etre monte
-- travailler sur un service qui ne doit pas redemarrer normalement tout de suite
+- Inspecter un disque
+- Verifier des systemes de fichiers
+- Recuperer des donnees
+- Confirmer qu'un environnement casse peut encore etre monte
+- Travailler sur un service qui ne doit pas redemarrer normalement tout de suite
 
 ## Comment reconnaitre le DDM
 L'interface rend generalement le DDM visible avec un libelle dedie et une console orientee maintenance ou recuperation.
@@ -38,10 +38,10 @@ cat /etc/fstab
 
 Ces commandes aident a repondre a des questions simples :
 
-- quels disques sont visibles
-- quels points de montage sont actifs
-- quel espace reste disponible
-- si le systeme de fichiers attendu est present
+- Quels disques sont visibles
+- Quels points de montage sont actifs
+- Quel espace reste disponible
+- Si le systeme de fichiers attendu est present
 
 ## Workflow typique en DDM
 ```text
@@ -56,8 +56,8 @@ Entrer en DDM
 ## Ce que le DDM n'est pas
 Le DDM ne doit pas etre lu comme :
 
-- un etat applicatif normal
-- un remplacement de sauvegarde
-- une invitation a modifier le systeme sans controle
+- Un etat applicatif normal
+- Un remplacement de sauvegarde
+- Une invitation a modifier le systeme sans controle
 
 Le DDM est un mode technique controle dont la valeur principale est la clarte, la reprise et l'inspection.

@@ -4,11 +4,11 @@
 ## Why Alpine Linux matters here
 Alpine Linux fits the `UnyPort` model because it is:
 
-- small
-- predictable
-- musl-based
-- comfortable in minimal operational footprints
-- compatible with LBU persistence workflows
+- Small
+- Predictable
+- Musl-based
+- Comfortable in minimal operational footprints
+- Compatible with LBU persistence workflows
 
 That matters because `UnyPort` reads local system state directly and benefits from a host that stays legible and compact.
 
@@ -33,25 +33,25 @@ This provides domain counts, vCPU totals, memory totals, scheduler details and p
 ## Dom0 versus DomU
 This distinction changes what the operator sees:
 
-- on `Dom0`, `UnyPort` can show hypervisor-wide state and Xen domains
-- on `DomU`, `UnyPort` behaves as a VM-level observer
-- in containers, board and firmware fields may naturally be absent
+- On `Dom0`, `UnyPort` can show hypervisor-wide state and Xen domains
+- On `DomU`, `UnyPort` behaves as a VM-level observer
+- In containers, board and firmware fields may naturally be absent
 
 The UI is explicitly shaped around those differences.
 
 ## LBU and persistence
 `UnyPort` also understands the Alpine `lbu` model:
 
-- whether LBU is present
-- whether the last archive exists
-- whether changes look committed or dirty
+- Whether LBU is present
+- Whether the last archive exists
+- Whether changes look committed or dirty
 
 This is especially relevant in Alpine maintenance and Data Disk Mode oriented environments where configuration drift must be easy to spot.
 
 ## Platform reading
 In public documentation terms, `UnyPort` should therefore be read as:
 
-1. an Alpine-native operator portal
-2. aware of Xen topology and roles
-3. useful on Dom0, DomU and lean service hosts
-4. aligned with minimal operations rather than heavyweight abstraction layers
+1. An Alpine-native operator portal
+2. Aware of Xen topology and roles
+3. Useful on Dom0, DomU and lean service hosts
+4. Aligned with minimal operations rather than heavyweight abstraction layers

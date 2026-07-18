@@ -4,21 +4,21 @@
 ## Decouverte et prise de contact
 Le parcours commence généralement par :
 
-- une landing page de service
-- une page d'offre ou de support
-- une page de contact
-- une page de documentation publique
+- Une landing page de service
+- Une page d'offre ou de support
+- Une page de contact
+- Une page de documentation publique
 
 Le rôle de cette première étape est de qualifier le besoin et d'orienter l'utilisateur vers le bon service, le bon produit ou le bon canal d'assistance.
 
 ## Compte client
 Une fois identifié, l'utilisateur retrouve dans `TRINITY` :
 
-- ses informations de compte
-- ses informations de facturation
-- ses commandes
-- ses factures
-- certains accès ou actions liés à ses services
+- Ses informations de compte
+- Ses informations de facturation
+- Ses commandes
+- Ses factures
+- Certains accès ou actions liés à ses services
 
 Le compte client n'est pas seulement un profil. Il est utilisé comme point de suivi opérationnel.
 
@@ -29,22 +29,22 @@ Le compte client n'est pas seulement un profil. Il est utilisé comme point de s
 ## Commande, paiement et facture
 Le parcours de commande couvre :
 
-- le choix d'une offre
-- la collecte des informations de facturation
-- le choix du moyen de paiement
-- le retour de paiement
-- la consultation du statut de commande
-- l'ouverture de la facture PDF
+- Le choix d'une offre
+- La collecte des informations de facturation
+- Le choix du moyen de paiement
+- Le retour de paiement
+- La consultation du statut de commande
+- L'ouverture de la facture PDF
 
 Les paiements en attente, refusés, réussis ou annulés doivent être compréhensibles côté client. Le site expose donc des états visuels distincts et des messages adaptés.
 
 ## Support et assistance
 Le parcours ne s'arrête pas après l'achat. `TRINITY` relie la commande et l'exploitation au support :
 
-- chat d'assistance
-- support commercial
-- support technique
-- documentation
-- orientation vers `UnyDesk` ou `UnyPort` si nécessaire
+- Chat d'assistance
+- Support commercial
+- Support technique
+- Documentation
+- Orientation vers `UnyDesk` ou `UnyPort` si nécessaire
 
 Le support `TRINITY` inclut explicitement **`UnyDesk`** et **`UnyPort`**, car le site est conçu comme un point d'entrée unifié.

@@ -3,16 +3,16 @@
 
 Publicly, `UnyPort` brings together:
 
-- authenticated operator access
-- live host and service visibility
+- Authenticated operator access
+- Live host and service visibility
 - Xen-aware context for Dom0 and DomU environments
-- controlled access to selected internal apps such as `ttyd`
-- operational pages for security, storage, network and system state
+- Controlled access to selected internal apps such as `ttyd`
+- Operational pages for security, storage, network and system state
 
 `UnyPort` works alongside two companion surfaces:
 
-- `TRINITY` for customer lifecycle, orders, billing and service entry points
-- `UnyDesk` for remote access and assistance workflows
+- `TRINITY` For customer lifecycle, orders, billing and service entry points
+- `UnyDesk` For remote access and assistance workflows
 
 ## Start here
 For a practical reading path, the recommended order is:

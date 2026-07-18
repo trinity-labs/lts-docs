@@ -4,9 +4,9 @@ Diese Seite fasst die sichtbare Projekthistorie von `UnyPort` anhand des Reposit
 ## 3. Mai 2026 - erste Dashboard- und Netzwerkbasis
 Die ersten Commits vom `2026-05-03` legten die fruehe Produktbasis:
 
-- erste Dashboard-Arbeit
-- aufgewertete Praesentation
-- erste Netzwerk-Chart- und Datenerweiterungen
+- Erste Dashboard-Arbeit
+- Aufgewertete Praesentation
+- Erste Netzwerk-Chart- und Datenerweiterungen
 
 Diese Commits markieren den Uebergang von einer Idee zu einer funktionierenden Monitoring-Oberflaeche.
 
@@ -26,17 +26,17 @@ Das ist der Punkt, an dem `UnyPort` leichter als oeffentliches Projekt und nicht
 Das Refactoring vom `2026-05-30` ist einer der sichtbar wichtigsten Packaging-Schritte:
 
 - UPX-Kompression fuer ein kleineres Paket
-- breitere Runtime-Bereinigung
-- staerkere Positionierung als kompaktes Binary
+- Breitere Runtime-Bereinigung
+- Staerkere Positionierung als kompaktes Binary
 
 Das passt direkt zum im README wiederholten Single-Binary-Versprechen.
 
 ## 6. Juni 2026 - UI und Neustart-Historie
 Mehrere Commits vom `2026-06-06` fuegten hinzu:
 
-- ein Hamburger-Menue
-- eine Git-artige Reboot-Karte
-- ein Netzwerk-Karten-Refactoring
+- Ein Hamburger-Menue
+- Eine Git-artige Reboot-Karte
+- Ein Netzwerk-Karten-Refactoring
 
 Diese Aenderungen bewegen `UnyPort` deutlich in Richtung einer vollstaendigeren Operator-UI statt eines rohen Metrikpanels.
 
@@ -45,7 +45,7 @@ Am `2026-06-07` zeigt die Repository-Historie:
 
 - Release-Vorbereitung
 - Feinschliff der Release Notes
-- das Tag `v0.1.0`
+- Das Tag `v0.1.0`
 - Arbeit am App-Versioning
 
 Sowohl `CHANGELOG.md` als auch `RELEASE-v0.1.0.md` bestaetigen, dass `v0.1.0` die erste oeffentliche Release ist.

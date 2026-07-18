@@ -4,12 +4,12 @@
 ## Ursprüngliche Richtung
 Die erste Richtung war, das Produkt klein und explizit zu halten:
 
-- eigenständiges Go-Backend
-- eine öffentliche Broker-API
+- Eigenständiges Go-Backend
+- Eine öffentliche Broker-API
 - Alpine-freundliche Laufzeitbedingungen
-- browserorientierte Sitzungsoberfläche
-- separat verteilte Host-Laufzeit
-- zukünftige Integration über HTTP-APIs statt Code-Kopplung
+- Browserorientierte Sitzungsoberfläche
+- Separat verteilte Host-Laufzeit
+- Zukünftige Integration über HTTP-APIs statt Code-Kopplung
 
 ## Warum nicht in UnyPort integrieren
 `UnyPort` ist ein Betriebs- und Überwachungsportal. `UnyDesk` trägt ein anderes Risikoprofil:

@@ -4,18 +4,18 @@
 ## Laufzeitmodell
 Der Dienst besteht aus:
 
-- einem Go-Backend
-- einer primären HTTP-Listenadresse
-- optionalem nativem HTTP/3, wenn Zertifikate konfiguriert sind
-- statischen Frontend-Assets
+- Einem Go-Backend
+- Einer primären HTTP-Listenadresse
+- Optionalem nativem HTTP/3, wenn Zertifikate konfiguriert sind
+- Statischen Frontend-Assets
 - Einstellungsdateien für Benutzer, Hosts, vertrauenswürdige Hosts und öffentliche Identität
 - Host-Download-Artefakten aus dem konfigurierten Download-Verzeichnis
 
 ## Reverse-Proxy-Modell
 Für Internet-exponierte Bereitstellung ist das übliche Modell:
 
-- `UnyDesk` hinter einem Reverse Proxy bereitstellen
-- ursprüngliche Host- und Client-Adress-Header weitergeben
+- `UnyDesk` Hinter einem Reverse Proxy bereitstellen
+- Ursprüngliche Host- und Client-Adress-Header weitergeben
 - Cookies und CSRF-Verhalten mit der öffentlichen URL konsistent halten
 - Websocket-Upgrade-Pfade für Host- und Sitzungskanäle freigeben
 - TLS am Proxy terminieren, außer natives TLS/HTTP3 ist bewusst aktiviert

@@ -7,8 +7,8 @@ Die Middleware-Kette setzt:
 - `X-Frame-Options: DENY`
 - `X-Content-Type-Options: nosniff`
 - `Referrer-Policy: strict-origin-when-cross-origin`
-- eine strikte Standard-`Content-Security-Policy`
-- optional `Strict-Transport-Security`, wenn HTTPS aktiv ist
+- Eine strikte Standard-`Content-Security-Policy`
+- Optional `Strict-Transport-Security`, wenn HTTPS aktiv ist
 
 Anfragen, die Zustand aendern, laufen ausserdem durch CSRF-Validierung und Trusted-Origin-Pruefung.
 
@@ -18,7 +18,7 @@ Aktueller Schutz umfasst:
 - JWT-Cookies mit konfigurierbarer Session-Lebensdauer
 - Login-Rate-Limit pro Client-IP
 - OAuth-State-Cookies fuer Provider-Callbacks
-- klare Trennung zwischen Nur-Lese- und Schreibrollen
+- Klare Trennung zwischen Nur-Lese- und Schreibrollen
 
 Das Modell ist kompakt, aber in sich schluessig und in den echten Laufzeitpfaden sichtbar.
 
@@ -28,12 +28,12 @@ Die dedizierte Security-Seite aggregiert Checks rund um:
 - ASLR
 - Kernel-Pointer-Restriktion
 - `dmesg`-Restriktion
-- unprivilegiertes BPF
+- Unprivilegiertes BPF
 - IPv4- und IPv6-Forwarding
 - Rechte von `settings/users.json`
-- kritische OpenRC-Dienste
-- ueberwachte Prozesse
-- lauschende TCP-Ports
+- Kritische OpenRC-Dienste
+- Ueberwachte Prozesse
+- Lauschende TCP-Ports
 
 Sie ist als Operator-Zusammenfassung gedacht, nicht als Ersatz fuer ein vollstaendiges Audit-Werkzeug.
 
@@ -42,17 +42,17 @@ Operativ ist `UnyPort` am staerksten fuer:
 
 - Sichtbarkeit
 - Verifikation
-- kontrollierten App-Einstieg
+- Kontrollierten App-Einstieg
 - Benutzer- und Branding-Administration
-- grundlegendes Host-Troubleshooting
+- Grundlegendes Host-Troubleshooting
 
 Es ist noch nicht der Ort fuer vollstaendigen VM-Lebenszyklus oder Cluster-Orchestrierung. Das oeffentliche README beschreibt das aktuelle Produkt ausdruecklich als `V1`, monitoring-first, waehrend breitere Xen-Workflows spaeter erwartet werden.
 
 ## Logs und Support-Grenzen
 Das Portal kann ausgewaehlte Log-Dateien, Dienstzustand und Host-Sicherheitssignale zeigen. Wenn der Bedarf darueber hinausgeht:
 
-- `TRINITY` fuer Kunden- und Service-Lebenszyklus nutzen
-- `UnyDesk` fuer Fernzugriff oder Assistenz-Sitzungen nutzen
-- tiefere Systemwerkzeuge verwenden, wenn ein vollstaendiger Host-Eingriff erforderlich ist
+- `TRINITY` Fuer Kunden- und Service-Lebenszyklus nutzen
+- `UnyDesk` Fuer Fernzugriff oder Assistenz-Sitzungen nutzen
+- Tiefere Systemwerkzeuge verwenden, wenn ein vollstaendiger Host-Eingriff erforderlich ist
 
 Diese Grenze haelt `UnyPort` im Betrieb nuetzlich, ohne zu viel zu versprechen.

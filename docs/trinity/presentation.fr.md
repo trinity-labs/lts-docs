@@ -9,13 +9,13 @@
 ## Ce que l'utilisateur trouve sur le site
 Depuis `TRINITY`, un visiteur ou un client peut :
 
-- consulter les offres commerciales
-- créer un compte ou se connecter
-- commander un service, une formation ou une prestation
-- suivre ses paiements et télécharger ses factures
-- consulter ses commandes et leur état
-- accéder aux flux console ou aux actions liées à ses environnements
-- utiliser le support et le chat d'assistance
+- Consulter les offres commerciales
+- Créer un compte ou se connecter
+- Commander un service, une formation ou une prestation
+- Suivre ses paiements et télécharger ses factures
+- Consulter ses commandes et leur état
+- Accéder aux flux console ou aux actions liées à ses environnements
+- Utiliser le support et le chat d'assistance
 
 ## Place de TRINITY dans l'écosystème
 `TRINITY` n'est pas seule. Le site s'articule avec deux surfaces complémentaires :
@@ -31,8 +31,8 @@ Le positionnement public de `TRINITY` est celui d'une plateforme de services :
 - Alpine Linux
 - Xen
 - VM et environnements associés
-- support technique et exploitation
-- formations et accompagnement
-- outils complémentaires `UnyDesk` et `UnyPort`
+- Support technique et exploitation
+- Formations et accompagnement
+- Outils complémentaires `UnyDesk` et `UnyPort`
 
 Le site doit donc être lu comme un portail d'exploitation et de relation client, pas comme une simple vitrine.
