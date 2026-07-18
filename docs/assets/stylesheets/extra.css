@@ -515,7 +515,7 @@ label[for="__toc"] > a span::before {
 .trinity-lang-switcher {
     display: inline-flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1.66rem;
 }
 
 .trinity-lang-switcher--header {
