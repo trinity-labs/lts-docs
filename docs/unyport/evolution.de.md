@@ -19,7 +19,7 @@ Neuere Arbeiten machten das Produkt alltagstauglicher:
 - Verfeinerte Netzwerkkarte
 - Sichtbare Versionsmeldungen
 
-Das sind nicht nur kosmetische Aenderungen. Sie veraendern, wie schnell ein Operator einen Host lesen kann.
+Das sind nicht nur kosmetische Änderungen. Sie verändern, wie schnell ein Operator einen Host lesen kann.
 
 ## Reiferes Plattformverstaendnis
 Der aktuelle Code zeigt eine reifere Infrastrukturlesart, als die fruehen Overview-Seiten vermuten liessen:
@@ -32,7 +32,7 @@ Der aktuelle Code zeigt eine reifere Infrastrukturlesart, als die fruehen Overvi
 
 Dadurch fuehlt sich `UnyPort` eher wie ein plattformnativer Beobachter als wie eine generische Web-Admin-Shell an.
 
-## Staerkeres operatives Packaging
+## Stärkeres operatives Packaging
 Das Repository entwickelte sich auch in der Auslieferungsform:
 
 - Entwicklungsmodus mit Live-Assets
@@ -44,22 +44,22 @@ Das Repository entwickelte sich auch in der Auslieferungsform:
 Diese Packaging-Entwicklung stuetzt das Single-Binary- und Low-Overhead-Versprechen.
 
 ## Reifere Identitaet und Instanz
-Die aktuelle Produktoberflaeche umfasst nun:
+Die aktuelle Produktoberfläche umfasst nun:
 
 - Lokale Benutzerverwaltung
-- Unterstuetzung fuer OAuth-Provider
+- Unterstützung für OAuth-Provider
 - Speicherung von Profil und SSH-Key
-- Oeffentliche Branding-Auslieferung
+- Öffentliche Branding-Auslieferung
 - Admin-Branding-Anpassung
 
-Damit wird `UnyPort` von einem lokalen Dashboard zu einer echten Multi-User-Operator-Flaeche.
+Damit wird `UnyPort` von einem lokalen Dashboard zu einer echten Multi-User-Operator-Fläche.
 
 ## Aktuelle Grenze und naechster Schritt
-Zum `2026-07-17` sollte das oeffentliche Produkt weiterhin als `V1` verstanden werden:
+Zum `2026-07-17` sollte das öffentliche Produkt weiterhin als `V1` verstanden werden:
 
 - Stark im Monitoring
 - Stark im Host-Kontext
-- Nuetzlich fuer kontrollierten Proxy-Einstieg
+- Nuetzlich für kontrollierten Proxy-Einstieg
 - Noch kein vollstaendiger Xen-Lebenszyklus-Orchestrator
 
-Das README kuendigt ausdruecklich eine spaetere `V2` mit breiteren Orchestrierungs-Workflows an. Die aktuelle Dokumentation sollte `UnyPort` deshalb als ernstes Betriebsportal mit bewusst begrenztem Umfang darstellen.
+Das README kuendigt ausdruecklich eine spätere `V2` mit breiteren Orchestrierungs-Workflows an. Die aktuelle Dokumentation sollte `UnyPort` deshalb als ernstes Betriebsportal mit bewusst begrenztem Umfang darstellen.

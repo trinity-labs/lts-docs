@@ -1,5 +1,5 @@
 # VMs und Konsole
-Einige `TRINITY`-Services zeigen eine VM-bezogene Oberflaeche. Das bedeutet nicht, dass jeder Kunde Hypervisor-Administration betreibt. Es bedeutet, dass die Plattform Maschinenstatus, Konsole oder Wartungskontext zeigen kann, wenn der Service dies erlaubt.
+Einige `TRINITY`-Services zeigen eine VM-bezogene Oberfläche. Das bedeutet nicht, dass jeder Kunde Hypervisor-Administration betreibt. Es bedeutet, dass die Plattform Maschinenstatus, Konsole oder Wartungskontext zeigen kann, wenn der Service dies erlaubt.
 
 ## Was der Nutzer erwarten kann
 Eine VM-Seite kann zeigen:
@@ -17,10 +17,10 @@ Eine VM-Seite kann zeigen:
 ## Typische Ziele einer Konsole
 Konsolenzugang ist nuetzlich, um:
 
-- Den Boot-Status zu pruefen
+- Den Boot-Status zu prüfen
 - Ein eingehangtes Dateisystem zu inspizieren
 - Hostname oder IP zu lesen
-- Zu bestaetigen, ob Recovery-Arbeit moeglich ist
+- Zu bestaetigen, ob Recovery-Arbeit möglich ist
 
 ```bash
 hostname
@@ -31,10 +31,10 @@ df -h
 ```
 
 ## Einen VM-Zustand lesen
-Eine oeffentliche VM-Seite sollte einfach gelesen werden:
+Eine öffentliche VM-Seite sollte einfach gelesen werden:
 
 - `online` Bedeutet, dass die VM im aktuellen Modus antwortet
-- `maintenance` Bedeutet, dass ein technischer Eingriff moeglich ist
+- `maintenance` Bedeutet, dass ein technischer Eingriff möglich ist
 - `recovery` Bedeutet, dass Daten und Dateisysteme im Mittelpunkt stehen
 - `unavailable` Bedeutet warten oder Support anfragen
 
@@ -46,10 +46,10 @@ unavailable  -> warten oder Support
 ```
 
 ## Operative Vorsicht
-Eine Konsole ist stark, aber eng begrenzt. Vor jeder Aenderung sollte klar sein:
+Eine Konsole ist stark, aber eng begrenzt. Vor jeder Änderung sollte klar sein:
 
 - Ob die VM im Normalmodus oder im DDM laeuft
-- Ob das Ziel Diagnose oder Aenderung ist
+- Ob das Ziel Diagnose oder Änderung ist
 - Ob der Support eine genaue Aktion angefordert hat
 
 ```bash

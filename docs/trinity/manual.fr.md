@@ -1,5 +1,5 @@
 # Mode d'emploi TRINITY
-Cette page est le point d'entree pratique de `TRINITY`. Elle explique comment utiliser la plateforme depuis la premiere visite jusqu'a une situation plus technique autour d'une VM ou d'une reprise.
+Cette page est le point d'entrée pratique de `TRINITY`. Elle explique comment utiliser la plateforme depuis la première visite jusqu'a une situation plus technique autour d'une VM ou d'une reprise.
 
 ## Le parcours normal
 Le parcours client habituel suit cette logique :
@@ -8,9 +8,9 @@ Le parcours client habituel suit cette logique :
 2. Creer un compte
 3. Passer une commande
 4. Effectuer un paiement
-5. Consulter la facture et l'etat de la commande
+5. Consulter la facture et l'état de la commande
 6. Acceder au service associe
-7. Solliciter le support si necessaire
+7. Solliciter le support si nécessaire
 
 ```text
 Visite du site
@@ -27,7 +27,7 @@ Visite du site
 Preparez quelques informations simples :
 
 - Le service exact souhaite
-- L'identite de facturation
+- L'identité de facturation
 - Le niveau de support attendu
 - Le besoin eventuel de console, de VM, d'`UnyDesk` ou d'`UnyPort`
 
@@ -45,21 +45,21 @@ Selon le service, `TRINITY` peut exposer :
 
 - L'historique de commande
 - Les factures PDF
-- L'etat de paiement
-- L'etat d'une VM
-- L'acces console
-- La visibilite du Data Disk Mode
-- Les points d'entree support et chat
+- L'état de paiement
+- L'état d'une VM
+- L'accès console
+- La visibilité du Data Disk Mode
+- Les points d'entrée support et chat
 - Les liens vers `UnyDesk` et `UnyPort`
 
 ## Quand le parcours devient plus technique
 Certaines offres vont plus loin qu'un simple achat. Le parcours devient plus operationnel lorsqu'il faut :
 
-- Verifier une VM
+- Vérifier une VM
 - Ouvrir une console
-- Recuperer un environnement
-- Inspecter un volume de donnees
-- Confirmer un etat de service avant escalade support
+- Récupérer un environnement
+- Inspecter un volume de données
+- Confirmer un état de service avant escalade support
 
 ```bash
 # Exemple de session console une fois l'acces ouvert
@@ -70,7 +70,7 @@ df -h
 ```
 
 ## Comment lire la suite
-Les pages suivantes forment le mode d'emploi detaille :
+Les pages suivantes forment le mode d'emploi détaillé :
 
 - `Compte et commandes`
 - `Paiements et factures`

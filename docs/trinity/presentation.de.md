@@ -1,10 +1,10 @@
 # Präsentation von TRINITY
 `TRINITY` ist der wichtigste öffentliche Einstiegspunkt in das Ökosystem von `TRINITY` Edge Networks. Die Website bündelt Kundenzugang, Service-Präsentation, Kontoabläufe, Bestellungen, Rechnungen, Support und den Zugang zu zugehörigen Betriebsdiensten. Öffentlich geht es nicht darum, einen Software-Stack offenzulegen, sondern einen klaren Weg zwischen Entdeckung, Kauf, Betrieb und Unterstützung zu bieten.
 
-## Visueller Ueberblick
+## Visueller Überblick
 ![`TRINITY` dashboard](../assets/images/screens/trinity-vm.png)
 
-*Beispiel einer `TRINITY`-Oberflaeche mit einer uebersichtlichen Dashboard-Ansicht und den wichtigsten Betriebsindikatoren.*
+*Beispiel einer `TRINITY`-Oberfläche mit einer übersichtlichen Dashboard-Ansicht und den wichtigsten Betriebsindikatoren.*
 
 ## Was Nutzer auf der Website finden
 Über `TRINITY` kann ein Besucher oder Kunde:

@@ -8,7 +8,7 @@ Der uebliche Kundenweg ist:
 2. Ein Konto erstellen
 3. Eine Bestellung aufgeben
 4. Eine Zahlung ausfuehren
-5. Rechnung und Bestellstatus pruefen
+5. Rechnung und Bestellstatus prüfen
 6. Den zugehoerigen Service nutzen
 7. Bei Bedarf Support anfragen
 
@@ -53,10 +53,10 @@ Je nach Service kann `TRINITY` zeigen:
 - Links zu `UnyDesk` und `UnyPort`
 
 ## Wenn der Ablauf technischer wird
-Einige Services gehen ueber einen einfachen Kauf hinaus. Der Weg wird technischer, wenn:
+Einige Services gehen über einen einfachen Kauf hinaus. Der Weg wird technischer, wenn:
 
-- Eine VM geprueft werden muss
-- Eine Konsole geoeffnet werden muss
+- Eine VM geprüft werden muss
+- Eine Konsole geöffnet werden muss
 - Eine Umgebung wiederhergestellt werden muss
 - Ein Datenvolumen inspiziert werden muss
 - Ein Servicestatus vor einer Support-Eskalation bestaetigt werden muss

@@ -1,15 +1,15 @@
 # Bootstrap and access
-`UnyDesk` muss zwei oeffentliche Probleme loesen, bevor eine Fernsitzung beginnen kann:
+`UnyDesk` muss zwei öffentliche Probleme loesen, bevor eine Fernsitzung beginnen kann:
 
 - Wie die Host-Software installiert und vertraut gemacht wird
 - Wie ein Viewer diesen Host erreichen darf
 
 ## Verteilung des Host-Pakets
-Der erste oeffentliche Schritt ist meist der Download des Host-Pakets. Ein Nutzer waehlt das passende Host-Binaerpaket fuer das Zielsystem und installiert oder startet es auf der Maschine, die spaeter Fernzugriff empfangen soll.
+Der erste öffentliche Schritt ist meist der Download des Host-Pakets. Ein Nutzer waehlt das passende Host-Binärpaket für das Zielsystem und installiert oder startet es auf der Maschine, die später Fernzugriff empfangen soll.
 
-Oeffentlich sollte der Verteilungsweg einfach bleiben:
+Öffentlich sollte der Verteilungsweg einfach bleiben:
 
-- Unterstuetztes Zielsystem klar sichtbar
+- Unterstütztes Zielsystem klar sichtbar
 - Aktuelles Paket leicht erkennbar
 - Installations- oder Bootstrap-Pfad eindeutig
 - Update- oder erneuter Downloadpfad stabil
@@ -24,21 +24,21 @@ Je nach Szenario kann `UnyDesk` Folgendes beinhalten:
 - Zuordnung zu einem Vertrauenskontext
 - Wiederverwendung einer bekannten Host-Identitaet nach Reconnect
 
-Der Viewer soll erkennen koennen, ob ein Host nur online, bereits gepairt oder noch in einem Vertrauensschritt blockiert ist.
+Der Viewer soll erkennen können, ob ein Host nur online, bereits gepairt oder noch in einem Vertrauensschritt blockiert ist.
 
 ## Lokale Freigabe
-Einige Hosts koennen eine lokale Freigabe erzwingen, bevor die Fernsitzung beginnt. Oeffentlich bedeutet das:
+Einige Hosts können eine lokale Freigabe erzwingen, bevor die Fernsitzung beginnt. Öffentlich bedeutet das:
 
 - Eine Sitzung kann korrekt geroutet sein und trotzdem auf Host-Freigabe warten
 - Ein Host kann die Anfrage lokal annehmen oder ablehnen
 - Ein kuerzlich freigegebener Teilnehmer kann erneut zugelassen werden, ohne sofort die komplette Rueckfrage zu wiederholen
-- Eine explizite Ablehnung kann diese gemerkte Freigabe fuer denselben Teilnehmer widerrufen
+- Eine explizite Ablehnung kann diese gemerkte Freigabe für denselben Teilnehmer widerrufen
 
 ## Zugriffsmodi
-Oeffentlich kann `UnyDesk` in zwei groben Zugriffsmodi verwendet werden:
+Öffentlich kann `UnyDesk` in zwei groben Zugriffsmodi verwendet werden:
 
-- **Kontoorientierter Zugriff** ueber die normale Service-Flaeche
-- **Standalone-Zugriff** ueber einen direkten Sitzungslink und ein sitzungsspezifisches Token
+- **Kontoorientierter Zugriff** über die normale Service-Fläche
+- **Standalone-Zugriff** über einen direkten Sitzungslink und ein sitzungsspezifisches Token
 
 Standalone-Zugriff ist hilfreich, wenn:
 
@@ -46,9 +46,9 @@ Standalone-Zugriff ist hilfreich, wenn:
 - Ein Support-Operator eine eng begrenzte Einladung braucht
 - Die Sitzung auf einen einzelnen Zugriffskontext beschraenkt bleiben soll
 
-## Vor dem Oeffnen einer Sitzung
-1. Pruefen, dass das richtige Host-Paket installiert ist
-2. Pruefen, dass der Host online ist
-3. Pruefen, wie Host-Identitaet oder Pairing-Zustand aussehen
-4. Pruefen, ob lokale Freigabe erforderlich ist
-5. Pruefen, ob die Sitzung konto-basiert oder standalone sein soll
+## Vor dem Öffnen einer Sitzung
+1. Prüfen, dass das richtige Host-Paket installiert ist
+2. Prüfen, dass der Host online ist
+3. Prüfen, wie Host-Identitaet oder Pairing-Zustand aussehen
+4. Prüfen, ob lokale Freigabe erforderlich ist
+5. Prüfen, ob die Sitzung konto-basiert oder standalone sein soll

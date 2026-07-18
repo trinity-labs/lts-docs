@@ -31,11 +31,11 @@ Auf `Dom0` erweitert `UnyPort` die Linux-Telemetrie mit Xen-Toolstack-Daten aus:
 Das liefert Domain-Anzahl, vCPU-Summe, Speicherwerte, Scheduler-Details und CPU-Lesungen pro Domain.
 
 ## Dom0 gegen DomU
-Diese Unterscheidung veraendert, was Operatoren sehen:
+Diese Unterscheidung verändert, was Operatoren sehen:
 
 - Auf `Dom0` kann `UnyPort` Hypervisor- und Xen-Domain-Zustand zeigen
 - Auf `DomU` verhaelt sich `UnyPort` als VM-zentrierter Beobachter
-- In Containern koennen Board- und Firmware-Felder natuerlich fehlen
+- In Containern können Board- und Firmware-Felder natuerlich fehlen
 
 Die UI ist explizit um diese Unterschiede herum gestaltet.
 
@@ -49,9 +49,9 @@ Die UI ist explizit um diese Unterschiede herum gestaltet.
 Das ist besonders relevant in Alpine-Wartungsumgebungen oder Data-Disk-Mode-nahen Szenarien, in denen Konfigurationsdrift leicht sichtbar sein muss.
 
 ## Plattform-Lesart
-In oeffentlichen Dokumentationstermen ist `UnyPort` daher zu lesen als:
+In öffentlichen Dokumentationstermen ist `UnyPort` daher zu lesen als:
 
 1. Alpine-natives Operator-Portal
-2. Bewusst fuer Xen-Topologie und Rollen
+2. Bewusst für Xen-Topologie und Rollen
 3. Nuetzlich auf Dom0, DomU und schlanken Service-Hosts
 4. Ausgerichtet auf minimale Operationen statt schwere Abstraktionsschichten

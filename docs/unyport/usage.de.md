@@ -1,14 +1,14 @@
 # Nutzung von UnyPort
-`UnyPort` wird verwendet, wenn der Plattform-Operator schnelle Host-Sichtbarkeit, eine stabile Authentifizierungsflaeche und wenige gezielte Betriebseinstiege braucht. Es ist nicht fuer Commerce oder Kunden-Workflows optimiert. Es ist fuer ueberwachte Infrastruktursicht optimiert.
+`UnyPort` wird verwendet, wenn der Plattform-Operator schnelle Host-Sichtbarkeit, eine stabile Authentifizierungsfläche und wenige gezielte Betriebseinstiege braucht. Es ist nicht für Commerce oder Kunden-Workflows optimiert. Es ist für überwachte Infrastruktursicht optimiert.
 
 ## Nutzung 1 - anmelden und Host-Kontext bestaetigen
 Operatoren beginnen meist damit:
 
-- Sich lokal oder ueber OAuth anzumelden
+- Sich lokal oder über OAuth anzumelden
 - Die erkannte Host-Rolle zu lesen
-- Zu bestaetigen, ob die Flaeche ein Dom0, DomU, Container oder Alpine-Host ist
+- Zu bestaetigen, ob die Fläche ein Dom0, DomU, Container oder Alpine-Host ist
 
-Dieser erste Schritt veraendert die gesamte weitere Lesart, weil ein Dom0 Xen-weiten Kontext zeigt, waehrend ein DomU eher wie ein VM-Beobachter arbeitet.
+Dieser erste Schritt verändert die gesamte weitere Lesart, weil ein Dom0 Xen-weiten Kontext zeigt, waehrend ein DomU eher wie ein VM-Beobachter arbeitet.
 
 ## Nutzung 2 - Live-Systemzustand lesen
 Der haeufigste laufende Gebrauch ist Echtzeit-Monitoring:
@@ -30,20 +30,20 @@ Das Portal ist damit bereits vor tieferen Eingriffen ein brauchbares Live-Betrie
 - Welche Xen-Version und welcher Scheduler auf Dom0 aktiv sind
 - Wie viele Domains laufen und wie viel Speicher sie verbrauchen
 
-## Nutzung 4 - Dienste, Logs und Sicherheit pruefen
-Die Resources- und Security-Flaechen unterstuetzen routinemaessiges Troubleshooting:
+## Nutzung 4 - Dienste, Logs und Sicherheit prüfen
+Die Resources- und Security-Flächen unterstützen routinemaessiges Troubleshooting:
 
-- OpenRC-Dienste pruefen
+- OpenRC-Dienste prüfen
 - Erlaubte Logs tailen
 - Lauschende Ports ansehen
 - Hardening-Status bestaetigen
 - Kritische Prozesse oder Dienstabstuerze identifizieren
 
-## Nutzung 5 - internes Werkzeug ueber das Portal oeffnen
-Wenn konfiguriert, kann `UnyPort` auch als Einstieg in ein proxied internes Werkzeug wie `ttyd` dienen. Damit bleibt der Operator in einer einzigen authentifizierten Oberflaeche und erreicht dennoch terminalorientierte Workflows.
+## Nutzung 5 - internes Werkzeug über das Portal öffnen
+Wenn konfiguriert, kann `UnyPort` auch als Einstieg in ein proxied internes Werkzeug wie `ttyd` dienen. Damit bleibt der Operator in einer einzigen authentifizierten Oberfläche und erreicht dennoch terminalorientierte Workflows.
 
-## Nutzung 6 - wissen, wann die Oberflaeche gewechselt werden muss
-`UnyPort` ist nicht das einzige Werkzeug im Oekosystem.
+## Nutzung 6 - wissen, wann die Oberfläche gewechselt werden muss
+`UnyPort` ist nicht das einzige Werkzeug im Ökosystem.
 
 - `TRINITY` Verwenden, wenn es um Service-Lebenszyklus, Konto, Abrechnung oder Kundenoperationen geht.
 - `UnyDesk` Verwenden, wenn Fernzugriff oder direkte Assistenz gefragt ist.

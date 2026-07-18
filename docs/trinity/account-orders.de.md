@@ -9,7 +9,7 @@ Das Kundenkonto dient dazu:
 - Aktive und vergangene Bestellungen zu sehen
 - Bestimmte Zahlungsaktionen erneut aufzurufen
 - Rechnungen herunterzuladen
-- Nach dem Kauf die richtige Service-Oberflaeche wiederzufinden
+- Nach dem Kauf die richtige Service-Oberfläche wiederzufinden
 
 ```json
 {
@@ -23,14 +23,14 @@ Das Kundenkonto dient dazu:
 ```
 
 ## Typische Bestellphasen
-Eine Bestellung kann mehrere Zustaende durchlaufen:
+Eine Bestellung kann mehrere Zustände durchlaufen:
 
 - Entwurf
 - Eingereicht
 - Zahlung ausstehend
 - Bezahlt
 - In bearbeitung
-- Verfuegbar oder geliefert
+- Verfügbar oder geliefert
 - Storniert oder abgelaufen
 
 ```text
@@ -43,7 +43,7 @@ Die Bestellseite soll ohne interne Details verstaendlich bleiben. Wichtig sind v
 
 - Referenznummer
 - Aktueller Status
-- Ausgewaehlter Service
+- Ausgewählter Service
 - Rechnungsprofil
 - Zahlungsstatus
 - Rechnungslink, falls vorhanden

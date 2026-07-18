@@ -16,10 +16,10 @@ Das mitgelieferte Compose startet einen `golang:alpine`-Container und baut das P
 
 Eigenschaften im Entwicklungsmodus:
 
-- Frontend-Assets werden ueber `UNYPORT_ASSETS` vom Datentraeger ausgeliefert
+- Frontend-Assets werden über `UNYPORT_ASSETS` vom Datentraeger ausgeliefert
 - Go-Modul- und Build-Caches liegen auf benannten Volumes
 - Der Standard-Port ist `8800:8800`
-- Der Container loest `host.docker.internal` ueber `host-gateway`
+- Der Container loest `host.docker.internal` über `host-gateway`
 
 ## Produktionsmodus
 Dieselbe Compose-Logik bereitet auch ein Produktions-Binary vor:
@@ -38,7 +38,7 @@ Zur Laufzeit erwartet `UnyPort`:
 - `settings/config.yaml`
 - `settings/users.json`
 
-Operativ schreibt die Anwendung ausserdem:
+Operativ schreibt die Anwendung außerdem:
 
 - `logs/unyport.log`
 - `logs/startup-history.jsonl`
@@ -59,12 +59,12 @@ Optionales HTTPS- und QUIC-Verhalten wird aus `settings/settings.yaml` gesteuert
 Wenn HTTP/3 korrekt aktiviert ist, kann `UnyPort` TLS auf dem konfigurierten Port bedienen und `:8800` auf diesen TLS-Listener umleiten.
 
 ## Reverse Proxy und erster Login
-Fuer Internet-exponierte Deployments ist das uebliche Muster:
+Für Internet-exponierte Deployments ist das uebliche Muster:
 
 - `UnyPort` Lokal oder an eine kontrollierte Host-Adresse binden
 - Nginx oder einen anderen Reverse Proxy davor setzen
 - Secure-Cookie-Verhalten mit `security_extra.https: true` aktivieren
-- OAuth-Platzhalter vor oeffentlichem Einsatz ersetzen
-- Geseedete oder Demo-Credentials sofort aendern
+- OAuth-Platzhalter vor öffentlichem Einsatz ersetzen
+- Geseedete oder Demo-Credentials sofort ändern
 
 So bleibt die Bereitstellung minimal, ohne eine Demo-Konfiguration als produktionsreif auszugeben.

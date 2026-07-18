@@ -1,31 +1,31 @@
 # UnyDesk-Architektur
-`UnyDesk` kombiniert eine Broker-Oberflaeche, eine Software-Verteilungsoberflaeche und eine Live-Sitzungsflaeche.
+`UnyDesk` kombiniert eine Broker-Oberfläche, eine Software-Verteilungsoberfläche und eine Live-Sitzungsfläche.
 
-Seine oeffentliche Architektur ist zentriert auf:
+Seine öffentliche Architektur ist zentriert auf:
 
 - Authentifizierung
 - Bootstrap-Claim- und Provision-Ablaufe
 - Host- und Sitzungszustand
-- Live-Updates ueber WebSockets
-- Verteilung von Host-Binaries fuer unterstuetzte Zielplattformen
-- Direkte WebRTC-Signalisierung ueber die Broker-API
+- Live-Updates über WebSockets
+- Verteilung von Host-Binaries für unterstützte Zielplattformen
+- Direkte WebRTC-Signalisierung über die Broker-API
 - Bildschirm-Fallback-Pfade, wenn direkte Echtzeitmedien nicht nutzbar sind
 
-## Zentrale oeffentliche Schichten
-Die oeffentliche Architektur kann in fuenf Schichten gelesen werden.
+## Zentrale öffentliche Schichten
+Die öffentliche Architektur kann in fuenf Schichten gelesen werden.
 
 ### 1. Distributionsschicht
 Diese Schicht liefert:
 
-- Herunterladbare Host-Binaerdateien
+- Herunterladbare Host-Binärdateien
 - Plattformspezifisches Host-Packaging
 - Bootstrap-Einstiegspunkte
-- Einen stabilen oeffentlichen Pfad zum Abruf der Host-Software
+- Einen stabilen öffentlichen Pfad zum Abruf der Host-Software
 
 Die Host-Anwendung ist nicht nur ein Hilfsprogramm. Sie ist die Laufzeit auf der Maschine, registriert sich, identifiziert sich, sendet Heartbeats und akzeptiert oder verweigert Sitzungen.
 
 ### 2. Identitaets- und Vertrauensschicht
-`UnyDesk` nutzt mehrere oeffentliche Vertrauensmodi:
+`UnyDesk` nutzt mehrere öffentliche Vertrauensmodi:
 
 - Kontogebundene Host-Registrierung
 - Claim- oder Pairing-Ablaufe, die einen Host an einen Nutzerkontext binden
@@ -43,21 +43,21 @@ Die Broker-Schicht verarbeitet:
 - Sichtbarkeit von Dispatch-Status, Zustellzaehlern und Host-Bestaetigungen
 
 ### 4. Echtzeit-Transportschicht
-Wenn moeglich, bevorzugt `UnyDesk` einen direkten Echtzeitpfad:
+Wenn möglich, bevorzugt `UnyDesk` einen direkten Echtzeitpfad:
 
 - Der Browser-Viewer erstellt ein WebRTC-Offer
 - Der Host stellt das WebRTC-Answer bereit
-- ICE-Kandidaten werden ueber den Broker ausgetauscht
-- Video-, Input- und Hilfskanaele werden verfuegbar
+- ICE-Kandidaten werden über den Broker ausgetauscht
+- Video-, Input- und Hilfskanaele werden verfügbar
 
-Dieser Pfad ist fuer niedrige Latenz optimiert, etwa fuer Live-Bildschirmansicht, Tastatur- und Maussteuerung, Zwischenablageaustausch und Dateisignalisierung.
+Dieser Pfad ist für niedrige Latenz optimiert, etwa für Live-Bildschirmansicht, Tastatur- und Maussteuerung, Zwischenablageaustausch und Dateisignalisierung.
 
 ### 5. Fallback-Lieferschicht
-Die oeffentliche Architektur enthaelt auch explizite Fallback-Pfade:
+Die öffentliche Architektur enthaelt auch explizite Fallback-Pfade:
 
-- Peer-Frame-Uebertragung ueber den Screen-Data-Channel
-- Peer-Frame-Relay ueber ein dediziertes Screen-WebSocket
-- Fortlaufende Signalisierung ueber das Broker-WebSocket
+- Peer-Frame-Übertragung über den Screen-Data-Channel
+- Peer-Frame-Relay über ein dediziertes Screen-WebSocket
+- Fortlaufende Signalisierung über das Broker-WebSocket
 - Polling des Sitzungsstatus waehrend Transporterholung
 
 ## Sitzungsweg in Klartext

@@ -1,5 +1,5 @@
-# Metriken und Oberflaechen
-`UnyPort` ist um eine kleine Zahl operativer Oberflaechen herum gebaut, die von Live-Daten gespeist werden. Das Backend sampelt das System alle `2` Sekunden und schiebt Snapshots ueber SSE, waehrend das Frontend diese in operator-orientierte Seiten uebersetzt.
+# Metriken und Oberflächen
+`UnyPort` ist um eine kleine Zahl operativer Oberflächen herum gebaut, die von Live-Daten gespeist werden. Das Backend sampelt das System alle `2` Sekunden und schiebt Snapshots über SSE, waehrend das Frontend diese in operator-orientierte Seiten übersetzt.
 
 ## Live-Datenmodell
 Die Live-Pipeline hat einige wichtige Eigenschaften:
@@ -12,7 +12,7 @@ Die Live-Pipeline hat einige wichtige Eigenschaften:
 Das haelt das Frontend leicht und verhindert doppelte Telemetrie-Mathematik im Browser.
 
 ## Dashboard
-Das Dashboard ist die erste Leseflaeche:
+Das Dashboard ist die erste Lesefläche:
 
 - Hostname und Host-Rolle
 - Uptime
@@ -25,13 +25,13 @@ Die Hypervisor-Seite kombiniert Systemidentitaet und Plattformkontext:
 
 - Alpine- und Kernel-Version
 - Host-Rolle und Runtime
-- BIOS- und Board-Daten wenn verfuegbar
+- BIOS- und Board-Daten wenn verfügbar
 - Versionsvergleich gegen `TRINITY`-Boot-Tags aus GitHub
 - Xen-Hypervisor-Informationen auf Dom0
 - Aktive Xen-Domains auf Dom0
 
 ## Resources
-Die Resources-Seite ist die breite Inspektionsflaeche:
+Die Resources-Seite ist die breite Inspektionsfläche:
 
 - Load Average
 - Temperaturen
@@ -58,12 +58,12 @@ Die `Storage`-Seite zeigt:
 - LBU-Persistenzstatus auf Alpine-Hosts
 
 ## Security
-Die Security-Seite ist eine eigene operative Oberflaeche und nicht nur eine Badge-Zusammenfassung. Sie buendelt:
+Die Security-Seite ist eine eigene operative Oberfläche und nicht nur eine Badge-Zusammenfassung. Sie buendelt:
 
 - Kernel-Hardening-Checks
 - Dateirechte der Benutzerdatei
 - OpenRC-Dienstzustand
-- Vorhandensein ueberwachter Prozesse
+- Vorhandensein überwachter Prozesse
 - Lauschende TCP-Ports
 
-Damit ist `UnyPort` mehr als ein Ressourcenleser. Es ist auch ein kompakter Leser fuer Sicherheitslage.
+Damit ist `UnyPort` mehr als ein Ressourcenleser. Es ist auch ein kompakter Leser für Sicherheitslage.

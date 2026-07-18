@@ -1,12 +1,12 @@
 # Historique
 Cette page resume l'historique visible du projet `UnyPort` a partir du depot et des fichiers de release presents dans `docker_unyport`.
 
-## 3 mai 2026 - base dashboard et reseau
+## 3 mai 2026 - base dashboard et réseau
 Les premiers commits du `2026-05-03` etablissent la base initiale du produit :
 
 - Premier travail de dashboard
 - Presentation amelioree
-- Premiers ajouts de graphe reseau et de donnees reseau
+- Premiers ajouts de graphe réseau et de données réseau
 
 Ces commits marquent le passage d'une idee a une vraie surface de monitoring.
 
@@ -36,9 +36,9 @@ Plusieurs commits du `2026-06-06` ajoutent :
 
 - Un menu hamburger
 - Une carte de reboot style git
-- Un refactor de la carte reseau
+- Un refactor de la carte réseau
 
-Ces changements poussent clairement `UnyPort` vers une UI operateur plus complete qu'un simple panneau de metriques.
+Ces changements poussent clairement `UnyPort` vers une UI opérateur plus complete qu'un simple panneau de metriques.
 
 ## 7 juin 2026 - release publique v0.1.0
 Le `2026-06-07`, l'historique du depot montre :
@@ -48,7 +48,7 @@ Le `2026-06-07`, l'historique du depot montre :
 - Le tag `v0.1.0`
 - Le travail de versioning applicatif
 
-Le `CHANGELOG.md` et le `RELEASE-v0.1.0.md` confirment tous deux que `v0.1.0` est la premiere release publique.
+Le `CHANGELOG.md` et le `RELEASE-v0.1.0.md` confirment tous deux que `v0.1.0` est la première release publique.
 
 ## Du 18 juin au 10 juillet 2026 - affinage documentaire
 Les commits plus tardifs se concentrent sur la documentation :
@@ -56,4 +56,4 @@ Les commits plus tardifs se concentrent sur la documentation :
 - `2026-06-18` : Correction de l'URL de demo et de la documentation du bind Docker
 - `2026-07-10` : Mise a jour de l'historique
 
-Au 10 juillet 2026, l'histoire visible du depot est donc celle d'un portail de controle monitoring-first disposant deja d'une release publique, d'un travail packaging compact et d'une posture documentaire plus claire.
+Au 10 juillet 2026, l'histoire visible du depot est donc celle d'un portail de contrôle monitoring-first disposant déjà d'une release publique, d'un travail packaging compact et d'une posture documentaire plus claire.

@@ -3,7 +3,7 @@
 Die maschinenseitige Laufzeit, die sich beim Dienst registriert, online bleibt und eine Fernsitzung annehmen oder ablehnen kann.
 
 ## Viewer
-Der browserseitige Teilnehmer, der die Fernsitzung oeffnet, beobachtet und steuert.
+Der browserseitige Teilnehmer, der die Fernsitzung öffnet, beobachtet und steuert.
 
 ## Sitzung
 Die aktive Beziehung zwischen Viewer und Host einschliesslich Routing, Signalisierung, Transport und Schliessen.
@@ -15,10 +15,10 @@ Die Dienstschicht, die Signalisierung, Routing, Praesenz und Status zwischen Vie
 Ein Vertrauens- oder Besitzschritt, der einen Host mit einem Konto oder erwarteten Kontext verknuepft.
 
 ## Pairing
-Die praktische Verbindung eines Hosts mit einem vertrauten Nutzer, Konto oder Umfeld, damit er spaeter eindeutig wiederverwendet werden kann.
+Die praktische Verbindung eines Hosts mit einem vertrauten Nutzer, Konto oder Umfeld, damit er später eindeutig wiederverwendet werden kann.
 
 ## Standalone access
-Ein direkter Sitzungszugriffsmodus mit sitzungsspezifischem Token statt der kompletten Konto-Oberflaeche.
+Ein direkter Sitzungszugriffsmodus mit sitzungsspezifischem Token statt der kompletten Konto-Oberfläche.
 
 ## Offer and answer
 Das WebRTC-Signalisierungspaar, das zwischen Viewer und Host ausgetauscht wird, bevor direkter Echtzeittransport beginnen kann.

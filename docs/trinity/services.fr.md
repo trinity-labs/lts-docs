@@ -22,7 +22,7 @@ Cette clarification est importante : le support commercial et le support techniq
 
 ![`UnyPort` et pilotage](../assets/images/generated/unyport-live-dashboard.png)
 
-*Exemple de surface `UnyPort` reliee a l'ecosysteme `TRINITY` pour le pilotage, la supervision et la lecture de l'etat des environnements.*
+*Exemple de surface `UnyPort` reliee a l'écosystème `TRINITY` pour le pilotage, la supervision et la lecture de l'état des environnements.*
 
 ## Paiements et facturation
 Le site prend en charge plusieurs parcours de paiement selon le service :

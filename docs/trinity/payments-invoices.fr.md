@@ -9,7 +9,7 @@ Selon le service, `TRINITY` peut exposer :
 - Virement bancaire
 - Paiement Litecoin
 
-Chaque methode implique une attente operationnelle differente. Les paiements en ligne reviennent souvent vite. Les flux manuels peuvent rester en attente jusqu'a confirmation du reglement.
+Chaque méthode implique une attente operationnelle differente. Les paiements en ligne reviennent souvent vite. Les flux manuels peuvent rester en attente jusqu'a confirmation du reglement.
 
 ```text
 carte ou PayPal -> retour rapide -> commande mise a jour vite
@@ -17,8 +17,8 @@ virement        -> etat en attente -> confirmation de reglement plus tard
 Litecoin        -> etat en attente -> verification d'une reference de paiement
 ```
 
-## Etats de paiement
-La surface publique doit rendre lisibles les etats suivants :
+## États de paiement
+La surface publique doit rendre lisibles les états suivants :
 
 - Paye
 - En attente
@@ -38,13 +38,13 @@ La surface publique doit rendre lisibles les etats suivants :
 ```
 
 ## Factures
-La facture PDF est le document de facturation visible cote client. Elle doit permettre d'identifier :
+La facture PDF est le document de facturation visible côté client. Elle doit permettre d'identifier :
 
 - Le numero de facture
 - La reference de commande
 - Le nom du client
 - Le service facture
-- L'etat paye ou en attente
+- L'état paye ou en attente
 - La date de facture
 
 ```yaml
@@ -60,9 +60,9 @@ La bonne action depend du flux :
 
 - Attendre le retour fournisseur si le parcours est encore ouvert
 - Relire la page commande
-- Verifier le profil de facturation
+- Vérifier le profil de facturation
 - Conserver la reference de paiement
-- Contacter le support si l'etat reste bloque
+- Contacter le support si l'état reste bloque
 
 ```markdown
 Checklist paiement en attente

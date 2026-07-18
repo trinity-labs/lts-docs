@@ -1,8 +1,8 @@
 # Support and operations
-`UnyDesk`-Support ist in erster Linie operativ. Das Nutzerproblem lautet oft nicht "die Seite ist nicht verfuegbar", sondern "der Host ist online, die Sitzung existiert und trotzdem wird der Medienpfad nicht nutzbar". Oeffentliche Support-Hilfe muss sich deshalb auf Zustaende, Nachweise und Transportverhalten konzentrieren.
+`UnyDesk`-Support ist in erster Linie operativ. Das Nutzerproblem lautet oft nicht "die Seite ist nicht verfügbar", sondern "der Host ist online, die Sitzung existiert und trotzdem wird der Medienpfad nicht nutzbar". Öffentliche Support-Hilfe muss sich deshalb auf Zustände, Nachweise und Transportverhalten konzentrieren.
 
 ## Support-Umfang
-Oeffentlich kann `UnyDesk`-Support sich beziehen auf:
+Öffentlich kann `UnyDesk`-Support sich beziehen auf:
 
 - Unklarheiten beim Download des Host-Pakets oder beim Bootstrap
 - Claim-, Pairing- oder Vertrauensprobleme
@@ -11,7 +11,7 @@ Oeffentlich kann `UnyDesk`-Support sich beziehen auf:
 - WebRTC-Signalisierung, die vor dem Answer blockiert
 - Direkten Medienpfad ohne dekodiertes Bild
 - Fehlende Bildschirm-Fallback-Ausgabe
-- Probleme mit Zwischenablage oder Dateiuebertragung
+- Probleme mit Zwischenablage oder Dateiübertragung
 
 ## Nuetzliche Nachweise
 ```markdown
@@ -25,7 +25,7 @@ Erwartetes Ergebnis: Live-Bildschirm oder Peer-Frame-Fallback
 ```
 
 ## Sitzung in Stufen lesen
-Oeffentlich scheitert eine Fernsitzung meist in einer dieser Stufen:
+Öffentlich scheitert eine Fernsitzung meist in einer dieser Stufen:
 
 1. Host-Paket fehlt oder Host ist offline
 2. Host ist sichtbar, aber nicht gepairt oder nicht vertraut
@@ -46,7 +46,7 @@ Oeffentlich scheitert eine Fernsitzung meist in einer dieser Stufen:
 - "Peer frame fallback requested but no image arrived"
 
 ## Vor einer Eskalation
-Pruefen:
+Prüfen:
 
 - Dass die richtige Host-Paketversion laeuft
 - Dass der Host weiterhin online ist
@@ -55,7 +55,7 @@ Pruefen:
 - Dass der Browser-Viewer auf derselben Sitzungsseite geblieben ist
 - Dass das Problem als Signalisierung, Direktmedien oder Fallback-Bildlieferung verstanden ist
 
-## Verwandte Flaechen
-- **`TRINITY`** fuer Konto-, Rechnungs-, Bestell- oder Service-Eigentumsthemen
-- **`UnyPort`** fuer breitere Infrastruktur-Sichtbarkeit
-- **`UnyDesk`** fuer den interaktiven Fernzugriff selbst
+## Verwandte Flächen
+- **`TRINITY`** für Konto-, Rechnungs-, Bestell- oder Service-Eigentumsthemen
+- **`UnyPort`** für breitere Infrastruktur-Sichtbarkeit
+- **`UnyDesk`** für den interaktiven Fernzugriff selbst

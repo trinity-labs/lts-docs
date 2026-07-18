@@ -6,10 +6,10 @@ Je nach Service kann `TRINITY` folgende Wege anzeigen:
 
 - Kartenzahlung
 - PayPal
-- Bankueberweisung
+- Banküberweisung
 - Litecoin-Zahlung
 
-Jede Methode hat eine andere operative Erwartung. Online-Zahlungen kommen meist schnell zurueck. Manuelle Fluesse koennen bis zur Bestaetigung offen bleiben.
+Jede Methode hat eine andere operative Erwartung. Online-Zahlungen kommen meist schnell zurück. Manuelle Fluesse können bis zur Bestaetigung offen bleiben.
 
 ```text
 Karte oder PayPal -> schnelle Rueckkehr -> Bestellung schnell aktualisiert
@@ -17,14 +17,14 @@ Ueberweisung      -> ausstehender Zustand -> spaetere Bestaetigung
 Litecoin          -> ausstehender Zustand -> Pruefung einer Zahlungsreferenz
 ```
 
-## Zahlungszustaende
-Die oeffentliche Oberflaeche soll diese Zustaende verstaendlich machen:
+## Zahlungszustände
+Die öffentliche Oberfläche soll diese Zustände verstaendlich machen:
 
 - Bezahlt
 - Ausstehend
 - Abgelehnt
 - Storniert
-- Erneuter Versuch moeglich
+- Erneuter Versuch möglich
 
 ```json
 {
@@ -56,10 +56,10 @@ rechnung:
 ```
 
 ## Wenn eine Zahlung ausstehend bleibt
-Die richtige Aktion haengt vom Fluss ab:
+Die richtige Aktion hängt vom Fluss ab:
 
 - Auf die Rueckkehr des Zahlungsanbieters warten
-- Die Bestellseite erneut pruefen
+- Die Bestellseite erneut prüfen
 - Das Rechnungsprofil kontrollieren
 - Die Zahlungsreferenz aufbewahren
 - Den Support kontaktieren, wenn der Zustand blockiert bleibt

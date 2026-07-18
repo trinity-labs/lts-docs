@@ -10,16 +10,16 @@ Dieses Glossar gibt eine kompakte Lesart der wichtigsten `UnyPort`-Begriffe.
 
 ## Plattformbegriffe
 - `Alpine Linux`: Leichtgewichtige Linux-Distribution als bevorzugtes Host-Modell
-- `Xen`: Hypervisor-Schicht fuer Dom0- und DomU-Infrastruktur
+- `Xen`: Hypervisor-Schicht für Dom0- und DomU-Infrastruktur
 - `Dom0`: Xen-Kontrolldomain mit Hypervisor-Kontext
 - `DomU`: Xen-Gastdomain, sichtbar als virtuelle Maschine
-- `LBU`: Alpine-Mechanismus fuer Backup und Persistenz
+- `LBU`: Alpine-Mechanismus für Backup und Persistenz
 
 ## Laufzeitbegriffe
-- `SSE`: Server-sent events fuer Live-System-Snapshots
+- `SSE`: Server-sent events für Live-System-Snapshots
 - `proxy app`: Interne Anwendung unter `/proxy/<name>/`
 - `startup history`: Neustart-Timeline in `startup-history.jsonl`
-- `trusted origins`: Erlaubte Hosts fuer CSRF-geschuetzte zustandsaendernde Requests
+- `trusted origins`: Erlaubte Hosts für CSRF-geschuetzte zustandsändernde Requests
 
 ## Lesemodell
 ```text

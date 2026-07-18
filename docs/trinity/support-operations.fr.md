@@ -1,12 +1,12 @@
 # Support et exploitation
-Le support `TRINITY` est a la fois commercial et technique. Cote public, cela signifie que la plateforme doit aider l'utilisateur a comprendre quand demander de l'aide et quoi inclure dans sa demande.
+Le support `TRINITY` est a la fois commercial et technique. Côté public, cela signifie que la plateforme doit aider l'utilisateur a comprendre quand demander de l'aide et quoi inclure dans sa demande.
 
 ## Perimetre support
 Le support `TRINITY` peut explicitement concerner :
 
 - Les commandes et questions de facturation
 - Le suivi de paiement
-- L'acces aux factures
+- L'accès aux factures
 - Les environnements Alpine Linux
 - Les services VM reposant sur Xen
 - Les situations Data Disk Mode
@@ -30,10 +30,10 @@ Resultat attendu : confirmer s'il faut reprendre ou revenir en mode normal
 Collectez d'abord le minimum :
 
 - Reference de commande
-- Etat facture ou paiement si utile
+- État facture ou paiement si utile
 - Nom de VM s'il existe
 - Mode courant : normal, maintenance ou DDM
-- Capture ou observation console precise
+- Capture ou observation console précise
 
 ```bash
 # Exemple de lot d'informations a relever
@@ -50,7 +50,7 @@ df -h
 Le libre-service convient pour :
 
 - Lire une facture
-- Verifier un etat de paiement
+- Vérifier un état de paiement
 - Ouvrir une console
 - Confirmer si une VM est en ligne
 
@@ -58,12 +58,12 @@ Le support convient pour :
 
 - Livraison de commande bloquee
 - Incoherence de paiement
-- Etat VM peu clair
-- Action de reprise avec risque sur les donnees
+- État VM peu clair
+- Action de reprise avec risque sur les données
 
 ## Surfaces a utiliser
 Utilisez la bonne surface selon le besoin :
 
-- `TRINITY` Pour le compte, les commandes, les factures et le point d'entree service
+- `TRINITY` Pour le compte, les commandes, les factures et le point d'entrée service
 - `UnyDesk` Pour l'assistance distante et l'interaction
-- `UnyPort` Pour l'etat infra et la supervision
+- `UnyPort` Pour l'état infra et la supervision

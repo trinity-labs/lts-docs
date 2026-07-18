@@ -1,7 +1,7 @@
 # Compte et commandes
 `TRINITY` n'est pas seulement une vitrine. C'est aussi l'endroit ou le compte client et le cycle de vie de la commande restent visibles.
 
-## Role du compte
+## Rôle du compte
 Le compte client sert a :
 
 - S'authentifier
@@ -23,7 +23,7 @@ Le compte client sert a :
 ```
 
 ## Etapes typiques d'une commande
-Une commande peut passer par plusieurs etats :
+Une commande peut passer par plusieurs états :
 
 - Brouillon
 - Soumise
@@ -42,10 +42,10 @@ brouillon -> soumise -> paiement_en_attente -> payee -> preparation -> disponibl
 La page commande doit rester lisible sans details internes. Le client a surtout besoin de :
 
 - La reference
-- L'etat courant
+- L'état courant
 - Le service choisi
 - Le profil de facturation
-- L'etat du paiement
+- L'état du paiement
 - Le lien facture si disponible
 
 ```yaml
@@ -58,7 +58,7 @@ resume_commande:
 ```
 
 ## Bonne habitude avant d'ouvrir un ticket
-Gardez une trace tres simple de :
+Gardez une trace très simple de :
 
 - La reference de commande
 - La date d'achat

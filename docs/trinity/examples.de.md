@@ -1,7 +1,7 @@
 # Beispiele
-Diese Seite sammelt praktische Beispiele fuer typische `TRINITY`-Situationen.
+Diese Seite sammelt praktische Beispiele für typische `TRINITY`-Situationen.
 
-## Beispiel 1 - eine neu gelieferte VM pruefen
+## Beispiel 1 - eine neu gelieferte VM prüfen
 ```bash
 hostname
 uptime
@@ -38,7 +38,7 @@ Rechnung sichtbar: nein
 Gewuenschte Aktion: bestaetigen, ob die Zahlung noch wartet
 ```
 
-## Beispiel 4 - ein VM-Problem fuer den Support zusammenfassen
+## Beispiel 4 - ein VM-Problem für den Support zusammenfassen
 ```json
 {
   "vm": "vm-trinity01",
@@ -53,7 +53,7 @@ Gewuenschte Aktion: bestaetigen, ob die Zahlung noch wartet
 }
 ```
 
-## Beispiel 5 - Kundensicht auf das Oekosystem
+## Beispiel 5 - Kundensicht auf das Ökosystem
 ```text
 TRINITY  -> Konto, Bestellungen, Rechnungen, Dokumentation
 UnyDesk  -> Remote-Zugang und Hilfe

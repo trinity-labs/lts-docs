@@ -15,7 +15,7 @@
 - `UnyPort` Für die Service-Steuerung
 
 ## Hier beginnen
-Fuer eine praktische Lesereihenfolge wird empfohlen:
+Für eine praktische Lesereihenfolge wird empfohlen:
 
 1. `Einfuehrung`
 2. `Architektur`

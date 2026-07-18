@@ -1,5 +1,5 @@
 # UnyDesk
-`UnyDesk` ist der Fernzugriffsdienst des `TRINITY` Edge Networks Oekosystems. Diese oeffentliche Flaeche wird genutzt, um ein Host-Paket herunterzuladen, einen Host zu pairen oder zu claimen, eine Fernsitzung zu starten und diese Sitzung nutzbar zu halten, auch wenn der beste Transportpfad nicht sofort verfuegbar ist.
+`UnyDesk` ist der Fernzugriffsdienst des `TRINITY` Edge Networks Ökosystems. Diese öffentliche Fläche wird genutzt, um ein Host-Paket herunterzuladen, einen Host zu pairen oder zu claimen, eine Fernsitzung zu starten und diese Sitzung nutzbar zu halten, auch wenn der beste Transportpfad nicht sofort verfügbar ist.
 
 Im Unterschied zu `TRINITY` als Kunden- und Serviceportal konzentriert sich `UnyDesk` auf:
 
@@ -10,7 +10,7 @@ Im Unterschied zu `TRINITY` als Kunden- und Serviceportal konzentriert sich `Uny
 - Fallback-Verhalten auf Transportebene
 
 ## Einstieg
-Fuer eine praktische Lesereihenfolge wird empfohlen:
+Für eine praktische Lesereihenfolge wird empfohlen:
 
 1. `Overview`
 2. `Architecture`
@@ -29,4 +29,4 @@ Viewer
   -> Fallback-Pfad falls noetig
 ```
 
-Dieser Abschnitt beschreibt `UnyDesk` als oeffentliche Produkterfahrung und nicht als Quellcode- oder Protokollnotiz.
+Dieser Abschnitt beschreibt `UnyDesk` als öffentliche Produkterfahrung und nicht als Quellcode- oder Protokollnotiz.

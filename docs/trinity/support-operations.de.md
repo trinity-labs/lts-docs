@@ -1,5 +1,5 @@
 # Support und Betrieb
-`TRINITY`-Support ist sowohl kommerziell als auch technisch. Oeffentlich bedeutet das: Die Plattform soll dem Nutzer zeigen, wann Hilfe noetig ist und welche Informationen in eine Anfrage gehoeren.
+`TRINITY`-Support ist sowohl kommerziell als auch technisch. Öffentlich bedeutet das: Die Plattform soll dem Nutzer zeigen, wann Hilfe noetig ist und welche Informationen in eine Anfrage gehoeren.
 
 ## Support-Umfang
 `TRINITY`-Support kann sich ausdruecklich beziehen auf:
@@ -47,23 +47,23 @@ df -h
 ## Support versus Self-Service
 `TRINITY` soll genug Information bereitstellen, damit der Nutzer sicher handeln kann, ohne aus jeder Lage automatisch ein Support-Ticket zu machen.
 
-Self-Service passt fuer:
+Self-Service passt für:
 
 - Rechnung lesen
-- Zahlungsstatus pruefen
-- Konsole oeffnen
+- Zahlungsstatus prüfen
+- Konsole öffnen
 - Bestaetigen, ob eine VM online ist
 
-Support passt fuer:
+Support passt für:
 
 - Blockierte Service-Auslieferung
 - Zahlungsinkonsistenz
 - Unklaren VM-Zustand
 - Recovery-Aktionen mit Datenrisiko
 
-## Die richtigen Oberflaechen
-Nutzen Sie die passende Oberflaeche fuer den passenden Bedarf:
+## Die richtigen Oberflächen
+Nutzen Sie die passende Oberfläche für den passenden Bedarf:
 
-- `TRINITY` Fuer Konto, Bestellungen, Rechnungen und Service-Einstieg
-- `UnyDesk` Fuer Remote-Hilfe und Interaktion
-- `UnyPort` Fuer Infrastrukturstatus und operative Uebersicht
+- `TRINITY` Für Konto, Bestellungen, Rechnungen und Service-Einstieg
+- `UnyDesk` Für Remote-Hilfe und Interaktion
+- `UnyPort` Für Infrastrukturstatus und operative Übersicht

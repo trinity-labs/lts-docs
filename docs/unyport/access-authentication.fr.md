@@ -1,20 +1,20 @@
-# Acces et authentification
-`UnyPort` utilise un modele d'authentification compact construit autour des utilisateurs locaux, des cookies JWT et de la protection CSRF. L'application supporte aussi la connexion OAuth via GitHub et GitLab lorsque les reglages fournisseurs sont completes.
+# Accès et authentification
+`UnyPort` utilise un modele d'authentification compact construit autour des utilisateurs locaux, des cookies JWT et de la protection CSRF. L'application supporte aussi la connexion OAuth via GitHub et GitLab lorsque les réglages fournisseurs sont completes.
 
 ## Utilisateurs locaux et bootstrap
-La source d'identite principale est `settings/users.json`.
+La source d'identité principale est `settings/users.json`.
 
 Comportement important :
 
 - Si `users.json` n'existe pas, `UnyPort` initialise un premier compte admin
 - L'email initialise est `demo@unyport.app`
-- Le mot de passe vient de `UNYPORT_ADMIN_PASSWORD` ou retombe sur la valeur integree
+- Le mot de passe vient de `UNYPORT_ADMIN_PASSWORD` ou retombe sur la valeur intégrée
 - Le depot fournit aussi actuellement un utilisateur local de demo pour l'evaluation de la source
 
 Cela signifie que le parcours de deploiement et le parcours d'evaluation du depot sont proches, mais pas identiques.
 
-## Roles
-Trois roles sont acceptes par le backend :
+## Rôles
+Trois rôles sont acceptes par le backend :
 
 - `admin`
 - `operator`
@@ -24,7 +24,7 @@ Leur sens operationnel est :
 
 - `viewer` : Usage authentifie en lecture seule
 - `operator` : Usage authentifie avec ecritures courantes comme le profil et le mot de passe
-- `admin` : Acces complet, y compris administration des utilisateurs et du branding
+- `admin` : Accès complet, y compris administration des utilisateurs et du branding
 
 Dans l'UI actuelle, les viewers peuvent consulter le portail mais ne peuvent pas enregistrer des changements de profil ni mettre a jour leurs identifiants.
 
@@ -41,7 +41,7 @@ Apres authentification, `UnyPort` emet un cookie JWT :
 
 - Signe avec `security.jwt_secret`
 - Stocke en cookie HTTP-only
-- Protege par le reglage `https` pour le comportement secure-cookie
+- Protege par le réglage `https` pour le comportement secure-cookie
 - Borne dans le temps selon `security_extra.session_timeout_mins`
 
 ## CSRF, limitation et trusted origins
@@ -49,15 +49,15 @@ L'application impose aussi :
 
 - Une protection CSRF avec un endpoint dedie `/api/csrf`
 - Une limitation de login, `5` tentatives par minute par defaut
-- Une validation des trusted origins pour les requetes qui modifient l'etat
+- Une validation des trusted origins pour les requetes qui modifient l'état
 
 Si `trusted_origins` est vide, `UnyPort` calcule une liste par defaut a partir des interfaces actives locales sur le port `8800`.
 
 ## Actions admin
-Les actions d'ecriture reservees aux admins incluent actuellement :
+Les actions d'écriture reservees aux admins incluent actuellement :
 
 - Creer des utilisateurs
-- Changer les roles
+- Changer les rôles
 - Supprimer un utilisateur sauf son propre compte
 - Mettre a jour ou reinitialiser le branding de l'instance
 

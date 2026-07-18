@@ -1,18 +1,18 @@
 # UnyPort
-`UnyPort` ist die operator-orientierte Ueberwachungsflaeche des `TRINITY`-Oekosystems. Sie ist als leichtgewichtige Go-Anwendung fuer Alpine-Linux-Umgebungen gebaut und verbindet Xen-Bewusstsein, Live-Systemzustand, kontrolliertes App-Proxying und taegliche Host-Supervision.
+`UnyPort` ist die operator-orientierte Überwachungsfläche des `TRINITY`-Ökosystems. Sie ist als leichtgewichtige Go-Anwendung für Alpine-Linux-Umgebungen gebaut und verbindet Xen-Bewusstsein, Live-Systemzustand, kontrolliertes App-Proxying und tägliche Host-Supervision.
 
-Oeffentlich bringt `UnyPort` zusammen:
+Öffentlich bringt `UnyPort` zusammen:
 
 - Authentifizierten Operator-Zugriff
 - Live-Sichtbarkeit auf Host und Dienste
-- Expliziten Xen-Kontext fuer Dom0- und DomU-Umgebungen
+- Expliziten Xen-Kontext für Dom0- und DomU-Umgebungen
 - Kontrollierten Zugang zu internen Anwendungen wie `ttyd`
-- Operative Seiten fuer Sicherheit, Storage, Netzwerk und Systemzustand
+- Operative Seiten für Sicherheit, Storage, Netzwerk und Systemzustand
 
-`UnyPort` arbeitet mit zwei Begleitflaechen:
+`UnyPort` arbeitet mit zwei Begleitflächen:
 
-- `TRINITY` Fuer Kundenlebenszyklus, Bestellungen, Abrechnung und Service-Einstiege
-- `UnyDesk` Fuer Fernzugriff und Assistenz-Workflows
+- `TRINITY` Für Kundenlebenszyklus, Bestellungen, Abrechnung und Service-Einstiege
+- `UnyDesk` Für Fernzugriff und Assistenz-Workflows
 
 ## Hier beginnen
 Die empfohlene Lesereihenfolge ist:
@@ -37,4 +37,4 @@ Operator-Login
   -> Admin-Einstellungen wenn erlaubt
 ```
 
-Dieser Abschnitt beschreibt `UnyPort` daher als echte Betriebsoberflaeche und nicht als generisches Dashboard-Theme oder blosses Quellcode-Repository.
+Dieser Abschnitt beschreibt `UnyPort` daher als echte Betriebsoberfläche und nicht als generisches Dashboard-Theme oder blosses Quellcode-Repository.

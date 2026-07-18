@@ -1,12 +1,12 @@
-# Praesentation von UnyPort
-`UnyPort` ist die Kontroll- und Supervisionsanwendung rund um die `TRINITY`-Infrastruktur. Sie ist fuer Operatoren gedacht, nicht fuer oeffentliche Handelsprozesse. Der Produktwert liegt in Klarheit: ein Einstiegspunkt, ein Sitzungsmodell, eine Host-Sicht und wenige gezielte Betriebsseiten.
+# Präsentation von UnyPort
+`UnyPort` ist die Kontroll- und Supervisionsanwendung rund um die `TRINITY`-Infrastruktur. Sie ist für Operatoren gedacht, nicht für öffentliche Handelsprozesse. Der Produktwert liegt in Klarheit: ein Einstiegspunkt, ein Sitzungsmodell, eine Host-Sicht und wenige gezielte Betriebsseiten.
 
-![`UnyPort`-Oberflaeche](../assets/images/screens/unyport-dashboard.png)
+![`UnyPort`-Oberfläche](../assets/images/screens/unyport-dashboard.png)
 
-*Beispiel einer `UnyPort`-Oberflaeche mit dashboard-orientierter Struktur und operator-zentrierter Lesart des Host-Zustands.*
+*Beispiel einer `UnyPort`-Oberfläche mit dashboard-orientierter Struktur und operator-zentrierter Lesart des Host-Zustands.*
 
 ## Sichtbare Seiten
-Die aktuelle Oberflaeche ist um folgende Seiten gebaut:
+Die aktuelle Oberfläche ist um folgende Seiten gebaut:
 
 - `Dashboard`
 - `Hypervisor`
@@ -16,18 +16,18 @@ Die aktuelle Oberflaeche ist um folgende Seiten gebaut:
 - `Security`
 - `Settings`
 
-Diese Seiten werden von einer Mischung aus statischen Systemfakten und Live-Snapshots ueber SSE versorgt.
+Diese Seiten werden von einer Mischung aus statischen Systemfakten und Live-Snapshots über SSE versorgt.
 
 ## Zielnutzer
-`UnyPort` ist fuer folgende Rollen gedacht:
+`UnyPort` ist für folgende Rollen gedacht:
 
 - Administratoren
 - Operatoren
 - Viewer im Nur-Lese-Modus
 
-Die Anwendung trennt diese Rollen explizit, damit dieselbe Oberflaeche fuer Beobachtung, Routinebetrieb und kontrollierte Administration verwendet werden kann.
+Die Anwendung trennt diese Rollen explizit, damit dieselbe Oberfläche für Beobachtung, Routinebetrieb und kontrollierte Administration verwendet werden kann.
 
-## Position im Oekosystem
+## Position im Ökosystem
 `UnyPort` ist die Supervisionsbegleitung von `TRINITY`:
 
 - `TRINITY` Traegt den Kundenlebenszyklus

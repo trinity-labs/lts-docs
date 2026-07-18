@@ -22,7 +22,7 @@ Das ist öffentlich wichtig, weil kommerzieller und technischer Support nicht nu
 
 ![`UnyPort` und Steuerung](../assets/images/generated/unyport-live-dashboard.png)
 
-*Beispiel einer `UnyPort`-Oberflaeche innerhalb des `TRINITY`-Oekosystems fuer Steuerung, Ueberwachung und Statusuebersicht der Umgebungen.*
+*Beispiel einer `UnyPort`-Oberfläche innerhalb des `TRINITY`-Ökosystems für Steuerung, Überwachung und Statusübersicht der Umgebungen.*
 
 ## Zahlungen und Rechnungen
 Je nach Service unterstützt die Website mehrere Zahlungswege:

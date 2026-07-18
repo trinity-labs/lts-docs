@@ -1,5 +1,5 @@
 # Applikations-Proxy
-`UnyPort` kann ausgewaehlte interne Anwendungen ueber kontrollierte Reverse-Proxys unter `/proxy/<name>/` ausliefern. Damit gelangen Operatoren aus demselben authentifizierten Portal in interne Werkzeuge, ohne jedes Werkzeug separat oeffentlich zu exponieren.
+`UnyPort` kann ausgewählte interne Anwendungen über kontrollierte Reverse-Proxys unter `/proxy/<name>/` ausliefern. Damit gelangen Operatoren aus demselben authentifizierten Portal in interne Werkzeuge, ohne jedes Werkzeug separat öffentlich zu exponieren.
 
 ## Eine Anwendung deklarieren
 Proxied Apps werden in `settings/config.yaml` deklariert:
@@ -12,7 +12,7 @@ apps:
     type: terminal
 ```
 
-Zur Laufzeit stellt das Portal Metadaten ueber `/api/apps` bereit und mountet den Proxy unter:
+Zur Laufzeit stellt das Portal Metadaten über `/api/apps` bereit und mountet den Proxy unter:
 
 ```text
 /proxy/ttyd/
@@ -28,13 +28,13 @@ Der Reverse-Proxy fuehrt eine kleine Menge Hardening und Umschreiben durch:
 - Rueckleitung nicht-JSON `401`- und `403`-Antworten an die Portalwurzel
 
 ## TTYd-spezifische Behandlung
-Der Code lockert die CSP nur fuer den `ttyd`-Mount, damit Webterminal-Assets und Websocket-Flows korrekt funktionieren. Andere proxied Anwendungen behalten das standardmaessig gehaertete Verhalten.
+Der Code lockert die CSP nur für den `ttyd`-Mount, damit Webterminal-Assets und Websocket-Flows korrekt funktionieren. Andere proxied Anwendungen behalten das standardmaessig gehärtete Verhalten.
 
 ## Warum das wichtig ist
 Diese Proxy-Schicht haelt `UnyPort` fokussiert:
 
 - Operatoren erhalten einen einheitlichen authentifizierten Einstieg
-- Interne Anwendungen brauchen kein eigenes oeffentliches Expositionsmodell
+- Interne Anwendungen brauchen kein eigenes öffentliches Expositionsmodell
 - Das Produkt bleibt klein und kann trotzdem Bruecke zu terminalorientierten Tools sein
 
 Die Funktion ist daher als kontrolliertes Gateway zu verstehen, nicht als allgemeiner App-Katalog.

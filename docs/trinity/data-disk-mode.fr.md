@@ -2,18 +2,18 @@
 Le Data Disk Mode, souvent abrege **DDM**, est l'une des notions techniques les plus importantes exposees publiquement par `TRINITY`.
 
 ## Ce que signifie le DDM
-Le DDM est un mode VM oriente maintenance. L'objectif n'est pas de presenter l'environnement comme un service applicatif normal, mais comme un contexte controle pour verifier les donnees, le stockage et l'etat systeme.
+Le DDM est un mode VM orienté maintenance. L'objectif n'est pas de presenter l'environnement comme un service applicatif normal, mais comme un contexte contrôle pour vérifier les données, le stockage et l'état systeme.
 
 Dans la pratique, le DDM est utile lorsqu'il faut :
 
 - Inspecter un disque
-- Verifier des systemes de fichiers
-- Recuperer des donnees
-- Confirmer qu'un environnement casse peut encore etre monte
+- Vérifier des systèmes de fichiers
+- Récupérer des données
+- Confirmer qu'un environnement casse peut encore être monte
 - Travailler sur un service qui ne doit pas redemarrer normalement tout de suite
 
 ## Comment reconnaitre le DDM
-L'interface rend generalement le DDM visible avec un libelle dedie et une console orientee maintenance ou recuperation.
+L'interface rend generalement le DDM visible avec un libelle dedie et une console orientée maintenance ou recuperation.
 
 ```text
 Mode service normal :
@@ -25,8 +25,8 @@ Data Disk Mode :
   comportement de reprise attendu
 ```
 
-## Verifications sures en DDM
-Les premieres actions en DDM doivent rester conservatrices.
+## Vérifications sures en DDM
+Les premières actions en DDM doivent rester conservatrices.
 
 ```bash
 hostname
@@ -41,7 +41,7 @@ Ces commandes aident a repondre a des questions simples :
 - Quels disques sont visibles
 - Quels points de montage sont actifs
 - Quel espace reste disponible
-- Si le systeme de fichiers attendu est present
+- Si le système de fichiers attendu est present
 
 ## Workflow typique en DDM
 ```text
@@ -54,10 +54,10 @@ Entrer en DDM
 ```
 
 ## Ce que le DDM n'est pas
-Le DDM ne doit pas etre lu comme :
+Le DDM ne doit pas être lu comme :
 
-- Un etat applicatif normal
+- Un état applicatif normal
 - Un remplacement de sauvegarde
-- Une invitation a modifier le systeme sans controle
+- Une invitation a modifier le système sans contrôle
 
-Le DDM est un mode technique controle dont la valeur principale est la clarte, la reprise et l'inspection.
+Le DDM est un mode technique contrôle dont la valeur principale est la clarte, la reprise et l'inspection.

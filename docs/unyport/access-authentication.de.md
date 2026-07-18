@@ -1,5 +1,5 @@
 # Zugriff und Authentifizierung
-`UnyPort` verwendet ein kompaktes Authentifizierungsmodell mit lokalen Benutzern, JWT-Cookies und CSRF-Schutz. Die Anwendung unterstuetzt ausserdem OAuth-Login ueber GitHub und GitLab, wenn die Provider-Einstellungen vollstaendig konfiguriert sind.
+`UnyPort` verwendet ein kompaktes Authentifizierungsmodell mit lokalen Benutzern, JWT-Cookies und CSRF-Schutz. Die Anwendung unterstützt außerdem OAuth-Login über GitHub und GitLab, wenn die Provider-Einstellungen vollstaendig konfiguriert sind.
 
 ## Lokale Benutzer und Bootstrap
 Die primaere Identitaetsquelle ist `settings/users.json`.
@@ -8,8 +8,8 @@ Wichtiges Verhalten:
 
 - Wenn `users.json` fehlt, legt `UnyPort` einen ersten Admin an
 - Die angelegte E-Mail ist `demo@unyport.app`
-- Das Passwort kommt aus `UNYPORT_ADMIN_PASSWORD` oder faellt auf den eingebauten Standard zurueck
-- Das Repository bringt in seiner Quellstruktur zusaetzlich einen Demo-Benutzer fuer Evaluation mit
+- Das Passwort kommt aus `UNYPORT_ADMIN_PASSWORD` oder fällt auf den eingebauten Standard zurück
+- Das Repository bringt in seiner Quellstruktur zusätzlich einen Demo-Benutzer für Evaluation mit
 
 Damit sind Deployment-Pfad und Repository-Evaluationspfad verwandt, aber nicht identisch.
 
@@ -23,13 +23,13 @@ Drei Rollen werden vom Backend akzeptiert:
 Ihre operative Bedeutung:
 
 - `viewer`: Authentifizierte Nur-Lese-Nutzung
-- `operator`: Authentifizierte Nutzung mit Routine-Schreibaktionen wie Profil- und Passwortaenderung
+- `operator`: Authentifizierte Nutzung mit Routine-Schreibaktionen wie Profil- und Passwortänderung
 - `admin`: Voller Zugriff inklusive Benutzer- und Branding-Administration
 
-In der aktuellen UI koennen Viewer das Portal lesen, aber keine Profil- oder Passwortaenderungen speichern.
+In der aktuellen UI können Viewer das Portal lesen, aber keine Profil- oder Passwortänderungen speichern.
 
 ## OAuth-Provider
-OAuth ist fuer folgende Provider implementiert:
+OAuth ist für folgende Provider implementiert:
 
 - GitHub
 - GitLab
@@ -41,15 +41,15 @@ Nach erfolgreicher Authentifizierung gibt `UnyPort` ein JWT-Cookie aus:
 
 - Signiert mit `security.jwt_secret`
 - Gespeichert als HTTP-only-Cookie
-- Vom `https`-Schalter fuer Secure-Cookie-Verhalten beeinflusst
-- Zeitlich begrenzt ueber `security_extra.session_timeout_mins`
+- Vom `https`-Schalter für Secure-Cookie-Verhalten beeinflusst
+- Zeitlich begrenzt über `security_extra.session_timeout_mins`
 
 ## CSRF, Rate Limit und Trusted Origins
-Die Anwendung erzwingt ausserdem:
+Die Anwendung erzwingt außerdem:
 
 - CSRF-Schutz mit eigenem Endpoint `/api/csrf`
 - Login-Rate-Limit, standardmaessig `5` Versuche pro Minute
-- Trusted-Origin-Pruefung fuer zustandsaendernde Requests
+- Trusted-Origin-Prüfung für zustandsändernde Requests
 
 Wenn `trusted_origins` leer ist, berechnet `UnyPort` eine Standardliste aus aktiven lokalen Interfaces auf Port `8800`.
 
@@ -57,8 +57,8 @@ Wenn `trusted_origins` leer ist, berechnet `UnyPort` eine Standardliste aus akti
 Admin-exklusive Schreibaktionen sind aktuell:
 
 - Benutzer anlegen
-- Rollen aendern
-- Benutzer loeschen ausser dem eigenen Konto
-- Instanz-Branding aktualisieren oder zuruecksetzen
+- Rollen ändern
+- Benutzer loeschen außer dem eigenen Konto
+- Instanz-Branding aktualisieren oder zurücksetzen
 
 Damit bleibt Administration explizit und klein gehalten.

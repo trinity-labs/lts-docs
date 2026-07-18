@@ -1,8 +1,8 @@
 # Beispiele
-Diese Seite gibt konkrete Beispiele dafuer, wie `UnyPort` im realen Betrieb verwendet werden soll.
+Diese Seite gibt konkrete Beispiele dafür, wie `UnyPort` im realen Betrieb verwendet werden soll.
 
 ## Beispiel 1 - einen Xen-Dom0 auf einen Blick lesen
-Ein Operator oeffnet das Portal auf einem Dom0 und prueft sofort:
+Ein Operator öffnet das Portal auf einem Dom0 und prüft sofort:
 
 - Die Host-Rolle zeigt `Dom0`
 - Xen-Version und Scheduler sind vorhanden
@@ -19,10 +19,10 @@ Auf einem wartungsorientierten Alpine-Host zeigt die Storage-Seite:
 - Zustand `dirty`
 - Name des letzten Archivs
 
-Das bedeutet, dass Konfigurationsaenderungen existieren, aber noch nicht in das Persistenzarchiv commitet wurden.
+Das bedeutet, dass Konfigurationsänderungen existieren, aber noch nicht in das Persistenzarchiv commitet wurden.
 
 ## Beispiel 3 - laufende Versionen mit TRINITY-Boot-Tags vergleichen
-Ein Operator oeffnet die Hypervisor-Seite und vergleicht:
+Ein Operator öffnet die Hypervisor-Seite und vergleicht:
 
 - Die aktuelle Alpine-Version
 - Den aktuellen Kernel
@@ -31,20 +31,20 @@ Ein Operator oeffnet die Hypervisor-Seite und vergleicht:
 So entsteht ein leichtgewichtiges Update-Signal, ohne `UnyPort` in einen vollstaendigen Paketmanager zu verwandeln.
 
 ## Beispiel 4 - ein proxied Terminal-Werkzeug betreten
-Wenn `ttyd` in `settings/config.yaml` deklariert ist, kann der Operator oeffnen:
+Wenn `ttyd` in `settings/config.yaml` deklariert ist, kann der Operator öffnen:
 
 ```text
 /proxy/ttyd/
 ```
 
-und muss die Terminal-Anwendung nicht auf einer eigenen oeffentlichen URL freigeben.
+und muss die Terminal-Anwendung nicht auf einer eigenen öffentlichen URL freigeben.
 
 ## Beispiel 5 - einen neuen Operator onboarden
 Ein Administrator kann:
 
 - Einen Benutzer anlegen
 - Die Rolle `operator` zuweisen
-- Diesem Benutzer erlauben, Anzeigename, Avatar und oeffentlichen SSH-Key zu speichern
+- Diesem Benutzer erlauben, Anzeigename, Avatar und öffentlichen SSH-Key zu speichern
 - Branding und Benutzerverwaltung auf Admins beschraenken
 
 Damit bleibt das Onboarding einfach, waehrend Rollen-Grenzen sauber sichtbar bleiben.

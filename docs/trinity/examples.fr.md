@@ -1,7 +1,7 @@
 # Exemples
 Cette page regroupe des exemples pratiques pour des situations courantes dans `TRINITY`.
 
-## Exemple 1 - verifier une VM nouvellement livree
+## Exemple 1 - vérifier une VM nouvellement livree
 ```bash
 hostname
 uptime
@@ -12,9 +12,9 @@ df -h
 Lecture attendue :
 
 - La machine repond
-- L'uptime est coherent
-- Le reseau est visible
-- Le systeme principal est monte
+- L'uptime est cohérent
+- Le réseau est visible
+- Le système principal est monte
 
 ## Exemple 2 - identifier un contexte DDM
 ```bash
@@ -27,7 +27,7 @@ Lecture attendue :
 
 - Les disques sont visibles
 - Les montages actifs sont lisibles
-- Un userland Alpine leger est present
+- Un userland Alpine léger est present
 
 ## Exemple 3 - preparer un message support paiement
 ```markdown
@@ -53,7 +53,7 @@ Action demandee : confirmer si le reglement est encore en attente
 }
 ```
 
-## Exemple 5 - lecture client de l'ecosysteme
+## Exemple 5 - lecture client de l'écosystème
 ```text
 TRINITY  -> compte, commandes, factures, documentation
 UnyDesk  -> acces distant et assistance

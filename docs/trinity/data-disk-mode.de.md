@@ -1,19 +1,19 @@
 # Data Disk Mode
-Der Data Disk Mode, oft **DDM** genannt, ist eines der wichtigsten technischen Konzepte in der oeffentlichen `TRINITY`-Dokumentation.
+Der Data Disk Mode, oft **DDM** genannt, ist eines der wichtigsten technischen Konzepte in der öffentlichen `TRINITY`-Dokumentation.
 
 ## Was DDM bedeutet
-DDM ist ein wartungsorientierter VM-Modus. Das Ziel ist nicht, die Umgebung als normalen Applikationsdienst zu zeigen, sondern als kontrollierten Kontext fuer Daten-, Speicher- und Systempruefung.
+DDM ist ein wartungsorientierter VM-Modus. Das Ziel ist nicht, die Umgebung als normalen Applikationsdienst zu zeigen, sondern als kontrollierten Kontext für Daten-, Speicher- und Systemprüfung.
 
 In der Praxis ist DDM nuetzlich, wenn man:
 
 - Eine Festplatte inspizieren muss
-- Dateisysteme pruefen muss
+- Dateisysteme prüfen muss
 - Daten retten muss
 - Bestaetigen muss, dass eine defekte Umgebung noch eingehangen werden kann
 - An einem Service arbeitet, der noch nicht normal booten soll
 
 ## Wie man DDM erkennt
-Die Oberflaeche macht DDM meist ueber Labels und eine auf Recovery oder Wartung ausgerichtete Konsole sichtbar.
+Die Oberfläche macht DDM meist über Labels und eine auf Recovery oder Wartung ausgerichtete Konsole sichtbar.
 
 ```text
 Normaler Service-Modus:
@@ -25,7 +25,7 @@ Data Disk Mode:
   Recovery-Verhalten wird erwartet
 ```
 
-## Sichere DDM-Pruefungen
+## Sichere DDM-Prüfungen
 Die ersten Schritte im DDM sollten konservativ bleiben.
 
 ```bash
@@ -57,7 +57,7 @@ DDM betreten
 DDM sollte nicht verstanden werden als:
 
 - Normaler Applikationszustand
-- Ersatz fuer Backups
-- Einladung zu unkontrollierten Systemaenderungen
+- Ersatz für Backups
+- Einladung zu unkontrollierten Systemänderungen
 
-DDM ist ein kontrollierter technischer Modus fuer Klarheit, Recovery und Inspektion.
+DDM ist ein kontrollierter technischer Modus für Klarheit, Recovery und Inspektion.

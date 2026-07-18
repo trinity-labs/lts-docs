@@ -1,5 +1,5 @@
 # Deploiement
-Le depot `docker_unyport` fournit a la fois l'arbre source et un modele runtime conteneurise fonctionnel. L'histoire de deploiement reste volontairement simple : une application Go, un port principal d'ecoute et un petit repertoire `settings/` a cote du binaire.
+Le depot `docker_unyport` fournit a la fois l'arbre source et un modele runtime conteneurise fonctionnel. L'histoire de deploiement reste volontairement simple : une application Go, un port principal d'ecoute et un petit repertoire `settings/` a côté du binaire.
 
 ## Arborescence utile
 Les chemins importants sont :
@@ -22,7 +22,7 @@ Caracteristiques developpement :
 - Le conteneur resout `host.docker.internal` via `host-gateway`
 
 ## Mode production
-La meme logique compose prepare aussi un binaire de production :
+La même logique compose prepare aussi un binaire de production :
 
 - Les assets frontend sont copies dans `server/assets`
 - Le binaire est compile avec `-tags prod`
@@ -38,7 +38,7 @@ Au runtime, `UnyPort` attend :
 - `settings/config.yaml`
 - `settings/users.json`
 
-Operationnellement, l'application ecrit aussi :
+Operationnellement, l'application écrit aussi :
 
 - `logs/unyport.log`
 - `logs/startup-history.jsonl`
@@ -61,7 +61,7 @@ Lorsque HTTP/3 est active correctement, `UnyPort` peut servir le TLS sur le port
 ## Reverse proxy et premier login
 Pour un deploiement expose a Internet, le schema habituel est :
 
-- Binder `UnyPort` localement ou sur une adresse hote controlee
+- Binder `UnyPort` localement ou sur une adresse hôte contrôlée
 - Placer Nginx ou un autre reverse proxy devant
 - Activer le comportement secure-cookie avec `security_extra.https: true`
 - Remplacer les placeholders OAuth avant toute ouverture publique
