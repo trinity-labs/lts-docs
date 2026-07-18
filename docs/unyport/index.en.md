@@ -1,6 +1,6 @@
 ---
-description: Public documentation for `UnyPort`, the operator-facing Alpine Linux and Xen control surface in the `TRINITY` ecosystem.
-social_image: https://unyport.app/media/img/logos/logo-unyport-full.png
+description: "Public documentation for UnyPort, the operator-facing Alpine Linux and Xen control surface in the TRINITY ecosystem."
+social_image: "https://unyport.app/media/img/logos/logo-unyport-full.png"
 ---
 
 # UnyPort

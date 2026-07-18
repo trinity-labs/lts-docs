@@ -1,6 +1,6 @@
 ---
-description: Öffentliche Dokumentation für `UnyDesk`, den selbst gehosteten Fernzugriffs-Broker des `TRINITY`-Ökosystems.
-social_image: https://unydesk.app/assets/logo-unydesk.jpg
+description: "Öffentliche Dokumentation für UnyDesk, den selbst gehosteten Fernzugriffs-Broker des TRINITY-Ökosystems."
+social_image: "https://unydesk.app/assets/logo-unydesk.jpg"
 ---
 
 # UnyDesk

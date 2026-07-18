@@ -1,6 +1,6 @@
 ---
-description: Documentation publique de `UnyDesk`, le broker d'accès distant auto-heberge de l'ecosysteme `TRINITY`.
-social_image: https://unydesk.app/assets/logo-unydesk.jpg
+description: "Documentation publique de UnyDesk, le broker d'accès distant auto-hébergé de l'écosystème TRINITY."
+social_image: "https://unydesk.app/assets/logo-unydesk.jpg"
 ---
 
 # UnyDesk

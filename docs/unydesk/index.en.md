@@ -1,6 +1,6 @@
 ---
-description: Public documentation for `UnyDesk`, the self-hosted remote access broker of the `TRINITY` ecosystem.
-social_image: https://unydesk.app/assets/logo-unydesk.jpg
+description: "Public documentation for UnyDesk, the self-hosted remote access broker of the TRINITY ecosystem."
+social_image: "https://unydesk.app/assets/logo-unydesk.jpg"
 ---
 
 # UnyDesk

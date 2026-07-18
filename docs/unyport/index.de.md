@@ -1,6 +1,6 @@
 ---
-description: Öffentliche Dokumentation für `UnyPort`, die operator-orientierte Alpine-Linux- und Xen-Kontrollfläche im `TRINITY`-Ökosystem.
-social_image: https://unyport.app/media/img/logos/logo-unyport-full.png
+description: "Öffentliche Dokumentation für UnyPort, die operator-orientierte Alpine-Linux- und Xen-Kontrollfläche im TRINITY-Ökosystem."
+social_image: "https://unyport.app/media/img/logos/logo-unyport-full.png"
 ---
 
 # UnyPort

@@ -1,6 +1,6 @@
 ---
-description: Public documentation for `TRINITY`, `UnyDesk` and `UnyPort`, focused on architecture, usage and platform journeys.
-social_image: https://trinity-net.com/img/products/trinity/hero-trinity.png
+description: "Public documentation for TRINITY, UnyDesk and UnyPort, focused on architecture, usage and platform journeys."
+social_image: "https://trinity-net.com/img/products/trinity/hero-trinity.png"
 ---
 
 # TRINITY

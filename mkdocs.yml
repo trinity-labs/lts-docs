@@ -91,8 +91,6 @@ plugins:
           "Services and support": "Services und Support"
           "History": "Entwicklung"
           "Evolution": "Weiterentwicklung"
-  - with-pdf:
-      output_path: trinity-docs.pdf
 
 # -------------------------------------------------------------------
 # Markdown extensions

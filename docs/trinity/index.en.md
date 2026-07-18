@@ -1,6 +1,6 @@
 ---
-description: Public documentation for `TRINITY`, the central portal for services, accounts, orders, billing and console access.
-social_image: https://trinity-net.com/img/products/trinity/hero-trinity.png
+description: "Public documentation for TRINITY, the central portal for services, accounts, orders, billing and console access."
+social_image: "https://trinity-net.com/img/products/trinity/hero-trinity.png"
 ---
 
 # TRINITY
