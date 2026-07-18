@@ -191,7 +191,7 @@ function mountTrinitySidebarRelease(meta) {
   version.href = getTrinityReleaseRepoUrl(meta);
   version.target = "_blank";
   version.rel = "noopener noreferrer";
-  version.textContent = `TRINITY Docs - ${meta.version}`;
+  version.innerHTML = `<i class="fa-brands fa-github" aria-hidden="true"></i><span>TRINITY Docs - ${meta.version}</span>`;
 
   node.appendChild(version);
   node.title = [meta.kind, meta.scope, meta.visibility, meta.released_at].filter(Boolean).join(" · ");
