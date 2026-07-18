@@ -17,17 +17,17 @@ Ein Vertrauens- oder Besitzschritt, der einen Host mit einem Konto oder erwartet
 ## Pairing
 Die praktische Verbindung eines Hosts mit einem vertrauten Nutzer, Konto oder Umfeld, damit er später eindeutig wiederverwendet werden kann.
 
-## Standalone access
+## Standalone-Zugriff
 Ein direkter Sitzungszugriffsmodus mit sitzungsspezifischem Token statt der kompletten Konto-Oberfläche.
 
-## Offer and answer
+## Offer und Answer
 Das WebRTC-Signalisierungspaar, das zwischen Viewer und Host ausgetauscht wird, bevor direkter Echtzeittransport beginnen kann.
 
-## ICE candidate
+## ICE-Kandidat
 Ein Netzpfad-Kandidat, der waehrend des WebRTC-Aufbaus ausgetauscht wird, um einen brauchbaren Direktpfad zwischen Viewer und Host zu finden.
 
-## Peer-frame fallback
+## Peer-Frame-Fallback
 Ein Bildschirm-Fallback-Modus, der genutzt wird, wenn direktes Echtzeitvideo noch nicht brauchbar ist oder keine sichtbaren Frames liefert.
 
-## Local approval
+## Lokale Freigabe
 Ein hostseitiger Freigabeschritt, bei dem eine Person an der Maschine Fernzugriff erlauben oder verweigern kann.

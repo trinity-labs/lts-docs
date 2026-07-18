@@ -1,4 +1,4 @@
-# Bootstrap and access
+# Bootstrap und Zugriff
 `UnyDesk` muss zwei öffentliche Probleme loesen, bevor eine Fernsitzung beginnen kann:
 
 - Wie die Host-Software installiert und vertraut gemacht wird

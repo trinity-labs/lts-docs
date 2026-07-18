@@ -12,12 +12,12 @@ Im Unterschied zu `TRINITY` als Kunden- und Serviceportal konzentriert sich `Uny
 ## Einstieg
 Für eine praktische Lesereihenfolge wird empfohlen:
 
-1. `Overview`
-2. `Architecture`
-3. `Bootstrap and access`
-4. `Usage`
-5. `Support and operations`
-6. `Glossary`
+1. `Überblick`
+2. `Architektur`
+3. `Bootstrap und Zugriff`
+4. `Nutzung`
+5. `Support und Betrieb`
+6. `Glossar`
 
 ```text
 Viewer
