@@ -169,6 +169,24 @@ nav:
       - History: trinity/history.md
       - Evolution: trinity/evolution.md
 
+  - UnyPort:
+      - unyport/index.md
+      - Introduction: unyport/introduction.md
+      - Presentation: unyport/presentation.md
+      - Architecture: unyport/architecture.md
+      - Manual: unyport/manual.md
+      - Access and authentication: unyport/access-authentication.md
+      - Metrics and surfaces: unyport/metrics-surfaces.md
+      - Applications proxy: unyport/applications-proxy.md
+      - Deployment: unyport/deployment.md
+      - Alpine Linux and Xen: unyport/alpine-xen.md
+      - Security and operations: unyport/security-operations.md
+      - Usage: unyport/usage.md
+      - Examples: unyport/examples.md
+      - Glossary: unyport/glossary.md
+      - History: unyport/history.md
+      - Evolution: unyport/evolution.md
+
   - UnyDesk:
       - unydesk/index.md
       - Introduction: unydesk/introduction.md
@@ -187,21 +205,3 @@ nav:
       - Usage: unydesk/usage.md
       - History: unydesk/history.md
       - Evolution: unydesk/evolution.md
-
-  - UnyPort:
-      - unyport/index.md
-      - Introduction: unyport/introduction.md
-      - Presentation: unyport/presentation.md
-      - Architecture: unyport/architecture.md
-      - Manual: unyport/manual.md
-      - Access and authentication: unyport/access-authentication.md
-      - Metrics and surfaces: unyport/metrics-surfaces.md
-      - Applications proxy: unyport/applications-proxy.md
-      - Deployment: unyport/deployment.md
-      - Alpine Linux and Xen: unyport/alpine-xen.md
-      - Security and operations: unyport/security-operations.md
-      - Usage: unyport/usage.md
-      - Examples: unyport/examples.md
-      - Glossary: unyport/glossary.md
-      - History: unyport/history.md
-      - Evolution: unyport/evolution.md
