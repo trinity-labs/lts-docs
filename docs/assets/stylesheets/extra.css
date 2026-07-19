@@ -66,6 +66,11 @@ em {
     transform: translateY(-50%);
 }
 
+.md-typeset {
+    font-size: .66rem;
+    line-height: 1.33;
+}
+
 h2 .hashtag {
     font-family: "Archivo Black", sans-serif;
     font-weight: 400;
