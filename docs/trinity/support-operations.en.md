@@ -33,7 +33,7 @@ Collect the minimum facts first:
 - Invoice or payment state if relevant
 - VM name if one exists
 - Current mode: normal, maintenance or DDM
-- Exact screenshot or console observation
+- Exact console observation
 
 ```bash
 # Example evidence set from a console

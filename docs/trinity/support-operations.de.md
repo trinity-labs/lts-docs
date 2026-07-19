@@ -33,7 +33,7 @@ Sammeln Sie zuerst die Minimaldaten:
 - Rechnungs- oder Zahlungsstatus falls relevant
 - VM-Name falls vorhanden
 - Aktueller Modus: normal, Wartung oder DDM
-- Genaue Bildschirm- oder Konsolenbeobachtung
+- Genaue Konsolenbeobachtung
 
 ```bash
 # Beispiel fuer ein kleines Belegpaket

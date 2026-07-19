@@ -33,7 +33,7 @@ Collectez d'abord le minimum :
 - État facture ou paiement si utile
 - Nom de VM s'il existe
 - Mode courant : normal, maintenance ou DDM
-- Capture ou observation console précise
+- Observation console précise
 
 ```bash
 # Exemple de lot d'informations a relever
