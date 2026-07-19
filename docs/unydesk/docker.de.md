@@ -3,7 +3,7 @@ Cette page publique conserve uniquement les informations utiles pour comprendre 
 
 Source de référence :
 
-- `/home/coder/TRINITY-DOCKER/var/docker/docker_unydesk/docker-compose.yml`
+- `/var/docker/docker_unydesk/docker-compose.yml`
 
 Les détails de build internes, les commandes longues de packaging et les valeurs sensibles ne sont pas publiés ici.
 
