@@ -7,6 +7,37 @@ Source retenue :
 
 Aucun `Dockerfile` dedie n'a ete trouve pour `UnyPort`. Le runtime utilise l'image amont `golang:alpine`.
 
+## Résumé public
+| Élément | Valeur publique |
+| --- | --- |
+| Service | `unyport` |
+| Image | `golang:alpine` |
+| Conteneur | `unyport` |
+| Répertoire de travail | `/app/unyport/backend` |
+| Port exposé | `8800:8800` |
+| Assets frontend | `/app/unyport/frontend/public` |
+| Mode de redémarrage | `unless-stopped` |
+
+## Volumes
+| Type | Source | Destination | Rôle |
+| --- | --- | --- | --- |
+| Code applicatif | `./unyport` | `/app/unyport` | sources backend/frontend |
+| Cache Go modules | `go-cache` | `/root/go/pkg/mod` | accélération des dépendances |
+| Cache Go build | `go-build-cache` | `/root/.cache/go-build` | accélération des recompilations |
+
+## Variables publiques
+| Variable | Valeur | Usage |
+| --- | --- | --- |
+| `UNYPORT_ASSETS` | `/app/unyport/frontend/public` | sert les assets frontend depuis le disque en mode dev |
+
+## Comportement
+| Phase | Action |
+| --- | --- |
+| Démarrage | `go mod tidy`, build backend, lancement du binaire |
+| Développement | assets frontend servis depuis le volume bindé |
+| Production | assets embarqués si `UNYPORT_ASSETS` est retirée |
+| Compression | binaire compressé avec `upx --lzma` |
+
 ## `docker_unyport/docker-compose.yml`
 ```yaml
 # docker-compose.yml — TRINITY / unyport
