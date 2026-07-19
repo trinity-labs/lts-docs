@@ -271,7 +271,6 @@ a.md-nav__link.md-nav__link--active {
     display: flow-root;
     line-height: 1.4;
     position: relative;
-    max-width: 95%;
     margin: auto;
 }
 
