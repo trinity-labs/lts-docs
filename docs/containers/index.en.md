@@ -220,7 +220,7 @@ networks:
 
 secrets:
   DB_PASSWORD:
-    <redacted>
+    file: <redacted-secret-file>
 ```
 
 ### `docker_stage/docker-compose.yml`
@@ -238,7 +238,7 @@ services:
       DB_PORT: 5432
       DB_NAME: alpine_test
       DB_USER: trinity
-      DB_PASSWORD:<redacted>
+      DB_PASSWORD: ${DB_PASSWORD:-}
       STORAGE_ROOT: "/mnt/storage/alpine/conversations"
       APP_PORT: 3000
       APP_HOST: 0.0.0.0
@@ -319,7 +319,7 @@ secrets:
   SHOP_BIC:
     file: <redacted-secret-file>
   DB_PASSWORD:
-    <redacted>
+    file: <redacted-secret-file>
 
 networks:
   internal-db:
@@ -342,7 +342,7 @@ services:
       DB_PORT: 5432
       DB_NAME: alpine
       DB_USER: trinity
-      DB_PASSWORD:<redacted>
+      DB_PASSWORD: ${DB_PASSWORD:-}
       STORAGE_ROOT: "/mnt/storage/alpine/conversations"
       APP_PORT: 3000
       APP_HOST: 0.0.0.0
@@ -419,7 +419,7 @@ secrets:
   SHOP_BIC:
     file: <redacted-secret-file>
   DB_PASSWORD:
-    <redacted>
+    file: <redacted-secret-file>
 
 networks:
   internal-db:
@@ -768,7 +768,7 @@ secrets:
   SHOP_BIC:
     file: <redacted-secret-file>
   DB_PASSWORD:
-    <redacted>
+    file: <redacted-secret-file>
 
 networks:
   internal-db:
@@ -1029,7 +1029,7 @@ services:
 #      DB_PORT: 5432
 #      DB_NAME: Tr1n1ty_Wiki
 #      DB_USER: adm1n1strat0r
-#      DB_PASS: SFNmbJ7Ao57FkqJNzDkQE
+#      DB_PASS: <redacted>
 #    restart: unless-stopped
 #    ports:
 #      - "192.168.2.1:3001:5432"
