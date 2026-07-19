@@ -644,6 +644,84 @@ label[for="__toc"] > a span::before {
 }
 
 @media screen and (max-width: 76.234375em) {
+    .md-sidebar--primary {
+        width: min(86vw, 18rem);
+    }
+
+    .md-sidebar--primary .md-sidebar__scrollwrap {
+        margin: 0;
+        padding: 0.6rem 0.8rem 1.2rem;
+    }
+
+    .md-sidebar--primary .md-sidebar__inner.trinity-sidebar-versioned {
+        min-height: auto;
+    }
+
+    label.md-nav__title,
+    .md-sidebar--primary .md-nav__title {
+        display: block;
+        height: auto;
+        min-height: 2.4rem;
+        margin: 0 0 0.75rem;
+        padding: 0.85rem 0.2rem 0.65rem;
+        color: #3e3aab;
+        font-family: "Archivo Black", sans-serif;
+        font-size: 0.72rem;
+        letter-spacing: -0.04rem;
+        line-height: 1.1;
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .md-sidebar--primary .md-nav--primary > .md-nav__list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.7rem;
+        padding: 0 !important;
+    }
+
+    .md-sidebar--primary .md-nav--primary > .md-nav__list > .md-nav__item--nested {
+        margin: 0;
+        padding: 0.65rem 0 0;
+        border-top: 1px solid rgba(62, 58, 171, 0.14);
+    }
+
+    .md-sidebar--primary .md-nav--primary > .md-nav__list > .md-nav__item--nested:first-child {
+        padding-top: 0;
+        border-top: 0;
+    }
+
+    .md-sidebar--primary .md-nav--primary > .md-nav__list > .md-nav__item--nested > .md-nav__link.md-nav__container > a.md-nav__link,
+    .md-sidebar--primary .md-nav--primary > .md-nav__list > .md-nav__item--nested > label.md-nav__link,
+    .md-sidebar--primary .md-nav--primary > .md-nav__list > .md-nav__item--nested > .md-nav__link.md-nav__container > label.md-nav__link {
+        min-height: 1.85rem;
+        padding: 0.2rem 1.8rem 0.28rem 0;
+        font-size: 0.78rem;
+        line-height: 1.1;
+    }
+
+    .md-sidebar--primary .md-nav--primary > .md-nav__list > .md-nav__item--nested > .md-nav > .md-nav__list {
+        padding: 0.12rem 0 0 !important;
+    }
+
+    .md-sidebar--primary .md-nav--primary > .md-nav__list > .md-nav__item--nested > .md-nav > .md-nav__list > .md-nav__item > .md-nav__link {
+        min-height: 1.75rem;
+        padding: 0.28rem 0.5rem 0.28rem 0.9rem;
+        border-radius: 4px;
+        font-size: 0.68rem;
+        line-height: 1.2;
+    }
+
+    .md-sidebar--primary .md-nav__link--active {
+        background: rgba(62, 58, 171, 0.08);
+    }
+
+    .trinity-sidebar-release {
+        margin-top: 1.1rem;
+        padding-top: 0.75rem;
+        font-size: 0.5rem;
+    }
+
     .trinity-lang-switcher--header {
         margin-left: 0.35rem;
         gap: 1rem;
