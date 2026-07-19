@@ -657,7 +657,7 @@ label[for="__toc"] > a span::before {
         min-height: auto;
     }
 
-    label.md-nav__title,
+    .md-sidebar--primary label.md-nav__title,
     .md-sidebar--primary .md-nav__title {
         display: block;
         height: auto;
