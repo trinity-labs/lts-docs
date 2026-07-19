@@ -21,7 +21,7 @@ services:
       DB_PORT: 5432
       DB_NAME: alpine
       DB_USER: trinity
-      DB_PASSWORD: ${DB_PASSWORD:-}
+      DB_PASSWORD: <redacted>
       STORAGE_ROOT: "/mnt/storage/alpine/conversations"
       APP_PORT: 3000
       APP_HOST: 0.0.0.0
@@ -31,27 +31,12 @@ services:
       DB_BACKUP_SCHEDULE_UTC: ${DB_BACKUP_SCHEDULE_UTC:-02:17}
       DB_BACKUP_RETENTION_DAYS: ${DB_BACKUP_RETENTION_DAYS:-30}
       TRINITY_WIRE_TRANSFER_ENABLED: ${TRINITY_WIRE_TRANSFER_ENABLED:-1}
-      SHOP_IBAN: ${SHOP_IBAN:-}
-      SHOP_BIC: ${SHOP_BIC:-}
+      SHOP_IBAN: <redacted>
+      SHOP_BIC: <redacted>
       PAYPAL_API_BASE: ${PAYPAL_API_BASE:-https://api-m.paypal.com}
       MOLLIE_API_BASE: ${MOLLIE_API_BASE:-https://api.mollie.com}
     secrets:
-      - OPENROUTER_API_KEY
-      - GROQ_API_KEY
-      - SECRET_SALT
-      - ALPINE_MAIL_TO
-      - API_SECRET
-      - INTERNAL_SECRET
-      - JWT_SECRET
-      - STRIPE_SECRET_KEY
-      - STRIPE_PUBLISHABLE_KEY
-      - STRIPE_WEBHOOK_SECRET
-      - PAYPAL_CLIENT_ID
-      - PAYPAL_CLIENT_SECRET
-      - MOLLIE_API_KEY
-      - SHOP_IBAN
-      - SHOP_BIC
-      - DB_PASSWORD
+      - <redacted-secret>
     ports:
       - "192.168.3.5:8888:3000"
     volumes:
@@ -67,37 +52,7 @@ services:
       - internal-db
 
 secrets:
-  OPENROUTER_API_KEY:
-    file: <redacted-secret-file>
-  GROQ_API_KEY:
-    file: <redacted-secret-file>
-  SECRET_SALT:
-    file: <redacted-secret-file>
-  ALPINE_MAIL_TO:
-    file: <redacted-secret-file>
-  API_SECRET:
-    file: <redacted-secret-file>
-  INTERNAL_SECRET:
-    file: <redacted-secret-file>
-  JWT_SECRET:
-    file: <redacted-secret-file>
-  STRIPE_SECRET_KEY:
-    file: <redacted-secret-file>
-  STRIPE_PUBLISHABLE_KEY:
-    file: <redacted-secret-file>
-  STRIPE_WEBHOOK_SECRET:
-    file: <redacted-secret-file>
-  PAYPAL_CLIENT_ID:
-    file: <redacted-secret-file>
-  PAYPAL_CLIENT_SECRET:
-    file: <redacted-secret-file>
-  MOLLIE_API_KEY:
-    file: <redacted-secret-file>
-  SHOP_IBAN:
-    file: <redacted-secret-file>
-  SHOP_BIC:
-    file: <redacted-secret-file>
-  DB_PASSWORD:
+  REDACTED_SECRET:
     file: <redacted-secret-file>
 
 networks:
@@ -115,9 +70,9 @@ services:
     container_name: postgres
     environment:
       POSTGRES_USER: trinity
-      POSTGRES_PASSWORD: ${DB_PASSWORD:-}
+      POSTGRES_PASSWORD: <redacted>
     secrets:
-      - DB_PASSWORD
+      - <redacted-secret>
     ports:
       - "127.0.0.1:5432:5432"
     volumes:
@@ -145,6 +100,6 @@ networks:
     driver: bridge
 
 secrets:
-  DB_PASSWORD:
+  REDACTED_SECRET:
     file: <redacted-secret-file>
 ```
