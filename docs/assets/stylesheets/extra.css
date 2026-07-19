@@ -97,7 +97,7 @@ article li {
     border-radius: 6px;
     background: #f4f8ff;
     font-family: monospace;
-    border-left: 20px solid #c2d8ff;
+    border-left: 10px solid #c2d8ff;
 }
 
 .md-typeset .info>.admonition-title:before,
@@ -122,7 +122,7 @@ article li {
     background: #f7fff4;
     border-radius: 6px;
     font-family: monospace;
-    border-left: 20px solid #b1ff95;
+    border-left: 10px solid #b1ff95;
 }
 
 .md-typeset .success>.admonition-title:before,
@@ -144,7 +144,7 @@ article li {
     background: #fffcf9;
     border-radius: 6px;
     font-family: monospace;
-    border-left: 20px solid #ffb97a;
+    border-left: 10px solid #ffb97a;
 }
 
 .md-typeset .warning>.admonition-title:before,
@@ -166,7 +166,7 @@ article li {
     background: #fff9f9;
     border-radius: 6px;
     font-family: monospace;
-    border-left: 20px solid #ff7a7a;
+    border-left: 10px solid #ff7a7a;
 }
 
 .md-typeset .warning>.admonition-title:before,
@@ -230,16 +230,6 @@ a.md-nav__link:hover * {
 a.md-nav__link.md-nav__link--active {
     font-weight: bold;
     color:#3e3aab;
-}
-
-.md-search__form {
-    background-color: #5f5f5f42;
-    border-radius: 6px !important;
-    height: 1.66rem;
-}
-
-.md-search__input::placeholder {
-    font-size: 0.62rem;
 }
 
 .md-content {
@@ -332,7 +322,7 @@ strong {
 }
 
 header {
- background-color: #111111 !important;
+ background-color: #3e3aab !important;
 }
 
 label.md-header__button.md-icon {
@@ -360,9 +350,8 @@ h2 span.twemoji {
     color: #cacaca;
 }
 
-
 label.md-search__icon.md-icon {
-    color: #515151;
+    color: #ffffff42;
 }
 
 label.md-nav__title {
@@ -417,7 +406,7 @@ label.md-nav__title {
     font-size: 0 !important;
     line-height: 0 !important;
     color: transparent !important;
-    opacity: 0.55;
+    opacity: 0.82;
     transition: opacity 0.16s ease, transform 0.16s ease;
 }
 
@@ -429,7 +418,7 @@ label.md-nav__title {
 .md-header__option .md-select__link[href="./"],
 .md-header__option .md-select__link[href="."],
 .md-header__option .md-select__link[href="../"] {
-    opacity: 1;
+    opacity: 0.4;
 }
 
 .md-header__option .md-select__link::before {
@@ -469,7 +458,7 @@ label.md-nav__title {
 .md-sidebar--primary .md-nav--primary > .md-nav__list > .md-nav__item--nested > label.md-nav__link {
     padding: 0.33rem 0.55rem 0 0;
     border-radius: 1px;
-    color: #3e3aab;
+    color: #6b6b6b;
     font-family: "Archivo Black", sans-serif;
     font-weight: 400;
     letter-spacing: -0.05rem;
@@ -513,12 +502,6 @@ label[for="__toc"] > a span::before {
     transform: translateY(-50%);
     color: #3e3aab;
     font-weight: 400;
-}
-
-.md-search__icon[for=__search] {
-    position: absolute;
-    top: .25rem;
-    z-index: 2;
 }
 
 .md-header__option {
