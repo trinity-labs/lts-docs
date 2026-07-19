@@ -18,11 +18,11 @@ docs_dir: docs
 extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css
   - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github.min.css
-  - assets/stylesheets/extra.css?v=v.0.2.3
+  - assets/stylesheets/extra.css?v=v.1.0.0
 
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js
-  - assets/javascripts/extra.js?v=v.0.2.3
+  - assets/javascripts/extra.js?v=v.1.0.0
 
 # -------------------------------------------------------------------
 # Plugins
@@ -38,7 +38,7 @@ plugins:
         de: Deutsch
       translate_nav:
         fr:
-          "Containers": "Conteneurs"
+          "Docker": "Docker"
           "Overview": "Vue d'ensemble"
           "Introduction": "Introduction"
           "Presentation": "Présentation"
@@ -66,7 +66,7 @@ plugins:
           "History": "Historique"
           "Evolution": "Évolution"
         de:
-          "Containers": "Container"
+          "Docker": "Docker"
           "Overview": "Überblick"
           "Introduction": "Einführung"
           "Presentation": "Präsentation"
@@ -156,6 +156,7 @@ nav:
       - Introduction: trinity/introduction.md
       - Presentation: trinity/presentation.md
       - Architecture: trinity/architecture.md
+      - Docker: trinity/docker.md
       - Manual: trinity/manual.md
       - Account and orders: trinity/account-orders.md
       - Payments and invoices: trinity/payments-invoices.md
@@ -176,6 +177,7 @@ nav:
       - Introduction: unyport/introduction.md
       - Presentation: unyport/presentation.md
       - Architecture: unyport/architecture.md
+      - Docker: unyport/docker.md
       - Manual: unyport/manual.md
       - Access and authentication: unyport/access-authentication.md
       - Metrics and surfaces: unyport/metrics-surfaces.md
@@ -195,6 +197,7 @@ nav:
       - Presentation: unydesk/presentation.md
       - Overview: unydesk/overview.md
       - Architecture: unydesk/architecture.md
+      - Docker: unydesk/docker.md
       - Manual: unydesk/manual.md
       - Host distribution: unydesk/host-distribution.md
       - Session broker: unydesk/session-broker.md
@@ -207,6 +210,3 @@ nav:
       - Usage: unydesk/usage.md
       - History: unydesk/history.md
       - Evolution: unydesk/evolution.md
-
-  - Containers:
-      - containers/index.md
