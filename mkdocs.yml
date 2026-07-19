@@ -38,6 +38,7 @@ plugins:
         de: Deutsch
       translate_nav:
         fr:
+          "Containers": "Conteneurs"
           "Overview": "Vue d'ensemble"
           "Introduction": "Introduction"
           "Presentation": "Présentation"
@@ -65,6 +66,7 @@ plugins:
           "History": "Historique"
           "Evolution": "Évolution"
         de:
+          "Containers": "Container"
           "Overview": "Überblick"
           "Introduction": "Einführung"
           "Presentation": "Präsentation"
@@ -205,3 +207,6 @@ nav:
       - Usage: unydesk/usage.md
       - History: unydesk/history.md
       - Evolution: unydesk/evolution.md
+
+  - Containers:
+      - containers/index.md
