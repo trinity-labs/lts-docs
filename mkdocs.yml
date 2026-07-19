@@ -156,7 +156,6 @@ nav:
       - Introduction: trinity/introduction.md
       - Presentation: trinity/presentation.md
       - Architecture: trinity/architecture.md
-      - Docker: trinity/docker.md
       - Manual: trinity/manual.md
       - Account and orders: trinity/account-orders.md
       - Payments and invoices: trinity/payments-invoices.md
