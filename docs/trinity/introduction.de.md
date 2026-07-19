@@ -1,9 +1,6 @@
 # Einführung
 `TRINITY` ist das wichtigste öffentliche Portal von `TRINITY` Edge Networks. Die Website verbindet Angebotsdarstellung, Kontaktwege, Kundenkonto, Bestellung, Rechnungsstellung, Support, Konsolenzugriff und die Weiterleitung zu ergänzenden Services in einer gemeinsamen Oberfläche. Für Besucher ist `TRINITY` weder ein Quellcode-Repository noch ein rein technisches Backoffice, sondern der öffentliche Einstiegspunkt, der aus einem Angebot einen nutzbaren Service macht.
 
-![`TRINITY`-Website](../assets/images/generated/trinity-homepage.png)
-
-*Generierte Aufnahme der öffentlichen `TRINITY`-Startseite mit Produktversprechen und zentralem Einstieg in das Ökosystem.*
 
 ## Was TRINITY öffentlich abdeckt
 - Entdeckung von Angeboten und Services

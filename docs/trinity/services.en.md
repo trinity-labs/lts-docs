@@ -20,9 +20,6 @@ The `TRINITY` website presents, among other things:
 
 This matters publicly because commercial and technical support are not limited to the original platform core. They also cover the control and remote-access surfaces used around it.
 
-![`UnyPort` and operations](../assets/images/generated/unyport-live-dashboard.png)
-
-*Example of a `UnyPort` surface connected to the `TRINITY` ecosystem for control, supervision, and environment status overview.*
 
 ## Payments and invoicing
 Depending on the service, the site supports several payment flows:

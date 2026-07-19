@@ -37,9 +37,6 @@ After purchase, the customer can review:
 ## Use 4 - consult a VM or a console
 When a service allows it, `TRINITY` can provide access to a virtual machine view or a console.
 
-![VM and console view](../assets/images/screens/trinity-console.png)
-
-*Generated capture of a `TRINITY` VM view in Data Disk Mode.*
 
 In this context, the user can:
 
@@ -72,6 +69,3 @@ Users do not need to administer Xen directly in order to use `TRINITY`. They do 
 - Use **`UnyDesk`** when the need is remote access or operator assistance.
 - Use **`UnyPort`** when the need is supervision, control or topology reading.
 
-![`UnyPort` view](../assets/images/generated/unyport-live-dashboard.png)
-
-*Generated capture of the `UnyPort` demo dashboard used to illustrate infrastructure visibility and host supervision.*

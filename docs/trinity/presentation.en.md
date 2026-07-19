@@ -2,9 +2,6 @@
 `TRINITY` is the main public entry point of the `TRINITY` Edge Networks ecosystem. The website concentrates customer access, service presentation, account flows, orders, invoicing, support and access to associated operational services. The public goal is not to expose a software stack, but to provide a clear journey between discovery, purchase, operations and assistance.
 
 ## Visual overview
-![`TRINITY` dashboard](../assets/images/screens/trinity-vm.png)
-
-*Example of a `TRINITY` surface with a dashboard-oriented overview and the main operational indicators.*
 
 ## What users find on the site
 From `TRINITY`, a visitor or customer can:

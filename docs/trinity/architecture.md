@@ -1,9 +1,6 @@
 # Architecture TRINITY
 `TRINITY` est une architecture de service. Côté public, elle assemble plusieurs surfaces qui doivent rester cohérentes entre elles : site web, compte client, paiement, support, exploitation VM et documentation. Le but de cette page n'est pas d'expliquer un framework interne, mais de montrer comment la plateforme s'organise du point de vue de l'utilisateur et de l'exploitation.
 
-![Dashboard `TRINITY`](../assets/images/generated/trinity-homepage.png)
-
-*Le site public porte la promesse `TRINITY` et dirige l'utilisateur vers l'offre, le compte, le support et l'exploitation.*
 
 ## Couche 1 - site, compte et relation client
 La première couche est la plus visible :
@@ -37,9 +34,6 @@ La plateforme doit donc gerer une logique de cycle de vie, pas seulement une log
 - Accès console
 - Lecture d'un mode de maintenance
 
-![Console VM en Data Disk Mode](../assets/images/screens/trinity-console.png)
-
-*Capture générée d'une vue VM `TRINITY` en Data Disk Mode, orientée maintenance et recuperation.*
 
 ## Data Disk Mode
 Le **Data Disk Mode** est un mode d'accès specialement utile pour intervenir sur une VM sans la presenter comme un environnement applicatif normal. Publiquement, on peut l'expliquer comme un mode de maintenance ou de récupération :
@@ -65,9 +59,6 @@ Dans `TRINITY`, cela signifie qu'un client peut commander, suivre et exploiter d
 - **`UnyDesk`** pour l'accès distant et certaines operations de prise en main
 - **`UnyPort`** pour la supervision, le contrôle et la lecture d'état de l'infrastructure
 
-![Dashboard `UnyPort`](../assets/images/generated/unyport-live-dashboard.png)
-
-*Capture générée du dashboard `UnyPort` de demonstration, montrant la lecture d'état, les ressources hôtes et la supervision.*
 
 ## Lecture d'ensemble
 Du point de vue public, l'architecture `TRINITY` peut donc se lire ainsi :

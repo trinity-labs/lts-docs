@@ -10,9 +10,6 @@ Une page orientée VM peut exposer :
 - Un point d'entrée console
 - Des liens vers le support ou la supervision
 
-![Vue VM et console](../assets/images/screens/trinity-console.png)
-
-*Capture versionnee du depot montrant un ecran VM `TRINITY` en Data Disk Mode.*
 
 ## Objectifs typiques d'une console
 L'accès console sert a :

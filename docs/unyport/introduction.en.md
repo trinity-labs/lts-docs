@@ -1,9 +1,6 @@
 # Introduction
 `UnyPort` is a monitoring-first control portal written in Go and designed for Alpine Linux hosts, especially when they live in Xen-based environments. The application exposes one authenticated surface for host state, live metrics, logs, security posture, proxied tools and operator profile management.
 
-![`UnyPort` dashboard](../assets/images/generated/unyport-live-dashboard.png)
-
-*Generated capture of the `UnyPort` live dashboard, focused on host status, resources and operational visibility.*
 
 ## What UnyPort is
 `UnyPort` is built around a few strong constraints:

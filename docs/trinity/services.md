@@ -20,9 +20,6 @@ Le support `TRINITY` couvre explicitement :
 
 Cette clarification est importante : le support commercial et le support technique ne sont pas limités au coeur historique de la plateforme. Ils couvrent aussi les surfaces de contrôle et d'accès distant utilisées autour d'elle.
 
-![`UnyPort` et pilotage](../assets/images/generated/unyport-live-dashboard.png)
-
-*Exemple de surface `UnyPort` reliee a l'écosystème `TRINITY` pour le pilotage, la supervision et la lecture de l'état des environnements.*
 
 ## Paiements et facturation
 Le site prend en charge plusieurs parcours de paiement selon le service :

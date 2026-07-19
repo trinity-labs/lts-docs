@@ -37,9 +37,6 @@ Nach dem Kauf kann der Kunde einsehen:
 ## Nutzung 4 - VM oder Konsole aufrufen
 Wenn ein Service dies erlaubt, kann `TRINITY` Zugriff auf eine virtuelle Maschine oder auf eine Konsole bereitstellen.
 
-![VM- und Konsolenansicht](../assets/images/screens/trinity-console.png)
-
-*Generierte Aufnahme einer `TRINITY`-VM-Ansicht im Data Disk Mode.*
 
 In diesem Kontext kann der Nutzer:
 
@@ -72,6 +69,3 @@ Nutzer müssen Xen nicht direkt administrieren, um `TRINITY` zu verwenden. Sie s
 - **`UnyDesk`** ist richtig, wenn Fernzugriff oder operatorgestuetzte Assistenz gebraucht wird.
 - **`UnyPort`** ist richtig, wenn es um Überwachung, Kontrolle oder Topologie geht.
 
-![`UnyPort`-Ansicht](../assets/images/generated/unyport-live-dashboard.png)
-
-*Generierte Aufnahme des `UnyPort`-Demo-Dashboards zur Illustration von Infrastruktur- und Zustandsübersicht.*

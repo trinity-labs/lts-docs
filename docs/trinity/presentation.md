@@ -2,9 +2,6 @@
 `TRINITY` est la porte d'entrée principale de l'écosystème `TRINITY` Edge Networks. Le site concentre la relation client, la présentation des offres, le compte utilisateur, les commandes, la facturation, le support et l'accès aux services opérationnels associés. L'objectif public n'est pas de montrer une pile logicielle, mais d'offrir un parcours clair entre découverte, achat, exploitation et assistance.
 
 ## Apercu visuel
-![`TRINITY` dashboard](../assets/images/screens/trinity-vm.png)
-
-*Exemple de surface `TRINITY` avec une vue d'ensemble du tableau de bord et des indicateurs principaux.*
 
 ## Ce que l'utilisateur trouve sur le site
 Depuis `TRINITY`, un visiteur ou un client peut :

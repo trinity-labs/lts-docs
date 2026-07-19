@@ -1,9 +1,6 @@
 # Präsentation von UnyPort
 `UnyPort` ist die Kontroll- und Supervisionsanwendung rund um die `TRINITY`-Infrastruktur. Sie ist für Operatoren gedacht, nicht für öffentliche Handelsprozesse. Der Produktwert liegt in Klarheit: ein Einstiegspunkt, ein Sitzungsmodell, eine Host-Sicht und wenige gezielte Betriebsseiten.
 
-![`UnyPort`-Oberfläche](../assets/images/screens/unyport-dashboard.png)
-
-*Beispiel einer `UnyPort`-Oberfläche mit dashboard-orientierter Struktur und operator-zentrierter Lesart des Host-Zustands.*
 
 ## Sichtbare Seiten
 Die aktuelle Oberfläche ist um folgende Seiten gebaut:

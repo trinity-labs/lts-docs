@@ -22,9 +22,6 @@ Une fois identifié, l'utilisateur retrouve dans `TRINITY` :
 
 Le compte client n'est pas seulement un profil. Il est utilisé comme point de suivi opérationnel.
 
-![Console et exploitation](../assets/images/screens/trinity-console.png)
-
-*Exemple d'accès a un environnement client depuis `TRINITY`, avec une surface de console et de pilotage liee au service commande.*
 
 ## Commande, paiement et facture
 Le parcours de commande couvre :

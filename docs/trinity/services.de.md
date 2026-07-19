@@ -20,9 +20,6 @@ Der `TRINITY`-Support umfasst ausdrücklich:
 
 Das ist öffentlich wichtig, weil kommerzieller und technischer Support nicht nur den ursprünglichen Plattformkern betreffen. Sie decken auch die Kontroll- und Fernzugriffsflächen ab, die rund um die Plattform genutzt werden.
 
-![`UnyPort` und Steuerung](../assets/images/generated/unyport-live-dashboard.png)
-
-*Beispiel einer `UnyPort`-Oberfläche innerhalb des `TRINITY`-Ökosystems für Steuerung, Überwachung und Statusübersicht der Umgebungen.*
 
 ## Zahlungen und Rechnungen
 Je nach Service unterstützt die Website mehrere Zahlungswege:

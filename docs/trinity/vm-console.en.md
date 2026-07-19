@@ -10,9 +10,6 @@ A VM-oriented page may expose:
 - A console entry point
 - Links toward support or monitoring
 
-![VM and console view](../assets/images/screens/trinity-console.png)
-
-*Repository capture of a `TRINITY` VM screen in Data Disk Mode.*
 
 ## Typical console goals
 Console access is useful to:

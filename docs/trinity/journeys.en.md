@@ -22,9 +22,6 @@ Once identified, the user finds in `TRINITY`:
 
 The customer account is not only a profile page. It acts as an operational follow-up surface.
 
-![Console and operations](../assets/images/screens/trinity-console.png)
-
-*Example of access to a customer environment through `TRINITY`, with a console and service control surface linked to the ordered service.*
 
 ## Order, payment and invoice
 The ordering journey covers:

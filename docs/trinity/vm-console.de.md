@@ -10,9 +10,6 @@ Eine VM-Seite kann zeigen:
 - Einen Konsolen-Einstieg
 - Links zu Support oder Monitoring
 
-![VM- und Konsolenansicht](../assets/images/screens/trinity-console.png)
-
-*Versionierte Repository-Aufnahme eines `TRINITY`-VM-Bildschirms im Data Disk Mode.*
 
 ## Typische Ziele einer Konsole
 Konsolenzugang ist nuetzlich, um:

@@ -22,9 +22,6 @@ Nach der Anmeldung findet der Nutzer in `TRINITY`:
 
 Das Kundenkonto ist nicht nur ein Profil. Es dient als operative Nachverfolgungsfläche.
 
-![Konsole und Betrieb](../assets/images/screens/trinity-console.png)
-
-*Beispiel für den Zugriff auf eine Kundenumgebung über `TRINITY`, mit einer Konsolen- und Steuerungsoberfläche für den gebuchten Service.*
 
 ## Bestellung, Zahlung und Rechnung
 Der Bestellweg umfasst:
