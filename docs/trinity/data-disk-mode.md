@@ -25,6 +25,13 @@ Data Disk Mode :
   comportement de reprise attendu
 ```
 
+| Critere | Mode normal | Data Disk Mode |
+| --- | --- | --- |
+| Priorite | Service applicatif | Donnees, stockage et reprise |
+| Console | Exploitation ou verification | Maintenance et recuperation |
+| Attente principale | Service disponible | Volumes lisibles et diagnostic fiable |
+| Niveau de prudence | Standard | Renforce avant toute modification |
+
 ## Vérifications sures en DDM
 Les premières actions en DDM doivent rester conservatrices.
 
@@ -42,6 +49,13 @@ Ces commandes aident a repondre a des questions simples :
 - Quels points de montage sont actifs
 - Quel espace reste disponible
 - Si le système de fichiers attendu est present
+
+| Commande | Question traitee | Type de reponse attendue |
+| --- | --- | --- |
+| `lsblk` | Quels disques existent | Liste des volumes et tailles |
+| `findmnt` | Quels montages sont actifs | Arborescence des points de montage |
+| `df -h` | Quel espace est disponible | Capacite et saturation |
+| `cat /etc/fstab` | Quels montages sont prevus | Configuration de reference |
 
 ## Workflow typique en DDM
 ```text
@@ -61,3 +75,9 @@ Le DDM ne doit pas être lu comme :
 - Une invitation a modifier le système sans contrôle
 
 Le DDM est un mode technique contrôle dont la valeur principale est la clarte, la reprise et l'inspection.
+
+| A ne pas confondre avec | Pourquoi | Lecture correcte |
+| --- | --- | --- |
+| Redemarrage normal | Le but n'est pas de remettre vite en production | Prioriser l'inspection et la recuperation |
+| Sauvegarde complete | Le DDM n'est pas une politique de backup | Utiliser les sauvegardes dediees si elles existent |
+| Espace de test libre | Le contexte reste sensible | Limiter les actions aux verifications necessaires |

@@ -38,6 +38,16 @@ brouillon -> soumise -> paiement_en_attente -> payee -> preparation -> disponibl
                                  \-> refusee -> reprise
 ```
 
+| Statut | Signification cote client | Action recommandee |
+| --- | --- | --- |
+| Brouillon | La commande n'est pas finalisee | Verifier les informations puis soumettre |
+| Soumise | La demande existe mais n'est pas encore reglee | Attendre le paiement ou completer le flux |
+| Paiement en attente | Le retour de paiement n'est pas confirme | Verifier le moyen de paiement et patienter |
+| Payee | Le reglement est valide | Suivre la preparation ou la livraison |
+| En preparation | Le service est en cours de traitement | Attendre la disponibilite ou verifier les acces |
+| Disponible | Le service ou document est accessible | Utiliser la surface exposee |
+| Annulee ou expiree | Le flux est clos sans livraison | Recommencer ou contacter le support |
+
 ## Ce que le client doit lire dans une commande
 La page commande doit rester lisible sans details internes. Le client a surtout besoin de :
 
@@ -56,6 +66,15 @@ resume_commande:
   statut_paiement: "confirme"
   facture_pdf: true
 ```
+
+| Champ visible | Pourquoi il compte | Exemple |
+| --- | --- | --- |
+| Reference | Identifier sans ambiguite la commande | `TRI-2026-00421` |
+| Service | Savoir ce qui a ete achete | `session de support` |
+| Statut | Lire l'etat de cycle de vie | `payee` |
+| Statut paiement | Distinguer commande et reglement | `confirme` |
+| Facture PDF | Recuperer le justificatif | `true` |
+| Profil de facturation | Eviter une erreur administrative | `entreprise` |
 
 ## Bonne habitude avant d'ouvrir un ticket
 Gardez une trace très simple de :

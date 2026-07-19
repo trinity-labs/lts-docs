@@ -10,6 +10,15 @@ Une page orientée VM peut exposer :
 - Un point d'entrée console
 - Des liens vers le support ou la supervision
 
+| Information visible | Utilite immediate | Lecture attendue |
+| --- | --- | --- |
+| Nom de VM | Identifier la bonne machine | Nom stable ou reference technique |
+| Etat | Savoir si la VM repond | `online`, `maintenance`, `recovery`, `unavailable` |
+| Adresse IP | Reconnaitre la cible reseau | IP privee ou technique selon le service |
+| Console | Ouvrir un diagnostic direct | Acces reserve aux cas autorises |
+| Ressources | Situer sommairement la VM | CPU, RAM, disque ou indicateurs proches |
+| Liens support | Escalader proprement | Ticket, chat ou canal d'assistance |
+
 
 ## Objectifs typiques d'une console
 L'accès console sert a :
@@ -42,6 +51,13 @@ recovery     -> contexte de preservation et de diagnostic
 unavailable  -> attente ou support
 ```
 
+| Etat VM | Ce que cela signifie | Bon reflexe |
+| --- | --- | --- |
+| `online` | La VM est disponible dans son mode actuel | Verifier le service ou la connectivite |
+| `maintenance` | Une intervention ou preparation est en cours | Eviter les changements non demandes |
+| `recovery` | La priorite est la reprise ou la preservation | Se concentrer sur la lecture et le stockage |
+| `unavailable` | La VM ou la surface n'est pas utilisable | Attendre ou ouvrir un ticket avec contexte |
+
 ## Prudence operationnelle
 Une console est puissante mais etroite dans son usage. Avant de modifier quoi que ce soit, il faut savoir :
 
@@ -55,3 +71,9 @@ mount
 findmnt
 cat /etc/os-release
 ```
+
+| Verification | Pourquoi la lancer | Risque si ignoree |
+| --- | --- | --- |
+| `mount` | Voir les montages actifs | Agir sur le mauvais volume |
+| `findmnt` | Lire l'arborescence des points de montage | Confondre systeme et donnees |
+| `cat /etc/os-release` | Identifier le systeme invite | Appliquer la mauvaise procedure |

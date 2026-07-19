@@ -23,6 +23,15 @@ Visite du site
   -> Usage de la VM, de la console, d'UnyDesk ou d'UnyPort si disponible
 ```
 
+| Etape | Action client | Resultat attendu |
+| --- | --- | --- |
+| 1 | Consulter l'offre et la documentation | Comprendre le service et son perimetre |
+| 2 | Creer un compte | Disposer d'un espace client reutilisable |
+| 3 | Completer la facturation | Permettre la commande et la facture |
+| 4 | Commander et payer | Valider l'achat ou identifier un blocage |
+| 5 | Suivre la livraison | Voir l'etat du service et des acces |
+| 6 | Utiliser la surface exposee | Acceder a la VM, la console ou au support selon le cas |
+
 ## Avant de commander
 Preparez quelques informations simples :
 
@@ -51,6 +60,16 @@ Selon le service, `TRINITY` peut exposer :
 - La visibilité du Data Disk Mode
 - Les points d'entrée support et chat
 - Les liens vers `UnyDesk` et `UnyPort`
+
+| Surface visible | Usage principal | Quand la consulter |
+| --- | --- | --- |
+| Compte | Verifier identite et facturation | Avant ou apres commande |
+| Commandes | Suivre le cycle de vie d'un achat | Lors d'une livraison ou d'un doute de statut |
+| Factures | Telecharger les justificatifs PDF | Apres paiement ou pour la comptabilite |
+| VM | Lire l'etat machine | Quand un service infra est actif |
+| Console | Diagnostiquer ou confirmer un etat technique | En maintenance, reprise ou verification |
+| Data Disk Mode | Inspecter les donnees et montages | En recuperation ou maintenance ciblee |
+| Support | Escalader une situation | Quand le libre-service ne suffit plus |
 
 ## Quand le parcours devient plus technique
 Certaines offres vont plus loin qu'un simple achat. Le parcours devient plus operationnel lorsqu'il faut :

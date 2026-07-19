@@ -20,6 +20,12 @@ Lecture pratique côté client :
 - La maintenance et la reprise restent lisibles
 - La plateforme privilégie des surfaces techniques previsibles
 
+| Aspect Alpine Linux | Ce que le client voit | Interet pratique |
+| --- | --- | --- |
+| Systeme leger | Console sobre et rapide | Diagnostic plus direct |
+| Outils simples | Commandes de base lisibles | Reprise plus claire |
+| Organisation compacte | Peu d'abstraction visuelle | Lecture plus previsible |
+
 ## Xen
 Xen est la couche de virtualisation sous-jacente aux services orientés VM. Le client ne pilote pas Xen directement depuis `TRINITY`, mais Xen explique pourquoi la plateforme peut exposer :
 
@@ -32,6 +38,12 @@ Surface client -> TRINITY
 Systeme invite -> Alpine Linux
 Virtualisation -> Xen
 ```
+
+| Couche | Role | Visible depuis TRINITY |
+| --- | --- | --- |
+| `TRINITY` | Surface client et cycle de vie | Oui |
+| Alpine Linux | Systeme invite de certaines VM | Oui, via console et etat systeme |
+| Xen | Hyperviseur et isolation | Indirectement, via les modes VM |
 
 ## Pourquoi les deux comptent ensemble
 Alpine Linux et Xen forment un modele simple :
@@ -50,6 +62,12 @@ modele_plateforme:
     - maintenance
     - data_disk_mode
 ```
+
+| Element | Fonction principale | Ce qu'il faut retenir |
+| --- | --- | --- |
+| Alpine Linux | Faire tourner le systeme invite | Lire une console simple et efficace |
+| Xen | Porter et isoler la VM | Comprendre les etats et modes techniques |
+| TRINITY | Orchestrer l'acces client | Relier commande, service et support |
 
 ## Ce qu'il faut retenir
 L'essentiel est simple : le client n'a pas besoin d'être spécialiste Xen. Il doit surtout comprendre assez bien le modele pour lire un état VM, utiliser une console avec prudence et parler précisément au support.

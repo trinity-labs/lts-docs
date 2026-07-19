@@ -23,6 +23,14 @@ Cette première phase sert a comprendre si le besoin releve du support `TRINITY`
 
 Les commandes peuvent concerner du support, des prestations, des formations ou des services associes a l'infrastructure.
 
+| Usage | Surface principale | Resultat attendu |
+| --- | --- | --- |
+| Decouverte | Site public et documentation | Comprendre l'offre |
+| Commande | Compte, panier, paiement | Finaliser l'achat |
+| Suivi | Commandes et factures | Lire l'etat et recuperer les documents |
+| Technique | VM, console, DDM | Diagnostiquer ou intervenir prudemment |
+| Escalade | Support, UnyDesk, UnyPort | Obtenir de l'aide ou de la visibilite infra |
+
 ## Usage 3 - suivre une commande et son paiement
 Apres achat, le client retrouve :
 
@@ -44,6 +52,12 @@ Dans ce contexte, l'utilisateur peut :
 - Lire son état
 - Ouvrir une session console
 - Travailler en mode de maintenance
+
+| Surface technique | Ce qu'on y fait | Quand l'utiliser |
+| --- | --- | --- |
+| Vue VM | Lire l'etat et identifier la machine | Verification rapide |
+| Console | Lancer des commandes de diagnostic | Support, maintenance, reprise |
+| DDM | Inspecter stockage et systeme de fichiers | Recuperation et preservation |
 
 ## Usage 5 - comprendre le Data Disk Mode
 Le **Data Disk Mode** est utile lorsque l'objectif n'est pas d'executer un service applicatif normal, mais d'intervenir sur l'environnement lui-meme. Dans la pratique, ce mode sert a :
@@ -69,3 +83,8 @@ L'utilisateur n'a pas besoin d'administrer Xen directement pour utiliser `TRINIT
 - Utiliser **`UnyDesk`** quand le besoin releve de l'accès distant ou de la prise en main.
 - Utiliser **`UnyPort`** quand le besoin releve de la supervision, du contrôle ou de la lecture de topologie.
 
+| Surface | Role public | Cas typique |
+| --- | --- | --- |
+| `TRINITY` | Portail client et technique | Commande, paiement, VM, facture |
+| `UnyDesk` | Assistance distante | Interaction ou prise en main |
+| `UnyPort` | Visibilite infra et supervision | Controle, etat, topologie |

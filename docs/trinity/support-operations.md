@@ -13,6 +13,15 @@ Le support `TRINITY` peut explicitement concerner :
 - L'usage d'`UnyDesk`
 - L'usage d'`UnyPort`
 
+| Sujet | Libre-service possible | Support recommande |
+| --- | --- | --- |
+| Facture PDF | Oui | Si le document est absent ou incoherent |
+| Paiement | Oui, pour lire l'etat | Si le statut reste bloque ou contradictoire |
+| Commande | Oui, pour suivre la reference et le statut | Si la livraison ne progresse plus |
+| VM | Oui, pour lire un etat simple | Si le comportement devient ambigu ou risqué |
+| Data Disk Mode | Lecture prudente possible | Oui des qu'une action de reprise est sensible |
+| UnyDesk / UnyPort | Oui, pour utiliser la surface | Si l'acces ou l'interpretation pose probleme |
+
 ## Bon format de demande support
 Une bonne demande support est concrete et breve.
 
@@ -44,6 +53,14 @@ lsblk
 df -h
 ```
 
+| Information a relever | Pourquoi elle aide | Exemple |
+| --- | --- | --- |
+| Reference commande | Identifier le dossier | `TRI-2026-00421` |
+| Etat paiement | Distinguer financier et technique | `confirme` |
+| Nom de VM | Pointer le bon environnement | `VM-EXEMPLE01` |
+| Mode courant | Situer le contexte | `normal`, `maintenance`, `DDM` |
+| Observation console | Donner un symptome concret | volume non monte, service absent |
+
 ## Support ou libre-service
 `TRINITY` cherche a exposer assez d'information pour permettre une action prudente sans transformer chaque situation en ticket support.
 
@@ -60,6 +77,14 @@ Le support convient pour :
 - Incoherence de paiement
 - État VM peu clair
 - Action de reprise avec risque sur les données
+
+| Situation | Libre-service | Ticket support |
+| --- | --- | --- |
+| Lire une facture | Oui | Non, sauf document manquant |
+| Verifier une VM en ligne | Oui | Non, si l'etat est clair |
+| Diagnostiquer un volume sensible | Limite | Oui |
+| Recuperer un service apres incident | Limite | Oui |
+| Comprendre un statut contradictoire | Non | Oui |
 
 ## Surfaces a utiliser
 Utilisez la bonne surface selon le besoin :
