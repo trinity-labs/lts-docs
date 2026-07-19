@@ -76,6 +76,11 @@ article li {
     font-size: 0.66rem;
 }
 
+.md-typeset ol li, .md-typeset ul li {
+    margin-bottom: .5em;
+    font-size: 0.66rem;
+}
+
 li.md-nav__item {
     font-size: 0.6rem;
 }
