@@ -479,6 +479,26 @@ label.md-nav__title {
     letter-spacing: -0.04rem;
 }
 
+.md-typeset__table {
+    display: inline-block;
+    margin-bottom: .5em;
+    padding: 0 .8rem;
+    width: 100%;
+}
+
+.md-typeset table:not([class]) {
+    background-color: var(--md-default-bg-color);
+    border: .05rem solid var(--md-typeset-table-color);
+    border-radius: .1rem;
+    font-size: .64rem;
+    max-width: 100%;
+    overflow: auto;
+    touch-action: auto;
+    width: 100%;
+    display: table;
+    flex-direction: column;
+    align-items: stretch;
+}
 
 .md-sidebar--primary .md-nav--primary > .md-nav__list > .md-nav__item--nested > .md-nav__link.md-nav__container > label.md-nav__link,
 .md-sidebar--primary .md-nav--primary > .md-nav__list > .md-nav__item--nested > label.md-nav__link {
