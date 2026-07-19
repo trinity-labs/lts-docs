@@ -304,12 +304,12 @@ a.md-nav__link.md-nav__link--active {
 .trinity-sidebar-release__version {
     display: inline-flex;
     align-items: center;
-    gap: 0.32rem;
+    gap: 0.33rem;
     margin: 0.12rem 0;
     padding: 0;
     background: transparent;
     color: inherit;
-    font-size: 0.58rem;
+    font-size: 0.45rem;
     text-decoration: none;
     cursor: pointer;
 }
