@@ -133,7 +133,6 @@ theme:
       accent: custom
 
 extra:
-  social_image: https://docs.trinity-net.com/assets/images/generated/trinity-homepage.png
   alternate:
     - name: Français
       link: /
