@@ -76,6 +76,10 @@ article li {
     font-size: 0.66rem;
 }
 
+li.md-nav__item {
+    font-size: 0.6rem;
+}
+
 h2 .hashtag {
     font-family: "Archivo Black", sans-serif;
     font-weight: 400;
