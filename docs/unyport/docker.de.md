@@ -1,5 +1,5 @@
 # Docker UnyPort
-Cette page remplace l'ancien inventaire global `Containers` pour le projet `UnyPort` uniquement.
+Cette page regroupe les manifests Docker correspondant au projet `UnyPort` uniquement.
 
 Source retenue :
 

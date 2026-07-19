@@ -4,7 +4,7 @@
   "visibility": "public",
   "git_url": "https://github.com/trinity-labs/lts-docs",
   "channel": "stable",
-  "kind": "major",
-  "version": "v.3.0.0",
-  "released_at": "2026-07-19T13:34:02Z"
+  "kind": "minor",
+  "version": "v.3.1.0",
+  "released_at": "2026-07-19T13:37:26Z"
 }

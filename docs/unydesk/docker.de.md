@@ -1,5 +1,5 @@
 # Docker UnyDesk
-Cette page remplace l'ancien inventaire global `Containers` pour le projet `UnyDesk` uniquement.
+Cette page regroupe les manifests Docker correspondant au projet `UnyDesk` uniquement.
 
 Source retenue :
 

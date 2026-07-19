@@ -1,5 +1,5 @@
 # Docker TRINITY
-Cette page remplace l'ancien inventaire global `Containers` pour le projet `TRINITY` uniquement.
+Cette page regroupe les manifests Docker correspondant au projet `TRINITY` uniquement.
 
 Les secrets ne sont pas exposes dans la documentation publique : les chemins de fichiers secrets et le fichier mail hôte sont masques.
 
