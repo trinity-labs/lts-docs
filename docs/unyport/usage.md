@@ -14,7 +14,7 @@ Cette première étape change toute la suite de la lecture, car un Dom0 exposé 
 L'usage le plus courant reste la supervision en temps réel :
 
 - Activite CPU et par coeur
-- Utilisation memoire et cache
+- Utilisation mémoire et cache
 - Debit réseau
 - Occupation du stockage
 - Temperatures, processus et charge
@@ -28,7 +28,7 @@ Le portail est donc utile comme tableau de bord opérationnel live avant même q
 - Quelle version Alpine tourne
 - Quel noyau tourne
 - Quelle version Xen et quel scheduler sont actifs sur Dom0
-- Combien de domaines tournent et quelle memoire ils consomment
+- Combien de domaines tournent et quelle mémoire ils consomment
 
 ## Usage 4 - inspecter services, logs et sécurité
 Les surfaces resources et security servent au depannage courant :

@@ -45,7 +45,7 @@ Operationnellement, l'application écrit aussi :
 - `settings/branding.yaml` Lorsqu'un branding personnalise est sauve
 
 ## HTTPS et HTTP/3
-Par defaut, l'application écoute en HTTP simple sur `:8800`.
+Par défaut, l'application écoute en HTTP simple sur `:8800`.
 
 Le comportement HTTPS et QUIC optionnel est pilote par `settings/settings.yaml` :
 

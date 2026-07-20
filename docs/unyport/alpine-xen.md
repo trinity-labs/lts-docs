@@ -28,7 +28,7 @@ Sur `Dom0`, `UnyPort` enrichit la télémétrie Linux avec des données toolstac
 - `xl info`
 - `xl list`
 
-Cela donne le nombre de domaines, le total de vCPU, la memoire, le scheduler et des lectures CPU par domaine.
+Cela donne le nombre de domaines, le total de vCPU, la mémoire, le scheduler et des lectures CPU par domaine.
 
 ## Dom0 contre DomU
 Cette distinction change ce que voit l'opérateur :

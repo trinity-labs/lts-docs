@@ -43,20 +43,20 @@ Le dépôt peut aussi initialiser automatiquement un premier admin lorsque `user
 ## Couche 4 - télémétrie et lecture de l'hôte
 `UnyPort` lit la plateforme directement au lieu de dependre d'un agent de monitoring separe :
 
-- `/proc` Et `/sys` pour le CPU, la memoire, l'uptime, le réseau et les temperatures
+- `/proc` Et `/sys` pour le CPU, la mémoire, l'uptime, le réseau et les temperatures
 - L'état OpenRC pour les services
 - Les permissions de `settings/users.json` et les sysctls noyau pour les contrôles de sécurité
 - `xl info` Et `xl list` pour le contexte Xen Dom0
 - `startup-history.jsonl` Et `unyport.log` pour l'historique des redemarrages
 
-Le broker SSE echantillonne toutes les `2` secondes, conserve un anneau de `60` snapshots en memoire et calcule les echelles des graphes côté serveur avant d'envoyer les données au frontend.
+Le broker SSE echantillonne toutes les `2` secondes, conserve un anneau de `60` snapshots en mémoire et calcule les echelles des graphes côté serveur avant d'envoyer les données au frontend.
 
 ## Couche 5 - UX opérateur
 L'interface visible est ensuite organisee en pages a but explicite :
 
 - Dashboard pour le statut rapide et l'historique des redemarrages
 - Page hypervisor pour le rôle d'hôte, Xen et le contexte de version
-- Page resources pour le CPU, la memoire, les processus, les packages, les modules, les services et les logs
+- Page resources pour le CPU, la mémoire, les processus, les packages, les modules, les services et les logs
 - Page network pour l'activite d'interface et la carte réseau
 - Page storage pour les disques et l'état LBU
 - Page security pour les contrôles de durcissement

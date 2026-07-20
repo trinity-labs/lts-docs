@@ -42,7 +42,7 @@ Virtualisation -> Xen
 | Couche | Role | Visible depuis TRINITY |
 | --- | --- | --- |
 | `TRINITY` | Surface client et cycle de vie | Oui |
-| Alpine Linux | Systeme invite de certaines VM | Oui, via console et état systeme |
+| Alpine Linux | Systeme invite de certaines VM | Oui, via console et état système |
 | Xen | Hyperviseur et isolation | Indirectement, via les modes VM |
 
 ## Pourquoi les deux comptent ensemble
@@ -65,7 +65,7 @@ modele_plateforme:
 
 | Element | Fonction principale | Ce qu'il faut retenir |
 | --- | --- | --- |
-| Alpine Linux | Faire tourner le systeme invite | Lire une console simple et efficace |
+| Alpine Linux | Faire tourner le système invite | Lire une console simple et efficace |
 | Xen | Porter et isoler la VM | Comprendre les états et modes techniques |
 | TRINITY | Orchestrer l'accès client | Relier commande, service et support |
 

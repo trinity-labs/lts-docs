@@ -43,7 +43,7 @@ Le **Data Disk Mode** est un mode d'accès specialement utile pour intervenir su
 - L'utilisateur peut vérifier l'état, diagnostiquer ou récupérer un environnement
 - Ce mode est adapte aux opérations de maintenance, d'analyse ou de reprise
 
-Autrement dit, `TRINITY` ne montre pas seulement une machine "allumee" : elle peut aussi exposer un mode de travail spécifique pour intervenir proprement sur les données et sur le systeme.
+Autrement dit, `TRINITY` ne montre pas seulement une machine "allumee" : elle peut aussi exposer un mode de travail spécifique pour intervenir proprement sur les données et sur le système.
 
 ## Alpine Linux et Xen dans l'architecture
 Deux notions doivent être claires publiquement :

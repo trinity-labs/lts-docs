@@ -31,7 +31,7 @@ Objet : VM visible mais service indisponible
 Reference commande : TRI-2026-00421
 Service : VM Alpine
 Mode actuel : Data Disk Mode
-Probleme observe : systeme de fichiers visible, application non demarree
+Probleme observe : système de fichiers visible, application non demarree
 Resultat attendu : confirmer s'il faut reprendre ou revenir en mode normal
 ```
 

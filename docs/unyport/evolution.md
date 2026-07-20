@@ -1,5 +1,5 @@
 # Evolution
-Cette page synthétise la maniè re dont `UnyPort` a évolue fonctionnellement a travers l'historique visible du dépôt et le code actuel.
+Cette page synthétise la manière dont `UnyPort` a évolue fonctionnellement a travers l'historique visible du dépôt et le code actuel.
 
 ## Direction monitoring-first
 Des le depart, `UnyPort` évolue comme un control plane orienté monitoring :

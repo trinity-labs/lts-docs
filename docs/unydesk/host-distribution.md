@@ -35,4 +35,4 @@ Le host Windows peut être préparé pour démarrer sans argument en ligne de co
 - D'un fichier de configuration placé à côté de l'exécutable
 - D'une valeur par défaut embarquée
 
-Cela facilite l'assistance tout en gardant le choix du serveur explicite.
+Cela facilité l'assistance tout en gardant le choix du serveur explicite.

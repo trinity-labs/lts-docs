@@ -71,7 +71,7 @@ Pour les paiements manuels, `TRINITY` affiche des instructions détaillées au s
 
 - IBAN / BIC / bénéficiaire pour le virement
 - Adresse de réception et montant LTC pour la crypto
-- Boutons de copie pour les références sensibles
+- Boutons de copier pour les références sensibles
 
 Les flux manuels se comportent publiquement comme des paiements en attente, avec consultation des coordonnées de règlement directement depuis l'espace client.
 

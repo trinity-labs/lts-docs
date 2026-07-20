@@ -27,7 +27,7 @@ Les commandes peuvent concerner du support, des prestations, des formations ou d
 | --- | --- | --- |
 | Decouverte | Site public et documentation | Comprendre l'offre |
 | Commande | Compte, panier, paiement | Finaliser l'achat |
-| Suivi | Commandes et factures | Lire l'état et recuperer les documents |
+| Suivi | Commandes et factures | Lire l'état et récupérer les documents |
 | Technique | VM, console, DDM | Diagnostiquer ou intervenir prudemment |
 | Escalade | Support, UnyDesk, UnyPort | Obtenir de l'aide ou de la visibilité infra |
 
@@ -57,7 +57,7 @@ Dans ce contexte, l'utilisateur peut :
 | --- | --- | --- |
 | Vue VM | Lire l'état et identifier la machine | Verification rapide |
 | Console | Lancer des commandes de diagnostic | Support, maintenance, reprise |
-| DDM | Inspecter stockage et systeme de fichiers | Recuperation et preservation |
+| DDM | Inspecter stockage et système de fichiers | Recuperation et preservation |
 
 ## Usage 5 - comprendre le Data Disk Mode
 Le **Data Disk Mode** est utile lorsque l'objectif n'est pas d'executer un service applicatif normal, mais d'intervenir sur l'environnement lui-meme. Dans la pratique, ce mode sert a :
@@ -67,7 +67,7 @@ Le **Data Disk Mode** est utile lorsque l'objectif n'est pas d'executer un servi
 - Récupérer un environnement
 - Realiser des opérations de reprise ou de maintenance
 
-Pour l'utilisateur, cela signifie qu'une VM peut être accessible dans un mode plus technique, centre sur la conservation, l'analyse ou la restauration des donnees.
+Pour l'utilisateur, cela signifie qu'une VM peut être accessible dans un mode plus technique, centre sur la conservation, l'analyse ou la restauration des données.
 
 ## Usage 6 - comprendre Alpine Linux et Xen
 Dans `TRINITY`, deux briques doivent être comprises publiquement :

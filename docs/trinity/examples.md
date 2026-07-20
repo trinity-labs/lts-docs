@@ -47,7 +47,7 @@ Action demandee : confirmer si le reglement est encore en attente
   "problème": "service pas encore revenu en mode normal",
   "indices": [
     "hostname ok",
-    "systeme de fichiers monte",
+    "système de fichiers monte",
     "application non demarree"
   ]
 }
@@ -57,5 +57,5 @@ Action demandee : confirmer si le reglement est encore en attente
 ```text
 TRINITY  -> compte, commandes, factures, documentation
 UnyDesk  -> accès distant et assistance
-UnyPort  -> état, donnees hotes, supervision service
+UnyPort  -> état, données hôtes, supervision service
 ```

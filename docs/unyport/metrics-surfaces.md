@@ -5,7 +5,7 @@
 Le pipeline live a quelques caracteristiques importantes :
 
 - Un seul endpoint SSE : `/sse/system`
-- Un anneau memoire de `60` snapshots
+- Un anneau mémoire de `60` snapshots
 - Environ `2` minutes de contexte roulant
 - Des echelles de graphes calculees côté serveur sur les `15` derniers snapshots
 
@@ -16,7 +16,7 @@ Le dashboard est la première surface de lecture :
 
 - Hostname et rôle de l'hôte
 - Uptime
-- Resumes CPU et memoire
+- Resumes CPU et mémoire
 - Raccourcis vers network, storage et security
 - Heatmap annuelle des redemarrages derivee de `startup-history.jsonl` ou de `unyport.log`
 

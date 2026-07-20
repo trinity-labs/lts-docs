@@ -68,7 +68,7 @@ Selon le service, `TRINITY` peut exposer :
 | Factures | Telecharger les justificatifs PDF | Apres paiement ou pour la comptabilite |
 | VM | Lire l'état machine | Quand un service infra est actif |
 | Console | Diagnostiquer ou confirmer un état technique | En maintenance, reprise ou verification |
-| Data Disk Mode | Inspecter les donnees et montages | En recuperation ou maintenance ciblee |
+| Data Disk Mode | Inspecter les données et montages | En recuperation ou maintenance ciblee |
 | Support | Escalader une situation | Quand le libre-service ne suffit plus |
 
 ## Quand le parcours devient plus technique

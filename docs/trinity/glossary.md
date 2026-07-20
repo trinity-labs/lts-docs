@@ -25,7 +25,7 @@ Ce glossaire donne une lecture compacte des termes les plus importants de `TRINI
 ## Lecture opérationnelle
 ```text
 TRINITY = cycle de vie client
-Alpine Linux = systeme invite
+Alpine Linux = système invite
 Xen = couche de virtualisation
 DDM = mode de maintenance et de reprise
 ```

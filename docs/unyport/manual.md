@@ -16,7 +16,7 @@ Le chemin habituel est :
 Ouvrir le portail
   -> S'authentifier
   -> Lire le rôle de l'hote
-  -> Verifier CPU / memoire / reseau
+  -> Verifier CPU / mémoire / réseau
   -> Inspecter Xen ou LBU
   -> Lire logs ou securite
   -> Escalader via TRINITY ou UnyDesk si besoin
@@ -34,7 +34,7 @@ Il faut preparer quelques informations :
 Selon la configuration et le rôle de l'hôte, `UnyPort` peut exposer :
 
 - Des résumés de dashboard
-- Des données live CPU, memoire et réseau
+- Des données live CPU, mémoire et réseau
 - L'état des disques et de la persistance LBU
 - Les services OpenRC et certains logs
 - Des contrôles de sécurité et l'exposition des ports
