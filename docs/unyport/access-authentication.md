@@ -9,9 +9,9 @@ Comportement important :
 - Si `users.json` n'existe pas, `UnyPort` initialise un premier compte admin
 - L'email initialise est `demo@unyport.app`
 - Le mot de passe vient de `UNYPORT_ADMIN_PASSWORD` ou retombe sur la valeur intégrée
-- Le depot fournit aussi actuellement un utilisateur local de demo pour l'evaluation de la source
+- Le dépôt fournit aussi actuellement un utilisateur local de demo pour l'evaluation de la source
 
-Cela signifie que le parcours de deploiement et le parcours d'evaluation du depot sont proches, mais pas identiques.
+Cela signifie que le parcours de déploiement et le parcours d'evaluation du dépôt sont proches, mais pas identiques.
 
 ## Rôles
 Trois rôles sont acceptes par le backend :
@@ -20,7 +20,7 @@ Trois rôles sont acceptes par le backend :
 - `operator`
 - `viewer`
 
-Leur sens operationnel est :
+Leur sens opérationnel est :
 
 - `viewer` : Usage authentifie en lecture seule
 - `operator` : Usage authentifie avec ecritures courantes comme le profil et le mot de passe
@@ -48,10 +48,10 @@ Apres authentification, `UnyPort` emet un cookie JWT :
 L'application impose aussi :
 
 - Une protection CSRF avec un endpoint dedie `/api/csrf`
-- Une limitation de login, `5` tentatives par minute par defaut
+- Une limitation de login, `5` tentatives par minute par défaut
 - Une validation des trusted origins pour les requetes qui modifient l'état
 
-Si `trusted_origins` est vide, `UnyPort` calcule une liste par defaut a partir des interfaces actives locales sur le port `8800`.
+Si `trusted_origins` est vide, `UnyPort` calcule une liste par défaut a partir des interfaces actives locales sur le port `8800`.
 
 ## Actions admin
 Les actions d'écriture reservees aux admins incluent actuellement :
@@ -61,4 +61,4 @@ Les actions d'écriture reservees aux admins incluent actuellement :
 - Supprimer un utilisateur sauf son propre compte
 - Mettre a jour ou reinitialiser le branding de l'instance
 
-Ce perimetre garde l'administration explicite et limitee.
+Ce périmètre garde l'administration explicite et limitéée.

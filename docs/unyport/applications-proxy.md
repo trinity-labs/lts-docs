@@ -12,7 +12,7 @@ apps:
     type: terminal
 ```
 
-Au runtime, le portail expose les metadonnees via `/api/apps` et monte le proxy sous :
+Au runtime, le portail exposé les metadonnees via `/api/apps` et monte le proxy sous :
 
 ```text
 /proxy/ttyd/

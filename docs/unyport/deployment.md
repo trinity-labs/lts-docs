@@ -1,5 +1,5 @@
 # Deploiement
-Le depot `docker_unyport` fournit a la fois l'arbre source et un modele runtime conteneurise fonctionnel. L'histoire de deploiement reste volontairement simple : une application Go, un port principal d'ecoute et un petit repertoire `settings/` a côté du binaire.
+Le dépôt `docker_unyport` fournit a la fois l'arbre source et un modele runtime conteneurise fonctionnel. L'histoire de déploiement reste volontairement simple : une application Go, un port principal d'écoute et un petit répertoire `settings/` a côté du binaire.
 
 ## Arborescence utile
 Les chemins importants sont :
@@ -18,7 +18,7 @@ Caracteristiques developpement :
 
 - Les assets frontend sont servis depuis le disque via `UNYPORT_ASSETS`
 - Les caches Go module et build sont montes en volumes nommes
-- Le port expose par defaut est `8800:8800`
+- Le port exposé par défaut est `8800:8800`
 - Le conteneur resout `host.docker.internal` via `host-gateway`
 
 ## Mode production
@@ -29,7 +29,7 @@ La même logique compose prepare aussi un binaire de production :
 - Les symboles sont supprimes
 - `upx --lzma` Est applique dans le conteneur
 
-Le README presente cela comme le chemin de paquet compact, tandis que le developpement garde des assets live sur disque.
+Le README présentée cela comme le chemin de paquet compact, tandis que le developpement garde des assets live sur disque.
 
 ## Fichiers runtime
 Au runtime, `UnyPort` attend :
@@ -45,7 +45,7 @@ Operationnellement, l'application écrit aussi :
 - `settings/branding.yaml` Lorsqu'un branding personnalise est sauve
 
 ## HTTPS et HTTP/3
-Par defaut, l'application ecoute en HTTP simple sur `:8800`.
+Par defaut, l'application écoute en HTTP simple sur `:8800`.
 
 Le comportement HTTPS et QUIC optionnel est pilote par `settings/settings.yaml` :
 
@@ -59,7 +59,7 @@ Le comportement HTTPS et QUIC optionnel est pilote par `settings/settings.yaml` 
 Lorsque HTTP/3 est active correctement, `UnyPort` peut servir le TLS sur le port configure et rediriger `:8800` vers ce listener TLS.
 
 ## Reverse proxy et premier login
-Pour un deploiement expose a Internet, le schema habituel est :
+Pour un déploiement exposé a Internet, le schema habituel est :
 
 - Binder `UnyPort` localement ou sur une adresse hôte contrôlée
 - Placer Nginx ou un autre reverse proxy devant
@@ -67,4 +67,4 @@ Pour un deploiement expose a Internet, le schema habituel est :
 - Remplacer les placeholders OAuth avant toute ouverture publique
 - Changer immediatement les identifiants seedes ou de demo
 
-Cela garde le deploiement minimal sans faire semblant qu'une configuration de demo est prete pour la production.
+Cela garde le déploiement minimal sans faire semblant qu'une configuration de demo est prete pour la production.

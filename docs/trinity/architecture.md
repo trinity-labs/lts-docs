@@ -12,7 +12,7 @@ La première couche est la plus visible :
 - Commandes, paiements et factures
 - Chat et assistance
 
-Cette couche transforme `TRINITY` en portail client. C'est elle qui relie la promesse commerciale a l'usage reel.
+Cette couche transforme `TRINITY` en portail client. C'est elle qui relie la promesse commerciale a l'usage réel.
 
 ## Couche 2 - surfaces de service
 Une fois le client identifie, `TRINITY` donne accès a des surfaces de service :
@@ -27,7 +27,7 @@ Une fois le client identifie, `TRINITY` donne accès a des surfaces de service :
 La plateforme doit donc gerer une logique de cycle de vie, pas seulement une logique de navigation.
 
 ## Couche 3 - VM, consoles et exploitation
-`TRINITY` ne s'arrete pas a la vente. Le site expose aussi des usages d'exploitation :
+`TRINITY` ne s'arrete pas a la vente. Le site exposé aussi des usages d'exploitation :
 
 - Consultation d'une VM
 - Relance ou suivi d'état
@@ -36,12 +36,12 @@ La plateforme doit donc gerer une logique de cycle de vie, pas seulement une log
 
 
 ## Data Disk Mode
-Le **Data Disk Mode** est un mode d'accès specialement utile pour intervenir sur une VM sans la presenter comme un environnement applicatif normal. Publiquement, on peut l'expliquer comme un mode de maintenance ou de récupération :
+Le **Data Disk Mode** est un mode d'accès specialement utile pour intervenir sur une VM sans la présenter comme un environnement applicatif normal. Publiquement, on peut l'expliquer comme un mode de maintenance ou de récupération :
 
 - La VM demarre dans un contexte réduit
 - L'objectif principal devient l'accès au disque et au système de fichiers
 - L'utilisateur peut vérifier l'état, diagnostiquer ou récupérer un environnement
-- Ce mode est adapte aux operations de maintenance, d'analyse ou de reprise
+- Ce mode est adapte aux opérations de maintenance, d'analyse ou de reprise
 
 Autrement dit, `TRINITY` ne montre pas seulement une machine "allumee" : elle peut aussi exposer un mode de travail spécifique pour intervenir proprement sur les données et sur le systeme.
 
@@ -56,14 +56,14 @@ Dans `TRINITY`, cela signifie qu'un client peut commander, suivre et exploiter d
 ## Surfaces complementaires
 `TRINITY` s'articule avec deux services connexes :
 
-- **`UnyDesk`** pour l'accès distant et certaines operations de prise en main
+- **`UnyDesk`** pour l'accès distant et certaines opérations de prise en main
 - **`UnyPort`** pour la supervision, le contrôle et la lecture d'état de l'infrastructure
 
 
 ## Lecture d'ensemble
 Du point de vue public, l'architecture `TRINITY` peut donc se lire ainsi :
 
-1. Un site qui presente et vend
+1. Un site qui présentée et vend
 2. Un compte client qui suit et facture
 3. Une plateforme qui relie paiement, support et services
 4. Des environnements Alpine Linux virtualises avec Xen

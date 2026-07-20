@@ -1,4 +1,4 @@
-# Support and operations
+# Support and opérations
 Le support `UnyDesk` est de nature opérationnelle. Le problème utilisateur n'est souvent pas "la page est indisponible" mais "le host est en ligne, la session existe et le chemin média ne devient toujours pas exploitable". L'aide publique doit donc se concentrer sur les états, les preuves et le comportement de transport.
 
 ## Périmètre du support

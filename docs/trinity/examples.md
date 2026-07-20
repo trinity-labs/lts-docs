@@ -11,7 +11,7 @@ df -h
 
 Lecture attendue :
 
-- La machine repond
+- La machine répond
 - L'uptime est cohérent
 - Le réseau est visible
 - Le système principal est monte
@@ -27,7 +27,7 @@ Lecture attendue :
 
 - Les disques sont visibles
 - Les montages actifs sont lisibles
-- Un userland Alpine léger est present
+- Un userland Alpine léger est présent
 
 ## Exemple 3 - preparer un message support paiement
 ```markdown
@@ -43,8 +43,8 @@ Action demandee : confirmer si le reglement est encore en attente
 {
   "vm": "vm-trinity01",
   "mode": "data_disk_mode",
-  "etat": "online",
-  "probleme": "service pas encore revenu en mode normal",
+  "état": "online",
+  "problème": "service pas encore revenu en mode normal",
   "indices": [
     "hostname ok",
     "systeme de fichiers monte",
@@ -56,6 +56,6 @@ Action demandee : confirmer si le reglement est encore en attente
 ## Exemple 5 - lecture client de l'écosystème
 ```text
 TRINITY  -> compte, commandes, factures, documentation
-UnyDesk  -> acces distant et assistance
-UnyPort  -> etat, donnees hotes, supervision service
+UnyDesk  -> accès distant et assistance
+UnyPort  -> état, donnees hotes, supervision service
 ```

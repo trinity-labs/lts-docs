@@ -9,8 +9,8 @@ Ce glossaire donne une lecture compacte des termes les plus importants d'`UnyPor
 - `branding` : Configuration logo et couleurs de rôle stockee dans `branding.yaml`
 
 ## Termes plateforme
-- `Alpine Linux` : Distribution Linux légère utilisee comme modele d'hôte privilégie
-- `Xen` : Couche hyperviseur utilisee pour les infrastructures Dom0 et DomU
+- `Alpine Linux` : Distribution Linux légère utilisée comme modele d'hôte privilégie
+- `Xen` : Couche hyperviseur utilisée pour les infrastructures Dom0 et DomU
 - `Dom0` : Domaine de contrôle Xen portant le contexte hyperviseur
 - `DomU` : Domaine invite Xen vu comme machine virtuelle
 - `LBU` : Mecanisme Alpine de sauvegarde et de persistance
@@ -24,6 +24,6 @@ Ce glossaire donne une lecture compacte des termes les plus importants d'`UnyPor
 ## Modele de lecture
 ```text
 TRINITY = cycle de vie client
-UnyDesk = acces distant
-UnyPort = supervision hote et entree controlee
+UnyDesk = accès distant
+UnyPort = supervision hote et entree contrôlée
 ```

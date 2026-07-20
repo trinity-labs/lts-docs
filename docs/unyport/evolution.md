@@ -1,8 +1,8 @@
 # Evolution
-Cette page synthetise la maniere dont `UnyPort` a evolue fonctionnellement a travers l'historique visible du depot et le code actuel.
+Cette page synthétise la maniè re dont `UnyPort` a évolue fonctionnellement a travers l'historique visible du dépôt et le code actuel.
 
 ## Direction monitoring-first
-Des le depart, `UnyPort` evolue comme un control plane orienté monitoring :
+Des le depart, `UnyPort` évolue comme un control plane orienté monitoring :
 
 - État système live avant l'orchestration
 - Lecture des rôles d'hôte avant l'abstraction
@@ -19,7 +19,7 @@ Les travaux recents ont rendu le produit plus praticable au quotidien :
 - Carte réseau refinee
 - Remontee visible des versions
 
-Ce ne sont pas de simples retouches cosmetiques. Cela change la vitesse de lecture d'un hôte par un operateur.
+Ce ne sont pas de simples retouches cosmetiques. Cela change la vitesse de lecture d'un hôte par un opérateur.
 
 ## Lecture plateforme plus mature
 Le code actuel montre une lecture d'infrastructure plus mature que ne le laissaient penser les premières pages overview :
@@ -28,12 +28,12 @@ Le code actuel montre une lecture d'infrastructure plus mature que ne le laissai
 - Inspection hyperviseur et domaines Xen
 - Lecture Alpine LBU
 - Lecture OpenRC sans dependre d'outils lourds externes
-- Contrôles de sécurité relies a l'hôte reel
+- Contrôles de sécurité relies a l'hôte réel
 
-`UnyPort` ressemble ainsi davantage a un observateur natif de plateforme qu'a un shell d'administration web generique.
+`UnyPort` ressemble ainsi davantage a un observateur natif de plateforme qu'a un shell d'administration web générique.
 
-## Packaging operationnel plus solide
-Le depot a aussi evolue dans sa facon d'être livre :
+## Packaging opérationnel plus solide
+Le dépôt a aussi évolue dans sa façon d'être livre :
 
 - Mode developpement avec assets live
 - Build production avec assets embarques
@@ -41,7 +41,7 @@ Le depot a aussi evolue dans sa facon d'être livre :
 - Compression UPX
 - HTTPS et HTTP/3 en option
 
-Cette evolution packaging soutient directement la promesse single binary et low overhead.
+Cette évolution packaging soutient directement la promesse single binary et low overhead.
 
 ## Maturite de l'identité et de l'instance
 La surface produit actuelle inclut maintenant :
@@ -54,7 +54,7 @@ La surface produit actuelle inclut maintenant :
 
 Cela transforme `UnyPort` d'un dashboard local en vraie surface opérateur multi-utilisateurs.
 
-## Limite actuelle et etape suivante
+## Limite actuelle et étape suivante
 Au `2026-07-17`, le produit public doit encore être compris comme une `V1` :
 
 - Fort sur le monitoring
@@ -62,4 +62,4 @@ Au `2026-07-17`, le produit public doit encore être compris comme une `V1` :
 - Utile pour l'entrée proxy contrôlée
 - Pas encore un orchestrateur complet du cycle de vie Xen
 
-Le README annonce explicitement une future `V2` autour de workflows d'orchestration plus larges. La documentation actuelle doit donc presenter `UnyPort` comme un portail d'exploitation serieux, mais a perimetre volontairement borne.
+Le README annonce explicitement une future `V2` autour de workflows d'orchestration plus larges. La documentation actuelle doit donc présenter `UnyPort` comme un portail d'exploitation serieux, mais a périmètre volontairement borne.

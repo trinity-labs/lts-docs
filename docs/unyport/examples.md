@@ -1,5 +1,5 @@
 # Exemples
-Cette page donne des exemples concrets de la facon dont `UnyPort` est censee être utilisee en exploitation.
+Cette page donne des exemples concrets de la façon dont `UnyPort` est conçue être utilisée en exploitation.
 
 ## Exemple 1 - lire un Xen Dom0 en un coup d'oeil
 Un opérateur ouvre le portail sur un Dom0 et vérifie immediatement :
@@ -10,12 +10,12 @@ Un opérateur ouvre le portail sur un Dom0 et vérifie immediatement :
 - L'utilisation memoire hyperviseur reste cohérente
 - Aucun crash de service critique n'apparait sur la page security
 
-C'est la facon la plus rapide de confirmer que la vue hyperviseur est saine avant d'entrer dans des problemes invites plus fins.
+C'est la façon la plus rapide de confirmer que la vue hyperviseur est saine avant d'entrer dans des problèmes invites plus fins.
 
-## Exemple 2 - detecter un état Alpine non committe
+## Exemple 2 - détecter un état Alpine non committe
 Sur un hôte Alpine orienté maintenance, la page storage montre :
 
-- LBU present
+- LBU présent
 - Un état marque `dirty`
 - Le nom de la derniere archive
 

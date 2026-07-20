@@ -6,12 +6,12 @@ Ce glossaire donne une lecture compacte des termes les plus importants de `TRINI
 - `compte client` : Endroit ou restent visibles identité de facturation, commandes et factures
 - `commande` : Enregistrement visible côté client d'un service demande
 - `facture` : Document de facturation lie a une commande
-- `etat de paiement` : État visible du reglement
+- `état de paiement` : État visible du reglement
 
 ## Termes VM
 - `VM` : Machine virtuelle exposee via la plateforme lorsque le service l'autorise
 - `console` : Accès texte direct a une VM
-- `online` : La machine repond dans son mode courant
+- `online` : La machine répond dans son mode courant
 - `maintenance` : La machine est accessible pour intervention technique
 - `recovery` : La machine est exposee surtout pour inspection ou restauration
 
@@ -22,7 +22,7 @@ Ce glossaire donne une lecture compacte des termes les plus importants de `TRINI
 - `UnyDesk` : Surface d'accès distant et d'assistance
 - `UnyPort` : Surface de supervision et de pilotage
 
-## Lecture operationnelle
+## Lecture opérationnelle
 ```text
 TRINITY = cycle de vie client
 Alpine Linux = systeme invite

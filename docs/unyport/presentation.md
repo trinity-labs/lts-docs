@@ -1,5 +1,5 @@
 # Presentation d'UnyPort
-`UnyPort` est l'application de contrôle et de supervision exposee autour de l'infrastructure `TRINITY`. Elle est orientée opérateur, pas parcours commercial grand public. Sa valeur produit repose sur la clarte : un point d'entrée, un modele de session, une lecture d'hôte et un petit nombre de pages operationnelles ciblees.
+`UnyPort` est l'application de contrôle et de supervision exposee autour de l'infrastructure `TRINITY`. Elle est orientée opérateur, pas parcours commercial grand public. Sa valeur produit repose sur la clarté : un point d'entrée, un modele de session, une lecture d'hôte et un petit nombre de pages opérationnelles ciblees.
 
 
 ## Pages visibles
@@ -22,7 +22,7 @@ Ces pages sont alimentees par un melange de faits système statiques et de snaps
 - Les opérateurs
 - Les viewers en lecture seule
 
-L'application distingue explicitement ces rôles afin que la même surface puisse servir a l'observation, aux operations courantes et a l'administration contrôlée sans exposer toutes les actions d'écriture a tous les utilisateurs.
+L'application distingue explicitement ces rôles afin que la même surface puisse servir a l'observation, aux opérations courantes et a l'administration contrôlée sans exposer toutes les actions d'écriture a tous les utilisateurs.
 
 ## Place dans l'écosystème
 `UnyPort` doit se lire comme le compagnon de supervision de `TRINITY` :
@@ -31,4 +31,4 @@ L'application distingue explicitement ces rôles afin que la même surface puiss
 - `UnyDesk` Gere l'accès distant et l'assistance
 - `UnyPort` Gere l'état d'infrastructure, l'accès proxy et le contexte opérateur
 
-Ce positionnement est cohérent avec le depot lui-meme, le README public et les routes runtime actuelles.
+Ce positionnement est cohérent avec le dépôt lui-meme, le README public et les routes runtime actuelles.

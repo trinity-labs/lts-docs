@@ -19,9 +19,9 @@ Pour une lecture pratique, l'ordre recommandé est :
 
 1. `Overview`
 2. `Architecture`
-3. `Bootstrap and access`
+3. `Bootstrap and accès`
 4. `Usage`
-5. `Support and operations`
+5. `Support and opérations`
 6. `Glossary`
 
 ```text

@@ -32,4 +32,4 @@ La surface publique peut exposer :
 - L'API broker est le contrat entre la surface utilisateur et le côté host
 
 ## Ce qui reste hors de cette page
-Cette documentation publique n'expose pas les chemins privés, les secrets ni les procédures de reprise réservées à l'exploitation. Ces sujets relèvent de la documentation restreinte.
+Cette documentation publique n'exposé pas les chemins privés, les secrets ni les procédures de reprise réservées à l'exploitation. Ces sujets relèvent de la documentation restreinte.

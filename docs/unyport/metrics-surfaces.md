@@ -1,5 +1,5 @@
 # Métriques et surfaces
-`UnyPort` est organisee autour d'un petit nombre de surfaces operationnelles alimentees par des données live. Le backend echantillonne le système toutes les `2` secondes et pousse des snapshots en SSE, tandis que le frontend les rend dans des pages pensees pour l'operateur.
+`UnyPort` est organisee autour d'un petit nombre de surfaces opérationnelles alimentees par des données live. Le backend echantillonne le système toutes les `2` secondes et pousse des snapshots en SSE, tandis que le frontend les rend dans des pages pensees pour l'opérateur.
 
 ## Modele de données live
 Le pipeline live a quelques caracteristiques importantes :
@@ -58,12 +58,12 @@ La page `Storage` montre :
 - L'état de persistance LBU sur les hôtes Alpine
 
 ## Security
-La page security est une vraie surface operationnelle dediee, pas juste un resume a badges. Elle agr ege :
+La page security est une vraie surface opérationnelle dediee, pas juste un résumé a badges. Elle agr ege :
 
 - Des contrôles de durcissement noyau
 - Les permissions du fichier utilisateurs
 - L'état des services OpenRC
 - La presence de certains processus surveilles
-- Les ports TCP a l'ecoute
+- Les ports TCP a l'écoute
 
 Cela fait d'`UnyPort` plus qu'un simple lecteur de ressources. C'est aussi un lecteur compact de posture de securite.

@@ -44,14 +44,14 @@ brouillon -> soumise -> paiement_en_attente -> payee -> preparation -> disponibl
 | Soumise | La demande existe mais n'est pas encore reglee | Attendre le paiement ou completer le flux |
 | Paiement en attente | Le retour de paiement n'est pas confirme | Verifier le moyen de paiement et patienter |
 | Payee | Le reglement est valide | Suivre la preparation ou la livraison |
-| En preparation | Le service est en cours de traitement | Attendre la disponibilite ou verifier les acces |
+| En preparation | Le service est en cours de traitement | Attendre la disponibilité ou vérifier les accès |
 | Disponible | Le service ou document est accessible | Utiliser la surface exposee |
 | Annulee ou expiree | Le flux est clos sans livraison | Recommencer ou contacter le support |
 
 ## Ce que le client doit lire dans une commande
-La page commande doit rester lisible sans details internes. Le client a surtout besoin de :
+La page commande doit rester lisible sans détails internes. Le client a surtout besoin de :
 
-- La reference
+- La référence
 - L'état courant
 - Le service choisi
 - Le profil de facturation
@@ -60,7 +60,7 @@ La page commande doit rester lisible sans details internes. Le client a surtout 
 
 ```yaml
 resume_commande:
-  reference: "TRI-2026-00421"
+  référence: "TRI-2026-00421"
   service: "session de support"
   statut: "payee"
   statut_paiement: "confirme"
@@ -71,7 +71,7 @@ resume_commande:
 | --- | --- | --- |
 | Reference | Identifier sans ambiguite la commande | `TRI-2026-00421` |
 | Service | Savoir ce qui a ete achete | `session de support` |
-| Statut | Lire l'etat de cycle de vie | `payee` |
+| Statut | Lire l'état de cycle de vie | `payee` |
 | Statut paiement | Distinguer commande et reglement | `confirme` |
 | Facture PDF | Recuperer le justificatif | `true` |
 | Profil de facturation | Eviter une erreur administrative | `entreprise` |
@@ -79,15 +79,15 @@ resume_commande:
 ## Bonne habitude avant d'ouvrir un ticket
 Gardez une trace très simple de :
 
-- La reference de commande
+- La référence de commande
 - La date d'achat
 - Le moyen de paiement
-- Le resultat attendu
-- L'etape exacte ou le flux s'est arrete
+- Le résultat attendu
+- L'étape exacte ou le flux s'est arrete
 
 ```markdown
 Reference commande : TRI-2026-00421
-Resultat attendu : acces VM et visibilite console
+Resultat attendu : accès VM et visibilité console
 Probleme actuel : paiement accepte, service pas encore visible
 ```
 

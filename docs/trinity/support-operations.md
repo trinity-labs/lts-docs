@@ -16,11 +16,11 @@ Le support `TRINITY` peut explicitement concerner :
 | Sujet | Libre-service possible | Support recommande |
 | --- | --- | --- |
 | Facture PDF | Oui | Si le document est absent ou incoherent |
-| Paiement | Oui, pour lire l'etat | Si le statut reste bloque ou contradictoire |
-| Commande | Oui, pour suivre la reference et le statut | Si la livraison ne progresse plus |
-| VM | Oui, pour lire un etat simple | Si le comportement devient ambigu ou risqué |
+| Paiement | Oui, pour lire l'état | Si le statut reste bloque ou contradictoire |
+| Commande | Oui, pour suivre la référence et le statut | Si la livraison ne progresse plus |
+| VM | Oui, pour lire un état simple | Si le comportement devient ambigu ou risqué |
 | Data Disk Mode | Lecture prudente possible | Oui des qu'une action de reprise est sensible |
-| UnyDesk / UnyPort | Oui, pour utiliser la surface | Si l'acces ou l'interpretation pose probleme |
+| UnyDesk / UnyPort | Oui, pour utiliser la surface | Si l'accès ou l'interprétation pose problème |
 
 ## Bon format de demande support
 Une bonne demande support est concrete et breve.
@@ -81,7 +81,7 @@ Le support convient pour :
 | Situation | Libre-service | Ticket support |
 | --- | --- | --- |
 | Lire une facture | Oui | Non, sauf document manquant |
-| Verifier une VM en ligne | Oui | Non, si l'etat est clair |
+| Verifier une VM en ligne | Oui | Non, si l'état est clair |
 | Diagnostiquer un volume sensible | Limite | Oui |
 | Recuperer un service apres incident | Limite | Oui |
 | Comprendre un statut contradictoire | Non | Oui |

@@ -39,12 +39,12 @@ Son rôle à côté des autres surfaces est clair :
 ## Principaux concepts publics
 Les concepts publics les plus importants dans `UnyDesk` sont :
 
-- **Host** : la machine qui expose l'accès distant
+- **Host** : la machine qui exposé l'accès distant
 - **Viewer** : le participant côté navigateur qui ouvre la session
 - **Session** : la relation active entre viewer et host
 - **Broker** : la couche de signalisation et de routage
 - **Claim ou pairing** : l'étape de confiance qui lie un host à un contexte attendu
-- **Standalone access** : un lien de session direct protégé par un jeton spécifique
+- **Standalone accès** : un lien de session direct protégé par un jeton spécifique
 
 ## Pourquoi c'est important publiquement
 L'accès distant ne se résume pas à la vidéo. En pratique, `UnyDesk` doit aussi préserver :

@@ -17,7 +17,7 @@ Une étape de confiance ou de propriété qui associe un host à un compte ou à
 ## Pairing
 La liaison pratique d'un host à un utilisateur, un compte ou un environnement de confiance afin de pouvoir le réutiliser sans ambiguïté plus tard.
 
-## Standalone access
+## Standalone accès
 Un mode d'accès direct à la session utilisant un jeton spécifique à la session au lieu de toute la surface compte.
 
 ## Offer and answer

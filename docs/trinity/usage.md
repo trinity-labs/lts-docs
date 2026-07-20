@@ -1,5 +1,5 @@
 # Utilisation de TRINITY
-`TRINITY` s'utilise comme un portail de cycle de vie. Le même site doit permettre de decouvrir une offre, d'acheter, de payer, de suivre une commande, d'ouvrir une facture, de demander de l'aide et, dans certains cas, d'acceder a une VM ou a une console. Cette page décrit les usages publics les plus importants.
+`TRINITY` s'utilise comme un portail de cycle de vie. Le même site doit permettre de decouvrir une offre, d'acheter, de payer, de suivre une commande, d'ouvrir une facture, de demander de l'aide et, dans certains cas, d'accéder a une VM ou a une console. Cette page décrit les usages publics les plus importants.
 
 ## Usage 1 - decouvrir l'offre et prendre contact
 Un utilisateur commence souvent par :
@@ -27,9 +27,9 @@ Les commandes peuvent concerner du support, des prestations, des formations ou d
 | --- | --- | --- |
 | Decouverte | Site public et documentation | Comprendre l'offre |
 | Commande | Compte, panier, paiement | Finaliser l'achat |
-| Suivi | Commandes et factures | Lire l'etat et recuperer les documents |
+| Suivi | Commandes et factures | Lire l'état et recuperer les documents |
 | Technique | VM, console, DDM | Diagnostiquer ou intervenir prudemment |
-| Escalade | Support, UnyDesk, UnyPort | Obtenir de l'aide ou de la visibilite infra |
+| Escalade | Support, UnyDesk, UnyPort | Obtenir de l'aide ou de la visibilité infra |
 
 ## Usage 3 - suivre une commande et son paiement
 Apres achat, le client retrouve :
@@ -55,7 +55,7 @@ Dans ce contexte, l'utilisateur peut :
 
 | Surface technique | Ce qu'on y fait | Quand l'utiliser |
 | --- | --- | --- |
-| Vue VM | Lire l'etat et identifier la machine | Verification rapide |
+| Vue VM | Lire l'état et identifier la machine | Verification rapide |
 | Console | Lancer des commandes de diagnostic | Support, maintenance, reprise |
 | DDM | Inspecter stockage et systeme de fichiers | Recuperation et preservation |
 
@@ -65,7 +65,7 @@ Le **Data Disk Mode** est utile lorsque l'objectif n'est pas d'executer un servi
 - Vérifier le contenu d'un disque
 - Inspecter un système de fichiers
 - Récupérer un environnement
-- Realiser des operations de reprise ou de maintenance
+- Realiser des opérations de reprise ou de maintenance
 
 Pour l'utilisateur, cela signifie qu'une VM peut être accessible dans un mode plus technique, centre sur la conservation, l'analyse ou la restauration des donnees.
 
@@ -87,4 +87,4 @@ L'utilisateur n'a pas besoin d'administrer Xen directement pour utiliser `TRINIT
 | --- | --- | --- |
 | `TRINITY` | Portail client et technique | Commande, paiement, VM, facture |
 | `UnyDesk` | Assistance distante | Interaction ou prise en main |
-| `UnyPort` | Visibilite infra et supervision | Controle, etat, topologie |
+| `UnyPort` | Visibilite infra et supervision | Controle, état, topologie |

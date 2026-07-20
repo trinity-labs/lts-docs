@@ -43,7 +43,7 @@ Le PDF est désormais pensé comme une facture d'exploitation réellement prése
 Le tunnel de paiement a été étendu et unifié.
 
 ### Fournisseurs et modes pris en charge
-`TRINITY` expose les flux suivants selon le type de produit :
+`TRINITY` exposé les flux suivants selon le type de produit :
 
 - **Mollie** pour la carte bancaire et les abonnements récurrents
 - **PayPal** pour les paiements compatibles

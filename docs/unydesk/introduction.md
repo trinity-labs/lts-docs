@@ -3,7 +3,7 @@
 
 Le produit s'organise autour de trois rôles publics :
 
-- **Host** : la machine qui expose l'accès
+- **Host** : la machine qui exposé l'accès
 - **Viewer** : l'utilisateur côté navigateur qui ouvre la session
 - **Broker** : le service `UnyDesk` qui authentifie, route et synchronise la session
 

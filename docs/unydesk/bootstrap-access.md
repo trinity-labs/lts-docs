@@ -1,4 +1,4 @@
-# Bootstrap and access
+# Bootstrap and accès
 `UnyDesk` doit résoudre deux problèmes publics avant qu'une session distante puisse commencer :
 
 - Comment le logiciel host est installé et mis en confiance
@@ -10,7 +10,7 @@ La première étape publique est généralement le téléchargement du paquet ho
 Publiquement, le chemin de distribution doit rester simple :
 
 - Cible supportée clairement visible
-- Paquet courant facile à identifier
+- Paquet courant aisable à identifier
 - Chemin d'installation ou de bootstrap évident
 - Chemin de mise à jour ou de re-téléchargement stable
 
@@ -44,7 +44,7 @@ L'accès autonome est utile lorsque :
 
 - Un utilisateur doit rejoindre une session sans passer par tout le portail compte
 - Un opérateur support a besoin d'une invitation étroite
-- La session doit rester limitée à un seul contexte d'accès
+- La session doit rester limitéée à un seul contexte d'accès
 
 ## Avant d'ouvrir une session
 1. Confirmer que le bon paquet host est installé

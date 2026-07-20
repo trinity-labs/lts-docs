@@ -1,5 +1,5 @@
 # Services et support
-`TRINITY` expose un ensemble cohérent de services visibles depuis le site. Cette section décrit ce que le visiteur ou le client comprend publiquement de l'offre, sans détailler l'implémentation interne.
+`TRINITY` exposé un ensemble cohérent de services visibles depuis le site. Cette section décrit ce que le visiteur ou le client comprend publiquement de l'offre, sans détailler l'implémentation interne.
 
 ## Offres visibles
 Le site `TRINITY` présente notamment :
@@ -18,7 +18,7 @@ Le support `TRINITY` couvre explicitement :
 - **`UnyDesk`**
 - **`UnyPort`**
 
-Cette clarification est importante : le support commercial et le support technique ne sont pas limités au coeur historique de la plateforme. Ils couvrent aussi les surfaces de contrôle et d'accès distant utilisées autour d'elle.
+Cette clarification est importante : le support commercial et le support technique ne sont pas limitéés au coeur historique de la plateforme. Ils couvrent aussi les surfaces de contrôle et d'accès distant utilisées autour d'elle.
 
 
 ## Paiements et facturation

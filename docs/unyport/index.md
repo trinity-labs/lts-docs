@@ -12,7 +12,7 @@ Publiquement, `UnyPort` rassemble :
 - Une visibilité en direct sur l'hôte et les services
 - Un contexte Xen explicite pour les environnements Dom0 et DomU
 - Un accès contrôle a certaines applications internes comme `ttyd`
-- Des pages operationnelles pour la sécurité, le stockage, le réseau et l'état système
+- Des pages opérationnelles pour la sécurité, le stockage, le réseau et l'état système
 
 `UnyPort` fonctionne avec deux surfaces complementaires :
 
@@ -33,13 +33,13 @@ Pour une lecture pratique, l'ordre recommande est :
 9. `Exemples`
 
 ```text
-Connexion operateur
+Connexion opérateur
   -> Tableau de bord
-  -> Detection du role de l'hote
+  -> Detection du rôle de l'hote
   -> Metriques et logs
   -> Securite et versions
-  -> Proxy applicatif si necessaire
+  -> Proxy applicatif si nécessaire
   -> Reglages admin si autorises
 ```
 
-Cette section décrit donc `UnyPort` comme une vraie surface d'exploitation, pas comme un theme de dashboard generique ni comme un simple depot source.
+Cette section décrit donc `UnyPort` comme une vraie surface d'exploitation, pas comme un theme de dashboard générique ni comme un simple dépôt source.

@@ -1,5 +1,5 @@
 # Architecture d'UnyPort
-`UnyPort` est structuree comme une pile opérateur compacte : un backend Go, un frontend statique, une petite surface de configuration et une boucle de télémétrie qui lit directement l'état de Linux et des interfaces visibles par Xen. L'objectif est la clarte operationnelle, pas la complexite de framework.
+`UnyPort` est structuree comme une pile opérateur compacte : un backend Go, un frontend statique, une petite surface de configuration et une boucle de télémétrie qui lit directement l'état de Linux et des interfaces visibles par Xen. L'objectif est la clarté opérationnelle, pas la complexite de framework.
 
 ## Couche 1 - runtime et assets
 La première couche est le runtime applicatif lui-meme :
@@ -9,12 +9,12 @@ La première couche est le runtime applicatif lui-meme :
 - Un mode developpement qui sert les assets depuis le disque via `UNYPORT_ASSETS`
 - Un mode production qui embarque les assets frontend dans le binaire
 
-Dans le `docker-compose.yml` fourni, le projet est compile dans un conteneur `golang:alpine` et expose l'application sur le port `8800`.
+Dans le `docker-compose.yml` fourni, le projet est compile dans un conteneur `golang:alpine` et exposé l'application sur le port `8800`.
 
 ## Couche 2 - transport et routage
 La deuxieme couche est la surface de transport opérateur :
 
-- HTTP sur `:8800` par defaut
+- HTTP sur `:8800` par défaut
 - HTTPS et HTTP/3 en option lorsqu'ils sont configures dans `settings/settings.yaml`
 - APIs JSON sous `/api/*`
 - Métriques live via `/sse/system`
@@ -36,9 +36,9 @@ L'identité reste volontairement simple et locale :
 - Le branding est stocke dans `settings/branding.yaml`
 - Les réglages runtime vivent dans `settings/settings.yaml`
 - Les declarations d'apps proxyfiees et de fournisseurs OAuth vivent dans `settings/config.yaml`
-- Les logs sont ecrits dans `logs/`
+- Les logs sont écrits dans `logs/`
 
-Le depot peut aussi initialiser automatiquement un premier admin lorsque `users.json` n'existe pas et que `UNYPORT_ADMIN_PASSWORD` est fourni ou que les identifiants par defaut sont acceptes.
+Le dépôt peut aussi initialiser automatiquement un premier admin lorsque `users.json` n'existe pas et que `UNYPORT_ADMIN_PASSWORD` est fourni ou que les identifiants par défaut sont acceptes.
 
 ## Couche 4 - télémétrie et lecture de l'hôte
 `UnyPort` lit la plateforme directement au lieu de dependre d'un agent de monitoring separe :
@@ -62,4 +62,4 @@ L'interface visible est ensuite organisee en pages a but explicite :
 - Page security pour les contrôles de durcissement
 - Page settings pour le branding et les futurs réglages fournisseurs
 
-Cette architecture doit donc se lire comme un portail de supervision a perimetre précis, pas comme un site web generique ni comme une suite de virtualisation universelle.
+Cette architecture doit donc se lire comme un portail de supervision a périmètre précis, pas comme un site web générique ni comme une suite de virtualisation universelle.

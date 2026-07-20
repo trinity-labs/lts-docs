@@ -33,7 +33,7 @@ Le parcours de commande couvre :
 - La consultation du statut de commande
 - L'ouverture de la facture PDF
 
-Les paiements en attente, refusés, réussis ou annulés doivent être compréhensibles côté client. Le site expose donc des états visuels distincts et des messages adaptés.
+Les paiements en attente, refusés, réussis ou annulés doivent être compréhensibles côté client. Le site exposé donc des états visuels distincts et des messages adaptés.
 
 ## Support et assistance
 Le parcours ne s'arrête pas après l'achat. `TRINITY` relie la commande et l'exploitation au support :

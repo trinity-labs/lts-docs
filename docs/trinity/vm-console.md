@@ -1,5 +1,5 @@
 # VM et console
-Certains services `TRINITY` exposent une surface orientée VM. Cela ne signifie pas que chaque client devient administrateur d'hyperviseur. Cela signifie que la plateforme peut presenter un état machine, une console ou un contexte de maintenance lorsque le service l'autorise.
+Certains services `TRINITY` exposent une surface orientée VM. Cela ne signifie pas que chaque client devient administrateur d'hyperviseur. Cela signifie que la plateforme peut présenter un état machine, une console ou un contexte de maintenance lorsque le service l'autorise.
 
 ## Ce que l'utilisateur peut attendre
 Une page orientée VM peut exposer :
@@ -12,8 +12,8 @@ Une page orientée VM peut exposer :
 
 | Information visible | Utilite immediate | Lecture attendue |
 | --- | --- | --- |
-| Nom de VM | Identifier la bonne machine | Nom stable ou reference technique |
-| Etat | Savoir si la VM repond | `online`, `maintenance`, `recovery`, `unavailable` |
+| Nom de VM | Identifier la bonne machine | Nom stable ou référence technique |
+| Etat | Savoir si la VM répond | `online`, `maintenance`, `recovery`, `unavailable` |
 | Adresse IP | Reconnaitre la cible reseau | IP privee ou technique selon le service |
 | Console | Ouvrir un diagnostic direct | Acces reserve aux cas autorises |
 | Ressources | Situer sommairement la VM | CPU, RAM, disque ou indicateurs proches |
@@ -39,13 +39,13 @@ df -h
 ## Comment lire un état VM
 Une page VM publique doit se lire simplement :
 
-- `online` Signifie que la VM repond dans son mode actuel
+- `online` Signifie que la VM répond dans son mode actuel
 - `maintenance` Signifie qu'une intervention technique est en cours ou possible
 - `recovery` Signifie que la priorité est l'accès aux données
 - `unavailable` Signifie qu'il faut attendre ou solliciter le support
 
 ```text
-online       -> acces normal ou technique attendu
+online       -> accès normal ou technique attendu
 maintenance  -> contexte d'intervention
 recovery     -> contexte de preservation et de diagnostic
 unavailable  -> attente ou support
@@ -58,7 +58,7 @@ unavailable  -> attente ou support
 | `recovery` | La priorite est la reprise ou la preservation | Se concentrer sur la lecture et le stockage |
 | `unavailable` | La VM ou la surface n'est pas utilisable | Attendre ou ouvrir un ticket avec contexte |
 
-## Prudence operationnelle
+## Prudence opérationnelle
 Une console est puissante mais etroite dans son usage. Avant de modifier quoi que ce soit, il faut savoir :
 
 - Si la VM est en mode normal ou DDM

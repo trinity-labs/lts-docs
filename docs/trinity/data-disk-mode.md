@@ -2,7 +2,7 @@
 Le Data Disk Mode, souvent abrege **DDM**, est l'une des notions techniques les plus importantes exposees publiquement par `TRINITY`.
 
 ## Ce que signifie le DDM
-Le DDM est un mode VM orienté maintenance. L'objectif n'est pas de presenter l'environnement comme un service applicatif normal, mais comme un contexte contrôle pour vérifier les données, le stockage et l'état systeme.
+Le DDM est un mode VM orienté maintenance. L'objectif n'est pas de présenter l'environnement comme un service applicatif normal, mais comme un contexte contrôle pour vérifier les données, le stockage et l'état systeme.
 
 Dans la pratique, le DDM est utile lorsqu'il faut :
 
@@ -43,19 +43,19 @@ df -h
 cat /etc/fstab
 ```
 
-Ces commandes aident a repondre a des questions simples :
+Ces commandes aident a répondre a des questions simples :
 
 - Quels disques sont visibles
 - Quels points de montage sont actifs
 - Quel espace reste disponible
-- Si le système de fichiers attendu est present
+- Si le système de fichiers attendu est présent
 
-| Commande | Question traitee | Type de reponse attendue |
+| Commande | Question traitee | Type de réponse attendue |
 | --- | --- | --- |
 | `lsblk` | Quels disques existent | Liste des volumes et tailles |
 | `findmnt` | Quels montages sont actifs | Arborescence des points de montage |
 | `df -h` | Quel espace est disponible | Capacite et saturation |
-| `cat /etc/fstab` | Quels montages sont prevus | Configuration de reference |
+| `cat /etc/fstab` | Quels montages sont prevus | Configuration de référence |
 
 ## Workflow typique en DDM
 ```text
@@ -74,10 +74,10 @@ Le DDM ne doit pas être lu comme :
 - Un remplacement de sauvegarde
 - Une invitation a modifier le système sans contrôle
 
-Le DDM est un mode technique contrôle dont la valeur principale est la clarte, la reprise et l'inspection.
+Le DDM est un mode technique contrôle dont la valeur principale est la clarté, la reprise et l'inspection.
 
 | A ne pas confondre avec | Pourquoi | Lecture correcte |
 | --- | --- | --- |
 | Redemarrage normal | Le but n'est pas de remettre vite en production | Prioriser l'inspection et la recuperation |
 | Sauvegarde complete | Le DDM n'est pas une politique de backup | Utiliser les sauvegardes dediees si elles existent |
-| Espace de test libre | Le contexte reste sensible | Limiter les actions aux verifications necessaires |
+| Espace de test libre | Le contexte reste sensible | Limiter les actions aux verifications nécessaires |
