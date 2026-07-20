@@ -591,8 +591,14 @@ label[for="__toc"] > a span::before {
 .trinity-lang-switcher--header {
     flex: 0 0 auto;
     margin-left: 3.33rem;
+    margin-right: 1.2rem;
     position: relative;
-    z-index: 2;
+    z-index: 8;
+}
+
+.md-header__inner > .md-search {
+    position: relative;
+    z-index: 1;
 }
 
 .trinity-lang-switcher__link {
