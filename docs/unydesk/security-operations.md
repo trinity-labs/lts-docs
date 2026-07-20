@@ -17,7 +17,7 @@ Un host ne doit pas être considéré comme fiable simplement parce qu'il peut j
 
 Opérationnellement, un host devient utile lorsqu'il :
 
-- S'enregistre avec une identité stable
+- S'enregistré avec une identité stable
 - Est associé à l'utilisateur ou au contexte attendu
 - Reste visible par heartbeat
 - Accuse réception du dispatch session

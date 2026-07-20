@@ -29,15 +29,15 @@ Leur sens opérationnel est :
 Dans l'UI actuelle, les viewers peuvent consulter le portail mais ne peuvent pas enregistrer des changements de profil ni mettre à jour leurs identifiants.
 
 ## Fournisseurs OAuth
-OAuth est implemente pour :
+OAuth est implémente pour :
 
 - GitHub
 - GitLab
 
-Les declarations fournisseurs vivent dans `settings/config.yaml`. Les valeurs d'exemple sont volontairement ignorees, de sorte qu'OAuth n'est actif que lorsqu'un vrai `client_id`, un vrai `client_secret` et une vraie `redirect_url` sont renseignes.
+Les déclarations fournisseurs vivent dans `settings/config.yaml`. Les valeurs d'exemple sont volontairement ignorées, de sorte qu'OAuth n'est actif que lorsqu'un vrai `client_id`, un vrai `client_secret` et une vraie `redirect_url` sont renseignes.
 
-## Modele de session
-Apres authentification, `UnyPort` emet un cookie JWT :
+## Modèle de session
+Après authentification, `UnyPort` émet un cookie JWT :
 
 - Signe avec `security.jwt_secret`
 - Stocke en cookie HTTP-only
@@ -49,16 +49,16 @@ L'application impose aussi :
 
 - Une protection CSRF avec un endpoint dédié `/api/csrf`
 - Une limitation de login, `5` tentatives par minute par défaut
-- Une validation des trusted origins pour les requetes qui modifient l'état
+- Une validation des trusted origins pour les requêtes qui modifient l'état
 
 Si `trusted_origins` est vide, `UnyPort` calcule une liste par défaut à partir des interfaces actives locales sur le port `8800`.
 
 ## Actions admin
-Les actions d'écriture reservees aux admins incluent actuellement :
+Les actions d'écriture réservées aux admins incluent actuellement :
 
-- Creer des utilisateurs
+- Créer des utilisateurs
 - Changer les rôles
 - Supprimer un utilisateur sauf son propre compte
-- Mettre à jour ou reinitialiser le branding de l'instance
+- Mettre à jour ou réinitialiser le branding de l'instance
 
 Ce périmètre garde l'administration explicite et limitée.

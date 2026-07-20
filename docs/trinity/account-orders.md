@@ -1,5 +1,5 @@
 # Compte et commandes
-`TRINITY` n'est pas seulement une vitrine. C'est aussi l'endroit ou le compte client et le cycle de vie de la commande restent visibles.
+`TRINITY` n'est pas seulement une vitrine. C'est aussi l’endroit où le compte client et le cycle de vie de la commande restent visibles.
 
 ## Rôle du compte
 Le compte client sert à :
@@ -8,7 +8,7 @@ Le compte client sert à :
 - Stocker les informations de facturation
 - Consulter les commandes actives et passées
 - Relancer certaines actions de paiement
-- Telecharger les factures
+- Télécharger les factures
 - Retrouver la bonne surface de service après achat
 
 ```json
@@ -22,7 +22,7 @@ Le compte client sert à :
 }
 ```
 
-## Etapes typiques d'une commande
+## Étapes typiques d'une commande
 Une commande peut passer par plusieurs états :
 
 - Brouillon
@@ -30,8 +30,8 @@ Une commande peut passer par plusieurs états :
 - Paiement en attente
 - Payée
 - En préparation
-- Disponible ou livree
-- Annulee ou expiree
+- Disponible ou livrée
+- Annulée ou expirée
 
 ```text
 brouillon -> soumise -> paiement_en_attente -> payée -> préparation -> disponible
@@ -46,7 +46,7 @@ brouillon -> soumise -> paiement_en_attente -> payée -> préparation -> disponi
 | Payée | Le règlement est valide | Suivre la préparation ou la livraison |
 | En préparation | Le service est en cours de traitement | Attendre la disponibilité ou vérifier les accès |
 | Disponible | Le service ou document est accessible | Utiliser la surface exposée |
-| Annulee ou expiree | Le flux est clos sans livraison | Recommencer ou contacter le support |
+| Annulée ou expirée | Le flux est clos sans livraison | Recommencer ou contacter le support |
 
 ## Ce que le client doit lire dans une commande
 La page commande doit rester lisible sans détails internes. Le client à surtout besoin de :
@@ -69,12 +69,12 @@ resume_commande:
 
 | Champ visible | Pourquoi il compte | Exemple |
 | --- | --- | --- |
-| Référence | Identifier sans ambiguite la commande | `TRI-2026-00421` |
+| Référence | Identifier sans ambiguïté la commande | `TRI-2026-00421` |
 | Service | Savoir ce qui a été acheté | `session de support` |
 | Statut | Lire l'état de cycle de vie | `payée` |
 | Statut paiement | Distinguer commande et règlement | `confirmé` |
-| Facture PDF | Recuperer le justificatif | `true` |
-| Profil de facturation | Eviter une erreur administrative | `entreprise` |
+| Facture PDF | Récupérer le justificatif | `true` |
+| Profil de facturation | Éviter une erreur administrative | `entreprise` |
 
 ## Bonne habitude avant d'ouvrir un ticket
 Gardez une trace très simple de :
@@ -83,7 +83,7 @@ Gardez une trace très simple de :
 - La date d'achat
 - Le moyen de paiement
 - Le résultat attendu
-- L'étape exacte ou le flux s'est arrete
+- L'étape exacte où le flux s'est arrêtée
 
 ```markdown
 Référence commande : TRI-2026-00421
@@ -91,7 +91,7 @@ Résultat attendu : accès VM et visibilité console
 Probleme actuel : paiement accepte, service pas encore visible
 ```
 
-## Pages associees
+## Pages associées
 - `Paiements et factures`
 - `Support et exploitation`
 - `Parcours client`

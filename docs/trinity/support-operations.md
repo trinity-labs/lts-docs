@@ -1,7 +1,7 @@
 # Support et exploitation
 Le support `TRINITY` est à la fois commercial et technique. Côté public, cela signifie que la plateforme doit aider l'utilisateur à comprendre quand demander de l'aide et quoi inclure dans sa demande.
 
-## Perimetre support
+## Périmètre support
 Le support `TRINITY` peut explicitement concerner :
 
 - Les commandes et questions de facturation
@@ -13,9 +13,9 @@ Le support `TRINITY` peut explicitement concerner :
 - L'usage d'`UnyDesk`
 - L'usage d'`UnyPort`
 
-| Sujet | Libre-service possible | Support recommande |
+| Sujet | Libre-service possible | Support recommandé |
 | --- | --- | --- |
-| Facture PDF | Oui | Si le document est absent ou incoherent |
+| Facture PDF | Oui | Si le document est absent ou incohérent |
 | Paiement | Oui, pour lire l'état | Si le statut reste bloque ou contradictoire |
 | Commande | Oui, pour suivre la référence et le statut | Si la livraison ne progresse plus |
 | VM | Oui, pour lire un état simple | Si le comportement devient ambigu ou risqué |
@@ -23,7 +23,7 @@ Le support `TRINITY` peut explicitement concerner :
 | UnyDesk / UnyPort | Oui, pour utiliser la surface | Si l'accès ou l'interprétation pose problème |
 
 ## Bon format de demande support
-Une bonne demande support est concrete et brève.
+Une bonne demande support est concrète et brève.
 
 ```markdown
 Objet : VM visible mais service indisponible
@@ -56,7 +56,7 @@ df -h
 | Information à relever | Pourquoi elle aide | Exemple |
 | --- | --- | --- |
 | Référence commande | Identifier le dossier | `TRI-2026-00421` |
-| Etat paiement | Distinguer financier et technique | `confirmé` |
+| État paiement | Distinguer financier et technique | `confirmé` |
 | Nom de VM | Pointer le bon environnement | `VM-EXEMPLE01` |
 | Mode courant | Situer le contexte | `normal`, `maintenance`, `DDM` |
 | Observation console | Donner un symptôme concret | volume non monté, service absent |
@@ -73,8 +73,8 @@ Le libre-service convient pour :
 
 Le support convient pour :
 
-- Livraison de commande bloquee
-- Incoherence de paiement
+- Livraison de commande bloquée
+- Incohérence de paiement
 - État VM peu clair
 - Action de reprise avec risque sur les données
 
@@ -83,7 +83,7 @@ Le support convient pour :
 | Lire une facture | Oui | Non, sauf document manquant |
 | Vérifier une VM en ligne | Oui | Non, si l'état est clair |
 | Diagnostiquer un volume sensible | Limite | Oui |
-| Recuperer un service après incident | Limite | Oui |
+| Récupérer un service après incident | Limite | Oui |
 | Comprendre un statut contradictoire | Non | Oui |
 
 ## Surfaces à utiliser
@@ -91,4 +91,4 @@ Utilisez la bonne surface selon le besoin :
 
 - `TRINITY` Pour le compte, les commandes, les factures et le point d'entrée service
 - `UnyDesk` Pour l'assistance distante et l'interaction
-- `UnyPort` Pour l'état infr et  la supervision
+- `UnyPort` Pour l'état infra et  la supervision

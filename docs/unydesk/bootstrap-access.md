@@ -2,7 +2,7 @@
 `UnyDesk` doit résoudre deux problèmes publics avant qu'une session distante puisse commencer :
 
 - Comment le logiciel host est installé et mis en confiance
-- Comment un viewer est autorisé à atteindre ce host
+- Comment un viewer est autorisés à atteindre ce host
 
 ## Distribution du paquet host
 La première étape publique est généralement le téléchargement du paquet host. Un utilisateur choisit le bon binaire host pour le système cible puis l'installe ou le lance sur la machine qui recevra plus tard l'accès distant.
@@ -10,7 +10,7 @@ La première étape publique est généralement le téléchargement du paquet ho
 Publiquement, le chemin de distribution doit rester simple :
 
 - Cible supportée clairement visible
-- Paquet courant aisable à identifier
+- Paquet courant facile à identifier
 - Chemin d'installation ou de bootstrap évident
 - Chemin de mise à jour ou de re-téléchargement stable
 
@@ -31,7 +31,7 @@ Certains hosts peuvent imposer une approbation locale avant qu'une session dista
 
 - Une session peut être correctement routée et pourtant attendre une approbation côté host
 - Un host peut accepter ou refuser localement la demande
-- Un participant récemment approuvé peut être réautorisé sans répéter immédiatement toute l'invite
+- Un participant récemment approuvé peut être réautorisés sans répéter immédiatement toute l'invite
 - Un refus explicite peut révoquer cette autorisation mémorisée pour ce même participant
 
 ## Modes d'accès

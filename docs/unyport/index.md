@@ -1,6 +1,6 @@
 ---
 description: "Documentation publique de UnyPort, la surface de supervision Alpine Linux et Xen orientée opérateur dans l'écosystème TRINITY."
-social_image: "https://unyport.app/media/img/logos/logo-unyport-full.png"
+social_image: "https://unyport.app/média/img/logos/logo-unyport-full.png"
 ---
 
 # UnyPort
@@ -14,20 +14,20 @@ Publiquement, `UnyPort` rassemble :
 - Un accès contrôle à certaines applications internes comme `ttyd`
 - Des pages opérationnelles pour la sécurité, le stockage, le réseau et l'état système
 
-`UnyPort` fonctionne avec deux surfaces complementaires :
+`UnyPort` fonctionne avec deux surfaces complémentaires :
 
 - `TRINITY` Pour le cycle de vie client, les commandes, la facturation et les points d'entrée de service
 - `UnyDesk` Pour l'accès distant et les workflows d'assistance
 
 ## Commencer ici
-Pour une lecture pratique, l'ordre recommande est :
+Pour une lecture pratique, l'ordre recommandé est :
 
 1. `Introduction`
 2. `Architecture`
 3. `Mode d'emploi`
-4. `Acces et authentification`
-5. `Metriques et surfaces`
-6. `Deploiement`
+4. `Accès et authentification`
+5. `Métriques et surfaces`
+6. `Déploiement`
 7. `Alpine Linux et Xen`
 8. `Sécurité et exploitation`
 9. `Exemples`
@@ -36,10 +36,10 @@ Pour une lecture pratique, l'ordre recommande est :
 Connexion opérateur
   -> Tableau de bord
   -> Detection du rôle de l'hôte
-  -> Metriques et logs
+  -> Métriques et logs
   -> Sécurité et versions
   -> Proxy applicatif si nécessaire
-  -> Reglages admin si autorises
+  -> Réglages admin si autorisés
 ```
 
-Cette section décrit donc `UnyPort` comme une vraie surface d'exploitation, pas comme un theme de dashboard générique ni comme un simple dépôt source.
+Cette section décrit donc `UnyPort` comme une vraie surface d'exploitation, pas comme un thème de dashboard générique ni comme un simple dépôt source.

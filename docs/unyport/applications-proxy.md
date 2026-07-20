@@ -1,8 +1,8 @@
 # Proxy applicatif
 `UnyPort` peut exposer certaines applications internes via des reverse proxies contrôles montés sous `/proxy/<name>/`. Cela permet à l'opérateur d'entrer dans des outils internes depuis le même portail authentifié au lieu d'exposer chaque outil directement.
 
-## Declarer une application
-Les applications proxyfiees sont declarees dans `settings/config.yaml` :
+## Déclarer une application
+Les applications proxifiées sont déclarées dans `settings/config.yaml` :
 
 ```yaml
 apps:
@@ -19,19 +19,19 @@ Au runtime, le portail exposé les métadonnées via `/api/apps` et monte le pro
 ```
 
 ## Comportement du proxy
-Le reverse proxy realise une petite quantite de durcissement et de reecriture :
+Le reverse proxy réalise une petite quantité de durcissement et de réécriture :
 
 - Suppression des headers de forwarding non fiables
-- Definition de `X-Forwarded-For`, `X-Forwarded-Proto` et `X-Forwarded-Prefix`
-- Reecriture des headers `Location` pour garder les redirections sous le prefixe monté
-- Reecriture des chemins de cookies pour que les cookies backend restent scopes au proxy
+- Définition de `X-Forwarded-For`, `X-Forwarded-Proto` et `X-Forwarded-Prefix`
+- Réécriture des headers `Location` pour garder les redirections sous le préfixe monté
+- Réécriture des chemins de cookies pour que les cookies backend restent scopes au proxy
 - Redirection des réponses `401` et `403` non JSON vers la racine du portail
 
 ## Cas spécifique TTYd
-Le code applique une CSP plus permissive uniquement pour le montage `ttyd`, afin que les assets du terminal web et les flux websocket puissent fonctionner correctement. Les autres applications proxyfiees gardent le comportement durci standard.
+Le code applique une CSP plus permissive uniquement pour le montage `ttyd`, afin que les assets du terminal web et les flux websocket puissent fonctionner correctement. Les autres applications proxifiées gardent le comportement durci standard.
 
 ## Pourquoi c'est utile
-Cette couche proxy garde `UnyPort` ciblee :
+Cette couche proxy garde `UnyPort` ciblée :
 
 - Les opérateurs ont un point d'entrée authentifié unique
 - Les applications internes n'ont pas besoin de leur propre exposition publique

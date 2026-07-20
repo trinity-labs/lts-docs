@@ -1,13 +1,13 @@
 # Métriques et surfaces
-`UnyPort` est organisee autour d'un petit nombre de surfaces opérationnelles alimentees par des données live. Le backend echantillonne le système toutes les `2` secondes et pousse des snapshots en SSE, tandis que le frontend les rend dans des pages pensees pour l'opérateur.
+`UnyPort` est organisée autour d'un petit nombre de surfaces opérationnelles alimentées par des données live. Le backend échantillonne le système toutes les `2` secondes et pousse des snapshots en SSE, tandis que le frontend les rend dans des pages pensées pour l'opérateur.
 
-## Modele de données live
-Le pipeline live à quelques caracteristiques importantes :
+## Modèle de données live
+Le pipeline live à quelques caractéristiques importantes :
 
 - Un seul endpoint SSE : `/sse/system`
 - Un anneau mémoire de `60` snapshots
 - Environ `2` minutes de contexte roulant
-- Des echelles de graphes calculees côté serveur sur les `15` derniers snapshots
+- Des échelles de graphes calculées côté serveur sur les `15` derniers snapshots
 
 Cela garde un frontend léger et évite de dupliquer les calculs de télémétrie dans le navigateur.
 
@@ -16,16 +16,16 @@ Le dashboard est la première surface de lecture :
 
 - Hostname et rôle de l'hôte
 - Uptime
-- Resumes CPU et mémoire
+- Résumes CPU et mémoire
 - Raccourcis vers network, storage et security
-- Heatmap annuelle des redemarrages derivee de `startup-history.jsonl` ou de `unyport.log`
+- Heatmap annuelle des redémarrages dérivée de `startup-history.jsonl` ou de `unyport.log`
 
 ## Hypervisor
 La page hypervisor combine identité système et contexte plateforme :
 
 - Lecture de version Alpine et noyau
 - Rôle d'hôte et runtime
-- Données BIOS et carte mere lorsqu'elles existent
+- Données BIOS et carte mère lorsqu'elles existent
 - Comparaison de versions avec les tags `TRINITY` boot récupérés depuis GitHub
 - Informations hyperviseur Xen sur Dom0
 - Domaines Xen actifs sur Dom0
@@ -34,19 +34,19 @@ La page hypervisor combine identité système et contexte plateforme :
 La page resources est la surface d'inspection large :
 
 - Charge système
-- Temperatures
+- Températures
 - Top processus
-- Resume de l'inventaire packages
-- Resume des modules noyau
+- Résumé de l'inventaire packages
+- Résumé des modules noyau
 - Liste OpenRC et état des services
-- Navigation et tail des fichiers de log autorises
+- Navigation et tail des fichiers de log autorisés
 
 ## Network et storage
 La page `Network` montre :
 
 - L'interface principale
 - L'adresse IP
-- Les debits RX et TX
+- Les débits RX et TX
 - Les compteurs d'octets
 - Une carte réseau construite à partir des interfaces de l'hôte
 
@@ -63,7 +63,7 @@ La page security est une vraie surface opérationnelle dédiée, pas juste un r�
 - Des contrôles de durcissement noyau
 - Les permissions du fichier utilisateurs
 - L'état des services OpenRC
-- La presence de certains processus surveilles
+- La présence de certains processus surveilles
 - Les ports TCP à l'écoute
 
 Cela fait d'`UnyPort` plus qu'un simple lecteur de ressources. C'est aussi un lecteur compact de posture de sécurité.

@@ -8,7 +8,7 @@ La première couche est la plus visible :
 - Pages publiques
 - Offres commerciales
 - Pages contact et support
-- Creation de compte et authentification
+- Création de compte et authentification
 - Commandes, paiements et factures
 - Chat et assistance
 
@@ -27,7 +27,7 @@ Une fois le client identifié, `TRINITY` donne accès à des surfaces de service
 La plateforme doit donc gérer une logique de cycle de vie, pas seulement une logique de navigation.
 
 ## Couche 3 - VM, consoles et exploitation
-`TRINITY` ne s'arrete pas à la vente. Le site exposé aussi des usages d'exploitation :
+`TRINITY` ne s'arrêté pas à la vente. Le site expose aussi des usages d'exploitation :
 
 - Consultation d'une VM
 - Relance ou suivi d'état
@@ -41,19 +41,19 @@ Le **Data Disk Mode** est un mode d'accès spécialement utile pour intervenir s
 - La VM démarre dans un contexte réduit
 - L'objectif principal devient l'accès au disque et au système de fichiers
 - L'utilisateur peut vérifier l'état, diagnostiquer ou récupérer un environnement
-- Ce mode est adapte aux opérations de maintenance, d'analyse ou de reprise
+- Ce mode est adapté aux opérations de maintenance, d'analyse ou de reprise
 
 Autrement dit, `TRINITY` ne montre pas seulement une machine "allumée" : elle peut aussi exposer un mode de travail spécifique pour intervenir proprement sur les données et sur le système.
 
 ## Alpine Linux et Xen dans l'architecture
 Deux notions doivent être claires publiquement :
 
-- **Alpine Linux** designe le système d'exploitation léger, utilise pour sa sobriete, sa lisibilite et son adequation aux environnements techniques compacts.
-- **Xen** designe la couche d'hyperviseur qui permet d'executer et d'isoler les machines virtuelles.
+- **Alpine Linux** désigne le système d'exploitation léger, utilise pour sa sobriété, sa lisibilité et son adéquation aux environnements techniques compacts.
+- **Xen** désigne la couche d'hyperviseur qui permet d'exécuter et d'isoler les machines virtuelles.
 
-Dans `TRINITY`, cela signifie qu'un client peut commander, suivre et exploiter des services qui reposent sur une base Alpine Linux et sur une orchestration d'environnements virtualises par Xen.
+Dans `TRINITY`, cela signifie qu'un client peut commander, suivre et exploiter des services qui reposent sur une base Alpine Linux et sur une orchestration d'environnements virtualisés par Xen.
 
-## Surfaces complementaires
+## Surfaces complémentaires
 `TRINITY` s'articule avec deux services connexes :
 
 - **`UnyDesk`** pour l'accès distant et certaines opérations de prise en main
@@ -66,5 +66,5 @@ Du point de vue public, l'architecture `TRINITY` peut donc se lire ainsi :
 1. Un site qui présentée et vend
 2. Un compte client qui suit et facture
 3. Une plateforme qui relie paiement, support et services
-4. Des environnements Alpine Linux virtualises avec Xen
+4. Des environnements Alpine Linux virtualisés avec Xen
 5. Des surfaces d'exploitation comme la console, le Data Disk Mode, `UnyDesk` et `UnyPort`

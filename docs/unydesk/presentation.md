@@ -1,5 +1,5 @@
 # Présentation UnyDesk
-`UnyDesk` est la surface de bureau distant et d'assistance de la plateforme. Elle n'est pas présentée comme une collection d'outils génériques : c'est l'architecture dédiée à l'accès vivant entre un utilisateur navigateur et une machine enregistrée.
+`UnyDesk` est la surface de bureau distant et d'assistance de la plateforme. Elle n'est pas présenté comme une collection d'outils génériques : c'est l'architecture dédiée à l'accès vivant entre un utilisateur navigateur et une machine enregistrée.
 
 ## Position produit
 `UnyDesk` se place à côté des deux autres architectures :

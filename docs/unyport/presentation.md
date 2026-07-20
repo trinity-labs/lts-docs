@@ -13,10 +13,10 @@ L'interface actuelle s'organise autour de :
 - `Security`
 - `Settings`
 
-Ces pages sont alimentees par un melange de faits système statiques et de snapshots live pousses en SSE.
+Ces pages sont alimentées par un mélange de faits système statiques et de snapshots live pousses en SSE.
 
 ## Utilisateurs cibles
-`UnyPort` est pensee pour :
+`UnyPort` est pensée pour :
 
 - Les administrateurs
 - Les opérateurs
@@ -31,4 +31,4 @@ L'application distingue explicitement ces rôles afin que la même surface puiss
 - `UnyDesk` Gère l'accès distant et l'assistance
 - `UnyPort` Gère l'état d'infrastructure, l'accès proxy et le contexte opérateur
 
-Ce positionnement est cohérent avec le dépôt lui-meme, le README public et les routes runtime actuelles.
+Ce positionnement est cohérent avec le dépôt lui-même, le README public et les routes runtime actuelles.

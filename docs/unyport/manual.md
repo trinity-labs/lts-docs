@@ -7,9 +7,9 @@ Le chemin habituel est :
 1. Ouvrir l'URL `UnyPort`
 2. Se connecter avec un compte local ou OAuth
 3. Confirmer le rôle d'hôte détecte
-4. Lire le dashboard et l'historique des redemarrages
+4. Lire le dashboard et l'historique des redémarrages
 5. Passer aux pages hypervisor, network, storage ou security
-6. Ouvrir une application interne proxyfiee si besoin
+6. Ouvrir une application interne proxifiée si besoin
 7. Modifier le profil ou les réglages admin seulement si le rôle l'autorise
 
 ```text
@@ -25,7 +25,7 @@ Ouvrir le portail
 ## Avant la première utilisation
 Il faut préparer quelques informations :
 
-- La bonne URL ou l'entrée reverse proxy
+- La bonne URL ou l’entrée reverse proxy
 - Un utilisateur local ou un fournisseur OAuth configure
 - Le type d'hôte attendu : Dom0, DomU, conteneur ou hôte Alpine
 - Le fait qu'une application interne comme `ttyd` doive ou non être disponible
@@ -47,7 +47,7 @@ Le workflow devient plus opérationnel lorsqu'il faut :
 - Comparer la version Alpine ou noyau en cours avec les tags `TRINITY` boot
 - Inspecter un Dom0 et ses domaines actifs
 - Vérifier si des changements LBU ont été commits
-- Revoir des services plantes
+- Revoir des services plantés
 - Ouvrir une application terminal via `/proxy/<name>/`
 
 Les pages suivantes servent de mode d'emploi structure pour ces taches.

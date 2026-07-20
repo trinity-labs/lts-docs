@@ -1,4 +1,4 @@
-# Evolution de TRINITY
+# Évolution de TRINITY
 Cette page synthétise l'évolution fonctionnelle récente de `TRINITY` à partir des chantiers réellement menés sur la plateforme. Elle documente la surface produit visible et les flux publics, sans entrer dans les détails d'implémentation internes.
 
 ## Vue d'ensemble
@@ -43,7 +43,7 @@ Le PDF est désormais pensé comme une facture d'exploitation réellement prése
 Le tunnel de paiement a été étendu et unifié.
 
 ### Fournisseurs et modes pris en charge
-`TRINITY` exposé les flux suivants selon le type de produit :
+`TRINITY` expose les flux suivants selon le type de produit :
 
 - **Mollie** pour la carte bancaire et les abonnements récurrents
 - **PayPal** pour les paiements compatibles
@@ -86,7 +86,7 @@ L'offre `TRINITY` inclut explicitement :
 - Support **`UnyDesk`**
 - Support **`UnyPort`**
 
-Les pages commerciales ont été réécrites dans ce sens afin d'éviter un découplage artificiel entre produits, exploitation et assistance.
+Les pages commerciales ont été réécrites dans ce sens afin d’éviter un découplage artificiel entre produits, exploitation et assistance.
 
 ### Chat d'assistance
 Le chat est passé d'une modale à une vraie page dédiée, avec :
@@ -104,7 +104,7 @@ Un point important de l'évolution récente concerne les visiteurs non connecté
 - Les conversations sont réconciliées lorsqu'un compte est créé
 - Un plafond de messages est appliqué pour les invités
 
-L'objectif est d'éviter la perte d'historique entre visiteur et utilisateur authentifié tout en gardant un cadre exploitable publiquement.
+L'objectif est d’éviter la perte d'historique entre visiteur et utilisateur authentifié tout en gardant un cadre exploitable publiquement.
 
 ## Consentement, cookies et textes légaux
 La conformité visible côté front à aussi été renforcée :
@@ -150,7 +150,7 @@ La documentation a été restructurée pour distinguer :
 - Présentation produit
 - Détails d'exploitation
 
-L'objectif est d'éviter une documentation trop couplée au dépôt ou aux scripts, tout en gardant une image fidèle de la plateforme réellement exposée.
+L'objectif est d’éviter une documentation trop couplée au dépôt ou aux scripts, tout en gardant une image fidèle de la plateforme réellement exposée.
 
 ## Limites actuelles et suites attendues
 Au moment de cette synthèse, plusieurs axes restent naturellement évolutifs :

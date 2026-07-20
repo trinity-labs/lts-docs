@@ -1,7 +1,7 @@
 # Exemples
 Cette page regroupe des exemples pratiques pour des situations courantes dans `TRINITY`.
 
-## Exemple 1 - vérifier une VM nouvellement livree
+## Exemple 1 - vérifier une VM nouvellement livrée
 ```bash
 hostname
 uptime

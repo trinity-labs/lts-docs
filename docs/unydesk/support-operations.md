@@ -19,7 +19,7 @@ Objet : session UnyDesk acceptée mais pas de vidéo
 
 Session ID : 188529734844f375
 Host cible : DESKTOP-RET6DCA
-Etat observé : offered -> accepted, pas de vidéo visible
+État observé : offered -> accepted, pas de vidéo visible
 Note transport viewer : no remote answer yet / no inbound RTP / fallback manquant
 Résultat attendu : écran en direct ou fallback peer-frame
 ```
@@ -41,7 +41,7 @@ Publiquement, une session distante échoue généralement dans l'une de ces éta
 - "Session pending"
 - "Dispatch accepted but no answer"
 - "Answer applied but ICE stays checking"
-- "No inbound video RTP yet"
+- "No inbound vidéo RTP yet"
 - "Realtime track timed out"
 - "Peer frame fallback requested but no image arrived"
 

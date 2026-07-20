@@ -1,5 +1,5 @@
 # Distribution des hosts
-Le runtime host est la partie machine d'`UnyDesk`. Il identifié la machine, s'enregistre ou se reconnecte au broker et participe aux sessions distantes.
+Le runtime host est la partie machine d'`UnyDesk`. Il identifié la machine, s’enregistre ou se reconnecte au broker et participe aux sessions distantes.
 
 ## Cibles de téléchargement
 La surface de distribution publique peut fournir des packages host pour :

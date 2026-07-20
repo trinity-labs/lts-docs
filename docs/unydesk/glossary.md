@@ -1,6 +1,6 @@
 # Glossaire UnyDesk
 ## Host
-Le runtime côté machine qui s'enregistre auprès du service, reste en ligne et peut accepter ou refuser une session distante.
+Le runtime côté machine qui s’enregistre auprès du service, reste en ligne et peut accepter ou refuser une session distante.
 
 ## Viewer
 Le participant côté navigateur qui ouvre, observe et contrôle la session distante.

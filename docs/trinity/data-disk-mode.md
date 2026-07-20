@@ -2,14 +2,14 @@
 Le Data Disk Mode, souvent abrégé **DDM**, est l'une des notions techniques les plus importantes exposées publiquement par `TRINITY`.
 
 ## Ce que signifie le DDM
-Le DDM est un mode VM orienté maintenance. L'objectif n'est pas de présenter l'environnement comme un service applicatif normal, mais comme un contexte contrôle pour vérifier les données, le stockage et l'état système.
+Le DDM est un mode VM orienté maintenance. L'objectif n'est pas de présenter l'environnement comme un service applicatif normal, mais comme un contexte contrôlé pour vérifier les données, le stockage et l'état système.
 
 Dans la pratique, le DDM est utile lorsqu'il faut :
 
 - Inspecter un disque
 - Vérifier des systèmes de fichiers
 - Récupérer des données
-- Confirmer qu'un environnement casse peut encore être monté
+- Confirmer qu'un environnement cassé peut encore être monté
 - Travailler sur un service qui ne doit pas redémarrer normalement tout de suite
 
 ## Comment reconnaître le DDM
@@ -25,9 +25,9 @@ Data Disk Mode :
   comportement de reprise attendu
 ```
 
-| Critere | Mode normal | Data Disk Mode |
+| Critère | Mode normal | Data Disk Mode |
 | --- | --- | --- |
-| Priorite | Service applicatif | Donnees, stockage et reprise |
+| Priorité | Service applicatif | Données, stockage et reprise |
 | Console | Exploitation ou vérification | Maintenance et récupération |
 | Attente principale | Service disponible | Volumes lisibles et diagnostic fiable |
 | Niveau de prudence | Standard | Renforce avant toute modification |
@@ -50,12 +50,12 @@ Ces commandes aident à répondre à des questions simples :
 - Quel espace reste disponible
 - Si le système de fichiers attendu est présent
 
-| Commande | Question traitee | Type de réponse attendue |
+| Commande | Question traitée | Type de réponse attendue |
 | --- | --- | --- |
 | `lsblk` | Quels disques existent | Liste des volumes et tailles |
 | `findmnt` | Quels montages sont actifs | Arborescence des points de montage |
 | `df -h` | Quel espace est disponible | Capacité et saturation |
-| `cat /etc/fstab` | Quels montages sont prevus | Configuration de référence |
+| `cat /etc/fstab` | Quels montages sont prévus | Configuration de référence |
 
 ## Workflow typique en DDM
 ```text
@@ -78,6 +78,6 @@ Le DDM est un mode technique contrôle dont la valeur principale est la clarté,
 
 | A ne pas confondre avec | Pourquoi | Lecture correcte |
 | --- | --- | --- |
-| Redemarrage normal | Le but n'est pas de remettre vite en production | Prioriser l'inspection et la récupération |
+| Redémarrage normal | Le but n'est pas de remettre vite en production | Prioriser l'inspection et la récupération |
 | Sauvegarde complet | Le DDM n'est pas une politique de backup | Utiliser les sauvegardes dédiées si elles existent |
-| Espace de test libre | Le contexte reste sensible | Limiter les actions aux vérifications nécessaires |
+| espace de test libre | Le contexte reste sensible | Limiter les actions aux vérifications nécessaires |

@@ -40,7 +40,7 @@ Le support `TRINITY` a été élargi afin d'inclure :
 
 Ce changement à modifié à la fois les pages d'offre, la présentation publique et le positionnement général du site.
 
-## Evolution du chat
+## Évolution du chat
 Le chat d'assistance à quitté le format modale pour devenir une page dédiée avec historique :
 
 - Conversations persistantes

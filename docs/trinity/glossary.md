@@ -3,7 +3,7 @@ Ce glossaire donne une lecture compacte des termes les plus importants de `TRINI
 
 ## Termes coeur
 - `TRINITY` : Portail public et surface de cycle de vie client
-- `compte client` : Endroit ou restent visibles identité de facturation, commandes et factures
+- `compte client` : Endroit où restent visibles identité de facturation, commandes et factures
 - `commande` : Enregistrement visible côté client d'un service demande
 - `facture` : Document de facturation lie à une commande
 - `état de paiement` : État visible du règlement

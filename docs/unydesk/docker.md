@@ -49,7 +49,7 @@ Les variables suivantes pilotent les aspects publics du runtime et du packaging 
 | `UNYDESK_TURN_USERNAME` | variable d'environnement | identifiant TURN |
 | `UNYDESK_TURN_CREDENTIAL` | `<redacted>` | secret masqué dans la doc publique |
 | `UNYDESK_ENABLE_PAIRED_UPX` | `1` par défaut | active le packaging UPX des binaires associés |
-| `UNYDESK_PACK_EMBEDDED_FFMPEG` | `1` par défaut | embarque FFmpeg dans le payload Windows |
+| `UNYDESK_PACK_EMBEDDED_FFMPEG` | `1` par défaut | embarqué FFmpeg dans le payload Windows |
 | `UNYDESK_UPX_FLAGS` | variable d'environnement | surcharge les flags UPX |
 | `UNYDESK_UPX_ULTRA` | `0` par défaut | active un mode UPX plus lent si positionné à `1` |
 

@@ -1,5 +1,5 @@
 # Paiements et factures
-`TRINITY` exposé les flux de facturation et de règlement comme une partie normale du parcours client. Le but n'est pas seulement de payer, mais aussi de comprendre ce qui se passe après le paiement.
+`TRINITY` expose les flux de facturation et de règlement comme une partie normale du parcours client. Le but n'est pas seulement de payer, mais aussi de comprendre ce qui se passe après le paiement.
 
 ## Moyens de paiement
 Selon le service, `TRINITY` peut exposer :
@@ -40,16 +40,16 @@ La surface publique doit rendre lisibles les états suivants :
 ## Factures
 La facture PDF est le document de facturation visible côté client. Elle doit permettre d'identifier :
 
-- Le numero de facture
+- Le numéro de facture
 - La référence de commande
 - Le nom du client
 - Le service facture
-- L'état paye ou en attente
+- L'état payé ou en attente
 - La date de facture
 
 ```yaml
 facture:
-  numero: "INV-2026-00152"
+  numéro: "INV-2026-00152"
   reference_commande: "TRI-2026-00421"
   statut: "payée"
   export: "pdf"
@@ -74,9 +74,9 @@ Checklist paiement en attente
 ```
 
 ## Ce qui ne doit pas arriver
-Du point de vue client, un paiement refusé ou en attente ne doit pas creer :
+Du point de vue client, un paiement refusé ou en attente ne doit pas créer :
 
-- De commandes dupliquees sans raison
+- De commandes dupliquées sans raison
 - Une facture introuvable
 - Un parcours de reprise invisible
 - Une lecture impossible du statut fournisseur

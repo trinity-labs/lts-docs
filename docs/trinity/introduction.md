@@ -3,8 +3,8 @@
 
 
 ## Ce que TRINITY couvre publiquement
-- Decouverte des offres et des prestations
-- Creation de compte et connexion
+- Découverte des offres et des prestations
+- Création de compte et connexion
 - Commande et paiement
 - Factures PDF et suivi de statut
 - Support `TRINITY`, `UnyDesk` et `UnyPort`

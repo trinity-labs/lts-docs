@@ -23,7 +23,7 @@ Les utilisateurs commencent souvent par :
 Dans une session d'assistance normale, le viewer :
 
 - Ouvre la page `UnyDesk`
-- Sélectionne ou cible un host
+- Sélectionner ou cibler un host
 - Crée une session
 - Attend l'acceptation côté host
 - Voit la session passer par les états offered, accepted puis active
@@ -53,4 +53,4 @@ Quand le média temps réel direct fonctionne, l'utilisateur bénéficie de la m
 - Le transport fallback peer-frame
 - Des comportements de reprise au lieu d'un abandon immédiat
 
-Quand l'objectif est l'orchestration centrale de la plateforme, l'architecture pertinente est `TRINITY`. Quand l'objectif est le contrôle local des services, l'architecture pertinente est `UnyPort`.
+Quand l’objectif est l'orchestration centrale de la plateforme, l'architecture pertinente est `TRINITY`. Quand l’objectif est le contrôle local des services, l'architecture pertinente est `UnyPort`.

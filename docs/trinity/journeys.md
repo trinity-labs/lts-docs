@@ -1,7 +1,7 @@
 # Parcours client
 `TRINITY` organise le parcours client de bout en bout. Un même site doit permettre de passer sans rupture de la découverte d'une offre à son exploitation quotidienne. Cette logique explique l'importance donnée au compte client, au paiement, à la facture, au support et au suivi des commandes.
 
-## Decouverte et prise de contact
+## Découverte et prise de contact
 Le parcours commence généralement par :
 
 - Une landing page de service
@@ -9,7 +9,7 @@ Le parcours commence généralement par :
 - Une page de contact
 - Une page de documentation publique
 
-Le rôle de cette première étape est de qualifier le besoin et d'orienter l'utilisateur vers le bon service, le bon produit ou le bon canal d'assistance.
+Le rôle de cette première étape est de qualifier le besoin et d'orientér l'utilisateur vers le bon service, le bon produit ou le bon canal d'assistance.
 
 ## Compte client
 Une fois identifié, l'utilisateur retrouve dans `TRINITY` :
@@ -33,10 +33,10 @@ Le parcours de commande couvre :
 - La consultation du statut de commande
 - L'ouverture de la facture PDF
 
-Les paiements en attente, refusés, réussis ou annulés doivent être compréhensibles côté client. Le site exposé donc des états visuels distincts et des messages adaptés.
+Les paiements en attente, refusés, réussis ou annulés doivent être compréhensibles côté client. Le site expose donc des états visuels distincts et des messages adaptés.
 
 ## Support et assistance
-Le parcours ne s'arrête pas après l'achat. `TRINITY` relie la commande et l'exploitation au support :
+Le parcours ne s'arrêté pas après l'achat. `TRINITY` relie la commande et l'exploitation au support :
 
 - Chat d'assistance
 - Support commercial

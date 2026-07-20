@@ -4,18 +4,18 @@ Cette page est le point d'entrée pratique de `TRINITY`. Elle explique comment u
 ## Le parcours normal
 Le parcours client habituel suit cette logique :
 
-1. Decouvrir une offre
-2. Creer un compte
+1. Découvrir une offre
+2. Créer un compte
 3. Passer une commande
 4. Effectuer un paiement
 5. Consulter la facture et l'état de la commande
-6. Acceder au service associe
+6. Accéder au service associe
 7. Solliciter le support si nécessaire
 
 ```text
 Visite du site
   -> Lecture de la documentation publique
-  -> Creation du compte
+  -> Création du compte
   -> Saisie des informations de facturation
   -> Confirmation de la commande
   -> Paiement
@@ -23,22 +23,22 @@ Visite du site
   -> Usage de la VM, de la console, d'UnyDesk ou d'UnyPort si disponible
 ```
 
-| Etape | Action client | Résultat attendu |
+| Étape | Action client | Résultat attendu |
 | --- | --- | --- |
 | 1 | Consulter l'offre et la documentation | Comprendre le service et son périmètre |
-| 2 | Creer un compte | Disposer d'un espace client reutilisable |
+| 2 | Créer un compte | Disposer d'un espace client réutilisable |
 | 3 | Compléter la facturation | Permettre la commande et la facture |
 | 4 | Commander et payer | Valider l'achat ou identifier un blocage |
 | 5 | Suivre la livraison | Voir l'état du service et des accès |
-| 6 | Utiliser la surface exposée | Acceder à la VM, la console ou au support selon le cas |
+| 6 | Utiliser la surface exposée | Accéder à la VM, la console ou au support selon le cas |
 
 ## Avant de commander
-Preparez quelques informations simples :
+Préparez quelques informations simples :
 
 - Le service exact souhaite
 - L'identité de facturation
 - Le niveau de support attendu
-- Le besoin eventuel de console, de VM, d'`UnyDesk` ou d'`UnyPort`
+- Le besoin éventuel de console, de VM, d'`UnyDesk` ou d'`UnyPort`
 
 ```yaml
 preparation_client:
@@ -63,12 +63,12 @@ Selon le service, `TRINITY` peut exposer :
 
 | Surface visible | Usage principal | Quand la consulter |
 | --- | --- | --- |
-| Compte | Vérifier identite et facturation | Avant ou après commande |
+| Compte | Vérifier identité et facturation | Avant ou après commande |
 | Commandes | Suivre le cycle de vie d'un achat | Lors d'une livraison ou d'un doute de statut |
-| Factures | Telecharger les justificatifs PDF | Apres paiement ou pour la comptabilite |
+| Factures | Télécharger les justificatifs PDF | Après paiement ou pour la comptabilité |
 | VM | Lire l'état machine | Quand un service infra est actif |
 | Console | Diagnostiquer ou confirmer un état technique | En maintenance, reprise ou vérification |
-| Data Disk Mode | Inspecter les données et montages | En récupération ou maintenance ciblee |
+| Data Disk Mode | Inspecter les données et montages | En récupération ou maintenance ciblée |
 | Support | Escalader une situation | Quand le libre-service ne suffit plus |
 
 ## Quand le parcours devient plus technique

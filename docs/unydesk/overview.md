@@ -20,7 +20,7 @@ D'un point de vue public, `UnyDesk` apparaît généralement comme :
 - Des flux d'identité et de confiance côté host
 - Une surface d'état de session avec indicateurs de route, de signalisation et de transport
 
-L'utilisateur n'à pas besoin de comprendre les détails internes du broker pour utiliser le service. Ce qui compte publiquement, c'est qu'`UnyDesk` puisse :
+L'utilisateur n'a pas besoin de comprendre les détails internes du broker pour utiliser le service. Ce qui compte publiquement, c'est qu'`UnyDesk` puisse :
 
 - Identifier le host cible
 - Demander l'acceptation côté host

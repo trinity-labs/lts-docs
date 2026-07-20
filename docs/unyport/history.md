@@ -2,16 +2,16 @@
 Cette page résumé l'historique visible du projet `UnyPort` à partir du dépôt et des fichiers de release présents dans `docker_unyport`.
 
 ## 3 mai 2026 - base dashboard et réseau
-Les premiers commits du `2026-05-03` etablissent la base initiale du produit :
+Les premiers commits du `2026-05-03` établissent la base initiale du produit :
 
 - Premier travail de dashboard
 - Présentation améliorée
 - Premiers ajouts de graphe réseau et de données réseau
 
-Ces commits marquent le passage d'une idee à une vraie surface de monitoring.
+Ces commits marquent le passage d'une idée à une vraie surface de monitoring.
 
 ## 4 mai 2026 - refactor SSE
-Le `2026-05-04`, l'historique montre un refactor SSE. Ce point compte parce que l'experience produit actuelle dépend encore fortement d'une diffusion live des snapshots plutot que d'un simple refresh manuel.
+Le `2026-05-04`, l'historique montre un refactor SSE. Ce point compte parce que l'expérience produit actuelle dépend encore fortement d'une diffusion live des snapshots plutôt que d'un simple refresh manuel.
 
 ## 9 mai 2026 - cadrage dépôt et README
 Les commits du `2026-05-09` ajoutent :
@@ -20,7 +20,7 @@ Les commits du `2026-05-09` ajoutent :
 - Le travail sur le README public
 - Des corrections d'hebergement d'images
 
-C'est le moment ou `UnyPort` devient plus aisable à présenter comme projet public et pas seulement comme experience locale.
+C'est le moment où `UnyPort` devient plus facile à présenter comme projet public et pas seulement comme expérience locale.
 
 ## 30 mai 2026 - refactor packaging
 Le refactor du `2026-05-30` est l'une des étapes packaging les plus significatives dans l'historique visible :
@@ -38,7 +38,7 @@ Plusieurs commits du `2026-06-06` ajoutent :
 - Une carte de reboot style git
 - Un refactor de la carte réseau
 
-Ces changements poussent clairement `UnyPort` vers une UI opérateur plus complet qu'un simple panneau de metriques.
+Ces changements poussent clairement `UnyPort` vers une UI opérateur plus complet qu'un simple panneau de métriques.
 
 ## 7 juin 2026 - release publique v0.1.0
 Le `2026-06-07`, l'historique du dépôt montre :

@@ -18,31 +18,31 @@ Lecture pratique côté client :
 
 - Le système est volontairement sobre
 - La maintenance et la reprise restent lisibles
-- La plateforme privilégie des surfaces techniques previsibles
+- La plateforme privilégie des surfaces techniques prévisibles
 
-| Aspect Alpine Linux | Ce que le client voit | Interet pratique |
+| Aspect Alpine Linux | Ce que le client voit | Intérêt pratique |
 | --- | --- | --- |
-| Systeme leger | Console sobre et rapide | Diagnostic plus direct |
+| Système léger | Console sobre et rapide | Diagnostic plus direct |
 | Outils simples | Commandes de base lisibles | Reprise plus claire |
-| Organisation compacte | Peu d'abstraction visuelle | Lecture plus previsible |
+| Organisation compacte | Peu d'abstraction visuelle | Lecture plus prévisible |
 
 ## Xen
 Xen est la couche de virtualisation sous-jacente aux services orientés VM. Le client ne pilote pas Xen directement depuis `TRINITY`, mais Xen explique pourquoi la plateforme peut exposer :
 
-- Des machines virtuelles isolees
+- Des machines virtuelles isolées
 - Des états VM lisibles
 - Des modes maintenance et récupération
 
 ```text
 Surface client -> TRINITY
-Systeme invite -> Alpine Linux
+Système invite -> Alpine Linux
 Virtualisation -> Xen
 ```
 
-| Couche | Role | Visible depuis TRINITY |
+| Couche | Rôle | Visible depuis TRINITY |
 | --- | --- | --- |
 | `TRINITY` | Surface client et cycle de vie | Oui |
-| Alpine Linux | Systeme invite de certaines VM | Oui, via console et état système |
+| Alpine Linux | Système invite de certaines VM | Oui, via console et état système |
 | Xen | Hyperviseur et isolation | Indirectement, via les modes VM |
 
 ## Pourquoi les deux comptent ensemble
@@ -53,7 +53,7 @@ Alpine Linux et Xen forment un modèle simple :
 - `TRINITY` Fournit la surface client, le cycle de vie et le support
 
 ```yaml
-modele_plateforme:
+modèle_plateforme:
   surface_client: "TRINITY"
   systeme_invite: "Alpine Linux"
   hyperviseur: "Xen"
@@ -63,11 +63,11 @@ modele_plateforme:
     - data_disk_mode
 ```
 
-| Element | Fonction principale | Ce qu'il faut retenir |
+| Élément | Fonction principale | Ce qu'il faut retenir |
 | --- | --- | --- |
 | Alpine Linux | Faire tourner le système invite | Lire une console simple et efficace |
 | Xen | Porter et isoler la VM | Comprendre les états et modes techniques |
 | TRINITY | Orchestrer l'accès client | Relier commande, service et support |
 
 ## Ce qu'il faut retenir
-L'essentiel est simple : le client n'à pas besoin d'être spécialiste Xen. Il doit surtout comprendre assez bien le modèle pour lire un état VM, utiliser une console avec prudence et parler précisément au support.
+L'essentiel est simple : le client n'a pas besoin d'être spécialiste Xen. Il doit surtout comprendre assez bien le modèle pour lire un état VM, utiliser une console avec prudence et parler précisément au support.
