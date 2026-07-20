@@ -16,7 +16,7 @@ Le support `TRINITY` peut explicitement concerner :
 | Sujet | Libre-service possible | Support recommandé |
 | --- | --- | --- |
 | Facture PDF | Oui | Si le document est absent ou incohérent |
-| Paiement | Oui, pour lire l'état | Si le statut reste bloque ou contradictoire |
+| Paiement | Oui, pour lire l'état | Si le statut reste bloqué ou contradictoire |
 | Commande | Oui, pour suivre la référence et le statut | Si la livraison ne progresse plus |
 | VM | Oui, pour lire un état simple | Si le comportement devient ambigu ou risqué |
 | Data Disk Mode | Lecture prudente possible | Oui des qu'une action de reprise est sensible |

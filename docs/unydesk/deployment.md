@@ -35,4 +35,4 @@ Les déploiements doivent préserver :
 Si ces routes sont réécrites incorrectement, le frontend peut charger alors que le pairing host ou le routage session échoue.
 
 ## Attendu opérationnel
-Un déploiement correct doit permettre d'ouvrir l'UI, télécharger un package host, s'authentifier ou utiliser une invitation bornée, voir la présence host et créer une session sans changer les noms produits ni bascule dans les menus `TRINITY` ou `UnyPort`.
+Un déploiement correct doit permettre d'ouvrir l'UI, télécharger un package host, s'authentifier ou utiliser une invitation bornée, voir la présence host et créer une session sans changer les noms produits ni basculer dans les menus `TRINITY` ou `UnyPort`.

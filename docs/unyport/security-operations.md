@@ -8,7 +8,7 @@ La chaîne middleware applique :
 - `X-Content-Type-Options: nosniff`
 - `Referrer-Policy: strict-origin-when-cross-origin`
 - Une `Content-Security-Policy` stricte par défaut
-- `Strict-Transport-Security` En option lorsque HTTPS est active
+- `Strict-Transport-Security` En option lorsque HTTPS est activé
 
 Les requêtes qui modifient l'état passent aussi par la validation CSRF et les trusted origins.
 

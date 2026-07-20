@@ -56,7 +56,7 @@ Le comportement HTTPS et QUIC optionnel est pilote par `settings/settings.yaml` 
 - `http3.port`
 - `http3.redirect_http`
 
-Lorsque HTTP/3 est active correctement, `UnyPort` peut servir le TLS sur le port configuré et rediriger `:8800` vers ce listener TLS.
+Lorsque HTTP/3 est activé correctement, `UnyPort` peut servir le TLS sur le port configuré et rediriger `:8800` vers ce listener TLS.
 
 ## Reverse proxy et premier login
 Pour un déploiement exposé à Internet, le schéma habituel est :

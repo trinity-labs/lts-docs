@@ -62,14 +62,14 @@ La bonne action dépend du flux :
 - Relire la page commande
 - Vérifier le profil de facturation
 - Conserver la référence de paiement
-- Contacter le support si l'état reste bloque
+- Contacter le support si l'état reste bloqué
 
 ```markdown
 Checklist paiement en attente
 - Référence commande copiée
-- Facture vérifiee
-- Fournisseur de paiement note
-- Horodatage note
+- Facture vérifiée
+- Fournisseur de paiement noté
+- Horodatage noté
 - Support contacte après le delai normal
 ```
 

@@ -54,7 +54,7 @@ unavailable  -> attente ou support
 | État VM | Ce que cela signifie | Bon réflexe |
 | --- | --- | --- |
 | `online` | La VM est disponible dans son mode actuel | Vérifier le service ou la connectivité |
-| `maintenance` | Une intervention ou préparation est en cours | Éviter les changements non demandes |
+| `maintenance` | Une intervention ou préparation est en cours | Éviter les changements non demandés |
 | `récupération` | La priorité est la reprise ou la préservation | Se concentrer sur la lecture et le stockage |
 | `unavailable` | La VM ou la surface n'est pas utilisable | Attendre ou ouvrir un ticket avec contexte |
 

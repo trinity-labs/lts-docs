@@ -38,7 +38,7 @@ Après achat, le client retrouve :
 - Ses références de commande
 - Sa facture PDF
 - Ses informations de facturation
-- Certaines actions de reprise si le paiement reste en attente ou doit être relance
+- Certaines actions de reprise si le paiement reste en attente ou doit être relancé
 
 `TRINITY` affiche des états différents selon la situation : paiement réussi, paiement en attente, paiement refusé, annulation ou reprise.
 

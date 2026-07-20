@@ -27,7 +27,7 @@ Une fois le client identifié, `TRINITY` donne accès à des surfaces de service
 La plateforme doit donc gérer une logique de cycle de vie, pas seulement une logique de navigation.
 
 ## Couche 3 - VM, consoles et exploitation
-`TRINITY` ne s'arrêté pas à la vente. Le site expose aussi des usages d'exploitation :
+`TRINITY` ne s'arrête pas à la vente. Le site expose aussi des usages d'exploitation :
 
 - Consultation d'une VM
 - Relance ou suivi d'état

@@ -26,7 +26,7 @@ Ouvrir le portail
 Il faut préparer quelques informations :
 
 - La bonne URL ou l’entrée reverse proxy
-- Un utilisateur local ou un fournisseur OAuth configure
+- Un utilisateur local ou un fournisseur OAuth configuré
 - Le type d'hôte attendu : Dom0, DomU, conteneur ou hôte Alpine
 - Le fait qu'une application interne comme `ttyd` doive ou non être disponible
 

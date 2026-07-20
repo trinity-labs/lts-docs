@@ -9,7 +9,7 @@ Le parcours commence généralement par :
 - Une page de contact
 - Une page de documentation publique
 
-Le rôle de cette première étape est de qualifier le besoin et d'orientér l'utilisateur vers le bon service, le bon produit ou le bon canal d'assistance.
+Le rôle de cette première étape est de qualifier le besoin et d’orienter l'utilisateur vers le bon service, le bon produit ou le bon canal d'assistance.
 
 ## Compte client
 Une fois identifié, l'utilisateur retrouve dans `TRINITY` :
@@ -36,7 +36,7 @@ Le parcours de commande couvre :
 Les paiements en attente, refusés, réussis ou annulés doivent être compréhensibles côté client. Le site expose donc des états visuels distincts et des messages adaptés.
 
 ## Support et assistance
-Le parcours ne s'arrêté pas après l'achat. `TRINITY` relie la commande et l'exploitation au support :
+Le parcours ne s'arrête pas après l'achat. `TRINITY` relie la commande et l'exploitation au support :
 
 - Chat d'assistance
 - Support commercial
