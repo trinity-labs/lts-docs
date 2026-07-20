@@ -33,7 +33,7 @@ La facture PDF a été profondément normalisée :
 - Meilleure gestion des caractères spéciaux et accents
 - Alignement des colonnes produit, quantité, technicité et montant
 - Génération de numéros de facture lisibles
-- Détail HT, TVA'est total TTC
+- Détail HT, TVA est total TTC
 - Mentions légales et pénalités de retard
 - Rendu cohérent pour les anciens PDF régénérés
 

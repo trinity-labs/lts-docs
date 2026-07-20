@@ -29,7 +29,7 @@ Le refactor du `2026-05-30` est l'une des étapes packaging les plus significati
 - Nettoyage runtime plus large
 - Positionnement plus fort sur le binaire compact
 
-Cela aligne directement le produit avec la promesse single binary repetee dans le README.
+Cela aligne directement le produit avec la promesse single binary répétée dans le README.
 
 ## 6 juin 2026 - UI et historique de redémarrage
 Plusieurs commits du `2026-06-06` ajoutent :

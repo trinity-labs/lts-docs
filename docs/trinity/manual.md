@@ -63,7 +63,7 @@ Selon le service, `TRINITY` peut exposer :
 
 | Surface visible | Usage principal | Quand la consulter |
 | --- | --- | --- |
-| Compte | Verifier identite et facturation | Avant ou après commande |
+| Compte | Vérifier identite et facturation | Avant ou après commande |
 | Commandes | Suivre le cycle de vie d'un achat | Lors d'une livraison ou d'un doute de statut |
 | Factures | Telecharger les justificatifs PDF | Apres paiement ou pour la comptabilite |
 | VM | Lire l'état machine | Quand un service infra est actif |

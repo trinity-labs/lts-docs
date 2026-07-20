@@ -9,13 +9,13 @@ La première couche est le runtime applicatif lui-meme :
 - Un mode developpement qui sert les assets depuis le disque via `UNYPORT_ASSETS`
 - Un mode production qui embarque les assets frontend dans le binaire
 
-Dans le `docker-compose.yml` fourni, le projet est compile dans un conteneur `golang:alpine` et exposé l'application sur le port `8800`.
+Dans le `docker-compose.yml` fourni, le projet est compilé dans un conteneur `golang:alpine` et exposé l'application sur le port `8800`.
 
 ## Couche 2 - transport et routage
 La deuxieme couche est la surface de transport opérateur :
 
 - HTTP sur `:8800` par défaut
-- HTTPS et HTTP/3 en option lorsqu'ils sont configures dans `settings/settings.yaml`
+- HTTPS et HTTP/3 en option lorsqu'ils sont configurés dans `settings/settings.yaml`
 - APIs JSON sous `/api/*`
 - Métriques live via `/sse/system`
 - Proxies applicatifs sous `/proxy/<app>/`

@@ -34,6 +34,6 @@ Quand le transport temps réel est disponible, le navigateur et le host échange
 Quand le transport direct est incomplet, `UnyDesk` garde l'état de session visible et peut s'appuyer sur une livraison écran de secours au lieu d'échouer silencieusement.
 
 ## Mode session autonome
-Le mode autonome sert aux invitations limitéées. La session porte un token spécifique et ne force pas l'invité à passer par toute la surface compte.
+Le mode autonome sert aux invitations limitées. La session porte un token spécifique et ne force pas l'invité à passer par toute la surface compte.
 
 Ce mode doit être traité comme un accès borné : le token est lié au contexte de session et ne doit pas devenir une credential générale de compte.

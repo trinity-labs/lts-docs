@@ -11,7 +11,7 @@
 - Une détection explicite du rôle de l'hôte
 - Aucune dépendance à une grosse pile d'agents
 
-Dans ce dépôt, le frontend est une application monopage servie soit depuis le disque en developpement, soit embarquee dans le binaire de production.
+Dans ce dépôt, le frontend est une application monopage servie soit depuis le disque en developpement, soit embarquée dans le binaire de production.
 
 ## Ce qu'UnyPort n'est pas
 `UnyPort` n'est pas presentee comme :

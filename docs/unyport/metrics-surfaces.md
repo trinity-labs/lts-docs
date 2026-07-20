@@ -58,7 +58,7 @@ La page `Storage` montre :
 - L'état de persistance LBU sur les hôtes Alpine
 
 ## Security
-La page security est une vraie surface opérationnelle dédiée, pas juste un résumé à badges. Elle agr ege :
+La page security est une vraie surface opérationnelle dédiée, pas juste un résumé à badges. Elle agrège :
 
 - Des contrôles de durcissement noyau
 - Les permissions du fichier utilisateurs

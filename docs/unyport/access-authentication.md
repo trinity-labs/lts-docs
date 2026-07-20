@@ -61,4 +61,4 @@ Les actions d'écriture reservees aux admins incluent actuellement :
 - Supprimer un utilisateur sauf son propre compte
 - Mettre à jour ou reinitialiser le branding de l'instance
 
-Ce périmètre garde l'administration explicite et limitéée.
+Ce périmètre garde l'administration explicite et limitée.

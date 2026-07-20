@@ -81,7 +81,7 @@ Le support convient pour :
 | Situation | Libre-service | Ticket support |
 | --- | --- | --- |
 | Lire une facture | Oui | Non, sauf document manquant |
-| Verifier une VM en ligne | Oui | Non, si l'état est clair |
+| Vérifier une VM en ligne | Oui | Non, si l'état est clair |
 | Diagnostiquer un volume sensible | Limite | Oui |
 | Recuperer un service après incident | Limite | Oui |
 | Comprendre un statut contradictoire | Non | Oui |
@@ -91,4 +91,4 @@ Utilisez la bonne surface selon le besoin :
 
 - `TRINITY` Pour le compte, les commandes, les factures et le point d'entrée service
 - `UnyDesk` Pour l'assistance distante et l'interaction
-- `UnyPort` Pour l'état infra'est la supervision
+- `UnyPort` Pour l'état infr et  la supervision

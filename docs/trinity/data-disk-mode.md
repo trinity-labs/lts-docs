@@ -13,7 +13,7 @@ Dans la pratique, le DDM est utile lorsqu'il faut :
 - Travailler sur un service qui ne doit pas redémarrer normalement tout de suite
 
 ## Comment reconnaître le DDM
-L'interface rend generalement le DDM visible avec un libellé dédié et une console orientée maintenance ou récupération.
+L'interface rend généralement le DDM visible avec un libellé dédié et une console orientée maintenance ou récupération.
 
 ```text
 Mode service normal :
@@ -54,7 +54,7 @@ Ces commandes aident à répondre à des questions simples :
 | --- | --- | --- |
 | `lsblk` | Quels disques existent | Liste des volumes et tailles |
 | `findmnt` | Quels montages sont actifs | Arborescence des points de montage |
-| `df -h` | Quel espace est disponible | Capacite et saturation |
+| `df -h` | Quel espace est disponible | Capacité et saturation |
 | `cat /etc/fstab` | Quels montages sont prevus | Configuration de référence |
 
 ## Workflow typique en DDM

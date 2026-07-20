@@ -19,7 +19,7 @@ Les travaux recents ont rendu le produit plus praticable au quotidien :
 - Carte réseau refinee
 - Remontee visible des versions
 
-Ce ne sont pas de simples retouches cosmetiques. Cela change la vitesse de lecture d'un hôte par un opérateur.
+Ce ne sont pas de simples retouches cosmétiques. Cela change la vitesse de lecture d'un hôte par un opérateur.
 
 ## Lecture plateforme plus mature
 Le code actuel montre une lecture d'infrastructure plus mature que ne le laissaient penser les premières pages overview :
@@ -36,7 +36,7 @@ Le code actuel montre une lecture d'infrastructure plus mature que ne le laissai
 Le dépôt à aussi évolue dans sa façon d'être livre :
 
 - Mode developpement avec assets live
-- Build production avec assets embarques
+- Build production avec assets embarqués
 - Binaires strips
 - Compression UPX
 - HTTPS et HTTP/3 en option

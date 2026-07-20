@@ -67,7 +67,7 @@ La bonne action dépend du flux :
 ```markdown
 Checklist paiement en attente
 - Référence commande copiée
-- Facture verifiee
+- Facture vérifiee
 - Fournisseur de paiement note
 - Horodatage note
 - Support contacte après le delai normal

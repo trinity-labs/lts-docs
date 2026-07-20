@@ -40,9 +40,9 @@ brouillon -> soumise -> paiement_en_attente -> payée -> préparation -> disponi
 
 | Statut | Signification côté client | Action recommandée |
 | --- | --- | --- |
-| Brouillon | La commande n'est pas finalisée | Verifier les informations puis soumettre |
+| Brouillon | La commande n'est pas finalisée | Vérifier les informations puis soumettre |
 | Soumise | La demande existe mais n'est pas encore réglée | Attendre le paiement ou compléter le flux |
-| Paiement en attente | Le retour de paiement n'est pas confirmé | Verifier le moyen de paiement et patienter |
+| Paiement en attente | Le retour de paiement n'est pas confirmé | Vérifier le moyen de paiement et patienter |
 | Payée | Le règlement est valide | Suivre la préparation ou la livraison |
 | En préparation | Le service est en cours de traitement | Attendre la disponibilité ou vérifier les accès |
 | Disponible | Le service ou document est accessible | Utiliser la surface exposée |
@@ -70,7 +70,7 @@ resume_commande:
 | Champ visible | Pourquoi il compte | Exemple |
 | --- | --- | --- |
 | Référence | Identifier sans ambiguite la commande | `TRI-2026-00421` |
-| Service | Savoir ce qui a été achete | `session de support` |
+| Service | Savoir ce qui a été acheté | `session de support` |
 | Statut | Lire l'état de cycle de vie | `payée` |
 | Statut paiement | Distinguer commande et règlement | `confirmé` |
 | Facture PDF | Recuperer le justificatif | `true` |

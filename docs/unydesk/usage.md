@@ -42,8 +42,8 @@ Une fois la session active, le viewer navigateur peut généralement :
 L'accès autonome est utile lorsque :
 
 - Un utilisateur doit rejoindre une session sans passer par tout le portail compte
-- Un opérateur support à besoin d'une invitation étroite
-- La session doit rester limitéée à un seul contexte d'accès
+- Un opérateur support a besoin d'une invitation étroite
+- La session doit rester limitée à un seul contexte d'accès
 
 ## Usage 5 - survivre à des chemins réseau imparfaits
 Quand le média temps réel direct fonctionne, l'utilisateur bénéficie de la meilleure expérience. Quand ce n'est pas le cas, `UnyDesk` peut rester utile en combinant :

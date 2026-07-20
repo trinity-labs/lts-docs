@@ -25,7 +25,7 @@ Caracteristiques developpement :
 La même logique compose prépare aussi un binaire de production :
 
 - Les assets frontend sont copies dans `server/assets`
-- Le binaire est compile avec `-tags prod`
+- Le binaire est compilé avec `-tags prod`
 - Les symboles sont supprimes
 - `upx --lzma` Est applique dans le conteneur
 

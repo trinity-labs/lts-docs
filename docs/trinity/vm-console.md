@@ -53,7 +53,7 @@ unavailable  -> attente ou support
 
 | Etat VM | Ce que cela signifie | Bon reflexe |
 | --- | --- | --- |
-| `online` | La VM est disponible dans son mode actuel | Verifier le service ou la connectivite |
+| `online` | La VM est disponible dans son mode actuel | Vérifier le service ou la connectivité |
 | `maintenance` | Une intervention ou préparation est en cours | Eviter les changements non demandes |
 | `récupération` | La priorité est la reprise ou la préservation | Se concentrer sur la lecture et le stockage |
 | `unavailable` | La VM ou la surface n'est pas utilisable | Attendre ou ouvrir un ticket avec contexte |
@@ -66,13 +66,13 @@ Une console est puissante mais etroite dans son usage. Avant de modifier quoi qu
 - Si le support à demande une action précise
 
 ```bash
-# Verifications prudentes en premier
+# Vérifications prudentes en premier
 mount
 findmnt
 cat /etc/os-release
 ```
 
-| Verification | Pourquoi la lancer | Risque si ignoree |
+| Vérification | Pourquoi la lancer | Risque si ignoree |
 | --- | --- | --- |
 | `mount` | Voir les montages actifs | Agir sur le mauvais volume |
 | `findmnt` | Lire l'arborescence des points de montage | Confondre système et données |

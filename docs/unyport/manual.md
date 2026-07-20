@@ -16,7 +16,7 @@ Le chemin habituel est :
 Ouvrir le portail
   -> S'authentifier
   -> Lire le rôle de l'hôte
-  -> Verifier CPU / mémoire / réseau
+  -> Vérifier CPU / mémoire / réseau
   -> Inspecter Xen ou LBU
   -> Lire logs ou sécurité
   -> Escalader via TRINITY ou UnyDesk si besoin

@@ -43,8 +43,8 @@ Publiquement, `UnyDesk` peut être utilisé selon deux grands modes :
 L'accès autonome est utile lorsque :
 
 - Un utilisateur doit rejoindre une session sans passer par tout le portail compte
-- Un opérateur support à besoin d'une invitation étroite
-- La session doit rester limitéée à un seul contexte d'accès
+- Un opérateur support a besoin d'une invitation étroite
+- La session doit rester limitée à un seul contexte d'accès
 
 ## Avant d'ouvrir une session
 1. Confirmer que le bon paquet host est installé

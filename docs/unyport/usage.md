@@ -1,5 +1,5 @@
 # Utilisation d'UnyPort
-`UnyPort` est utilisée lorsque l'opérateur à besoin d'une lecture rapide de l'hôte, d'une surface d'authentification stable et d'un petit nombre de points d'entrée opérationnels. Elle n'est pas optimisée pour le commerce ni pour le parcours client. Elle est optimisée pour la lecture supervisée de l'infrastructure.
+`UnyPort` est utilisée lorsque l'opérateur a besoin d'une lecture rapide de l'hôte, d'une surface d'authentification stable et d'un petit nombre de points d'entrée opérationnels. Elle n'est pas optimisée pour le commerce ni pour le parcours client. Elle est optimisée pour la lecture supervisée de l'infrastructure.
 
 ## Usage 1 - se connecter et confirmer le contexte hôte
 Les opérateurs commencent souvent par :

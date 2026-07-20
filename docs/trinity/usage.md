@@ -55,7 +55,7 @@ Dans ce contexte, l'utilisateur peut :
 
 | Surface technique | Ce qu'on y fait | Quand l'utiliser |
 | --- | --- | --- |
-| Vue VM | Lire l'état et identifier la machine | Verification rapide |
+| Vue VM | Lire l'état et identifier la machine | Vérification rapide |
 | Console | Lancer des commandes de diagnostic | Support, maintenance, reprise |
 | DDM | Inspecter stockage et système de fichiers | Recuperation et préservation |
 
@@ -87,4 +87,4 @@ L'utilisateur n'à pas besoin d'administrer Xen directement pour utiliser `TRINI
 | --- | --- | --- |
 | `TRINITY` | Portail client et technique | Commande, paiement, VM, facture |
 | `UnyDesk` | Assistance distante | Interaction ou prise en main |
-| `UnyPort` | Visibilite infra'est supervision | Controle, état, topologie |
+| `UnyPort` | Visibilite infr et  supervision | Controle, état, topologie |
