@@ -5,7 +5,7 @@ Cette page résumé l'historique visible du projet `UnyPort` à partir du dépô
 Les premiers commits du `2026-05-03` etablissent la base initiale du produit :
 
 - Premier travail de dashboard
-- Presentation amelioree
+- Présentation améliorée
 - Premiers ajouts de graphe réseau et de données réseau
 
 Ces commits marquent le passage d'une idee à une vraie surface de monitoring.

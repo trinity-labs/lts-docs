@@ -1,5 +1,5 @@
 # Introduction
-`TRINITY` est le portail principal de `TRINITY` Edge Networks. Le site relie en une seule surface la présentation des offres, la prise de contact, le compte client, la commande, la facturation, le support, l'accès aux consoles et l'orientation vers les services associes. Pour un visiteur, `TRINITY` n'est pas un dépôt de code ni un back-office technique : c'est le point d'entrée public qui transforme une offre en service exploitable.
+`TRINITY` est le portail principal de `TRINITY` Edge Networks. Le site relie en une seule surface la présentation des offres, la prise de contact, le compte client, la commande, la facturation, le support, l'accès aux consoles et l'orientation vers les services associés. Pour un visiteur, `TRINITY` n'est pas un dépôt de code ni un back-office technique : c'est le point d'entrée public qui transforme une offre en service exploitable.
 
 
 ## Ce que TRINITY couvre publiquement

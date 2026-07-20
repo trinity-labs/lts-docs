@@ -21,7 +21,7 @@ Cette première phase sert à comprendre si le besoin relève du support `TRINIT
 - Retour de paiement
 - Consultation de la commande et de la facture
 
-Les commandes peuvent concerner du support, des prestations, des formations ou des services associes à l'infrastructure.
+Les commandes peuvent concerner du support, des prestations, des formations ou des services associés à l'infrastructure.
 
 | Usage | Surface principale | Résultat attendu |
 | --- | --- | --- |

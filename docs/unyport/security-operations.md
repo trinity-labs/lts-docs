@@ -1,8 +1,8 @@
 # Sécurité et exploitation
-`UnyPort` combine une surface web durcie avec un jeu volontairement restreint d'actions opérationnelles en écriture. L'objectif est de laisser les opérateurs inspecter, vérifier et ouvrir certains outils sans transformer le portail en porte d'administration incontrolee.
+`UnyPort` combine une surface web durcie avec un jeu volontairement restreint d'actions opérationnelles en écriture. L'objectif est de laisser les opérateurs inspecter, vérifier et ouvrir certains outils sans transformer le portail en porte d'administration incontrôlée.
 
 ## Base de sécurité web
-La chaine middleware applique :
+La chaîne middleware applique :
 
 - `X-Frame-Options: DENY`
 - `X-Content-Type-Options: nosniff`

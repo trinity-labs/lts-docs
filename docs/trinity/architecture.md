@@ -15,7 +15,7 @@ La première couche est la plus visible :
 Cette couche transforme `TRINITY` en portail client. C'est elle qui relie la promesse commerciale à l'usage réel.
 
 ## Couche 2 - surfaces de service
-Une fois le client identifie, `TRINITY` donne accès à des surfaces de service :
+Une fois le client identifié, `TRINITY` donne accès à des surfaces de service :
 
 - Suivi de commande
 - Téléchargement de facture
@@ -43,7 +43,7 @@ Le **Data Disk Mode** est un mode d'accès spécialement utile pour intervenir s
 - L'utilisateur peut vérifier l'état, diagnostiquer ou récupérer un environnement
 - Ce mode est adapte aux opérations de maintenance, d'analyse ou de reprise
 
-Autrement dit, `TRINITY` ne montre pas seulement une machine "allumee" : elle peut aussi exposer un mode de travail spécifique pour intervenir proprement sur les données et sur le système.
+Autrement dit, `TRINITY` ne montre pas seulement une machine "allumée" : elle peut aussi exposer un mode de travail spécifique pour intervenir proprement sur les données et sur le système.
 
 ## Alpine Linux et Xen dans l'architecture
 Deux notions doivent être claires publiquement :
