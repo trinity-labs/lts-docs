@@ -689,7 +689,7 @@ label[for="__toc"] > a span::before {
         font-size: 0;
         letter-spacing: -0.04rem;
         line-height: 1;
-        background: var(--md-primary-fg-color);
+        background: #000;
         box-shadow: none;
     }
 
