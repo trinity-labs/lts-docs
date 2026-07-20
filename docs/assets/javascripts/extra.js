@@ -313,7 +313,7 @@ function initTrinityDocsChrome() {
       const anchor = searchToggle || headerInner.querySelector(".md-search") || headerInner.querySelector(".md-header__title");
 
       if (anchor) {
-        anchor.insertAdjacentElement(searchToggle ? "beforebegin" : "afterend", switcher);
+        anchor.insertAdjacentElement("afterend", switcher);
       } else if (switcher.parentElement !== headerInner) {
         headerInner.appendChild(switcher);
       }
