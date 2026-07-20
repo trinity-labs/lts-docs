@@ -799,8 +799,8 @@ label[for="__toc"] > a span::before {
         margin: 0;
     }
 
-    .md-sidebar--primary .md-nav--primary .md-nav__icon {
-        margin: 0 !important;
+    [dir=ltr] .md-nav--primary .md-nav__link .md-nav__icon {
+        margin-right: -.2rem;
         color: #3e3aab;
     }
 
