@@ -1,5 +1,5 @@
 # Deploiement
-Le dépôt `docker_unyport` fournit a la fois l'arbre source et un modele runtime conteneurise fonctionnel. L'histoire de déploiement reste volontairement simple : une application Go, un port principal d'écoute et un petit répertoire `settings/` a côté du binaire.
+Le dépôt `docker_unyport` fournit a la fois l'arbre source et un modèle runtime conteneurise fonctionnel. L'histoire de déploiement reste volontairement simple : une application Go, un port principal d'écoute et un petit répertoire `settings/` a côté du binaire.
 
 ## Arborescence utile
 Les chemins importants sont :
@@ -17,7 +17,7 @@ Le compose fourni demarre un conteneur `golang:alpine` et compile le projet au l
 Caracteristiques developpement :
 
 - Les assets frontend sont servis depuis le disque via `UNYPORT_ASSETS`
-- Les caches Go module et build sont montes en volumes nommes
+- Les caches Go module et build sont montés en volumes nommes
 - Le port exposé par défaut est `8800:8800`
 - Le conteneur resout `host.docker.internal` via `host-gateway`
 

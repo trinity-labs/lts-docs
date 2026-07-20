@@ -1,5 +1,5 @@
 # Data Disk Mode
-Le Data Disk Mode, souvent abrege **DDM**, est l'une des notions techniques les plus importantes exposees publiquement par `TRINITY`.
+Le Data Disk Mode, souvent abrégé **DDM**, est l'une des notions techniques les plus importantes exposées publiquement par `TRINITY`.
 
 ## Ce que signifie le DDM
 Le DDM est un mode VM orienté maintenance. L'objectif n'est pas de présenter l'environnement comme un service applicatif normal, mais comme un contexte contrôle pour vérifier les données, le stockage et l'état système.
@@ -9,7 +9,7 @@ Dans la pratique, le DDM est utile lorsqu'il faut :
 - Inspecter un disque
 - Vérifier des systèmes de fichiers
 - Récupérer des données
-- Confirmer qu'un environnement casse peut encore être monte
+- Confirmer qu'un environnement casse peut encore être monté
 - Travailler sur un service qui ne doit pas redemarrer normalement tout de suite
 
 ## Comment reconnaitre le DDM

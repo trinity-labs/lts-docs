@@ -1,5 +1,5 @@
 # Presentation d'UnyPort
-`UnyPort` est l'application de contrôle et de supervision exposee autour de l'infrastructure `TRINITY`. Elle est orientée opérateur, pas parcours commercial grand public. Sa valeur produit repose sur la clarté : un point d'entrée, un modele de session, une lecture d'hôte et un petit nombre de pages opérationnelles ciblees.
+`UnyPort` est l'application de contrôle et de supervision exposée autour de l'infrastructure `TRINITY`. Elle est orientée opérateur, pas parcours commercial grand public. Sa valeur produit repose sur la clarté : un point d'entrée, un modèle de session, une lecture d'hôte et un petit nombre de pages opérationnelles ciblées.
 
 
 ## Pages visibles

@@ -9,11 +9,11 @@ Ce glossaire donne une lecture compacte des termes les plus importants de `TRINI
 - `état de paiement` : État visible du reglement
 
 ## Termes VM
-- `VM` : Machine virtuelle exposee via la plateforme lorsque le service l'autorise
+- `VM` : Machine virtuelle exposée via la plateforme lorsque le service l'autorise
 - `console` : Accès texte direct a une VM
 - `online` : La machine répond dans son mode courant
 - `maintenance` : La machine est accessible pour intervention technique
-- `recovery` : La machine est exposee surtout pour inspection ou restauration
+- `récupération` : La machine est exposée surtout pour inspection ou restauration
 
 ## Termes plateforme
 - `Alpine Linux` : Système d'exploitation léger utilise dans de nombreux environnements

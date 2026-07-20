@@ -35,7 +35,7 @@ Pour une lecture pratique, l'ordre recommande est :
 ```text
 Connexion opérateur
   -> Tableau de bord
-  -> Detection du rôle de l'hote
+  -> Detection du rôle de l'hôte
   -> Metriques et logs
   -> Securite et versions
   -> Proxy applicatif si nécessaire

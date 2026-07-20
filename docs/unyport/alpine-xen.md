@@ -2,7 +2,7 @@
 `UnyPort` n'est pas neutre vis-a-vis de sa plateforme. Le code comme le README montrent clairement que le produit est faconne autour d'Alpine Linux et d'une infrastructure orientée Xen, surtout lorsque la clarté du rôle d'hôte compte plus qu'une orchestration abstraite.
 
 ## Pourquoi Alpine Linux compte ici
-Alpine Linux colle au modele `UnyPort` parce qu'il est :
+Alpine Linux colle au modèle `UnyPort` parce qu'il est :
 
 - Petit
 - Previsible
@@ -40,7 +40,7 @@ Cette distinction change ce que voit l'opérateur :
 L'UI est explicitement construite autour de ces differences.
 
 ## LBU et persistance
-`UnyPort` comprend aussi le modele Alpine `lbu` :
+`UnyPort` comprend aussi le modèle Alpine `lbu` :
 
 - Presence ou absence de LBU
 - Existence de la derniere archive

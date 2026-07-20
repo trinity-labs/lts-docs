@@ -1,5 +1,5 @@
 # Proxy applicatif
-`UnyPort` peut exposer certaines applications internes via des reverse proxies contrôles montes sous `/proxy/<name>/`. Cela permet a l'opérateur d'entrer dans des outils internes depuis le même portail authentifie au lieu d'exposer chaque outil directement.
+`UnyPort` peut exposer certaines applications internes via des reverse proxies contrôles montés sous `/proxy/<name>/`. Cela permet a l'opérateur d'entrer dans des outils internes depuis le même portail authentifie au lieu d'exposer chaque outil directement.
 
 ## Declarer une application
 Les applications proxyfiees sont declarees dans `settings/config.yaml` :
@@ -23,7 +23,7 @@ Le reverse proxy realise une petite quantite de durcissement et de reecriture :
 
 - Suppression des headers de forwarding non fiables
 - Definition de `X-Forwarded-For`, `X-Forwarded-Proto` et `X-Forwarded-Prefix`
-- Reecriture des headers `Location` pour garder les redirections sous le prefixe monte
+- Reecriture des headers `Location` pour garder les redirections sous le prefixe monté
 - Reecriture des chemins de cookies pour que les cookies backend restent scopes au proxy
 - Redirection des réponses `401` et `403` non JSON vers la racine du portail
 

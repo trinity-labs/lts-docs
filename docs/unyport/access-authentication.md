@@ -1,5 +1,5 @@
 # Accès et authentification
-`UnyPort` utilise un modele d'authentification compact construit autour des utilisateurs locaux, des cookies JWT et de la protection CSRF. L'application supporte aussi la connexion OAuth via GitHub et GitLab lorsque les réglages fournisseurs sont completes.
+`UnyPort` utilise un modèle d'authentification compact construit autour des utilisateurs locaux, des cookies JWT et de la protection CSRF. L'application supporte aussi la connexion OAuth via GitHub et GitLab lorsque les réglages fournisseurs sont completes.
 
 ## Utilisateurs locaux et bootstrap
 La source d'identité principale est `settings/users.json`.

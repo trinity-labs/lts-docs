@@ -1,5 +1,5 @@
 # Vue d'ensemble d'UnyPort
-`UnyPort` est l'architecture de pilotage des services de la plateforme, exposee comme un portail opérateur compact. Elle combine authentification, visibilité live sur l'hôte, contexte Alpine et Xen, proxy applicatif contrôle et une petite surface d'administration pour les utilisateurs et le branding.
+`UnyPort` est l'architecture de pilotage des services de la plateforme, exposée comme un portail opérateur compact. Elle combine authentification, visibilité live sur l'hôte, contexte Alpine et Xen, proxy applicatif contrôle et une petite surface d'administration pour les utilisateurs et le branding.
 
 Elle existe pour exposer :
 

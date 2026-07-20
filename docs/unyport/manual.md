@@ -15,7 +15,7 @@ Le chemin habituel est :
 ```text
 Ouvrir le portail
   -> S'authentifier
-  -> Lire le rôle de l'hote
+  -> Lire le rôle de l'hôte
   -> Verifier CPU / mémoire / réseau
   -> Inspecter Xen ou LBU
   -> Lire logs ou securite

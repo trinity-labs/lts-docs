@@ -14,7 +14,7 @@ Lecture attendue :
 - La machine répond
 - L'uptime est cohérent
 - Le réseau est visible
-- Le système principal est monte
+- Le système principal est monté
 
 ## Exemple 2 - identifier un contexte DDM
 ```bash
@@ -47,7 +47,7 @@ Action demandee : confirmer si le reglement est encore en attente
   "problème": "service pas encore revenu en mode normal",
   "indices": [
     "hostname ok",
-    "système de fichiers monte",
+    "système de fichiers monté",
     "application non demarree"
   ]
 }

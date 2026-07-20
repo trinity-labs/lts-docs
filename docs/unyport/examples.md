@@ -28,7 +28,7 @@ Un opérateur ouvre la page hypervisor et compare :
 - Le noyau courant
 - Les dernieres versions spécifiques au rôle retournees par `/api/versions`
 
-Cela donne un signal léger de mise a jour sans transformer `UnyPort` en gestionnaire de paquets complet.
+Cela donne un signal léger de mise à jour sans transformer `UnyPort` en gestionnaire de paquets complet.
 
 ## Exemple 4 - entrer dans un terminal proxyfie
 Si `ttyd` est declare dans `settings/config.yaml`, l'opérateur peut ouvrir :

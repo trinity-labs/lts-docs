@@ -20,7 +20,7 @@ La protection actuelle comprend :
 - Des cookies d'état OAuth pour les callbacks fournisseur
 - Une separation nette entre rôles lecture seule et rôles avec écriture
 
-Le modele reste compact, mais il est cohérent et visible dans les chemins réellement utilises par le portail.
+Le modèle reste compact, mais il est cohérent et visible dans les chemins réellement utilises par le portail.
 
 ## Page security
 La page security agrege des contrôles autour de :
@@ -49,7 +49,7 @@ Operationnellement, `UnyPort` est la plus forte lorsqu'elle sert a :
 Ce n'est pas encore le lieu d'un cycle de vie complet de VM ni d'une orchestration de cluster. Le README public présentée explicitement le produit actuel comme une `V1`, orientée monitoring d'abord, avec des workflows Xen plus larges attendus plus tard.
 
 ## Logs et limites de support
-Le portail peut exposer certains fichiers de log, l'état des services et des signaux de sécurité hote. Lorsque le besoin depasse ce périmètre :
+Le portail peut exposer certains fichiers de log, l'état des services et des signaux de sécurité hôte. Lorsque le besoin dépasse ce périmètre :
 
 - Utiliser `TRINITY` pour les actions de cycle de vie client et service
 - Utiliser `UnyDesk` pour l'accès distant ou l'assistance

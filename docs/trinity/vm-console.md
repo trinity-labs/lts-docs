@@ -13,7 +13,7 @@ Une page orientée VM peut exposer :
 | Information visible | Utilite immediate | Lecture attendue |
 | --- | --- | --- |
 | Nom de VM | Identifier la bonne machine | Nom stable ou référence technique |
-| Etat | Savoir si la VM répond | `online`, `maintenance`, `recovery`, `unavailable` |
+| Etat | Savoir si la VM répond | `online`, `maintenance`, `récupération`, `unavailable` |
 | Adresse IP | Reconnaitre la cible réseau | IP privee ou technique selon le service |
 | Console | Ouvrir un diagnostic direct | Acces reserve aux cas autorises |
 | Ressources | Situer sommairement la VM | CPU, RAM, disque ou indicateurs proches |
@@ -24,7 +24,7 @@ Une page orientée VM peut exposer :
 L'accès console sert a :
 
 - Vérifier l'état de boot
-- Inspecter un système de fichiers monte
+- Inspecter un système de fichiers monté
 - Lire un hostname ou une IP
 - Confirmer si une reprise est possible
 
@@ -41,13 +41,13 @@ Une page VM publique doit se lire simplement :
 
 - `online` Signifie que la VM répond dans son mode actuel
 - `maintenance` Signifie qu'une intervention technique est en cours ou possible
-- `recovery` Signifie que la priorité est l'accès aux données
+- `récupération` Signifie que la priorité est l'accès aux données
 - `unavailable` Signifie qu'il faut attendre ou solliciter le support
 
 ```text
 online       -> accès normal ou technique attendu
 maintenance  -> contexte d'intervention
-recovery     -> contexte de preservation et de diagnostic
+récupération     -> contexte de preservation et de diagnostic
 unavailable  -> attente ou support
 ```
 
@@ -55,7 +55,7 @@ unavailable  -> attente ou support
 | --- | --- | --- |
 | `online` | La VM est disponible dans son mode actuel | Verifier le service ou la connectivite |
 | `maintenance` | Une intervention ou preparation est en cours | Eviter les changements non demandes |
-| `recovery` | La priorite est la reprise ou la preservation | Se concentrer sur la lecture et le stockage |
+| `récupération` | La priorite est la reprise ou la preservation | Se concentrer sur la lecture et le stockage |
 | `unavailable` | La VM ou la surface n'est pas utilisable | Attendre ou ouvrir un ticket avec contexte |
 
 ## Prudence opérationnelle

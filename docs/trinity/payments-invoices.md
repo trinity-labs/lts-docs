@@ -1,5 +1,5 @@
 # Paiements et factures
-`TRINITY` exposé les flux de facturation et de reglement comme une partie normale du parcours client. Le but n'est pas seulement de payer, mais aussi de comprendre ce qui se passe apres le paiement.
+`TRINITY` exposé les flux de facturation et de reglement comme une partie normale du parcours client. Le but n'est pas seulement de payer, mais aussi de comprendre ce qui se passe après le paiement.
 
 ## Moyens de paiement
 Selon le service, `TRINITY` peut exposer :
@@ -12,7 +12,7 @@ Selon le service, `TRINITY` peut exposer :
 Chaque méthode implique une attente opérationnelle differente. Les paiements en ligne reviennent souvent vite. Les flux manuels peuvent rester en attente jusqu'a confirmation du reglement.
 
 ```text
-carte ou PayPal -> retour rapide -> commande mise a jour vite
+carte ou PayPal -> retour rapide -> commande mise à jour vite
 virement        -> état en attente -> confirmation de reglement plus tard
 Litecoin        -> état en attente -> verification d'une référence de paiement
 ```
@@ -58,7 +58,7 @@ facture:
 ## Si le paiement reste en attente
 La bonne action dépend du flux :
 
-- Attendre le retour fournisseur si le parcours est encore ouvert
+- Attendre le retour fournisseur si le parcours est encore ouvrеt
 - Relire la page commande
 - Vérifier le profil de facturation
 - Conserver la référence de paiement
@@ -70,7 +70,7 @@ Checklist paiement en attente
 - Facture verifiee
 - Fournisseur de paiement note
 - Horodatage note
-- Support contacte apres le delai normal
+- Support contacte après le delai normal
 ```
 
 ## Ce qui ne doit pas arriver

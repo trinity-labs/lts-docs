@@ -36,7 +36,7 @@ La plateforme doit donc gerer une logique de cycle de vie, pas seulement une log
 
 
 ## Data Disk Mode
-Le **Data Disk Mode** est un mode d'accès specialement utile pour intervenir sur une VM sans la présenter comme un environnement applicatif normal. Publiquement, on peut l'expliquer comme un mode de maintenance ou de récupération :
+Le **Data Disk Mode** est un mode d'accès spécialement utile pour intervenir sur une VM sans la présenter comme un environnement applicatif normal. Publiquement, on peut l'expliquer comme un mode de maintenance ou de récupération :
 
 - La VM demarre dans un contexte réduit
 - L'objectif principal devient l'accès au disque et au système de fichiers

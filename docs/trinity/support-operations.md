@@ -59,7 +59,7 @@ df -h
 | Etat paiement | Distinguer financier et technique | `confirme` |
 | Nom de VM | Pointer le bon environnement | `VM-EXEMPLE01` |
 | Mode courant | Situer le contexte | `normal`, `maintenance`, `DDM` |
-| Observation console | Donner un symptome concret | volume non monte, service absent |
+| Observation console | Donner un symptome concret | volume non monté, service absent |
 
 ## Support ou libre-service
 `TRINITY` cherche a exposer assez d'information pour permettre une action prudente sans transformer chaque situation en ticket support.
@@ -83,7 +83,7 @@ Le support convient pour :
 | Lire une facture | Oui | Non, sauf document manquant |
 | Verifier une VM en ligne | Oui | Non, si l'état est clair |
 | Diagnostiquer un volume sensible | Limite | Oui |
-| Recuperer un service apres incident | Limite | Oui |
+| Recuperer un service après incident | Limite | Oui |
 | Comprendre un statut contradictoire | Non | Oui |
 
 ## Surfaces a utiliser

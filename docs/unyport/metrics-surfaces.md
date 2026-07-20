@@ -52,7 +52,7 @@ La page `Network` montre :
 
 La page `Storage` montre :
 
-- Les disques montes
+- Les disques montés
 - L'espace utilise et libre
 - Le type de système de fichiers
 - L'état de persistance LBU sur les hôtes Alpine

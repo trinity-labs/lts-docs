@@ -6,7 +6,7 @@
 `UnyPort` repose sur quelques contraintes fortes :
 
 - Un runtime Go unique
-- Un modele de déploiement minimal
+- Un modèle de déploiement minimal
 - Des lectures directes du noyau et du système de fichiers
 - Une détection explicite du rôle de l'hôte
 - Aucune dependance a une grosse pile d'agents

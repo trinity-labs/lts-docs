@@ -30,7 +30,7 @@ Visite du site
 | 3 | Completer la facturation | Permettre la commande et la facture |
 | 4 | Commander et payer | Valider l'achat ou identifier un blocage |
 | 5 | Suivre la livraison | Voir l'état du service et des accès |
-| 6 | Utiliser la surface exposee | Acceder a la VM, la console ou au support selon le cas |
+| 6 | Utiliser la surface exposée | Acceder a la VM, la console ou au support selon le cas |
 
 ## Avant de commander
 Preparez quelques informations simples :
@@ -63,7 +63,7 @@ Selon le service, `TRINITY` peut exposer :
 
 | Surface visible | Usage principal | Quand la consulter |
 | --- | --- | --- |
-| Compte | Verifier identite et facturation | Avant ou apres commande |
+| Compte | Verifier identite et facturation | Avant ou après commande |
 | Commandes | Suivre le cycle de vie d'un achat | Lors d'une livraison ou d'un doute de statut |
 | Factures | Telecharger les justificatifs PDF | Apres paiement ou pour la comptabilite |
 | VM | Lire l'état machine | Quand un service infra est actif |
@@ -81,7 +81,7 @@ Certaines offres vont plus loin qu'un simple achat. Le parcours devient plus op�
 - Confirmer un état de service avant escalade support
 
 ```bash
-# Exemple de session console une fois l'accès ouvert
+# Exemple de session console une fois l'accès ouvrеt
 hostname
 uptime
 ip addr

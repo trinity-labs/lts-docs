@@ -9,7 +9,7 @@ Le compte client sert a :
 - Consulter les commandes actives et passees
 - Relancer certaines actions de paiement
 - Telecharger les factures
-- Retrouver la bonne surface de service apres achat
+- Retrouver la bonne surface de service après achat
 
 ```json
 {
@@ -45,7 +45,7 @@ brouillon -> soumise -> paiement_en_attente -> payee -> preparation -> disponibl
 | Paiement en attente | Le retour de paiement n'est pas confirme | Verifier le moyen de paiement et patienter |
 | Payee | Le reglement est valide | Suivre la preparation ou la livraison |
 | En preparation | Le service est en cours de traitement | Attendre la disponibilité ou vérifier les accès |
-| Disponible | Le service ou document est accessible | Utiliser la surface exposee |
+| Disponible | Le service ou document est accessible | Utiliser la surface exposée |
 | Annulee ou expiree | Le flux est clos sans livraison | Recommencer ou contacter le support |
 
 ## Ce que le client doit lire dans une commande
