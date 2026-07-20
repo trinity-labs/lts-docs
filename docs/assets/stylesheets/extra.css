@@ -731,6 +731,11 @@ label[for="__toc"] > a span::before {
         font-weight: 700;
     }
 
+    .md-nav--primary .md-nav__title[for="__drawer"] {
+        color: var(--md-primary-bg-color);
+        font-weight: 700;
+    }
+
     .md-sidebar--primary label.md-nav__title[for="__drawer"]::before {
         content: "Menu";
         display: block;
