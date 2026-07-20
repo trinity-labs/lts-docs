@@ -709,6 +709,10 @@ label[for="__toc"] > a span::before {
         margin: 0;
     }
 
+    .md-sidebar--primary .md-nav--primary .md-nav__icon {
+        margin: 0 !important;
+    }
+
     .md-sidebar--primary .md-nav--primary > .md-nav__list > .md-nav__item--nested > .md-nav > .md-nav__list {
         padding: 0.12rem 0 0 !important;
     }

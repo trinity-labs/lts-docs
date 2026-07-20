@@ -21,6 +21,18 @@ function updateTrinityContentBorders() {
   content.classList.toggle("trinity-content--framed", hasPrimarySidebar && hasSecondarySidebar);
 }
 
+function expandTrinityDesktopNavigation() {
+  const sidebar = document.querySelector(".md-sidebar--primary");
+  if (!sidebar || !window.matchMedia("(min-width: 76.25em)").matches) return;
+
+  sidebar.querySelectorAll("input.md-nav__toggle").forEach((toggle) => {
+    toggle.checked = true;
+  });
+  sidebar.querySelectorAll("nav.md-nav[aria-expanded]").forEach((nav) => {
+    nav.setAttribute("aria-expanded", "true");
+  });
+}
+
 function buildTrinityLanguageHref(lang, fallbackHref) {
   const products = new Set(["trinity", "unydesk", "unyport"]);
   const rawPath = window.location.pathname || "/";
@@ -245,6 +257,7 @@ function initTrinityDocsChrome() {
     },
   };
   const copy = footerCopy[locale] || footerCopy.en;
+  expandTrinityDesktopNavigation();
   localizeTrinityNavigationLinks(locale);
 
   const headerInner = document.querySelector(".md-header__inner");
