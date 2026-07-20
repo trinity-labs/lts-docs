@@ -296,6 +296,10 @@ function initTrinityDocsChrome() {
         anchor.hreflang = lang;
         anchor.setAttribute("aria-label", localeLabels[lang] || lang);
         anchor.title = localeLabels[lang] || lang;
+        anchor.addEventListener("click", () => {
+          const searchToggle = document.querySelector("input#__search");
+          if (searchToggle) searchToggle.checked = false;
+        });
 
         const flag = document.createElement("span");
         flag.className = "trinity-lang-switcher__flag";
@@ -305,11 +309,11 @@ function initTrinityDocsChrome() {
         switcher.appendChild(anchor);
       });
 
-      const search = headerInner.querySelector(".md-search");
-      const anchor = search || headerInner.querySelector(".md-header__title");
+      const searchToggle = headerInner.querySelector('label.md-header__button[for="__search"]');
+      const anchor = searchToggle || headerInner.querySelector(".md-search") || headerInner.querySelector(".md-header__title");
 
       if (anchor) {
-        anchor.insertAdjacentElement("afterend", switcher);
+        anchor.insertAdjacentElement(searchToggle ? "beforebegin" : "afterend", switcher);
       } else if (switcher.parentElement !== headerInner) {
         headerInner.appendChild(switcher);
       }
