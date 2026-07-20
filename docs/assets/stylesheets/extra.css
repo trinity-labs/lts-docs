@@ -712,7 +712,11 @@ label[for="__toc"] > a span::before {
     }
 
     .md-sidebar--primary label.md-nav__title[for="__drawer"] {
+        background: #000;
+        background-color: #000;
+        color: var(--md-primary-bg-color);
         font-size: 0;
+        font-weight: 700;
     }
 
     .md-sidebar--primary label.md-nav__title[for="__drawer"]::before {
