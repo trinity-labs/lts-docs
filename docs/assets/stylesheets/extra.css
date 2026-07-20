@@ -633,8 +633,8 @@ label[for="__toc"] > a span::before {
 .trinity-footer__logo {
     display: block;
     width: auto;
-    height: 0.72rem;
-    opacity: 0.72;
+    height: 1rem;
+    opacity: 0.66;
 }
 
 .trinity-footer__brand span {
