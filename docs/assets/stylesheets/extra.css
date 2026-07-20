@@ -710,29 +710,7 @@ label[for="__toc"] > a span::before {
     }
 
     .md-nav--primary .md-nav__title .md-nav__icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex: 0 0 1.6rem;
-        width: 1.6rem;
-        height: 1.6rem;
-        margin: 0 !important;
-    }
-
-    .md-nav--primary .md-nav__title .md-nav__icon::after {
-        content: "";
-        display: block;
-        width: 77%;
-        height: 85%;
-        background-color: currentColor;
-        -webkit-mask-image: var(--md-nav-icon--prev);
-        mask-image: var(--md-nav-icon--prev);
-        -webkit-mask-position: center;
-        mask-position: center;
-        -webkit-mask-repeat: no-repeat;
-        mask-repeat: no-repeat;
-        -webkit-mask-size: contain;
-        mask-size: contain;
+        display: none;
     }
 
     .md-sidebar--primary .md-nav--primary > .md-nav__list {
