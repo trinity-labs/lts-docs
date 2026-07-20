@@ -245,11 +245,6 @@ function initTrinityDocsChrome() {
     },
   };
   const copy = footerCopy[locale] || footerCopy.en;
-  const sidebar = document.querySelector(".md-sidebar--primary");
-  if (sidebar) {
-    sidebar.querySelectorAll("input.md-nav__toggle").forEach(t => (t.checked = true));
-    sidebar.querySelectorAll("nav.md-nav[aria-expanded]").forEach(n => n.setAttribute("aria-expanded", "true"));
-  }
   localizeTrinityNavigationLinks(locale);
 
   const headerInner = document.querySelector(".md-header__inner");
