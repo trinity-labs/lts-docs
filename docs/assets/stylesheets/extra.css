@@ -805,10 +805,6 @@ label[for="__toc"] > a span::before {
         line-height: 1.2;
     }
 
-    .md-sidebar--primary .md-nav__link--active {
-        background: rgba(62, 58, 171, 0.08);
-    }
-
     .trinity-sidebar-release {
         margin-top: 1.1rem;
         padding-top: 0.75rem;
