@@ -245,6 +245,15 @@ a.md-nav__link.md-nav__link--active {
     color:#3e3aab;
 }
 
+.md-nav__link {
+    align-items: center;
+    display: flex;
+    gap: .4rem;
+    margin-top: .625em;
+    scroll-snap-align: start;
+    transition: color 125ms;
+}
+
 .md-search__form {
     background-color: #5f5f5f42;
     border-radius: 6px !important;
@@ -756,12 +765,11 @@ label[for="__toc"] > a span::before {
     .md-sidebar--primary .md-nav--primary > .md-nav__list > .md-nav__item--nested {
         margin: 0;
         padding: 0.65rem 0 0;
-        border-top: 1px solid rgba(62, 58, 171, 0.14);
+        border-top: 0;
     }
 
     .md-sidebar--primary .md-nav--primary > .md-nav__list > .md-nav__item--nested:first-child {
         padding-top: 0;
-        border-top: 0;
     }
 
     .md-sidebar--primary .md-nav--primary > .md-nav__list > .md-nav__item--nested > .md-nav__link.md-nav__container > a.md-nav__link,
