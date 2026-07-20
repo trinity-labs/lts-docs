@@ -1,5 +1,5 @@
 # Historique
-`UnyDesk` à été séparé comme architecture propre parce que l'accès distant à des contraintes différentes de l'exploitation locale et de la gestion du cycle client.
+`UnyDesk` a été séparé comme architecture propre parce que l'accès distant à des contraintes différentes de l'exploitation locale et de la gestion du cycle client.
 
 ## Direction initiale
 La première direction était de garder le produit petit et explicite :

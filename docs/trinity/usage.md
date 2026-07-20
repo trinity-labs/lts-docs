@@ -23,7 +23,7 @@ Cette première phase sert à comprendre si le besoin relève du support `TRINIT
 
 Les commandes peuvent concerner du support, des prestations, des formations ou des services associes à l'infrastructure.
 
-| Usage | Surface principale | Resultat attendu |
+| Usage | Surface principale | Résultat attendu |
 | --- | --- | --- |
 | Decouverte | Site public et documentation | Comprendre l'offre |
 | Commande | Compte, panier, paiement | Finaliser l'achat |
@@ -87,4 +87,4 @@ L'utilisateur n'à pas besoin d'administrer Xen directement pour utiliser `TRINI
 | --- | --- | --- |
 | `TRINITY` | Portail client et technique | Commande, paiement, VM, facture |
 | `UnyDesk` | Assistance distante | Interaction ou prise en main |
-| `UnyPort` | Visibilite infra et supervision | Controle, état, topologie |
+| `UnyPort` | Visibilite infra'est supervision | Controle, état, topologie |

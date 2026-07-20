@@ -31,7 +31,7 @@ Le portail est donc utile comme tableau de bord opérationnel live avant même q
 - Combien de domaines tournent et quelle mémoire ils consomment
 
 ## Usage 4 - inspecter services, logs et sécurité
-Les surfaces resources et security servent au depannage courant :
+Les surfaces resources et security servent au dépannage courant :
 
 - Revoir les services OpenRC
 - Tailer les fichiers de log autorises

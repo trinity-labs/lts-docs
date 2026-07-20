@@ -19,7 +19,7 @@ Ce glossaire donne une lecture compacte des termes les plus importants d'`UnyPor
 - `SSE` : Server-sent events utilises pour les snapshots système live
 - `proxy app` : Application interne exposée sous `/proxy/<name>/`
 - `startup history` : Timeline de redemarrages stockee dans `startup-history.jsonl`
-- `trusted origins` : Hôtes autorises pour les requetes de changement d'état protegees par CSRF
+- `trusted origins` : Hôtes autorises pour les requetes de changement d'état protégées par CSRF
 
 ## Modele de lecture
 ```text

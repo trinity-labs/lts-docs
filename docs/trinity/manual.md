@@ -23,11 +23,11 @@ Visite du site
   -> Usage de la VM, de la console, d'UnyDesk ou d'UnyPort si disponible
 ```
 
-| Etape | Action client | Resultat attendu |
+| Etape | Action client | Résultat attendu |
 | --- | --- | --- |
 | 1 | Consulter l'offre et la documentation | Comprendre le service et son périmètre |
 | 2 | Creer un compte | Disposer d'un espace client reutilisable |
-| 3 | Completer la facturation | Permettre la commande et la facture |
+| 3 | Compléter la facturation | Permettre la commande et la facture |
 | 4 | Commander et payer | Valider l'achat ou identifier un blocage |
 | 5 | Suivre la livraison | Voir l'état du service et des accès |
 | 6 | Utiliser la surface exposée | Acceder à la VM, la console ou au support selon le cas |

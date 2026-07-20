@@ -5,10 +5,10 @@ Cette page donne des exemples concrets de la façon dont `UnyPort` est conçue �
 Un opérateur ouvre le portail sur un Dom0 et vérifie immediatement :
 
 - Le rôle d'hôte indique `Dom0`
-- La version Xen et le scheduler sont presents
+- La version Xen et le scheduler sont présents
 - Le nombre de domaines correspond à l'attendu
 - L'utilisation mémoire hyperviseur reste cohérente
-- Aucun crash de service critique n'apparait sur la page security
+- Aucun crash de service critique n'apparaît sur la page security
 
 C'est la façon la plus rapide de confirmer que la vue hyperviseur est saine avant d'entrer dans des problèmes invites plus fins.
 

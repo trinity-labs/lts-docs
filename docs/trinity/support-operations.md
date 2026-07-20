@@ -32,7 +32,7 @@ Référence commande : TRI-2026-00421
 Service : VM Alpine
 Mode actuel : Data Disk Mode
 Probleme observe : système de fichiers visible, application non démarrée
-Resultat attendu : confirmer s'il faut reprendre ou revenir en mode normal
+Résultat attendu : confirmer s'il faut reprendre ou revenir en mode normal
 ```
 
 ## Avant d'escalader
@@ -59,7 +59,7 @@ df -h
 | Etat paiement | Distinguer financier et technique | `confirmé` |
 | Nom de VM | Pointer le bon environnement | `VM-EXEMPLE01` |
 | Mode courant | Situer le contexte | `normal`, `maintenance`, `DDM` |
-| Observation console | Donner un symptome concret | volume non monté, service absent |
+| Observation console | Donner un symptôme concret | volume non monté, service absent |
 
 ## Support ou libre-service
 `TRINITY` cherche à exposer assez d'information pour permettre une action prudente sans transformer chaque situation en ticket support.
@@ -91,4 +91,4 @@ Utilisez la bonne surface selon le besoin :
 
 - `TRINITY` Pour le compte, les commandes, les factures et le point d'entrée service
 - `UnyDesk` Pour l'assistance distante et l'interaction
-- `UnyPort` Pour l'état infra et la supervision
+- `UnyPort` Pour l'état infra'est la supervision

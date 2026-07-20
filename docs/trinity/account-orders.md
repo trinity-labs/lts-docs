@@ -70,7 +70,7 @@ resume_commande:
 | Champ visible | Pourquoi il compte | Exemple |
 | --- | --- | --- |
 | Référence | Identifier sans ambiguite la commande | `TRI-2026-00421` |
-| Service | Savoir ce qui à ete achete | `session de support` |
+| Service | Savoir ce qui a été achete | `session de support` |
 | Statut | Lire l'état de cycle de vie | `payée` |
 | Statut paiement | Distinguer commande et règlement | `confirmé` |
 | Facture PDF | Recuperer le justificatif | `true` |
@@ -87,7 +87,7 @@ Gardez une trace très simple de :
 
 ```markdown
 Référence commande : TRI-2026-00421
-Resultat attendu : accès VM et visibilité console
+Résultat attendu : accès VM et visibilité console
 Probleme actuel : paiement accepte, service pas encore visible
 ```
 

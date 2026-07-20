@@ -41,7 +41,7 @@ Apres authentification, `UnyPort` emet un cookie JWT :
 
 - Signe avec `security.jwt_secret`
 - Stocke en cookie HTTP-only
-- Protege par le réglage `https` pour le comportement secure-cookie
+- Protégé par le réglage `https` pour le comportement secure-cookie
 - Borne dans le temps selon `security_extra.session_timeout_mins`
 
 ## CSRF, limitation et trusted origins

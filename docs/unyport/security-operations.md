@@ -20,10 +20,10 @@ La protection actuelle comprend :
 - Des cookies d'état OAuth pour les callbacks fournisseur
 - Une separation nette entre rôles lecture seule et rôles avec écriture
 
-Le modèle reste compact, mais il est cohérent et visible dans les chemins réellement utilises par le portail.
+Le modèle reste compact, mais'il est cohérent et visible dans les chemins réellement utilises par le portail.
 
 ## Page security
-La page security agrege des contrôles autour de :
+La page security agrège des contrôles autour de :
 
 - L'ASLR
 - La restriction des pointeurs noyau
@@ -44,7 +44,7 @@ Operationnellement, `UnyPort` est la plus forte lorsqu'elle sert à :
 - La vérification
 - L'entrée contrôlée dans certaines applications
 - L'administration des utilisateurs et du branding
-- Le depannage basique d'hôte
+- Le dépannage basique d'hôte
 
 Ce n'est pas encore le lieu d'un cycle de vie complet de VM ni d'une orchestration de cluster. Le README public présentée explicitement le produit actuel comme une `V1`, orientée monitoring d'abord, avec des workflows Xen plus larges attendus plus tard.
 

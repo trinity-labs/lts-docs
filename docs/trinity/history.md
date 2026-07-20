@@ -2,7 +2,7 @@
 Cette page résume les grands chantiers fonctionnels récents qui ont façonné la version actuelle de `TRINITY`. Elle ne liste pas chaque correction cosmétique. Elle documente les évolutions qui changent réellement l'expérience du site et des services.
 
 ## Renforcement du compte client
-Le compte client à été étendu pour devenir une vraie surface de suivi :
+Le compte client a été étendu pour devenir une vraie surface de suivi :
 
 - Détails de commande plus lisibles
 - Statuts de paiement mieux distingués
@@ -11,7 +11,7 @@ Le compte client à été étendu pour devenir une vraie surface de suivi :
 - Meilleure cohérence entre commande, paiement et exploitation
 
 ## Refonte de la facturation
-La facturation à été consolidée autour de PDF plus propres et plus crédibles :
+La facturation a été consolidée autour de PDF plus propres et plus crédibles :
 
 - Identité visuelle `TRINITY`
 - Factures plus lisibles
@@ -31,7 +31,7 @@ Les paiements ont été structurés autour d'un même principe d'expérience :
 Les méthodes déjà exposées incluent la carte, PayPal, le virement et Litecoin selon le type de commande.
 
 ## Extension du support
-Le support `TRINITY` à été élargi afin d'inclure :
+Le support `TRINITY` a été élargi afin d'inclure :
 
 - Alpine Linux
 - Xen

@@ -1,5 +1,5 @@
 # Historique
-Cette page résumé l'historique visible du projet `UnyPort` à partir du dépôt et des fichiers de release presents dans `docker_unyport`.
+Cette page résumé l'historique visible du projet `UnyPort` à partir du dépôt et des fichiers de release présents dans `docker_unyport`.
 
 ## 3 mai 2026 - base dashboard et réseau
 Les premiers commits du `2026-05-03` etablissent la base initiale du produit :

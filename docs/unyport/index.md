@@ -29,7 +29,7 @@ Pour une lecture pratique, l'ordre recommande est :
 5. `Metriques et surfaces`
 6. `Deploiement`
 7. `Alpine Linux et Xen`
-8. `Securite et exploitation`
+8. `Sécurité et exploitation`
 9. `Exemples`
 
 ```text
@@ -37,7 +37,7 @@ Connexion opérateur
   -> Tableau de bord
   -> Detection du rôle de l'hôte
   -> Metriques et logs
-  -> Securite et versions
+  -> Sécurité et versions
   -> Proxy applicatif si nécessaire
   -> Reglages admin si autorises
 ```
