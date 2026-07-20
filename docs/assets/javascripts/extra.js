@@ -316,11 +316,12 @@ function initTrinityDocsChrome() {
   const footer = document.querySelector(".md-footer");
 
   if (footer) {
+    const logoSrc = `${getTrinitySitePrefix()}/assets/images/internal/logo-trinity-white.png`.replace(/\/{2,}/g, "/");
     footer.innerHTML = `
       <div class="trinity-footer">
         <div class="trinity-footer__inner">
           <div class="trinity-footer__brand">
-            <strong>TRINITY</strong>
+            <img class="trinity-footer__logo" src="${logoSrc}" alt="TRINITY">
             <span>${copy.tagline}</span>
           </div>
           <div class="trinity-footer__meta">

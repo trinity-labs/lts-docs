@@ -624,14 +624,17 @@ label[for="__toc"] > a span::before {
     align-items: center;
 }
 
-.trinity-footer__brand strong {
-    font-size: 0.66rem;
-    letter-spacing: -0.1em;
-    font-weight: 900;
-    opacity: 0.66;
-    color: #ffffff;
-    position: relative;
-    top: 0.07rem;
+.trinity-footer__brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.trinity-footer__logo {
+    display: block;
+    width: auto;
+    height: 0.72rem;
+    opacity: 0.72;
 }
 
 .trinity-footer__brand span {
