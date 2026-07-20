@@ -362,6 +362,12 @@ label.md-header__button.md-icon {
     opacity: 0.66;
 }
 
+label.md-header__button.md-icon[for="__search"] {
+    position: relative;
+    z-index: 5;
+    flex: 0 0 auto;
+}
+
 h1 span.twemoji {
     font-size: 0.75rem;
     position: relative;
@@ -586,7 +592,7 @@ label[for="__toc"] > a span::before {
     flex: 0 0 auto;
     margin-left: 3.33rem;
     position: relative;
-    z-index: 3;
+    z-index: 2;
 }
 
 .trinity-lang-switcher__link {
