@@ -780,6 +780,9 @@ label[for="__toc"] > a span::before {
         padding: 0.2rem 1.8rem 0.28rem 0;
         font-size: 0.78rem;
         line-height: 1.1;
+        font-family: sans-serif;
+        font-weight: 600;
+        color: #424242;
     }
 
     .md-sidebar--primary .md-nav--primary .md-nav__link.md-nav__container {
