@@ -686,6 +686,8 @@ label[for="__toc"] > a span::before {
     .md-sidebar--primary .md-sidebar__scrollwrap {
         margin: 0;
         padding: 0.6rem 0.8rem 1.2rem;
+        border: 0;
+        box-shadow: none;
     }
 
     .md-sidebar--primary .md-sidebar__inner.trinity-sidebar-versioned {
@@ -707,6 +709,8 @@ label[for="__toc"] > a span::before {
         letter-spacing: -0.04rem;
         line-height: 1;
         background: #000;
+        border: 0;
+        border-bottom: 0;
         box-shadow: none;
         gap: 0.55rem;
     }
@@ -714,6 +718,8 @@ label[for="__toc"] > a span::before {
     .md-sidebar--primary label.md-nav__title[for="__drawer"] {
         background: #000;
         background-color: #000;
+        border: 0;
+        border-bottom: 0;
         color: var(--md-primary-bg-color);
         font-size: 0;
         font-weight: 700;
