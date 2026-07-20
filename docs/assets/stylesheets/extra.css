@@ -216,6 +216,14 @@ article li {
     height: 1.33rem;
 }
 
+.md-icon svg {
+    fill: white;
+    display: block;
+    height: 1.2rem;
+    width: 1.2rem;
+    opacity: 0.33;
+}
+
 .md-header__topic span {
     font-size: 0.6rem;
     opacity: 0.75;
