@@ -649,9 +649,12 @@ label[for="__toc"] > a span::before {
 
 @media screen and (max-width: 76.234375em) {
     .md-sidebar--primary {
-        left: 0;
         width: min(86vw, 18rem);
         transform: translateX(-100%);
+    }
+
+    [dir="ltr"] .md-sidebar--primary {
+        left: 0;
     }
 
     [dir="rtl"] .md-sidebar--primary {
