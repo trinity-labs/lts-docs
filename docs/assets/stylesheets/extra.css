@@ -686,21 +686,26 @@ label[for="__toc"] > a span::before {
         padding: 0 0.66rem;
         color: var(--md-primary-bg-color);
         font-family: "Archivo Black", sans-serif;
-        font-size: 0;
+        font-size: 0.72rem;
         letter-spacing: -0.04rem;
         line-height: 1;
         background: #000;
         box-shadow: none;
+        gap: 0.55rem;
     }
 
-    .md-sidebar--primary .md-nav__title::before {
+    .md-sidebar--primary label.md-nav__title[for="__drawer"] {
+        font-size: 0;
+    }
+
+    .md-sidebar--primary label.md-nav__title[for="__drawer"]::before {
         content: "Menu";
         display: block;
         font-size: 0.72rem;
     }
 
-    .md-sidebar--primary .md-nav__title .md-logo,
-    .md-sidebar--primary .md-nav__title .md-nav__button {
+    .md-sidebar--primary label.md-nav__title[for="__drawer"] .md-logo,
+    .md-sidebar--primary label.md-nav__title[for="__drawer"] .md-nav__button {
         display: none;
     }
 
@@ -708,6 +713,7 @@ label[for="__toc"] > a span::before {
         display: flex;
         align-items: center;
         justify-content: center;
+        flex: 0 0 1.6rem;
         width: 1.6rem;
         height: 1.6rem;
         margin: 0 !important;
