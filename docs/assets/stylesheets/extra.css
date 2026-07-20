@@ -687,7 +687,7 @@ label[for="__toc"] > a span::before {
     .md-sidebar--primary .md-nav__title {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-start;
         height: 2.4rem;
         min-height: 2.4rem;
         margin: 0 0 0.75rem;
@@ -725,9 +725,25 @@ label[for="__toc"] > a span::before {
         order: -1;
         width: 1.4rem;
         height: 1.4rem;
-        margin: 0 0.45rem 0 0 !important;
-        opacity: 0.66;
+        margin: 0 !important;
         position: static;
+    }
+
+    .md-nav--primary .md-nav__title .md-nav__icon::after {
+        content: "";
+        display: block;
+        width: 66%;
+        height: 66%;
+        background-color: currentColor;
+        opacity: 0.33;
+        -webkit-mask-image: var(--md-nav-icon--prev);
+        mask-image: var(--md-nav-icon--prev);
+        -webkit-mask-position: center;
+        mask-position: center;
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: contain;
+        mask-size: contain;
     }
 
     .md-sidebar--primary .md-nav--primary > .md-nav__list {
