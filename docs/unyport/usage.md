@@ -1,12 +1,12 @@
 # Utilisation d'UnyPort
-`UnyPort` est utilisée lorsque l'opérateur a besoin d'une lecture rapide de l'hôte, d'une surface d'authentification stable et d'un petit nombre de points d'entrée opérationnels. Elle n'est pas optimisée pour le commerce ni pour le parcours client. Elle est optimisée pour la lecture supervisée de l'infrastructure.
+`UnyPort` est utilisée lorsque l'opérateur à besoin d'une lecture rapide de l'hôte, d'une surface d'authentification stable et d'un petit nombre de points d'entrée opérationnels. Elle n'est pas optimisée pour le commerce ni pour le parcours client. Elle est optimisée pour la lecture supervisée de l'infrastructure.
 
 ## Usage 1 - se connecter et confirmer le contexte hôte
 Les opérateurs commencent souvent par :
 
 - Se connecter localement ou via OAuth
 - Lire le rôle d'hôte détecte
-- Confirmer si la surface correspond a un Dom0, un DomU, un conteneur ou un hôte Alpine
+- Confirmer si la surface correspond à un Dom0, un DomU, un conteneur ou un hôte Alpine
 
 Cette première étape change toute la suite de la lecture, car un Dom0 exposé un contexte Xen global alors qu'un DomU se comporte comme un observateur centre VM.
 
@@ -22,7 +22,7 @@ L'usage le plus courant reste la supervision en temps réel :
 Le portail est donc utile comme tableau de bord opérationnel live avant même qu'une action plus profonde soit nécessaire.
 
 ## Usage 3 - inspecter les specificites Alpine et Xen
-`UnyPort` sert aussi a répondre a des questions très Alpine et Xen :
+`UnyPort` sert aussi à répondre à des questions très Alpine et Xen :
 
 - LBU est-il présent et committe
 - Quelle version Alpine tourne
@@ -35,12 +35,12 @@ Les surfaces resources et security servent au depannage courant :
 
 - Revoir les services OpenRC
 - Tailer les fichiers de log autorises
-- Inspecter les ports a l'écoute
+- Inspecter les ports à l'écoute
 - Confirmer le niveau de durcissement
 - Identifier des processus critiques ou des services plantes
 
-## Usage 5 - ouvrir un outil interne a travers le portail
-Lorsqu'il est configure, `UnyPort` peut aussi servir de point d'entrée vers un outil interne proxyfie comme `ttyd`. L'opérateur reste ainsi dans une seule surface authentifiee tout en accedant a des workflows plus orientés terminal.
+## Usage 5 - ouvrir un outil interne à travers le portail
+Lorsqu'il est configure, `UnyPort` peut aussi servir de point d'entrée vers un outil interne proxyfie comme `ttyd`. L'opérateur reste ainsi dans une seule surface authentifiee tout en accedant à des workflows plus orientés terminal.
 
 ## Usage 6 - savoir quand changer de surface
 `UnyPort` n'est pas le seul outil de l'ecosysteme.

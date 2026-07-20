@@ -15,7 +15,7 @@ Cette page synthétise l'évolution fonctionnelle récente de `TRINITY` à parti
 Le périmètre support `TRINITY` inclut également **`UnyDesk`** et **`UnyPort`**. Le positionnement public doit donc être lu comme une offre plateforme + exploitation + assistance, pas uniquement comme un panneau VM.
 
 ## Compte client et commandes
-Le compte client a été structuré autour d'un suivi de commande plus complet :
+Le compte client à été structuré autour d'un suivi de commande plus complet :
 
 - Liste des commandes récentes
 - Détail par commande dans une modale dédiée
@@ -26,7 +26,7 @@ Le compte client a été structuré autour d'un suivi de commande plus complet :
 Les commandes d'abonnement exposent aussi la **prochaine échéance** lorsque le flux le permet. Les commandes en attente ou en erreur réutilisent la même entrée au lieu de créer des doublons à chaque tentative de paiement.
 
 ## Facturation PDF
-La facture PDF a été profondément normalisée :
+La facture PDF à été profondément normalisée :
 
 - Charte couleur alignée sur `TRINITY`
 - Logo, entête et blocs d'identité stabilisés
@@ -40,7 +40,7 @@ La facture PDF a été profondément normalisée :
 Le PDF est désormais pensé comme une facture d'exploitation réellement présentable à un client final, et pas comme un export technique brut.
 
 ## Paiements
-Le tunnel de paiement a été étendu et unifié.
+Le tunnel de paiement à été étendu et unifié.
 
 ### Fournisseurs et modes pris en charge
 `TRINITY` exposé les flux suivants selon le type de produit :
@@ -50,7 +50,7 @@ Le tunnel de paiement a été étendu et unifié.
 - **Virement bancaire** pour les règlements manuels
 - **Litecoin** pour les paiements crypto
 
-Le parcours d'information préalable a été harmonisé avant le paiement :
+Le parcours d'information préalable à été harmonisé avant le paiement :
 
 - Identité de facturation
 - Adresse de facturation
@@ -58,7 +58,7 @@ Le parcours d'information préalable a été harmonisé avant le paiement :
 - Collecte et conservation des informations de commande utiles à la facture
 
 ### Retour de paiement et états
-Un effort important a été fait sur la gestion des retours fournisseur :
+Un effort important à été fait sur la gestion des retours fournisseur :
 
 - Modal de retour de paiement systématique
 - État **succès** en vert
@@ -76,7 +76,7 @@ Pour les paiements manuels, `TRINITY` affiche des instructions détaillées au s
 Les flux manuels se comportent publiquement comme des paiements en attente, avec consultation des coordonnées de règlement directement depuis l'espace client.
 
 ## Support, chat et assistance
-Le support a évolué sur deux plans : l'offre commerciale et l'expérience d'assistance.
+Le support à évolué sur deux plans : l'offre commerciale et l'expérience d'assistance.
 
 ### Offre support
 L'offre `TRINITY` inclut explicitement :
@@ -107,7 +107,7 @@ Un point important de l'évolution récente concerne les visiteurs non connecté
 L'objectif est d'éviter la perte d'historique entre visiteur et utilisateur authentifié tout en gardant un cadre exploitable publiquement.
 
 ## Consentement, cookies et textes légaux
-La conformité visible côté front a aussi été renforcée :
+La conformité visible côté front à aussi été renforcée :
 
 - Bannière / panneau de consentement personnalisé
 - Distinction entre cookies essentiels et fonctionnels
@@ -133,7 +133,7 @@ Même si cette documentation publique ne décrit pas les scripts internes, plusi
 Dans le parcours public, cela se traduit par une attente plus claire : une VM commandée ou relancée doit réapparaître dans un état cohérent, avec une console exploitable et une reprise plus prévisible.
 
 ## Images, catalogue et expérience DDM
-Le périmètre `TRINITY` a aussi intégré un travail sur :
+Le périmètre `TRINITY` à aussi intégré un travail sur :
 
 - Les images système et leurs variantes
 - La cohérence du modèle DDM
@@ -143,7 +143,7 @@ Le périmètre `TRINITY` a aussi intégré un travail sur :
 Cette partie reste en évolution, mais elle fait désormais partie du périmètre documenté de la plateforme.
 
 ## Documentation et surfaces publiques
-La documentation a été restructurée pour distinguer :
+La documentation à été restructurée pour distinguer :
 
 - Documentation publique
 - Documentation admin

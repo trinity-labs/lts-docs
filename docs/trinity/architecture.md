@@ -12,22 +12,22 @@ La première couche est la plus visible :
 - Commandes, paiements et factures
 - Chat et assistance
 
-Cette couche transforme `TRINITY` en portail client. C'est elle qui relie la promesse commerciale a l'usage réel.
+Cette couche transforme `TRINITY` en portail client. C'est elle qui relie la promesse commerciale à l'usage réel.
 
 ## Couche 2 - surfaces de service
-Une fois le client identifie, `TRINITY` donne accès a des surfaces de service :
+Une fois le client identifie, `TRINITY` donne accès à des surfaces de service :
 
 - Suivi de commande
 - Téléchargement de facture
 - État des paiements
 - Informations de facturation
-- Accès a certaines surfaces VM
+- Accès à certaines surfaces VM
 - Ouverture de flux console
 
 La plateforme doit donc gerer une logique de cycle de vie, pas seulement une logique de navigation.
 
 ## Couche 3 - VM, consoles et exploitation
-`TRINITY` ne s'arrete pas a la vente. Le site exposé aussi des usages d'exploitation :
+`TRINITY` ne s'arrete pas à la vente. Le site exposé aussi des usages d'exploitation :
 
 - Consultation d'une VM
 - Relance ou suivi d'état
@@ -38,7 +38,7 @@ La plateforme doit donc gerer une logique de cycle de vie, pas seulement une log
 ## Data Disk Mode
 Le **Data Disk Mode** est un mode d'accès spécialement utile pour intervenir sur une VM sans la présenter comme un environnement applicatif normal. Publiquement, on peut l'expliquer comme un mode de maintenance ou de récupération :
 
-- La VM demarre dans un contexte réduit
+- La VM démarre dans un contexte réduit
 - L'objectif principal devient l'accès au disque et au système de fichiers
 - L'utilisateur peut vérifier l'état, diagnostiquer ou récupérer un environnement
 - Ce mode est adapte aux opérations de maintenance, d'analyse ou de reprise

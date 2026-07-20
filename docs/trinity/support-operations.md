@@ -1,5 +1,5 @@
 # Support et exploitation
-Le support `TRINITY` est a la fois commercial et technique. Côté public, cela signifie que la plateforme doit aider l'utilisateur a comprendre quand demander de l'aide et quoi inclure dans sa demande.
+Le support `TRINITY` est à la fois commercial et technique. Côté public, cela signifie que la plateforme doit aider l'utilisateur à comprendre quand demander de l'aide et quoi inclure dans sa demande.
 
 ## Perimetre support
 Le support `TRINITY` peut explicitement concerner :
@@ -23,29 +23,29 @@ Le support `TRINITY` peut explicitement concerner :
 | UnyDesk / UnyPort | Oui, pour utiliser la surface | Si l'accès ou l'interprétation pose problème |
 
 ## Bon format de demande support
-Une bonne demande support est concrete et breve.
+Une bonne demande support est concrete et brève.
 
 ```markdown
 Objet : VM visible mais service indisponible
 
-Reference commande : TRI-2026-00421
+Référence commande : TRI-2026-00421
 Service : VM Alpine
 Mode actuel : Data Disk Mode
-Probleme observe : système de fichiers visible, application non demarree
+Probleme observe : système de fichiers visible, application non démarrée
 Resultat attendu : confirmer s'il faut reprendre ou revenir en mode normal
 ```
 
 ## Avant d'escalader
 Collectez d'abord le minimum :
 
-- Reference de commande
+- Référence de commande
 - État facture ou paiement si utile
 - Nom de VM s'il existe
 - Mode courant : normal, maintenance ou DDM
 - Observation console précise
 
 ```bash
-# Exemple de lot d'informations a relever
+# Exemple de lot d'informations à relever
 hostname
 uptime
 ip addr
@@ -53,16 +53,16 @@ lsblk
 df -h
 ```
 
-| Information a relever | Pourquoi elle aide | Exemple |
+| Information à relever | Pourquoi elle aide | Exemple |
 | --- | --- | --- |
-| Reference commande | Identifier le dossier | `TRI-2026-00421` |
-| Etat paiement | Distinguer financier et technique | `confirme` |
+| Référence commande | Identifier le dossier | `TRI-2026-00421` |
+| Etat paiement | Distinguer financier et technique | `confirmé` |
 | Nom de VM | Pointer le bon environnement | `VM-EXEMPLE01` |
 | Mode courant | Situer le contexte | `normal`, `maintenance`, `DDM` |
 | Observation console | Donner un symptome concret | volume non monté, service absent |
 
 ## Support ou libre-service
-`TRINITY` cherche a exposer assez d'information pour permettre une action prudente sans transformer chaque situation en ticket support.
+`TRINITY` cherche à exposer assez d'information pour permettre une action prudente sans transformer chaque situation en ticket support.
 
 Le libre-service convient pour :
 
@@ -86,7 +86,7 @@ Le support convient pour :
 | Recuperer un service après incident | Limite | Oui |
 | Comprendre un statut contradictoire | Non | Oui |
 
-## Surfaces a utiliser
+## Surfaces à utiliser
 Utilisez la bonne surface selon le besoin :
 
 - `TRINITY` Pour le compte, les commandes, les factures et le point d'entrée service

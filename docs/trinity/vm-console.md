@@ -6,7 +6,7 @@ Une page orientée VM peut exposer :
 
 - Le nom de la machine
 - Un indicateur en ligne ou non
-- Une visibilité de base sur les ressources
+- Une visibilité de basé sur les ressources
 - Un point d'entrée console
 - Des liens vers le support ou la supervision
 
@@ -21,7 +21,7 @@ Une page orientée VM peut exposer :
 
 
 ## Objectifs typiques d'une console
-L'accès console sert a :
+L'accès console sert à :
 
 - Vérifier l'état de boot
 - Inspecter un système de fichiers monté
@@ -30,7 +30,7 @@ L'accès console sert a :
 
 ```bash
 hostname
-uname -a
+uname -à
 ip addr
 lsblk
 df -h
@@ -47,15 +47,15 @@ Une page VM publique doit se lire simplement :
 ```text
 online       -> accès normal ou technique attendu
 maintenance  -> contexte d'intervention
-récupération     -> contexte de preservation et de diagnostic
+récupération     -> contexte de préservation et de diagnostic
 unavailable  -> attente ou support
 ```
 
 | Etat VM | Ce que cela signifie | Bon reflexe |
 | --- | --- | --- |
 | `online` | La VM est disponible dans son mode actuel | Verifier le service ou la connectivite |
-| `maintenance` | Une intervention ou preparation est en cours | Eviter les changements non demandes |
-| `récupération` | La priorite est la reprise ou la preservation | Se concentrer sur la lecture et le stockage |
+| `maintenance` | Une intervention ou préparation est en cours | Eviter les changements non demandes |
+| `récupération` | La priorité est la reprise ou la préservation | Se concentrer sur la lecture et le stockage |
 | `unavailable` | La VM ou la surface n'est pas utilisable | Attendre ou ouvrir un ticket avec contexte |
 
 ## Prudence opérationnelle
@@ -63,7 +63,7 @@ Une console est puissante mais etroite dans son usage. Avant de modifier quoi qu
 
 - Si la VM est en mode normal ou DDM
 - Si l'objectif est le diagnostic ou la modification
-- Si le support a demande une action précise
+- Si le support à demande une action précise
 
 ```bash
 # Verifications prudentes en premier

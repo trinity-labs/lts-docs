@@ -2,7 +2,7 @@
 Cette page résume les grands chantiers fonctionnels récents qui ont façonné la version actuelle de `TRINITY`. Elle ne liste pas chaque correction cosmétique. Elle documente les évolutions qui changent réellement l'expérience du site et des services.
 
 ## Renforcement du compte client
-Le compte client a été étendu pour devenir une vraie surface de suivi :
+Le compte client à été étendu pour devenir une vraie surface de suivi :
 
 - Détails de commande plus lisibles
 - Statuts de paiement mieux distingués
@@ -11,7 +11,7 @@ Le compte client a été étendu pour devenir une vraie surface de suivi :
 - Meilleure cohérence entre commande, paiement et exploitation
 
 ## Refonte de la facturation
-La facturation a été consolidée autour de PDF plus propres et plus crédibles :
+La facturation à été consolidée autour de PDF plus propres et plus crédibles :
 
 - Identité visuelle `TRINITY`
 - Factures plus lisibles
@@ -31,17 +31,17 @@ Les paiements ont été structurés autour d'un même principe d'expérience :
 Les méthodes déjà exposées incluent la carte, PayPal, le virement et Litecoin selon le type de commande.
 
 ## Extension du support
-Le support `TRINITY` a été élargi afin d'inclure :
+Le support `TRINITY` à été élargi afin d'inclure :
 
 - Alpine Linux
 - Xen
 - **`UnyDesk`**
 - **`UnyPort`**
 
-Ce changement a modifié à la fois les pages d'offre, la présentation publique et le positionnement général du site.
+Ce changement à modifié à la fois les pages d'offre, la présentation publique et le positionnement général du site.
 
 ## Evolution du chat
-Le chat d'assistance a quitté le format modale pour devenir une page dédiée avec historique :
+Le chat d'assistance à quitté le format modale pour devenir une page dédiée avec historique :
 
 - Conversations persistantes
 - Meilleure lisibilité
@@ -50,7 +50,7 @@ Le chat d'assistance a quitté le format modale pour devenir une page dédiée a
 - Réconciliation lors de la création d'un compte
 
 ## Consentement et conformité
-Le site a également évolué sur le plan conformité :
+Le site à également évolué sur le plan conformité :
 
 - Politique cookies dédiée
 - Politique de confidentialité étoffée

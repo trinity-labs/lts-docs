@@ -1,5 +1,5 @@
 # Paiements et factures
-`TRINITY` exposé les flux de facturation et de reglement comme une partie normale du parcours client. Le but n'est pas seulement de payer, mais aussi de comprendre ce qui se passe après le paiement.
+`TRINITY` exposé les flux de facturation et de règlement comme une partie normale du parcours client. Le but n'est pas seulement de payer, mais aussi de comprendre ce qui se passe après le paiement.
 
 ## Moyens de paiement
 Selon le service, `TRINITY` peut exposer :
@@ -9,12 +9,12 @@ Selon le service, `TRINITY` peut exposer :
 - Virement bancaire
 - Paiement Litecoin
 
-Chaque méthode implique une attente opérationnelle differente. Les paiements en ligne reviennent souvent vite. Les flux manuels peuvent rester en attente jusqu'a confirmation du reglement.
+Chaque méthode implique une attente opérationnelle différente. Les paiements en ligne reviennent souvent vite. Les flux manuels peuvent rester en attente jusqu'à confirmation du règlement.
 
 ```text
 carte ou PayPal -> retour rapide -> commande mise à jour vite
-virement        -> état en attente -> confirmation de reglement plus tard
-Litecoin        -> état en attente -> verification d'une référence de paiement
+virement        -> état en attente -> confirmation de règlement plus tard
+Litecoin        -> état en attente -> vérification d'une référence de paiement
 ```
 
 ## États de paiement
@@ -51,14 +51,14 @@ La facture PDF est le document de facturation visible côté client. Elle doit p
 facture:
   numero: "INV-2026-00152"
   reference_commande: "TRI-2026-00421"
-  statut: "payee"
+  statut: "payée"
   export: "pdf"
 ```
 
 ## Si le paiement reste en attente
 La bonne action dépend du flux :
 
-- Attendre le retour fournisseur si le parcours est encore ouvrеt
+- Attendre le retour fournisseur si le parcours est encore ouvert
 - Relire la page commande
 - Vérifier le profil de facturation
 - Conserver la référence de paiement
@@ -66,7 +66,7 @@ La bonne action dépend du flux :
 
 ```markdown
 Checklist paiement en attente
-- Reference commande copiee
+- Référence commande copiée
 - Facture verifiee
 - Fournisseur de paiement note
 - Horodatage note
@@ -74,7 +74,7 @@ Checklist paiement en attente
 ```
 
 ## Ce qui ne doit pas arriver
-Du point de vue client, un paiement refuse ou en attente ne doit pas creer :
+Du point de vue client, un paiement refusé ou en attente ne doit pas creer :
 
 - De commandes dupliquees sans raison
 - Une facture introuvable

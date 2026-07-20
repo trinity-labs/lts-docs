@@ -8,10 +8,10 @@ social_image: "https://unyport.app/media/img/logos/logo-unyport-full.png"
 
 Publiquement, `UnyPort` rassemble :
 
-- Un accès opérateur authentifie
+- Un accès opérateur authentifié
 - Une visibilité en direct sur l'hôte et les services
 - Un contexte Xen explicite pour les environnements Dom0 et DomU
-- Un accès contrôle a certaines applications internes comme `ttyd`
+- Un accès contrôle à certaines applications internes comme `ttyd`
 - Des pages opérationnelles pour la sécurité, le stockage, le réseau et l'état système
 
 `UnyPort` fonctionne avec deux surfaces complementaires :

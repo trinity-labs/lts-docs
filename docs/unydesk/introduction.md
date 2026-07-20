@@ -5,7 +5,7 @@ Le produit s'organise autour de trois rôles publics :
 
 - **Host** : la machine qui exposé l'accès
 - **Viewer** : l'utilisateur côté navigateur qui ouvre la session
-- **Broker** : le service `UnyDesk` qui authentifie, route et synchronise la session
+- **Broker** : le service `UnyDesk` qui authentifié, route et synchronise la session
 
 `UnyDesk` est volontairement séparé de `TRINITY` et d'`UnyPort`. `TRINITY` gère le cycle client et les points d'entrée service. `UnyPort` gère la supervision locale et l'exploitation. `UnyDesk` gère l'accès distant interactif.
 

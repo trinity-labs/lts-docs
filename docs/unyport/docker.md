@@ -5,7 +5,7 @@ Source retenue :
 
 - `/var/docker/docker_unyport/docker-compose.yml`
 
-Aucun `Dockerfile` dedie n'a ete trouve pour `UnyPort`. Le runtime utilise l'image amont `golang:alpine`.
+Aucun `Dockerfile` dédié n'à ete trouvé pour `UnyPort`. Le runtime utilise l'image amont `golang:alpine`.
 
 ## Résumé public
 | Élément | Valeur publique |

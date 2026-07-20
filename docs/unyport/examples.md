@@ -6,7 +6,7 @@ Un opérateur ouvre le portail sur un Dom0 et vérifie immediatement :
 
 - Le rôle d'hôte indique `Dom0`
 - La version Xen et le scheduler sont presents
-- Le nombre de domaines correspond a l'attendu
+- Le nombre de domaines correspond à l'attendu
 - L'utilisation mémoire hyperviseur reste cohérente
 - Aucun crash de service critique n'apparait sur la page security
 
@@ -47,4 +47,4 @@ Un administrateur peut :
 - Laisser cet utilisateur stocker un nom d'affichage, un avatar et une clé SSH publique
 - Conserver le branding et l'administration des utilisateurs reserves aux admins
 
-Cela rend l'onboarding simple tout en gardant des frontieres de rôles lisibles.
+Cela rend l'onboarding simple tout en gardant des frontières de rôles lisibles.

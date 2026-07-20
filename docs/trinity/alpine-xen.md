@@ -1,5 +1,5 @@
 # Alpine Linux et Xen
-`TRINITY` s'appuie sur deux fondations techniques qu'il faut reconnaitre publiquement même sans les administrer directement : **Alpine Linux** et **Xen**.
+`TRINITY` s'appuie sur deux fondations techniques qu'il faut reconnaître publiquement même sans les administrer directement : **Alpine Linux** et **Xen**.
 
 ## Alpine Linux
 Alpine Linux est la base système utilisée pour les environnements compacts et contrôles. Côté public, cela compte parce que le client rencontre souvent :
@@ -10,7 +10,7 @@ Alpine Linux est la base système utilisée pour les environnements compacts et 
 
 ```bash
 cat /etc/os-release
-uname -a
+uname -à
 apk info | head
 ```
 
@@ -70,4 +70,4 @@ modele_plateforme:
 | TRINITY | Orchestrer l'accès client | Relier commande, service et support |
 
 ## Ce qu'il faut retenir
-L'essentiel est simple : le client n'a pas besoin d'être spécialiste Xen. Il doit surtout comprendre assez bien le modèle pour lire un état VM, utiliser une console avec prudence et parler précisément au support.
+L'essentiel est simple : le client n'à pas besoin d'être spécialiste Xen. Il doit surtout comprendre assez bien le modèle pour lire un état VM, utiliser une console avec prudence et parler précisément au support.

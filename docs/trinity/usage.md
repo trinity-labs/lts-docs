@@ -1,5 +1,5 @@
 # Utilisation de TRINITY
-`TRINITY` s'utilise comme un portail de cycle de vie. Le même site doit permettre de decouvrir une offre, d'acheter, de payer, de suivre une commande, d'ouvrir une facture, de demander de l'aide et, dans certains cas, d'accéder a une VM ou a une console. Cette page décrit les usages publics les plus importants.
+`TRINITY` s'utilise comme un portail de cycle de vie. Le même site doit permettre de decouvrir une offre, d'acheter, de payer, de suivre une commande, d'ouvrir une facture, de demander de l'aide et, dans certains cas, d'accéder à une VM ou à une console. Cette page décrit les usages publics les plus importants.
 
 ## Usage 1 - decouvrir l'offre et prendre contact
 Un utilisateur commence souvent par :
@@ -9,7 +9,7 @@ Un utilisateur commence souvent par :
 - Ouvrir la page support
 - Utiliser la page contact
 
-Cette première phase sert a comprendre si le besoin releve du support `TRINITY`, d'une prestation, d'une formation, d'`UnyDesk` ou d'`UnyPort`.
+Cette première phase sert à comprendre si le besoin relève du support `TRINITY`, d'une prestation, d'une formation, d'`UnyDesk` ou d'`UnyPort`.
 
 ## Usage 2 - creer un compte et commander
 `TRINITY` prend en charge le parcours client standard :
@@ -21,7 +21,7 @@ Cette première phase sert a comprendre si le besoin releve du support `TRINITY`
 - Retour de paiement
 - Consultation de la commande et de la facture
 
-Les commandes peuvent concerner du support, des prestations, des formations ou des services associes a l'infrastructure.
+Les commandes peuvent concerner du support, des prestations, des formations ou des services associes à l'infrastructure.
 
 | Usage | Surface principale | Resultat attendu |
 | --- | --- | --- |
@@ -40,10 +40,10 @@ Apres achat, le client retrouve :
 - Ses informations de facturation
 - Certaines actions de reprise si le paiement reste en attente ou doit être relance
 
-`TRINITY` affiche des états differents selon la situation : paiement reussi, paiement en attente, paiement refuse, annulation ou reprise.
+`TRINITY` affiche des états différents selon la situation : paiement réussi, paiement en attente, paiement refusé, annulation ou reprise.
 
 ## Usage 4 - consulter une VM ou une console
-Quand un service l'autorise, `TRINITY` peut donner accès a une vue de machine virtuelle ou a une console.
+Quand un service l'autorise, `TRINITY` peut donner accès à une vue de machine virtuelle ou à une console.
 
 
 Dans ce contexte, l'utilisateur peut :
@@ -57,10 +57,10 @@ Dans ce contexte, l'utilisateur peut :
 | --- | --- | --- |
 | Vue VM | Lire l'état et identifier la machine | Verification rapide |
 | Console | Lancer des commandes de diagnostic | Support, maintenance, reprise |
-| DDM | Inspecter stockage et système de fichiers | Recuperation et preservation |
+| DDM | Inspecter stockage et système de fichiers | Recuperation et préservation |
 
 ## Usage 5 - comprendre le Data Disk Mode
-Le **Data Disk Mode** est utile lorsque l'objectif n'est pas d'executer un service applicatif normal, mais d'intervenir sur l'environnement lui-meme. Dans la pratique, ce mode sert a :
+Le **Data Disk Mode** est utile lorsque l'objectif n'est pas d'executer un service applicatif normal, mais d'intervenir sur l'environnement lui-meme. Dans la pratique, ce mode sert à :
 
 - Vérifier le contenu d'un disque
 - Inspecter un système de fichiers
@@ -72,16 +72,16 @@ Pour l'utilisateur, cela signifie qu'une VM peut être accessible dans un mode p
 ## Usage 6 - comprendre Alpine Linux et Xen
 Dans `TRINITY`, deux briques doivent être comprises publiquement :
 
-- **Alpine Linux** : système léger, rapide et adapte a des environnements de service compacts
+- **Alpine Linux** : système léger, rapide et adapte à des environnements de service compacts
 - **Xen** : hyperviseur qui porte les machines virtuelles
 
-L'utilisateur n'a pas besoin d'administrer Xen directement pour utiliser `TRINITY`. En revanche, il doit comprendre que ses services s'appuient sur cette logique de virtualisation et sur des environnements Alpine Linux.
+L'utilisateur n'à pas besoin d'administrer Xen directement pour utiliser `TRINITY`. En revanche, il doit comprendre que ses services s'appuient sur cette logique de virtualisation et sur des environnements Alpine Linux.
 
 ## Usage 7 - savoir quand aller vers UnyDesk ou UnyPort
 `TRINITY` n'est pas la seule surface de l'ecosysteme.
 
-- Utiliser **`UnyDesk`** quand le besoin releve de l'accès distant ou de la prise en main.
-- Utiliser **`UnyPort`** quand le besoin releve de la supervision, du contrôle ou de la lecture de topologie.
+- Utiliser **`UnyDesk`** quand le besoin relève de l'accès distant ou de la prise en main.
+- Utiliser **`UnyPort`** quand le besoin relève de la supervision, du contrôle ou de la lecture de topologie.
 
 | Surface | Role public | Cas typique |
 | --- | --- | --- |

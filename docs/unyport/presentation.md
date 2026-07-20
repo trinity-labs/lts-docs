@@ -22,7 +22,7 @@ Ces pages sont alimentees par un melange de faits système statiques et de snaps
 - Les opérateurs
 - Les viewers en lecture seule
 
-L'application distingue explicitement ces rôles afin que la même surface puisse servir a l'observation, aux opérations courantes et a l'administration contrôlée sans exposer toutes les actions d'écriture a tous les utilisateurs.
+L'application distingue explicitement ces rôles afin que la même surface puisse servir à l'observation, aux opérations courantes et à l'administration contrôlée sans exposer toutes les actions d'écriture à tous les utilisateurs.
 
 ## Place dans l'écosystème
 `UnyPort` doit se lire comme le compagnon de supervision de `TRINITY` :

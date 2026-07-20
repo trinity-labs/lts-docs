@@ -2,14 +2,14 @@
 `UnyPort` est organisee autour d'un petit nombre de surfaces opérationnelles alimentees par des données live. Le backend echantillonne le système toutes les `2` secondes et pousse des snapshots en SSE, tandis que le frontend les rend dans des pages pensees pour l'opérateur.
 
 ## Modele de données live
-Le pipeline live a quelques caracteristiques importantes :
+Le pipeline live à quelques caracteristiques importantes :
 
 - Un seul endpoint SSE : `/sse/system`
 - Un anneau mémoire de `60` snapshots
 - Environ `2` minutes de contexte roulant
 - Des echelles de graphes calculees côté serveur sur les `15` derniers snapshots
 
-Cela garde un frontend léger et evite de dupliquer les calculs de télémétrie dans le navigateur.
+Cela garde un frontend léger et évite de dupliquer les calculs de télémétrie dans le navigateur.
 
 ## Dashboard
 Le dashboard est la première surface de lecture :
@@ -48,7 +48,7 @@ La page `Network` montre :
 - L'adresse IP
 - Les debits RX et TX
 - Les compteurs d'octets
-- Une carte réseau construite a partir des interfaces de l'hôte
+- Une carte réseau construite à partir des interfaces de l'hôte
 
 La page `Storage` montre :
 
@@ -58,12 +58,12 @@ La page `Storage` montre :
 - L'état de persistance LBU sur les hôtes Alpine
 
 ## Security
-La page security est une vraie surface opérationnelle dediee, pas juste un résumé a badges. Elle agr ege :
+La page security est une vraie surface opérationnelle dédiée, pas juste un résumé à badges. Elle agr ege :
 
 - Des contrôles de durcissement noyau
 - Les permissions du fichier utilisateurs
 - L'état des services OpenRC
 - La presence de certains processus surveilles
-- Les ports TCP a l'écoute
+- Les ports TCP à l'écoute
 
-Cela fait d'`UnyPort` plus qu'un simple lecteur de ressources. C'est aussi un lecteur compact de posture de securite.
+Cela fait d'`UnyPort` plus qu'un simple lecteur de ressources. C'est aussi un lecteur compact de posture de sécurité.

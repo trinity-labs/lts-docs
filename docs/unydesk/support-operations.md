@@ -51,7 +51,7 @@ Vérifier :
 - Que la bonne version du paquet host tourne
 - Que le host est toujours en ligne
 - Que la route de session pointe vers le host attendu
-- Que l'approbation locale a été acceptée si elle est requise
+- Que l'approbation locale à été acceptée si elle est requise
 - Que le navigateur viewer est resté sur la même page de session
 - Que le problème est bien compris comme souci de signalisation, de média direct ou de fallback image
 

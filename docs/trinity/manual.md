@@ -1,5 +1,5 @@
 # Mode d'emploi TRINITY
-Cette page est le point d'entrée pratique de `TRINITY`. Elle explique comment utiliser la plateforme depuis la première visite jusqu'a une situation plus technique autour d'une VM ou d'une reprise.
+Cette page est le point d'entrée pratique de `TRINITY`. Elle explique comment utiliser la plateforme depuis la première visite jusqu'à une situation plus technique autour d'une VM ou d'une reprise.
 
 ## Le parcours normal
 Le parcours client habituel suit cette logique :
@@ -30,7 +30,7 @@ Visite du site
 | 3 | Completer la facturation | Permettre la commande et la facture |
 | 4 | Commander et payer | Valider l'achat ou identifier un blocage |
 | 5 | Suivre la livraison | Voir l'état du service et des accès |
-| 6 | Utiliser la surface exposée | Acceder a la VM, la console ou au support selon le cas |
+| 6 | Utiliser la surface exposée | Acceder à la VM, la console ou au support selon le cas |
 
 ## Avant de commander
 Preparez quelques informations simples :
@@ -67,8 +67,8 @@ Selon le service, `TRINITY` peut exposer :
 | Commandes | Suivre le cycle de vie d'un achat | Lors d'une livraison ou d'un doute de statut |
 | Factures | Telecharger les justificatifs PDF | Apres paiement ou pour la comptabilite |
 | VM | Lire l'état machine | Quand un service infra est actif |
-| Console | Diagnostiquer ou confirmer un état technique | En maintenance, reprise ou verification |
-| Data Disk Mode | Inspecter les données et montages | En recuperation ou maintenance ciblee |
+| Console | Diagnostiquer ou confirmer un état technique | En maintenance, reprise ou vérification |
+| Data Disk Mode | Inspecter les données et montages | En récupération ou maintenance ciblee |
 | Support | Escalader une situation | Quand le libre-service ne suffit plus |
 
 ## Quand le parcours devient plus technique
@@ -81,7 +81,7 @@ Certaines offres vont plus loin qu'un simple achat. Le parcours devient plus op�
 - Confirmer un état de service avant escalade support
 
 ```bash
-# Exemple de session console une fois l'accès ouvrеt
+# Exemple de session console une fois l'accès ouvert
 hostname
 uptime
 ip addr

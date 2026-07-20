@@ -1,5 +1,5 @@
 # Architecture d'UnyPort
-`UnyPort` est structuree comme une pile opérateur compacte : un backend Go, un frontend statique, une petite surface de configuration et une boucle de télémétrie qui lit directement l'état de Linux et des interfaces visibles par Xen. L'objectif est la clarté opérationnelle, pas la complexite de framework.
+`UnyPort` est structurée comme une pile opérateur compacte : un backend Go, un frontend statique, une petite surface de configuration et une boucle de télémétrie qui lit directement l'état de Linux et des interfaces visibles par Xen. L'objectif est la clarté opérationnelle, pas la complexité de framework.
 
 ## Couche 1 - runtime et assets
 La première couche est le runtime applicatif lui-meme :
@@ -41,7 +41,7 @@ L'identité reste volontairement simple et locale :
 Le dépôt peut aussi initialiser automatiquement un premier admin lorsque `users.json` n'existe pas et que `UNYPORT_ADMIN_PASSWORD` est fourni ou que les identifiants par défaut sont acceptes.
 
 ## Couche 4 - télémétrie et lecture de l'hôte
-`UnyPort` lit la plateforme directement au lieu de dependre d'un agent de monitoring separe :
+`UnyPort` lit la plateforme directement au lieu de dependre d'un agent de monitoring séparé :
 
 - `/proc` Et `/sys` pour le CPU, la mémoire, l'uptime, le réseau et les temperatures
 - L'état OpenRC pour les services
@@ -52,7 +52,7 @@ Le dépôt peut aussi initialiser automatiquement un premier admin lorsque `user
 Le broker SSE echantillonne toutes les `2` secondes, conserve un anneau de `60` snapshots en mémoire et calcule les echelles des graphes côté serveur avant d'envoyer les données au frontend.
 
 ## Couche 5 - UX opérateur
-L'interface visible est ensuite organisee en pages a but explicite :
+L'interface visible est ensuite organisee en pages à but explicite :
 
 - Dashboard pour le statut rapide et l'historique des redemarrages
 - Page hypervisor pour le rôle d'hôte, Xen et le contexte de version
@@ -62,4 +62,4 @@ L'interface visible est ensuite organisee en pages a but explicite :
 - Page security pour les contrôles de durcissement
 - Page settings pour le branding et les futurs réglages fournisseurs
 
-Cette architecture doit donc se lire comme un portail de supervision a périmètre précis, pas comme un site web générique ni comme une suite de virtualisation universelle.
+Cette architecture doit donc se lire comme un portail de supervision à périmètre précis, pas comme un site web générique ni comme une suite de virtualisation universelle.

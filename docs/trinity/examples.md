@@ -29,16 +29,16 @@ Lecture attendue :
 - Les montages actifs sont lisibles
 - Un userland Alpine léger est présent
 
-## Exemple 3 - preparer un message support paiement
+## Exemple 3 - préparer un message support paiement
 ```markdown
-Reference commande : TRI-2026-00421
+Référence commande : TRI-2026-00421
 Fournisseur paiement : virement bancaire
 Statut observe : en attente plus longtemps que prevu
 Facture visible : non
-Action demandee : confirmer si le reglement est encore en attente
+Action demandee : confirmer si le règlement est encore en attente
 ```
 
-## Exemple 4 - resumer un incident VM pour le support
+## Exemple 4 - résumer un incident VM pour le support
 ```json
 {
   "vm": "vm-trinity01",
@@ -48,7 +48,7 @@ Action demandee : confirmer si le reglement est encore en attente
   "indices": [
     "hostname ok",
     "système de fichiers monté",
-    "application non demarree"
+    "application non démarrée"
   ]
 }
 ```

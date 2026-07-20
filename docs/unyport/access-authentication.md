@@ -1,5 +1,5 @@
 # Accès et authentification
-`UnyPort` utilise un modèle d'authentification compact construit autour des utilisateurs locaux, des cookies JWT et de la protection CSRF. L'application supporte aussi la connexion OAuth via GitHub et GitLab lorsque les réglages fournisseurs sont completes.
+`UnyPort` utilise un modèle d'authentification compact construit autour des utilisateurs locaux, des cookies JWT et de la protection CSRF. L'application supporte aussi la connexion OAuth via GitHub et GitLab lorsque les réglages fournisseurs sont complets.
 
 ## Utilisateurs locaux et bootstrap
 La source d'identité principale est `settings/users.json`.
@@ -7,14 +7,14 @@ La source d'identité principale est `settings/users.json`.
 Comportement important :
 
 - Si `users.json` n'existe pas, `UnyPort` initialise un premier compte admin
-- L'email initialise est `demo@unyport.app`
+- L'email initialise est `démo@unyport.app`
 - Le mot de passe vient de `UNYPORT_ADMIN_PASSWORD` ou retombe sur la valeur intégrée
-- Le dépôt fournit aussi actuellement un utilisateur local de demo pour l'evaluation de la source
+- Le dépôt fournit aussi actuellement un utilisateur local de démo pour l'evaluation de la source
 
 Cela signifie que le parcours de déploiement et le parcours d'evaluation du dépôt sont proches, mais pas identiques.
 
 ## Rôles
-Trois rôles sont acceptes par le backend :
+Trois rôles sont acceptés par le backend :
 
 - `admin`
 - `operator`
@@ -22,11 +22,11 @@ Trois rôles sont acceptes par le backend :
 
 Leur sens opérationnel est :
 
-- `viewer` : Usage authentifie en lecture seule
-- `operator` : Usage authentifie avec ecritures courantes comme le profil et le mot de passe
+- `viewer` : Usage authentifié en lecture seule
+- `operator` : Usage authentifié avec écritures courantes comme le profil et le mot de passe
 - `admin` : Accès complet, y compris administration des utilisateurs et du branding
 
-Dans l'UI actuelle, les viewers peuvent consulter le portail mais ne peuvent pas enregistrer des changements de profil ni mettre a jour leurs identifiants.
+Dans l'UI actuelle, les viewers peuvent consulter le portail mais ne peuvent pas enregistrer des changements de profil ni mettre à jour leurs identifiants.
 
 ## Fournisseurs OAuth
 OAuth est implemente pour :
@@ -47,11 +47,11 @@ Apres authentification, `UnyPort` emet un cookie JWT :
 ## CSRF, limitation et trusted origins
 L'application impose aussi :
 
-- Une protection CSRF avec un endpoint dedie `/api/csrf`
+- Une protection CSRF avec un endpoint dédié `/api/csrf`
 - Une limitation de login, `5` tentatives par minute par défaut
 - Une validation des trusted origins pour les requetes qui modifient l'état
 
-Si `trusted_origins` est vide, `UnyPort` calcule une liste par défaut a partir des interfaces actives locales sur le port `8800`.
+Si `trusted_origins` est vide, `UnyPort` calcule une liste par défaut à partir des interfaces actives locales sur le port `8800`.
 
 ## Actions admin
 Les actions d'écriture reservees aux admins incluent actuellement :
@@ -59,6 +59,6 @@ Les actions d'écriture reservees aux admins incluent actuellement :
 - Creer des utilisateurs
 - Changer les rôles
 - Supprimer un utilisateur sauf son propre compte
-- Mettre a jour ou reinitialiser le branding de l'instance
+- Mettre à jour ou reinitialiser le branding de l'instance
 
 Ce périmètre garde l'administration explicite et limitéée.

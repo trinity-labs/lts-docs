@@ -10,25 +10,25 @@ Dans la pratique, le DDM est utile lorsqu'il faut :
 - Vérifier des systèmes de fichiers
 - Récupérer des données
 - Confirmer qu'un environnement casse peut encore être monté
-- Travailler sur un service qui ne doit pas redemarrer normalement tout de suite
+- Travailler sur un service qui ne doit pas redémarrer normalement tout de suite
 
-## Comment reconnaitre le DDM
-L'interface rend generalement le DDM visible avec un libelle dedie et une console orientée maintenance ou recuperation.
+## Comment reconnaître le DDM
+L'interface rend generalement le DDM visible avec un libellé dédié et une console orientée maintenance ou récupération.
 
 ```text
 Mode service normal :
-  priorite au service
+  priorité au service
   comportement applicatif attendu
 
 Data Disk Mode :
-  priorite au stockage et au système
+  priorité au stockage et au système
   comportement de reprise attendu
 ```
 
 | Critere | Mode normal | Data Disk Mode |
 | --- | --- | --- |
 | Priorite | Service applicatif | Donnees, stockage et reprise |
-| Console | Exploitation ou verification | Maintenance et recuperation |
+| Console | Exploitation ou vérification | Maintenance et récupération |
 | Attente principale | Service disponible | Volumes lisibles et diagnostic fiable |
 | Niveau de prudence | Standard | Renforce avant toute modification |
 
@@ -43,7 +43,7 @@ df -h
 cat /etc/fstab
 ```
 
-Ces commandes aident a répondre a des questions simples :
+Ces commandes aident à répondre à des questions simples :
 
 - Quels disques sont visibles
 - Quels points de montage sont actifs
@@ -64,7 +64,7 @@ Entrer en DDM
   -> confirmer les montages
   -> inspecter le système de fichiers
   -> collecter les indices
-  -> récupérer les données ou preparer l'escalade support
+  -> récupérer les données ou préparer l'escalade support
 ```
 
 ## Ce que le DDM n'est pas
@@ -72,12 +72,12 @@ Le DDM ne doit pas être lu comme :
 
 - Un état applicatif normal
 - Un remplacement de sauvegarde
-- Une invitation a modifier le système sans contrôle
+- Une invitation à modifier le système sans contrôle
 
 Le DDM est un mode technique contrôle dont la valeur principale est la clarté, la reprise et l'inspection.
 
 | A ne pas confondre avec | Pourquoi | Lecture correcte |
 | --- | --- | --- |
-| Redemarrage normal | Le but n'est pas de remettre vite en production | Prioriser l'inspection et la recuperation |
-| Sauvegarde complete | Le DDM n'est pas une politique de backup | Utiliser les sauvegardes dediees si elles existent |
-| Espace de test libre | Le contexte reste sensible | Limiter les actions aux verifications nécessaires |
+| Redemarrage normal | Le but n'est pas de remettre vite en production | Prioriser l'inspection et la récupération |
+| Sauvegarde complet | Le DDM n'est pas une politique de backup | Utiliser les sauvegardes dédiées si elles existent |
+| Espace de test libre | Le contexte reste sensible | Limiter les actions aux vérifications nécessaires |

@@ -8,4 +8,4 @@ Elle existe pour exposer :
 - L'historique des redemarrages et la posture de sécurité
 - Une passerelle contrôlée vers certaines surfaces internes
 
-Utiliser l'index de section et les pages suivantes pour la documentation complete. `UnyPort` n'est pas presentee comme un outil de developpement. Elle est presentee comme une architecture de contrôle dediee.
+Utiliser l'index de section et les pages suivantes pour la documentation complet. `UnyPort` n'est pas presentee comme un outil de developpement. Elle est presentee comme une architecture de contrôle dédiée.

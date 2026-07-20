@@ -22,7 +22,7 @@ Cette couche fournit :
 - Des points d'entrée de bootstrap
 - Un chemin public stable pour récupérer le logiciel host
 
-L'application host n'est pas seulement un binaire d'appoint. C'est le runtime côté machine qui s'enregistre, s'identifie, envoie des heartbeats et accepte ou refuse les sessions.
+L'application host n'est pas seulement un binaire d'appoint. C'est le runtime côté machine qui s'enregistre, s'identifie, envoie des heartbeats et accepte ou refusé les sessions.
 
 ### 2. Couche identité et confiance
 `UnyDesk` utilise plusieurs modes publics de confiance :

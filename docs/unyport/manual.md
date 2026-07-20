@@ -18,12 +18,12 @@ Ouvrir le portail
   -> Lire le rôle de l'hôte
   -> Verifier CPU / mémoire / réseau
   -> Inspecter Xen ou LBU
-  -> Lire logs ou securite
+  -> Lire logs ou sécurité
   -> Escalader via TRINITY ou UnyDesk si besoin
 ```
 
 ## Avant la première utilisation
-Il faut preparer quelques informations :
+Il faut préparer quelques informations :
 
 - La bonne URL ou l'entrée reverse proxy
 - Un utilisateur local ou un fournisseur OAuth configure

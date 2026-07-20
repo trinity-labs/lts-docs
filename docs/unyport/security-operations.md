@@ -33,12 +33,12 @@ La page security agrege des contrôles autour de :
 - Les permissions de `settings/users.json`
 - Les services OpenRC critiques
 - Certains processus surveilles
-- Les ports TCP a l'écoute
+- Les ports TCP à l'écoute
 
-Elle sert de résumé opérateur, pas de remplacement a un audit complet.
+Elle sert de résumé opérateur, pas de remplacement à un audit complet.
 
 ## Perimetre d'exploitation
-Operationnellement, `UnyPort` est la plus forte lorsqu'elle sert a :
+Operationnellement, `UnyPort` est la plus forte lorsqu'elle sert à :
 
 - La visibilité
 - La vérification
@@ -53,6 +53,6 @@ Le portail peut exposer certains fichiers de log, l'état des services et des si
 
 - Utiliser `TRINITY` pour les actions de cycle de vie client et service
 - Utiliser `UnyDesk` pour l'accès distant ou l'assistance
-- Utiliser des outils système plus profonds lorsqu'une intervention hôte complete est nécessaire
+- Utiliser des outils système plus profonds lorsqu'une intervention hôte complet est nécessaire
 
-Cette frontiere garde `UnyPort` utile en exploitation sans surpromettre.
+Cette frontière garde `UnyPort` utile en exploitation sans surpromettre.

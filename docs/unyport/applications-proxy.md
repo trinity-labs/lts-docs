@@ -1,5 +1,5 @@
 # Proxy applicatif
-`UnyPort` peut exposer certaines applications internes via des reverse proxies contrôles montés sous `/proxy/<name>/`. Cela permet a l'opérateur d'entrer dans des outils internes depuis le même portail authentifie au lieu d'exposer chaque outil directement.
+`UnyPort` peut exposer certaines applications internes via des reverse proxies contrôles montés sous `/proxy/<name>/`. Cela permet à l'opérateur d'entrer dans des outils internes depuis le même portail authentifié au lieu d'exposer chaque outil directement.
 
 ## Declarer une application
 Les applications proxyfiees sont declarees dans `settings/config.yaml` :
@@ -12,7 +12,7 @@ apps:
     type: terminal
 ```
 
-Au runtime, le portail exposé les metadonnees via `/api/apps` et monte le proxy sous :
+Au runtime, le portail exposé les métadonnées via `/api/apps` et monte le proxy sous :
 
 ```text
 /proxy/ttyd/
@@ -33,7 +33,7 @@ Le code applique une CSP plus permissive uniquement pour le montage `ttyd`, afin
 ## Pourquoi c'est utile
 Cette couche proxy garde `UnyPort` ciblee :
 
-- Les opérateurs ont un point d'entrée authentifie unique
+- Les opérateurs ont un point d'entrée authentifié unique
 - Les applications internes n'ont pas besoin de leur propre exposition publique
 - Le produit reste petit tout en servant de pont vers des outils orientés terminal
 

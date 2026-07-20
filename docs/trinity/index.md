@@ -43,4 +43,4 @@ Site public
   -> Support ou reprise
 ```
 
-La section `TRINITY` de cette documentation décrit donc a la fois le site, les parcours utilisateur, les briques techniques visibles et l'historique fonctionnel recent.
+La section `TRINITY` de cette documentation décrit donc à la fois le site, les parcours utilisateur, les briques techniques visibles et l'historique fonctionnel recent.

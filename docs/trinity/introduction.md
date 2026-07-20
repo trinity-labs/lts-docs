@@ -8,8 +8,8 @@
 - Commande et paiement
 - Factures PDF et suivi de statut
 - Support `TRINITY`, `UnyDesk` et `UnyPort`
-- Accès a certaines surfaces VM et console
+- Accès à certaines surfaces VM et console
 - Documentation publique
 
 ## Pourquoi cette documentation existe
-Cette documentation publique explique le rôle de `TRINITY`, la place du site dans l'écosystème, les principaux parcours utilisateur et les notions a comprendre pour utiliser correctement la plateforme : Alpine Linux, Xen, VM, support, paiement, console et Data Disk Mode.
+Cette documentation publique explique le rôle de `TRINITY`, la place du site dans l'écosystème, les principaux parcours utilisateur et les notions à comprendre pour utiliser correctement la plateforme : Alpine Linux, Xen, VM, support, paiement, console et Data Disk Mode.

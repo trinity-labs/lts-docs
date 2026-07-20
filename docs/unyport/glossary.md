@@ -3,9 +3,9 @@ Ce glossaire donne une lecture compacte des termes les plus importants d'`UnyPor
 
 ## Termes coeur
 - `UnyPort` : Portail de supervision et de contrôle orienté opérateur
-- `viewer` : Rôle authentifie en lecture seule
-- `operator` : Rôle authentifie avec ecritures courantes
-- `admin` : Rôle authentifie avec administration des utilisateurs et du branding
+- `viewer` : Rôle authentifié en lecture seule
+- `operator` : Rôle authentifié avec écritures courantes
+- `admin` : Rôle authentifié avec administration des utilisateurs et du branding
 - `branding` : Configuration logo et couleurs de rôle stockee dans `branding.yaml`
 
 ## Termes plateforme

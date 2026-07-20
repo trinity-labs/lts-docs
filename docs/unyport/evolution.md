@@ -1,5 +1,5 @@
 # Evolution
-Cette page synthétise la manière dont `UnyPort` a évolue fonctionnellement a travers l'historique visible du dépôt et le code actuel.
+Cette page synthétise la manière dont `UnyPort` à évolue fonctionnellement à travers l'historique visible du dépôt et le code actuel.
 
 ## Direction monitoring-first
 Des le depart, `UnyPort` évolue comme un control plane orienté monitoring :
@@ -15,7 +15,7 @@ Les travaux recents ont rendu le produit plus praticable au quotidien :
 
 - Navigation mobile et hamburger
 - Separation plus nette des pages
-- Heatmap de redemarrage
+- Heatmap de redémarrage
 - Carte réseau refinee
 - Remontee visible des versions
 
@@ -28,12 +28,12 @@ Le code actuel montre une lecture d'infrastructure plus mature que ne le laissai
 - Inspection hyperviseur et domaines Xen
 - Lecture Alpine LBU
 - Lecture OpenRC sans dependre d'outils lourds externes
-- Contrôles de sécurité relies a l'hôte réel
+- Contrôles de sécurité relies à l'hôte réel
 
-`UnyPort` ressemble ainsi davantage a un observateur natif de plateforme qu'a un shell d'administration web générique.
+`UnyPort` ressemble ainsi davantage à un observateur natif de plateforme qu'à un shell d'administration web générique.
 
 ## Packaging opérationnel plus solide
-Le dépôt a aussi évolue dans sa façon d'être livre :
+Le dépôt à aussi évolue dans sa façon d'être livre :
 
 - Mode developpement avec assets live
 - Build production avec assets embarques
@@ -62,4 +62,4 @@ Au `2026-07-17`, le produit public doit encore être compris comme une `V1` :
 - Utile pour l'entrée proxy contrôlée
 - Pas encore un orchestrateur complet du cycle de vie Xen
 
-Le README annonce explicitement une future `V2` autour de workflows d'orchestration plus larges. La documentation actuelle doit donc présenter `UnyPort` comme un portail d'exploitation serieux, mais a périmètre volontairement borne.
+Le README annonce explicitement une future `V2` autour de workflows d'orchestration plus larges. La documentation actuelle doit donc présenter `UnyPort` comme un portail d'exploitation serieux, mais à périmètre volontairement borne.

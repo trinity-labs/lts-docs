@@ -9,7 +9,7 @@
 - Un modèle de déploiement minimal
 - Des lectures directes du noyau et du système de fichiers
 - Une détection explicite du rôle de l'hôte
-- Aucune dependance a une grosse pile d'agents
+- Aucune dépendance à une grosse pile d'agents
 
 Dans ce dépôt, le frontend est une application monopage servie soit depuis le disque en developpement, soit embarquee dans le binaire de production.
 
@@ -18,7 +18,7 @@ Dans ce dépôt, le frontend est une application monopage servie soit depuis le 
 
 - Un site marketing public
 - Un portail client de commande
-- Une suite complete d'orchestration Xen aujourd'hui
+- Une suite complet d'orchestration Xen aujourd'hui
 - Un outil générique d'accès distant bureau
 
 Ces rôles relevent plutot de `TRINITY` et `UnyDesk`, selon le besoin.
