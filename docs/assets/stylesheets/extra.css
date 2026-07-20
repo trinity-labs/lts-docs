@@ -699,9 +699,14 @@ label[for="__toc"] > a span::before {
     .md-sidebar--primary .md-nav--primary > .md-nav__list > .md-nav__item--nested > label.md-nav__link,
     .md-sidebar--primary .md-nav--primary > .md-nav__list > .md-nav__item--nested > .md-nav__link.md-nav__container > label.md-nav__link {
         min-height: 1.85rem;
+        margin: 0;
         padding: 0.2rem 1.8rem 0.28rem 0;
         font-size: 0.78rem;
         line-height: 1.1;
+    }
+
+    .md-sidebar--primary .md-nav--primary .md-nav__link.md-nav__container {
+        margin: 0;
     }
 
     .md-sidebar--primary .md-nav--primary > .md-nav__list > .md-nav__item--nested > .md-nav > .md-nav__list {
