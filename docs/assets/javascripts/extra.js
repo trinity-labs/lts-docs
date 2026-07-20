@@ -309,8 +309,8 @@ function initTrinityDocsChrome() {
         switcher.appendChild(anchor);
       });
 
-      const searchToggle = headerInner.querySelector('label.md-header__button[for="__search"]');
-      const anchor = searchToggle || headerInner.querySelector(".md-search") || headerInner.querySelector(".md-header__title");
+      const search = headerInner.querySelector(".md-search");
+      const anchor = search || headerInner.querySelector('label.md-header__button[for="__search"]') || headerInner.querySelector(".md-header__title");
 
       if (anchor) {
         anchor.insertAdjacentElement("afterend", switcher);
