@@ -4,6 +4,27 @@ social_image: "https://trinity-net.com/img/products/trinity/hero-trinity.png"
 ---
 
 # TRINITY
+✅ Vor einer Anleitung das zum Bedarf passende Produkt auswählen.
+
+⭕ Niemals Token, Geheimnisse oder Sitzungswerte in einem Bericht veröffentlichen.
+
+➡️ Die wichtigsten öffentlichen Oberflächen prüfen:
+
+```bash
+curl -fsSI https://trinity-net.com/
+curl -fsS https://ip.trinity-net.com/api | jq .
+```
+
+## Dokumentierte Produkte
+
+<div class="unyport-icon-grid">
+  <figure><img src="assets/images/projects/trinity/logo-trinity.png" alt="TRINITY"><figcaption><a href="trinity/">TRINITY</a></figcaption></figure>
+  <figure><img src="assets/images/projects/scan/scan-report.png" alt="Scan-Bericht"><figcaption><a href="scan/">Scan / Audit</a></figcaption></figure>
+  <figure><img src="assets/images/projects/ip/ip-diagnostic.png" alt="IP-Diagnose"><figcaption><a href="ip/">IP</a></figcaption></figure>
+  <figure><img src="assets/images/projects/unydesk/logo-unydesk.jpg" alt="UnyDesk"><figcaption><a href="unydesk/">UnyDesk</a></figcaption></figure>
+  <figure><img src="assets/images/unyport/logo.jpg" alt="UnyPort"><figcaption><a href="unyport/">UnyPort</a></figcaption></figure>
+  <figure><img src="assets/images/projects/unycloud/unycloud-screen.jpg" alt="UnyCloud"><figcaption><a href="unycloud/">UnyCloud</a></figcaption></figure>
+</div>
 `TRINITY` ist die zentrale Architektur der Plattform.
 
 Sie ist die wichtigste öffentliche Oberfläche für:
