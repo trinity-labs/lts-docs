@@ -4,6 +4,12 @@ social_image: "https://unyport.app/média/img/logos/logo-unyport-full.png"
 ---
 
 # UnyPort
+✅ Identifier le host et le service avant toute action.
+⭕ Ne jamais exposer un jeton de proxy ou d’administration.
+➡️ Vérifier la disponibilité publique :
+```bash
+curl -fsSI https://unyport.app/
+```
 
 ![Bannière UnyPort](../assets/images/unyport/unyport-git-banner.png){ .unyport-screen }
 
