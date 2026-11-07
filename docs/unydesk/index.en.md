@@ -16,21 +16,21 @@ viewer -> UnyDesk broker -> host -> direct or relay transport
 
 Unlike `TRINITY`, which is the customer and service portal, `UnyDesk` is centered on:
 
-- Host reachability
-- Viewer-to-host session routing
-- Live remote control
-- Remote assistance flows
-- Transport fallback behavior
+- ✅ Host reachability
+- ✅ Viewer-to-host session routing
+- ✅ Live remote control
+- ✅ Remote assistance flows
+- ✅ Transport fallback behavior
 
 ## Start here
 For a practical reading path, the recommended order is:
 
-1. `Overview`
-2. `Architecture`
-3. `Bootstrap and access`
-4. `Usage`
-5. `Support and operations`
-6. `Glossary`
+1. ➡️ `Overview`
+2. ➡️ `Architecture`
+3. ➡️ `Bootstrap and access`
+4. ➡️ `Usage`
+5. ➡️ `Support and operations`
+6. ➡️ `Glossary`
 
 ```text
 Viewer

@@ -16,26 +16,26 @@ curl -fsSI https://cloud.trinity-net.com/
 
 öffentlich, `UnyCloud` führt zusammen:
 
-- Eine Webfile-Schnittstelle
-- Authentifizierter Zugang zu montierten Räumen
-- Eine dedizierte Branding-Trinity
-- HTTPS-Einstiegspunkt hinter Reverse Proxy
-- Klare Trennung zwischen sichtbarem Produkt und Laufzeit Filebrowser
+- ✅ Eine Webfile-Schnittstelle
+- ✅ Authentifizierter Zugang zu montierten Räumen
+- ✅ Eine dedizierte Branding-Trinity
+- ✅ HTTPS-Einstiegspunkt hinter Reverse Proxy
+- ✅ Klare Trennung zwischen sichtbarem Produkt und Laufzeit Filebrowser
 
 `UnyCloud` muss als Cloud-Benutzerdienst gelesen werden. `Filebrowser` bleibt die technische Abstammung und der dokumentierte Kompatibilitätsvertrag auf der Admin-Seite.
 
 ## Beginnen Sie hier
 Empfohlene Bestellung:
 
-1. `Introduction`
-2. `Présentation`
-3. `Architecture`
-4. `Mode d'emploi`
-5. `Accès et authentification`
-6. `Déploiement`
-7. `Sécurité et exploitation`
-8. `Exemples`
-9. `Historique`
+1. ➡️ `Introduction`
+2. ➡️ `Présentation`
+3. ➡️ `Architecture`
+4. ➡️ `Mode d'emploi`
+5. ➡️ `Accès et authentification`
+6. ➡️ `Déploiement`
+7. ➡️ `Sécurité et exploitation`
+8. ➡️ `Exemples`
+9. ➡️ `Historique`
 
 ```text
 Navigateur

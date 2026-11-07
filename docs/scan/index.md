@@ -12,10 +12,10 @@ curl -fsSI https://scan.trinity-net.com/
 Le service combine collecte passive, probes actives, normalisation et corrélation pour donner une vue claire d'un domaine, d'une application ou d'une exposition réseau.
 
 ## Objectif
-- identifier les points exposés publiquement
-- regrouper les preuves observables dans un rapport
-- aider à prioriser les corrections
-- fournir une synthèse compréhensible par une équipe technique et par un décideur
+- ✅ identifier les points exposés publiquement
+- ✅ regrouper les preuves observables dans un rapport
+- ✅ aider à prioriser les corrections
+- ✅ fournir une synthèse compréhensible par une équipe technique et par un décideur
 
 ## Parcours
 ```text

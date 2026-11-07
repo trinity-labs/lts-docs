@@ -7,10 +7,10 @@ UnyCloud Runtime hält die Filebrowser-Kompatibilität: Binär kann unter Name i
 ## Branding plus Produkt
 Der Übergang von einem rohen Filebrowser zu einer UnyCloud-Oberfläche erfordert:
 
-- Ein stimmiges Logo
-- Ein dediziertes CSS
-- Kontrollierte Bilder
-- Eine klare Unterscheidung zwischen Aussehen und Login-Logik
+- ✅ Ein stimmiges Logo
+- ✅ Ein dediziertes CSS
+- ✅ Kontrollierte Bilder
+- ✅ Eine klare Unterscheidung zwischen Aussehen und Login-Logik
 
 ## Wichtiger Proxy
 Die Anmeldehistorie zeigte, dass der Proxy nicht nur ein Tunnel ist, sondern zur zuverlässigsten Korrekturschicht werden kann, wenn der SPA nicht genügend Kontrolle über das endgültige HTML gibt.
@@ -21,7 +21,7 @@ Die jüngste Entwicklung bringt UnyCloud über das einfache Branding hinaus: str
 ## Nächste Richtung
 Die natürlichen Entwicklungen sind:
 
-- Bessere Dokumentenzugriffsprofile und -perimeter
-- Share Workflows klären
-- Machen Sie Gesundheitschecks sichtbarer
-- Halten Sie eine Admin-Dateibrowser-Dokumentation mit der öffentlichen Oberfläche von UnyCloud in Einklang
+- ✅ Bessere Dokumentenzugriffsprofile und -perimeter
+- ✅ Share Workflows klären
+- ✅ Machen Sie Gesundheitschecks sichtbarer
+- ✅ Halten Sie eine Admin-Dateibrowser-Dokumentation mit der öffentlichen Oberfläche von UnyCloud in Einklang

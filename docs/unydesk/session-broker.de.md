@@ -16,15 +16,15 @@ Das genaue Timing hängt von Host-Verfügbarkeit, Viewer-Authentifizierung, Host
 ## Was der Broker verfolgt
 Der Broker kann Folgendes anzeigen:
 
-- Sitzungs-ID
-- Zielhost oder Public ID
-- Viewer-Identität und Label
-- Geroutete Host-Identität
-- WebRTC Offer- und Answer-Status
-- Viewer- und Host-ICE-Kandidaten
-- Dispatch-Status und Anzahl
-- Zeitpunkte des letzten Dispatch und der letzten Host-Bestätigung
-- Bildschirm-Fallback-Revision und Aktualisierungszeit
+- ✅ Sitzungs-ID
+- ✅ Zielhost oder Public ID
+- ✅ Viewer-Identität und Label
+- ✅ Geroutete Host-Identität
+- ✅ WebRTC Offer- und Answer-Status
+- ✅ Viewer- und Host-ICE-Kandidaten
+- ✅ Dispatch-Status und Anzahl
+- ✅ Zeitpunkte des letzten Dispatch und der letzten Host-Bestätigung
+- ✅ Bildschirm-Fallback-Revision und Aktualisierungszeit
 
 Diese Felder sind nützlich, weil sie Routing-Probleme von Medien-Problemen trennen.
 

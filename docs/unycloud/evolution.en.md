@@ -7,10 +7,10 @@ UnyCloud runtime keeps Filebrowser compatibility: binary can remain installed un
 ## Branding plus product
 The transition from a raw Filebrowser to a UnyCloud surface requires:
 
-- A coherent logo
-- A dedicated CSS
-- Controlled images
-- A clear distinction between appearance and login logic
+- ✅ A coherent logo
+- ✅ A dedicated CSS
+- ✅ Controlled images
+- ✅ A clear distinction between appearance and login logic
 
 ## More important Proxy
 The login history showed that the proxy is not just a tunnel. It can become the most reliable correction layer when the SPA does not give enough control over the final HTML.
@@ -21,7 +21,7 @@ The recent trajectory pushes UnyCloud beyond simple branding: strict CSP, remova
 ## Next direction
 The natural evolutions are:
 
-- Better document access profiles and perimeters
-- Clarify share workflows
-- Make health checks more visible
-- Keep an admin Filebrowser documentation aligned with the UnyCloud public surface
+- ✅ Better document access profiles and perimeters
+- ✅ Clarify share workflows
+- ✅ Make health checks more visible
+- ✅ Keep an admin Filebrowser documentation aligned with the UnyCloud public surface

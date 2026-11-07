@@ -16,30 +16,30 @@ curl -fsSI https://trinity-net.com/
 
 `TRINITY` regroupe publiquement :
 
-- La présentation des offres et services
-- L'accès au compte client
-- Les commandes, paiements et factures
-- Le suivi des VM et l'accès console
-- Le support, la documentation et le chat d'assistance
+- ✅ La présentation des offres et services
+- ✅ L'accès au compte client
+- ✅ Les commandes, paiements et factures
+- ✅ Le suivi des VM et l'accès console
+- ✅ Le support, la documentation et le chat d'assistance
 
 Cette surface fonctionne aux côtés de deux services complémentaires :
 
-- `UnyDesk` Pour l'accès distant
-- `UnyPort` Pour le pilotage des services
+- ✅ `UnyDesk` Pour l'accès distant
+- ✅ `UnyPort` Pour le pilotage des services
 
 ## Commencer ici
 Pour une lecture pratique, l'ordre conseille est :
 
-1. `Introduction`
-2. `Architecture`
-3. `Mode d'emploi`
-4. `Compte et commandes`
-5. `Paiements et factures`
-6. `VM et console`
-7. `Data Disk Mode`
-8. `Alpine Linux et Xen`
-9. `Support et exploitation`
-10. `Exemples`
+1. ➡️ `Introduction`
+2. ➡️ `Architecture`
+3. ➡️ `Mode d'emploi`
+4. ➡️ `Compte et commandes`
+5. ➡️ `Paiements et factures`
+6. ➡️ `VM et console`
+7. ➡️ `Data Disk Mode`
+8. ➡️ `Alpine Linux et Xen`
+9. ➡️ `Support et exploitation`
+10. ➡️ `Exemples`
 
 ```text
 Site public

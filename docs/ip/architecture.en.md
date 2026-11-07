@@ -13,10 +13,10 @@ navigateur
 ```
 
 ## Principles
-- no user account
-- no application session
-- JSON response available for automation
-- explicit separation between observed address and reporting headers
+- ✅ no user account
+- ✅ no application session
+- ✅ JSON response available for automation
+- ✅ explicit separation between observed address and reporting headers
 
 Headers transmitted by the client or proxy can be displayed as a context, but the reference address remains the one observed by the infrastructure.
 

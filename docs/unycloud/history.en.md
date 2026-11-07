@@ -4,11 +4,11 @@ This page takes back the useful history from the admin documentation `Filebrowse
 ## Filebrowser Base
 The initial base is a Filebrowser service dedicated to `<cloud-host>`with:
 
-- A project consists of `docker_cloud`
-- An Upstream Image `filebrowser/filebrowser:latest`
-- A persistent local base
-- A storage assembly under `/srv`
-- A branding tree mounted in the container
+- ✅ A project consists of `docker_cloud`
+- ✅ An Upstream Image `filebrowser/filebrowser:latest`
+- ✅ A persistent local base
+- ✅ A storage assembly under `/srv`
+- ✅ A branding tree mounted in the container
 
 This step establishes the main ability: expose a web file browsing under a TRINITY URL.
 
@@ -20,9 +20,9 @@ The `2026-08-29`, `UnyCloud 0.0.1` officially establishes the fork maintained fr
 ## Branding UnyCloud
 The documented Filebrowser-side history then shows the separation between:
 
-- Native branding loaded by `custom.css`
-- The assets served under `/static/...`
-- Branding scripts that are not necessarily executed by the login page
+- ✅ Native branding loaded by `custom.css`
+- ✅ The assets served under `/static/...`
+- ✅ Branding scripts that are not necessarily executed by the login page
 
 This point explains why `UnyCloud` must document branding as a product part, but keep the behavioral debug on admin.
 
@@ -39,9 +39,9 @@ To `2026-08-30`, the local repository indicates `UNYCLOUD_VERSION=0.9.15`. The G
 ## Current status
 Today, `UnyCloud` shall be understood as:
 
-- Cloud Product Surface
-- A Filebrowser compatible runtime maintained by UnyCloud
-- A specific TRINITY branding
-- A service whose visible behaviour also depends on the proxy
+- ✅ Cloud Product Surface
+- ✅ A Filebrowser compatible runtime maintained by UnyCloud
+- ✅ A specific TRINITY branding
+- ✅ A service whose visible behaviour also depends on the proxy
 
 The important history is therefore not only the installation of a container. It is the transformation of Filebrowser into an exploitable, branded and integrated UnyCloud service to the rest of TRINITY.

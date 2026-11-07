@@ -17,29 +17,29 @@ curl -fsSI https://unyport.app/
 
 öffentlich, `UnyPort` führt zusammen:
 
-- Authentifizierung des Betreiberzugangs
-- Live-Sichtbarkeit auf dem Host und den Diensten
-- Expliziter Xen-Kontext für Dom0- und DomU-Umgebungen
-- Zugriffskontrolle auf einige interne Anwendungen wie `ttyd`
-- Betriebsseiten für Sicherheit, Speicher, Netzwerk- und Systemstatus
+- ✅ Authentifizierung des Betreiberzugangs
+- ✅ Live-Sichtbarkeit auf dem Host und den Diensten
+- ✅ Expliziter Xen-Kontext für Dom0- und DomU-Umgebungen
+- ✅ Zugriffskontrolle auf einige interne Anwendungen wie `ttyd`
+- ✅ Betriebsseiten für Sicherheit, Speicher, Netzwerk- und Systemstatus
 
 `UnyPort` Funktioniert mit zwei komplementären Oberflächen:
 
-- `TRINITY` Für den Customer Lifecycle, Bestellungen, Abrechnung und Service-Einstiegspunkte
-- `UnyDesk` Für Remote-Zugriff und Support-Workflows
+- ✅ `TRINITY` Für den Customer Lifecycle, Bestellungen, Abrechnung und Service-Einstiegspunkte
+- ✅ `UnyDesk` Für Remote-Zugriff und Support-Workflows
 
 ## Beginnen Sie hier
 Für die praktische Lektüre ist die empfohlene Reihenfolge:
 
-1. `Introduction`
-2. `Architecture`
-3. `Mode d'emploi`
-4. `Accès et authentification`
-5. `Métriques et surfaces`
-6. `Déploiement`
-7. `Alpine Linux et Xen`
-8. `Sécurité et exploitation`
-9. `Exemples`
+1. ➡️ `Introduction`
+2. ➡️ `Architecture`
+3. ➡️ `Mode d'emploi`
+4. ➡️ `Accès et authentification`
+5. ➡️ `Métriques et surfaces`
+6. ➡️ `Déploiement`
+7. ➡️ `Alpine Linux et Xen`
+8. ➡️ `Sécurité et exploitation`
+9. ➡️ `Exemples`
 
  [Durchsuchen 103 Netzwerk-Icons, Speicher und Festplatten](icon-library.md)
 

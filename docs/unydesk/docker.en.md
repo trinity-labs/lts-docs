@@ -3,7 +3,7 @@ This public page only retains the information useful to understand the Docker ru
 
 Source of reference:
 
-- `/var/docker/docker_unydesk/docker-compose.yml`
+- ➡️ `/var/docker/docker_unydesk/docker-compose.yml`
 
 Internal build details, long packaging commands and sensitive values are not published here.
 

@@ -11,10 +11,10 @@ df -h
 
 Lecture attendue :
 
-- La machine répond
-- L'uptime est cohérent
-- Le réseau est visible
-- Le système principal est monté
+- ✅ La machine répond
+- ✅ L'uptime est cohérent
+- ✅ Le réseau est visible
+- ✅ Le système principal est monté
 
 ## Exemple 2 - identifier un contexte DDM
 ```bash
@@ -25,9 +25,9 @@ cat /etc/os-release
 
 Lecture attendue :
 
-- Les disques sont visibles
-- Les montages actifs sont lisibles
-- Un userland Alpine léger est présent
+- ✅ Les disques sont visibles
+- ✅ Les montages actifs sont lisibles
+- ✅ Un userland Alpine léger est présent
 
 ## Exemple 3 - préparer un message support paiement
 ```markdown

@@ -21,11 +21,11 @@ Au runtime, le portail exposé les métadonnées via `/api/apps` et monte le pro
 ## Comportement du proxy
 Le reverse proxy réalise une petite quantité de durcissement et de réécriture :
 
-- Suppression des headers de forwarding non fiables
-- Définition de `X-Forwarded-For`, `X-Forwarded-Proto` et `X-Forwarded-Prefix`
-- Réécriture des headers `Location` pour garder les redirections sous le préfixe monté
-- Réécriture des chemins de cookies pour que les cookies backend restent scopes au proxy
-- Redirection des réponses `401` et `403` non JSON vers la racine du portail
+- ✅ Suppression des headers de forwarding non fiables
+- ✅ Définition de `X-Forwarded-For`, `X-Forwarded-Proto` et `X-Forwarded-Prefix`
+- ✅ Réécriture des headers `Location` pour garder les redirections sous le préfixe monté
+- ✅ Réécriture des chemins de cookies pour que les cookies backend restent scopes au proxy
+- ✅ Redirection des réponses `401` et `403` non JSON vers la racine du portail
 
 ## Cas spécifique TTYd
 Le code applique une CSP plus permissive uniquement pour le montage `ttyd`, afin que les assets du terminal web et les flux websocket puissent fonctionner correctement. Les autres applications proxifiées gardent le comportement durci standard.
@@ -33,8 +33,8 @@ Le code applique une CSP plus permissive uniquement pour le montage `ttyd`, afin
 ## Pourquoi c'est utile
 Cette couche proxy garde `UnyPort` ciblée :
 
-- Les opérateurs ont un point d'entrée authentifié unique
-- Les applications internes n'ont pas besoin de leur propre exposition publique
-- Le produit reste petit tout en servant de pont vers des outils orientés terminal
+- ✅ Les opérateurs ont un point d'entrée authentifié unique
+- ✅ Les applications internes n'ont pas besoin de leur propre exposition publique
+- ✅ Le produit reste petit tout en servant de pont vers des outils orientés terminal
 
 La fonctionnalité doit donc être comprise comme une passerelle contrôlée, pas comme une marketplace d'applications.

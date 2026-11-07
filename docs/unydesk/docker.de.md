@@ -3,7 +3,7 @@ Diese öffentliche Seite behält nur die Informationen, die nützlich sind, um d
 
 Referenzquelle:
 
-- `/var/docker/docker_unydesk/docker-compose.yml`
+- ➡️ `/var/docker/docker_unydesk/docker-compose.yml`
 
 Interne Build-Details, lange Packaging-Befehle und sensible Werte werden hier nicht veröffentlicht.
 

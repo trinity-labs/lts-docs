@@ -4,13 +4,13 @@ Cette page est le point d'entrée pratique de `TRINITY`. Elle explique comment u
 ## Le parcours normal
 Le parcours client habituel suit cette logique :
 
-1. Découvrir une offre
-2. Créer un compte
-3. Passer une commande
-4. Effectuer un paiement
-5. Consulter la facture et l'état de la commande
-6. Accéder au service associe
-7. Solliciter le support si nécessaire
+1. ➡️ Découvrir une offre
+2. ➡️ Créer un compte
+3. ➡️ Passer une commande
+4. ➡️ Effectuer un paiement
+5. ➡️ Consulter la facture et l'état de la commande
+6. ➡️ Accéder au service associe
+7. ➡️ Solliciter le support si nécessaire
 
 ```text
 Visite du site
@@ -35,10 +35,10 @@ Visite du site
 ## Avant de commander
 Préparez quelques informations simples :
 
-- Le service exact souhaite
-- L'identité de facturation
-- Le niveau de support attendu
-- Le besoin éventuel de console, de VM, d'`UnyDesk` ou d'`UnyPort`
+- ✅ Le service exact souhaite
+- ✅ L'identité de facturation
+- ✅ Le niveau de support attendu
+- ✅ Le besoin éventuel de console, de VM, d'`UnyDesk` ou d'`UnyPort`
 
 ```yaml
 preparation_client:
@@ -52,14 +52,14 @@ preparation_client:
 ## Ce que TRINITY peut exposer
 Selon le service, `TRINITY` peut exposer :
 
-- L'historique de commande
-- Les factures PDF
-- L'état de paiement
-- L'état d'une VM
-- L'accès console
-- La visibilité du Data Disk Mode
-- Les points d'entrée support et chat
-- Les liens vers `UnyDesk` et `UnyPort`
+- ✅ L'historique de commande
+- ✅ Les factures PDF
+- ✅ L'état de paiement
+- ✅ L'état d'une VM
+- ✅ L'accès console
+- ✅ La visibilité du Data Disk Mode
+- ✅ Les points d'entrée support et chat
+- ✅ Les liens vers `UnyDesk` et `UnyPort`
 
 | Surface visible | Usage principal | Quand la consulter |
 | --- | --- | --- |
@@ -74,11 +74,11 @@ Selon le service, `TRINITY` peut exposer :
 ## Quand le parcours devient plus technique
 Certaines offres vont plus loin qu'un simple achat. Le parcours devient plus opérationnel lorsqu'il faut :
 
-- Vérifier une VM
-- Ouvrir une console
-- Récupérer un environnement
-- Inspecter un volume de données
-- Confirmer un état de service avant escalade support
+- ✅ Vérifier une VM
+- ✅ Ouvrir une console
+- ✅ Récupérer un environnement
+- ✅ Inspecter un volume de données
+- ✅ Confirmer un état de service avant escalade support
 
 ```bash
 # Exemple de session console une fois l'accès ouvert
@@ -91,9 +91,9 @@ df -h
 ## Comment lire la suite
 Les pages suivantes forment le mode d'emploi détaillé :
 
-- `Compte et commandes`
-- `Paiements et factures`
-- `VM et console`
-- `Data Disk Mode`
-- `Alpine Linux et Xen`
-- `Support et exploitation`
+- ➡️ `Compte et commandes`
+- ➡️ `Paiements et factures`
+- ➡️ `VM et console`
+- ➡️ `Data Disk Mode`
+- ➡️ `Alpine Linux et Xen`
+- ➡️ `Support et exploitation`

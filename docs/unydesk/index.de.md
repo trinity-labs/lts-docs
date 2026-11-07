@@ -16,21 +16,21 @@ Viewer -> UnyDesk-Broker -> Host -> Direkt- oder Relay-Transport
 
 Im Unterschied zu `TRINITY` als Kunden- und Serviceportal konzentriert sich `UnyDesk` auf:
 
-- Host-Erreichbarkeit
-- Routing zwischen Viewer und Host
-- Live-Fernsteuerung
-- Remote-Support-Ablaufe
-- Fallback-Verhalten auf Transportebene
+- ✅ Host-Erreichbarkeit
+- ✅ Routing zwischen Viewer und Host
+- ✅ Live-Fernsteuerung
+- ✅ Remote-Support-Ablaufe
+- ✅ Fallback-Verhalten auf Transportebene
 
 ## Einstieg
 Für eine praktische Lesereihenfolge wird empfohlen:
 
-1. `Überblick`
-2. `Architektur`
-3. `Bootstrap und Zugriff`
-4. `Nutzung`
-5. `Support und Betrieb`
-6. `Glossar`
+1. ➡️ `Überblick`
+2. ➡️ `Architektur`
+3. ➡️ `Bootstrap und Zugriff`
+4. ➡️ `Nutzung`
+5. ➡️ `Support und Betrieb`
+6. ➡️ `Glossar`
 
 ```text
 Viewer

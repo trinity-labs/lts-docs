@@ -4,11 +4,11 @@ Some services `TRINITY` This does not mean that each client becomes a hypervisor
 ## What the user can expect
 A VM-oriented page can display:
 
-- The name of the machine
-- An on-line indicator or not
-- A visibility is based on resources
-- A console entry point
-- Links to support or supervision
+- ✅ The name of the machine
+- ✅ An on-line indicator or not
+- ✅ A visibility is based on resources
+- ✅ A console entry point
+- ✅ Links to support or supervision
 
 | Visible information | Immediate utility | Readable |
 | --- | --- | --- |
@@ -23,10 +23,10 @@ A VM-oriented page can display:
 ## Typical console objectives
 Console access is used to:
 
-- Check boot status
-- Inspect an mounted file system
-- Read a hostname or IP
-- Confirm if a resumption is possible
+- ✅ Check boot status
+- ✅ Inspect an mounted file system
+- ✅ Read a hostname or IP
+- ✅ Confirm if a resumption is possible
 
 ```bash
 hostname
@@ -39,10 +39,10 @@ df -h
 ## How to read a VM state
 A public VM page should simply read:
 
-- `online` Means that VM is responding in its current mode
-- `maintenance` Means that a technical intervention is in progress or possible
-- `récupération` Means that priority is access to data
-- `unavailable` Means that you have to wait or ask for support
+- ✅ `online` Means that VM is responding in its current mode
+- ✅ `maintenance` Means that a technical intervention is in progress or possible
+- ✅ `récupération` Means that priority is access to data
+- ✅ `unavailable` Means that you have to wait or ask for support
 
 ```text
 online       -> accès normal ou technique attendu
@@ -61,9 +61,9 @@ unavailable  -> attente ou support
 ## Operational prudence
 A console is powerful but narrow in its use. Before changing anything, you must know:
 
-- If VM is in normal or DDM mode
-- If the objective is diagnosis or modification
-- If the support requests a specific action
+- ✅ If VM is in normal or DDM mode
+- ✅ If the objective is diagnosis or modification
+- ✅ If the support requests a specific action
 
 ```bash
 # Vérifications prudentes en premier

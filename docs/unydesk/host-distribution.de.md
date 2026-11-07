@@ -4,25 +4,25 @@ Die Host-Laufzeit ist der maschinenseitige Teil von `UnyDesk`. Sie identifiziert
 ## Download-Ziele
 Die öffentliche Verteilungsoberfläche kann Host-Pakete bereitstellen für:
 
-- Linux amd64
-- Linux arm64
-- Windows amd64
-- Windows arm64
-- MacOS amd64
-- MacOS arm64
-- Release-Prüfsummen
+- ✅ Linux amd64
+- ✅ Linux arm64
+- ✅ Windows amd64
+- ✅ Windows arm64
+- ✅ MacOS amd64
+- ✅ MacOS arm64
+- ✅ Release-Prüfsummen
 
 Die ausgewählte Datei muss zum Betriebssystem und zur CPU-Architektur der Maschine passen, die zum Host wird.
 
 ## Rolle des Pakets
 Das Host-Paket ist zuständig für:
 
-- Eine stabile Installationsidentität erzeugen oder behalten
-- Host-Metadaten wie Hostname, OS, Architektur und Version senden
-- Sich bei Bedarf mit einer Provisioning-Credential authentifizieren
-- Heartbeat-Status für den Broker sichtbar halten
-- Sitzungs-Dispatch-Nachrichten empfangen
-- An Signalisierung und Fallback-Lieferung teilnehmen
+- ✅ Eine stabile Installationsidentität erzeugen oder behalten
+- ✅ Host-Metadaten wie Hostname, OS, Architektur und Version senden
+- ✅ Sich bei Bedarf mit einer Provisioning-Credential authentifizieren
+- ✅ Heartbeat-Status für den Broker sichtbar halten
+- ✅ Sitzungs-Dispatch-Nachrichten empfangen
+- ✅ An Signalisierung und Fallback-Lieferung teilnehmen
 
 ## Verifikation
 Wenn Prüfsummen veröffentlicht werden, sollte der Benutzer das heruntergeladene Host-Paket vor dem Start mit der Prüfsummenliste vergleichen. Das ist besonders wichtig, wenn das Paket manuell zwischen Maschinen kopiert wird.
@@ -30,9 +30,9 @@ Wenn Prüfsummen veröffentlicht werden, sollte der Benutzer das heruntergeladen
 ## Windows-Doppelklick
 Der Windows-Host kann so vorbereitet werden, dass ein Benutzer ihn ohne Kommandozeilenargument startet. Die Server-URL kann kommen von:
 
-- Einem expliziten Startargument
-- Einer Umgebungsvariable
-- Einer Sidecar-Konfigurationsdatei neben der ausführbaren Datei
-- Einem eingebetteten Standardwert
+- ✅ Einem expliziten Startargument
+- ✅ Einer Umgebungsvariable
+- ✅ Einer Sidecar-Konfigurationsdatei neben der ausführbaren Datei
+- ✅ Einem eingebetteten Standardwert
 
 Das erleichtert Assistenzszenarien und hält die Serverauswahl trotzdem explizit.

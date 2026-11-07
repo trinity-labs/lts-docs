@@ -3,7 +3,7 @@ This page brings together Docker events corresponding to the project `UnyPort` O
 
 Source selected:
 
-- `/var/docker/docker_unyport/docker-compose.yml`
+- ➡️ `/var/docker/docker_unyport/docker-compose.yml`
 
 None `Dockerfile` dedicated was found for `UnyPort`. Runtime uses upstream image `golang:alpine`.
 

@@ -4,10 +4,10 @@
 ## Means of payment
 According to the service, `TRINITY` may expose:
 
-- Bank card
-- PayPal
-- Bank transfer
-- Payment
+- ✅ Bank card
+- ✅ PayPal
+- ✅ Bank transfer
+- ✅ Payment
 
 Each method involves a different operational expectation. Online payments often come back quickly. Manual flows can remain on hold until the settlement is confirmed.
 
@@ -20,11 +20,11 @@ Litecoin        -> état en attente -> vérification d'une référence de paieme
 ## Payment States
 The public surface shall make legible the following states:
 
-- Pay
-- Pending
-- Refusal
-- Cancel
-- Possible recovery
+- ✅ Pay
+- ✅ Pending
+- ✅ Refusal
+- ✅ Cancel
+- ✅ Possible recovery
 
 ```json
 {
@@ -40,12 +40,12 @@ The public surface shall make legible the following states:
 ## Invoices
 The PDF invoice is the customer-side invoicing document. It must identify:
 
-- The invoice number
-- The command reference
-- The client's name
-- The service charges
-- Status paid or pending
-- Date of invoice
+- ✅ The invoice number
+- ✅ The command reference
+- ✅ The client's name
+- ✅ The service charges
+- ✅ Status paid or pending
+- ✅ Date of invoice
 
 ```yaml
 facture:
@@ -58,11 +58,11 @@ facture:
 ## If payment remains pending
 The right action depends on the flow:
 
-- Wait for supplier return if the route is still open
-- Read the command page
-- Check Billing Profile
-- Keep the payment reference
-- Contact Support if Status Remains Blocked
+- ✅ Wait for supplier return if the route is still open
+- ✅ Read the command page
+- ✅ Check Billing Profile
+- ✅ Keep the payment reference
+- ✅ Contact Support if Status Remains Blocked
 
 ```markdown
 Checklist paiement en attente
@@ -76,7 +76,7 @@ Checklist paiement en attente
 ## What Should Not happen
 From the customer perspective, a payment refused or pending must not create:
 
-- Duplicated commands without reason
-- An invoice not found
-- An invisible recovery path
-- Unable to read supplier status
+- ✅ Duplicated commands without reason
+- ✅ An invoice not found
+- ✅ An invisible recovery path
+- ✅ Unable to read supplier status

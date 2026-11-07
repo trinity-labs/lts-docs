@@ -12,10 +12,10 @@ curl -fsSI https://scan.trinity-net.com/
 Der Service kombiniert passive Sammlung, aktive Sonden, Standardisierung und Korrelation, um eine klare Sicht auf eine Domäne, eine Anwendung oder eine Netzwerkexposition zu erhalten.
 
 ## Ziel
-- öffentlich exponierte Punkte identifizieren
-- Gruppierung beobachtbarer Beweise in einem Bericht
-- Hilfe bei der Priorisierung von Korrekturen
-- Bereitstellung einer verständlichen Synthese durch ein technisches Team und einen Entscheidungsträger
+- ✅ öffentlich exponierte Punkte identifizieren
+- ✅ Gruppierung beobachtbarer Beweise in einem Bericht
+- ✅ Hilfe bei der Priorisierung von Korrekturen
+- ✅ Bereitstellung einer verständlichen Synthese durch ein technisches Team und einen Entscheidungsträger
 
 ## Route
 ```text

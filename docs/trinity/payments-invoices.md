@@ -4,10 +4,10 @@
 ## Moyens de paiement
 Selon le service, `TRINITY` peut exposer :
 
-- Carte bancaire
-- PayPal
-- Virement bancaire
-- Paiement Litecoin
+- ✅ Carte bancaire
+- ✅ PayPal
+- ✅ Virement bancaire
+- ✅ Paiement Litecoin
 
 Chaque méthode implique une attente opérationnelle différente. Les paiements en ligne reviennent souvent vite. Les flux manuels peuvent rester en attente jusqu'à confirmation du règlement.
 
@@ -20,11 +20,11 @@ Litecoin        -> état en attente -> vérification d'une référence de paieme
 ## États de paiement
 La surface publique doit rendre lisibles les états suivants :
 
-- Paye
-- En attente
-- Refuse
-- Annule
-- Reprise possible
+- ✅ Paye
+- ✅ En attente
+- ✅ Refuse
+- ✅ Annule
+- ✅ Reprise possible
 
 ```json
 {
@@ -40,12 +40,12 @@ La surface publique doit rendre lisibles les états suivants :
 ## Factures
 La facture PDF est le document de facturation visible côté client. Elle doit permettre d'identifier :
 
-- Le numéro de facture
-- La référence de commande
-- Le nom du client
-- Le service facture
-- L'état payé ou en attente
-- La date de facture
+- ✅ Le numéro de facture
+- ✅ La référence de commande
+- ✅ Le nom du client
+- ✅ Le service facture
+- ✅ L'état payé ou en attente
+- ✅ La date de facture
 
 ```yaml
 facture:
@@ -58,11 +58,11 @@ facture:
 ## Si le paiement reste en attente
 La bonne action dépend du flux :
 
-- Attendre le retour fournisseur si le parcours est encore ouvert
-- Relire la page commande
-- Vérifier le profil de facturation
-- Conserver la référence de paiement
-- Contacter le support si l'état reste bloqué
+- ✅ Attendre le retour fournisseur si le parcours est encore ouvert
+- ✅ Relire la page commande
+- ✅ Vérifier le profil de facturation
+- ✅ Conserver la référence de paiement
+- ✅ Contacter le support si l'état reste bloqué
 
 ```markdown
 Checklist paiement en attente
@@ -76,7 +76,7 @@ Checklist paiement en attente
 ## Ce qui ne doit pas arriver
 Du point de vue client, un paiement refusé ou en attente ne doit pas créer :
 
-- De commandes dupliquées sans raison
-- Une facture introuvable
-- Un parcours de reprise invisible
-- Une lecture impossible du statut fournisseur
+- ✅ De commandes dupliquées sans raison
+- ✅ Une facture introuvable
+- ✅ Un parcours de reprise invisible
+- ✅ Une lecture impossible du statut fournisseur

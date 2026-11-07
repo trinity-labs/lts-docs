@@ -4,14 +4,14 @@ Support `TRINITY` This means that the platform must help the user understand whe
 ## Perimeter support
 Support `TRINITY` may explicitly concern:
 
-- Orders and billing questions
-- Payment tracking
-- Access to invoices
-- Alpine Linux environments
-- VM services based on Xen
-- Data Disk Mode situations
-- The use of`UnyDesk`
-- The use of`UnyPort`
+- ✅ Orders and billing questions
+- ✅ Payment tracking
+- ✅ Access to invoices
+- ✅ Alpine Linux environments
+- ✅ VM services based on Xen
+- ✅ Data Disk Mode situations
+- ✅ The use of`UnyDesk`
+- ✅ The use of`UnyPort`
 
 | Subject | Self-service possible | Recommended medium |
 | --- | --- | --- |
@@ -38,11 +38,11 @@ Résultat attendu : confirmer s'il faut reprendre ou revenir en mode normal
 ## Before climbing
 Collect the minimum first:
 
-- Order reference
-- Invoice or payment if useful
-- Name of VM if it exists
-- Current mode: normal, maintenance or DDM
-- Precise console observation
+- ✅ Order reference
+- ✅ Invoice or payment if useful
+- ✅ Name of VM if it exists
+- ✅ Current mode: normal, maintenance or DDM
+- ✅ Precise console observation
 
 ```bash
 # Exemple de lot d'informations à relever
@@ -66,17 +66,17 @@ df -h
 
 Self-service is suitable for:
 
-- Read an invoice
-- Check a payment statement
-- Open a console
-- Confirm if VM is online
+- ✅ Read an invoice
+- ✅ Check a payment statement
+- ✅ Open a console
+- ✅ Confirm if VM is online
 
 The support is suitable for:
 
-- Blocked order delivery
-- Inconsistency of payment
-- VM statement unclear
-- Risk recovery action on data
+- ✅ Blocked order delivery
+- ✅ Inconsistency of payment
+- ✅ VM statement unclear
+- ⭕ Risk recovery action on data
 
 | Situation | Self-service | Support ticket |
 | --- | --- | --- |
@@ -89,6 +89,6 @@ The support is suitable for:
 ## Surfaces to be used
 Use the right surface as needed:
 
-- `TRINITY` For the account, orders, invoices and service point of entry
-- `UnyDesk` For remote support and interaction
-- `UnyPort` For infra-state and supervision
+- ✅ `TRINITY` For the account, orders, invoices and service point of entry
+- ✅ `UnyDesk` For remote support and interaction
+- ✅ `UnyPort` For infra-state and supervision

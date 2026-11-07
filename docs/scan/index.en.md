@@ -12,10 +12,10 @@ curl -fsSI https://scan.trinity-net.com/
 The service combines passive collection, active probes, standardization and correlation to give a clear view of a domain, application or network exposure.
 
 ## Objective
-- identify publicly exposed points
-- grouping observable evidence into a report
-- help prioritise corrections
-- provide an understandable synthesis by a technical team and a decision maker
+- ✅ identify publicly exposed points
+- ✅ grouping observable evidence into a report
+- ✅ help prioritise corrections
+- ✅ provide an understandable synthesis by a technical team and a decision maker
 
 ## Route
 ```text

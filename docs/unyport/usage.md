@@ -4,40 +4,40 @@
 ## Usage 1 - se connecter et confirmer le contexte hôte
 Les opérateurs commencent souvent par :
 
-- Se connecter localement ou via OAuth
-- Lire le rôle d'hôte détecte
-- Confirmer si la surface correspond à un Dom0, un DomU, un conteneur ou un hôte Alpine
+- ✅ Se connecter localement ou via OAuth
+- ✅ Lire le rôle d'hôte détecte
+- ✅ Confirmer si la surface correspond à un Dom0, un DomU, un conteneur ou un hôte Alpine
 
 Cette première étape change toute la suite de la lecture, car un Dom0 exposé un contexte Xen global alors qu'un DomU se comporte comme un observateur centré VM.
 
 ## Usage 2 - lire l'état système en direct
 L'usage le plus courant reste la supervision en temps réel :
 
-- Activité CPU et par coeur
-- Utilisation mémoire et cache
-- Débit réseau
-- Occupation du stockage
-- Températures, processus et charge
+- ✅ Activité CPU et par coeur
+- ✅ Utilisation mémoire et cache
+- ✅ Débit réseau
+- ✅ Occupation du stockage
+- ✅ Températures, processus et charge
 
 Le portail est donc utile comme tableau de bord opérationnel live avant même qu'une action plus profonde soit nécessaire.
 
 ## Usage 3 - inspecter les spécificités Alpine et Xen
 `UnyPort` sert aussi à répondre à des questions très Alpine et Xen :
 
-- LBU est-il présent et committé
-- Quelle version Alpine tourne
-- Quel noyau tourne
-- Quelle version Xen et quel scheduler sont actifs sur Dom0
-- Combien de domaines tournent et quelle mémoire ils consomment
+- ✅ LBU est-il présent et committé
+- ✅ Quelle version Alpine tourne
+- ✅ Quel noyau tourne
+- ✅ Quelle version Xen et quel scheduler sont actifs sur Dom0
+- ✅ Combien de domaines tournent et quelle mémoire ils consomment
 
 ## Usage 4 - inspecter services, logs et sécurité
 Les surfaces resources et security servent au dépannage courant :
 
-- Revoir les services OpenRC
-- Tailer les fichiers de log autorisés
-- Inspecter les ports à l'écoute
-- Confirmer le niveau de durcissement
-- Identifier des processus critiques ou des services plantés
+- ✅ Revoir les services OpenRC
+- ✅ Tailer les fichiers de log autorisés
+- ✅ Inspecter les ports à l'écoute
+- ✅ Confirmer le niveau de durcissement
+- ✅ Identifier des processus critiques ou des services plantés
 
 ## Usage 5 - ouvrir un outil interne à travers le portail
 Lorsqu'il est configuré, `UnyPort` peut aussi servir de point d'entrée vers un outil interne proxifié comme `ttyd`. L'opérateur reste ainsi dans une seule surface authentifiée tout en accédant à des workflows plus orientés terminal.
@@ -45,6 +45,6 @@ Lorsqu'il est configuré, `UnyPort` peut aussi servir de point d'entrée vers un
 ## Usage 6 - savoir quand changer de surface
 `UnyPort` n'est pas le seul outil de l'écosystème.
 
-- Utiliser `TRINITY` lorsque le besoin concerne le cycle de vie service, le compte, la facturation ou les opérations client.
-- Utiliser `UnyDesk` lorsque le besoin concerne l'accès distant ou l'assistance directe.
-- Rester dans `UnyPort` lorsque le besoin concerne l'état hôte, le contexte d'infrastructure ou un accès proxy contrôlé.
+- ✅ Utiliser `TRINITY` lorsque le besoin concerne le cycle de vie service, le compte, la facturation ou les opérations client.
+- ✅ Utiliser `UnyDesk` lorsque le besoin concerne l'accès distant ou l'assistance directe.
+- ✅ Rester dans `UnyPort` lorsque le besoin concerne l'état hôte, le contexte d'infrastructure ou un accès proxy contrôlé.

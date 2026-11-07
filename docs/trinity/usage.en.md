@@ -4,22 +4,22 @@
 ## Use 1 - discover the offer and contact
 A user often starts with:
 
-- Read a page of offer
-- See public documentation
-- Open Support Page
-- Use the contact page
+- ✅ Read a page of offer
+- ✅ See public documentation
+- ✅ Open Support Page
+- ✅ Use the contact page
 
 This first phase is used to understand whether the need is within the scope of the support `TRINITY`, a benefit, training,`UnyDesk` or`UnyPort`.
 
 ## Usage 2 - Create an account and order
 `TRINITY` supports the standard customer journey:
 
-- Account Creation
-- Connection
-- Entering billing information
-- Choice of a means of payment
-- Return of payment
-- Checking the order and invoice
+- ✅ Account Creation
+- ✅ Connection
+- ✅ Entering billing information
+- ✅ Choice of a means of payment
+- ✅ Return of payment
+- ✅ Checking the order and invoice
 
 Orders may concern support, services, training or services associated with the infrastructure.
 
@@ -34,11 +34,11 @@ Orders may concern support, services, training or services associated with the i
 ## Usage 3 - Track an order and its payment
 After purchase, the customer finds:
 
-- Its payment status
-- Its command references
-- Its PDF invoice
-- Billing information
-- Certain take-back actions if payment remains pending or should be restarted
+- ✅ Its payment status
+- ✅ Its command references
+- ✅ Its PDF invoice
+- ✅ Billing information
+- ✅ Certain take-back actions if payment remains pending or should be restarted
 
 `TRINITY` displays different statements depending on the situation: successful payment, pending payment, refused payment, cancellation or resumption.
 
@@ -48,10 +48,10 @@ When a department authorizes it, `TRINITY` can give access to a virtual machine 
 
 In this context, the user can:
 
-- Check that a VM is reachable
-- Read his condition
-- Log in to console
-- Working in maintenance mode
+- ✅ Check that a VM is reachable
+- ✅ Read his condition
+- ✅ Log in to console
+- ✅ Working in maintenance mode
 
 | Technical surface area | What we do there | When to use it |
 | --- | --- | --- |
@@ -62,26 +62,26 @@ In this context, the user can:
 ## Usage 5 - understand the Data Disk Mode
 **Data Disk Mode** is useful when the objective is not to run a normal application service, but to intervene on the environment itself. In practice, this mode is used to:
 
-- Check the content of a disc
-- Inspect a file system
-- Recovering an environment
-- Performing recovery or maintenance operations
+- ✅ Check the content of a disc
+- ✅ Inspect a file system
+- ✅ Recovering an environment
+- ✅ Performing recovery or maintenance operations
 
 For the user, this means that a VM can be accessed in a more technical mode, focusing on data retention, analysis or restoration.
 
 ## Use 6 - include Alpine Linux and Xen
 In `TRINITY`Two bricks must be publicly understood:
 
-- **Alpine Linux**: Lightweight, fast and suitable for compact service environments
-- **Xen**: hypervisor carrying virtual machines
+- ✅ **Alpine Linux**: Lightweight, fast and suitable for compact service environments
+- ✅ **Xen**: hypervisor carrying virtual machines
 
 User does not need to administer Xen directly to use `TRINITY`On the other hand, he must understand that his services rely on this virtualization logic and Alpine Linux environments.
 
 ## Usage 7 - know when to go to UnyDesk or UnyPort
 `TRINITY` is not the only surface of the ecosystem.
 
-- Use **`UnyDesk`** when the need is remote access or take-over.
-- Use **`UnyPort`** when the need is for topology supervision, control or reading.
+- ✅ Use **`UnyDesk`** when the need is remote access or take-over.
+- ✅ Use **`UnyPort`** when the need is for topology supervision, control or reading.
 
 | Surface | Public role | Typical case |
 | --- | --- | --- |

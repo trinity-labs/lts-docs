@@ -16,21 +16,21 @@ viewer -> broker UnyDesk -> host -> transport direct ou relais
 
 Contrairement à `TRINITY`, qui reste le portail client et services, `UnyDesk` est centré sur :
 
-- L'accessibilité du host
-- Le routage des sessions entre viewer et host
-- Le contrôle distant en direct
-- Les flux d'assistance distante
-- Les comportements de secours côté transport
+- ✅ L'accessibilité du host
+- ✅ Le routage des sessions entre viewer et host
+- ✅ Le contrôle distant en direct
+- ✅ Les flux d'assistance distante
+- ✅ Les comportements de secours côté transport
 
 ## Commencer ici
 Pour une lecture pratique, l'ordre recommandé est :
 
-1. `Overview`
-2. `Architecture`
-3. `Bootstrap and accès`
-4. `Usage`
-5. `Support and opérations`
-6. `Glossary`
+1. ➡️ `Overview`
+2. ➡️ `Architecture`
+3. ➡️ `Bootstrap and accès`
+4. ➡️ `Usage`
+5. ➡️ `Support and opérations`
+6. ➡️ `Glossary`
 
 ```text
 Viewer

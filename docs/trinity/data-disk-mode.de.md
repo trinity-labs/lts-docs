@@ -6,11 +6,11 @@ Der DDM ist ein wartungsorientierter VM-Modus, dessen Ziel es nicht ist, die Umg
 
 In der Praxis ist das DMD nützlich, wenn:
 
-- Eine Disc untersuchen
-- Check File Systems (Überprüfungsdateien)
-- Wiederherstellung von Daten
-- Bestätigen Sie, dass eine defekte Umgebung noch montiert werden kann
-- Arbeiten an einem Dienst, der nicht sofort normal neu gestartet werden sollte
+- ✅ Eine Disc untersuchen
+- ✅ Check File Systems (Überprüfungsdateien)
+- ✅ Wiederherstellung von Daten
+- ✅ Bestätigen Sie, dass eine defekte Umgebung noch montiert werden kann
+- ⭕ Arbeiten an einem Dienst, der nicht sofort normal neu gestartet werden sollte
 
 ## Wie man DDM erkennt
 Die Schnittstelle macht den DDM normalerweise mit dediziertem Wortlaut und einer wartungs- oder wiederherstellungsorientierten Konsole sichtbar.
@@ -45,10 +45,10 @@ cat /etc/fstab
 
 Diese Befehle helfen, einfache Fragen zu beantworten:
 
-- Welche Discs sind sichtbar
-- Welche Befestigungspunkte sind aktiv
-- Welcher Platz ist verfügbar
-- Wenn das erwartete Dateisystem vorhanden ist
+- ✅ Welche Discs sind sichtbar
+- ✅ Welche Befestigungspunkte sind aktiv
+- ✅ Welcher Platz ist verfügbar
+- ✅ Wenn das erwartete Dateisystem vorhanden ist
 
 | Befehl | Thema | Art der erwarteten Antwort |
 | --- | --- | --- |
@@ -70,9 +70,9 @@ Entrer en DDM
 ## Was der DDM nicht ist
 Der DDM sollte nicht gelesen werden als:
 
-- Normaler Anwendungszustand
-- Ein Backup-Ersatz
-- Eine Einladung, das System ohne Kontrolle zu ändern
+- ✅ Normaler Anwendungszustand
+- ✅ Ein Backup-Ersatz
+- ✅ Eine Einladung, das System ohne Kontrolle zu ändern
 
 Der DDM ist ein technischer Steuerungsmodus, dessen Hauptwert Klarheit, Wiederaufnahme und Inspektion ist.
 

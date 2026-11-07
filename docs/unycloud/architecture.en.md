@@ -24,10 +24,10 @@ This layer also counts for login behavior, especially when the SPA Filebrowser b
 ## Layer 3 - Filebrowser compatible runtime
 The UnyCloud runtime retains the Filebrowser contract: same commands, same base, same configuration files and same binary name as possible for existing services. The service reads:
 
-- A persistent basis
-- A configuration file
-- A branding tree
-- Mounted root storage
+- ✅ A persistent basis
+- ✅ A configuration file
+- ✅ A branding tree
+- ✅ Mounted root storage
 
 ## Layer 4 - storage
 Storage is presented to the container as a navigation root. The goal is to make the files available without linking the web interface to a heavy application backend.

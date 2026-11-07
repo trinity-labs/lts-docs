@@ -16,30 +16,30 @@ curl -fsSI https://trinity-net.com/
 
 Publicly, `TRINITY` brings together:
 
-- Service discovery and commercial entry points
-- Account access
-- Orders, payments and invoices
-- VM follow-up and console access
-- Support, documentation and assistance chat
+- ✅ Service discovery and commercial entry points
+- ✅ Account access
+- ✅ Orders, payments and invoices
+- ✅ VM follow-up and console access
+- ✅ Support, documentation and assistance chat
 
 `TRINITY` works alongside two companion services:
 
-- `UnyDesk` For remote access
-- `UnyPort` For service control
+- ✅ `UnyDesk` For remote access
+- ✅ `UnyPort` For service control
 
 ## Start here
 For a practical reading path, the recommended order is:
 
-1. `Introduction`
-2. `Architecture`
-3. `Manual`
-4. `Account and orders`
-5. `Payments and invoices`
-6. `VMs and console`
-7. `Data Disk Mode`
-8. `Alpine Linux and Xen`
-9. `Support and operations`
-10. `Examples`
+1. ➡️ `Introduction`
+2. ➡️ `Architecture`
+3. ➡️ `Manual`
+4. ➡️ `Account and orders`
+5. ➡️ `Payments and invoices`
+6. ➡️ `VMs and console`
+7. ➡️ `Data Disk Mode`
+8. ➡️ `Alpine Linux and Xen`
+9. ➡️ `Support and operations`
+10. ➡️ `Examples`
 
 ```text
 Public site

@@ -4,12 +4,12 @@
 ## Rolle des Kontos
 Das Kundenkonto wird verwendet, um:
 
-- Authentifizierend
-- Informationen zur Rechnungsstellung im Lager
-- Aktive und vergangene Bestellungen anzeigen
-- Wiederaufnahme bestimmter Zahlungsaktionen
-- Rechnungen herunterladen
-- Den richtigen Servicebereich nach dem Kauf abrufen
+- ✅ Authentifizierend
+- ✅ Informationen zur Rechnungsstellung im Lager
+- ✅ Aktive und vergangene Bestellungen anzeigen
+- ✅ Wiederaufnahme bestimmter Zahlungsaktionen
+- ✅ Rechnungen herunterladen
+- ✅ Den richtigen Servicebereich nach dem Kauf abrufen
 
 ```json
 {
@@ -25,13 +25,13 @@ Das Kundenkonto wird verwendet, um:
 ## Typische Schritte eines Auftrags
 Eine Bestellung kann durch mehrere Staaten übergeben werden:
 
-- Entwurf
-- Eingereicht
-- Ausstehende Zahlung
-- Bezahlt
-- In Vorbereitung
-- Verfügbar oder geliefert
-- Abgesagt oder abgelaufen
+- ✅ Entwurf
+- ✅ Eingereicht
+- ✅ Ausstehende Zahlung
+- ✅ Bezahlt
+- ✅ In Vorbereitung
+- ✅ Verfügbar oder geliefert
+- ✅ Abgesagt oder abgelaufen
 
 ```text
 brouillon -> soumise -> paiement_en_attente -> payée -> préparation -> disponible
@@ -51,12 +51,12 @@ brouillon -> soumise -> paiement_en_attente -> payée -> préparation -> disponi
 ## Was der Kunde in einer Bestellung lesen sollte
 Die Bestellseite muss ohne interne Details lesbar bleiben. Der Kunde braucht vor allem:
 
-- Die Referenz
-- Aktueller Stand
-- Der gewählte Service
-- Das Abrechnungsprofil
-- Status der Zahlung
-- Link-Rechnung, falls vorhanden
+- ✅ Die Referenz
+- ✅ Aktueller Stand
+- ✅ Der gewählte Service
+- ✅ Das Abrechnungsprofil
+- ✅ Status der Zahlung
+- ✅ Link-Rechnung, falls vorhanden
 
 ```yaml
 resume_commande:
@@ -79,11 +79,11 @@ resume_commande:
 ## Gute Angewohnheit vor dem Öffnen eines Tickets
 Führen Sie eine einfache Aufzeichnung von:
 
-- Die Kommandoreferenz
-- Kaufdatum
-- Zahlungsmittel
-- Erwartetes Ergebnis
-- Der genaue Schritt, bei dem der Fluss aufhörte
+- ✅ Die Kommandoreferenz
+- ✅ Kaufdatum
+- ✅ Zahlungsmittel
+- ✅ Erwartetes Ergebnis
+- ✅ Der genaue Schritt, bei dem der Fluss aufhörte
 
 ```markdown
 Référence commande : TRI-2026-00421
@@ -92,6 +92,6 @@ Probleme actuel : paiement accepte, service pas encore visible
 ```
 
 ## Verwandte Seiten
-- `Paiements et factures`
-- `Support et exploitation`
-- `Parcours client`
+- ➡️ `Paiements et factures`
+- ➡️ `Support et exploitation`
+- ➡️ `Parcours client`

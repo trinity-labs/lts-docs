@@ -4,12 +4,12 @@
 ## Role of the account
 The client account is used to:
 
-- Authenticate
-- Store billing information
-- View active and past orders
-- Relaunching certain payment actions
-- Download invoices
-- Retrieving the right service area after purchase
+- ✅ Authenticate
+- ✅ Store billing information
+- ✅ View active and past orders
+- ✅ Relaunching certain payment actions
+- ✅ Download invoices
+- ✅ Retrieving the right service area after purchase
 
 ```json
 {
@@ -25,13 +25,13 @@ The client account is used to:
 ## Typical steps of an order
 An order can be passed through several states:
 
-- Draft
-- Submitted
-- Pending payment
-- Paid
-- In preparation
-- Available or delivered
-- Cancelled or expired
+- ✅ Draft
+- ✅ Submitted
+- ✅ Pending payment
+- ✅ Paid
+- ✅ In preparation
+- ✅ Available or delivered
+- ✅ Cancelled or expired
 
 ```text
 brouillon -> soumise -> paiement_en_attente -> payée -> préparation -> disponible
@@ -51,12 +51,12 @@ brouillon -> soumise -> paiement_en_attente -> payée -> préparation -> disponi
 ## What the customer should read in an order
 The order page must remain legible without internal details. The customer needs above all:
 
-- The reference
-- Current state
-- The chosen service
-- The billing profile
-- The status of payment
-- The link invoice if available
+- ✅ The reference
+- ✅ Current state
+- ✅ The chosen service
+- ✅ The billing profile
+- ✅ The status of payment
+- ✅ The link invoice if available
 
 ```yaml
 resume_commande:
@@ -79,11 +79,11 @@ resume_commande:
 ## Good habit before opening a ticket
 Keep a simple record of:
 
-- The command reference
-- Date of purchase
-- The means of payment
-- Expected result
-- The exact step where the flow stopped
+- ✅ The command reference
+- ✅ Date of purchase
+- ✅ The means of payment
+- ✅ Expected result
+- ✅ The exact step where the flow stopped
 
 ```markdown
 Référence commande : TRI-2026-00421
@@ -92,6 +92,6 @@ Probleme actuel : paiement accepte, service pas encore visible
 ```
 
 ## Related pages
-- `Paiements et factures`
-- `Support et exploitation`
-- `Parcours client`
+- ➡️ `Paiements et factures`
+- ➡️ `Support et exploitation`
+- ➡️ `Parcours client`
