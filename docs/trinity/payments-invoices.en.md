@@ -1,82 +1,82 @@
 # Payments and invoices
-`TRINITY` exposes billing and settlement flows as part of the customer experience. The goal is not only to pay, but also to understand what happened after payment.
+`TRINITY` exposes billing and settlement flows as a normal part of the customer journey. The goal is not only to pay, but also to understand what happens after the payment.
 
-## Payment methods
-Depending on the service, `TRINITY` can expose:
+## Means of payment
+According to the service, `TRINITY` may expose:
 
-- Card payment
+- Bank card
 - PayPal
 - Bank transfer
-- Litecoin payment
+- Payment
 
-Each method leads to a different operational expectation. Instant online methods usually return quickly. Manual methods may remain pending until settlement is confirmed.
+Each method involves a different operational expectation. Online payments often come back quickly. Manual flows can remain on hold until the settlement is confirmed.
 
 ```text
-card or PayPal -> fast return -> order updated quickly
-bank transfer  -> pending state -> manual settlement confirmation
-Litecoin       -> pending state -> payment reference verification
+carte ou PayPal -> retour rapide -> commande mise à jour vite
+virement        -> état en attente -> confirmation de règlement plus tard
+Litecoin        -> état en attente -> vérification d'une référence de paiement
 ```
 
-## Payment states
-The public side of `TRINITY` should make these states understandable:
+## Payment States
+The public surface shall make legible the following states:
 
-- Paid
+- Pay
 - Pending
-- Refused
-- Cancelled
-- Retry available
+- Refusal
+- Cancel
+- Possible recovery
 
 ```json
 {
-  "payment": {
-    "provider": "PayPal",
-    "status": "pending",
-    "retry_allowed": false,
-    "invoice_available": false
+  "paiement": {
+    "fournisseur": "PayPal",
+    "statut": "en_attente",
+    "reprise_possible": false,
+    "facture_disponible": false
   }
 }
 ```
 
 ## Invoices
-An invoice PDF is the customer-facing billing artifact. It should help the user identify:
+The PDF invoice is the customer-side invoicing document. It must identify:
 
-- Invoice number
-- Order reference
-- Customer name
-- Billed service
-- Paid or pending state
-- Invoice date
+- The invoice number
+- The command reference
+- The client's name
+- The service charges
+- Status paid or pending
+- Date of invoice
 
 ```yaml
-invoice:
-  number: "INV-2026-00152"
-  order_reference: "TRI-2026-00421"
-  status: "paid"
+facture:
+  numéro: "INV-2026-00152"
+  reference_commande: "TRI-2026-00421"
+  statut: "payée"
   export: "pdf"
 ```
 
-## If a payment stays pending
+## If payment remains pending
 The right action depends on the flow:
 
-- Wait for the provider return if it is still in progress
-- Review the order page
-- Verify that the billing profile is correct
+- Wait for supplier return if the route is still open
+- Read the command page
+- Check Billing Profile
 - Keep the payment reference
-- Contact support if the state remains blocked
+- Contact Support if Status Remains Blocked
 
 ```markdown
-Pending payment checklist
-- Order reference copied
-- Invoice checked
-- Payment provider noted
-- Timestamp recorded
-- Support contacted only after the expected delay
+Checklist paiement en attente
+- Référence commande copiée
+- Facture vérifiée
+- Fournisseur de paiement noté
+- Horodatage noté
+- Support contacte après le delai normal
 ```
 
-## What should not happen
-From a customer point of view, a failed or pending payment should not create confusion such as:
+## What Should Not happen
+From the customer perspective, a payment refused or pending must not create:
 
-- Duplicate orders with the same intent
-- Missing invoice references
-- Invisible retry path
-- No clue about the provider state
+- Duplicated commands without reason
+- An invoice not found
+- An invisible recovery path
+- Unable to read supplier status

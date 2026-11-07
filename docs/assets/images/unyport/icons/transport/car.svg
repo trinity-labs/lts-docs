@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="97_car">
+ <circle cx="64" cy="64" r="60" fill="#91D666"/>
+ <g><path d="M29 70L37 49Q39 45 45 45H83Q89 45 91 49L99 70V88H29Z" fill="#fff" stroke="none" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" /><path d="M45 52H83L89 67H39Z" fill="#D4EFC3" stroke="none" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" /><rect x="38" y="74" width="52" height="8" rx="3" fill="#D4EFC3" /><rect x="35" y="86" width="14" height="9" rx="2" fill="#fff" /><rect x="79" y="86" width="14" height="9" rx="2" fill="#fff" /><circle cx="40" cy="73" r="3" fill="#91D666"/><circle cx="88" cy="73" r="3" fill="#91D666"/></g>
+</svg>

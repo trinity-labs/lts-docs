@@ -1,8 +1,8 @@
-# Bereitstellung
-Das Repository `docker_unyport` liefert sowohl den Quellbaum als auch ein funktionierendes containerisiertes Laufzeitmodell. Die Bereitstellungsgeschichte bleibt absichtlich einfach: eine Go-Anwendung, ein Hauptport und ein kleines `settings/`-Verzeichnis neben dem Binary.
+# Einsatz
+Einlagen `docker_unyport` Der Deployment-Historie ist freiwillig einfach: eine Go-Anwendung, ein Haupt-Listening-Port und ein kleines Verzeichnis `settings/` Neben dem Binär.
 
-## Relevante Struktur
-Wichtige Pfade sind:
+## Nutzbaum
+Die wichtigsten Wege sind:
 
 - `docker-compose.yml`
 - `unyport/backend/`
@@ -12,42 +12,42 @@ Wichtige Pfade sind:
 - `unyport/backend/settings/users.json`
 
 ## Entwicklungsmodus
-Das mitgelieferte Compose startet einen `golang:alpine`-Container und baut das Projekt beim Start.
+Die zugeführte Komponente startet einen Behälter `golang:alpine` und stellt das Projekt beim Start zusammen.
 
-Eigenschaften im Entwicklungsmodus:
+Entwicklungsmerkmale:
 
-- Frontend-Assets werden über `UNYPORT_ASSETS` vom Datentraeger ausgeliefert
-- Go-Modul- und Build-Caches liegen auf benannten Volumes
-- Der Standard-Port ist `8800:8800`
-- Der Container loest `host.docker.internal` über `host-gateway`
+- Frontend Asset wird von der Festplatte über `UNYPORT_ASSETS`
+- Go-Modul und Build-Caches werden in den Volumes namens
+- Der Default Port ist `8800:8800`
+- Der Container löst `host.docker.internal` über `host-gateway`
 
-## Produktionsmodus
-Dieselbe Compose-Logik bereitet auch ein Produktions-Binary vor:
+## Produktionsart
+Die gleiche Logik bereitet auch eine binäre Produktion vor:
 
-- Frontend-Assets werden nach `server/assets` kopiert
-- Das Binary wird mit `-tags prod` gebaut
-- Symbole werden entfernt
-- `upx --lzma` Wird im Container angewendet
+- Die Frontend-Assets sind Kopien in `server/assets`
+- Die Binärdatei wird kompiliert mit `-tags prod`
+- Symbole werden gelöscht
+- `upx --lzma` Wird im Behälter ausgebracht
 
-Das README beschreibt dies als kompakten Paketpfad, waehrend Entwicklung Live-Assets auf dem Datentraeger behaelt.
+Die README präsentierte dies als den kompakten Paketpfad, während die Entwicklung Live-Assets auf der Festplatte hält.
 
-## Runtime-Dateien
-Zur Laufzeit erwartet `UnyPort`:
+## Laufzeitdateien
+In der Laufzeit, `UnyPort` Wartezeiten:
 
 - `settings/settings.yaml`
 - `settings/config.yaml`
 - `settings/users.json`
 
-Operativ schreibt die Anwendung außerdem:
+Der Antrag muss auch in operativer Hinsicht Folgendes enthalten:
 
 - `logs/unyport.log`
 - `logs/startup-history.jsonl`
-- `settings/branding.yaml`, Wenn benutzerdefiniertes Branding gespeichert wird
+- `settings/branding.yaml` Wenn eine Branding-Personalise gespeichert wird
 
 ## HTTPS und HTTP/3
-Standardmaessig lauscht die Anwendung auf einfachem HTTP `:8800`.
+Standardmäßig hört die Anwendung in einfachem HTTP auf `:8800`.
 
-Optionales HTTPS- und QUIC-Verhalten wird aus `settings/settings.yaml` gesteuert:
+Das optionale HTTPS- und QUIC-Verhalten wird durch `settings/settings.yaml` :
 
 - `security_extra.https`
 - `http3.enabled`
@@ -56,15 +56,15 @@ Optionales HTTPS- und QUIC-Verhalten wird aus `settings/settings.yaml` gesteuert
 - `http3.port`
 - `http3.redirect_http`
 
-Wenn HTTP/3 korrekt aktiviert ist, kann `UnyPort` TLS auf dem konfigurierten Port bedienen und `:8800` auf diesen TLS-Listener umleiten.
+Wenn HTTP/3 korrekt aktiviert ist, `UnyPort` kann das TLS auf dem konfigurierten Port bedienen und umleiten `:8800` zu diesem Lister TLS.
 
-## Reverse Proxy und erster Login
-Für Internet-exponierte Deployments ist das uebliche Muster:
+## Reverse Proxy und First Login
+Für den Einsatz im Internet ist das übliche Muster:
 
-- `UnyPort` Lokal oder an eine kontrollierte Host-Adresse binden
-- Nginx oder einen anderen Reverse Proxy davor setzen
-- Secure-Cookie-Verhalten mit `security_extra.https: true` aktivieren
-- OAuth-Platzhalter vor öffentlichem Einsatz ersetzen
-- Geseedete oder Demo-Credentials sofort ändern
+- Binder `UnyPort` lokal oder an einer kontrollierten Host-Adresse
+- Platzieren Sie Nginx oder einen anderen Reverse Proxy vor
+- Sicheres Cookie-Verhalten mit `security_extra.https: true`
+- OAuth Platzhalter vor der öffentlichen Eröffnung ersetzen
+- Ändern Sie die gegebenen oder Demo-IDs sofort
 
-So bleibt die Bereitstellung minimal, ohne eine Demo-Konfiguration als produktionsreif auszugeben.
+Dies hält die minimale Bereitstellung, ohne vorzugeben, dass eine Demo-Konfiguration für die Produktion bereit ist.

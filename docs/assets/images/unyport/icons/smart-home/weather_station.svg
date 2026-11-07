@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="72_weather_station">
+ <circle cx="64" cy="64" r="60" fill="#6DAACE"/>
+ <g><rect x="37" y="62" width="54" height="31" rx="7" fill="#fff" /><rect x="44" y="69" width="40" height="17" rx="3" fill="#C6DEEC" /><circle cx="64" cy="42" r="16" fill="#fff"/><path d="M42 33L38 28M86 33L90 28M64 21V16" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" /><path d="M49 95V102M79 95V102" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" /></g>
+</svg>

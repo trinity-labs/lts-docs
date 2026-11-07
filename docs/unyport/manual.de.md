@@ -1,53 +1,68 @@
-# Handbuch
-Diese Seite ist der praktische Einstieg für Operatoren, die `UnyPort` im Alltag verwenden. Sie konzentriert sich auf den sichtbaren Ablauf vom ersten Login bis zu überwachten Aktionen.
+# Gebrauchsanweisung
 
-## Normaler Operator-Pfad
-Der uebliche Pfad ist:
+## Sichtvermerk
 
-1. Die `UnyPort`-URL öffnen
-2. Sich mit lokalem oder OAuth-Konto anmelden
-3. Die erkannte Host-Rolle bestaetigen
-4. Dashboard und Neustart-Historie lesen
-5. Zu Hypervisor-, Network-, Storage- oder Security-Seiten wechseln
-6. Bei Bedarf eine interne proxied Anwendung öffnen
-7. Profil oder Admin-Einstellungen nur ändern, wenn die Rolle es erlaubt
+![Écran de connexion UnyPort](../assets/images/unyport/screens/login.png){ .unyport-screen }
+
+Nach der Authentifizierung bringt das Dashboard den Host-Status und den Zugriff auf spezialisierte Oberflächen zusammen.
+
+![Tableau de bord UnyPort](../assets/images/unyport/screens/dashboard.png){ .unyport-screen }
+
+Die Netzwerkkarte verwendet die Netzwerkpiktogramme, um Familien von entdeckten Geräten zu unterscheiden.
+
+![Carte réseau UnyPort](../assets/images/unyport/screens/map.png){ .unyport-screen }
+
+ [Sehen Sie sich die Legenden von Netzwerk- und Speichersets an](icon-library.md)
+
+Diese Seite ist der bequeme Einstiegspunkt für Betreiber, die `UnyPort` Es konzentriert sich auf sichtbaren Workflow, vom ersten Login bis hin zu überwachten Aktionen.
+
+## Normaler Bedienpfad
+Der übliche Weg ist:
+
+1. Offene URL `UnyPort`
+2. Verbinden Sie sich mit einem lokalen oder OAuth-Konto
+3. Bestätigen Sie, dass die Hostrolle erkannt wird
+4. Lesen Sie das Dashboard und den Neustartverlauf
+5. Wechseln Sie zu Hypervisor-, Netzwerk-, Speicher- oder Sicherheitsseiten
+6. Offene proxed interne Anwendung, wenn nötig
+7. Ändern Sie das Admin-Profil oder die Einstellungen nur, wenn die Rolle es zulässt
 
 ```text
-Portal oeffnen
-  -> Authentifizieren
-  -> Host-Rolle lesen
-  -> CPU / Speicher / Netzwerk pruefen
-  -> Xen- oder LBU-Kontext ansehen
-  -> Logs oder Sicherheit pruefen
-  -> Bei Bedarf zu TRINITY oder UnyDesk eskalieren
+Ouvrir le portail
+  -> S'authentifier
+  -> Lire le rôle de l'hôte
+  -> Vérifier CPU / mémoire / réseau
+  -> Inspecter Xen ou LBU
+  -> Lire logs ou sécurité
+  -> Escalader via TRINITY ou UnyDesk si besoin
 ```
 
-## Vor der ersten Nutzung
-Einige Informationen sollten vorliegen:
+## Vor der ersten Verwendung
+Einige Informationen müssen vorbereitet werden:
 
-- Die korrekte URL oder der Reverse-Proxy-Einstieg
-- Ein lokaler Benutzer oder ein konfigurierter OAuth-Provider
-- Der erwartete Host-Typ: Dom0, DomU, Container oder Alpine-Host
-- Die Frage, ob eine interne Anwendung wie `ttyd` verfügbar sein soll
+- Die richtige URL oder Return Proxy-Eintrag
+- Lokaler Benutzer oder OAuth-Provider konfiguriert
+- Der erwartete Hosttyp: Dom0, DomU, Container oder Alpine Host
+- Die Tatsache, dass eine interne Anwendung wie `ttyd` Muss oder darf nicht verfügbar sein
 
-## Was das Portal zeigen kann
-Je nach Konfiguration und Host-Rolle kann `UnyPort` zeigen:
+## Was das Portal ausstellen kann
+Je nach Konfiguration und Rolle des Hosts, `UnyPort` kann exponieren:
 
 - Dashboard-Zusammenfassungen
-- Live-Daten für CPU, Speicher und Netzwerk
-- Disk-Zustand und LBU-Persistenz
-- OpenRC-Dienste und ausgewählte Logs
-- Sicherheitschecks und Port-Exposition
-- Xen-Hypervisor- und Domain-Daten auf Dom0
-- Operator-Profil, SSH-Key und Branding-Einstellungen
+- Live-Daten CPU, Speicher und Netzwerk
+- Der Zustand der Scheiben und die Persistenz LBU
+- OpenRC-Dienste und einige Protokolle
+- Sicherheitskontrollen und Hafenexposition
+- Hypervisor-Informationen und Xen-Domains auf Dom0
+- Betreiberprofil, SSH-Schlüssel und Branding-Einstellungen
 
-## Wenn der Pfad technischer wird
-Der Workflow wird technischer, wenn der Operator:
+## Wenn die Reise technischer wird
+Der Workflow wird operativer, wenn Sie Folgendes benötigen:
 
-- Alpine- oder Kernel-Version mit `TRINITY`-Boot-Tags vergleichen muss
-- Einen Dom0 und seine aktiven Domains inspiziert
-- Prüft, ob LBU-Änderungen commitet wurden
-- Abgestuerzte Dienste analysiert
-- Eine Terminal-Anwendung über `/proxy/<name>/` öffnet
+- Vergleichen Sie die Alpine Version oder den laufenden Kernel mit Tags `TRINITY` Koffer
+- Inspizieren Sie eine Dom0 und ihre aktiven Domains
+- Überprüfen Sie, ob LBU-Änderungen vorgenommen wurden
+- Überprüfung von Planted Services
+- Offene Terminal-Anwendung über `/proxy/<name>/`
 
-Die folgenden Seiten bilden das strukturierte Handbuch für diese Aufgaben.
+Die folgenden Seiten dienen als Strukturhandbuch für diese Spots.

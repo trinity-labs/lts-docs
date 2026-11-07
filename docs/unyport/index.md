@@ -4,6 +4,9 @@ social_image: "https://unyport.app/média/img/logos/logo-unyport-full.png"
 ---
 
 # UnyPort
+
+![Bannière UnyPort](../assets/images/unyport/unyport-git-banner.png){ .unyport-screen }
+
 `UnyPort` est la surface de supervision orientée opérateur de l'écosystème `TRINITY`. Elle est construite comme une application Go légère pour des environnements Alpine Linux, avec une lecture explicite de Xen, de l'état système en direct, du proxy applicatif contrôle et de la supervision quotidienne des hôtes.
 
 Publiquement, `UnyPort` rassemble :
@@ -31,6 +34,8 @@ Pour une lecture pratique, l'ordre recommandé est :
 7. `Alpine Linux et Xen`
 8. `Sécurité et exploitation`
 9. `Exemples`
+
+➡️ [Parcourir les 103 icônes réseau, stockage et disques](icon-library.md)
 
 ```text
 Connexion opérateur

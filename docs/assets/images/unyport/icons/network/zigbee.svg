@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="73_zigbee">
+ <circle cx="64" cy="64" r="60" fill="#60A4F9"/>
+ <g><circle cx="64" cy="64" r="33" fill="#fff"/><circle cx="64" cy="64" r="26" fill="#C1DCFD"/><path d="M51 52H77L52 76H77" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" /><circle cx="64" cy="28" r="3" fill="#fff"/><circle cx="64" cy="100" r="3" fill="#fff"/></g>
+</svg>

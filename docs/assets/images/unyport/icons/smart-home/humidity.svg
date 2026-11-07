@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="51_humidity">
+ <circle cx="64" cy="64" r="60" fill="#F47F7C"/>
+ <g><path d="M64 27C51 45 41 55 41 69A23 23 0 0 0 87 69C87 55 77 45 64 27Z" fill="#fff" stroke="none" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" /><circle cx="56" cy="65" r="5" fill="#F47F7C"/><circle cx="73" cy="78" r="5" fill="#F47F7C"/><path d="M54 82L76 59" fill="none" stroke="#F47F7C" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" /></g>
+</svg>

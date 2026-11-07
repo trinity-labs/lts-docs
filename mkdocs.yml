@@ -1,5 +1,5 @@
 site_name: TRINITY Documentation
-site_description: Public documentation for TRINITY, UnyDesk and UnyPort, focused on architecture, usage and operational concepts
+site_description: Public documentation for TRINITY, Scan / Audit, IP, UnyDesk, UnyPort and UnyCloud, focused on architecture, usage and operational concepts
 site_author: TRINITY
 site_url: https://docs.trinity-net.com
 
@@ -16,13 +16,12 @@ docs_dir: docs
 # -------------------------------------------------------------------
 
 extra_css:
-  - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css
-  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github.min.css
-  - assets/stylesheets/extra.css?v=v.4.36.24
+  - assets/vendor/highlightjs/monokai.min.css?v=11.11.1-local
+  - assets/stylesheets/extra.css?v=v.4.36.26
 
 extra_javascript:
-  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js
-  - assets/javascripts/extra.js?v=v.4.36.24
+  - assets/vendor/highlightjs/highlight.min.js?v=11.11.1-local
+  - assets/javascripts/extra.js?v=v.4.36.26
 
 # -------------------------------------------------------------------
 # Plugins
@@ -38,7 +37,8 @@ plugins:
         de: Deutsch
       translate_nav:
         fr:
-          "Docker": "Docker"
+          "Scan / Audit": "Scan / Audit"
+          "IP": "IP"
           "Overview": "Vue d'ensemble"
           "Introduction": "Introduction"
           "Presentation": "Présentation"
@@ -65,8 +65,14 @@ plugins:
           "Services and support": "Services et support"
           "History": "Historique"
           "Evolution": "Évolution"
+          "Capabilities": "Capacites"
+          "Reporting": "Rapports"
+          "IPv4 and IPv6": "IPv4 et IPv6"
+          "Data and score": "Donnees et score"
+          "Privacy and limits": "Confidentialite et limites"
         de:
-          "Docker": "Docker"
+          "Scan / Audit": "Scan / Audit"
+          "IP": "IP"
           "Overview": "Überblick"
           "Introduction": "Einführung"
           "Presentation": "Präsentation"
@@ -93,6 +99,11 @@ plugins:
           "Services and support": "Services und Support"
           "History": "Entwicklung"
           "Evolution": "Weiterentwicklung"
+          "Capabilities": "Funktionen"
+          "Reporting": "Berichte"
+          "IPv4 and IPv6": "IPv4 und IPv6"
+          "Data and score": "Daten und Score"
+          "Privacy and limits": "Datenschutz und Grenzen"
 
 # -------------------------------------------------------------------
 # Markdown extensions
@@ -123,7 +134,7 @@ theme:
   language: en
   font: false
   logo: assets/images/internal/logo-white.png
-  favicon: assets/images/internal/logo-black.png
+  favicon: assets/images/icons/favicon.ico
   features:
     - navigation.indexes
 
@@ -133,6 +144,7 @@ theme:
       accent: custom
 
 extra:
+  social_image: https://docs.trinity-net.com/assets/images/social/og-favicon.png
   alternate:
     - name: Français
       link: /
@@ -175,10 +187,10 @@ nav:
       - Introduction: unyport/introduction.md
       - Presentation: unyport/presentation.md
       - Architecture: unyport/architecture.md
-      - Docker: unyport/docker.md
       - Manual: unyport/manual.md
       - Access and authentication: unyport/access-authentication.md
       - Metrics and surfaces: unyport/metrics-surfaces.md
+      - Icon library: unyport/icon-library.md
       - Applications proxy: unyport/applications-proxy.md
       - Deployment: unyport/deployment.md
       - Alpine Linux and Xen: unyport/alpine-xen.md
@@ -189,13 +201,27 @@ nav:
       - History: unyport/history.md
       - Evolution: unyport/evolution.md
 
+  - UnyCloud:
+      - unycloud/index.md
+      - Introduction: unycloud/introduction.md
+      - Presentation: unycloud/presentation.md
+      - Architecture: unycloud/architecture.md
+      - Manual: unycloud/manual.md
+      - Access and authentication: unycloud/access-authentication.md
+      - Deployment: unycloud/deployment.md
+      - Security and operations: unycloud/security-operations.md
+      - Usage: unycloud/usage.md
+      - Examples: unycloud/examples.md
+      - Glossary: unycloud/glossary.md
+      - History: unycloud/history.md
+      - Evolution: unycloud/evolution.md
+
   - UnyDesk:
       - unydesk/index.md
       - Introduction: unydesk/introduction.md
       - Presentation: unydesk/presentation.md
       - Overview: unydesk/overview.md
       - Architecture: unydesk/architecture.md
-      - Docker: unydesk/docker.md
       - Manual: unydesk/manual.md
       - Host distribution: unydesk/host-distribution.md
       - Session broker: unydesk/session-broker.md
@@ -208,3 +234,16 @@ nav:
       - Usage: unydesk/usage.md
       - History: unydesk/history.md
       - Evolution: unydesk/evolution.md
+
+  - Scan / Audit:
+      - scan/index.md
+      - Architecture: scan/architecture.md
+      - Capabilities: scan/capabilities.md
+      - Reporting: scan/reporting.md
+
+  - IP:
+      - ip/index.md
+      - Architecture: ip/architecture.md
+      - IPv4 and IPv6: ip/ipv4-ipv6.md
+      - Data and score: ip/data-score.md
+      - Privacy and limits: ip/privacy-limits.md

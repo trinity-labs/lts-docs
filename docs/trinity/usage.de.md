@@ -1,71 +1,90 @@
-# Nutzung von TRINITY
-`TRINITY` wird als Lebenszyklus-Portal genutzt. Dieselbe Website muss es ermöglichen, ein Angebot zu entdecken, zu kaufen, zu bezahlen, eine Bestellung zu verfolgen, eine Rechnung zu öffnen, Hilfe anzufordern und in manchen Faellen auf eine VM oder eine Konsole zuzugreifen. Diese Seite beschreibt die wichtigsten öffentlichen Nutzungen.
+# Verwendung von TRINITY
+`TRINITY` Die gleiche Website muss als Life-Cycle-Portal genutzt werden, um ein Angebot zu finden, zu kaufen, zu bezahlen, einer Bestellung zu folgen, eine Rechnung zu öffnen, um Hilfe zu bitten und in einigen Fällen auf eine VM oder Konsole zuzugreifen.
 
-## Nutzung 1 - Angebot entdecken und Kontakt aufnehmen
-Nutzer beginnen haeufig mit:
+## Verwenden 1 - Entdecken Sie das Angebot und den Kontakt
+Ein Benutzer beginnt oft mit:
 
-- Einer Angebotsseite
-- Der öffentlichen Dokumentation
-- Der Support-Seite
-- Der Kontaktseite
+- Lesen Sie eine Seite des Angebots
+- Siehe öffentliche Unterlagen
+- Offene Supportseite
+- Verwenden Sie die Kontaktseite
 
-Diese erste Phase hilft dabei zu erkennen, ob der Bedarf zu `TRINITY`-Support, einer Leistung, einer Schulung, `UnyDesk` oder `UnyPort` gehoert.
+Diese erste Phase wird verwendet, um zu verstehen, ob der Bedarf im Rahmen der Unterstützung liegt `TRINITY`, eine Leistung, Ausbildung,`UnyDesk` oder`UnyPort`.
 
-## Nutzung 2 - Konto erstellen und bestellen
-`TRINITY` unterstützt den klassischen Kundenweg:
+## Nutzung 2 - Erstellen eines Kontos und einer Bestellung
+`TRINITY` unterstützt die Standard-Customer Journey:
 
 - Kontoerstellung
-- Anmeldung
+- Anschluss
 - Eingabe von Rechnungsinformationen
-- Auswahl einer Zahlungsmethode
-- Verarbeitung des Zahlungsruecklaufs
-- Einsicht in Bestellung und Rechnung
+- Wahl eines Zahlungsmittels
+- Rücksendung der Zahlung
+- Überprüfung der Bestellung und Rechnung
 
-Bestellungen können Support, Leistungen, Schulungen oder infrastrukturbezogene Services betreffen.
+Die Aufträge können Unterstützung, Dienstleistungen, Schulungen oder mit der Infrastruktur verbundene Dienstleistungen betreffen.
 
-## Nutzung 3 - Bestellung und Zahlung verfolgen
-Nach dem Kauf kann der Kunde einsehen:
+| Verwendung | Hauptfläche | Erwartetes Ergebnis |
+| --- | --- | --- |
+| Entdeckung | Öffentliche Website und Dokumentation | Verständnis der Versorgung |
+| Befehl | Konto, Korb, Zahlung | Kauf abschließen |
+| Überwachung | Bestellungen und Rechnungen | Status lesen und Dokumente abrufen |
+| Technische | VM, Konsole, DDM | Diagnose oder sorgfältiges Eingreifen |
+| Klettern | Support, UnyDesk, UnyPort | Holen Sie sich Hilfe oder Visibility Infra |
+
+## Verwendung 3 - Verfolgen Sie eine Bestellung und ihre Zahlung
+Nach dem Kauf findet der Kunde:
 
 - Zahlungsstatus
-- Bestellreferenzen
-- Die PDF-Rechnung
-- Rechnungsinformationen
-- Ausgewählte Wiederaufnahme- oder Fortsetzungsaktionen bei ausstehenden Zahlungen
+- Seine Befehlsreferenzen
+- Seine PDF-Rechnung
+- Abrechnungsinformationen
+- Bestimmte Rücknahmeaktionen, wenn die Zahlung noch aussteht oder neu gestartet werden sollte
 
-`TRINITY` zeigt unterschiedliche Zustände je nach Situation: erfolgreiche Zahlung, ausstehende Zahlung, abgelehnte Zahlung, Stornierung oder Wiederholung.
+`TRINITY` zeigt je nach Situation unterschiedliche Aussagen an: erfolgreiche Zahlung, ausstehende Zahlung, abgelehnte Zahlung, Stornierung oder Wiederaufnahme.
 
-## Nutzung 4 - VM oder Konsole aufrufen
-Wenn ein Service dies erlaubt, kann `TRINITY` Zugriff auf eine virtuelle Maschine oder auf eine Konsole bereitstellen.
+## Verwendung 4 - Konsultieren Sie eine VM oder Konsole
+Wenn eine Abteilung es genehmigt, `TRINITY` Zugriff auf eine virtuelle Maschinenansicht oder Konsole geben kann.
 
 
-In diesem Kontext kann der Nutzer:
+In diesem Zusammenhang kann der Benutzer:
 
-- Prüfen, ob eine VM erreichbar ist
-- Ihren Status lesen
-- Eine Konsolensitzung öffnen
-- In einem wartungsorientierten Modus arbeiten
+- Überprüfen Sie, ob eine VM erreichbar ist
+- Lesen Sie seinen Zustand
+- Melden Sie sich an der Konsole an
+- Arbeiten im Wartungsmodus
 
-## Nutzung 5 - Data Disk Mode verstehen
-Der **Data Disk Mode** ist nuetzlich, wenn nicht ein normaler Anwendungsdienst gestartet werden soll, sondern gezielt auf die Umgebung selbst eingegriffen werden muss. In der Praxis dient dieser Modus dazu:
+| Technische Oberfläche | Was wir dort tun | Wann man es benutzt |
+| --- | --- | --- |
+| Sicht auf VM | Status und Identifizierung der Maschine lesen | Schnellprüfung |
+| Konsole | Diagnosebefehle starten | Unterstützung, Wartung, Rückgewinnung |
+| DDM | Speicher- und Dateisystem prüfen | Verwertung und Erhaltung |
 
-- Den Inhalt eines Datentraegers zu prüfen
-- Ein Dateisystem zu inspizieren
-- Eine Umgebung wiederherzustellen
-- Wartungs- oder Recovery-Arbeiten auszufuehren
+## Verwendung 5 - Verstehen Sie den Datenträgermodus
+**Der Datenträgermodus** ist nützlich, wenn es nicht darum geht, einen normalen Anwendungsdienst zu betreiben, sondern in die Umgebung selbst einzugreifen.
 
-Für den Nutzer bedeutet das: Eine VM kann in einem technischeren Modus verfügbar sein, der auf Erhalt, Analyse oder Wiederherstellung von Daten ausgerichtet ist.
+- Überprüfen Sie den Inhalt einer Disc
+- Überprüfen Sie ein Dateisystem
+- Wiederherstellung einer Umgebung
+- Durchführung von Verwertungs- oder Instandhaltungsarbeiten
 
-## Nutzung 6 - Alpine Linux und Xen verstehen
-Zwei öffentliche Bausteine sind in `TRINITY` wichtig:
+Für den Benutzer bedeutet dies, dass auf eine VM in einem eher technischen Modus zugegriffen werden kann, wobei der Schwerpunkt auf der Datenspeicherung, Analyse oder Wiederherstellung liegt.
 
-- **Alpine Linux**: ein schlankes System für kompakte, schnelle und kontrollierte Service-Umgebungen
-- **Xen**: die Hypervisor-Schicht, die die virtuellen Maschinen traegt
+## Use 6 - inklusive Alpine Linux und Xen
+In `TRINITY`Zwei Steine müssen öffentlich verstanden werden:
 
-Nutzer müssen Xen nicht direkt administrieren, um `TRINITY` zu verwenden. Sie sollten jedoch verstehen, dass ihre Services auf diesem Virtualisierungsmodell und auf Alpine-Linux-Umgebungen beruhen.
+- **Alpines Linux**: Leichtgewichtig, schnell und für kompakte Serviceumgebungen geeignet
+- **Xen**: Hypervisor mit virtuellen Maschinen
 
-## Nutzung 7 - wissen, wann UnyDesk oder UnyPort relevant ist
-`TRINITY` ist nicht die einzige Oberfläche im Ökosystem.
+Benutzer muss Xen nicht direkt verwalten, um es zu verwenden `TRINITY`Andererseits muss er verstehen, dass seine Dienste auf dieser Virtualisierungslogik und Alpine Linux-Umgebungen basieren.
 
-- **`UnyDesk`** ist richtig, wenn Fernzugriff oder operatorgestuetzte Assistenz gebraucht wird.
-- **`UnyPort`** ist richtig, wenn es um Überwachung, Kontrolle oder Topologie geht.
+## Nutzung 7 - Wissen, wann Sie zu UnyDesk oder UnyPort gehen
+`TRINITY` Es ist nicht die einzige Oberfläche des Ökosystems.
 
+- Verwendung **`UnyDesk`** wenn es sich um einen Fernzugriff oder eine Übernahme handelt.
+- Verwendung **`UnyPort`** wenn die Notwendigkeit für Topologie Überwachung, Kontrolle oder Lesen ist.
+
+| Oberfläche | Öffentliche Rolle | Typischer Fall |
+| --- | --- | --- |
+| `TRINITY` | Kunden- und Technikportal | Bestellung, Zahlung, VM, Rechnung |
+| `UnyDesk` | Fernhilfe | Interaktion oder Handheld |
+| `UnyPort` | Infra-Sichtbarkeit und Überwachung | Kontrolle, Status, Topologie |

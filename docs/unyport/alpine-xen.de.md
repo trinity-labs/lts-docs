@@ -1,21 +1,21 @@
 # Alpine Linux und Xen
-`UnyPort` ist nicht plattformneutral. Sowohl Code als auch README machen klar, dass das Produkt um Alpine Linux und Xen-orientierte Infrastruktur herum geformt ist, besonders dort, wo Host-Klarheit wichtiger als abstrakte Orchestrierung ist.
+`UnyPort` Code und README zeigen deutlich, dass das Produkt rund um Alpine Linux und eine Xen-orientierte Infrastruktur geprägt ist, vor allem wenn die Klarheit der Host-Rolle mehr zählt als abstrakte Orchestrierung.
 
-## Warum Alpine Linux hier wichtig ist
-Alpine Linux passt zum `UnyPort`-Modell, weil es:
+## Warum Alpine Linux hier zählt
+Alpine Linux hält am Modell fest `UnyPort` Weil er ist:
 
-- Klein ist
-- Vorhersagbar ist
-- Auf musl basiert
-- In minimalen Betriebsumgebungen gut funktioniert
-- Zu LBU-Persistenz-Workflows passt
+- Klein
+- Vorhersagbar
+- Basis auf musl
+- Komfortabel in minimalen operativen Fingerabdrücken
+- Kompatibel mit LBU Persistenz-Workflows
 
-Das ist wichtig, weil `UnyPort` lokalen Zustand direkt liest und von einem kompakten, lesbaren Host profitiert.
+Das zählt, weil`UnyPort` liest direkt den lokalen Zustand des Systems und profitiert von einem kompakten und lesbaren Host.
 
-## Warum Xen hier wichtig ist
-Xen ist wichtig, weil `UnyPort` Infrastrukturrollen unterscheidet und nicht nur CPU-Diagramme anzeigt.
+## Warum Xen hier zählt
+Xen zählt, weil`UnyPort` Differenzierung der Infrastrukturrollen, nicht nur der CPU-Graphen.
 
-Das Backend erkennt, ob der Host eher ist:
+Das Backend erkennt, ob der Host aussieht wie:
 
 - `Dom0`
 - `DomU`
@@ -23,35 +23,35 @@ Das Backend erkennt, ob der Host eher ist:
 - `Alpine`
 - `Unknown`
 
-Auf `Dom0` erweitert `UnyPort` die Linux-Telemetrie mit Xen-Toolstack-Daten aus:
+am `Dom0`, `UnyPort` Anreichert Linux-Telemetrie mit Xen-Toolstack-Daten von:
 
 - `xl info`
 - `xl list`
 
-Das liefert Domain-Anzahl, vCPU-Summe, Speicherwerte, Scheduler-Details und CPU-Lesungen pro Domain.
+Dies gibt die Anzahl der Domänen, die Summe der vCPU, den Speicher, den Scheduler und die CPU-Messwerte pro Domäne an.
 
 ## Dom0 gegen DomU
-Diese Unterscheidung verändert, was Operatoren sehen:
+Diese Unterscheidung ändert, was der Betreiber sieht:
 
-- Auf `Dom0` kann `UnyPort` Hypervisor- und Xen-Domain-Zustand zeigen
-- Auf `DomU` verhaelt sich `UnyPort` als VM-zentrierter Beobachter
-- In Containern können Board- und Firmware-Felder natuerlich fehlen
+- am `Dom0`, `UnyPort` kann den Zustand der Hypervisor- und Xen-Domänen anzeigen
+- am `DomU`, `UnyPort` Verhalten sich wie ein VM-zentrierter Beobachter
+- In einem Container können Motherboard- und Firmwarefelder natürlich fehlen
 
-Die UI ist explizit um diese Unterschiede herum gestaltet.
+Die IU ist explizit um diese Unterschiede herum aufgebaut.
 
 ## LBU und Persistenz
-`UnyPort` versteht auch das Alpine-`lbu`-Modell:
+`UnyPort` enthält auch das Alpenmodell `lbu` :
 
-- Ob LBU vorhanden ist
-- Ob das letzte Archiv existiert
-- Ob der Zustand `clean` oder `dirty` ist
+- Vorhandensein oder Fehlen von LBU
+- Existenz des letzten Archivs
+- Staat `clean` oder `dirty`
 
-Das ist besonders relevant in Alpine-Wartungsumgebungen oder Data-Disk-Mode-nahen Szenarien, in denen Konfigurationsdrift leicht sichtbar sein muss.
+Dies ist besonders nützlich in alpinen Wartungs- oder Datenträgermodus-orientierten Umgebungen, in denen die Konfigurationsdrift einfach zu erkennen sein muss.
 
-## Plattform-Lesart
-In öffentlichen Dokumentationstermen ist `UnyPort` daher zu lesen als:
+## Plattformspiel
+In Bezug auf die öffentliche Dokumentation, `UnyPort` Daher sollte es wie folgt lauten:
 
-1. Alpine-natives Operator-Portal
-2. Bewusst für Xen-Topologie und Rollen
-3. Nuetzlich auf Dom0, DomU und schlanken Service-Hosts
-4. Ausgerichtet auf minimale Operationen statt schwere Abstraktionsschichten
+1. Ein nativ ausgerichtetes Betreiberportal auf Alpine
+2. Kenntnis der Topologie und Xen Rollen
+3. Nützlich für Dom0, DomU und Light Service Hosts
+4. Ausrichtung mit minimalen Operationen statt schweren Abstraktionsschichten

@@ -1,78 +1,97 @@
-# Account and orders
-`TRINITY` is not only a storefront. It is also the place where the customer account and the order lifecycle remain visible.
+# Account and Orders
+`TRINITY` It is not only a showcase. It is also the place where the customer account and the life cycle of the order remain visible.
 
-## Account scope
-The customer account is used to:
+## Role of the account
+The client account is used to:
 
 - Authenticate
 - Store billing information
-- Review active and past orders
-- Reopen payment-related actions
+- View active and past orders
+- Relaunching certain payment actions
 - Download invoices
-- Identify the right service surface after purchase
+- Retrieving the right service area after purchase
 
 ```json
 {
-  "account": {
-    "email": "customer@example.com",
-    "billing_profile": "company",
-    "orders_visible": true,
-    "invoice_download": true
+  "compte": {
+    "email": "client@example.com",
+    "profil_facturation": "entreprise",
+    "commandes_visibles": true,
+    "telechargement_facture": true
   }
 }
 ```
 
-## Typical order stages
-An order can pass through several stages:
+## Typical steps of an order
+An order can be passed through several states:
 
 - Draft
 - Submitted
 - Pending payment
 - Paid
-- Processing
-- Delivered or available
+- In preparation
+- Available or delivered
 - Cancelled or expired
 
 ```text
-draft -> submitted -> pending_payment -> paid -> processing -> available
-                              \-> refused -> retry
+brouillon -> soumise -> paiement_en_attente -> payée -> préparation -> disponible
+                                 \-> refusée -> reprise
 ```
 
-## What the user should read in an order
-An order page should be readable even without platform internals. The user mostly needs:
+| Status | Customer-side meaning | Recommended action |
+| --- | --- | --- |
+| Draft | Order not finalized | Check the information and submit |
+| Submitted | The demand exists but is not yet settled | Waiting for payment or completing the flow |
+| Pending payment | Return of payment is not confirmed | Check the payment method and wait |
+| Paid | The Regulation is valid | Follow preparation or delivery |
+| In preparation | The service is being processed | Wait for availability or check access |
+| Available | The service or document is accessible | Use exposed surface |
+| Cancelled or expired | The flow is closed without delivery | Restart or contact support |
 
-- The reference number
-- The current status
-- The selected service
-- The chosen billing profile
-- The payment state
-- The invoice link when available
+## What the customer should read in an order
+The order page must remain legible without internal details. The customer needs above all:
+
+- The reference
+- Current state
+- The chosen service
+- The billing profile
+- The status of payment
+- The link invoice if available
 
 ```yaml
-order_summary:
-  reference: "TRI-2026-00421"
-  service: "support session"
-  status: "paid"
-  payment_status: "confirmed"
-  invoice_pdf: true
+resume_commande:
+  référence: "TRI-2026-00421"
+  service: "session de support"
+  statut: "payée"
+  statut_paiement: "confirmé"
+  facture_pdf: true
 ```
 
-## Good operational habits
-Before opening a support case, keep a small record of:
+| Visible field | Why does he count | Example |
+| --- | --- | --- |
+| Reference | Unmistakable identification of the command | `TRI-2026-00421` |
+| Service | Know what was bought | `session de support` |
+| Status | Read the life cycle state | `payée` |
+| Payment status | Distinguish Order and Settlement | `confirmé` |
+| PDF bill | Recover the supporting document | `true` |
+| Billing profile | Avoiding an administrative error | `entreprise` |
 
-- The order reference
-- The date of purchase
-- The payment method
-- The expected service outcome
-- The exact point where the flow stopped
+## Good habit before opening a ticket
+Keep a simple record of:
+
+- The command reference
+- Date of purchase
+- The means of payment
+- Expected result
+- The exact step where the flow stopped
 
 ```markdown
-Order reference: TRI-2026-00421
-Expected result: VM access and console visibility
-Current issue: payment accepted, service not yet visible
+Référence commande : TRI-2026-00421
+Résultat attendu : accès VM et visibilité console
+Probleme actuel : paiement accepte, service pas encore visible
 ```
 
 ## Related pages
-- `Payments and invoices`
-- `Support and operations`
-- `Customer journeys`
+- `Paiements et factures`
+- `Support et exploitation`
+- `Parcours client`

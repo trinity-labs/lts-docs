@@ -1,42 +1,42 @@
 # Docker UnyPort
-Cette page regroupe les manifests Docker correspondant au projet `UnyPort` uniquement.
+Diese Seite bringt Docker-Events zusammen, die dem Projekt entsprechen `UnyPort` Nur.
 
-Source retenue :
+Ausgewählte Quelle:
 
 - `/var/docker/docker_unyport/docker-compose.yml`
 
-Aucun `Dockerfile` dedie n'a ete trouve pour `UnyPort`. Le runtime utilise l'image amont `golang:alpine`.
+Keine `Dockerfile` gewidmet wurde gefunden für `UnyPort`Runtime verwendet Upstream-Bild `golang:alpine`.
 
-## Résumé public
-| Élément | Valeur publique |
+## Öffentliche Zusammenfassung
+| Element | Öffentlicher Wert |
 | --- | --- |
-| Service | `unyport` |
-| Image | `golang:alpine` |
-| Conteneur | `unyport` |
-| Répertoire de travail | `/app/unyport/backend` |
-| Port exposé | `8800:8800` |
-| Assets frontend | `/app/unyport/frontend/public` |
-| Mode de redémarrage | `unless-stopped` |
+| Dienst | `unyport` |
+| Bild | `golang:alpine` |
+| Container | `unyport` |
+| Arbeitsverzeichnis | `/app/unyport/backend` |
+| Freier Hafen | `8800:8800` |
+| Frontend-Vermögenswerte | `/app/unyport/frontend/public` |
+| Neustartmodus | `unless-stopped` |
 
-## Volumes
-| Type | Source | Destination | Rôle |
+## Volumen
+| Art der Art | Quelle | Bestimmungsort | Rolle |
 | --- | --- | --- | --- |
-| Code applicatif | `./unyport` | `/app/unyport` | sources backend/frontend |
-| Cache Go modules | `go-cache` | `/root/go/pkg/mod` | accélération des dépendances |
-| Cache Go build | `go-build-cache` | `/root/.cache/go-build` | accélération des recompilations |
+| Antragscode | `./unyport` | `/app/unyport` | Quellen Backend/Frontend |
+| Go Cache Module | `go-cache` | `/root/go/pkg/mod` | Beschleunigte Abhängigkeiten |
+| Cache Go gebaut | `go-build-cache` | `/root/.cache/go-build` | Beschleunigung der Rekompilierungen |
 
-## Variables publiques
-| Variable | Valeur | Usage |
+## Öffentliche Variablen
+| Variabel | Wert | Verwendung |
 | --- | --- | --- |
-| `UNYPORT_ASSETS` | `/app/unyport/frontend/public` | sert les assets frontend depuis le disque en mode dev |
+| `UNYPORT_ASSETS` | `/app/unyport/frontend/public` | Serviert Frontend-Assets von Disk im Dev-Modus |
 
-## Comportement
-| Phase | Action |
+## Verhalten
+| Phase | Aktion |
 | --- | --- |
-| Démarrage | `go mod tidy`, build backend, lancement du binaire |
-| Développement | assets frontend servis depuis le volume bindé |
-| Production | assets embarqués si `UNYPORT_ASSETS` est retirée |
-| Compression | binaire compressé avec `upx --lzma` |
+| Beginn | `go mod tidy`, Build Backend, Binärstart |
+| Entwicklung | Frontend-Vermögenswerte aus dem begrenzten Volumen bedient |
+| Produktion | Fahrzeugbestand, wenn `UNYPORT_ASSETS` wird zurückgezogen |
+| Verdichtung | binär komprimiert mit `upx --lzma` |
 
 ## `docker_unyport/docker-compose.yml`
 ```yaml

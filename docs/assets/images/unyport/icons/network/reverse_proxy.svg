@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="Reverse proxy">
+  <circle cx="64" cy="64" r="60" fill="#6654CD"/>
+  <g transform="translate(0 -3)">
+  <g fill="#FFFFFF">
+    <rect x="45" y="27" width="38" height="23" rx="6"/>
+    <rect x="40" y="54" width="48" height="27" rx="7"/>
+    <rect x="27" y="88" width="33" height="18" rx="5"/>
+    <rect x="68" y="88" width="33" height="18" rx="5"/>
+  </g>
+  <g fill="#DCD6F8">
+    <rect x="51" y="33" width="26" height="11" rx="3"/>
+    <rect x="46" y="60" width="36" height="15" rx="4"/>
+    <rect x="32" y="93" width="23" height="8" rx="2"/>
+    <rect x="73" y="93" width="23" height="8" rx="2"/>
+  </g>
+  <g stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M64 50V54"/>
+    <path d="M64 81V85H43V88"/>
+    <path d="M64 85H85V88"/>
+    <path d="M52 67H75M69 62L75 67L69 72"/>
+  </g>
+  <g fill="#6654CD">
+    <circle cx="37" cy="97" r="2"/>
+    <circle cx="78" cy="97" r="2"/>
+  </g>
+  </g>
+</svg>

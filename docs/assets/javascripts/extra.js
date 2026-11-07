@@ -81,6 +81,50 @@ function buildTrinityLanguageHref(lang, fallbackHref) {
   return withSlash(joinPath([...parent, `${last}.${lang}`]));
 }
 
+function initTrinityAutomaticLanguage() {
+  const storageKey = "trinity-docs-language";
+  const current = (document.documentElement.lang || "fr").toLowerCase().split("-")[0];
+  const alternates = new Map(
+    [...document.querySelectorAll('link[rel="alternate"][hreflang]')]
+      .map((link) => [(link.hreflang || "").toLowerCase().split("-")[0], link.href])
+      .filter(([lang, href]) => lang && href),
+  );
+  alternates.set(current, window.location.href);
+
+  if (!window.__trinityLanguageChoiceBound) {
+    window.__trinityLanguageChoiceBound = true;
+    document.addEventListener("click", (event) => {
+      const link = event.target.closest("a[hreflang]");
+      if (!link) return;
+      const lang = (link.getAttribute("hreflang") || "").toLowerCase().split("-")[0];
+      if (alternates.has(lang)) {
+        try { window.localStorage.setItem(storageKey, lang); } catch (_) { /* storage unavailable */ }
+      }
+    });
+  }
+
+  let preferred = "";
+  try { preferred = window.localStorage.getItem(storageKey) || ""; } catch (_) { /* storage unavailable */ }
+  if (!alternates.has(preferred)) {
+    const requested = Array.isArray(navigator.languages) && navigator.languages.length
+      ? navigator.languages
+      : [navigator.language || ""];
+    preferred = requested
+      .map((lang) => String(lang).toLowerCase().split("-")[0])
+      .find((lang) => alternates.has(lang)) || current;
+    try { window.localStorage.setItem(storageKey, preferred); } catch (_) { /* storage unavailable */ }
+  }
+
+  if (preferred !== current) {
+    const target = new URL(alternates.get(preferred), window.location.href);
+    target.search = window.location.search;
+    target.hash = window.location.hash;
+    window.location.replace(target.href);
+    return true;
+  }
+  return false;
+}
+
 function localizeTrinityInternalHref(href, locale) {
   if (!["en", "de"].includes(locale) || !href) return href;
 
@@ -208,7 +252,7 @@ function mountTrinitySidebarRelease(meta) {
   version.href = getTrinityReleaseRepoUrl(meta);
   version.target = "_blank";
   version.rel = "noopener noreferrer";
-  version.innerHTML = `<i class="fa-brands fa-github" aria-hidden="true"></i><span>TRINITY Docs - ${meta.version}</span>`;
+  version.textContent = `TRINITY Docs - ${meta.version}`;
 
   node.appendChild(version);
   node.title = [meta.kind, meta.scope, meta.visibility, meta.released_at].filter(Boolean).join(" · ");
@@ -355,10 +399,14 @@ function initTrinityDocsChrome() {
   getTrinityReleaseMeta().then((meta) => mountTrinitySidebarRelease(meta));
 }
 
+function initTrinityDocs() {
+  if (!initTrinityAutomaticLanguage()) initTrinityDocsChrome();
+}
+
 if (document.readyState === "loading") {
-  document.addEventListener("DOMContentLoaded", initTrinityDocsChrome, { once: true });
+  document.addEventListener("DOMContentLoaded", initTrinityDocs, { once: true });
 } else {
-  initTrinityDocsChrome();
+  initTrinityDocs();
 }
 
 if (window.document$ && typeof window.document$.subscribe === "function") {

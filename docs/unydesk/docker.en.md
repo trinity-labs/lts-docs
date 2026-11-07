@@ -1,25 +1,25 @@
 # Docker UnyDesk
-Cette page publique conserve uniquement les informations utiles pour comprendre le runtime Docker `UnyDesk`.
+This public page only retains the information useful to understand the Docker runtime `UnyDesk`.
 
-Source de référence :
+Source of reference:
 
 - `/var/docker/docker_unydesk/docker-compose.yml`
 
-Les détails de build internes, les commandes longues de packaging et les valeurs sensibles ne sont pas publiés ici.
+Internal build details, long packaging commands and sensitive values are not published here.
 
-## Résumé public
-| Élément | Valeur publique |
+## Public summary
+| Element | Public value |
 | --- | --- |
 | Service | `unydesk` |
 | Image | `golang:alpine` |
-| Conteneur | `unydesk` |
-| Répertoire de travail | `/app/unydesk/backend` |
-| Port interne | `8890/tcp` |
-| Bind hôte | `192.168.3.5:8890` |
-| Mode de redémarrage | `unless-stopped` |
+| Container | `unydesk` |
+| Work Directory | `/app/unydesk/backend` |
+| Internal port | `8890/tcp` |
+| Bind host | `192.168.3.5:8890` |
+| Reboot mode | `unless-stopped` |
 
 ## Service
-`UnyDesk` tourne dans un conteneur Go Alpine et compile le backend ainsi que les binaires hôtes au démarrage.
+`UnyDesk` spins in a Go Alpine container and compiles the backend as well as the hosts binaries on startup.
 
 ```yaml
 services:
@@ -36,22 +36,22 @@ services:
       - go-build-cache:/root/.cache/go-build
 ```
 
-## Variables publiques
-Les variables suivantes pilotent les aspects publics du runtime et du packaging :
+## Public variables
+The following variables are used to control the public aspects of running and packaging:
 
-| Variable | Valeur publique | Usage |
+| Variable | Public value | Use |
 | --- | --- | --- |
-| `UNYDESK_ASSETS` | `/app/unydesk/frontend/public` | assets frontend servis depuis le disque |
-| `SERVER_URL` | variable d'environnement | URL publique annoncée au runtime |
-| `UNYDESK_FFMPEG_WINDOWS_AMD64_URL` | URL GitHub FFmpeg | source de téléchargement FFmpeg Windows amd64 |
-| `UNYDESK_STUN_URLS` | variable d'environnement | configuration STUN publique |
-| `UNYDESK_TURN_URLS` | variable d'environnement | configuration TURN publique |
-| `UNYDESK_TURN_USERNAME` | variable d'environnement | identifiant TURN |
-| `UNYDESK_TURN_CREDENTIAL` | `<redacted>` | secret masqué dans la doc publique |
-| `UNYDESK_ENABLE_PAIRED_UPX` | `1` par défaut | active le packaging UPX des binaires associés |
-| `UNYDESK_PACK_EMBEDDED_FFMPEG` | `1` par défaut | embarque FFmpeg dans le payload Windows |
-| `UNYDESK_UPX_FLAGS` | variable d'environnement | surcharge les flags UPX |
-| `UNYDESK_UPX_ULTRA` | `0` par défaut | active un mode UPX plus lent si positionné à `1` |
+| `UNYDESK_ASSETS` | `/app/unydesk/frontend/public` | frontend assets served from the disc |
+| `SERVER_URL` | environment variable | Public URL announced at runtime |
+| `UNYDESK_FFMPEG_WINDOWS_AMD64_URL` | GitHub FFmpeg URL | Download source FFmpeg Windows amd64 |
+| `UNYDESK_STUN_URLS` | environment variable | Public STUN configuration |
+| `UNYDESK_TURN_URLS` | environment variable | public TURN configuration |
+| `UNYDESK_TURN_USERNAME` | environment variable | TURN ID |
+| `UNYDESK_TURN_CREDENTIAL` | `<redacted>` | secret hidden in public doc |
+| `UNYDESK_ENABLE_PAIRED_UPX` | `1` default | activates UPX packaging of associated binary |
+| `UNYDESK_PACK_EMBEDDED_FFMPEG` | `1` default | embedded FFmpeg in Windows payload |
+| `UNYDESK_UPX_FLAGS` | environment variable | overload UPX flags |
+| `UNYDESK_UPX_ULTRA` | `0` default | activates a slower UPX mode if positioned to `1` |
 
 ```yaml
 environment:
@@ -69,26 +69,26 @@ environment:
 ```
 
 ## Volumes
-Le service s'appuie sur trois volumes principaux :
+The service is based on three main volumes:
 
-| Type | Source | Destination | Rôle |
+| Type | Source | Destination | Role |
 | --- | --- | --- | --- |
-| Code applicatif | `/var/docker/docker_unydesk/unydesk` | `/app/unydesk` | sources backend/frontend |
-| Cache Go modules | `go-cache` | `/root/go/pkg/mod` | dépendances Go persistées |
-| Cache Go build | `go-build-cache` | `/root/.cache/go-build` | cache de compilation Go |
+| Application code | `/var/docker/docker_unydesk/unydesk` | `/app/unydesk` | sources backend/frontend |
+| Go cache modules | `go-cache` | `/root/go/pkg/mod` | Go addictions persisted |
+| Cache Go built | `go-build-cache` | `/root/.cache/go-build` | Go compilation cache |
 
-## Exposition
-Le port applicatif est exposé sur l'adresse interne Docker host :
+## Exposure
+The application port is displayed on the Docker host internal address:
 
-| Hôte | Conteneur | Usage |
+| Host | Container | Use |
 | --- | --- | --- |
-| `192.168.3.5:8890` | `8890/tcp` | accès interne avant reverse proxy |
+| `192.168.3.5:8890` | `8890/tcp` | internal access before reverse proxy |
 
 ```text
 192.168.3.5:8890 -> 8890/tcp
 ```
 
-L'accès public passe ensuite par le reverse proxy de la plateforme.
+Public access then passes through the platform's proxy reverse.
 
-## Note admin
-La documentation admin conserve les détails d'exploitation complets lorsque ceux-ci sont nécessaires aux mainteneurs.
+## Administrative Note
+The administrative documentation shall retain the full operating details when required by the maintainers.

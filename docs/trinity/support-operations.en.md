@@ -1,42 +1,51 @@
-# Support and operations
-`TRINITY` support is both commercial and technical. Publicly, this means the platform must help the user understand when to ask for help and what to include in the request.
+# Support and operation
+Support `TRINITY` This means that the platform must help the user understand when to ask for help and what to include in their application.
 
-## Support scope
-`TRINITY` support can explicitly concern:
+## Perimeter support
+Support `TRINITY` may explicitly concern:
 
 - Orders and billing questions
-- Payment follow-up
-- Invoice access
+- Payment tracking
+- Access to invoices
 - Alpine Linux environments
-- Xen-backed VM services
+- VM services based on Xen
 - Data Disk Mode situations
-- `UnyDesk` Usage
-- `UnyPort` Usage
+- The use of`UnyDesk`
+- The use of`UnyPort`
 
-## Good support request format
-A useful support request is concrete and short.
+| Subject | Self-service possible | Recommended medium |
+| --- | --- | --- |
+| PDF bill | Yes | If the document is missing or inconsistent |
+| Payment | Yes, to read the state | If status remains blocked or contradictory |
+| Command | Yes, to follow the reference and status | If delivery no longer progresses |
+| VM | Yes, to read a simple state | If the behaviour becomes ambiguous or risky |
+| Data Disk Mode | Possible careful reading | Yes, as long as a recovery action is sensitive |
+| UnyDesk / UnyPort | Yes, to use the surface | If access or interpretation is a problem |
+
+## Good format of application support
+A good support demand is concrete and brief.
 
 ```markdown
-Subject: VM visible but service unavailable
+Objet : VM visible mais service indisponible
 
-Order reference: TRI-2026-00421
-Service: Alpine VM
-Current mode: Data Disk Mode
-Observed issue: filesystem visible, application not started
-Expected result: confirm if recovery or normal restart is required
+Référence commande : TRI-2026-00421
+Service : VM Alpine
+Mode actuel : Data Disk Mode
+Probleme observe : système de fichiers visible, application non démarrée
+Résultat attendu : confirmer s'il faut reprendre ou revenir en mode normal
 ```
 
-## Before escalating
-Collect the minimum facts first:
+## Before climbing
+Collect the minimum first:
 
 - Order reference
-- Invoice or payment state if relevant
-- VM name if one exists
+- Invoice or payment if useful
+- Name of VM if it exists
 - Current mode: normal, maintenance or DDM
-- Exact console observation
+- Precise console observation
 
 ```bash
-# Example evidence set from a console
+# Exemple de lot d'informations à relever
 hostname
 uptime
 ip addr
@@ -44,26 +53,42 @@ lsblk
 df -h
 ```
 
-## Support versus self-service
-`TRINITY` aims to expose enough information for the user to act safely without turning every situation into a support ticket.
+| Information to be reported | Why she helps | Example |
+| --- | --- | --- |
+| Order reference | Identify folder | `TRI-2026-00421` |
+| Payment status | Financial and technical distinction | `confirmé` |
+| Name of VM | Pointing the right environment | `VM-EXEMPLE01` |
+| Current mode | Locate context | `normal`, `maintenance`, `DDM` |
+| Console observation | Give a concrete symptom | unmounted volume, service absent |
 
-Self-service is appropriate for:
+## Support or self-service
+`TRINITY` seeks to expose enough information to allow prudent action without turning each situation into a support ticket.
 
-- Reading an invoice
-- Checking a payment state
-- Opening a console
-- Confirming whether a VM is online
+Self-service is suitable for:
 
-Support is appropriate for:
+- Read an invoice
+- Check a payment statement
+- Open a console
+- Confirm if VM is online
+
+The support is suitable for:
 
 - Blocked order delivery
-- Payment inconsistency
-- Unclear VM state
-- Recovery action with risk of data loss
+- Inconsistency of payment
+- VM statement unclear
+- Risk recovery action on data
 
-## Related surfaces
-Use the right surface for the right need:
+| Situation | Self-service | Support ticket |
+| --- | --- | --- |
+| Read an invoice | Yes | No, unless document is missing |
+| Check an online VM | Yes | No, if the state is clear |
+| Diagnosis a sensitive volume | Limit | Yes |
+| Recovering Service After Incident | Limit | Yes |
+| Understanding an adversarial status | No | Yes |
 
-- `TRINITY` For account, orders, invoices and service entry
-- `UnyDesk` For remote assistance and interactive access
-- `UnyPort` For infrastructure state and operational supervision
+## Surfaces to be used
+Use the right surface as needed:
+
+- `TRINITY` For the account, orders, invoices and service point of entry
+- `UnyDesk` For remote support and interaction
+- `UnyPort` For infra-state and supervision

@@ -15,9 +15,6 @@
     {% set page_url = page.canonical_url %}
   {% endif %}
   {% set social_image = config.extra.social_image %}
-  {% if page and page.meta and page.meta.social_image %}
-    {% set social_image = page.meta.social_image %}
-  {% endif %}
   {% set social_image_alt = config.site_name %}
   {% if page and page.meta and page.meta.social_image_alt %}
     {% set social_image_alt = page.meta.social_image_alt %}

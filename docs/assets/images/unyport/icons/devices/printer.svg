@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="05_printer">
+ <circle cx="64" cy="64" r="60" fill="#F45CA7"/>
+ <g><rect x="42" y="27" width="44" height="28" rx="5" fill="#fff" /><rect x="48" y="34" width="32" height="3" rx="1.5" fill="#FBBFDD" /><rect x="48" y="41" width="23" height="3" rx="1.5" fill="#FBBFDD" /><rect x="31" y="52" width="66" height="44" rx="9" fill="#fff" /><rect x="40" y="75" width="48" height="20" rx="3" fill="#FBBFDD" /><rect x="47" y="82" width="34" height="3" rx="1.5" fill="#fff" /><rect x="47" y="88" width="25" height="3" rx="1.5" fill="#fff" /><circle cx="84" cy="65" r="3.5" fill="#F45CA7"/></g>
+</svg>

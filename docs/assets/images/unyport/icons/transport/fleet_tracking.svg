@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="123_fleet_tracking">
+ <circle cx="64" cy="64" r="60" fill="#72CEC4"/>
+ <g><rect x="29" y="35" width="70" height="61" rx="8" fill="#fff" /><rect x="36" y="42" width="56" height="47" rx="4" fill="#C8ECE8" /><path d="M42 78L54 59L68 72L84 50" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" /><circle cx="54" cy="59" r="4" fill="#fff"/><circle cx="68" cy="72" r="4" fill="#fff"/><circle cx="84" cy="50" r="4" fill="#fff"/></g>
+</svg>

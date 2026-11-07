@@ -1,57 +1,79 @@
-# VMs und Konsole
-Einige `TRINITY`-Services zeigen eine VM-bezogene Oberfläche. Das bedeutet nicht, dass jeder Kunde Hypervisor-Administration betreibt. Es bedeutet, dass die Plattform Maschinenstatus, Konsole oder Wartungskontext zeigen kann, wenn der Service dies erlaubt.
+# VM und Konsole
+Einige Dienstleistungen `TRINITY` Dies bedeutet nicht, dass jeder Client zum Hypervisor-Administrator wird, sondern dass die Plattform einen Maschinenzustand, eine Konsole oder einen Wartungskontext anzeigen kann, wenn der Dienst dies zulässt.
 
 ## Was der Nutzer erwarten kann
-Eine VM-Seite kann zeigen:
+Eine VM-orientierte Seite kann anzeigen:
 
-- Den Maschinennamen
-- Online oder offline
-- Grundlegende Ressourcensicht
-- Einen Konsolen-Einstieg
-- Links zu Support oder Monitoring
+- Name der Maschine
+- Ein Online-Indikator oder nicht
+- Eine Sichtbarkeit basiert auf Ressourcen
+- Ein Konsoleneinstiegspunkt
+- Links zur Unterstützung oder Überwachung
+
+| Sichtbare Informationen | Sofortige Nutzung | Lesbar |
+| --- | --- | --- |
+| Name der VM | Identifizieren Sie die richtige Maschine | Stabile Bezeichnung oder technische Referenz |
+| Staat | Wissen, ob VM reagiert | `online`, `maintenance`, `récupération`, `unavailable` |
+| IP-Adresse | Erkennen des Netzwerkziels | Private oder technische IP abhängig vom Service |
+| Konsole | Öffnen Sie eine direkte Diagnose | Zugang beschränkt auf autorisierte Fälle |
+| Ressourcen | Kurze Suche nach VM | CPU, RAM, Disk oder Near Indicators |
+| Support Links | Klettern sauber | Ticket, Katze oder Hilfekanal |
 
 
-## Typische Ziele einer Konsole
-Konsolenzugang ist nuetzlich, um:
+## Typische Konsolenziele
+Der Zugriff auf die Konsole wird verwendet, um:
 
-- Den Boot-Status zu prüfen
-- Ein eingehangtes Dateisystem zu inspizieren
-- Hostname oder IP zu lesen
-- Zu bestaetigen, ob Recovery-Arbeit möglich ist
+- Status des Prüfboots
+- Inspizieren Sie ein montiertes Dateisystem
+- Lesen Sie einen Hostnamen oder eine IP
+- Bestätigen Sie, ob eine Wiederaufnahme möglich ist
 
 ```bash
 hostname
-uname -a
+uname -à
 ip addr
 lsblk
 df -h
 ```
 
-## Einen VM-Zustand lesen
-Eine öffentliche VM-Seite sollte einfach gelesen werden:
+## Wie man einen VM-Zustand liest
+Eine öffentliche VM-Seite sollte einfach lesen:
 
-- `online` Bedeutet, dass die VM im aktuellen Modus antwortet
-- `maintenance` Bedeutet, dass ein technischer Eingriff möglich ist
-- `recovery` Bedeutet, dass Daten und Dateisysteme im Mittelpunkt stehen
-- `unavailable` Bedeutet warten oder Support anfragen
+- `online` Bedeutet, dass VM in seinem aktuellen Modus reagiert
+- `maintenance` Bedeutet, dass ein technischer Eingriff im Gange oder möglich ist
+- `récupération` Bedeutet, dass Priorität der Zugriff auf Daten ist
+- `unavailable` Bedeutet, dass Sie warten oder um Unterstützung bitten müssen
 
 ```text
-online       -> normaler oder technischer Zugang moeglich
-maintenance  -> Eingriffskontext
-recovery     -> Erhaltungs- und Diagnosekontext
-unavailable  -> warten oder Support
+online       -> accès normal ou technique attendu
+maintenance  -> contexte d'intervention
+récupération     -> contexte de préservation et de diagnostic
+unavailable  -> attente ou support
 ```
 
-## Operative Vorsicht
-Eine Konsole ist stark, aber eng begrenzt. Vor jeder Änderung sollte klar sein:
+| VM-Erklärung | Was es bedeutet | Guter Reflex |
+| --- | --- | --- |
+| `online` | VM ist im aktuellen Modus verfügbar | Service oder Konnektivität prüfen |
+| `maintenance` | Eine Intervention oder Vorbereitung ist im Gange | Vermeiden Sie nicht angeforderte Änderungen |
+| `récupération` | Priorität ist Wiederherstellung oder Erhaltung | Fokus auf Lesen und Speichern |
+| `unavailable` | Die VM oder Oberfläche ist nicht verwendbar | Warten oder Öffnen eines Tickets mit Kontext |
 
-- Ob die VM im Normalmodus oder im DDM laeuft
-- Ob das Ziel Diagnose oder Änderung ist
-- Ob der Support eine genaue Aktion angefordert hat
+## Operationelle Vorsicht
+Eine Konsole ist leistungsstark, aber eng in ihrer Verwendung.
+
+- Wenn VM im normalen oder DDM-Modus ist
+- Wenn das Ziel Diagnose oder Änderung ist
+- Wenn die Unterstützung eine spezifische Maßnahme erfordert
 
 ```bash
-# Sichere erste Pruefungen
+# Vérifications prudentes en premier
 mount
 findmnt
 cat /etc/os-release
 ```
+
+| Überprüfung | Warum wirf es | Risiko bei Nichtbeachtung |
+| --- | --- | --- |
+| `mount` | Siehe aktive Halterungen | Handeln auf das falsche Volumen |
+| `findmnt` | Lesen Sie den Baum der Montagepunkte | System- und Datenkonsolidierung |
+| `cat /etc/os-release` | Identifizieren Sie die Einladungen des Systems | Falsches Verfahren anwenden |

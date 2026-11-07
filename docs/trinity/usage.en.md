@@ -1,71 +1,90 @@
-# TRINITY Usage
-`TRINITY` is used as a lifecycle portal. The same site must allow a user to discover an offer, buy it, pay for it, follow an order, open an invoice, request assistance and, in some cases, access a VM or a console. This page describes the most important public uses.
+# Use of TRINITY
+`TRINITY` The same site must be used as a life cycle portal to discover an offer, to buy, to pay, to follow an order, to open an invoice, to ask for help and, in some cases, to access a VM or console. This page describes the most important public uses.
 
-## Use 1 - discover the offer and make first contact
-Users often begin by:
+## Use 1 - discover the offer and contact
+A user often starts with:
 
-- Reading an offer page
-- Consulting the public documentation
-- Opening the support page
-- Using the contact page
+- Read a page of offer
+- See public documentation
+- Open Support Page
+- Use the contact page
 
-This first phase helps determine whether the need belongs to `TRINITY` support, a service engagement, a training path, `UnyDesk` or `UnyPort`.
+This first phase is used to understand whether the need is within the scope of the support `TRINITY`, a benefit, training,`UnyDesk` or`UnyPort`.
 
-## Use 2 - create an account and order
+## Usage 2 - Create an account and order
 `TRINITY` supports the standard customer journey:
 
-- Account creation
-- Sign-in
-- Billing information entry
-- Payment method selection
-- Payment return handling
-- Order and invoice review
+- Account Creation
+- Connection
+- Entering billing information
+- Choice of a means of payment
+- Return of payment
+- Checking the order and invoice
 
-Orders can concern support, consulting, training or infrastructure-related services.
+Orders may concern support, services, training or services associated with the infrastructure.
 
-## Use 3 - follow an order and its payment
-After purchase, the customer can review:
+| Use | Main surface | Expected result |
+| --- | --- | --- |
+| Discovery | Public website and documentation | Understanding the supply |
+| Command | Account, basket, payment | Finalize purchase |
+| Monitoring | Orders and invoices | Read status and retrieve documents |
+| Technical | VM, console, DDM | Diagnosis or intervene carefully |
+| Climbing | Support, UnyDesk, UnyPort | Get help or visibility infra |
 
-- Payment status
-- Order references
-- The PDF invoice
+## Usage 3 - Track an order and its payment
+After purchase, the customer finds:
+
+- Its payment status
+- Its command references
+- Its PDF invoice
 - Billing information
-- Selected retry or continuation actions when a payment remains pending
+- Certain take-back actions if payment remains pending or should be restarted
 
-`TRINITY` exposes different states depending on the situation: successful payment, pending payment, refused payment, cancellation or retry.
+`TRINITY` displays different statements depending on the situation: successful payment, pending payment, refused payment, cancellation or resumption.
 
-## Use 4 - consult a VM or a console
-When a service allows it, `TRINITY` can provide access to a virtual machine view or a console.
+## Usage 4 - consult a VM or console
+When a department authorizes it, `TRINITY` can give access to a virtual machine view or console.
 
 
 In this context, the user can:
 
-- Verify that a VM is reachable
-- Read its status
-- Open a console session
-- Work in a maintenance-oriented mode
+- Check that a VM is reachable
+- Read his condition
+- Log in to console
+- Working in maintenance mode
 
-## Use 5 - understand Data Disk Mode
-**Data Disk Mode** is useful when the goal is not to run a normal application service, but to intervene on the environment itself. In practice, this mode is used to:
+| Technical surface area | What we do there | When to use it |
+| --- | --- | --- |
+| VM view | Read status and identify machine | Quick check |
+| Console | Launch diagnostic commands | Support, maintenance, recovery |
+| DDM | Inspect storage and file system | Recovery and preservation |
 
-- Verify disk contents
-- Inspect a filesystem
-- Recover an environment
-- Perform maintenance or recovery operations
+## Usage 5 - understand the Data Disk Mode
+**Data Disk Mode** is useful when the objective is not to run a normal application service, but to intervene on the environment itself. In practice, this mode is used to:
 
-For the user, this means a VM may be accessible in a more technical mode focused on preservation, inspection or restoration of data.
+- Check the content of a disc
+- Inspect a file system
+- Recovering an environment
+- Performing recovery or maintenance operations
 
-## Use 6 - understand Alpine Linux and Xen
-Two public building blocks matter in `TRINITY`:
+For the user, this means that a VM can be accessed in a more technical mode, focusing on data retention, analysis or restoration.
 
-- **Alpine Linux**: a lightweight system chosen for compact, fast and controlled service environments
-- **Xen**: the hypervisor layer that carries the virtual machines
+## Use 6 - include Alpine Linux and Xen
+In `TRINITY`Two bricks must be publicly understood:
 
-Users do not need to administer Xen directly in order to use `TRINITY`. They do need to understand that their services rely on this virtualization model and on Alpine Linux environments.
+- **Alpine Linux**: Lightweight, fast and suitable for compact service environments
+- **Xen**: hypervisor carrying virtual machines
 
-## Use 7 - know when to move to UnyDesk or UnyPort
-`TRINITY` is not the only surface in the ecosystem.
+User does not need to administer Xen directly to use `TRINITY`On the other hand, he must understand that his services rely on this virtualization logic and Alpine Linux environments.
 
-- Use **`UnyDesk`** when the need is remote access or operator assistance.
-- Use **`UnyPort`** when the need is supervision, control or topology reading.
+## Usage 7 - know when to go to UnyDesk or UnyPort
+`TRINITY` is not the only surface of the ecosystem.
 
+- Use **`UnyDesk`** when the need is remote access or take-over.
+- Use **`UnyPort`** when the need is for topology supervision, control or reading.
+
+| Surface | Public role | Typical case |
+| --- | --- | --- |
+| `TRINITY` | Customer and technical portal | Order, payment, VM, invoice |
+| `UnyDesk` | Remote assistance | Interaction or hand-held |
+| `UnyPort` | Infra-Visibility and Supervision | Control, status, topology |

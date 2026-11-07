@@ -1,45 +1,50 @@
 ---
-description: "Öffentliche Dokumentation für UnyPort, die operator-orientierte Alpine-Linux- und Xen-Kontrollfläche im TRINITY-Ökosystem."
-social_image: "https://unyport.app/media/img/logos/logo-unyport-full.png"
+description: "UnyPort Public Documentation, Alpine Linux und Xen Aufsichtsoberflächenorientierter Betreiber im TRINITY-Ökosystem."
+social_image: "https://unyport.app/média/img/logos/logo-unyport-full.png"
 ---
 
 # UnyPort
-`UnyPort` ist die operator-orientierte Überwachungsfläche des `TRINITY`-Ökosystems. Sie ist als leichtgewichtige Go-Anwendung für Alpine-Linux-Umgebungen gebaut und verbindet Xen-Bewusstsein, Live-Systemzustand, kontrolliertes App-Proxying und tägliche Host-Supervision.
 
-Öffentlich bringt `UnyPort` zusammen:
+![Bannière UnyPort](../assets/images/unyport/unyport-git-banner.png){ .unyport-screen }
 
-- Authentifizierten Operator-Zugriff
-- Live-Sichtbarkeit auf Host und Dienste
-- Expliziten Xen-Kontext für Dom0- und DomU-Umgebungen
-- Kontrollierten Zugang zu internen Anwendungen wie `ttyd`
-- Operative Seiten für Sicherheit, Storage, Netzwerk und Systemzustand
+`UnyPort` ist die ökosystembetreiberorientierte Überwachungsfläche `TRINITY`Es ist als leichte Go-App für Alpine Linux-Umgebungen mit expliziter Xen-Wiedergabe, Live-Systemstatus, Anwendungs-Proxy-Kontrolle und täglicher Host-Überwachung konzipiert.
 
-`UnyPort` arbeitet mit zwei Begleitflächen:
+öffentlich, `UnyPort` führt zusammen:
 
-- `TRINITY` Für Kundenlebenszyklus, Bestellungen, Abrechnung und Service-Einstiege
-- `UnyDesk` Für Fernzugriff und Assistenz-Workflows
+- Authentifizierung des Betreiberzugangs
+- Live-Sichtbarkeit auf dem Host und den Diensten
+- Expliziter Xen-Kontext für Dom0- und DomU-Umgebungen
+- Zugriffskontrolle auf einige interne Anwendungen wie `ttyd`
+- Betriebsseiten für Sicherheit, Speicher, Netzwerk- und Systemstatus
 
-## Hier beginnen
-Die empfohlene Lesereihenfolge ist:
+`UnyPort` Funktioniert mit zwei komplementären Oberflächen:
 
-1. `Einfuehrung`
-2. `Architektur`
-3. `Handbuch`
-4. `Zugriff und Authentifizierung`
-5. `Metriken und Oberflaechen`
-6. `Bereitstellung`
-7. `Alpine Linux und Xen`
-8. `Sicherheit und Betrieb`
-9. `Beispiele`
+- `TRINITY` Für den Customer Lifecycle, Bestellungen, Abrechnung und Service-Einstiegspunkte
+- `UnyDesk` Für Remote-Zugriff und Support-Workflows
+
+## Beginnen Sie hier
+Für die praktische Lektüre ist die empfohlene Reihenfolge:
+
+1. `Introduction`
+2. `Architecture`
+3. `Mode d'emploi`
+4. `Accès et authentification`
+5. `Métriques et surfaces`
+6. `Déploiement`
+7. `Alpine Linux et Xen`
+8. `Sécurité et exploitation`
+9. `Exemples`
+
+ [Durchsuchen 103 Netzwerk-Icons, Speicher und Festplatten](icon-library.md)
 
 ```text
-Operator-Login
-  -> Dashboard
-  -> Erkennung der Host-Rolle
-  -> Metriken und Logs
-  -> Sicherheit und Versionen
-  -> App-Proxy bei Bedarf
-  -> Admin-Einstellungen wenn erlaubt
+Connexion opérateur
+  -> Tableau de bord
+  -> Detection du rôle de l'hôte
+  -> Métriques et logs
+  -> Sécurité et versions
+  -> Proxy applicatif si nécessaire
+  -> Réglages admin si autorisés
 ```
 
-Dieser Abschnitt beschreibt `UnyPort` daher als echte Betriebsoberfläche und nicht als generisches Dashboard-Theme oder blosses Quellcode-Repository.
+Dieser Abschnitt beschreibt daher `UnyPort` als reale Bedienoberfläche, nicht als generisches Dashboard-Theme oder als einfaches Quell-Repository.

@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="112_satellite">
+ <circle cx="64" cy="64" r="60" fill="#FB7A65"/>
+ <g><rect x="51" y="50" width="26" height="28" rx="4" fill="#fff" /><rect x="56" y="55" width="16" height="18" rx="2" fill="#FDCBC3" /><path d="M51 55L37 44M77 55L91 44M51 73L37 84M77 73L91 84" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" /><rect x="26" y="34" width="21" height="22" rx="2" fill="#fff" /><rect x="81" y="34" width="21" height="22" rx="2" fill="#fff" /><path d="M33 38V52M40 38V52M88 38V52M95 38V52" fill="none" stroke="#FB7A65" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></g>
+</svg>

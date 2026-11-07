@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="13_lightbulb">
+ <circle cx="64" cy="64" r="60" fill="#BAB14B"/>
+ <g><path d="M64 29C47 29 34 42 34 58C34 70 41 76 48 85L49 91H79L80 85C87 76 94 70 94 58C94 42 81 29 64 29Z" fill="#fff" stroke="none" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" /><path d="M51 64L61 73L77 56" fill="none" stroke="#BAB14B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" /><path d="M52 86H76" fill="none" stroke="#E4E1B9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /><rect x="50" y="94" width="28" height="8" rx="4" fill="#fff" /></g>
+</svg>

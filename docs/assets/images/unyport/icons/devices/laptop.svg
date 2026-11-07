@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="02_laptop">
+ <circle cx="64" cy="64" r="60" fill="#5877FB"/>
+ <g><rect x="35" y="30" width="58" height="48" rx="8" fill="#fff" /><rect x="42" y="37" width="44" height="34" rx="3" fill="#BECAFD" /><path d="M48 59L57 50L64 55L73 45L80 49" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" /><circle cx="64" cy="34" r="1.8" fill="#5877FB"/><path d="M28 87H100L89 101H39Z" fill="#fff" stroke="none" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" /><rect x="58" y="90" width="12" height="2" rx="1" fill="#5877FB" /></g>
+</svg>

@@ -1,42 +1,42 @@
 # Docker UnyPort
-Cette page regroupe les manifests Docker correspondant au projet `UnyPort` uniquement.
+This page brings together Docker events corresponding to the project `UnyPort` Only.
 
-Source retenue :
+Source selected:
 
 - `/var/docker/docker_unyport/docker-compose.yml`
 
-Aucun `Dockerfile` dedie n'a ete trouve pour `UnyPort`. Le runtime utilise l'image amont `golang:alpine`.
+None `Dockerfile` dedicated was found for `UnyPort`. Runtime uses upstream image `golang:alpine`.
 
-## Résumé public
-| Élément | Valeur publique |
+## Public summary
+| Element | Public value |
 | --- | --- |
 | Service | `unyport` |
 | Image | `golang:alpine` |
-| Conteneur | `unyport` |
-| Répertoire de travail | `/app/unyport/backend` |
-| Port exposé | `8800:8800` |
+| Container | `unyport` |
+| Work Directory | `/app/unyport/backend` |
+| Exposed port | `8800:8800` |
 | Assets frontend | `/app/unyport/frontend/public` |
-| Mode de redémarrage | `unless-stopped` |
+| Reboot mode | `unless-stopped` |
 
 ## Volumes
-| Type | Source | Destination | Rôle |
+| Type | Source | Destination | Role |
 | --- | --- | --- | --- |
-| Code applicatif | `./unyport` | `/app/unyport` | sources backend/frontend |
-| Cache Go modules | `go-cache` | `/root/go/pkg/mod` | accélération des dépendances |
-| Cache Go build | `go-build-cache` | `/root/.cache/go-build` | accélération des recompilations |
+| Application code | `./unyport` | `/app/unyport` | sources backend/frontend |
+| Go cache modules | `go-cache` | `/root/go/pkg/mod` | Accelerated dependencies |
+| Cache Go built | `go-build-cache` | `/root/.cache/go-build` | Acceleration of recompilations |
 
-## Variables publiques
-| Variable | Valeur | Usage |
+## Public variables
+| Variable | Value | Use |
 | --- | --- | --- |
-| `UNYPORT_ASSETS` | `/app/unyport/frontend/public` | sert les assets frontend depuis le disque en mode dev |
+| `UNYPORT_ASSETS` | `/app/unyport/frontend/public` | serves frontend assets from disk in dev mode |
 
-## Comportement
+## Behaviour
 | Phase | Action |
 | --- | --- |
-| Démarrage | `go mod tidy`, build backend, lancement du binaire |
-| Développement | assets frontend servis depuis le volume bindé |
-| Production | assets embarqués si `UNYPORT_ASSETS` est retirée |
-| Compression | binaire compressé avec `upx --lzma` |
+| Starting | `go mod tidy`, build backend, binary launch |
+| Development | frontend assets served from the bounded volume |
+| Production | Asset of vehicles if `UNYPORT_ASSETS` is withdrawn |
+| Compression | binary compressed with `upx --lzma` |
 
 ## `docker_unyport/docker-compose.yml`
 ```yaml

@@ -1,42 +1,51 @@
-# Support und Betrieb
-`TRINITY`-Support ist sowohl kommerziell als auch technisch. Öffentlich bedeutet das: Die Plattform soll dem Nutzer zeigen, wann Hilfe noetig ist und welche Informationen in eine Anfrage gehoeren.
+# Unterstützung und Betrieb
+Unterstützung `TRINITY` Dies bedeutet, dass die Plattform dem Benutzer helfen muss zu verstehen, wann er um Hilfe bitten muss und was er in seine Anwendung aufnehmen soll.
 
-## Support-Umfang
-`TRINITY`-Support kann sich ausdruecklich beziehen auf:
+## Perimeter-Unterstützung
+Unterstützung `TRINITY` kann ausdrücklich Folgendes betreffen:
 
 - Bestellungen und Rechnungsfragen
-- Zahlungsnachverfolgung
+- Zahlungsverfolgung
 - Zugang zu Rechnungen
-- Alpine-Linux-Umgebungen
-- Xen-basierte VM-Services
-- Data-Disk-Mode-Situationen
-- Nutzung von `UnyDesk`
-- Nutzung von `UnyPort`
+- Alpine Linux-Umgebungen
+- VM-Dienste basierend auf Xen
+- Situationen im Datenträgermodus
+- Die Verwendung von`UnyDesk`
+- Die Verwendung von`UnyPort`
 
-## Gute Support-Anfrage
-Eine gute Support-Anfrage ist konkret und kurz.
+| Thema | Self-Service möglich | Empfohlenes Medium |
+| --- | --- | --- |
+| PDF Rechnung | Ja | Wenn das Dokument fehlt oder inkonsistent ist |
+| Zahlung | Ja, um den Staat zu lesen | Wenn der Status blockiert bleibt oder widersprüchlich ist |
+| Befehl | Ja, um dem Referenz- und Status zu folgen | Wenn die Lieferung nicht mehr voranschreitet |
+| VM | Ja, um einen einfachen Zustand zu lesen | Wenn das Verhalten mehrdeutig oder riskant wird |
+| Datenträgermodus | Mögliches sorgfältiges Lesen | Ja, solange eine Wiederherstellungsmaßnahme sensibel ist |
+| UnyDesk / UnyPort | Ja, um die Oberfläche zu benutzen | Wenn der Zugriff oder die Interpretation ein Problem darstellt |
+
+## Gutes Format der Anwendungsunterstützung
+Eine gute Unterstützungsnachfrage ist konkret und kurz.
 
 ```markdown
-Betreff: VM sichtbar, Service jedoch nicht verfuegbar
+Objet : VM visible mais service indisponible
 
-Bestellreferenz: TRI-2026-00421
-Service: Alpine VM
-Aktueller Modus: Data Disk Mode
-Beobachtetes Problem: Dateisystem sichtbar, Anwendung nicht gestartet
-Erwartetes Ergebnis: bestaetigen, ob Recovery oder Normalstart noetig ist
+Référence commande : TRI-2026-00421
+Service : VM Alpine
+Mode actuel : Data Disk Mode
+Probleme observe : système de fichiers visible, application non démarrée
+Résultat attendu : confirmer s'il faut reprendre ou revenir en mode normal
 ```
 
-## Vor einer Eskalation
-Sammeln Sie zuerst die Minimaldaten:
+## Vor dem Klettern
+Sammeln Sie das Minimum zuerst:
 
-- Bestellreferenz
-- Rechnungs- oder Zahlungsstatus falls relevant
-- VM-Name falls vorhanden
-- Aktueller Modus: normal, Wartung oder DDM
-- Genaue Konsolenbeobachtung
+- Auftragsnummer
+- Rechnung oder Zahlung, falls sinnvoll
+- Name der VM, falls vorhanden
+- Stromverbrauch: Normalbetrieb, Wartung oder DDM
+- Präzise Konsolenbeobachtung
 
 ```bash
-# Beispiel fuer ein kleines Belegpaket
+# Exemple de lot d'informations à relever
 hostname
 uptime
 ip addr
@@ -44,26 +53,42 @@ lsblk
 df -h
 ```
 
-## Support versus Self-Service
-`TRINITY` soll genug Information bereitstellen, damit der Nutzer sicher handeln kann, ohne aus jeder Lage automatisch ein Support-Ticket zu machen.
+| Zu meldende Informationen | Warum sie hilft | Beispiel |
+| --- | --- | --- |
+| Auftragsnummer | Identifizierende Ordner | `TRI-2026-00421` |
+| Zahlungsstatus | Finanzielle und technische Unterscheidung | `confirmé` |
+| Name der VM | Richtige Umgebung zeigen | `VM-EXEMPLE01` |
+| Stromverbrauch | Kontext ermitteln | `normal`, `maintenance`, `DDM` |
+| Konsolenbeobachtung | Geben Sie ein konkretes Symptom | nicht montiertes Volumen, Service abwesend |
 
-Self-Service passt für:
+## Support oder Self-Service
+`TRINITY` versucht, genügend Informationen zu enthüllen, um umsichtiges Handeln zu ermöglichen, ohne jede Situation in ein Support-Ticket zu verwandeln.
 
-- Rechnung lesen
-- Zahlungsstatus prüfen
-- Konsole öffnen
-- Bestaetigen, ob eine VM online ist
+Self-Service eignet sich für:
 
-Support passt für:
+- Lesen Sie eine Rechnung
+- Überprüfen Sie eine Zahlungserklärung
+- Öffnen Sie eine Konsole
+- Bestätigen Sie, ob VM online ist
 
-- Blockierte Service-Auslieferung
-- Zahlungsinkonsistenz
-- Unklaren VM-Zustand
-- Recovery-Aktionen mit Datenrisiko
+Die Unterstützung ist geeignet für:
 
-## Die richtigen Oberflächen
-Nutzen Sie die passende Oberfläche für den passenden Bedarf:
+- Blockierte Auftragslieferung
+- Unstimmigkeit der Zahlung
+- VM-Anweisung unklar
+- Risikodeckungsmaßnahmen für Daten
 
-- `TRINITY` Für Konto, Bestellungen, Rechnungen und Service-Einstieg
-- `UnyDesk` Für Remote-Hilfe und Interaktion
-- `UnyPort` Für Infrastrukturstatus und operative Übersicht
+| Lage | Selbstbedienung | Supportticket |
+| --- | --- | --- |
+| Lesen Sie eine Rechnung | Ja | Nein, es sei denn, das Dokument fehlt |
+| Überprüfen Sie eine Online-VM | Ja | Nein, wenn der Staat klar ist |
+| Diagnose eines empfindlichen Volumens | Begrenzung | Ja |
+| Wiederherstellung des Dienstes nach einem Vorfall | Begrenzung | Ja |
+| Einen gegnerischen Status verstehen | Nein | Ja |
+
+## Zu verwendende Oberflächen
+Verwenden Sie die richtige Oberfläche nach Bedarf:
+
+- `TRINITY` Für das Konto, Bestellungen, Rechnungen und Service Point of Entry
+- `UnyDesk` Für Remote-Support und Interaktion
+- `UnyPort` Für Infra-Staat und Aufsicht

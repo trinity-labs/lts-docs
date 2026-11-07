@@ -1,57 +1,79 @@
-# VMs and console
-Some `TRINITY` services expose a VM-related surface. This does not mean every customer becomes a hypervisor administrator. It means the platform can present a machine state, a console, or a maintenance context when the service allows it.
+# VM and console
+Some services `TRINITY` This does not mean that each client becomes a hypervisor administrator. This means that the platform can display a machine state, console or maintenance context when the service allows.
 
 ## What the user can expect
-A VM-oriented page may expose:
+A VM-oriented page can display:
 
-- The machine name
-- Whether it is online
-- Basic resource visibility
+- The name of the machine
+- An on-line indicator or not
+- A visibility is based on resources
 - A console entry point
-- Links toward support or monitoring
+- Links to support or supervision
+
+| Visible information | Immediate utility | Readable |
+| --- | --- | --- |
+| Name of VM | Identify the right machine | Stable name or technical reference |
+| State | Know if VM is responding | `online`, `maintenance`, `récupération`, `unavailable` |
+| IP address | Recognize the network target | Private or technical IP depending on the service |
+| Console | Open a direct diagnosis | Access restricted to authorized cases |
+| Resources | Briefly locate VM | CPU, RAM, disk or near indicators |
+| Support Links | Climbing clean | Ticket, Cat or Help Channel |
 
 
-## Typical console goals
-Console access is useful to:
+## Typical console objectives
+Console access is used to:
 
-- Verify boot state
-- Inspect a mounted filesystem
+- Check boot status
+- Inspect an mounted file system
 - Read a hostname or IP
-- Confirm whether recovery work is possible
+- Confirm if a resumption is possible
 
 ```bash
 hostname
-uname -a
+uname -à
 ip addr
 lsblk
 df -h
 ```
 
-## Reading a VM state
-A customer-facing VM page should be interpreted in a simple way:
+## How to read a VM state
+A public VM page should simply read:
 
-- `online` Means the VM responds in its current mode
-- `maintenance` Means the machine is available for a technical intervention
-- `recovery` Means the focus is data and filesystem access
-- `unavailable` Means the service needs time or assistance
+- `online` Means that VM is responding in its current mode
+- `maintenance` Means that a technical intervention is in progress or possible
+- `récupération` Means that priority is access to data
+- `unavailable` Means that you have to wait or ask for support
 
 ```text
-online       -> normal or expected technical access
-maintenance  -> intervention context
-recovery     -> preservation and diagnostics context
-unavailable  -> wait or contact support
+online       -> accès normal ou technique attendu
+maintenance  -> contexte d'intervention
+récupération     -> contexte de préservation et de diagnostic
+unavailable  -> attente ou support
 ```
 
-## Operational caution
-A console is powerful but narrow. It is not the same thing as full service documentation. Before changing anything, the user should know:
+| VM statement | What it means | Good reflex |
+| --- | --- | --- |
+| `online` | VM is available in its current mode | Check service or connectivity |
+| `maintenance` | An intervention or preparation is underway | Avoid unrequested changes |
+| `récupération` | Priority is recovery or preservation | Focus on reading and storage |
+| `unavailable` | The VM or surface is not usable | Waiting or opening a ticket with context |
 
-- Whether the VM is in normal mode or DDM
-- Whether the goal is diagnosis or modification
-- Whether support requested a precise action
+## Operational prudence
+A console is powerful but narrow in its use. Before changing anything, you must know:
+
+- If VM is in normal or DDM mode
+- If the objective is diagnosis or modification
+- If the support requests a specific action
 
 ```bash
-# Safe first checks
+# Vérifications prudentes en premier
 mount
 findmnt
 cat /etc/os-release
 ```
+
+| Verification | Why throw it | Risk if ignored |
+| --- | --- | --- |
+| `mount` | See active mountings | Acting on the wrong volume |
+| `findmnt` | Read the tree of the mounting points | System and data consolidation |
+| `cat /etc/os-release` | Identify the system invites | Applying the wrong procedure |

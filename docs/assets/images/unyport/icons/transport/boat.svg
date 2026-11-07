@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="104_boat">
+ <circle cx="64" cy="64" r="60" fill="#FDAC5F"/>
+ <g><path d="M25 74H103L89 94H41Z" fill="#fff" stroke="none" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" /><path d="M39 77H89L83 87H45Z" fill="#FEDFC1" stroke="none" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" /><rect x="44" y="52" width="42" height="22" rx="4" fill="#fff" /><rect x="53" y="38" width="25" height="14" rx="3" fill="#fff" /><rect x="57" y="43" width="16" height="6" rx="1" fill="#FEDFC1" /><path d="M30 99Q42 93 54 99T78 99T101 99" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /></g>
+</svg>

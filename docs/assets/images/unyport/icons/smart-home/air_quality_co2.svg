@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="52_air_quality_co2">
+ <circle cx="64" cy="64" r="60" fill="#91D666"/>
+ <g><rect x="31" y="37" width="66" height="56" rx="9" fill="#fff" /><rect x="38" y="44" width="52" height="41" rx="5" fill="#D4EFC3" /><path d="M43 67Q51 51 59 67T75 67T86 63" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" /><circle cx="47" cy="78" r="2.5" fill="#91D666"/><circle cx="57" cy="78" r="2.5" fill="#91D666"/><circle cx="67" cy="78" r="2.5" fill="#91D666"/></g>
+</svg>

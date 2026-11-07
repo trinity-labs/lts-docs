@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="111_drone_controller">
+ <circle cx="64" cy="64" r="60" fill="#7DA1E7"/>
+ <g><path d="M34 54Q36 45 48 45H80Q92 45 94 54L101 84Q103 94 93 95L77 81H51L35 95Q25 94 27 84Z" fill="#fff" stroke="none" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" /><path d="M41 54H87L93 83L80 73H48L35 83Z" fill="#CCDAF6" stroke="none" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" /><circle cx="49" cy="64" r="8" fill="#fff"/><circle cx="79" cy="64" r="8" fill="#fff"/><path d="M43 64H55M49 58V70" fill="none" stroke="#7DA1E7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" /><circle cx="79" cy="64" r="3" fill="#7DA1E7"/></g>
+</svg>

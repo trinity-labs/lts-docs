@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="63_solar_panel">
+ <circle cx="64" cy="64" r="60" fill="#67A1E3"/>
+ <g><path d="M35 36H93L101 83H27Z" fill="#fff" stroke="none" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" /><path d="M41 42H87L94 77H34Z" fill="#C4DAF4" stroke="none" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" /><path d="M52 42L48 77M76 42L80 77M38 59H90" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /><path d="M56 84L52 98M72 84L76 98M44 98H84" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" /></g>
+</svg>

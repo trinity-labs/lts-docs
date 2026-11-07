@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="95_oled_display">
+ <circle cx="64" cy="64" r="60" fill="#FDBB47"/>
+ <g><rect x="29" y="38" width="70" height="55" rx="7" fill="#fff" /><rect x="36" y="45" width="56" height="41" rx="4" fill="#FEE4B7" /><path d="M43 70L51 62L60 66L69 53L84 60" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /><rect x="46" y="90" width="36" height="6" rx="1" fill="#fff" /></g>
+</svg>

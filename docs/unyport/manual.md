@@ -1,4 +1,19 @@
 # Mode d'emploi
+
+## Repères visuels
+
+![Écran de connexion UnyPort](../assets/images/unyport/screens/login.png){ .unyport-screen }
+
+Après authentification, le tableau de bord regroupe l'état de l'hôte et les accès aux surfaces spécialisées.
+
+![Tableau de bord UnyPort](../assets/images/unyport/screens/dashboard.png){ .unyport-screen }
+
+La carte réseau emploie les pictogrammes du set réseau pour distinguer les familles d'équipements découvertes.
+
+![Carte réseau UnyPort](../assets/images/unyport/screens/map.png){ .unyport-screen }
+
+➡️ [Consulter les légendes des sets réseau et stockage](icon-library.md)
+
 Cette page est le point d'entrée pratique pour les opérateurs qui utilisent `UnyPort` au quotidien. Elle se concentre sur le workflow visible, du premier login jusqu'aux actions supervisées.
 
 ## Parcours opérateur normal

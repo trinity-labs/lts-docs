@@ -1,55 +1,73 @@
 # Alpine Linux und Xen
-`TRINITY` verwendet zwei technische Grundlagen, die auch öffentlich verstanden werden sollten, selbst wenn Nutzer sie nicht direkt verwalten: **Alpine Linux** und **Xen**.
+`TRINITY` basiert auf zwei technischen Grundlagen, die auch ohne direkte Administration öffentlich anerkannt werden müssen: **Alpine Linux** und **Xen**.
 
-## Alpine Linux
-Alpine Linux ist die Systembasis für kompakte und kontrollierte Umgebungen. Öffentlich ist das relevant, weil Kunden oft Folgendes sehen:
+## Alpines Linux
+Alpine Linux ist die Systembasis für kompakte Umgebungen und Steuerungen. Öffentlich ist das wichtig, weil der Client oft auf Folgendes trifft:
 
-- Eine schlanke Konsole
-- Eine kleine Systembasis
-- Eine einfache und direkte Struktur
+- Lichtkonsole
+- Ein reduzierter System Footprint
+- Eine einfache und direkte Organisation
 
 ```bash
 cat /etc/os-release
-uname -a
+uname -à
 apk info | head
 ```
 
-Praktische Lesart für Kunden:
+Praktische kundenseitige Lektüre:
 
-- Das System ist absichtlich klein
-- Wartung und Recovery bleiben lesbar
-- Die Plattform bevorzugt vorhersehbare technische Oberflächen
+- Das System ist bewusst nüchtern
+- Instandhaltung und Verwertung bleiben lesbar
+- Die Plattform bevorzugt berechenbare technische Oberflächen
+
+| Alpine Linux-Aspekte | Was der Kunde sieht | Praktisches Interesse |
+| --- | --- | --- |
+| Lichtsystem | Sob und schnelle Konsole | Diagnose direkter |
+| Einfache Werkzeuge | Lesbare Grundkontrollen | Klareres Bild |
+| Kompakte Organisation | Kleine visuelle Abstraktion | Lesen Sie mehr über Predicultable |
 
 ## Xen
-Xen ist die Virtualisierungsschicht unter den VM-bezogenen Services. Kunden steuern Xen ueblicherweise nicht direkt aus `TRINITY`, aber Xen erklaert, warum die Plattform Folgendes zeigen kann:
+Xen ist die Virtualisierungsschicht, die VM-orientierten Diensten zugrunde liegt. `TRINITY`Xen erklärt jedoch, warum die Plattform aufdecken kann:
 
-- Isolierte virtuelle Maschinen
+- Virtuelle Remote-Maschinen
 - Lesbare VM-Zustände
-- Wartungs- und Recovery-Modi
+- Wartungs- und Wiederherstellungsmodi
 
 ```text
-Kundenoberflaeche -> TRINITY
-Gastbetriebssystem -> Alpine Linux
-Virtualisierung -> Xen
+Surface client -> TRINITY
+Système invite -> Alpine Linux
+Virtualisation -> Xen
 ```
 
-## Warum beides zusammen wichtig ist
+| Schicht | Rolle | Sichtbar aus TRINITY |
+| --- | --- | --- |
+| `TRINITY` | Kundenoberfläche und Lebenszyklus | Ja |
+| Alpines Linux | System lädt einige VM ein | Ja, über Konsole und Systemzustand |
+| Xen | Hypervisor und Isolierung | Indirekt über VM-Modi |
+
+## Warum beide zusammen zählen
 Alpine Linux und Xen bilden ein einfaches Modell:
 
-- Alpine Linux liefert die Gastumgebung
-- Xen liefert Ausfuehrung und Isolation
-- `TRINITY` Liefert Kundenoberfläche, Lebenszyklus und Support
+- Alpine Linux bietet die VM-Systemumgebung
+- Xen bietet Ausführung und Isolierung
+- `TRINITY` Bietet Kundenoberfläche, Lebenszyklus und Support
 
 ```yaml
-plattform_modell:
-  kundenoberflaeche: "TRINITY"
-  gastsystem: "Alpine Linux"
-  hypervisor: "Xen"
-  betriebsmodi:
+modèle_plateforme:
+  surface_client: "TRINITY"
+  systeme_invite: "Alpine Linux"
+  hyperviseur: "Xen"
+  modes_operationnels:
     - normal
-    - wartung
+    - maintenance
     - data_disk_mode
 ```
 
-## Was Nutzer mitnehmen sollten
-Der Kernpunkt ist einfach: Niemand muss Xen-Spezialist sein. Es reicht, das Modell gut genug zu verstehen, um VM-Zustände zu lesen, eine Konsole vorsichtig zu nutzen und präzise mit dem Support zu sprechen.
+| Element | Hauptfunktion | Was zu erinnern |
+| --- | --- | --- |
+| Alpines Linux | Das Rotieren des Systems lädt ein | Lesen Sie eine einfache und effiziente Konsole |
+| Xen | Tragen und isolieren VM | Verstehen von technischen Zuständen und Modi |
+| TRINKE | Orchestrieren des Kundenzugangs | Verknüpfung von Befehl, Service und Support |
+
+## Was zu erinnern
+Das Wesentliche ist einfach: Der Kunde muss kein Xen-Spezialist sein, vor allem muss er das Modell gut genug verstehen, um einen VM-Zustand zu lesen, eine Konsole mit Vorsicht zu benutzen und präzise mit dem Support zu sprechen.

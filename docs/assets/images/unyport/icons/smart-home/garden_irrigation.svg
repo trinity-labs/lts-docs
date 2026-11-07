@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="71_garden_irrigation">
+ <circle cx="64" cy="64" r="60" fill="#47BCF6"/>
+ <g><path d="M64 91V62M64 79Q44 79 42 63Q58 61 64 79M64 71Q85 72 88 54Q72 52 64 71" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" /><path d="M33 97H95" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" /><path d="M39 42L43 34M61 39V29M83 42L87 34" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" /><circle cx="43" cy="48" r="3" fill="#fff"/><circle cx="64" cy="46" r="3" fill="#fff"/><circle cx="85" cy="48" r="3" fill="#fff"/></g>
+</svg>
