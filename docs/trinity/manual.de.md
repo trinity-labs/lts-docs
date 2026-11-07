@@ -26,10 +26,10 @@ Website besuchen
 ## Vor der Bestellung
 Bereiten Sie einige einfache Informationen vor:
 
-- ✅ Den genau benoetigten Service
-- ✅ Die Rechnungsidentitaet
-- ✅ Das erwartete Support-Niveau
-- ✅ Den Bedarf an Konsole, VM, `UnyDesk` oder `UnyPort`
+- Den genau benoetigten Service
+- Die Rechnungsidentitaet
+- Das erwartete Support-Niveau
+- Den Bedarf an Konsole, VM, `UnyDesk` oder `UnyPort`
 
 ```yaml
 kunden_vorbereitung:
@@ -43,23 +43,23 @@ kunden_vorbereitung:
 ## Was TRINITY zeigen kann
 Je nach Service kann `TRINITY` zeigen:
 
-- ✅ Bestellhistorie
-- ✅ PDF-Rechnungen
-- ✅ Zahlungsstatus
-- ✅ VM-Status
-- ✅ Konsolenzugang
-- ✅ Sichtbarkeit des Data Disk Mode
-- ✅ Support- und Chat-Einstiege
-- ✅ Links zu `UnyDesk` und `UnyPort`
+- Bestellhistorie
+- PDF-Rechnungen
+- Zahlungsstatus
+- VM-Status
+- Konsolenzugang
+- Sichtbarkeit des Data Disk Mode
+- Support- und Chat-Einstiege
+- Links zu `UnyDesk` und `UnyPort`
 
 ## Wenn der Ablauf technischer wird
 Einige Services gehen über einen einfachen Kauf hinaus. Der Weg wird technischer, wenn:
 
-- ✅ Eine VM geprüft werden muss
-- ✅ Eine Konsole geöffnet werden muss
-- ✅ Eine Umgebung wiederhergestellt werden muss
-- ✅ Ein Datenvolumen inspiziert werden muss
-- ✅ Ein Servicestatus vor einer Support-Eskalation bestaetigt werden muss
+- Eine VM geprüft werden muss
+- Eine Konsole geöffnet werden muss
+- Eine Umgebung wiederhergestellt werden muss
+- Ein Datenvolumen inspiziert werden muss
+- Ein Servicestatus vor einer Support-Eskalation bestaetigt werden muss
 
 ```bash
 # Beispiel einer konsolenorientierten Sitzung

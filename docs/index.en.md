@@ -4,11 +4,11 @@ social_image: "https://trinity-net.com/img/products/trinity/hero-trinity.png"
 ---
 
 # TRINITY
-✅ Select the product that matches the need before following a procedure.
+- Select the product that matches the need before following a procedure.
 
-⭕ Never publish a token, secret or session value in a report.
+- ⭕ Never publish a token, secret or session value in a report.
 
-➡️ Check the essential public surfaces:
+- ➡️ Check the essential public surfaces:
 
 ```bash
 curl -fsSI https://trinity-net.com/
@@ -29,15 +29,15 @@ curl -fsS https://ip.trinity-net.com/api | jq .
 
 It is the main public surface for:
 
-- ✅ Identity and account access
-- ✅ Order and provisioning flows
-- ✅ VM lifecycle orchestration
-- ✅ Console access
-- ✅ Curated download publication
+- Identity and account access
+- Order and provisioning flows
+- VM lifecycle orchestration
+- Console access
+- Curated download publication
 
 In the public documentation set, `TRINITY` is documented alongside the two companion architectures that complete the platform:
 
-- ✅ `UnyDesk` For remote access
-- ✅ `UnyPort` For service control
+- `UnyDesk` For remote access
+- `UnyPort` For service control
 
 This documentation starts from `TRINITY` because it is the functional center of the platform, not because the other architectures are secondary.

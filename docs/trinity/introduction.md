@@ -3,13 +3,13 @@
 
 
 ## Ce que TRINITY couvre publiquement
-- ✅ Découverte des offres et des prestations
-- ✅ Création de compte et connexion
-- ✅ Commande et paiement
-- ✅ Factures PDF et suivi de statut
-- ✅ Support `TRINITY`, `UnyDesk` et `UnyPort`
-- ✅ Accès à certaines surfaces VM et console
-- ✅ Documentation publique
+- Découverte des offres et des prestations
+- Création de compte et connexion
+- Commande et paiement
+- Factures PDF et suivi de statut
+- Support `TRINITY`, `UnyDesk` et `UnyPort`
+- Accès à certaines surfaces VM et console
+- Documentation publique
 
 ## Pourquoi cette documentation existe
 Cette documentation publique explique le rôle de `TRINITY`, la place du site dans l'écosystème, les principaux parcours utilisateur et les notions à comprendre pour utiliser correctement la plateforme : Alpine Linux, Xen, VM, support, paiement, console et Data Disk Mode.

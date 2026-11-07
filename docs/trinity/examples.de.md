@@ -11,10 +11,10 @@ df -h
 
 Erwartete Lesart:
 
-- ✅ Die Maschine antwortet
-- ✅ Die Laufzeit wirkt plausibel
-- ✅ Das Netzwerk ist sichtbar
-- ✅ Das Hauptdateisystem ist eingehangen
+- Die Maschine antwortet
+- Die Laufzeit wirkt plausibel
+- Das Netzwerk ist sichtbar
+- Das Hauptdateisystem ist eingehangen
 
 ## Beispiel 2 - einen DDM-Kontext erkennen
 ```bash
@@ -25,9 +25,9 @@ cat /etc/os-release
 
 Erwartete Lesart:
 
-- ✅ Sichtbare Datentraeger
-- ✅ Lesbare aktive Mounts
-- ✅ Ein schlankes Alpine-Userland
+- Sichtbare Datentraeger
+- Lesbare aktive Mounts
+- Ein schlankes Alpine-Userland
 
 ## Beispiel 3 - eine Zahlungs-Support-Nachricht vorbereiten
 ```markdown

@@ -17,13 +17,13 @@ Ouvrir le cloud
 ```
 
 ## Gute Praktiken
-- ✅ Überprüfen Sie den Zielordner vor einem Repository
+- Überprüfen Sie den Zielordner vor einem Repository
 - ⭕ Vermeiden Sie mehrdeutige Dateinamen
 - ⭕ Verwenden Sie Cloud Space nicht als Geheimbox ohne explizite Anweisungen
-- ✅ Verhindern Sie die Unterstützung, wenn der Login funktioniert, aber der erwartete Speicherplatz leer ist
+- Verhindern Sie die Unterstützung, wenn der Login funktioniert, aber der erwartete Speicherplatz leer ist
 
 ## Häufige Symptome
-- ✅ White Page: Frontend, Proxy oder Runtime Incident
-- ✅ Branding abwesend: Problem auf `/static/custom.css` oder Vermögenswerte
+- White Page: Frontend, Proxy oder Runtime Incident
+- Branding abwesend: Problem auf `/static/custom.css` oder Vermögenswerte
 - ⭕ Identifikatoren, die vom Browser nicht angeboten werden: Anmeldeverhalten zur Kontrolle auf Proxy-Seite
-- ✅ Abwesende Dateien: Überprüfen Sie den Kontoumfang, bevor Sie den Datenverlust abschließen
+- Abwesende Dateien: Überprüfen Sie den Kontoumfang, bevor Sie den Datenverlust abschließen

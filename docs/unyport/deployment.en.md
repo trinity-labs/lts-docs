@@ -16,18 +16,18 @@ The supplied component starts a container `golang:alpine` and compiles the proje
 
 Developmental characteristics:
 
-- ✅ Frontend Asset are served from the disk via `UNYPORT_ASSETS`
-- ✅ Go module and build caches are mounted in volumes named
-- ✅ The default port is `8800:8800`
-- ✅ The container solves `host.docker.internal` via `host-gateway`
+- Frontend Asset are served from the disk via `UNYPORT_ASSETS`
+- Go module and build caches are mounted in volumes named
+- The default port is `8800:8800`
+- The container solves `host.docker.internal` via `host-gateway`
 
 ## Production mode
 The same logic also prepares a binary production:
 
-- ✅ The frontend assets are copies in `server/assets`
-- ✅ The binary is compiled with `-tags prod`
-- ✅ Symbols are deleted
-- ✅ `upx --lzma` Is applied in the container
+- The frontend assets are copies in `server/assets`
+- The binary is compiled with `-tags prod`
+- Symbols are deleted
+- `upx --lzma` Is applied in the container
 
 The README presented this as the compact package path, while the development keeps live assets on disk.
 
@@ -42,7 +42,7 @@ The application shall, operationally, also write:
 
 - ➡️ `logs/unyport.log`
 - ➡️ `logs/startup-history.jsonl`
-- ✅ `settings/branding.yaml` When a branding personnalise is saved
+- `settings/branding.yaml` When a branding personnalise is saved
 
 ## HTTPS and HTTP/3
 By default, the application listens in simple HTTP on `:8800`.
@@ -61,10 +61,10 @@ When HTTP/3 is enabled correctly, `UnyPort` can serve the TLS on the configured 
 ## Reverse proxy and first login
 For deployment exposed to the Internet, the usual pattern is:
 
-- ✅ Binder `UnyPort` local or at a controlled host address
-- ✅ Place Nginx or another reverse proxy in front
-- ✅ Enable secure-cookie behavior with `security_extra.https: true`
-- ✅ Replace OAuth placeholders before public opening
-- ✅ Change the given or demo IDs immediately
+- Binder `UnyPort` local or at a controlled host address
+- Place Nginx or another reverse proxy in front
+- Enable secure-cookie behavior with `security_extra.https: true`
+- Replace OAuth placeholders before public opening
+- Change the given or demo IDs immediately
 
 This keeps the minimal deployment without pretending that a demo configuration is ready for production.

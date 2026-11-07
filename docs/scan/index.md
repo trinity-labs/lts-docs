@@ -1,9 +1,9 @@
 # Scan / Audit
 ![Rapport TRINITY Scan](../assets/images/projects/scan/scan-report.png){ .unyport-screen }
 
-✅ Scanner uniquement une cible que vous êtes autorisé à évaluer.
-⭕ Un score synthétique ne remplace pas la lecture des preuves du rapport.
-➡️ Contrôler le point d’entrée avant de lancer une analyse :
+- Scanner uniquement une cible que vous êtes autorisé à évaluer.
+- ⭕ Un score synthétique ne remplace pas la lecture des preuves du rapport.
+- ➡️ Contrôler le point d’entrée avant de lancer une analyse :
 ```bash
 curl -fsSI https://scan.trinity-net.com/
 ```
@@ -12,10 +12,10 @@ curl -fsSI https://scan.trinity-net.com/
 Le service combine collecte passive, probes actives, normalisation et corrélation pour donner une vue claire d'un domaine, d'une application ou d'une exposition réseau.
 
 ## Objectif
-- ✅ identifier les points exposés publiquement
-- ✅ regrouper les preuves observables dans un rapport
-- ✅ aider à prioriser les corrections
-- ✅ fournir une synthèse compréhensible par une équipe technique et par un décideur
+- identifier les points exposés publiquement
+- regrouper les preuves observables dans un rapport
+- aider à prioriser les corrections
+- fournir une synthèse compréhensible par une équipe technique et par un décideur
 
 ## Parcours
 ```text

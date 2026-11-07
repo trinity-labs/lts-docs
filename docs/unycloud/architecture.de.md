@@ -24,10 +24,10 @@ Diese Schicht zählt auch für das Anmeldeverhalten, insbesondere wenn das SPA F
 ## Layer 3 - Filebrowser-kompatible Laufzeit
 Die UnyCloud-Laufzeit behält den Filebrowser-Vertrag bei: gleiche Befehle, gleiche Basis, gleiche Konfigurationsdateien und den gleichen binären Namen wie möglich für bestehende Dienste.
 
-- ✅ Eine persistente Basis
-- ✅ Eine Konfigurationsdatei
-- ✅ Ein Branding Tree
-- ✅ Befestigtes Root Storage
+- Eine persistente Basis
+- Eine Konfigurationsdatei
+- Ein Branding Tree
+- Befestigtes Root Storage
 
 ## Schicht 4 - Speicher
 Der Speicher wird dem Container als Navigationswurzel präsentiert. Ziel ist es, die Dateien zur Verfügung zu stellen, ohne die Weboberfläche mit einem schweren Anwendungs-Backend zu verknüpfen.

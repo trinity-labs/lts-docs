@@ -13,10 +13,10 @@ navigateur
 ```
 
 ## Principes
-- ✅ pas de compte utilisateur
-- ✅ pas de session applicative
-- ✅ réponse JSON disponible pour automatisation
-- ✅ séparation explicite entre adresse observée et headers déclaratifs
+- pas de compte utilisateur
+- pas de session applicative
+- réponse JSON disponible pour automatisation
+- séparation explicite entre adresse observée et headers déclaratifs
 
 Les headers transmis par le client ou par des proxys peuvent être affichés comme contexte, mais l'adresse de référence reste celle observée par l'infrastructure.
 

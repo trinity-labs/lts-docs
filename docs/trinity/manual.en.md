@@ -26,10 +26,10 @@ Visit site
 ## Before you place an order
 Prepare a few pieces of information:
 
-- ✅ The exact service you want
-- ✅ The business or identity information used for billing
-- ✅ The support level you expect
-- ✅ Whether you need VM access, console access, `UnyDesk` or `UnyPort`
+- The exact service you want
+- The business or identity information used for billing
+- The support level you expect
+- Whether you need VM access, console access, `UnyDesk` or `UnyPort`
 
 ```yaml
 customer_preflight:
@@ -43,23 +43,23 @@ customer_preflight:
 ## What TRINITY can expose
 Depending on the service, `TRINITY` can expose:
 
-- ✅ Order history
-- ✅ Invoice PDFs
-- ✅ Payment status
-- ✅ VM status
-- ✅ Console access
-- ✅ Data Disk Mode visibility
-- ✅ Support and chat entry points
-- ✅ Links toward `UnyDesk` and `UnyPort`
+- Order history
+- Invoice PDFs
+- Payment status
+- VM status
+- Console access
+- Data Disk Mode visibility
+- Support and chat entry points
+- Links toward `UnyDesk` and `UnyPort`
 
 ## When the path becomes more technical
 Some services go beyond a simple purchase flow. You may enter a more operational path when:
 
-- ✅ A VM must be checked
-- ✅ A console must be opened
-- ✅ A system must be recovered
-- ✅ A data volume must be inspected
-- ✅ A service state must be confirmed before support escalates the case
+- A VM must be checked
+- A console must be opened
+- A system must be recovered
+- A data volume must be inspected
+- A service state must be confirmed before support escalates the case
 
 ```bash
 # Example of a console-oriented session once access is granted
@@ -72,9 +72,9 @@ df -h
 ## Reading the rest of this section
 Use the next pages as a structured manual:
 
-- ✅ `Account and orders` For the customer workflow
-- ✅ `Payments and invoices` For billing flows
-- ✅ `VMs and console` For access and status reading
-- ✅ `Data Disk Mode` For maintenance and recovery context
-- ✅ `Alpine Linux and Xen` For the platform model
-- ✅ `Support and operations` For escalation and support boundaries
+- `Account and orders` For the customer workflow
+- `Payments and invoices` For billing flows
+- `VMs and console` For access and status reading
+- `Data Disk Mode` For maintenance and recovery context
+- `Alpine Linux and Xen` For the platform model
+- `Support and operations` For escalation and support boundaries

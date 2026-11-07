@@ -6,9 +6,9 @@ social_image: "https://unydesk.app/assets/logo-unydesk.jpg"
 # UnyDesk
 ![UnyDesk identity](../assets/images/projects/unydesk/logo-unydesk.jpg){ .unyport-screen }
 
-✅ Confirm that the host is online before requesting a remote session.
-⭕ Pairing codes and provisioning tokens must remain confidential.
-➡️ Keep each role explicit while diagnosing a session:
+- Confirm that the host is online before requesting a remote session.
+- ⭕ Pairing codes and provisioning tokens must remain confidential.
+- ➡️ Keep each role explicit while diagnosing a session:
 ```text
 viewer -> UnyDesk broker -> host -> direct or relay transport
 ```
@@ -16,11 +16,11 @@ viewer -> UnyDesk broker -> host -> direct or relay transport
 
 Unlike `TRINITY`, which is the customer and service portal, `UnyDesk` is centered on:
 
-- ✅ Host reachability
-- ✅ Viewer-to-host session routing
-- ✅ Live remote control
-- ✅ Remote assistance flows
-- ✅ Transport fallback behavior
+- Host reachability
+- Viewer-to-host session routing
+- Live remote control
+- Remote assistance flows
+- Transport fallback behavior
 
 ## Start here
 For a practical reading path, the recommended order is:

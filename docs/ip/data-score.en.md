@@ -4,12 +4,12 @@
 This information is useful for diagnosis, but it remains indicative.
 
 ## Data displayed
-- ✅ IP address observed
-- ✅ ASN and network operator
-- ✅ approximate country or geographical area
-- ✅ Returns DNS when available
-- ✅ browser context
-- ✅ VPN, proxy or datacenter indicator
+- IP address observed
+- ASN and network operator
+- approximate country or geographical area
+- Returns DNS when available
+- browser context
+- VPN, proxy or datacenter indicator
 
 ## Score
 The score is a read aid signal.

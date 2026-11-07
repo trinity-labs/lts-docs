@@ -16,10 +16,10 @@ TRINITY-SERVER
 ## Persistent elements
 Important elements are:
 
-- ✅ Filebrowser database
-- ✅ The configuration
-- ✅ Branding
-- ✅ Mounted storage
+- Filebrowser database
+- The configuration
+- Branding
+- Mounted storage
 
 The container is replaceable, but these elements must survive restarts.
 
@@ -29,9 +29,9 @@ The application service remains internal. The public exhibition passes through `
 ## Maintenance principle
 A Docker restart is not always enough to diagnose an incident.
 
-- ✅ The container
-- ✅ The base
-- ✅ Storage
-- ✅ Branding
-- ✅ The reverse proxy
-- ✅ The browser cache
+- The container
+- The base
+- Storage
+- Branding
+- The reverse proxy
+- The browser cache

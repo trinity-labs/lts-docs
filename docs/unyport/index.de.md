@@ -4,9 +4,9 @@ social_image: "https://unyport.app/média/img/logos/logo-unyport-full.png"
 ---
 
 # UnyPort
-✅ Vor jeder Aktion Host und Dienst identifizieren.
-⭕ Proxy- oder Administrationstoken niemals offenlegen.
-➡️ Öffentliche Verfügbarkeit prüfen:
+- Vor jeder Aktion Host und Dienst identifizieren.
+- ⭕ Proxy- oder Administrationstoken niemals offenlegen.
+- ➡️ Öffentliche Verfügbarkeit prüfen:
 ```bash
 curl -fsSI https://unyport.app/
 ```
@@ -17,16 +17,16 @@ curl -fsSI https://unyport.app/
 
 öffentlich, `UnyPort` führt zusammen:
 
-- ✅ Authentifizierung des Betreiberzugangs
-- ✅ Live-Sichtbarkeit auf dem Host und den Diensten
-- ✅ Expliziter Xen-Kontext für Dom0- und DomU-Umgebungen
-- ✅ Zugriffskontrolle auf einige interne Anwendungen wie `ttyd`
-- ✅ Betriebsseiten für Sicherheit, Speicher, Netzwerk- und Systemstatus
+- Authentifizierung des Betreiberzugangs
+- Live-Sichtbarkeit auf dem Host und den Diensten
+- Expliziter Xen-Kontext für Dom0- und DomU-Umgebungen
+- Zugriffskontrolle auf einige interne Anwendungen wie `ttyd`
+- Betriebsseiten für Sicherheit, Speicher, Netzwerk- und Systemstatus
 
 `UnyPort` Funktioniert mit zwei komplementären Oberflächen:
 
-- ✅ `TRINITY` Für den Customer Lifecycle, Bestellungen, Abrechnung und Service-Einstiegspunkte
-- ✅ `UnyDesk` Für Remote-Zugriff und Support-Workflows
+- `TRINITY` Für den Customer Lifecycle, Bestellungen, Abrechnung und Service-Einstiegspunkte
+- `UnyDesk` Für Remote-Zugriff und Support-Workflows
 
 ## Beginnen Sie hier
 Für die praktische Lektüre ist die empfohlene Reihenfolge:

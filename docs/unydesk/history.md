@@ -4,22 +4,22 @@
 ## Direction initiale
 La première direction était de garder le produit petit et explicite :
 
-- ✅ Backend Go autonome
-- ✅ API broker publique unique
-- ✅ Contraintes runtime compatibles Alpine
-- ✅ Surface session orientée navigateur
-- ✅ Runtime host distribué séparément
-- ✅ Intégration future par API HTTP plutôt que couplage de code
+- Backend Go autonome
+- API broker publique unique
+- Contraintes runtime compatibles Alpine
+- Surface session orientée navigateur
+- Runtime host distribué séparément
+- Intégration future par API HTTP plutôt que couplage de code
 
 ## Pourquoi ne pas le fusionner avec UnyPort
 `UnyPort` est un portail d'exploitation et de supervision. `UnyDesk` porte un profil de risque différent :
 
-- ✅ Transport temps réel
-- ✅ Accès host
-- ✅ Contrôle viewer
-- ✅ Tokens de session
-- ✅ Fallback média
-- ✅ Confiance et pairing
+- Transport temps réel
+- Accès host
+- Contrôle viewer
+- Tokens de session
+- Fallback média
+- Confiance et pairing
 
 Garder l'architecture séparée rend les limites sécurité et produit plus faciles à raisonner.
 

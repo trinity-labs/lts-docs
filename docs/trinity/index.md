@@ -6,9 +6,9 @@ social_image: "https://trinity-net.com/img/products/trinity/hero-trinity.png"
 # TRINITY
 ![Identité visuelle TRINITY](../assets/images/projects/trinity/logo-trinity.png){ .unyport-screen }
 
-✅ Utiliser le portail pour les comptes, commandes, factures et consoles.
-⭕ Ne jamais transmettre un jeton de session dans une demande de support.
-➡️ Vérifier la disponibilité publique avant un parcours client :
+- Utiliser le portail pour les comptes, commandes, factures et consoles.
+- ⭕ Ne jamais transmettre un jeton de session dans une demande de support.
+- ➡️ Vérifier la disponibilité publique avant un parcours client :
 ```bash
 curl -fsSI https://trinity-net.com/
 ```
@@ -16,16 +16,16 @@ curl -fsSI https://trinity-net.com/
 
 `TRINITY` regroupe publiquement :
 
-- ✅ La présentation des offres et services
-- ✅ L'accès au compte client
-- ✅ Les commandes, paiements et factures
-- ✅ Le suivi des VM et l'accès console
-- ✅ Le support, la documentation et le chat d'assistance
+- La présentation des offres et services
+- L'accès au compte client
+- Les commandes, paiements et factures
+- Le suivi des VM et l'accès console
+- Le support, la documentation et le chat d'assistance
 
 Cette surface fonctionne aux côtés de deux services complémentaires :
 
-- ✅ `UnyDesk` Pour l'accès distant
-- ✅ `UnyPort` Pour le pilotage des services
+- `UnyDesk` Pour l'accès distant
+- `UnyPort` Pour le pilotage des services
 
 ## Commencer ici
 Pour une lecture pratique, l'ordre conseille est :

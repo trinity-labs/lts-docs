@@ -4,12 +4,12 @@
 ## Rôle du compte
 Le compte client sert à :
 
-- ✅ S'authentifier
-- ✅ Stocker les informations de facturation
-- ✅ Consulter les commandes actives et passées
-- ✅ Relancer certaines actions de paiement
-- ✅ Télécharger les factures
-- ✅ Retrouver la bonne surface de service après achat
+- S'authentifier
+- Stocker les informations de facturation
+- Consulter les commandes actives et passées
+- Relancer certaines actions de paiement
+- Télécharger les factures
+- Retrouver la bonne surface de service après achat
 
 ```json
 {
@@ -25,13 +25,13 @@ Le compte client sert à :
 ## Étapes typiques d'une commande
 Une commande peut passer par plusieurs états :
 
-- ✅ Brouillon
-- ✅ Soumise
-- ✅ Paiement en attente
-- ✅ Payée
-- ✅ En préparation
-- ✅ Disponible ou livrée
-- ✅ Annulée ou expirée
+- Brouillon
+- Soumise
+- Paiement en attente
+- Payée
+- En préparation
+- Disponible ou livrée
+- Annulée ou expirée
 
 ```text
 brouillon -> soumise -> paiement_en_attente -> payée -> préparation -> disponible
@@ -51,12 +51,12 @@ brouillon -> soumise -> paiement_en_attente -> payée -> préparation -> disponi
 ## Ce que le client doit lire dans une commande
 La page commande doit rester lisible sans détails internes. Le client à surtout besoin de :
 
-- ✅ La référence
-- ✅ L'état courant
-- ✅ Le service choisi
-- ✅ Le profil de facturation
-- ✅ L'état du paiement
-- ✅ Le lien facture si disponible
+- La référence
+- L'état courant
+- Le service choisi
+- Le profil de facturation
+- L'état du paiement
+- Le lien facture si disponible
 
 ```yaml
 resume_commande:
@@ -79,11 +79,11 @@ resume_commande:
 ## Bonne habitude avant d'ouvrir un ticket
 Gardez une trace très simple de :
 
-- ✅ La référence de commande
-- ✅ La date d'achat
-- ✅ Le moyen de paiement
-- ✅ Le résultat attendu
-- ✅ L'étape exacte où le flux s'est arrêtée
+- La référence de commande
+- La date d'achat
+- Le moyen de paiement
+- Le résultat attendu
+- L'étape exacte où le flux s'est arrêtée
 
 ```markdown
 Référence commande : TRI-2026-00421

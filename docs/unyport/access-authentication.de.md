@@ -6,10 +6,10 @@ Die primaere Identitaetsquelle ist `settings/users.json`.
 
 Wichtiges Verhalten:
 
-- ✅ Wenn `users.json` fehlt, legt `UnyPort` einen ersten Admin an
-- ✅ Die angelegte E-Mail ist `demo@unyport.app`
-- ✅ Das Passwort kommt aus `UNYPORT_ADMIN_PASSWORD` oder fällt auf den eingebauten Standard zurück
-- ✅ Das Repository bringt in seiner Quellstruktur zusätzlich einen Demo-Benutzer für Evaluation mit
+- Wenn `users.json` fehlt, legt `UnyPort` einen ersten Admin an
+- Die angelegte E-Mail ist `demo@unyport.app`
+- Das Passwort kommt aus `UNYPORT_ADMIN_PASSWORD` oder fällt auf den eingebauten Standard zurück
+- Das Repository bringt in seiner Quellstruktur zusätzlich einen Demo-Benutzer für Evaluation mit
 
 Damit sind Deployment-Pfad und Repository-Evaluationspfad verwandt, aber nicht identisch.
 
@@ -31,34 +31,34 @@ In der aktuellen UI können Viewer das Portal lesen, aber keine Profil- oder Pas
 ## OAuth-Provider
 OAuth ist für folgende Provider implementiert:
 
-- ✅ GitHub
-- ✅ GitLab
+- GitHub
+- GitLab
 
 Die Provider-Deklarationen stehen in `settings/config.yaml`. Platzhalterwerte werden absichtlich ignoriert, daher wird OAuth erst aktiv, wenn echte `client_id`, `client_secret` und `redirect_url` gesetzt sind.
 
 ## Sitzungsmodell
 Nach erfolgreicher Authentifizierung gibt `UnyPort` ein JWT-Cookie aus:
 
-- ✅ Signiert mit `security.jwt_secret`
-- ✅ Gespeichert als HTTP-only-Cookie
-- ✅ Vom `https`-Schalter für Secure-Cookie-Verhalten beeinflusst
-- ✅ Zeitlich begrenzt über `security_extra.session_timeout_mins`
+- Signiert mit `security.jwt_secret`
+- Gespeichert als HTTP-only-Cookie
+- Vom `https`-Schalter für Secure-Cookie-Verhalten beeinflusst
+- Zeitlich begrenzt über `security_extra.session_timeout_mins`
 
 ## CSRF, Rate Limit und Trusted Origins
 Die Anwendung erzwingt außerdem:
 
-- ✅ CSRF-Schutz mit eigenem Endpoint `/api/csrf`
+- CSRF-Schutz mit eigenem Endpoint `/api/csrf`
 - ⭕ Login-Rate-Limit, standardmaessig `5` Versuche pro Minute
-- ✅ Trusted-Origin-Prüfung für zustandsändernde Requests
+- Trusted-Origin-Prüfung für zustandsändernde Requests
 
 Wenn `trusted_origins` leer ist, berechnet `UnyPort` eine Standardliste aus aktiven lokalen Interfaces auf Port `8800`.
 
 ## Admin-Aktionen
 Admin-exklusive Schreibaktionen sind aktuell:
 
-- ✅ Benutzer anlegen
-- ✅ Rollen ändern
-- ✅ Benutzer loeschen außer dem eigenen Konto
-- ✅ Instanz-Branding aktualisieren oder zurücksetzen
+- Benutzer anlegen
+- Rollen ändern
+- Benutzer loeschen außer dem eigenen Konto
+- Instanz-Branding aktualisieren oder zurücksetzen
 
 Damit bleibt Administration explizit und klein gehalten.

@@ -6,9 +6,9 @@ social_image: "https://trinity-net.com/img/products/trinity/hero-trinity.png"
 # TRINITY
 ![Visuelle Identität von TRINITY](../assets/images/projects/trinity/logo-trinity.png){ .unyport-screen }
 
-✅ Das Portal für Konten, Bestellungen, Rechnungen und Konsolen verwenden.
-⭕ Niemals ein Sitzungstoken an eine Supportanfrage anhängen.
-➡️ Vor einem Kundenablauf die öffentliche Verfügbarkeit prüfen:
+- Das Portal für Konten, Bestellungen, Rechnungen und Konsolen verwenden.
+- ⭕ Niemals ein Sitzungstoken an eine Supportanfrage anhängen.
+- ➡️ Vor einem Kundenablauf die öffentliche Verfügbarkeit prüfen:
 ```bash
 curl -fsSI https://trinity-net.com/
 ```
@@ -16,16 +16,16 @@ curl -fsSI https://trinity-net.com/
 
 Öffentlich bündelt `TRINITY`:
 
-- ✅ Service-Präsentation und kommerzielle Einstiegspunkte
-- ✅ Kontozugriff
-- ✅ Bestellungen, Zahlungen und Rechnungen
-- ✅ VM-Verfolgung und Konsolenzugriff
-- ✅ Support, Dokumentation und Assistenz-Chat
+- Service-Präsentation und kommerzielle Einstiegspunkte
+- Kontozugriff
+- Bestellungen, Zahlungen und Rechnungen
+- VM-Verfolgung und Konsolenzugriff
+- Support, Dokumentation und Assistenz-Chat
 
 `TRINITY` arbeitet zusammen mit zwei ergänzenden Diensten:
 
-- ✅ `UnyDesk` Für den Fernzugriff
-- ✅ `UnyPort` Für die Service-Steuerung
+- `UnyDesk` Für den Fernzugriff
+- `UnyPort` Für die Service-Steuerung
 
 ## Hier beginnen
 Für eine praktische Lesereihenfolge wird empfohlen:

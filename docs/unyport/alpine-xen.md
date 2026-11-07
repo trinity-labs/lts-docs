@@ -4,11 +4,11 @@
 ## Pourquoi Alpine Linux compte ici
 Alpine Linux colle au modèle `UnyPort` parce qu'il est :
 
-- ✅ Petit
-- ✅ Prévisible
-- ✅ Base sur musl
-- ✅ A l'aise dans des empreintes opérationnelles minimales
-- ✅ Compatible avec les workflows de persistance LBU
+- Petit
+- Prévisible
+- Base sur musl
+- A l'aise dans des empreintes opérationnelles minimales
+- Compatible avec les workflows de persistance LBU
 
 Cela compte parce qu'`UnyPort` lit directement l'état local du système et profite d'un hôte compact et lisible.
 
@@ -33,18 +33,18 @@ Cela donne le nombre de domaines, le total de vCPU, la mémoire, le scheduler et
 ## Dom0 contre DomU
 Cette distinction change ce que voit l'opérateur :
 
-- ✅ Sur `Dom0`, `UnyPort` peut montrer l'état de l'hyperviseur et des domaines Xen
-- ✅ Sur `DomU`, `UnyPort` se comporte comme un observateur centré VM
-- ✅ Dans un conteneur, les champs carte mère et firmware peuvent naturellement manquer
+- Sur `Dom0`, `UnyPort` peut montrer l'état de l'hyperviseur et des domaines Xen
+- Sur `DomU`, `UnyPort` se comporte comme un observateur centré VM
+- Dans un conteneur, les champs carte mère et firmware peuvent naturellement manquer
 
 L'UI est explicitement construite autour de ces différences.
 
 ## LBU et persistance
 `UnyPort` comprend aussi le modèle Alpine `lbu` :
 
-- ✅ Présence ou absence de LBU
-- ✅ Existence de la dernière archive
-- ✅ État `clean` ou `dirty`
+- Présence ou absence de LBU
+- Existence de la dernière archive
+- État `clean` ou `dirty`
 
 Cela est particulièrement utile dans des environnements Alpine de maintenance ou orientés Data Disk Mode, où la dérive de configuration doit être simple à repérer.
 

@@ -16,10 +16,10 @@ TRINITY-SERVER
 ## Éléments persistants
 Les éléments importants sont :
 
-- ✅ La base Filebrowser
-- ✅ La configuration
-- ✅ Le branding
-- ✅ Le stockage monté
+- La base Filebrowser
+- La configuration
+- Le branding
+- Le stockage monté
 
 Le conteneur est remplaçable, mais ces éléments doivent survivre aux redémarrages.
 
@@ -29,9 +29,9 @@ Le service applicatif reste interne. L'exposition publique passe par `nginx`, TL
 ## Principe de maintenance
 Un redémarrage Docker ne suffit pas toujours à diagnostiquer un incident. Il faut distinguer :
 
-- ✅ Le conteneur
-- ✅ La base
-- ✅ Le stockage
-- ✅ Le branding
-- ✅ Le reverse proxy
-- ✅ Le cache navigateur
+- Le conteneur
+- La base
+- Le stockage
+- Le branding
+- Le reverse proxy
+- Le cache navigateur

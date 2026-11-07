@@ -13,10 +13,10 @@ navigateur
 ```
 
 ## Grundsätze
-- ✅ kein Benutzerkonto
-- ✅ keine Bewerbungssitzung
-- ✅ JSON Response für die Automatisierung verfügbar
-- ✅ explizite Trennung zwischen beobachteter Adresse und Berichts-Headern
+- kein Benutzerkonto
+- keine Bewerbungssitzung
+- JSON Response für die Automatisierung verfügbar
+- explizite Trennung zwischen beobachteter Adresse und Berichts-Headern
 
 Header, die vom Client oder Proxy übertragen werden, können als Kontext angezeigt werden, aber die Referenzadresse bleibt diejenige, die von der Infrastruktur beobachtet wird.
 

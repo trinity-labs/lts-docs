@@ -6,9 +6,9 @@ social_image: "https://docs.trinity-net.com/assets/images/social/og-favicon.png"
 # UnyCloud
 ![Interface UnyCloud](../assets/images/projects/unycloud/unycloud-screen.jpg){ .unyport-screen }
 
-✅ Vérifier le fichier et sa destination avant tout téléversement.
-⭕ Un lien de partage doit être révoqué dès qu’il n’est plus nécessaire.
-➡️ Contrôler le type de contenu renvoyé par la surface cloud :
+- Vérifier le fichier et sa destination avant tout téléversement.
+- ⭕ Un lien de partage doit être révoqué dès qu’il n’est plus nécessaire.
+- ➡️ Contrôler le type de contenu renvoyé par la surface cloud :
 ```bash
 curl -fsSI https://cloud.trinity-net.com/
 ```
@@ -16,11 +16,11 @@ curl -fsSI https://cloud.trinity-net.com/
 
 Publiquement, `UnyCloud` rassemble :
 
-- ✅ Une interface web de fichiers
-- ✅ Un accès authentifié aux espaces montés
-- ✅ Un branding TRINITY dédié
-- ✅ Un point d'entrée HTTPS derrière reverse proxy
-- ✅ Une séparation claire entre produit visible et runtime Filebrowser
+- Une interface web de fichiers
+- Un accès authentifié aux espaces montés
+- Un branding TRINITY dédié
+- Un point d'entrée HTTPS derrière reverse proxy
+- Une séparation claire entre produit visible et runtime Filebrowser
 
 `UnyCloud` doit se lire comme le service cloud utilisateur. `Filebrowser` reste la lignée technique et le contrat de compatibilité documenté côté admin.
 

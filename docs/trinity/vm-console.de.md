@@ -4,11 +4,11 @@ Einige Dienstleistungen `TRINITY` Dies bedeutet nicht, dass jeder Client zum Hyp
 ## Was der Nutzer erwarten kann
 Eine VM-orientierte Seite kann anzeigen:
 
-- ✅ Name der Maschine
+- Name der Maschine
 - ⭕ Ein Online-Indikator oder nicht
-- ✅ Eine Sichtbarkeit basiert auf Ressourcen
-- ✅ Ein Konsoleneinstiegspunkt
-- ✅ Links zur Unterstützung oder Überwachung
+- Eine Sichtbarkeit basiert auf Ressourcen
+- Ein Konsoleneinstiegspunkt
+- Links zur Unterstützung oder Überwachung
 
 | Sichtbare Informationen | Sofortige Nutzung | Lesbar |
 | --- | --- | --- |
@@ -23,10 +23,10 @@ Eine VM-orientierte Seite kann anzeigen:
 ## Typische Konsolenziele
 Der Zugriff auf die Konsole wird verwendet, um:
 
-- ✅ Status des Prüfboots
-- ✅ Inspizieren Sie ein montiertes Dateisystem
-- ✅ Lesen Sie einen Hostnamen oder eine IP
-- ✅ Bestätigen Sie, ob eine Wiederaufnahme möglich ist
+- Status des Prüfboots
+- Inspizieren Sie ein montiertes Dateisystem
+- Lesen Sie einen Hostnamen oder eine IP
+- Bestätigen Sie, ob eine Wiederaufnahme möglich ist
 
 ```bash
 hostname
@@ -39,10 +39,10 @@ df -h
 ## Wie man einen VM-Zustand liest
 Eine öffentliche VM-Seite sollte einfach lesen:
 
-- ✅ `online` Bedeutet, dass VM in seinem aktuellen Modus reagiert
-- ✅ `maintenance` Bedeutet, dass ein technischer Eingriff im Gange oder möglich ist
-- ✅ `récupération` Bedeutet, dass Priorität der Zugriff auf Daten ist
-- ✅ `unavailable` Bedeutet, dass Sie warten oder um Unterstützung bitten müssen
+- `online` Bedeutet, dass VM in seinem aktuellen Modus reagiert
+- `maintenance` Bedeutet, dass ein technischer Eingriff im Gange oder möglich ist
+- `récupération` Bedeutet, dass Priorität der Zugriff auf Daten ist
+- `unavailable` Bedeutet, dass Sie warten oder um Unterstützung bitten müssen
 
 ```text
 online       -> accès normal ou technique attendu
@@ -61,9 +61,9 @@ unavailable  -> attente ou support
 ## Operationelle Vorsicht
 Eine Konsole ist leistungsstark, aber eng in ihrer Verwendung.
 
-- ✅ Wenn VM im normalen oder DDM-Modus ist
-- ✅ Wenn das Ziel Diagnose oder Änderung ist
-- ✅ Wenn die Unterstützung eine spezifische Maßnahme erfordert
+- Wenn VM im normalen oder DDM-Modus ist
+- Wenn das Ziel Diagnose oder Änderung ist
+- Wenn die Unterstützung eine spezifische Maßnahme erfordert
 
 ```bash
 # Vérifications prudentes en premier

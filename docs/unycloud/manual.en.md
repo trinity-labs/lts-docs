@@ -17,13 +17,13 @@ Ouvrir le cloud
 ```
 
 ## Good practices
-- ✅ Check the target folder before a repository
+- Check the target folder before a repository
 - ⭕ Avoid ambiguous file names
 - ⭕ Do not use cloud space as a secret box without explicit instructions
-- ✅ Prevent support if login works but the space expected is empty
+- Prevent support if login works but the space expected is empty
 
 ## Common symptoms
-- ✅ White Page: Frontend, proxy or runtime incident
-- ✅ Branding absent : problem on `/static/custom.css` or assets
-- ✅ Identifiers not offered by the browser: login behavior to control on proxy side
-- ✅ Absent files: check the account perimeter before concluding data loss
+- White Page: Frontend, proxy or runtime incident
+- Branding absent : problem on `/static/custom.css` or assets
+- Identifiers not offered by the browser: login behavior to control on proxy side
+- Absent files: check the account perimeter before concluding data loss

@@ -4,9 +4,9 @@ social_image: "https://unyport.app/média/img/logos/logo-unyport-full.png"
 ---
 
 # UnyPort
-✅ Identifier le host et le service avant toute action.
-⭕ Ne jamais exposer un jeton de proxy ou d’administration.
-➡️ Vérifier la disponibilité publique :
+- Identifier le host et le service avant toute action.
+- ⭕ Ne jamais exposer un jeton de proxy ou d’administration.
+- ➡️ Vérifier la disponibilité publique :
 ```bash
 curl -fsSI https://unyport.app/
 ```
@@ -17,16 +17,16 @@ curl -fsSI https://unyport.app/
 
 Publiquement, `UnyPort` rassemble :
 
-- ✅ Un accès opérateur authentifié
-- ✅ Une visibilité en direct sur l'hôte et les services
-- ✅ Un contexte Xen explicite pour les environnements Dom0 et DomU
-- ✅ Un accès contrôle à certaines applications internes comme `ttyd`
-- ✅ Des pages opérationnelles pour la sécurité, le stockage, le réseau et l'état système
+- Un accès opérateur authentifié
+- Une visibilité en direct sur l'hôte et les services
+- Un contexte Xen explicite pour les environnements Dom0 et DomU
+- Un accès contrôle à certaines applications internes comme `ttyd`
+- Des pages opérationnelles pour la sécurité, le stockage, le réseau et l'état système
 
 `UnyPort` fonctionne avec deux surfaces complémentaires :
 
-- ✅ `TRINITY` Pour le cycle de vie client, les commandes, la facturation et les points d'entrée de service
-- ✅ `UnyDesk` Pour l'accès distant et les workflows d'assistance
+- `TRINITY` Pour le cycle de vie client, les commandes, la facturation et les points d'entrée de service
+- `UnyDesk` Pour l'accès distant et les workflows d'assistance
 
 ## Commencer ici
 Pour une lecture pratique, l'ordre recommandé est :
@@ -41,7 +41,7 @@ Pour une lecture pratique, l'ordre recommandé est :
 8. ➡️ `Sécurité et exploitation`
 9. ➡️ `Exemples`
 
-➡️ [Parcourir les 103 icônes réseau, stockage et disques](icon-library.md)
+- ➡️ [Parcourir les 103 icônes réseau, stockage et disques](icon-library.md)
 
 ```text
 Connexion opérateur

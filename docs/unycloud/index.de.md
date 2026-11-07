@@ -6,9 +6,9 @@ social_image: "https://docs.trinity-net.com/assets/images/social/og-favicon.png"
 # UnyCloud
 ![UnyCloud-Oberfläche](../assets/images/projects/unycloud/unycloud-screen.jpg){ .unyport-screen }
 
-✅ Vor jedem Upload Datei und Ziel prüfen.
-⭕ Einen Freigabelink widerrufen, sobald er nicht mehr benötigt wird.
-➡️ Den von der Cloud-Oberfläche gelieferten Inhaltstyp prüfen:
+- Vor jedem Upload Datei und Ziel prüfen.
+- ⭕ Einen Freigabelink widerrufen, sobald er nicht mehr benötigt wird.
+- ➡️ Den von der Cloud-Oberfläche gelieferten Inhaltstyp prüfen:
 ```bash
 curl -fsSI https://cloud.trinity-net.com/
 ```
@@ -16,11 +16,11 @@ curl -fsSI https://cloud.trinity-net.com/
 
 öffentlich, `UnyCloud` führt zusammen:
 
-- ✅ Eine Webfile-Schnittstelle
-- ✅ Authentifizierter Zugang zu montierten Räumen
-- ✅ Eine dedizierte Branding-Trinity
-- ✅ HTTPS-Einstiegspunkt hinter Reverse Proxy
-- ✅ Klare Trennung zwischen sichtbarem Produkt und Laufzeit Filebrowser
+- Eine Webfile-Schnittstelle
+- Authentifizierter Zugang zu montierten Räumen
+- Eine dedizierte Branding-Trinity
+- HTTPS-Einstiegspunkt hinter Reverse Proxy
+- Klare Trennung zwischen sichtbarem Produkt und Laufzeit Filebrowser
 
 `UnyCloud` muss als Cloud-Benutzerdienst gelesen werden. `Filebrowser` bleibt die technische Abstammung und der dokumentierte Kompatibilitätsvertrag auf der Admin-Seite.
 

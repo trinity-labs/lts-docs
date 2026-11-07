@@ -6,9 +6,9 @@ social_image: "https://trinity-net.com/img/products/trinity/hero-trinity.png"
 # TRINITY
 ![TRINITY visual identity](../assets/images/projects/trinity/logo-trinity.png){ .unyport-screen }
 
-✅ Use the portal for accounts, orders, invoices and consoles.
-⭕ Never include a session token in a support request.
-➡️ Check public availability before starting a customer journey:
+- Use the portal for accounts, orders, invoices and consoles.
+- ⭕ Never include a session token in a support request.
+- ➡️ Check public availability before starting a customer journey:
 ```bash
 curl -fsSI https://trinity-net.com/
 ```
@@ -16,16 +16,16 @@ curl -fsSI https://trinity-net.com/
 
 Publicly, `TRINITY` brings together:
 
-- ✅ Service discovery and commercial entry points
-- ✅ Account access
-- ✅ Orders, payments and invoices
-- ✅ VM follow-up and console access
-- ✅ Support, documentation and assistance chat
+- Service discovery and commercial entry points
+- Account access
+- Orders, payments and invoices
+- VM follow-up and console access
+- Support, documentation and assistance chat
 
 `TRINITY` works alongside two companion services:
 
-- ✅ `UnyDesk` For remote access
-- ✅ `UnyPort` For service control
+- `UnyDesk` For remote access
+- `UnyPort` For service control
 
 ## Start here
 For a practical reading path, the recommended order is:

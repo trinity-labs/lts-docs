@@ -4,11 +4,11 @@ Cette page reprend l'historique utile depuis la documentation admin `Filebrowser
 ## Base Filebrowser
 Le socle initial est un service Filebrowser dédié sur `<cloud-host>`, avec :
 
-- ✅ Un projet compose `docker_cloud`
-- ✅ Une image amont `filebrowser/filebrowser:latest`
-- ✅ Une base locale persistante
-- ✅ Un montage de stockage sous `/srv`
-- ✅ Un arbre de branding monté dans le conteneur
+- Un projet compose `docker_cloud`
+- Une image amont `filebrowser/filebrowser:latest`
+- Une base locale persistante
+- Un montage de stockage sous `/srv`
+- Un arbre de branding monté dans le conteneur
 
 Cette étape établit la capacité principale : exposer une navigation de fichiers web sous une URL TRINITY.
 
@@ -20,9 +20,9 @@ Le `2026-08-29`, `UnyCloud 0.0.1` établit officiellement le fork maintenu de Fi
 ## Branding UnyCloud
 L'historique documenté côté Filebrowser montre ensuite la séparation entre :
 
-- ✅ Le branding natif chargé par `custom.css`
-- ✅ Les assets servis sous `/static/...`
-- ✅ Les scripts de branding qui ne sont pas forcément exécutés par la page de login
+- Le branding natif chargé par `custom.css`
+- Les assets servis sous `/static/...`
+- Les scripts de branding qui ne sont pas forcément exécutés par la page de login
 
 Ce point explique pourquoi `UnyCloud` doit documenter le branding comme partie produit, mais garder le debug comportemental côté admin.
 
@@ -39,9 +39,9 @@ Au `2026-08-30`, le dépôt local indique `UNYCLOUD_VERSION=0.9.15`. L'historiqu
 ## État actuel
 Aujourd'hui, `UnyCloud` doit être compris comme :
 
-- ✅ Une surface produit cloud
-- ✅ Un runtime compatible Filebrowser maintenu par UnyCloud
-- ✅ Un branding TRINITY spécifique
-- ✅ Un service dont le comportement visible dépend aussi du proxy
+- Une surface produit cloud
+- Un runtime compatible Filebrowser maintenu par UnyCloud
+- Un branding TRINITY spécifique
+- Un service dont le comportement visible dépend aussi du proxy
 
 L'historique important n'est donc pas seulement l'installation d'un conteneur. C'est la transformation de Filebrowser en service UnyCloud exploitable, brandé et intégré au reste de TRINITY.

@@ -27,21 +27,21 @@ Open UnyDesk
 ## Before first use
 Prepare:
 
-- ✅ The expected `UnyDesk` URL
-- ✅ The target operating system and CPU architecture
-- ✅ Whether the host should be installed or only launched
-- ✅ Whether access should be account-bound or standalone
-- ✅ Whether local approval is required on the host
+- The expected `UnyDesk` URL
+- The target operating system and CPU architecture
+- Whether the host should be installed or only launched
+- Whether access should be account-bound or standalone
+- Whether local approval is required on the host
 
 ## What to monitor during a session
 Useful public signals include:
 
-- ✅ Host online or offline state
-- ✅ Session status: pending, offered, active or closed
-- ✅ Dispatch count and last host acknowledgement
-- ✅ WebRTC offer and answer progression
-- ✅ Fallback screen update time
-- ✅ Visible capture errors when the host cannot provide a frame
+- Host online or offline state
+- Session status: pending, offered, active or closed
+- Dispatch count and last host acknowledgement
+- WebRTC offer and answer progression
+- Fallback screen update time
+- Visible capture errors when the host cannot provide a frame
 
 ## When to switch surfaces
 Use `TRINITY` when the issue concerns account, service, invoice or support lifecycle. Use `UnyPort` when the issue concerns host supervision or local operations. Stay in `UnyDesk` when the issue concerns remote access, viewer behavior, host trust or session routing.

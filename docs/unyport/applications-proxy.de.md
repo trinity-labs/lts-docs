@@ -21,10 +21,10 @@ Zur Laufzeit stellt das Portal Metadaten über `/api/apps` bereit und mountet de
 ## Proxy-Verhalten
 Der Reverse-Proxy fuehrt eine kleine Menge Hardening und Umschreiben durch:
 
-- ✅ Entfernen unzuverlaessiger Forwarding-Header
-- ✅ Setzen von `X-Forwarded-For`, `X-Forwarded-Proto` und `X-Forwarded-Prefix`
-- ✅ Umschreiben von `Location`-Headern, damit Redirects unter dem Mount-Praefix bleiben
-- ✅ Umschreiben von Cookie-Pfaden, damit Backend-Cookies am Proxy-Mount bleiben
+- Entfernen unzuverlaessiger Forwarding-Header
+- Setzen von `X-Forwarded-For`, `X-Forwarded-Proto` und `X-Forwarded-Prefix`
+- Umschreiben von `Location`-Headern, damit Redirects unter dem Mount-Praefix bleiben
+- Umschreiben von Cookie-Pfaden, damit Backend-Cookies am Proxy-Mount bleiben
 - ⭕ Rueckleitung nicht-JSON `401`- und `403`-Antworten an die Portalwurzel
 
 ## TTYd-spezifische Behandlung
@@ -33,8 +33,8 @@ Der Code lockert die CSP nur für den `ttyd`-Mount, damit Webterminal-Assets und
 ## Warum das wichtig ist
 Diese Proxy-Schicht haelt `UnyPort` fokussiert:
 
-- ✅ Operatoren erhalten einen einheitlichen authentifizierten Einstieg
-- ✅ Interne Anwendungen brauchen kein eigenes öffentliches Expositionsmodell
-- ✅ Das Produkt bleibt klein und kann trotzdem Bruecke zu terminalorientierten Tools sein
+- Operatoren erhalten einen einheitlichen authentifizierten Einstieg
+- Interne Anwendungen brauchen kein eigenes öffentliches Expositionsmodell
+- Das Produkt bleibt klein und kann trotzdem Bruecke zu terminalorientierten Tools sein
 
 Die Funktion ist daher als kontrolliertes Gateway zu verstehen, nicht als allgemeiner App-Katalog.

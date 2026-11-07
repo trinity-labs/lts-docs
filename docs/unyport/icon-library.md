@@ -6,9 +6,9 @@ description: "Catalogue légendé des icônes réseau et stockage disponibles da
 
 Cette référence présente les SVG réellement livrés avec UnyPort. Elle permet de choisir une légende cohérente pour une carte, un équipement ou un volume sans deviner le sens d’un pictogramme.
 
-✅ Le nom affiché sous chaque icône correspond au nom de fichier source.
+- Le nom affiché sous chaque icône correspond au nom de fichier source.
 
-➡️ [Voir les écrans qui utilisent ces pictogrammes](manual.md#reperes-visuels)
+- ➡️ [Voir les écrans qui utilisent ces pictogrammes](manual.md#reperes-visuels)
 
 ## Appareils
 

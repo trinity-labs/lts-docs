@@ -4,11 +4,11 @@ social_image: "https://trinity-net.com/img/products/trinity/hero-trinity.png"
 ---
 
 # TRINITY
-✅ Vor einer Anleitung das zum Bedarf passende Produkt auswählen.
+- Vor einer Anleitung das zum Bedarf passende Produkt auswählen.
 
-⭕ Niemals Token, Geheimnisse oder Sitzungswerte in einem Bericht veröffentlichen.
+- ⭕ Niemals Token, Geheimnisse oder Sitzungswerte in einem Bericht veröffentlichen.
 
-➡️ Die wichtigsten öffentlichen Oberflächen prüfen:
+- ➡️ Die wichtigsten öffentlichen Oberflächen prüfen:
 
 ```bash
 curl -fsSI https://trinity-net.com/
@@ -29,15 +29,15 @@ curl -fsS https://ip.trinity-net.com/api | jq .
 
 Sie ist die wichtigste öffentliche Oberfläche für:
 
-- ✅ Identität und Kontozugriff
-- ✅ Bestell- und Provisionierungsabläufe
-- ✅ Orchestrierung des VM-Lebenszyklus
-- ✅ Konsolenzugriff
-- ✅ Veröffentlichung kuratierter Downloads
+- Identität und Kontozugriff
+- Bestell- und Provisionierungsabläufe
+- Orchestrierung des VM-Lebenszyklus
+- Konsolenzugriff
+- Veröffentlichung kuratierter Downloads
 
 Im öffentlichen Dokumentationsbestand wird `TRINITY` zusammen mit den beiden ergänzenden Architekturen dokumentiert, die die Plattform vervollständigen:
 
-- ✅ `UnyDesk` Für den Fernzugriff
-- ✅ `UnyPort` Für die Service-Steuerung
+- `UnyDesk` Für den Fernzugriff
+- `UnyPort` Für die Service-Steuerung
 
 Diese Dokumentation beginnt mit `TRINITY`, weil es das funktionale Zentrum der Plattform ist, nicht weil die anderen Architekturen zweitrangig wären.

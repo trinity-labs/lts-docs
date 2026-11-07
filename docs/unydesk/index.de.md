@@ -6,9 +6,9 @@ social_image: "https://unydesk.app/assets/logo-unydesk.jpg"
 # UnyDesk
 ![UnyDesk-Identität](../assets/images/projects/unydesk/logo-unydesk.jpg){ .unyport-screen }
 
-✅ Vor einer Remotesitzung prüfen, ob der Host online ist.
-⭕ Kopplungscodes und Bereitstellungstoken müssen vertraulich bleiben.
-➡️ Bei der Diagnose jede Rolle eindeutig unterscheiden:
+- Vor einer Remotesitzung prüfen, ob der Host online ist.
+- ⭕ Kopplungscodes und Bereitstellungstoken müssen vertraulich bleiben.
+- ➡️ Bei der Diagnose jede Rolle eindeutig unterscheiden:
 ```text
 Viewer -> UnyDesk-Broker -> Host -> Direkt- oder Relay-Transport
 ```
@@ -16,11 +16,11 @@ Viewer -> UnyDesk-Broker -> Host -> Direkt- oder Relay-Transport
 
 Im Unterschied zu `TRINITY` als Kunden- und Serviceportal konzentriert sich `UnyDesk` auf:
 
-- ✅ Host-Erreichbarkeit
-- ✅ Routing zwischen Viewer und Host
-- ✅ Live-Fernsteuerung
-- ✅ Remote-Support-Ablaufe
-- ✅ Fallback-Verhalten auf Transportebene
+- Host-Erreichbarkeit
+- Routing zwischen Viewer und Host
+- Live-Fernsteuerung
+- Remote-Support-Ablaufe
+- Fallback-Verhalten auf Transportebene
 
 ## Einstieg
 Für eine praktische Lesereihenfolge wird empfohlen:

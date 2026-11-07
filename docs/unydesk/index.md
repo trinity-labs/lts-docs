@@ -6,9 +6,9 @@ social_image: "https://unydesk.app/assets/logo-unydesk.jpg"
 # UnyDesk
 ![Identité UnyDesk](../assets/images/projects/unydesk/logo-unydesk.jpg){ .unyport-screen }
 
-✅ Vérifier que le host est en ligne avant de demander une session distante.
-⭕ Un code d’association ou un jeton de provisionnement doit rester confidentiel.
-➡️ Distinguer clairement les rôles dans un diagnostic :
+- Vérifier que le host est en ligne avant de demander une session distante.
+- ⭕ Un code d’association ou un jeton de provisionnement doit rester confidentiel.
+- ➡️ Distinguer clairement les rôles dans un diagnostic :
 ```text
 viewer -> broker UnyDesk -> host -> transport direct ou relais
 ```
@@ -16,11 +16,11 @@ viewer -> broker UnyDesk -> host -> transport direct ou relais
 
 Contrairement à `TRINITY`, qui reste le portail client et services, `UnyDesk` est centré sur :
 
-- ✅ L'accessibilité du host
-- ✅ Le routage des sessions entre viewer et host
-- ✅ Le contrôle distant en direct
-- ✅ Les flux d'assistance distante
-- ✅ Les comportements de secours côté transport
+- L'accessibilité du host
+- Le routage des sessions entre viewer et host
+- Le contrôle distant en direct
+- Les flux d'assistance distante
+- Les comportements de secours côté transport
 
 ## Commencer ici
 Pour une lecture pratique, l'ordre recommandé est :

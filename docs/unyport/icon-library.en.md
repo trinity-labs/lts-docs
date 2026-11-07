@@ -6,9 +6,9 @@ description: "Captioned catalog of the network and storage icons available in Un
 
 This reference presents the SVG files actually shipped with UnyPort. Use it to choose consistent labels for maps, devices and volumes without guessing what a pictogram means.
 
-✅ The label below each icon matches its source filename.
+- The label below each icon matches its source filename.
 
-➡️ [See the screens that use these pictograms](manual.md#visual-reference)
+- ➡️ [See the screens that use these pictograms](manual.md#visual-reference)
 
 ## Devices
 

@@ -6,9 +6,9 @@ curl -ks https://<cloud-domain>/login | sed -n '1,80p'
 
 Résultat attendu :
 
-- ✅ Une réponse HTML
-- ✅ Pas de page d'erreur proxy
-- ✅ Pas de timeout
+- Une réponse HTML
+- Pas de page d'erreur proxy
+- Pas de timeout
 
 ## Exemple 2 - vérifier le branding
 ```sh
@@ -17,9 +17,9 @@ curl -ks https://<cloud-domain>/static/custom.css | sed -n '1,80p'
 
 Résultat attendu :
 
-- ✅ Le CSS UnyCloud répond
-- ✅ Les images référencées existent
-- ✅ Le navigateur n'utilise pas un ancien cache
+- Le CSS UnyCloud répond
+- Les images référencées existent
+- Le navigateur n'utilise pas un ancien cache
 
 ## Exemple 3 - distinguer login et branding
 Si la page est visuellement incorrecte mais que le login fonctionne, commencer par le CSS.

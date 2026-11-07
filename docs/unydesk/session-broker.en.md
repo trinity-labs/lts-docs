@@ -16,15 +16,15 @@ The exact timing depends on host availability, viewer authentication, host ackno
 ## What the broker tracks
 The broker can expose:
 
-- ✅ Session ID
-- ✅ Target host or public ID
-- ✅ Viewer identity and label
-- ✅ Routed host identity
-- ✅ WebRTC offer and answer state
-- ✅ Viewer and host ICE candidates
-- ✅ Dispatch state and count
-- ✅ Last dispatch and last host acknowledgement timestamps
-- ✅ Fallback screen revision and update timestamp
+- Session ID
+- Target host or public ID
+- Viewer identity and label
+- Routed host identity
+- WebRTC offer and answer state
+- Viewer and host ICE candidates
+- Dispatch state and count
+- Last dispatch and last host acknowledgement timestamps
+- Fallback screen revision and update timestamp
 
 These fields are useful because they separate a routing problem from a media problem.
 

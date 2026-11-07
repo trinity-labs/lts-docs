@@ -4,14 +4,14 @@ Unterstützung `TRINITY` Dies bedeutet, dass die Plattform dem Benutzer helfen m
 ## Perimeter-Unterstützung
 Unterstützung `TRINITY` kann ausdrücklich Folgendes betreffen:
 
-- ✅ Bestellungen und Rechnungsfragen
-- ✅ Zahlungsverfolgung
-- ✅ Zugang zu Rechnungen
-- ✅ Alpine Linux-Umgebungen
-- ✅ VM-Dienste basierend auf Xen
-- ✅ Situationen im Datenträgermodus
-- ✅ Die Verwendung von`UnyDesk`
-- ✅ Die Verwendung von`UnyPort`
+- Bestellungen und Rechnungsfragen
+- Zahlungsverfolgung
+- Zugang zu Rechnungen
+- Alpine Linux-Umgebungen
+- VM-Dienste basierend auf Xen
+- Situationen im Datenträgermodus
+- Die Verwendung von`UnyDesk`
+- Die Verwendung von`UnyPort`
 
 | Thema | Self-Service möglich | Empfohlenes Medium |
 | --- | --- | --- |
@@ -38,11 +38,11 @@ Résultat attendu : confirmer s'il faut reprendre ou revenir en mode normal
 ## Vor dem Klettern
 Sammeln Sie das Minimum zuerst:
 
-- ✅ Auftragsnummer
-- ✅ Rechnung oder Zahlung, falls sinnvoll
-- ✅ Name der VM, falls vorhanden
-- ✅ Stromverbrauch: Normalbetrieb, Wartung oder DDM
-- ✅ Präzise Konsolenbeobachtung
+- Auftragsnummer
+- Rechnung oder Zahlung, falls sinnvoll
+- Name der VM, falls vorhanden
+- Stromverbrauch: Normalbetrieb, Wartung oder DDM
+- Präzise Konsolenbeobachtung
 
 ```bash
 # Exemple de lot d'informations à relever
@@ -66,17 +66,17 @@ df -h
 
 Self-Service eignet sich für:
 
-- ✅ Lesen Sie eine Rechnung
-- ✅ Überprüfen Sie eine Zahlungserklärung
-- ✅ Öffnen Sie eine Konsole
-- ✅ Bestätigen Sie, ob VM online ist
+- Lesen Sie eine Rechnung
+- Überprüfen Sie eine Zahlungserklärung
+- Öffnen Sie eine Konsole
+- Bestätigen Sie, ob VM online ist
 
 Die Unterstützung ist geeignet für:
 
-- ✅ Blockierte Auftragslieferung
-- ✅ Unstimmigkeit der Zahlung
-- ✅ VM-Anweisung unklar
-- ✅ Risikodeckungsmaßnahmen für Daten
+- Blockierte Auftragslieferung
+- Unstimmigkeit der Zahlung
+- VM-Anweisung unklar
+- Risikodeckungsmaßnahmen für Daten
 
 | Lage | Selbstbedienung | Supportticket |
 | --- | --- | --- |
@@ -89,6 +89,6 @@ Die Unterstützung ist geeignet für:
 ## Zu verwendende Oberflächen
 Verwenden Sie die richtige Oberfläche nach Bedarf:
 
-- ✅ `TRINITY` Für das Konto, Bestellungen, Rechnungen und Service Point of Entry
-- ✅ `UnyDesk` Für Remote-Support und Interaktion
-- ✅ `UnyPort` Für Infra-Staat und Aufsicht
+- `TRINITY` Für das Konto, Bestellungen, Rechnungen und Service Point of Entry
+- `UnyDesk` Für Remote-Support und Interaktion
+- `UnyPort` Für Infra-Staat und Aufsicht

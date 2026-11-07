@@ -6,10 +6,10 @@ La source d'identité principale est `settings/users.json`.
 
 Comportement important :
 
-- ✅ Si `users.json` n'existe pas, `UnyPort` initialise un premier compte admin
-- ✅ L'email initialise est `démo@unyport.app`
+- Si `users.json` n'existe pas, `UnyPort` initialise un premier compte admin
+- L'email initialise est `démo@unyport.app`
 - ⭕ Le mot de passe vient de `UNYPORT_ADMIN_PASSWORD` ou retombe sur la valeur intégrée
-- ✅ Le dépôt fournit aussi actuellement un utilisateur local de démo pour l'evaluation de la source
+- Le dépôt fournit aussi actuellement un utilisateur local de démo pour l'evaluation de la source
 
 Cela signifie que le parcours de déploiement et le parcours d'evaluation du dépôt sont proches, mais pas identiques.
 
@@ -31,34 +31,34 @@ Dans l'UI actuelle, les viewers peuvent consulter le portail mais ne peuvent pas
 ## Fournisseurs OAuth
 OAuth est implémente pour :
 
-- ✅ GitHub
-- ✅ GitLab
+- GitHub
+- GitLab
 
 Les déclarations fournisseurs vivent dans `settings/config.yaml`. Les valeurs d'exemple sont volontairement ignorées, de sorte qu'OAuth n'est actif que lorsqu'un vrai `client_id`, un vrai `client_secret` et une vraie `redirect_url` sont renseignes.
 
 ## Modèle de session
 Après authentification, `UnyPort` émet un cookie JWT :
 
-- ✅ Signe avec `security.jwt_secret`
-- ✅ Stocke en cookie HTTP-only
-- ✅ Protégé par le réglage `https` pour le comportement secure-cookie
-- ✅ Borne dans le temps selon `security_extra.session_timeout_mins`
+- Signe avec `security.jwt_secret`
+- Stocke en cookie HTTP-only
+- Protégé par le réglage `https` pour le comportement secure-cookie
+- Borne dans le temps selon `security_extra.session_timeout_mins`
 
 ## CSRF, limitation et trusted origins
 L'application impose aussi :
 
-- ✅ Une protection CSRF avec un endpoint dédié `/api/csrf`
-- ✅ Une limitation de login, `5` tentatives par minute par défaut
-- ✅ Une validation des trusted origins pour les requêtes qui modifient l'état
+- Une protection CSRF avec un endpoint dédié `/api/csrf`
+- Une limitation de login, `5` tentatives par minute par défaut
+- Une validation des trusted origins pour les requêtes qui modifient l'état
 
 Si `trusted_origins` est vide, `UnyPort` calcule une liste par défaut à partir des interfaces actives locales sur le port `8800`.
 
 ## Actions admin
 Les actions d'écriture réservées aux admins incluent actuellement :
 
-- ✅ Créer des utilisateurs
-- ✅ Changer les rôles
-- ✅ Supprimer un utilisateur sauf son propre compte
-- ✅ Mettre à jour ou réinitialiser le branding de l'instance
+- Créer des utilisateurs
+- Changer les rôles
+- Supprimer un utilisateur sauf son propre compte
+- Mettre à jour ou réinitialiser le branding de l'instance
 
 Ce périmètre garde l'administration explicite et limitée.

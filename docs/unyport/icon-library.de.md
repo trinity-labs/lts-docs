@@ -6,9 +6,9 @@ description: "Beschrifteter Katalog der in UnyPort verfügbaren Netzwerk- und Sp
 
 Diese Referenz zeigt die tatsächlich mit UnyPort ausgelieferten SVG-Dateien. Sie hilft dabei, Karten, Geräte und Datenträger einheitlich zu beschriften.
 
-✅ Die Beschriftung unter jedem Symbol entspricht dem Namen der Quelldatei.
+- Die Beschriftung unter jedem Symbol entspricht dem Namen der Quelldatei.
 
-➡️ [Bildschirme mit diesen Symbolen anzeigen](manual.md#visuelle-orientierung)
+- ➡️ [Bildschirme mit diesen Symbolen anzeigen](manual.md#visuelle-orientierung)
 
 ## Geräte
 

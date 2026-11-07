@@ -4,11 +4,11 @@ social_image: "https://trinity-net.com/img/products/trinity/hero-trinity.png"
 ---
 
 # TRINITY
-✅ Choisir le produit correspondant au besoin avant de suivre une procédure.
+- Choisir le produit correspondant au besoin avant de suivre une procédure.
 
-⭕ Ne jamais publier de jeton, secret ou donnée de session dans un rapport.
+- ⭕ Ne jamais publier de jeton, secret ou donnée de session dans un rapport.
 
-➡️ Vérifier les surfaces publiques essentielles :
+- ➡️ Vérifier les surfaces publiques essentielles :
 
 ```bash
 curl -fsSI https://trinity-net.com/
@@ -29,15 +29,15 @@ curl -fsS https://ip.trinity-net.com/api | jq .
 
 Elle constitue la surface publique principale pour :
 
-- ✅ L'identité et l'accès aux comptes
-- ✅ Les flux de commande et de provisionnement
-- ✅ L'orchestration du cycle de vie des VM
-- ✅ L'accès console
-- ✅ La publication de téléchargements préparés
+- L'identité et l'accès aux comptes
+- Les flux de commande et de provisionnement
+- L'orchestration du cycle de vie des VM
+- L'accès console
+- La publication de téléchargements préparés
 
 Dans le corpus public, `TRINITY` est documentée aux côtés des deux architectures complémentaires qui complètent la plateforme :
 
-- ✅ `UnyDesk` Pour l'accès distant
-- ✅ `UnyPort` Pour le pilotage des services
+- `UnyDesk` Pour l'accès distant
+- `UnyPort` Pour le pilotage des services
 
 Cette documentation commence par `TRINITY` parce qu'elle est le centre fonctionnel de la plateforme, pas parce que les autres architectures seraient secondaires.

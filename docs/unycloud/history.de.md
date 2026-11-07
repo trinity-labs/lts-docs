@@ -4,11 +4,11 @@ Diese Seite nimmt die nützliche Geschichte aus der Admin-Dokumentation zurück 
 ## Filebrowser Base
 Die erste Basis ist ein Filebrowser-Service, der sich `<cloud-host>`mit:
 
-- ✅ Ein Projekt besteht aus `docker_cloud`
-- ✅ Ein Upstream-Bild `filebrowser/filebrowser:latest`
-- ✅ Eine anhaltende lokale Basis
-- ✅ Eine Speicheranordnung unter `/srv`
-- ✅ Ein Branding Tree, der im Container montiert ist
+- Ein Projekt besteht aus `docker_cloud`
+- Ein Upstream-Bild `filebrowser/filebrowser:latest`
+- Eine anhaltende lokale Basis
+- Eine Speicheranordnung unter `/srv`
+- Ein Branding Tree, der im Container montiert ist
 
 Dieser Schritt stellt die Hauptfähigkeit fest: Offenlegen einer Webdatei, die unter einer TRINITY-URL surft.
 
@@ -20,8 +20,8 @@ Die `2026-08-29`, `UnyCloud 0.0.1` legt offiziell die Gabel von Filebrowser gepf
 ## Branding UnyCloud
 Die dokumentierte Historie auf der Filebrowser-Seite zeigt dann die Trennung zwischen:
 
-- ✅ Native Branding geladen von `custom.css`
-- ✅ Die im Rahmen der `/static/...`
+- Native Branding geladen von `custom.css`
+- Die im Rahmen der `/static/...`
 - ⭕ Branding-Scripts, die nicht unbedingt von der Login-Seite ausgeführt werden
 
 Dieser Punkt erklärt, warum `UnyCloud` muss das Branding als Produktteil dokumentieren, aber den Verhaltensfehler im Admin behalten.
@@ -39,9 +39,9 @@ bis `2026-08-30`, zeigt das lokale Repository an `UNYCLOUD_VERSION=0.9.15`Die Gi
 ## Aktueller Status
 Heute, `UnyCloud` ist zu verstehen als:
 
-- ✅ Cloud-basierter Produktbereich
-- ✅ Eine Filebrowser-kompatible Laufzeit, die von UnyCloud verwaltet wird
-- ✅ Eine spezifische Branding-Trinity
-- ✅ Ein Dienst, dessen sichtbares Verhalten auch vom Proxy abhängt
+- Cloud-basierter Produktbereich
+- Eine Filebrowser-kompatible Laufzeit, die von UnyCloud verwaltet wird
+- Eine spezifische Branding-Trinity
+- Ein Dienst, dessen sichtbares Verhalten auch vom Proxy abhängt
 
 Die wichtige Geschichte ist nicht nur die Installation eines Containers, sondern die Umwandlung von Filebrowser in einen UlyCloud-Service, der genutzt, gebrandmarkt und in den Rest von TRINITY integriert werden kann.

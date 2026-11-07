@@ -27,21 +27,21 @@ Ouvrir UnyDesk
 ## Avant la première utilisation
 Préparer :
 
-- ✅ L'URL `UnyDesk` attendue
-- ✅ Le système cible et l'architecture CPU
-- ✅ Le choix entre installation ou lancement ponctuel du host
-- ✅ Le mode d'accès lié au compte ou autonome
-- ✅ L'obligation éventuelle d'une approbation locale sur le host
+- L'URL `UnyDesk` attendue
+- Le système cible et l'architecture CPU
+- Le choix entre installation ou lancement ponctuel du host
+- Le mode d'accès lié au compte ou autonome
+- L'obligation éventuelle d'une approbation locale sur le host
 
 ## Ce qu'il faut surveiller pendant une session
 Les signaux publics utiles incluent :
 
-- ✅ L'état en ligne ou hors ligne du host
-- ✅ L'état de session : pending, offered, active ou closed
-- ✅ Le nombre de dispatch et le dernier accusé host
-- ✅ La progression offer / answer WebRTC
-- ✅ L'heure de mise à jour de l'écran de secours
-- ✅ Les erreurs de capture visibles quand le host ne peut pas produire d'image
+- L'état en ligne ou hors ligne du host
+- L'état de session : pending, offered, active ou closed
+- Le nombre de dispatch et le dernier accusé host
+- La progression offer / answer WebRTC
+- L'heure de mise à jour de l'écran de secours
+- Les erreurs de capture visibles quand le host ne peut pas produire d'image
 
 ## Quand changer de surface
 Utiliser `TRINITY` pour les sujets compte, service, facture ou support. Utiliser `UnyPort` pour la supervision host ou l'exploitation locale. Rester dans `UnyDesk` pour l'accès distant, le comportement viewer, la confiance host ou le routage de session.

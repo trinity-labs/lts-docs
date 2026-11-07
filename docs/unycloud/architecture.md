@@ -24,10 +24,10 @@ Cette couche compte aussi pour le comportement de login, notamment lorsque le bu
 ## Couche 3 - runtime compatible Filebrowser
 Le runtime UnyCloud conserve le contrat Filebrowser : mêmes commandes, même base, mêmes fichiers de configuration et même nom de binaire possible pour les services existants. Le service lit :
 
-- ✅ Une base persistante
-- ✅ Un fichier de configuration
-- ✅ Un arbre de branding
-- ✅ Un stockage racine monté
+- Une base persistante
+- Un fichier de configuration
+- Un arbre de branding
+- Un stockage racine monté
 
 ## Couche 4 - stockage
 Le stockage est présenté au conteneur comme racine de navigation. L'objectif est de rendre les fichiers disponibles sans coupler l'interface web à un backend applicatif lourd.

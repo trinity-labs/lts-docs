@@ -4,23 +4,23 @@
 ## Visible surfaces
 The visible surface rests on:
 
-- ✅ A branded login page
-- ✅ A file browsing
-- ✅ Deposit and download shares
-- ✅ File Operations
-- ✅ An exposure of static branding assets
+- A branded login page
+- A file browsing
+- Deposit and download shares
+- File Operations
+- An exposure of static branding assets
 
 ## Target users
 `UnyCloud` aims:
 
-- ✅ Users who need to recover or file files
-- ✅ Support teams preparing deliverables
-- ✅ Administrators who check access to storage
+- Users who need to recover or file files
+- Support teams preparing deliverables
+- Administrators who check access to storage
 
 ## Place in the ecosystem
 `UnyCloud` complete the other surfaces:
 
-- ✅ `TRINITY` carry accounts, orders and services
-- ✅ `UnyCloud` carries the files accessible by browser
-- ✅ `UnyDesk` carries remote access
-- ✅ `UnyPort` carries operator supervision
+- `TRINITY` carry accounts, orders and services
+- `UnyCloud` carries the files accessible by browser
+- `UnyDesk` carries remote access
+- `UnyPort` carries operator supervision

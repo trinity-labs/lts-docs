@@ -4,9 +4,9 @@ social_image: "https://unyport.app/média/img/logos/logo-unyport-full.png"
 ---
 
 # UnyPort
-✅ Identify the host and service before taking action.
-⭕ Never expose a proxy or administration token.
-➡️ Check public availability:
+- Identify the host and service before taking action.
+- ⭕ Never expose a proxy or administration token.
+- ➡️ Check public availability:
 ```bash
 curl -fsSI https://unyport.app/
 ```
@@ -17,16 +17,16 @@ curl -fsSI https://unyport.app/
 
 Publicly, `UnyPort` brings together:
 
-- ✅ Authenticated operator access
-- ✅ Live visibility on the host and services
-- ✅ Explicit Xen context for Dom0 and DomU environments
-- ✅ Access control to some internal applications such as `ttyd`
-- ✅ Operational pages for security, storage, network and system status
+- Authenticated operator access
+- Live visibility on the host and services
+- Explicit Xen context for Dom0 and DomU environments
+- Access control to some internal applications such as `ttyd`
+- Operational pages for security, storage, network and system status
 
 `UnyPort` Works with two complementary surfaces:
 
-- ✅ `TRINITY` For customer life cycle, orders, billing and service entry points
-- ✅ `UnyDesk` For remote access and support workflows
+- `TRINITY` For customer life cycle, orders, billing and service entry points
+- `UnyDesk` For remote access and support workflows
 
 ## Start here
 For practical reading, the recommended order is:

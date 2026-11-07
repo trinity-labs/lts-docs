@@ -4,21 +4,21 @@
 ## Runtime model
 The service is built around:
 
-- ✅ One Go backend
-- ✅ One primary HTTP listening address
-- ✅ Optional native HTTP/3 when certificates are configured
-- ✅ Static frontend assets
-- ✅ Settings files for users, hosts, trusted hosts and public identity
-- ✅ Host download artifacts served from the configured download directory
+- One Go backend
+- One primary HTTP listening address
+- Optional native HTTP/3 when certificates are configured
+- Static frontend assets
+- Settings files for users, hosts, trusted hosts and public identity
+- Host download artifacts served from the configured download directory
 
 ## Reverse proxy model
 For an Internet-facing deployment, the usual model is:
 
-- ✅ Expose `UnyDesk` behind a reverse proxy
-- ✅ Forward the original host and client address headers
-- ✅ Keep cookies and CSRF behavior consistent with the public URL
-- ✅ Expose websocket upgrade paths for host and session channels
-- ✅ Terminate TLS at the proxy unless native TLS/HTTP3 is intentionally enabled
+- Expose `UnyDesk` behind a reverse proxy
+- Forward the original host and client address headers
+- Keep cookies and CSRF behavior consistent with the public URL
+- Expose websocket upgrade paths for host and session channels
+- Terminate TLS at the proxy unless native TLS/HTTP3 is intentionally enabled
 
 ## Public endpoints to preserve
 Deployments must preserve:
