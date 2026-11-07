@@ -4,9 +4,9 @@ social_image: "https://trinity-net.com/img/products/trinity/hero-trinity.png"
 ---
 
 # TRINITY
-![Identité visuelle TRINITY](../assets/images/projects/trinity/logo-trinity.png){ .unyport-screen }
+![Identité visuelle TRINITY](../assets/images/projects/trinity/logo-trinity.png){ .unyport-screen .trinity-project-logo }
 
-- Utiliser le portail pour les comptes, commandes, factures et consoles.
+- ✅ Utiliser le portail pour les comptes, commandes, factures et consoles.
 - ⭕ Ne jamais transmettre un jeton de session dans une demande de support.
 - ➡️ Vérifier la disponibilité publique avant un parcours client :
 ```bash

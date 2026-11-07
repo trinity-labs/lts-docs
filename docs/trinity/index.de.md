@@ -4,9 +4,9 @@ social_image: "https://trinity-net.com/img/products/trinity/hero-trinity.png"
 ---
 
 # TRINITY
-![Visuelle Identität von TRINITY](../assets/images/projects/trinity/logo-trinity.png){ .unyport-screen }
+![Visuelle Identität von TRINITY](../assets/images/projects/trinity/logo-trinity.png){ .unyport-screen .trinity-project-logo }
 
-- Das Portal für Konten, Bestellungen, Rechnungen und Konsolen verwenden.
+- ✅ Das Portal für Konten, Bestellungen, Rechnungen und Konsolen verwenden.
 - ⭕ Niemals ein Sitzungstoken an eine Supportanfrage anhängen.
 - ➡️ Vor einem Kundenablauf die öffentliche Verfügbarkeit prüfen:
 ```bash

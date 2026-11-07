@@ -266,6 +266,13 @@ article li {
     border: 0;
     border-radius: 0.5rem;
 }
+
+.md-typeset img.trinity-project-logo {
+    width: min(100%, 24rem);
+    margin: 1rem auto 1.5rem;
+    border: 0;
+    box-shadow: none;
+}
     display: block;
     height: 1.2rem;
     width: 1.2rem;

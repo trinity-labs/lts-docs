@@ -4,9 +4,9 @@ social_image: "https://trinity-net.com/img/products/trinity/hero-trinity.png"
 ---
 
 # TRINITY
-![TRINITY visual identity](../assets/images/projects/trinity/logo-trinity.png){ .unyport-screen }
+![TRINITY visual identity](../assets/images/projects/trinity/logo-trinity.png){ .unyport-screen .trinity-project-logo }
 
-- Use the portal for accounts, orders, invoices and consoles.
+- ✅ Use the portal for accounts, orders, invoices and consoles.
 - ⭕ Never include a session token in a support request.
 - ➡️ Check public availability before starting a customer journey:
 ```bash
