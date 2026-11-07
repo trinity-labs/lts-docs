@@ -4,7 +4,7 @@ social_image: "https://trinity-net.com/img/products/trinity/hero-trinity.png"
 ---
 
 # TRINITY
-- Choisir le produit correspondant au besoin avant de suivre une procédure.
+- ✅ Choisir le produit correspondant au besoin avant de suivre une procédure.
 
 - ⭕ Ne jamais publier de jeton, secret ou donnée de session dans un rapport.
 
@@ -18,7 +18,7 @@ curl -fsS https://ip.trinity-net.com/api | jq .
 ## Produits documentés
 
 <div class="unyport-icon-grid">
-  <figure><img src="assets/images/projects/trinity/logo-trinity.png" alt="TRINITY"><figcaption><a href="trinity/">TRINITY</a></figcaption></figure>
+  <figure class="trinity-home-logo"><img src="assets/images/projects/trinity/logo-trinity.png" alt="TRINITY"><figcaption><a href="trinity/">TRINITY</a></figcaption></figure>
   <figure><img src="assets/images/projects/scan/scan-report.png" alt="Rapport Scan"><figcaption><a href="scan/">Scan / Audit</a></figcaption></figure>
   <figure><img src="assets/images/projects/ip/ip-diagnostic.png" alt="Diagnostic IP"><figcaption><a href="ip/">IP</a></figcaption></figure>
   <figure><img src="assets/images/projects/unydesk/logo-unydesk.jpg" alt="UnyDesk"><figcaption><a href="unydesk/">UnyDesk</a></figcaption></figure>

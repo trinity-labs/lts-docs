@@ -243,6 +243,13 @@ article li {
     width: 4rem;
     height: 4rem;
     object-fit: contain;
+    border: 0;
+    box-shadow: none;
+}
+
+.unyport-icon-grid .trinity-home-logo img {
+    width: 2.75rem;
+    height: 2.75rem;
 }
 
 .unyport-icon-grid figcaption {
@@ -256,7 +263,7 @@ article li {
     display: block;
     width: 100%;
     margin: 1rem auto 2rem;
-    border: 1px solid var(--md-default-fg-color--lightest);
+    border: 0;
     border-radius: 0.5rem;
 }
     display: block;
@@ -339,6 +346,11 @@ a.md-nav__link.md-nav__link--active {
     display: block;
     width: 100%;
     border-radius: 3px;
+}
+
+.md-typeset img {
+    border: 0 !important;
+    box-shadow: none !important;
 }
 
 .md-typeset code {
