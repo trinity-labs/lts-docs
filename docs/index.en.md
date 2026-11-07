@@ -4,7 +4,7 @@ social_image: "https://trinity-net.com/img/products/trinity/hero-trinity.png"
 ---
 
 # TRINITY
-- Select the product that matches the need before following a procedure.
+- ✅ Select the product that matches the need before following a procedure.
 
 - ⭕ Never publish a token, secret or session value in a report.
 
@@ -18,7 +18,7 @@ curl -fsS https://ip.trinity-net.com/api | jq .
 ## Documented products
 
 <div class="unyport-icon-grid">
-  <figure><img src="assets/images/projects/trinity/logo-trinity.png" alt="TRINITY"><figcaption><a href="trinity/">TRINITY</a></figcaption></figure>
+  <figure class="trinity-home-logo"><img src="assets/images/projects/trinity/logo-trinity.png" alt="TRINITY"><figcaption><a href="trinity/">TRINITY</a></figcaption></figure>
   <figure><img src="assets/images/projects/scan/scan-report.png" alt="Scan report"><figcaption><a href="scan/">Scan / Audit</a></figcaption></figure>
   <figure><img src="assets/images/projects/ip/ip-diagnostic.png" alt="IP diagnostic"><figcaption><a href="ip/">IP</a></figcaption></figure>
   <figure><img src="assets/images/projects/unydesk/logo-unydesk.jpg" alt="UnyDesk"><figcaption><a href="unydesk/">UnyDesk</a></figcaption></figure>
