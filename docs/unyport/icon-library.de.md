@@ -129,13 +129,6 @@ Diese Referenz zeigt die tatsächlich mit UnyPort ausgelieferten SVG-Dateien. Si
   <figure><img src="../../assets/images/unyport/icons/os/zorin_os.svg" alt="zorin os"><figcaption>zorin os</figcaption></figure>
 </div>
 
-## Vorschauen
-
-<div class="unyport-icon-grid">
-  <figure><img src="../../assets/images/unyport/icons/preview/apercu_set.svg" alt="apercu set"><figcaption>apercu set</figcaption></figure>
-  <figure><img src="../../assets/images/unyport/icons/preview/apercu_stockage.svg" alt="apercu stockage"><figcaption>apercu stockage</figcaption></figure>
-</div>
-
 ## Smart Home
 
 <div class="unyport-icon-grid">

@@ -341,6 +341,17 @@ a.md-nav__link.md-nav__link--active {
     border-radius: 3px;
 }
 
+.md-typeset code {
+    padding: 0 .2941176471em;
+    font-size: .85em;
+    word-break: break-word;
+    background-color: var(--md-code-bg-color);
+    border-radius: 4px;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    transition: color 125ms, background-color 125ms;
+}
+
 .md-typeset pre {
     display: flow-root;
     line-height: 1.4;

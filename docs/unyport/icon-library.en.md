@@ -129,13 +129,6 @@ This reference presents the SVG files actually shipped with UnyPort. Use it to c
   <figure><img src="../../assets/images/unyport/icons/os/zorin_os.svg" alt="zorin os"><figcaption>zorin os</figcaption></figure>
 </div>
 
-## Previews
-
-<div class="unyport-icon-grid">
-  <figure><img src="../../assets/images/unyport/icons/preview/apercu_set.svg" alt="apercu set"><figcaption>apercu set</figcaption></figure>
-  <figure><img src="../../assets/images/unyport/icons/preview/apercu_stockage.svg" alt="apercu stockage"><figcaption>apercu stockage</figcaption></figure>
-</div>
-
 ## Smart home
 
 <div class="unyport-icon-grid">
