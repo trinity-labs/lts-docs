@@ -4,6 +4,14 @@ social_image: "https://trinity-net.com/img/products/trinity/hero-trinity.png"
 ---
 
 # TRINITY
+![TRINITY visual identity](../assets/images/projects/trinity/logo-trinity.png){ .unyport-screen }
+
+✅ Use the portal for accounts, orders, invoices and consoles.
+⭕ Never include a session token in a support request.
+➡️ Check public availability before starting a customer journey:
+```bash
+curl -fsSI https://trinity-net.com/
+```
 `TRINITY` is the central website and customer-facing surface of the `TRINITY` Edge Networks platform. It is the place where users discover services, create an account, place orders, follow payments, download invoices, open a console and request support. The public documentation therefore describes `TRINITY` as a product experience and customer journey, not as a raw technical control panel.
 
 Publicly, `TRINITY` brings together:

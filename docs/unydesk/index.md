@@ -4,6 +4,14 @@ social_image: "https://unydesk.app/assets/logo-unydesk.jpg"
 ---
 
 # UnyDesk
+![Identité UnyDesk](../assets/images/projects/unydesk/logo-unydesk.jpg){ .unyport-screen }
+
+✅ Vérifier que le host est en ligne avant de demander une session distante.
+⭕ Un code d’association ou un jeton de provisionnement doit rester confidentiel.
+➡️ Distinguer clairement les rôles dans un diagnostic :
+```text
+viewer -> broker UnyDesk -> host -> transport direct ou relais
+```
 `UnyDesk` est le service d'accès distant de l'écosystème `TRINITY` Edge Networks. C'est la surface publique utilisée pour télécharger un paquet host, pairer ou associer un host, démarrer une session distante et garder cette session exploitable même lorsque le meilleur chemin de transport n'est pas immédiatement disponible.
 
 Contrairement à `TRINITY`, qui reste le portail client et services, `UnyDesk` est centré sur :

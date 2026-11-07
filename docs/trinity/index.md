@@ -4,6 +4,14 @@ social_image: "https://trinity-net.com/img/products/trinity/hero-trinity.png"
 ---
 
 # TRINITY
+![Identité visuelle TRINITY](../assets/images/projects/trinity/logo-trinity.png){ .unyport-screen }
+
+✅ Utiliser le portail pour les comptes, commandes, factures et consoles.
+⭕ Ne jamais transmettre un jeton de session dans une demande de support.
+➡️ Vérifier la disponibilité publique avant un parcours client :
+```bash
+curl -fsSI https://trinity-net.com/
+```
 `TRINITY` est le site central de la plateforme `TRINITY` Edge Networks. C'est depuis cette surface que l'utilisateur découvre les services, crée un compte, passe une commande, suit ses paiements, télécharge ses factures, ouvre une console ou sollicite le support. La documentation publique décrit donc `TRINITY` comme une expérience produit et un parcours client complet, pas comme un simple panneau technique.
 
 `TRINITY` regroupe publiquement :

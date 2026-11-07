@@ -4,6 +4,14 @@ social_image: "https://docs.trinity-net.com/assets/images/social/og-favicon.png"
 ---
 
 # UnyCloud
+![UnyCloud interface](../assets/images/projects/unycloud/unycloud-screen.jpg){ .unyport-screen }
+
+✅ Check the file and its destination before every upload.
+⭕ Revoke a sharing link as soon as it is no longer required.
+➡️ Check the content type returned by the cloud surface:
+```bash
+curl -fsSI https://cloud.trinity-net.com/
+```
 `UnyCloud` is the cloud area of ecosystem files `TRINITY`It exposes `<cloud-domain>` as a browser space, repository, download and file sharing, while relying on a maintained filebrowser fork.
 
 Publicly, `UnyCloud` brings together:

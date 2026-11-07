@@ -4,6 +4,14 @@ social_image: "https://docs.trinity-net.com/assets/images/social/og-favicon.png"
 ---
 
 # UnyCloud
+![UnyCloud-Oberfläche](../assets/images/projects/unycloud/unycloud-screen.jpg){ .unyport-screen }
+
+✅ Vor jedem Upload Datei und Ziel prüfen.
+⭕ Einen Freigabelink widerrufen, sobald er nicht mehr benötigt wird.
+➡️ Den von der Cloud-Oberfläche gelieferten Inhaltstyp prüfen:
+```bash
+curl -fsSI https://cloud.trinity-net.com/
+```
 `UnyCloud` ist der Cloud-Bereich von Ökosystem-Dateien `TRINITY`Es entblößt `<cloud-domain>` als Browserspace, Repository, Download und Filesharing, während man sich auf eine gepflegte Filebrowser-Fork verlässt.
 
 öffentlich, `UnyCloud` führt zusammen:
