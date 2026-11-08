@@ -199,6 +199,8 @@ function initTrinityHighlighting() {
 
   document.querySelectorAll(".md-typeset pre code").forEach((block) => {
     if (block.dataset.trinityHljsDone === "1") return;
+    const source = block.textContent || "";
+    block.textContent = source;
     window.hljs.highlightElement(block);
     block.dataset.trinityHljsDone = "1";
   });
