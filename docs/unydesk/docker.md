@@ -3,7 +3,7 @@ Cette page publique conserve uniquement les informations utiles pour comprendre 
 
 Source de référence :
 
-- ➡️ `/var/docker/docker_unydesk/docker-compose.yml`
+- ➡️ `<deployment-root>/unydesk/docker-compose.yml`
 
 Les détails de build internes, les commandes longues de packaging et les valeurs sensibles ne sont pas publiés ici.
 
@@ -15,7 +15,7 @@ Les détails de build internes, les commandes longues de packaging et les valeur
 | Conteneur | `unydesk` |
 | Répertoire de travail | `/app/unydesk/backend` |
 | Port interne | `8890/tcp` |
-| Bind hôte | `192.168.3.5:8890` |
+| Bind hôte | `<internal-host>:8890` |
 | Mode de redémarrage | `unless-stopped` |
 
 ## Service
@@ -29,9 +29,9 @@ services:
     working_dir: /app/unydesk/backend
     restart: unless-stopped
     ports:
-      - "192.168.3.5:8890:8890"
+      - "${UNYDESK_BIND_ADDRESS:-127.0.0.1}:8890:8890"
     volumes:
-      - /var/docker/docker_unydesk/unydesk:/app/unydesk
+      - <deployment-root>/unydesk:/app/unydesk
       - go-cache:/root/go/pkg/mod
       - go-build-cache:/root/.cache/go-build
 ```
@@ -73,7 +73,7 @@ Le service s'appuie sur trois volumes principaux :
 
 | Type | Source | Destination | Rôle |
 | --- | --- | --- | --- |
-| Code applicatif | `/var/docker/docker_unydesk/unydesk` | `/app/unydesk` | sources backend/frontend |
+| Code applicatif | `<deployment-root>/unydesk` | `/app/unydesk` | sources backend/frontend |
 | Cache Go modules | `go-cache` | `/root/go/pkg/mod` | dépendances Go persistées |
 | Cache Go build | `go-build-cache` | `/root/.cache/go-build` | cache de compilation Go |
 
@@ -82,10 +82,10 @@ Le port applicatif est exposé sur l'adresse interne Docker host :
 
 | Hôte | Conteneur | Usage |
 | --- | --- | --- |
-| `192.168.3.5:8890` | `8890/tcp` | accès interne avant reverse proxy |
+| `<internal-host>:8890` | `8890/tcp` | accès interne avant reverse proxy |
 
 ```text
-192.168.3.5:8890 -> 8890/tcp
+<internal-host>:8890 -> 8890/tcp
 ```
 
 L'accès public passe ensuite par le reverse proxy de la plateforme.

@@ -3,7 +3,7 @@ This public page only retains the information useful to understand the Docker ru
 
 Source of reference:
 
-- ➡️ `/var/docker/docker_unydesk/docker-compose.yml`
+- ➡️ `<deployment-root>/unydesk/docker-compose.yml`
 
 Internal build details, long packaging commands and sensitive values are not published here.
 
@@ -15,7 +15,7 @@ Internal build details, long packaging commands and sensitive values are not pub
 | Container | `unydesk` |
 | Work Directory | `/app/unydesk/backend` |
 | Internal port | `8890/tcp` |
-| Bind host | `192.168.3.5:8890` |
+| Bind host | `<internal-host>:8890` |
 | Reboot mode | `unless-stopped` |
 
 ## Service
@@ -29,9 +29,9 @@ services:
     working_dir: /app/unydesk/backend
     restart: unless-stopped
     ports:
-      - "192.168.3.5:8890:8890"
+      - "${UNYDESK_BIND_ADDRESS:-127.0.0.1}:8890:8890"
     volumes:
-      - /var/docker/docker_unydesk/unydesk:/app/unydesk
+      - <deployment-root>/unydesk:/app/unydesk
       - go-cache:/root/go/pkg/mod
       - go-build-cache:/root/.cache/go-build
 ```
@@ -73,7 +73,7 @@ The service is based on three main volumes:
 
 | Type | Source | Destination | Role |
 | --- | --- | --- | --- |
-| Application code | `/var/docker/docker_unydesk/unydesk` | `/app/unydesk` | sources backend/frontend |
+| Application code | `<deployment-root>/unydesk` | `/app/unydesk` | backend/frontend sources |
 | Go cache modules | `go-cache` | `/root/go/pkg/mod` | Go addictions persisted |
 | Cache Go built | `go-build-cache` | `/root/.cache/go-build` | Go compilation cache |
 
@@ -82,10 +82,10 @@ The application port is displayed on the Docker host internal address:
 
 | Host | Container | Use |
 | --- | --- | --- |
-| `192.168.3.5:8890` | `8890/tcp` | internal access before reverse proxy |
+| `<internal-host>:8890` | `8890/tcp` | internal access before reverse proxy |
 
 ```text
-192.168.3.5:8890 -> 8890/tcp
+<internal-host>:8890 -> 8890/tcp
 ```
 
 Public access then passes through the platform's proxy reverse.

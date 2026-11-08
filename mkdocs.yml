@@ -17,11 +17,11 @@ docs_dir: docs
 
 extra_css:
   - assets/vendor/highlightjs/monokai.min.css?v=11.11.1-local
-  - assets/stylesheets/extra.css?v=v.4.36.29
+  - assets/stylesheets/extra.css?v=v.4.36.30
 
 extra_javascript:
   - assets/vendor/highlightjs/highlight.min.js?v=11.11.1-local
-  - assets/javascripts/extra.js?v=v.4.36.29
+  - assets/javascripts/extra.js?v=v.4.36.30
 
 # -------------------------------------------------------------------
 # Plugins

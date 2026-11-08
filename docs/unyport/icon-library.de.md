@@ -8,7 +8,7 @@ Diese Referenz zeigt die tatsächlich mit UnyPort ausgelieferten SVG-Dateien. Si
 
 - Die Beschriftung unter jedem Symbol entspricht dem Namen der Quelldatei.
 
-- ➡️ [Bildschirme mit diesen Symbolen anzeigen](manual.md#visuelle-orientierung)
+- ➡️ [Bildschirme mit diesen Symbolen anzeigen](manual.de.md#visuelle-orientierung)
 
 ## Geräte
 
@@ -272,4 +272,3 @@ Diese Referenz zeigt die tatsächlich mit UnyPort ausgelieferten SVG-Dateien. Si
   <figure><img src="../../assets/images/unyport/icons/transport/vehicle_charging_station.svg" alt="vehicle charging station"><figcaption>vehicle charging station</figcaption></figure>
   <figure><img src="../../assets/images/unyport/icons/transport/vehicle_ecu.svg" alt="vehicle ecu"><figcaption>vehicle ecu</figcaption></figure>
 </div>
-

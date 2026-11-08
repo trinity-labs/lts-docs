@@ -1,6 +1,6 @@
 # Gebrauchsanweisung
 
-## Sichtvermerk
+## Visuelle Orientierung
 
 ![Écran de connexion UnyPort](../assets/images/unyport/screens/login.png){ .unyport-screen }
 

@@ -8,7 +8,7 @@ This reference presents the SVG files actually shipped with UnyPort. Use it to c
 
 - The label below each icon matches its source filename.
 
-- ➡️ [See the screens that use these pictograms](manual.md#visual-reference)
+- ➡️ [See the screens that use these pictograms](manual.en.md#visual-reference)
 
 ## Devices
 
@@ -272,4 +272,3 @@ This reference presents the SVG files actually shipped with UnyPort. Use it to c
   <figure><img src="../../assets/images/unyport/icons/transport/vehicle_charging_station.svg" alt="vehicle charging station"><figcaption>vehicle charging station</figcaption></figure>
   <figure><img src="../../assets/images/unyport/icons/transport/vehicle_ecu.svg" alt="vehicle ecu"><figcaption>vehicle ecu</figcaption></figure>
 </div>
-

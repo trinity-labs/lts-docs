@@ -3,7 +3,7 @@ Diese Seite bringt Docker-Events zusammen, die dem Projekt entsprechen `UnyPort`
 
 Ausgewählte Quelle:
 
-- ➡️ `/var/docker/docker_unyport/docker-compose.yml`
+- ➡️ `<deployment-root>/unyport/docker-compose.yml`
 
 Keine `Dockerfile` gewidmet wurde gefunden für `UnyPort`Runtime verwendet Upstream-Bild `golang:alpine`.
 
