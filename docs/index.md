@@ -23,7 +23,7 @@ curl -fsS https://ip.trinity-net.com/api | jq .
   <figure><img src="assets/images/projects/ip/ip-diagnostic.png" alt="Diagnostic IP"><figcaption><a href="ip/">IP</a></figcaption></figure>
   <figure><img src="assets/images/projects/unydesk/logo-unydesk.jpg" alt="UnyDesk"><figcaption><a href="unydesk/">UnyDesk</a></figcaption></figure>
   <figure><img src="assets/images/unyport/logo.jpg" alt="UnyPort"><figcaption><a href="unyport/">UnyPort</a></figcaption></figure>
-  <figure><img src="assets/images/projects/unycloud/unycloud-screen.jpg" alt="UnyCloud"><figcaption><a href="unycloud/">UnyCloud</a></figcaption></figure>
+  <figure><img src="assets/images/projects/unycloud/unycloud-logo.png" alt="UnyCloud"><figcaption><a href="unycloud/">UnyCloud</a></figcaption></figure>
 </div>
 `TRINITY` est l'architecture centrale de la plateforme.
 

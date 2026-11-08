@@ -4,7 +4,11 @@ social_image: "https://docs.trinity-net.com/assets/images/social/og-favicon.png"
 ---
 
 # UnyCloud
-![Interface UnyCloud](../assets/images/projects/unycloud/unycloud-screen.jpg){ .unyport-screen }
+![Logo UnyCloud](../assets/images/projects/unycloud/unycloud-logo.png){ .project-root-logo }
+
+## Interface actuelle
+
+![Écran de connexion UnyCloud actuel](../assets/images/projects/unycloud/unycloud-screen.png){ .unyport-screen }
 
 - Vérifier le fichier et sa destination avant tout téléversement.
 - ⭕ Un lien de partage doit être révoqué dès qu’il n’est plus nécessaire.

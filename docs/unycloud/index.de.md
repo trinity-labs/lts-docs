@@ -4,7 +4,11 @@ social_image: "https://docs.trinity-net.com/assets/images/social/og-favicon.png"
 ---
 
 # UnyCloud
-![UnyCloud-Oberfläche](../assets/images/projects/unycloud/unycloud-screen.jpg){ .unyport-screen }
+![UnyCloud-Logo](../assets/images/projects/unycloud/unycloud-logo.png){ .project-root-logo }
+
+## Aktuelle Oberfläche
+
+![Aktueller UnyCloud-Anmeldebildschirm](../assets/images/projects/unycloud/unycloud-screen.png){ .unyport-screen }
 
 - Vor jedem Upload Datei und Ziel prüfen.
 - ⭕ Einen Freigabelink widerrufen, sobald er nicht mehr benötigt wird.

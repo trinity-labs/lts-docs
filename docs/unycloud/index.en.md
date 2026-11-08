@@ -4,7 +4,11 @@ social_image: "https://docs.trinity-net.com/assets/images/social/og-favicon.png"
 ---
 
 # UnyCloud
-![UnyCloud interface](../assets/images/projects/unycloud/unycloud-screen.jpg){ .unyport-screen }
+![UnyCloud logo](../assets/images/projects/unycloud/unycloud-logo.png){ .project-root-logo }
+
+## Current interface
+
+![Current UnyCloud login screen](../assets/images/projects/unycloud/unycloud-screen.png){ .unyport-screen }
 
 - Check the file and its destination before every upload.
 - ⭕ Revoke a sharing link as soon as it is no longer required.

@@ -11,7 +11,7 @@ social_image: "https://unyport.app/média/img/logos/logo-unyport-full.png"
 curl -fsSI https://unyport.app/
 ```
 
-![UnyPort-Banner](../assets/images/unyport/unyport-git-banner.png){ .unyport-screen .project-root-logo }
+![UnyPort-Logo](../assets/images/unyport/logo.jpg){ .project-root-logo }
 
 `UnyPort` ist die ökosystembetreiberorientierte Überwachungsfläche `TRINITY`Es ist als leichte Go-App für Alpine Linux-Umgebungen mit expliziter Xen-Wiedergabe, Live-Systemstatus, Anwendungs-Proxy-Kontrolle und täglicher Host-Überwachung konzipiert.
 
