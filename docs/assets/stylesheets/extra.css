@@ -267,7 +267,8 @@ article li {
     border-radius: 0.5rem;
 }
 
-.md-typeset img.trinity-project-logo {
+.md-typeset img.trinity-project-logo,
+.md-typeset img.project-root-logo {
     width: min(100%, 24rem);
     margin: 1rem auto 1.5rem;
     border: 0;

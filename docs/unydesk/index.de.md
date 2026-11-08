@@ -4,7 +4,7 @@ social_image: "https://unydesk.app/assets/logo-unydesk.jpg"
 ---
 
 # UnyDesk
-![UnyDesk-Identität](../assets/images/projects/unydesk/logo-unydesk.jpg){ .unyport-screen }
+![UnyDesk-Identität](../assets/images/projects/unydesk/logo-unydesk.jpg){ .unyport-screen .project-root-logo }
 
 - Vor einer Remotesitzung prüfen, ob der Host online ist.
 - ⭕ Kopplungscodes und Bereitstellungstoken müssen vertraulich bleiben.

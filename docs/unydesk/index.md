@@ -4,7 +4,7 @@ social_image: "https://unydesk.app/assets/logo-unydesk.jpg"
 ---
 
 # UnyDesk
-![Identité UnyDesk](../assets/images/projects/unydesk/logo-unydesk.jpg){ .unyport-screen }
+![Identité UnyDesk](../assets/images/projects/unydesk/logo-unydesk.jpg){ .unyport-screen .project-root-logo }
 
 - Vérifier que le host est en ligne avant de demander une session distante.
 - ⭕ Un code d’association ou un jeton de provisionnement doit rester confidentiel.
