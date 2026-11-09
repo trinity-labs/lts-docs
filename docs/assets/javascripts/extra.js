@@ -356,9 +356,9 @@ function initTrinityDocsChrome() {
   };
   const copy = footerCopy[locale] || footerCopy.en;
   expandTrinityNavigation();
-  window.requestAnimationFrame(() => {
+  window.setTimeout(() => {
     window.requestAnimationFrame(() => keepTrinityActiveNavigationVisible());
-  });
+  }, 150);
   localizeTrinityNavigationLinks(locale);
 
   const headerInner = document.querySelector(".md-header__inner");
