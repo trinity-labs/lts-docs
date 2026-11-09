@@ -6,7 +6,7 @@ social_image: "https://unydesk.app/assets/logo-unydesk.jpg"
 # UnyDesk
 ![UnyDesk identity](../assets/images/projects/unydesk/logo-unydesk.jpg){ .unyport-screen .project-root-logo }
 
-- Confirm that the host is online before requesting a remote session.
+- ✅ Confirm that the host is online before requesting a remote session.
 - ⭕ Pairing codes and provisioning tokens must remain confidential.
 - ➡️ Keep each role explicit while diagnosing a session:
 ```text

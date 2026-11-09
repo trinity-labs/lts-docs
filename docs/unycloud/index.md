@@ -10,7 +10,7 @@ social_image: "https://docs.trinity-net.com/assets/images/social/og-favicon.png"
 
 ![Écran de connexion UnyCloud actuel](../assets/images/projects/unycloud/unycloud-screen.png){ .unyport-screen }
 
-- Vérifier le fichier et sa destination avant tout téléversement.
+- ✅ Vérifier le fichier et sa destination avant tout téléversement.
 - ⭕ Un lien de partage doit être révoqué dès qu’il n’est plus nécessaire.
 - ➡️ Contrôler le type de contenu renvoyé par la surface cloud :
 ```bash

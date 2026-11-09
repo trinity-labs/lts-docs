@@ -10,7 +10,7 @@ social_image: "https://docs.trinity-net.com/assets/images/social/og-favicon.png"
 
 ![Aktueller UnyCloud-Anmeldebildschirm](../assets/images/projects/unycloud/unycloud-screen.png){ .unyport-screen }
 
-- Vor jedem Upload Datei und Ziel prüfen.
+- ✅ Vor jedem Upload Datei und Ziel prüfen.
 - ⭕ Einen Freigabelink widerrufen, sobald er nicht mehr benötigt wird.
 - ➡️ Den von der Cloud-Oberfläche gelieferten Inhaltstyp prüfen:
 ```bash

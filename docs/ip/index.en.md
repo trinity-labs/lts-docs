@@ -1,7 +1,7 @@
 # IP
 ![TRINITY IP network diagnostic](../assets/images/projects/ip/ip-diagnostic.png){ .unyport-screen }
 
-- Compare IPv4 and IPv6 results when both stacks are available.
+- ✅ Compare IPv4 and IPv6 results when both stacks are available.
 - ⭕ IP geolocation is indicative and does not provide a precise position.
 - ➡️ Consume the structured response from a script:
 ```bash

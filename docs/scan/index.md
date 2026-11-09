@@ -1,7 +1,7 @@
 # Scan / Audit
 ![Rapport TRINITY Scan](../assets/images/projects/scan/scan-report.png){ .unyport-screen }
 
-- Scanner uniquement une cible que vous êtes autorisé à évaluer.
+- ✅ Scanner uniquement une cible que vous êtes autorisé à évaluer.
 - ⭕ Un score synthétique ne remplace pas la lecture des preuves du rapport.
 - ➡️ Contrôler le point d’entrée avant de lancer une analyse :
 ```bash

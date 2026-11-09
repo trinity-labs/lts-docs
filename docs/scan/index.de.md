@@ -1,7 +1,7 @@
 # Scan/Audit
 ![TRINITY-Scan-Bericht](../assets/images/projects/scan/scan-report.png){ .unyport-screen }
 
-- Nur Ziele scannen, für deren Prüfung eine Berechtigung vorliegt.
+- ✅ Nur Ziele scannen, für deren Prüfung eine Berechtigung vorliegt.
 - ⭕ Eine Gesamtbewertung ersetzt nicht die Prüfung der Berichtsnachweise.
 - ➡️ Vor einer Analyse den Einstiegspunkt prüfen:
 ```bash

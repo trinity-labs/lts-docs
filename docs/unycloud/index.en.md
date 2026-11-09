@@ -10,7 +10,7 @@ social_image: "https://docs.trinity-net.com/assets/images/social/og-favicon.png"
 
 ![Current UnyCloud login screen](../assets/images/projects/unycloud/unycloud-screen.png){ .unyport-screen }
 
-- Check the file and its destination before every upload.
+- ✅ Check the file and its destination before every upload.
 - ⭕ Revoke a sharing link as soon as it is no longer required.
 - ➡️ Check the content type returned by the cloud surface:
 ```bash

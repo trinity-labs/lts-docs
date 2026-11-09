@@ -1,7 +1,7 @@
 # Scan / Audit
 ![TRINITY Scan report](../assets/images/projects/scan/scan-report.png){ .unyport-screen }
 
-- Scan only targets that you are authorized to assess.
+- ✅ Scan only targets that you are authorized to assess.
 - ⭕ A summary score does not replace reviewing the report evidence.
 - ➡️ Check the entry point before starting an analysis:
 ```bash

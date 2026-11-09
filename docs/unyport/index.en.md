@@ -4,14 +4,15 @@ social_image: "https://unyport.app/média/img/logos/logo-unyport-full.png"
 ---
 
 # UnyPort
-- Identify the host and service before taking action.
+
+![UnyPort logo](../assets/images/unyport/logo.jpg){ .project-root-logo }
+
+- ✅ Identify the host and service before taking action.
 - ⭕ Never expose a proxy or administration token.
 - ➡️ Check public availability:
 ```bash
 curl -fsSI https://unyport.app/
 ```
-
-![UnyPort logo](../assets/images/unyport/logo.jpg){ .project-root-logo }
 
 `UnyPort` is the ecosystem operator oriented supervision surface `TRINITY`It is built as a light Go app for Alpine Linux environments, with explicit Xen playback, live system status, application proxy control and daily host supervision.
 

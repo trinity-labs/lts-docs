@@ -1,7 +1,7 @@
 # IP
 ![Diagnostic réseau TRINITY IP](../assets/images/projects/ip/ip-diagnostic.png){ .unyport-screen }
 
-- Comparer les résultats IPv4 et IPv6 lorsque les deux piles sont disponibles.
+- ✅ Comparer les résultats IPv4 et IPv6 lorsque les deux piles sont disponibles.
 - ⭕ La géolocalisation IP reste indicative et ne constitue pas une position précise.
 - ➡️ Consommer la réponse structurée depuis un script :
 ```bash
