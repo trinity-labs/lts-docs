@@ -4,6 +4,7 @@
 - ✅ Nur Ziele scannen, für deren Prüfung eine Berechtigung vorliegt.
 - ⭕ Eine Gesamtbewertung ersetzt nicht die Prüfung der Berichtsnachweise.
 - ➡️ Vor einer Analyse den Einstiegspunkt prüfen:
+
 ```bash
 curl -fsSI https://scan.trinity-net.com/
 ```

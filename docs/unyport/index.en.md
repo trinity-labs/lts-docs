@@ -10,6 +10,7 @@ social_image: "https://unyport.app/média/img/logos/logo-unyport-full.png"
 - ✅ Identify the host and service before taking action.
 - ⭕ Never expose a proxy or administration token.
 - ➡️ Check public availability:
+
 ```bash
 curl -fsSI https://unyport.app/
 ```

@@ -4,6 +4,7 @@
 - ✅ Comparer les résultats IPv4 et IPv6 lorsque les deux piles sont disponibles.
 - ⭕ La géolocalisation IP reste indicative et ne constitue pas une position précise.
 - ➡️ Consommer la réponse structurée depuis un script :
+
 ```bash
 curl -fsS https://ip.trinity-net.com/api | jq .
 ```

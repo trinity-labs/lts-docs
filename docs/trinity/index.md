@@ -9,6 +9,7 @@ social_image: "https://trinity-net.com/img/products/trinity/hero-trinity.png"
 - ✅ Utiliser le portail pour les comptes, commandes, factures et consoles.
 - ⭕ Ne jamais transmettre un jeton de session dans une demande de support.
 - ➡️ Vérifier la disponibilité publique avant un parcours client :
+
 ```bash
 curl -fsSI https://trinity-net.com/
 ```

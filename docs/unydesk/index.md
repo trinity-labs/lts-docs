@@ -9,6 +9,7 @@ social_image: "https://unydesk.app/assets/logo-unydesk.jpg"
 - ✅ Vérifier que le host est en ligne avant de demander une session distante.
 - ⭕ Un code d’association ou un jeton de provisionnement doit rester confidentiel.
 - ➡️ Distinguer clairement les rôles dans un diagnostic :
+
 ```text
 viewer -> broker UnyDesk -> host -> transport direct ou relais
 ```

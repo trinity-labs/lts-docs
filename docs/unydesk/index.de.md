@@ -9,6 +9,7 @@ social_image: "https://unydesk.app/assets/logo-unydesk.jpg"
 - ✅ Vor einer Remotesitzung prüfen, ob der Host online ist.
 - ⭕ Kopplungscodes und Bereitstellungstoken müssen vertraulich bleiben.
 - ➡️ Bei der Diagnose jede Rolle eindeutig unterscheiden:
+
 ```text
 Viewer -> UnyDesk-Broker -> Host -> Direkt- oder Relay-Transport
 ```

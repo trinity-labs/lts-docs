@@ -4,6 +4,7 @@
 - ✅ Compare IPv4 and IPv6 results when both stacks are available.
 - ⭕ IP geolocation is indicative and does not provide a precise position.
 - ➡️ Consume the structured response from a script:
+
 ```bash
 curl -fsS https://ip.trinity-net.com/api | jq .
 ```

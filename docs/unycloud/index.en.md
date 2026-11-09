@@ -13,6 +13,7 @@ social_image: "https://docs.trinity-net.com/assets/images/social/og-favicon.png"
 - ✅ Check the file and its destination before every upload.
 - ⭕ Revoke a sharing link as soon as it is no longer required.
 - ➡️ Check the content type returned by the cloud surface:
+
 ```bash
 curl -fsSI https://cloud.trinity-net.com/
 ```

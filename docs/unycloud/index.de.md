@@ -13,6 +13,7 @@ social_image: "https://docs.trinity-net.com/assets/images/social/og-favicon.png"
 - ✅ Vor jedem Upload Datei und Ziel prüfen.
 - ⭕ Einen Freigabelink widerrufen, sobald er nicht mehr benötigt wird.
 - ➡️ Den von der Cloud-Oberfläche gelieferten Inhaltstyp prüfen:
+
 ```bash
 curl -fsSI https://cloud.trinity-net.com/
 ```

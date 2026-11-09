@@ -10,6 +10,7 @@ social_image: "https://unyport.app/média/img/logos/logo-unyport-full.png"
 - ✅ Vor jeder Aktion Host und Dienst identifizieren.
 - ⭕ Proxy- oder Administrationstoken niemals offenlegen.
 - ➡️ Öffentliche Verfügbarkeit prüfen:
+
 ```bash
 curl -fsSI https://unyport.app/
 ```

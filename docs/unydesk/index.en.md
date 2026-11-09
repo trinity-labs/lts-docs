@@ -9,6 +9,7 @@ social_image: "https://unydesk.app/assets/logo-unydesk.jpg"
 - ✅ Confirm that the host is online before requesting a remote session.
 - ⭕ Pairing codes and provisioning tokens must remain confidential.
 - ➡️ Keep each role explicit while diagnosing a session:
+
 ```text
 viewer -> UnyDesk broker -> host -> direct or relay transport
 ```

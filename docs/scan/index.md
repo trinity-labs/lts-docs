@@ -4,6 +4,7 @@
 - ✅ Scanner uniquement une cible que vous êtes autorisé à évaluer.
 - ⭕ Un score synthétique ne remplace pas la lecture des preuves du rapport.
 - ➡️ Contrôler le point d’entrée avant de lancer une analyse :
+
 ```bash
 curl -fsSI https://scan.trinity-net.com/
 ```

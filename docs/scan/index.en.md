@@ -4,6 +4,7 @@
 - ✅ Scan only targets that you are authorized to assess.
 - ⭕ A summary score does not replace reviewing the report evidence.
 - ➡️ Check the entry point before starting an analysis:
+
 ```bash
 curl -fsSI https://scan.trinity-net.com/
 ```
