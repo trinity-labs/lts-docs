@@ -269,15 +269,11 @@ article li {
 
 .md-typeset img.trinity-project-logo,
 .md-typeset img.project-root-logo {
+    display: block;
     width: min(100%, 20rem);
     margin: 1rem auto 1.5rem;
     border: 0;
     box-shadow: none;
-}
-    display: block;
-    height: 1.2rem;
-    width: 1.2rem;
-    opacity: 0.33;
 }
 
 .md-header__topic span {
