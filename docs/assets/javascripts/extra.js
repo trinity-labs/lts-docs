@@ -40,7 +40,19 @@ function expandTrinityNavigation() {
 
 function keepTrinityActiveNavigationVisible() {
   const scrollwrap = document.querySelector(".md-sidebar--primary .md-sidebar__scrollwrap");
-  const active = scrollwrap?.querySelector("a.md-nav__link--active");
+  const normalizePath = (value) => {
+    try {
+      return new URL(value, window.location.href).pathname
+        .replace(/\.(en|de)(?=\/$)/, "")
+        .replace(/\/+$/, "") || "/";
+    } catch (_) {
+      return "";
+    }
+  };
+  const currentPath = normalizePath(window.location.href);
+  const active = scrollwrap?.querySelector("a.md-nav__link--active")
+    || [...(scrollwrap?.querySelectorAll("a.md-nav__link[href]") || [])]
+      .find((link) => normalizePath(link.href) === currentPath);
   if (!scrollwrap || !active) return;
 
   const storageKey = `${getTrinitySitePrefix() || "/"}:primary-nav-scroll`;
