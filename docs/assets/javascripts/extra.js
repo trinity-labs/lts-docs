@@ -38,6 +38,41 @@ function expandTrinityNavigation() {
   }
 }
 
+function keepTrinityActiveNavigationVisible() {
+  const scrollwrap = document.querySelector(".md-sidebar--primary .md-sidebar__scrollwrap");
+  const active = scrollwrap?.querySelector("a.md-nav__link--active");
+  if (!scrollwrap || !active) return;
+
+  const storageKey = `${getTrinitySitePrefix() || "/"}:primary-nav-scroll`;
+  if (!window.__trinitySidebarScrollNodes) window.__trinitySidebarScrollNodes = new WeakSet();
+
+  if (!window.__trinitySidebarScrollNodes.has(scrollwrap)) {
+    window.__trinitySidebarScrollNodes.add(scrollwrap);
+    let saved = "";
+    try { saved = window.sessionStorage.getItem(storageKey) || ""; } catch (_) { /* storage unavailable */ }
+    if (saved !== "" && Number.isFinite(Number(saved))) scrollwrap.scrollTop = Number(saved);
+
+    scrollwrap.addEventListener("scroll", () => {
+      try { window.sessionStorage.setItem(storageKey, String(scrollwrap.scrollTop)); } catch (_) { /* storage unavailable */ }
+    }, { passive: true });
+  }
+
+  const wrapRect = scrollwrap.getBoundingClientRect();
+  const activeRect = active.getBoundingClientRect();
+  const safeMargin = 48;
+  const isVisible = activeRect.top >= wrapRect.top + safeMargin
+    && activeRect.bottom <= wrapRect.bottom - safeMargin;
+
+  if (!isVisible) {
+    const target = scrollwrap.scrollTop
+      + activeRect.top
+      - wrapRect.top
+      - (wrapRect.height - activeRect.height) / 2;
+    scrollwrap.scrollTop = Math.max(0, target);
+    try { window.sessionStorage.setItem(storageKey, String(scrollwrap.scrollTop)); } catch (_) { /* storage unavailable */ }
+  }
+}
+
 function buildTrinityLanguageHref(lang, fallbackHref) {
   const products = new Set(["trinity", "unydesk", "unyport"]);
   const rawPath = window.location.pathname || "/";
@@ -309,6 +344,9 @@ function initTrinityDocsChrome() {
   };
   const copy = footerCopy[locale] || footerCopy.en;
   expandTrinityNavigation();
+  window.requestAnimationFrame(() => {
+    window.requestAnimationFrame(() => keepTrinityActiveNavigationVisible());
+  });
   localizeTrinityNavigationLinks(locale);
 
   const headerInner = document.querySelector(".md-header__inner");
