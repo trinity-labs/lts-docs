@@ -13,6 +13,7 @@ social_image: "https://unydesk.app/assets/logo-unydesk.jpg"
 ```text
 Viewer -> UnyDesk-Broker -> Host -> Direkt- oder Relay-Transport
 ```
+
 `UnyDesk` ist der Fernzugriffsdienst des `TRINITY` Edge Networks Ökosystems. Diese öffentliche Fläche wird genutzt, um ein Host-Paket herunterzuladen, einen Host zu pairen oder zu claimen, eine Fernsitzung zu starten und diese Sitzung nutzbar zu halten, auch wenn der beste Transportpfad nicht sofort verfügbar ist.
 
 Im Unterschied zu `TRINITY` als Kunden- und Serviceportal konzentriert sich `UnyDesk` auf:

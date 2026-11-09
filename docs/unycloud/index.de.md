@@ -17,6 +17,7 @@ social_image: "https://docs.trinity-net.com/assets/images/social/og-favicon.png"
 ```bash
 curl -fsSI https://cloud.trinity-net.com/
 ```
+
 `UnyCloud` ist der Cloud-Bereich von Ökosystem-Dateien `TRINITY`Es entblößt `<cloud-domain>` als Browserspace, Repository, Download und Filesharing, während man sich auf eine gepflegte Filebrowser-Fork verlässt.
 
 öffentlich, `UnyCloud` führt zusammen:

@@ -17,6 +17,7 @@ social_image: "https://docs.trinity-net.com/assets/images/social/og-favicon.png"
 ```bash
 curl -fsSI https://cloud.trinity-net.com/
 ```
+
 `UnyCloud` est la surface cloud de fichiers de l'écosystème `TRINITY`. Elle expose `<cloud-domain>` comme espace de navigation, dépôt, téléchargement et partage de fichiers, tout en s'appuyant sur un fork maintenu de Filebrowser.
 
 Publiquement, `UnyCloud` rassemble :

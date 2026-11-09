@@ -13,6 +13,7 @@ social_image: "https://trinity-net.com/img/products/trinity/hero-trinity.png"
 ```bash
 curl -fsSI https://trinity-net.com/
 ```
+
 `TRINITY` ist die zentrale Website und die wichtigste kundenorientierte Oberfläche der Plattform `TRINITY` Edge Networks. Hier entdeckt der Nutzer die Services, erstellt ein Konto, gibt Bestellungen auf, verfolgt Zahlungen, lädt Rechnungen herunter, öffnet eine Konsole oder fordert Support an. Die öffentliche Dokumentation beschreibt `TRINITY` daher als Produkterlebnis und Kundenweg - nicht als rein technisches Kontrollpanel.
 
 Öffentlich bündelt `TRINITY`:
